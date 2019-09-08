@@ -1,0 +1,7 @@
+%p#notice= notice
+
+= render partial: "card", locals: {card: @experience}
+
+= link_to 'Edit', edit_experience_path(@experience)
+\|
+= link_to 'Back', experiences_path

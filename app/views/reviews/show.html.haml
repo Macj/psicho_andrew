@@ -1,0 +1,8 @@
+%p#notice= notice
+
+.p-5
+  = render partial: "card", locals: { card: @review }
+
+= link_to 'Edit', edit_review_path(@review)
+\|
+= link_to 'Back', reviews_path

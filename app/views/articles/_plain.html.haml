@@ -1,0 +1,30 @@
+- content_for :filters do
+  .card-level{ style: "float: left;" }
+    = parent_links(card.cathegory) 
+  .actions{ style: "float: right;" }
+    = link_to 'Править', edit_article_path(card), class: 'btn btn-info'
+    = link_to 'Удалить', card, class: 'btn btn-danger', method: :delete, data: { confirm: 'Уверен?' }
+
+.container-fluid.article{ style: "border-color: black" }
+  = image_tag(card.image.url, class: 'img-fluid', style: 'max-width: 70%; height: auto;') if card.image.exists?    
+  
+  .card{ style: "width: 50%; margin-left: 10%; margin-top:  -110px;" }
+    .card-body  
+      %h5.card-title
+        = link_to card.title, card
+      %h6{style: 'float:left'}
+        = # TODO author
+        Андрей Ткаченко
+      .date{style: 'float:right'}
+        = card.created_at.strftime("%d.%m.%Y")
+      .share-block{style: "margin-top: 40px; margin-left: 25%; border-color: black; height: 50px; width: 50%;"}
+        TODO share links.
+
+
+  .article-body
+    %p
+      = card.body.html_safe
+
+%h6.article-body
+  Tags:
+  = card.tags

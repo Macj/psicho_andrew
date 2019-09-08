@@ -1,0 +1,17 @@
+- left = defined?(is_left) ? "float:left" : ""
+.card.ml-5.mt-5{ style: "width: 18rem; #{left}" }
+  = image_tag(card.logo.url, class: 'img-thumbnail  m-3') if card.logo.exists?
+  .card-body
+    .card-level
+      = parent_links(card)
+    %h5.card-title
+      = card.name
+    %h6
+      Level: 
+      = card.level
+    %h6
+      Visible:
+      = card.visible.to_s
+
+    = link_to 'Открыть', card, class: '.btn.btn-primary'
+    = link_to 'Удалить', card, class: 'pl-5', method: :delete, data: { confirm: 'Are you sure?' }

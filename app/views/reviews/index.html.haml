@@ -1,0 +1,9 @@
+%h1 Listing reviews
+
+
+%div{ style: 'clear: both; hight: 100%' }
+  - @reviews.each do |review|
+    = render partial: "card", locals: { card: review, is_left: true }
+
+
+= link_to 'New Review', new_review_path, class: 'btn btn-info', style: "clear: both"

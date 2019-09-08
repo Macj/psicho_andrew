@@ -1,0 +1,26 @@
+.form-group.pl-5  
+  = form_for @experience do |f|
+    - if @experience.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@experience.errors.count, "error")} prohibited this experience from being saved:"
+        %ul
+          - @experience.errors.full_messages.each do |message|
+            %li= message
+
+    .form-group.row
+      = f.label :title, class: 'col-sm-1'
+      = f.text_field :title, class: 'form-control'
+    .form-group.row
+      = f.label :place, class: 'col-sm-1'
+      = f.text_field :place, class: 'form-control'
+    .form-group.row
+      = f.label :from, class: 'col-sm-1'
+      = f.date_select :from, class: 'form-control'
+    .form-group.row
+      = f.label :till, class: 'col-sm-1'
+      = f.date_select :till, class: 'form-control'
+    .form-group.row
+      = f.label :logo, class: 'col-sm-1'
+      = f.file_field :logo, class: 'form-control'
+    .actions
+      = f.submit 'Save', class: 'btn btn-info'

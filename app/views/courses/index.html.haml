@@ -1,0 +1,8 @@
+%h1 Listing courses
+
+%div{ style: 'clear: both; hight: 100%' }
+  = link_to 'New Course', new_course_path
+
+- @courses.each do |course|
+  = render partial: 'card', locals: {card: course, is_left: true}
+

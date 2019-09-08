@@ -1,0 +1,8 @@
+- left = defined?(is_left) ? "float:left" : ""
+.card.ml-5{ style: "width: 35rem; #{left}" }
+  = card.link.html_safe
+  .card-body
+    %h5.card-title
+      = card.name
+    = link_to 'Открыть', card, class: '.btn.btn-primary'
+    = link_to 'Удалить', card, class: 'pl-5', method: :delete, data: { confirm: 'Are you sure?' }

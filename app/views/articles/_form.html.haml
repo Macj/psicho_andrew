@@ -1,0 +1,29 @@
+.form-group.pl-5
+  = form_for @article do |f|
+    - if @article.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@article.errors.count, "error")} prohibited this article from being saved:"
+        %ul
+          - @article.errors.full_messages.each do |message|
+            %li= message
+
+    .form-group.row
+      = f.label :title, class: 'col-sm-1'
+      = f.text_field :title, class: 'form-control'
+    .form-group.row
+      = f.label :body, class: 'col-sm-1'
+      = f.text_area :body, class: 'form-control wysihtml5', placeholder:"Начни свою статью ..."
+    .form-group.row
+      = f.label :cathegory_id, class: 'col-sm-1'
+      = f.select :cathegory_id, Cathegory.all.map{|cat| [cat.name, cat.id] }, class: 'form-control'
+    .form-group.row
+      = f.label :style, class: 'col-sm-1'
+      = f.select :style, [['Ordinary', 1], ['Pro', 2]], class: 'form-control'
+    .form-group.row
+      = f.label :tags, class: 'col-sm-1'
+      = f.text_field :tags, class: 'form-control'
+    .form-group.row
+      = f.label :image, class: 'col-sm-1'
+      = f.file_field :image, class: 'form-control', style:"height:auto; border:none"
+    .actions
+      = f.submit 'Save', class: 'btn btn-info'

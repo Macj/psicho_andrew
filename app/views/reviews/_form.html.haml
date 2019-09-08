@@ -1,0 +1,17 @@
+.form-group.pl-5
+  = form_for @review do |f|
+    - if @review.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@review.errors.count, "error")} prohibited this review from being saved:"
+        %ul
+          - @review.errors.full_messages.each do |message|
+            %li= message
+    .form-group.row
+      = f.label :name, class: 'col-sm-1'
+      .col-sm-8
+        = f.text_field :name, class: 'form-control'
+    .form-group.row
+      = f.label :link, class: 'col-sm-1'
+      .col-sm-8
+        = f.text_area :link, class: 'form-control'
+    = f.submit 'Save', class: 'btn btn-info'

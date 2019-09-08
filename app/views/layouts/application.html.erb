@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andrey</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="container-fluid " style="height:1500px;width:auto;margin-left:250px; margin-top: 20px">
+    <div class="navigation" style="height:60px; clear:both;">
+      <div class="menu_line">
+        <%= render partial: '/layouts/main_menu' %>
+        <%= render partial: '/layouts/call_me' %>
+      </div>
+
+      <div class="filters" style="height:60px; margin-top: 10px; clear:both;">
+          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="float:left; margin: 5px">
+            Каталог статей
+          </a>
+          
+          <%= yield :filters %>
+
+          <%= render partial: '/layouts/search'%>
+          <%= yield :buttons %>
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body" style=" display: block">
+          <%= menu_panel(@cat1_ids, 1) if !@cat1_ids.nil?%>        
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content" style="clear: both; margin: 70px 0 0px;">
+      <%= yield %>
+    </div>
+  </div>
+
+</body>
+</html>

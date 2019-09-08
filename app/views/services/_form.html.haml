@@ -1,0 +1,32 @@
+.form-group.pl-5
+  = form_for @service do |f|
+    - if @service.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@service.errors.count, "error")} prohibited this service from being saved:"
+        %ul
+          - @service.errors.full_messages.each do |message|
+            %li= message
+
+    .form-group.row
+      = f.label :name, class: 'col-sm-1'
+      = f.text_field :name, class: 'form-control'
+    .form-group.row
+      = f.label :description, class: 'col-sm-1'
+      = f.text_area :description, class: 'form-control'
+    .form-group.row
+      = f.label :price_hr, class: 'col-sm-1'
+      = f.text_field :price_hr, class: 'form-control'
+    .form-group.row
+      = f.label :price_dl, class: 'col-sm-1'
+      = f.text_field :price_dl, class: 'form-control'
+    .form-group.row
+      = f.label :price_rb, class: 'col-sm-1'
+      = f.text_field :price_rb, class: 'form-control'
+    .form-group.row
+      = f.label :visit_num, class: 'col-sm-1'
+      = f.number_field :visit_num, class: 'form-control'
+    .form-group.row
+      = f.label :logo, class: 'col-sm-1'
+      = f.file_field :logo, class: 'form-control'
+    .actions
+      = f.submit 'Save', class: 'btn btn-info'

@@ -1,0 +1,38 @@
+.form-group.pl-5
+  = form_for @course do |f|
+    - if @course.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@course.errors.count, "error")} prohibited this course from being saved:"
+        %ul
+          - @course.errors.full_messages.each do |message|
+            %li= message
+
+    .form-group.row
+      = f.label :title, class: 'col-sm-1'
+      = f.text_field :title, class: 'form-control'
+    .form-group.row
+      = f.label :programm, class: 'col-sm-1'
+      = f.text_area :programm, class: 'form-control'
+    .form-group.row
+      = f.label :video, class: 'col-sm-1'
+      = f.text_area :video, class: 'form-control'
+    .form-group.row
+      = f.label :shipping_type, class: 'col-sm-1'
+      = f.text_field :shipping_type, class: 'form-control'
+    .form-group.row
+      = f.label :term, class: 'col-sm-1'
+      = f.text_field :term, class: 'form-control'
+    .form-group.row
+      = f.label :coast_rb, class: 'col-sm-1'
+      = f.text_field :coast_rb, class: 'form-control'
+    .form-group.row
+      = f.label :coast_dl, class: 'col-sm-1'
+      = f.text_field :coast_dl, class: 'form-control'
+    .form-group.row
+      = f.label :coast_hr, class: 'col-sm-1'
+      = f.text_field :coast_hr, class: 'form-control'
+    .form-group.row
+      = f.label :description, class: 'col-sm-1'
+      = f.text_area :description, class: 'form-control'
+    .actions
+      = f.submit 'Save', class: 'btn btn-info'

@@ -1,0 +1,7 @@
+%h1 Listing experiences
+
+= link_to 'New Experience', new_experience_path
+
+%div{ style: 'clear: both; hight: 100%' }
+  - @experiences.each do |experience|
+    = render partial: "card", locals: { card: experience, is_left: true }

@@ -1,0 +1,17 @@
+.form-group.pl-5
+  = form_for @faq do |f|
+    - if @faq.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@faq.errors.count, "error")} prohibited this faq from being saved:"
+        %ul
+          - @faq.errors.full_messages.each do |message|
+            %li= message
+
+    .form-group.row
+      = f.label :query, class: 'col-sm-1'
+      = f.text_area :query, class: 'form-control'
+    .form-group.row
+      = f.label :answer, class: 'col-sm-1'
+      = f.text_area :answer, class: 'form-control'
+    .actions
+      = f.submit 'Save', class: 'btn btn-info'

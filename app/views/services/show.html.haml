@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @service.name
+%p
+  %b Description:
+  = @service.description
+%p
+  %b Price hr:
+  = @service.price_hr
+%p
+  %b Price dl:
+  = @service.price_dl
+%p
+  %b Price rb:
+  = @service.price_rb
+%p
+  %b Visit num:
+  = @service.visit_num
+%p
+  %b Logo:
+  = image_tag(@service.image.url) if @service.image.exists?
+
+= link_to 'Edit', edit_service_path(@service)
+\|
+= link_to 'Back', services_path

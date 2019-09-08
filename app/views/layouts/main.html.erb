@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Andrey</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body class='main-block'>
+
+<div class="container-fluid " style="width:auto; margin-top: 20px">
+    <div class="top_line" style="clear:both; height: 50px;">
+	    <div class="menu ml-5" style="float:left">
+	    	<%= yield :menu %>
+	    </div>
+	    <div class="green_button ml-5" style="float:right">
+	    	<%= yield :consultation %>
+	    </div>
+	</div>
+    
+    <div class="left_block">
+		<div class="information">
+			<%= yield :information %>
+		</div>
+
+	    <div class="nav mt-50">      
+	        <%= yield :main_navigation %>
+	    </div>
+	  </div>
+
+	  <div class="contacts">
+	  	<%= yield :contacts %>
+	  </div>
+  </div>
+
+</div>
+
+</body>
+</html>

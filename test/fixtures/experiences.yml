@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  place: MyString
+  from: 2019-07-17
+  till: 2019-07-17
+  logo: MyString
+
+two:
+  title: MyString
+  place: MyString
+  from: 2019-07-17
+  till: 2019-07-17
+  logo: MyString

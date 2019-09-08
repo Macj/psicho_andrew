@@ -1,0 +1,107 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+@import "bootstrap";
+@import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+
+.nav a{
+	 text-decoration: none; 
+}
+.nav a:hover{
+	 	color: white;
+}
+
+.main-block{
+	background-image: url('/assets/photo_18.jpg');
+	background-size: cover;
+}
+
+#collapseExample{
+	z-index: 100000;
+	position: relative;
+}
+
+.menu_line{
+	height: 60px;
+	border-bottom: solid 1px black;
+}
+
+.contacts{
+	position: fixed;
+	width: 200px;
+	height: 500px;
+	right: 50px;
+	top: 400px;
+}
+
+.article {
+	font-family: 'Roboto' !important
+}
+
+.article-body{
+	font-size: 18px !important
+}
+
+.card_text{
+	overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal; /* для IE */ 
+  text-overflow: clip;
+  height: 50px;
+  max-width: 50px;
+}
+
+.card_text:hover {
+  overflow: visible; 
+  white-space: normal;
+  height: auto;
+  max-width: auto;
+}
+
+.left_block{
+	margin-left:160px;
+	margin-top:100px;
+	width: 45%;
+}
+
+.nav{
+	text-align: center;
+	.btn{
+	  margin-left: 10px;
+	}
+	.nav_panel{
+		margin-left:180px
+	}
+}
+
+.mt-50{
+	margin-top: 50px
+}
+
+.card-info{
+	width: 50em;
+	text-align:center;
+	h4{
+		font-size: 50px;
+	}
+	h5{
+		font-size: 40px;
+	}
+	h6{
+		font-size: 35px;
+	}
+	.card-text{
+		font-size: 25px;
+	}
+}

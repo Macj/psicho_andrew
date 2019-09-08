@@ -1,0 +1,12 @@
+- content_for :filters do
+  %div{style: "height: 20px; float: left; margin: 15px 160px"} FIlters
+
+- content_for :buttons do
+  = link_to 'New Article', new_article_path, class: "btn btn-success", style: "float: right"
+
+%br
+
+%div{ style: 'clear: both; hight: 100%' }
+  - @articles.each do |article|
+    = render partial: 'card', locals: {card: article, is_left: true }
+

@@ -1,0 +1,23 @@
+.form-group.pl-5
+  = form_for @client do |f|
+    - if @client.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@client.errors.count, "error")} prohibited this client from being saved:"
+        %ul
+          - @client.errors.full_messages.each do |message|
+            %li= message
+
+    .form-group.row
+      = f.label :name, class: 'col-sm-1'
+      = f.text_field :name, class: 'form-control'
+    .form-group.row
+      = f.label :email, class: 'col-sm-1'
+      = f.text_field :email, class: 'form-control'
+    .form-group.row
+      = f.label :phone, class: 'col-sm-1'
+      = f.text_field :phone, class: 'form-control'
+    .form-group.row
+      = f.label :comment, class: 'col-sm-1'
+      = f.text_area :comment, class: 'form-control'
+    .actions
+      = f.submit 'Save', class: 'btn btn-info'

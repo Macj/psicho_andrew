@@ -1,0 +1,11 @@
+%h1 Listing cathegories
+
+= link_to 'New Cathegory', new_cathegory_path
+
+%div{ style: 'clear: both; hight: 100%' }
+  - @cathegories.each do |cathegory|
+    = render partial: "card", locals: { card: cathegory, is_left: true }
+
+%br
+
+

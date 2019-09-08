@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyText
+  price_hr: 1.5
+  price_dl: 1.5
+  price_rb: 1.5
+  visit_num: 1
+  logo: MyString
+
+two:
+  name: MyString
+  description: MyText
+  price_hr: 1.5
+  price_dl: 1.5
+  price_rb: 1.5
+  visit_num: 1
+  logo: MyString

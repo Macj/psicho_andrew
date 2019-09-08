@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: 
+  type: 
+  parent_link: 
+  level: 
+  logo: 
+  name: 
+  visible: false
+
+two:
+  parent_id: 
+  type: 
+  parent_link: 
+  level: 
+  logo: 
+  name: 
+  visible: false

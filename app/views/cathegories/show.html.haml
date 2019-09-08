@@ -1,0 +1,11 @@
+%p#notice
+  - if notice
+    .alert.alert-success=notice
+
+
+= render partial: "card", locals: { card: @cathegory }
+
+.m-3
+  = link_to 'Edit', edit_cathegory_path(@cathegory)
+  \|
+  = link_to 'Back', cathegories_path

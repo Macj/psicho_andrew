@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  programm: MyText
+  video: MyText
+  shipping_type: MyString
+  term: MyString
+  coast_rb: 1.5
+  coast_dl: 1.5
+  coast_hr: 1.5
+  description: MyText
+
+two:
+  title: MyString
+  programm: MyText
+  video: MyText
+  shipping_type: MyString
+  term: MyString
+  coast_rb: 1.5
+  coast_dl: 1.5
+  coast_hr: 1.5
+  description: MyText

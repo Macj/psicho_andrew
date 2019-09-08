@@ -1,0 +1,16 @@
+.collapse.show#menu_collapse{style: "float:left; ml-5"}
+  %a.ml-5{ href: "#{ about_path }" }
+    %button.btn.btn-outline-dark{ type:"button" }
+      Обо мне
+  %a{ href: "#{articles_path}" }
+    %button.btn.btn-outline-dark{ type:"button" }
+      Статьи
+  %a{ href: "#{education_path}" }
+    %button.btn.btn-outline-dark{ type:"button" }
+      Обучение
+  %a{ href: "#{consultation_path}" }
+    %button.btn.btn-outline-dark{ type:"button" }
+      Консультации
+  %a.request
+    %button.btn.btn-outline-dark{ type:"button" }
+      Оставить заявку
