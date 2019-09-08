@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 	layout "main", only: [:main]
 	
 	def main
-		
+	  @client = Client.new
 	end
 
 	def about

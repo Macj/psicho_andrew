@@ -21,8 +21,8 @@
         Оставить заявку
 
 - content_for :consultation do
-  %button.btn.btn-success{ type:"button" }
-    Тесты
+  %button.btn.btn-success{ type:"button", 'data-toggle':"collapse", href:"#clientForm", role:"button", 'aria-expanded':"false", 'aria-controls':"clientForm" }
+    Оставить заявку
 
 - content_for :information do
   .card.card-info{ style: "background-color: rgba(255, 255, 255, 0.3);" }
@@ -38,8 +38,13 @@
       %p.card-text
         Text
 
-      %a{ href:"#", class:"btn btn-success" }
+      %a{ href:"#", class:"btn btn-success", 'data-toggle':"collapse", href:"#clientForm", role:"button", 'aria-expanded':"false", 'aria-controls':"clientForm" }
         Оставить заявку
+
+- content_for :client_form do
+  .collapse#clientForm
+    .card.card-body{style:"width: 90rem;"}
+      = render partial: "clients/form"
 
 - content_for :main_navigation do
   .nav_panel

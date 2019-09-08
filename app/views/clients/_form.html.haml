@@ -1,23 +1,35 @@
-.form-group.pl-5
+.form-group.pl-5.pr-5
   = form_for @client do |f|
-    - if @client.errors.any?
-      #error_explanation
-        %h2= "#{pluralize(@client.errors.count, "error")} prohibited this client from being saved:"
-        %ul
-          - @client.errors.full_messages.each do |message|
-            %li= message
 
-    .form-group.row
-      = f.label :name, class: 'col-sm-1'
-      = f.text_field :name, class: 'form-control'
-    .form-group.row
-      = f.label :email, class: 'col-sm-1'
-      = f.text_field :email, class: 'form-control'
-    .form-group.row
-      = f.label :phone, class: 'col-sm-1'
-      = f.text_field :phone, class: 'form-control'
-    .form-group.row
-      = f.label :comment, class: 'col-sm-1'
-      = f.text_area :comment, class: 'form-control'
-    .actions
-      = f.submit 'Save', class: 'btn btn-info'
+    .left_group{style: 'float:left; width: 40%; height: 600px'}
+      %h3 
+        Запись на консультацию психолога
+      %br
+      %br
+      - if @client.errors.any?
+        #error_explanation
+          %h2= "#{pluralize(@client.errors.count, "error")} prohibited this client from being saved:"
+          %ul
+            - @client.errors.full_messages.each do |message|
+              %li= message
+
+      .form-group.row.ml-3
+        = f.text_field :name, class: 'form-control', placeholder: "Имя", style: 'width:400px'
+      .form-group.row.ml-3
+        = f.text_field :email, class: 'form-control', placeholder: "E-mail", style: 'width:400px'
+      .form-group.row.ml-3
+        = f.text_field :phone, class: 'form-control', placeholder: "Номер телефона", style: 'width:400px'
+      .form-group.row.ml-3
+        = f.text_area :comment, class: 'form-control', placeholder: "Опишите проблему ", style: 'width:400px'
+      .form-group.form-check.ml-3
+        = f.check_box :agree, class: "form-check-input", id: "agree"
+        %label.form-check-label{for: "agree"} 
+          С  
+          = link_to "договором на предоставление психологических услуг", "#"
+          ознакомлен и согласен
+      .actions.ml-3
+        = f.submit 'Отправить', class: 'btn btn-info'
+
+
+    .right_group{style: 'float:left; width: 60%; height:500px; '}
+      = render partial: "pages/client_right_panel"        
