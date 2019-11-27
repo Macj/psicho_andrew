@@ -1,0 +1,21 @@
+<div class="card mb-3" style="max-width: 1080px; height: 450px; margin-top: 40px; padding: 20px; font-size: 20px; border: none ">
+  <div class="row no-gutters" style="height: 10%">
+    <h4 class="card-title"><%= link_to card.title, card %></h5>
+  </div>
+  <div class="row no-gutters" style="height: 90%">
+    <div class="col-md-7" style="height: 100%">
+      <%= card.video.html_safe %>
+    </div>
+    <div class="col-md-4" style="margin-left: 7%; ">
+      <div class="card-body">
+        <p class="card-text" style="margin-bottom: 30px; ">
+          Programm:
+          <%= card.programm %> </p>
+        <p class="card-text"><%= card.description[1..150]%></p>
+        <p class="card-text"><small class="text-muted">
+          term:
+          <%= card.term %></small></p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -20,7 +20,7 @@
   = @service.visit_num
 %p
   %b Logo:
-  = image_tag(@service.image.url) if @service.image.exists?
+  = image_tag(@service.logo.url) if @service.logo.exists?
 
 = link_to 'Edit', edit_service_path(@service)
 \|

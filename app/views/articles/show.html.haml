@@ -1,3 +1,5 @@
 %p#notice= notice
-
+- content_for :filters_panel do
+  = render partial: 'pages/articles_filters'
+  
 = render partial: 'plain', locals: {card: @article}

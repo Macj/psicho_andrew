@@ -3,25 +3,10 @@
     %button.btn.btn-outline-info
       Menu
 
-  .collapse#menu_collapse{style: "float:left; ml-5"}
-    %a.ml-5{ href: "#{ about_path }" }
-      %button.btn.btn-outline-dark{ type:"button" }
-        Обо мне
-    %a{ href: "#{articles_path}" }
-      %button.btn.btn-outline-dark{ type:"button" }
-        Статьи
-    %a{ href: "#{education_path}" }
-      %button.btn.btn-outline-dark{ type:"button" }
-        Обучение
-    %a{ href: "#{consultation_path}" }
-      %button.btn.btn-outline-dark{ type:"button" }
-        Консультации
-    %a.request
-      %button.btn.btn-outline-dark{ type:"button" }
-        Оставить заявку
+  = render partial: 'layouts/main_menu'
 
 - content_for :consultation do
-  %button.btn.btn-success{ type:"button", 'data-toggle':"collapse", href:"#clientForm", role:"button", 'aria-expanded':"false", 'aria-controls':"clientForm" }
+  %button.btn.btn-success.client_form_show{ type:"button",  href:"#client_form", role:"button" }
     Оставить заявку
 
 - content_for :information do
@@ -35,14 +20,14 @@
         Андрея Ткаченко
       %p.card-text
         Избавление от невротических, панических и тревожно-депрессивных состояний с помощью психотерапии
-      %p.card-text
-        Text
 
-      %a{ href:"#", class:"btn btn-success", 'data-toggle':"collapse", href:"#clientForm", role:"button", 'aria-expanded':"false", 'aria-controls':"clientForm" }
+      %a.client_form_show{ href:"#", class:"btn btn-success",  href:"#client_form", role:"button"}
         Оставить заявку
 
 - content_for :client_form do
-  .collapse#clientForm
+  .collapse#client_form{style:"position:absolute; z-index: 9; margin-left:8.5%;"}
+    .row
+      %img.close-button#client_form_close{src: "assets/x.png", width:"40px", heght:"40px", style:"float: right; display: block;  margin-bottom: 5px; position: absolute; z-index: 5"}
     .card.card-body{style:"width: 90rem;"}
       = render partial: "clients/form"
 
@@ -59,11 +44,12 @@
         Обучение
 
 - content_for :contacts do
-  %a{href: "google.com", style: 'float: right; clear:both; margin-bottom: 5px;'}
-    = image_tag( '/assets/icon/Skype.png', size: "65" )
-  %a{href: "google.com", style: 'float: right; clear:both; margin-bottom: 5px;' }
-    = image_tag( '/assets/icon/Instagram.png', size: "65" )
-  %a{href: "google.com", style: 'float: right; clear:both; margin-bottom: 5px;'}
-    = image_tag( '/assets/icon/Facebook.png', size: "65" )
-  %a{href: "google.com", style: 'float: right; clear:both; margin-bottom: 5px;'}
-    = image_tag( '/assets/icon/Tumblr.png', size: "65" )
+  = link_to image_tag("/assets/icon/1fb.png", size: "65"), "https://m.me/tkachenko.psychology", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1insta.png", size: "65"), "https://instagram.com/tkachenko_psychology", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1skype.png", size: "65"), "skype:andreadetotti", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1telegram.png", size: "65"), "https://t.me/tkachenko_psychology", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1viber.png", size: "65"), "viber://chat?number=+380964248025", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1vk.png", size: "65"), "https://vk.com/tkachenko.psychology", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1youtube.png", size: "65"), "https://www.youtube.com/channel/UChccoFGukEuBtMfavtQaHTQ", {:class => "c-icon r-icom"} 
+  = link_to image_tag("/assets/icon/1email.png", size: "65"), "mailto:andreadetotti@gmail.com", {:class => "c-icon r-icom"} 
+

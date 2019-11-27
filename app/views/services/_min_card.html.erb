@@ -1,0 +1,18 @@
+<div class="card service" id="service_<%= card.id%>" style="width: 235px; float: left; margin-right: 10px; height: 350px; max-height: 800px">
+  <div class="card-body" style="height: 70px; max-height: 70px">
+    <h5 class="card-title"><%= card.name %></h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= "#{card.visit_num} консультаций по" if (card.visit_num > 1) %> 2 часа </li>
+  </ul>
+  <ul class="list-group list-group-flush" style="text-align: center">
+    <li class="list-group-item" >
+      <h5 style="margin-bottom: 10px"> Стоимость: </h5>
+      <%= card.price_hr %> ГРН. | <%= card.price_rb %> РУБ. | <%= card.price_dl %> EUR 
+    </li>
+  </ul>
+  
+  <div class="card-body">
+    <a  class='btn btn-success get-service' style="margin-left:auto; display: block" href="#" data-target="service_<%= card.id%>" data="Выбрана услуга: <%= card.name %> (<%= card.visit_num %> сеансов)"  class="card-link">Выбрать</a>
+  </div>
+</div>

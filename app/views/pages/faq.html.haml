@@ -1,0 +1,13 @@
+.container.left{style: ' width: 60%; margin-left: 7% '}
+  %h2{style: "text-align: center"} FAQ (часто задаваемые вопросы)
+  = render partial: 'faq_card'
+.right{style: "right: 265px;"}
+  %br
+  %br
+  %h5{style: "margin-left: 200px"} Товары
+  - @courses.each do |course|
+    = render partial:  'courses/min_card', locals: {card: course}
+  %br
+  %h5{style: "margin-left: 200px"} Новинки
+  - @news.each do |n|
+    = render partial: "articles/card", locals: {card: n} 

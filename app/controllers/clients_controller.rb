@@ -24,11 +24,14 @@ class ClientsController < ApplicationController
   # POST /clients
   # POST /clients.json
   def create
-    @client = Client.new(client_params)
+    @client = Client.find_or_create_by(client_params)
+    @request = Request.new(request_params)
 
     respond_to do |format|
       if @client.save
-        format.html { redirect_to @client, notice: 'Client was successfully created.' }
+        @request.client = @client
+        @request.save
+        format.html { redirect_to :back }
         format.json { render :show, status: :created, location: @client }
       else
         format.html { render :new }
@@ -69,6 +72,10 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:name, :email, :phone, :comment)
+      params.require(:client).permit(:name, :email, :phone)
+    end
+
+    def request_params
+      params.require(:request).permit(:comment, :from, :to, days: [])
     end
 end

@@ -4,6 +4,14 @@
 
 
 $( document ).ready ()->
+
+  $('#ajax').on 'click', ()->
+    $.get( "/articles.js", (data)->
+      console.log(data)
+      $('#cards').append(data)
+    )
+
+
   $('.wysihtml5').each (i, elem)->
 	  $(elem).wysihtml5(toolbar: {
 	  'font-styles': true,

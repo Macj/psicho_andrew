@@ -1,0 +1,23 @@
+<div class="card bg-dark text-white" style="width: 300px; height: 230px;  float: left; margin: 5px ; border: 5px solid lightgray">
+  <%= image_tag(card.image.url, class: 'card-img', style: "height: 100%" ) if card.image.exists? %>
+  <div class="card-img-overlay" style="opacity: 0.7; background-color: white;  margin-bottom: 40px; margin-top: 120px"></div>
+  <div class=" card-img-overlay"  style="height: 50px; margin-top: 120px;">
+	  <a class="find_out_card" ref='<%= card.id%>' id='find_out_card<%= card.id%>' style="text-decoration: none; color: darkgreen" data-toggle="collapse" href="#collapseCard<%= card.id%>" role="button" aria-expanded="false" aria-controls="collapseCard<%= card.id%>">
+	    <h5 class="card-title"><%= card.title %></h5>
+	  </a>
+	  <a style="text-decoration: none; color: green"  class="find_out" ref='<%= card.id%>' id="find_out<%= card.id%>" href="<%= article_path(card)%>">
+	    <h5 class="card-title">Узнать как</h5>
+	  </a>
+	</div>
+	<div class="collapse" id="collapseCard<%= card.id%>" style="float: left;  z-index:10; position: absolute; margin-left: 305px; margin-top: -5px; color: black; ">
+  	<div class="card" style="height: 228px; width: 300px">
+		  <h5 class="card-header">Подробнее</h5>
+		  <div class="card-body">
+		    <h5 class="card-title"><%= card.title %></h5>
+		    <p class="card-text"><%= card.body[0..50].html_safe%></p>
+		  </div>
+		</div>
+	</div>
+</div>
+
+

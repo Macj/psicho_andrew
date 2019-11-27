@@ -19,3 +19,4 @@
 //= require bootstrap-wysihtml5
 //= require turbolinks
 //= require_tree .
+//= require social-share-button

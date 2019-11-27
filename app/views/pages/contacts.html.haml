@@ -1,0 +1,49 @@
+%h2 Контакты
+.conteiner{style: "width: 49%; float: left; height: 450px"}
+  .text
+    Отвечаю на сообщения и звонки с 10:00 до 20:00.
+    %br
+    Если я не отвечаю или не беру трубку - значит я занят. Как только я освобожусь, сразу свяжусь с вами.
+    %br
+    Телефоны для звонков:
+    %br
+    +38(096)424-80-25
+    %br
+    +38(050)670-50-24
+    %br
+    Emeil: andreadetotti@gmail.com
+    %br
+  .form
+    %br
+    %h4{style: "text-align: center"}
+      Есть вопрос - заполни форму
+    = render partial: "/clients/form", locals: {hide_right_block: true}
+
+.conteiner{style: "width: 50%; float: left; height: 450px"}
+  .left-block{style: "width: 49%; float: left;"}
+    .block-1
+      .icons
+      %h4
+        Мои мессенджеры
+      %p
+        Viber: +38(096)424-80-25
+        %br
+        Telegram:  +38(096)424-80-25
+        %br
+        Skype: andreadetotti
+        %br
+        Мой терапевтический чат в Telegram
+
+    .block-2
+      .icons
+      %h4
+        Мои соц сети
+      %p
+        Facebook: andrei.tkachenko.ua
+        %br
+        ВК: tkachenko_psychology
+        %br
+        Мой Instagram: tkachenko_psychology
+        %br
+        Мой YouTube канал
+  .right-block{style: "width: 49%; float: left;"}

@@ -1,3 +1,6 @@
+- content_for :filters_panel do
+  = render partial: 'pages/articles_filters'
+
 - content_for :filters do
   %div{style: "height: 20px; float: left; margin: 15px 160px"} FIlters
 
@@ -6,7 +9,6 @@
 
 %br
 
-%div{ style: 'clear: both; hight: 100%' }
+%div#cards{ style: 'clear: both; hight: 100%; margin-left: auto; width: 90%' }
   - @articles.each do |article|
     = render partial: 'card', locals: {card: article, is_left: true }
-

@@ -12,11 +12,25 @@ get 'main' => 'pages#main'
 
 get 'about' => 'pages#about'
 
-get 'consultation' => 'pages#consultation' 
+get 'consultation' => 'pages#consultation'
+
+get 'contacts' => 'pages#contacts', as: :contacts
 
 get 'education' => 'pages#education' 
 
 get 'tests' => 'pages#tests'
+
+get 'faq' => 'pages#faq', as: :my_faq
+
+get 'contract' => 'pages#contract', as: :contract
+
+get 'my-services' => 'pages#services', as: :my_services
+
+get 'my-reviews' => 'pages#reviews', as: :my_reviews
+
+get 'work-with' => 'pages#work_with', as: :work_with 
+
+get 'methods' => 'pages#methods', as: :methods
 
 root "pages#main"
   # The priority is based upon order of creation: first created -> highest priority.

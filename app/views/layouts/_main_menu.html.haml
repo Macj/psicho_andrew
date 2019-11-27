@@ -1,4 +1,6 @@
-.collapse.show#menu_collapse{style: "float:left; ml-5"}
+- show = defined?(visible) ? "display:block" : ""
+- shift = defined?(visible) ? "left:575px" : ""
+.collapse#menu_collapse{style: "float:left; ml-5; #{show}"}
   %a.ml-5{ href: "#{ about_path }" }
     %button.btn.btn-outline-dark{ type:"button" }
       Обо мне
@@ -8,9 +10,37 @@
   %a{ href: "#{education_path}" }
     %button.btn.btn-outline-dark{ type:"button" }
       Обучение
-  %a{ href: "#{consultation_path}" }
-    %button.btn.btn-outline-dark{ type:"button" }
-      Консультации
+  #consult{style: "display: inline"}
+    %a{ href: "#{consultation_path}" }
+      %button.btn.btn-outline-dark{ type:"button" }
+        Консультации
+    .collapse#sub_consult{style: "float:left; ml-5; #{shift}"}
+      .card.card-body
+        %a{ href: "#{contacts_path}" }
+          %button.btn.btn-outline-dark{ type:"button" }
+            Контакты
+        %a{ href: "#{my_faq_path}" } 
+          %button.btn.btn-outline-dark{ type:"button" }
+            Вопрос - ответ
+        %a{ href: "#{contract_path}" }
+          %button.btn.btn-outline-dark{ type:"button" }
+            Контракт
+
+        %a{ href: "#{my_services_path}" }
+          %button.btn.btn-outline-dark{ type:"button" }
+            Услуги
+
+        %a{ href: "#{my_reviews_path}" }
+          %button.btn.btn-outline-dark{ type:"button" }
+            Отзывы
+
+        %a{ href: "#{work_with_path}" }
+          %button.btn.btn-outline-dark{ type:"button" }
+            С чем работаю
+
+        %a{ href: "#{methods_path}" }
+          %button.btn.btn-outline-dark{ type:"button" }
+            Мои методы
   %a.request
-    %button.btn.btn-outline-dark{ type:"button" }
+    %button.btn.btn-outline-dark.client_form_show{ type:"button", href:"#client_form"}
       Оставить заявку
