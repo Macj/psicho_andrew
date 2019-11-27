@@ -3,9 +3,14 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_action :set_cat_struct
+  before_action :set_client
 
 
   private
+    def set_client
+      @client = Client.new
+    end
+
     def set_cat_struct
       @cat1_ids = Cathegory.where(level: 1).pluck('cathegories.id')
       @cat1 = set_cat 1

@@ -5,37 +5,38 @@
 
 
 $( document ).ready ()->
-	$("#collapseContractOne").hide()
-	$("#collapseContractOneBack").hide()
+  $("#collapseContractOne").hide()
+  $("#collapseContractOneBack").hide()
+  $("#collapseBack").hide()
 
-	$("#consult").on 'mouseover', ->
-		$("#sub_consult").show()
+  $("#consult").on 'mouseover', ->
+    $("#sub_consult").show()
 
-	$("#consult").on 'mouseleave', -> 	
-		$("#sub_consult").hide()
+  $("#consult").on 'mouseleave', ->   
+    $("#sub_consult").hide()
 
-	$("#close_contract").on 'click', ->
-		$("#collapseContractOne").hide()
-		$("#collapseContractOneBack").hide()
+  $("#close_contract").on 'click', ->
+    $("#collapseContractOne").hide()
+    $("#collapseContractOneBack").hide()
 
-	$(".contract_button").on 'click', (e)->
-		e.preventDefault()
-		$("#collapseContractOne").show()
-		$("#collapseContractOneBack").show()
+  $(".contract_button").on 'click', (e)->
+    e.preventDefault()
+    $("#collapseContractOne").show()
+    $("#collapseContractOneBack").show()
 
-	$(".get-service").on 'click', (e)->
-		e.preventDefault()
-		console.log("get service")
-		$('#request_comment').value = "HAHA"
-		target = $(this).attr('data-target')
-		$(".service").removeClass('selected')
-		$('#'+target).addClass("selected")
-		$('#request_comment').text( $(this).attr('data') )
+  $(".get-service").on 'click', (e)->
+    e.preventDefault()
+    console.log("get service")
+    $('#request_comment').value = "HAHA"
+    target = $(this).attr('data-target')
+    $(".service").removeClass('selected')
+    $('#'+target).addClass("selected")
+    $('#request_comment').text( $(this).attr('data') )
 
-	$("#client_form_close").on 'click', ->
-	  $("#client_form").hide()
+  $("#client_form_close").on 'click', ->
+    $("#client_form").hide()
+    $("#collapseBack").hide() 
 
-	$(".client_form_show").on 'mousedown', ->
-	  $("#client_form").show()
-
-
+  $(".client_form_show").on 'mousedown', ->
+    $("#client_form").show()
+    $("#collapseBack").show()

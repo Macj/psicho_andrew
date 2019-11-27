@@ -26,6 +26,15 @@
       </div>
 
     </div>
+    <div id="collapseBack" style="position: fixed; left: 0px; top: 0px; width: 100%; height:100%;  background-color: black; opacity: 50%; z-index: 1"></div>
+    <div class="collapse" id="client_form" style="position:absolute; z-index: 9; margin-left:2.5%;" >
+      <div class="row">
+        <img class="close-button" id="client_form_close" src="assets/x.png" width="40px" heght="40px", style="float: right; display: block;  margin-bottom: 5px; position: absolute; z-index: 5">
+        <div class="card card-body" style="width: 90rem;">
+          <%= render partial: "clients/form" %>
+        </div>
+      </div>
+    </div>
 
     <div class="content" style="clear: both; margin: 70px 0 0px;">
       <%= yield %>
