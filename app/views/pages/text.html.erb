@@ -1,0 +1,86 @@
+bootstrap3-wysiwyg
+<br/>
+https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg
+
+<textarea id="some-textarea" placeholder="Enter text ..." ></textarea>
+<script type="text/javascript">
+	$('#some-textarea').wysihtml5({
+  toolbar: {
+    "font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
+    "emphasis": true, //Italics, bold, etc. Default true
+    "lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+    "html": true, //Button which allows you to edit the generated HTML. Default false
+    "link": true, //Button to insert a link. Default true
+    "image": true, //Button to insert an image. Default true,
+    "color": true, //Button to change color of font  
+    "blockquote": true, //Blockquote  
+    "size": 'sm' //default: none, other options are xs, sm, lg
+  }
+});
+</script>
+
+<br/>
+
+https://quilljs.com/docs/quickstart/
+<br/>
+<!-- Create the editor container -->
+
+<div id="editor">
+  <p>Hello World!</p>
+  <p>Some initial <strong>bold</strong> text</p>
+  <p><br></p>
+</div>
+
+<!-- Initialize Quill editor -->
+<script>
+  var toolbarOptions = [
+    ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+    ['blockquote', 'code-block'],
+
+    [{ 'header': 1 }, { 'header': 2 }],               // custom button values
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+    [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+    [{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+    [{ 'direction': 'rtl' }],                         // text direction
+
+    [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+
+    ['link', 'image'],
+
+    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+    [{ 'font': [] }],
+    [{ 'align': [] }],
+
+    ['clean']                                         // remove formatting button
+  ];
+
+  var options = {
+    debug: 'info',
+    modules: {
+      toolbar: toolbarOptions
+    },
+    placeholder: 'Приступим ка...',
+    theme: 'snow'
+  };
+  var editor = new Quill('#editor', options);
+
+
+</script>
+
+
+
+<br>
+SUmmer note
+https://summernote.org/getting-started/#run-summernote
+<textarea id="summernote" name="editordata"></textarea>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('#summernote').summernote();
+  });
+</script>
+
+
+
+
+

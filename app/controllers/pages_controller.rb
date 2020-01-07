@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  before_action :authenticate_user!, except: ['tmp']
 	layout "main", only: [:main]
 	
 	def main
@@ -52,6 +53,14 @@ class PagesController < ApplicationController
 
   def tests
   	
+  end
+
+  def tmp
+    @hide_menu = true
+  end
+
+  def text
+    
   end
 
 end

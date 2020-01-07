@@ -1,4 +1,15 @@
-class Article < ActiveRecord::Base
+require 'elasticsearch/model'
+
+class Article < ActiveRecord::Base  
+  extend ActiveSupport::Concern
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
+
+  # field :title, type: String
+  # field :body, type: String
+  # field :tags, type: String
+  #index_name "articles-#{Rails.env}"
+
   has_attached_file :image, default_url: "/assets/:style/missing.png"
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 

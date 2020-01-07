@@ -1,10 +1,21 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_service, only: [:show, :index]
+
+  def set_service
+    @services = Service.all[0..2]
+  end
 
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.all
+    q = params["query"]
+    if q
+      @articles = Article.search(q).records.all
+    else
+      @articles = Article.all
+    end
   end
 
   # GET /articles/1

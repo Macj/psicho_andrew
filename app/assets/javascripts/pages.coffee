@@ -8,6 +8,11 @@ $( document ).ready ()->
   $("#collapseContractOne").hide()
   $("#collapseContractOneBack").hide()
   $("#collapseBack").hide()
+  $('.work-block').hide()
+  $("#multiCollapseWork").hide()
+  $("#multiCollapseExpo2").hide()
+  $(".princip").hide()
+  $("#princOne").show()
 
   $("#consult").on 'mouseover', ->
     $("#sub_consult").show()
@@ -40,3 +45,26 @@ $( document ).ready ()->
   $(".client_form_show").on 'mousedown', ->
     $("#client_form").show()
     $("#collapseBack").show()
+
+  $("#expo_btn").on 'click', ->
+    $("#multiCollapseExpo2").toggle("slow")
+    $('.work-block').hide()
+
+  $("#work_btn").on 'click', ->
+    $("#multiCollapseWork").toggle("slow")
+
+  $(".work-cur-btn").on 'click', ->
+    id = $(this).attr('href')
+    $("#multiCollapseExpo2").hide()
+    $('.work-block').hide()
+    $(id).show("slow")    
+
+
+  $(".princip-btn").on 'click', ->
+    $(".princip").hide()
+    id = $(this).attr('href')
+    console.log(id)
+    $(id).show("slow")
+
+  $('#search_submit').on 'click', ->
+    $('#search').submit()

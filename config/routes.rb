@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :cathegories
   resources :courses
   resources :articles
@@ -32,7 +33,9 @@ get 'work-with' => 'pages#work_with', as: :work_with
 
 get 'methods' => 'pages#methods', as: :methods
 
-root "pages#main"
+get 'text' => 'pages#text', as: :text
+
+root "pages#tmp"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

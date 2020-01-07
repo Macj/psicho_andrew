@@ -1,0 +1,16 @@
+%tr.art_list_row.ml-3.mt-3{ style: "height: 35px;" }
+  %td{ style: "height: 35px;" }
+    = image_tag(card.image.url, class: 'img-thumbnail  m-3', style: "height: 80px;") 
+  %td
+    = parent_links(card.cathegory)
+  %td
+    = link_to card.title, card
+  %td
+    Style: 
+    = Article::STYLES[card.style]
+  %td
+    Tags:
+    = card.tags
+  %td
+    = link_to 'Открыть', card, class: '.btn.btn-primary'
+    = link_to 'Удалить', card, class: 'pl-5', method: :delete, data: { confirm: 'Are you sure?' }

@@ -6,14 +6,26 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
   <%= csrf_meta_tags %>
+
+
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+  <!-- include summernote css/js --> 
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.js"></script>
 </head>
 <body>
+  <!-- Include the Quill library -->
+  <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
   <div class="container-fluid " style="height:1500px;width:auto;margin-left:250px; margin-right:250px; margin-top: 20px">
     <div class="navigation" style="height:60px; clear:both;">
-      <div class="menu_line">
-        <%= render partial: '/layouts/main_menu', locals: {visible: true} %>
-        <%= render partial: '/layouts/call_me' %>
-      </div>
+      <%- unless(defined?(@hide_menu)) %>
+        <div class="menu_line">
+          <%= render partial: '/layouts/main_menu', locals: {visible: true} %>
+          <%= render partial: '/layouts/call_me' %>
+        </div>
+      <% end %>
 
       <div class="filters" style="height:60px; margin-top: 10px; clear:both;">
          <%= yield :filters_panel %>

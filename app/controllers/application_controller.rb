@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   private
     def set_client
       @client = Client.new
+      @services = Service.all[0..2]
     end
 
     def set_cat_struct

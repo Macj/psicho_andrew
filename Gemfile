@@ -43,12 +43,15 @@ gem 'telegram-bot-ruby', '~> 0.11.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'bootstrap', '~> 4.3.1'
 gem "bootstrap-wysihtml5-rails"
 
-
-gem 'bootstrap', '~> 4.3.1'
-
 gem 'social-share-button'
+
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
