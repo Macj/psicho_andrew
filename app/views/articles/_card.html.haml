@@ -3,18 +3,9 @@
   .img-thunb-block
     = image_tag(card.image.url, class: 'img-thumbnail  m-3') 
   .card-body
-    .card-level
-      = parent_links(card.cathegory)
     %h5.card-title
       = link_to card.title, card
-    %h6
-      Style: 
-      = Article::STYLES[card.style]
-    %h6
-      Tags:
-      = card.tags
+    .card-level
+      = parent_links(card.cathegory)
     .card_text{style: "width:150px; max-width:150px;"}
       = card.body.html_safe
-
-    = link_to 'Открыть', card, class: '.btn.btn-primary'
-    = link_to 'Удалить', card, class: 'pl-5', method: :delete, data: { confirm: 'Are you sure?' }

@@ -17,6 +17,7 @@ class Article < ActiveRecord::Base
   STYLES = [[1,'Ordinary'], [2,'Pro']].to_h
 
   def latest
+    return [] unless self.cathegory
   	Article.where(cathegory_id: self.cathegory.id).where('id != ?', self.id).last(3)
   end
 end

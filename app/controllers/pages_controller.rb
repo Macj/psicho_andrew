@@ -59,8 +59,8 @@ class PagesController < ApplicationController
     @hide_menu = true
   end
 
-  def text
-    
-  end
+  def text; end
+
+  def make_order; end
 
 end

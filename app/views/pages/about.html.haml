@@ -1,4 +1,4 @@
-.container-fluid{style: "height: 802px; border: 4px solid lightgray; border-left: none; border-right: none; border-top: none;"}
+.container-fluid{style: "height: 862px; border: 4px solid lightgray; border-left: none; border-right: none; border-top: none;"}
   
   .container.left{style: 'width:50%; float:left'}
     %img.img-fluid{src: "assets/photo_x.jpg"}
@@ -10,7 +10,7 @@
         %h5.card-title{style: "margin-left: 40%"} психолог
         %p.card-text
           Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог. Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. Я помогаю улучшить качество жизни каждого моего клиента, избавляя его от невроза, тревоги, страхов, депрессии и проблем в личной жизни (смотрите полный 
-          %a{href: "#" }
+          %a{href: "/work-with" }
             список решаемых проблем
           ).
         %p.card-text
@@ -29,7 +29,7 @@
           На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Стандартная консультация длится минимум 2 часа, во время которой мы нарабатываем те навыки мышления и поведения, которые позволят Вам автоматически избавиться от накопленных проблем. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире. 
           %br
           %br
-          %a.btn.btn-primary{ href: "#", style: "margin-left: 30%"}
+          %a.btn.btn-light{ href: "/methods", style: "margin-left: 30%;background-color: lightblue"}
             Подробнее о методах работы
   
 
@@ -47,12 +47,12 @@
   - @services.each do |service|
     = render partial: '/services/card', locals: {card: service}
 
-.container-fluid{style: "color: white; font-size: 20px; text-align: center; clear: both; margin-left: 7px; background-color: #17a2b8; height: 480px; padding-top: 20px; padding-left: 0px; padding-right: 0px"}
+.container-fluid#include{style: ""}
   %h3 В стоимость консультации входит:
   %br
   = render partial: 'include'
 
-.container-fluid#principles{style: "text-align: center; clear: both; margin-left: 7px; height: 450px; padding-top: 20px; padding-left: 6px; border: 4px solid lightgray; border-left: none; border-right: none;  border-top:none;"}
+.container-fluid#principles{style: "text-align: center; clear: both;  height: 450px; padding-top: 20px; padding-left: 7px; border: 4px solid lightgray; border-left: none; border-right: none;  border-top:none;"}
   = render partial: 'principles'
 
 .container-fluid#feedbacks{style: " text-align: center; border: none;"}

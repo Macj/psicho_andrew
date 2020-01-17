@@ -35,6 +35,8 @@ get 'methods' => 'pages#methods', as: :methods
 
 get 'text' => 'pages#text', as: :text
 
+get 'make_order' => 'pages#make_order', as: :make_order
+
 root "pages#tmp"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

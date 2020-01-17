@@ -14,6 +14,7 @@ $( document ).ready ()->
   $(".princip").hide()
   $("#princOne").show()
 
+  console.log('inside')
   $("#consult").on 'mouseover', ->
     $("#sub_consult").show()
 

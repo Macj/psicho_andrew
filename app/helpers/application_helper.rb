@@ -1,5 +1,6 @@
 module ApplicationHelper
   def parent_links cathegory
+    return (crumb_head + crumb_foot).html_safe unless cathegory
     parents = cathegory.parent_link
 
     result = crumb_head

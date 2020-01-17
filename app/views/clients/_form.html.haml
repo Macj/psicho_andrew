@@ -92,6 +92,6 @@
       .right_group{style: 'float:left; width: 60%; max-height:800px; height: auto'}
         .row
           = render(partial: "pages/client_right_panel")
-        .row
+        .row#collapseContractPanel
           = render(partial: "pages/contract_document", locals: {on_forn: true})
         

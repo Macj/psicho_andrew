@@ -12,7 +12,8 @@
       = f.text_field :title, class: 'form-control'
     .form-group.row
       = f.label :body, class: 'col-sm-1'
-      = f.text_area :body, class: 'form-control wysihtml5', placeholder:"Начни свою статью ..."
+    = f.text_area :body, class: 'form-control ', id: 'summernote', placeholder:"Начни свою статью ..."
+    %br
     .form-group.row
       = f.label :cathegory_id, class: 'col-sm-1'
       = f.select :cathegory_id, Cathegory.all.map{|cat| [cat.name, cat.id] }, class: 'form-control'
@@ -27,3 +28,6 @@
       = f.file_field :image, class: 'form-control', style:"height:auto; border:none"
     .actions
       = f.submit 'Save', class: 'btn btn-info'
+
+%script
+  $('#summernote').summernote();

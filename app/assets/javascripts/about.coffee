@@ -1,6 +1,5 @@
 $( document ).ready ()->
   $('.find_out').hide()
-  console.log('asdasdsa')
 
   $('.find_out_card').hover ()->
   	id = $(this).attr('ref')
@@ -18,5 +17,3 @@ $( document ).ready ()->
 
   $('#aja').on 'click', ()->
 	  elem = $('.aja_block')
-
-	  #.text() 
