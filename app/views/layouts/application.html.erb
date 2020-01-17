@@ -49,6 +49,20 @@
     </div>
 
     <div class="content" style="clear: both; margin: 70px 0 0px;">
+      <div> 
+        <p>tmp menu</p>
+        <ul>
+          
+          <li><a href="<%= cathegories_path() %>"> Категории </a></li>
+          <li><a href="<%= courses_path() %>">     Курсы </a></li>
+          <li><a href="<%= articles_path() %>">    Статьи </a></li>
+          <li><a href="<%= services_path() %>">    Услуги </a></li>
+          <li><a href="<%= faqs_path() %>">        *ЧАсто задаваемые  </a></li>
+          <li><a href="<%= clients_path() %>">     *Клиенты </a></li>
+          <li><a href="<%= experiences_path() %>"> *Опыт </a></li>
+          <li><a href="<%= reviews_path() %>">     Обзоры </a></li>
+        </ul>
+      </div>
       <%= yield %>
     </div>
   </div>
