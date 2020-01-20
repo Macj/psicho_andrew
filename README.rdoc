@@ -39,3 +39,18 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+systemctl status nginx
+
+On production
+Для остановки веб-сервера используйте команду:
+
+    sudo systemctl stop nginx
+
+Для запуска остановленного веб-сервера наберите:
+
+    sudo systemctl start nginx
+
+Для перезапуска веб-сервера можно использовать следующую команду:
+
+    sudo systemctl restart nginx
