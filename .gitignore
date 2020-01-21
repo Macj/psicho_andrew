@@ -17,6 +17,7 @@
 /tmp
 
 /config/database.yml # доступ к базе данным
+/config/database_old.yml
 /Procfile # про него я еще расскажу
 /config/deploy/ # файлы Capistrano
 /shared/ # файлы, которых нет в репозитории, но они будут скопированы на сервер при первом деплое приложения

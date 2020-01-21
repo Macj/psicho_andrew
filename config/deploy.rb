@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:Macj/psicho_andrew.git"
 
 application = 'pl_consult'
 set :rvm_type, :user
-set :rvm_ruby_version, '2.6.5p114'
+#set :rvm_ruby_version, '2.7.0p0'
 set :deploy_to, '/var/www/apps/pl_consult'
 
 namespace :foreman do
