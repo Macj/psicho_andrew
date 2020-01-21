@@ -12,7 +12,8 @@ namespace :foreman do
   desc 'Start server'
   task :start do
     on roles(:all) do
-      execute "cd #{current_path} && foreman start"
+      execute "cd #{current_path}"
+      execute "foreman start"
     end
   end
 
@@ -69,14 +70,16 @@ namespace :deploy do
 
 
       upload!('shared/nginx.conf', "#{shared_path}/nginx.conf")
-      sudo 'stop nginx'
+      sudo 'service nginx stop'
       sudo "rm -f /etc/nginx/nginx.conf"
       sudo "ln -s #{shared_path}/nginx.conf /etc/nginx/nginx.conf"
-      sudo 'start nginx'
+      sudo 'service nginx start'
 
       within release_path do
         with rails_env: fetch(:rails_env) do
           execute :rake, "db:create"
+          execute :rake, "db:seed"
+          execute :rake, "db:migrate"
         end
       end
     end
