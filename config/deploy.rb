@@ -12,21 +12,23 @@ namespace :foreman do
   desc 'Start server'
   task :start do
     on roles(:all) do
-      sudo "start #{application}"
+      execute "cd #{current_path} && foreman start"
     end
   end
 
   desc 'Stop server'
   task :stop do
     on roles(:all) do
-      sudo "stop #{application}"
+      execute "cd #{current_path}"
+      execute "foreman stop"
     end
   end
 
   desc 'Restart server'
   task :restart do
     on roles(:all) do
-      sudo "restart #{application}"
+      execute "cd #{current_path}"
+      execute "foreman restart"
     end
   end
 
