@@ -6,7 +6,6 @@ set :repo_url, "git@github.com:Macj/psicho_andrew.git"
 
 application = 'pl_consult'
 set :rvm_type, :user
-#set :rvm_ruby_version, '2.7.0p0'
 set :deploy_to, '/var/www/apps/pl_consult'
 
 namespace :foreman do
@@ -60,18 +59,18 @@ namespace :deploy do
       execute "mkdir  /var/www/apps/#{application}/log/"
       execute "mkdir  /var/www/apps/#{application}/socket/"
       execute "mkdir #{shared_path}/system"
-      sudo "ln -s /var/log/upstart /var/www/log/upstart"
+      #sudo "ln -s /var/log/upstart /var/www/log/upstart"
 
       upload!('shared/database.yml', "#{shared_path}/config/database.yml")
       
       upload!('shared/Procfile', "#{shared_path}/Procfile")
 
 
-      upload!('shared/nginx.conf', "#{shared_path}/nginx.conf")
-      sudo 'stop nginx'
-      sudo "rm -f /usr/local/nginx/conf/nginx.conf"
-      sudo "ln -s #{shared_path}/nginx.conf /usr/local/nginx/conf/nginx.conf"
-      sudo 'start nginx'
+      # upload!('shared/nginx.conf', "#{shared_path}/nginx.conf")
+      # execute 'systemctl stop nginx'
+      # sudo "rm -f /usr/local/nginx/conf/nginx.conf"
+      # sudo "ln -s #{shared_path}/nginx.conf /usr/local/nginx/conf/nginx.conf"
+      # execute 'systemctl stop nginx'
 
       within release_path do
         with rails_env: fetch(:rails_env) do
@@ -131,7 +130,6 @@ namespace :deploy do
   before :setup, 'bundler:install'
 end
 
-before :deploy, 'git:deploy'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

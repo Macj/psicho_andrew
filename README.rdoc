@@ -55,6 +55,7 @@ On production
 
     sudo systemctl restart nginx
 
+sudo apt-get install libpq-dev
 
 
     выполняем cap production deploy:setup при самом первом деплое Вашего приложения.
