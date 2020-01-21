@@ -14,3 +14,9 @@ production:
   database: adnry_db
   username: deployer
   password: pl1force
+
+development:
+  <<: *default
+  database: adnry_db
+  username: andry
+  password: pl1force
