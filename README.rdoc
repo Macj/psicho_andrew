@@ -54,3 +54,8 @@ On production
 Для перезапуска веб-сервера можно использовать следующую команду:
 
     sudo systemctl restart nginx
+
+
+
+    выполняем cap production deploy:setup при самом первом деплое Вашего приложения.
+    выполняем cap production deploy при каждом деплое Вашего приложения.
