@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Andrey</title>
+  <link rel="stylesheet" media="all" href="Andrey_files/application.css" data-turbolinks-track="true">
+  <script src="Andrey_files/jquery.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/jquery_ujs.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/jquery3.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/popper.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/bootstrap.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/wysihtml5x-toolbar.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/handlebars.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/templates.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/bootstrap3-wysihtml5.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/commands.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/en-US.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/index.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/turbolinks.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/about.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/articles.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/cathegories.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/clients.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/courses.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/experiences.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/faqs.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/pages.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/reviews.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/services.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/social-share-button.js" data-turbolinks-track="true"></script>
+<script src="Andrey_files/application.js" data-turbolinks-track="true"></script>
+  <script src="Andrey_files/tinymce.js"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="ZOojveXBUSIQUsdANZmPeHueBK+3ypgxWXBGreqh15Pvi/+yeKL1S9ZMo20OaXPcwPhDqT6l/Vn98MidOjGtRw==">
+</head>
+<body>
+  <div class="container-fluid " style="height:1500px;width:auto;margin-left:250px; margin-right:250px; margin-top: 20px">
+    <div class="navigation" style="height:60px; clear:both;">
+      <div class="menu_line">
+        <div class="collapse show" id="menu_collapse" style="float:left; ml-5">
+<a class="ml-5" href="http://localhost:3000/about">
+<button class="btn btn-outline-dark" type="button">
+Обо мне
+</button>
+</a>
+<a href="http://localhost:3000/articles">
+<button class="btn btn-outline-dark" type="button">
+Статьи
+</button>
+</a>
+<a href="http://localhost:3000/education">
+<button class="btn btn-outline-dark" type="button">
+Обучение
+</button>
+</a>
+<a href="http://localhost:3000/consultation">
+<button class="btn btn-outline-dark" type="button">
+Консультации
+</button>
+</a>
+<a class="request">
+<button class="btn btn-outline-dark" type="button">
+Оставить заявку
+</button>
+</a>
+</div>
+
+        <a class="btn btn-success" style="display: block; float:right; color: white" type="button">
+Оставьте Заявку
+</a>
+
+      </div>
+
+      <div class="filters" style="height:60px; margin-top: 10px; clear:both;">
+          <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="float:left; margin: 5px">
+            Каталог статей
+          </a>
+          
+          
+
+          <div class="input-group" style="float:right; width:350px">
+  <div class="col-sm-10" style="padding-right: 0px;">
+    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="btnGroupAddon">
+  </div>
+  <div class="input-group-append" style="margin-left:-2px">
+    <button class="btn btn-outline-secondary" type="button" style="border-color: #c3c3c3">
+      <img style="height: 20px" src="Andrey_files/search.png" alt="Search">
+    </button>
+  </div>
+</div>
+          
+      </div>
+
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body" style=" display: block">
+            <div class="row"><div class="mr-3" style="width: 250px"><div class="nav flex-column nav-pills" id="v-cats-tab" role="tablist" aria-orientation="vertical"><a class="nav-link" id="v-cats-1-tab" data-toggle="pill" data-target="#v-cats-1" href="http://localhost:3000/cathegories/1" role="tab" aria-controls="v-cats-1" aria-selected="true">first </a><a class="nav-link" id="v-cats-2-tab" data-toggle="pill" data-target="#v-cats-2" href="http://localhost:3000/cathegories/2" role="tab" aria-controls="v-cats-2" aria-selected="true">second </a>   </div></div><div class="col-9"><div class="tab-content" id="v-cats-tabContent"><div class="tab-pane fade" id="v-cats-1" role="tabpanel" aria-labelledby="v-cats-1-tab">
+        <div class="row"><div class="mr-3" style="width: 250px"><div class="nav flex-column nav-pills" id="v-cats-tab" role="tablist" aria-orientation="vertical"><a class="nav-link" id="v-cats-5-tab" data-toggle="pill" data-target="#v-cats-5" href="http://localhost:3000/cathegories/5" role="tab" aria-controls="v-cats-5" aria-selected="true">5-th </a><a class="nav-link" id="v-cats-3-tab" data-toggle="pill" data-target="#v-cats-3" href="http://localhost:3000/cathegories/3" role="tab" aria-controls="v-cats-3" aria-selected="true">third </a>   </div></div><div class="col-9"><div class="tab-content" id="v-cats-tabContent"><div class="tab-pane fade" id="v-cats-5" role="tabpanel" aria-labelledby="v-cats-5-tab">
+        <div class="row"><div class="mr-3" style="width: 250px"><div class="nav flex-column nav-pills" id="v-cats-tab" role="tablist" aria-orientation="vertical"><a class="nav-link" id="v-cats-6-tab" data-toggle="pill" data-target="#v-cats-6" href="http://localhost:3000/cathegories/6" role="tab" aria-controls="v-cats-6" aria-selected="true">6-th e </a>   </div></div><div class="col-9"><div class="tab-content" id="v-cats-tabContent"><div class="tab-pane fade" id="v-cats-6" role="tabpanel" aria-labelledby="v-cats-6-tab">
+      </div></div></div></div></div><div class="tab-pane fade" id="v-cats-3" role="tabpanel" aria-labelledby="v-cats-3-tab">
+      </div></div></div></div></div><div class="tab-pane fade" id="v-cats-2" role="tabpanel" aria-labelledby="v-cats-2-tab">
+        <div class="row"><div class="mr-3" style="width: 250px"><div class="nav flex-column nav-pills" id="v-cats-tab" role="tablist" aria-orientation="vertical"><a class="nav-link" id="v-cats-4-tab" data-toggle="pill" data-target="#v-cats-4" href="http://localhost:3000/cathegories/4" role="tab" aria-controls="v-cats-4" aria-selected="true">4-th </a>   </div></div><div class="col-9"><div class="tab-content" id="v-cats-tabContent"><div class="tab-pane fade" id="v-cats-4" role="tabpanel" aria-labelledby="v-cats-4-tab">
+      </div></div></div></div></div></div></div></div>        
+        </div>
+      </div>
+
+    </div>
+
+    <div class="content" style="clear: both; margin: 70px 0 0px;">
+      <div class="container-fluid">
+<div class="title" style="margin: auto; width: 80%">
+<h2>
+ЛИЧНЫЕ КОНСУЛЬТАЦИИ ПСИХОЛОГА
+</h2>
+</div>
+<div class="card card-body" style="height: 650px; width: 80%; margin: auto; ">
+<iframe src="Andrey_files/k9eph-UuMZE.html" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="100%" height="100%" frameborder="0"></iframe>
+</div>
+<div class="container">
+<font style="font-weight:bold">
+Психологическое консультирование
+</font>
+<font>- один из видов психологической помощи.</font>
+<br>
+На деле - специально выстроенный диалог двух людей.
+Разовые консультации применяются для:
+<br>
+<ul>
+<li>
+разрешения проблем в отношениях с другими людьми
+</li>
+<li>
+принятия сложных жизненных решений (как поступить в данной ситуации; какую цель в жизни выбрать) и мелких бытовых вопросов
+</li>
+<li>
+для саморазвития
+</li>
+<li>
+для диагностики своего состояния и анализа своей ситуации
+</li>
+</ul>
+​
+<br>
+Психотерапия - состоит из нескольких психологических консультаций. Это 
+комплексное психологическое воздействие на эмоции, убеждения, поведение 
+человека для избавления от многих социальных, психических, нервных и 
+психосоматических проблем при помощи психотехник.
+<br>
+​
+<p style="font-weight:bold">Цели:​</p>
+<ul>
+<li>
+оказание психологической помощи, т. е. разговор с психологом должен 
+помочь человеку в решении его проблем и налаживании взаимоотношений с 
+окружающими;
+</li>
+<li>
+расширение представления клиента о сути и причинах возникновения своей проблемной ситуации;
+</li>
+<li>
+помощь в нахождении целей в жизни, ценностей, приоритетов и задач на будущее, создание самоопределения клиента;
+</li>
+<li>
+избавления клиента от симптомов проблемы. Смотреть список проблем
+</li>
+<li>
+облегчение эмоционального состояния клиента.
+</li>
+<li>
+развитие гибкости, умения находить новые, эффективные модели мышления и поведения.
+</li>
+</ul>
+​
+Основная задача психолога - избавить клиента от симптомов проблемы и 
+сделать его СИЛЬНЫМ, научить клиента справляться со своей жизнью 
+самостоятельно, без психологов, врачей и таблеток.
+</div>
+</div>
+
+    </div>
+  </div>
+
+
+
+</body></html>
