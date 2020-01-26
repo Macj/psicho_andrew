@@ -13,7 +13,7 @@ set :deploy_to, "/var/www/apps/pl_consult"
 set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
 unicorn_conf = "#{deploy_to}/current/config/unicorn.rb"
 set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
-
+unicorn_pid = "#{deploy_to}/shared/pids/unicorn.pid"
 set :use_sudo, false
 set :rvm_ruby_string, 'ree' # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 
@@ -21,12 +21,6 @@ set :repo_url,  "git@github.com:Macj/psicho_andrew.git" # Путь до ваше
 set :branch, "master" # Ветка из которой будем тянуть код для деплоя.
 set :deploy_via, :remote_cache # Указание на то, что стоит хранить кеш репозитария локально и с каждым деплоем лишь подтягивать произведенные изменения. Очень актуально для больших и тяжелых репозитариев.
 
-
-after 'deploy:updating', :roles => :app do
-  # Здесь для примера вставлен только один конфиг с приватными данными - database.yml. Обычно для таких вещей создают папку /srv/myapp/shared/config и кладут файлы туда. При каждом деплое создаются ссылки на них в нужные места приложения.
-  run "rm -f #{current_release}/config/database.yml"
-  run "ln -s /var/www/apps/pl_consult/shared/config/database.yml /var/www/apps/pl_consult/current/config/database.yml"
-end
 
 # Далее идут правила для перезапуска unicorn. Их стоит просто принять на веру - они работают.
 # В случае с Rails 3 приложениями стоит заменять bundle exec unicorn_rails на bundle exec unicorn
