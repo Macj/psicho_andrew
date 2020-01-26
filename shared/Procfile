@@ -1,1 +1,0 @@
-web: bundle exec unicorn_rails -c /var/www/apps/pl_consult/current/config/unicorn.rb -E production 

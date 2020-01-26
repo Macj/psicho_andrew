@@ -20,5 +20,5 @@
 /config/database_old.yml
 /Procfile 
 /config/deploy/ 
-/shared/
+/shared
 /public/system/ 

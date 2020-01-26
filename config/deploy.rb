@@ -1,171 +1,43 @@
-# config valid for current version and patch releases of Capistrano
-lock "~> 3.11.2"
+require 'rvm/capistrano' # Для работы rvm
+require 'bundler/capistrano' # Для работы bundler. При изменении гемов bundler автоматически обновит все гемы на сервере, чтобы они в точности соответствовали гемам разработчика. 
 
 set :application, "pl_consult"
-set :repo_url, "git@github.com:Macj/psicho_andrew.git"
+set :rails_env, "production"
+set :domain, "deployer@178.79.182.7" # Это необходимо для деплоя через ssh. Именно ради этого я настоятельно советовал сразу же залить на сервер свой ключ, чтобы не вводить паролей.
+set :deploy_to, "/var/www/apps/#{application}"
+set :use_sudo, false
+set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
+set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
 
-application = 'pl_consult'
-set :rvm_type, :user
-set :deploy_to, '/var/www/apps/pl_consult'
+set :rvm_ruby_string, 'ree' # Это указание на то, какой Ruby интерпретатор мы будем использовать.
 
-namespace :foreman do
-  desc 'Start server'
-  task :start do
-    on roles(:all) do
-      execute "cd #{current_path}"
-      execute "foreman start"
-    end
-  end
+set :scm, :git # Используем git. Можно, конечно, использовать что-нибудь другое - svn, например, но общая рекомендация для всех кто не использует git - используйте git. 
+set :repository,  "git@github.com:Macj/psicho_andrew.git" # Путь до вашего репозитария. Кстати, забор кода с него происходит уже не от вас, а от сервера, поэтому стоит создать пару rsa ключей на сервере и добавить их в deployment keys в настройках репозитария.
+set :branch, "master" # Ветка из которой будем тянуть код для деплоя.
+set :deploy_via, :remote_cache # Указание на то, что стоит хранить кеш репозитария локально и с каждым деплоем лишь подтягивать произведенные изменения. Очень актуально для больших и тяжелых репозитариев.
 
-  desc 'Stop server'
-  task :stop do
-    on roles(:all) do
-      execute "cd #{current_path}"
-      execute "foreman stop"
-    end
-  end
+role :web, domain
+role :app, domain
+role :db,  domain, :primary => true
 
-  desc 'Restart server'
-  task :restart do
-    on roles(:all) do
-      execute "cd #{current_path}"
-      execute "foreman restart"
-    end
-  end
+before 'deploy:setup', 'rvm:install_rvm', 'rvm:install_ruby' # интеграция rvm с capistrano настолько хороша, что при выполнении cap deploy:setup установит себя и указанный в rvm_ruby_string руби.
 
-  desc 'Server status'
-  task :status do
-    on roles(:all) do
-      execute "initctl list | grep #{application}"
-    end
-  end
+after 'deploy:update_code', :roles => :app do
+  # Здесь для примера вставлен только один конфиг с приватными данными - database.yml. Обычно для таких вещей создают папку /srv/myapp/shared/config и кладут файлы туда. При каждом деплое создаются ссылки на них в нужные места приложения.
+  run "rm -f #{current_release}/config/database.yml"
+  run "ln -s #{deploy_to}/shared/config/database.yml #{current_release}/config/database.yml"
 end
 
-namespace :git do
-  desc 'Deploy'
-  task :deploy do
-    ask(:message, "Commit message?")
-    run_locally do
-      execute "git add -A"
-      execute "git commit -m '#{fetch(:message)}'"
-      execute "git push origin master"
-    end
-  end
-end
-
+# Далее идут правила для перезапуска unicorn. Их стоит просто принять на веру - они работают.
+# В случае с Rails 3 приложениями стоит заменять bundle exec unicorn_rails на bundle exec unicorn
 namespace :deploy do
-  desc 'Setup'
-  task :setup do
-    on roles(:all) do
-      execute "mkdir  #{shared_path}/config/"
-      execute "mkdir  /var/www/apps/#{application}/run/"
-      execute "mkdir  /var/www/apps/#{application}/log/"
-      execute "mkdir  /var/www/apps/#{application}/socket/"
-      execute "mkdir #{shared_path}/system"
-      #sudo "ln -s /var/log/upstart /var/www/log/upstart"
-
-      upload!('shared/database.yml', "#{shared_path}/config/database.yml")
-      
-      upload!('shared/Procfile', "#{shared_path}/Procfile")
-
-
-      upload!('shared/nginx.conf', "#{shared_path}/nginx.conf")
-      sudo 'service nginx stop'
-      sudo "rm -f /etc/nginx/nginx.conf"
-      sudo "ln -s #{shared_path}/nginx.conf /etc/nginx/nginx.conf"
-      sudo 'service nginx start'
-
-      within release_path do
-        with rails_env: fetch(:rails_env) do
-          execute :rake, "db:create"
-          execute :rake, "db:migrate"
-          execute :rake, "db:seed"
-        end
-      end
-    end
-  end
-
-  desc 'Create symlink'
-  task :symlink do
-    on roles(:all) do
-      execute "ln -s #{shared_path}/config/database.yml #{release_path}/config/database.yml"
-      execute "ln -s #{shared_path}/Procfile #{release_path}/Procfile"
-      execute "ln -s #{shared_path}/system #{release_path}/public/system"
-    end
-  end
-
-  desc 'Foreman init'
-  task :foreman_init do
-    on roles(:all) do
-      foreman_temp = "/var/www/tmp/foreman"
-      execute  "mkdir -p #{foreman_temp}"
-      # Создаем папку current для того, чтобы foreman создавал upstart файлы с правильными путями
-      execute "ln -s #{release_path} #{current_path}"
-
-      within current_path do
-        execute "cd #{current_path}"
-        execute :bundle, "exec foreman export upstart #{foreman_temp} -a #{application} -u deployer -l /var/www/apps/#{application}/log -d #{current_path}"
-      end
-      sudo "mv #{foreman_temp}/* /etc/init/"
-      sudo "rm -r #{foreman_temp}"
-    end
-  end
-
-
-  desc 'Restart application'
   task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      sudo "restart #{application}"
-    end
+    run "if [ -f #{unicorn_pid} ] && [ -e /proc/$(cat #{unicorn_pid}) ]; then kill -USR2 `cat #{unicorn_pid}`; else cd #{deploy_to}/current && bundle exec unicorn_rails -c #{unicorn_conf} -E #{rails_env} -D; fi"
   end
-
-  after :finishing, 'deploy:cleanup'
-  after :finishing, 'deploy:restart'
-
-  after :updating, 'deploy:symlink'
-
-  after :setup, 'deploy:foreman_init'
-
-  after :foreman_init, 'foreman:start'
-
-  before :foreman_init, 'rvm:hook'
-
-  before :setup, 'deploy:starting'
-  before :setup, 'deploy:updating'
-  before :setup, 'bundler:install'
+  task :start do
+    run "bundle exec unicorn_rails -c #{unicorn_conf} -E #{rails_env} -D"
+  end
+  task :stop do
+    run "if [ -f #{unicorn_pid} ] && [ -e /proc/$(cat #{unicorn_pid}) ]; then kill -QUIT `cat #{unicorn_pid}`; fi"
+  end
 end
-
-
-# Default branch is :master
-# ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
-# Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, "/var/www/my_app_name"
-
-# Default value for :format is :airbrussh.
-# set :format, :airbrussh
-
-# You can configure the Airbrussh format using :format_options.
-# These are the defaults.
-# set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
-
-# Default value for :pty is false
-# set :pty, true
-
-# Default value for :linked_files is []
-# append :linked_files, "config/database.yml"
-
-# Default value for linked_dirs is []
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
-
-# Default value for default_env is {}
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
-
-# Default value for local_user is ENV['USER']
-# set :local_user, -> { `git config user.name`.chomp }
-
-# Default value for keep_releases is 5
-# set :keep_releases, 5
-
-# Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure

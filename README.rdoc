@@ -40,6 +40,13 @@ Things you may want to cover:
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
+** postgresql
+login deployer
+password pl1force
+
+
+hostnamectl set-hostname example_hostname
+
 systemctl status nginx
 
 On production
@@ -60,3 +67,12 @@ sudo apt-get install libpq-dev
 
     выполняем cap production deploy:setup при самом первом деплое Вашего приложения.
     выполняем cap production deploy при каждом деплое Вашего приложения.
+
+
+на сервере 
+sudo nano /lib/systemd/system/pl_consult.service
+deployer@pl_consult:/var/www/apps/pl_consult/current$ sudo systemctl daemon-reload
+deployer@pl_consult:/var/www/apps/pl_consult/current$ sudo systemctl start pl_consult
+
+
+which bundle
