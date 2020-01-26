@@ -68,9 +68,6 @@ GEM
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
     climate_control (0.2.0)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
@@ -207,6 +204,8 @@ GEM
       railties (>= 5.0)
     ruby_parser (3.14.1)
       sexp_processor (~> 4.9)
+    rvm-capistrano (1.5.0)
+      capistrano (>= 2.15.4)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -285,10 +284,9 @@ DEPENDENCIES
   bootstrap (~> 4.3.1)
   bootstrap-wysihtml5-rails
   byebug
-  capistrano
+  capistrano (~> 3.6)
   capistrano-bundler
   capistrano-rails
-  capistrano-rvm
   coffee-rails (~> 4.1.0)
   devise
   elasticsearch-model
@@ -300,6 +298,7 @@ DEPENDENCIES
   paperclip (~> 5.1)
   pg (~> 0.18.4)
   rails
+  rvm-capistrano
   sass-rails (~> 5.0)
   sdoc (>= 0.4.0)
   social-share-button

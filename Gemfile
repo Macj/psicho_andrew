@@ -58,9 +58,9 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano'
+  gem 'capistrano', '~> 3.6'
   gem 'capistrano-rails'
-  gem 'capistrano-rvm'
+  gem "rvm-capistrano"
   gem 'capistrano-bundler'
 end
 
