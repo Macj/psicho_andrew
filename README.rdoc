@@ -76,3 +76,13 @@ deployer@pl_consult:/var/www/apps/pl_consult/current$ sudo systemctl start pl_co
 
 
 which bundle
+
+
+
+
+
+
+_______________________- pg
+
+sudo service postgresql restart
+/usr/lib/postgresql/10/bin/postgres
