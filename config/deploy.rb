@@ -10,6 +10,8 @@ set :rvm_ruby_version, 'ruby-2.6.3p62'
 set :rvm_binary, '~/.rvm/bin/rvm'
 
 set :deploy_to, "/var/www/apps/pl_consult"
+deploy_to = "/var/www/apps/pl_consult"
+current_release = "/var/www/apps/pl_consult/current"
 set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
 unicorn_conf = "#{deploy_to}/current/config/unicorn.rb"
 set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
@@ -25,6 +27,13 @@ set :deploy_via, :remote_cache # Указание на то, что стоит �
 # Далее идут правила для перезапуска unicorn. Их стоит просто принять на веру - они работают.
 # В случае с Rails 3 приложениями стоит заменять bundle exec unicorn_rails на bundle exec unicorn
 namespace :deploy do
+  task :init_conf do
+  	on roles(:app) do
+      execute "ln -s #{deploy_to}/shared/config/database.yml #{current_release}/config/database.yml"
+  	end
+  end
+
+
   task :restart do
   	on roles(:app) do
       execute "if [ -f #{unicorn_pid} ] && [ -e /proc/$(cat #{unicorn_pid}) ]; then kill -USR2 `cat #{unicorn_pid}`; else cd #{deploy_to}/current && bundle exec unicorn_rails -c #{unicorn_conf} -E #{rails_env} -D; fi"
@@ -42,4 +51,4 @@ namespace :deploy do
   end
 end
 
-after "deploy", "deploy:restart"
+after "deploy", "deploy:init_conf"

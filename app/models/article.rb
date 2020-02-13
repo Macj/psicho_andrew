@@ -16,8 +16,12 @@ class Article < ActiveRecord::Base
   belongs_to :cathegory
   STYLES = [[1,'Ordinary'], [2,'Pro']].to_h
 
-  def latest
+  def self.latest(id)
     return [] unless self.cathegory
-  	Article.where(cathegory_id: self.cathegory.id).where('id != ?', self.id).last(3)
+  	Article.where('id != ?', id).last(3)
+  end
+
+  def latest
+    where('cathegory_id != ?', self.cathegory_id).last(3)
   end
 end

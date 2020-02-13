@@ -11,6 +11,9 @@
       = f.label :title, class: 'col-sm-1'
       = f.text_field :title, class: 'form-control'
     .form-group.row
+      = f.label :description, class: 'col-sm-1'
+      = f.text_field :description, class: 'form-control'
+    .form-group.row
       = f.label :body, class: 'col-sm-1'
     = f.text_area :body, class: 'form-control ', id: 'summernote', placeholder:"Начни свою статью ..."
     %br

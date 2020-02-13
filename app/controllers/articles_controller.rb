@@ -22,8 +22,8 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @courses = Course.first(3)
-    @latest = @article.latest
-    @news = Article.where('cathegory_id != ?', @article.cathegory_id).last(3)
+    @latest = Article.latest(@article.id)
+    @news = @article.latest
   end
 
   # GET /articles/new
