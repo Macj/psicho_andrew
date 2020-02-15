@@ -88,3 +88,8 @@ sudo service postgresql restart
 /usr/lib/postgresql/10/bin/postgres
 pg_hba.conf
 sudo find / -name "pg_hba.conf" -print
+
+
+
+Deploy
+rake assets:precompile RAILS_ENV=production
