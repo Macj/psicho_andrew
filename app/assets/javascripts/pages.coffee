@@ -5,14 +5,24 @@
 
 
 $( document ).ready ()->
-  $("#collapseContractOne").hide()
-  $("#collapseContractOneBack").hide()
   $("#collapseBack").hide()
   $('.work-block').hide()
   $("#multiCollapseWork").hide()
   $("#multiCollapseExpo2").hide()
   $(".princip").hide()
   $("#princOne").show()
+
+  $("#collapseContractOne").hide()
+  $("#collapseContractOneBack").hide()
+  $("#collapseConsultOne").show()
+  console.log('hide')
+
+  $(".btn-consult").on 'click', (e)->
+    e.preventDefault()
+    point = $(this).attr('data-target')
+    $(".collapse-consult").hide()
+    $("#" + point).css('display', 'block')
+    console.log("#" + point)
 
   console.log('inside')
   $("#consult").on 'mouseover', ->
@@ -22,13 +32,14 @@ $( document ).ready ()->
     $("#sub_consult").hide()
 
   $("#close_contract").on 'click', ->
-    $("#collapseContractOne").hide()
-    $("#collapseContractOneBack").hide()
+    $("#collapseContractOne").css("display","none")
+    $("#collapseContractOneBack").css("display","none")
 
   $(".contract_button").on 'click', (e)->
-    e.preventDefault()
     $("#collapseContractOne").show()
     $("#collapseContractOneBack").show()
+    console.log('up')
+    e.preventDefault()
 
   $(".get-service").on 'click', (e)->
     e.preventDefault()
@@ -65,7 +76,7 @@ $( document ).ready ()->
     $(".princip").hide()
     id = $(this).attr('href')
     console.log(id)
-    $(id).show("slow")
+    $(id).show()
 
   $('#search_submit').on 'click', ->
     $('#search').submit()

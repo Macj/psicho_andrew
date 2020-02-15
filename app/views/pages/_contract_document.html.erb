@@ -1,8 +1,8 @@
 <%- width = defined?(on_forn).nil? ? "height: 600px;" : "height: 900px;" %>
-<div id="collapseContractOneBack" style="position: fixed; left: 0px; top: 0px; width: 100%; height:100%;  background-color: black; opacity: 50%; z-index: 10"></div>
-<div id="collapseContractOne" style="position: fixed; left: 20px; top: 20px; right:20px;  width: 100%; z-index: 10000;">
+<div id="collapseContractOneBack" style="position: fixed; left: 0px; top: 0px; width: 100%; height:100%;  background-color: black; opacity: 50%; z-index: 10; display: none"></div>
+<div id="collapseContractOne" style="position: fixed; left: 20px; top: 20px; right:20px;  width: 100%; z-index: 10000; display: none">
   <div class="card-body" style="padding: 20px; width: 98%;">
-    <img src="assets/x.png" class="close-button" id="close_contract" width="40px" heght="40px" style="float: right; display: block; margin-right: 10px">
+    <img src="/assets/x.png" class="close-button" id="close_contract" width="40px" heght="40px" style="float: right; display: block; margin-right: 10px">
     <iframe src="https://docs.google.com/viewer?url=https://ru.files.fm/down.php?i=a5rd456k&embedded=true " style=" width:100%; max-width:100%; <%= width %> " frameborder="0"></iframe>
   </div>
 </div>

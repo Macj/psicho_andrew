@@ -1,78 +1,84 @@
 <h3 class="ml-5"> Чтобы попасть на консультацию: </h3>
-<div class="accordion" id="accordionExample">
-  <div class="card collapse_button accordion_button_style" >
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Шаг первый
-        </button>
-      </h2>
+<div class="" id="consult_panel">
+  <div class="conteiner" style="height: 50px; clear: top;">
+    <div class="card   cl_fr_btn" >
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-consult" type="button" data-target="collapseConsultOne" aria-expanded="true" aria-controls="collapseOne">
+            Шаг первый
+          </button>
+        </h2>
+      </div>
     </div>
-  </div>
 
-  <div class="card collapse_button accordion_button_style" >
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Шаг второй
-        </button>
-      </h2>
+    <div class="card   cl_fr_btn" >
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-consult" type="button" data-target="collapseConsultTwo" >
+            Шаг второй
+          </button>
+        </h2>
+      </div>
+     
     </div>
-   
-  </div>
-  <div class="card collapse_button accordion_button_style">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Шаг третий
-        </button>
-      </h2>
+    <div class="card   cl_fr_btn">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-consult" type="button" data-target="collapseConsultThree" >
+            Шаг третий
+          </button>
+        </h2>
+      </div>
+      
     </div>
-    
-  </div>
-  <div class="card collapse_button accordion_button_style">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Шаг 4-й
-        </button>
-      </h2>
+    <div class="card   cl_fr_btn">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <button class="btn btn-link btn-consult" type="button" data-target="collapseConsultFour" >
+            Шаг 4-й
+          </button>
+        </h2>
+      </div>
+      
     </div>
-    
   </div>
+  <div class="conteiner" style="height: 750px; clear: top;">
+    <div id="collapseConsultOne" class="collapse-consult" >
+      <div class="card-body" style="width: 780px; margin-left: 10px; text-align:center">
+        Ознакомьтесь со списком услуг и стоимостью.
+        <br/>
+        <%- if @services.nil? %>
+          На данный момент нет активных сервисов.
+        <%- else%>
+          <%- @services.each do |service| %>
+            <%= render partial: '/services/min_card', locals: {card: service}%>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
 
-
-  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-    <div class="card-body" style="width: 780px; margin-left: 10px; text-align:center">
-      Ознакомьтесь со списком услуг и стоимостью.
-      <br/>
-      <%- @services.each do |service| %>
-        <%= render partial: '/services/min_card', locals: {card: service}%>
-      <% end %>
+     <div id="collapseConsultTwo" class="collapse-consult">
+      <div class="card-body">
+        Прочтите договор на предоставление психологических услуг.
+        <%= render partial: '/pages/contract_body' %>
+      </div>
     </div>
-  </div>
 
-   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-    <div class="card-body">
-      Прочтите договор на предоставление психологических услуг.
-      <%= render partial: '/pages/contract_body' %>
+    <div id="collapseConsultThree" class="collapse-consult" >
+      <div class="card-body">
+        Выберите в календаре свободное время для проведения консультации 
+        <br/>
+        или оставьте заявку и мы обязательно с вами свяжемся
+        <%= render partial: '/pages/calendar'%>
+      </div>
     </div>
-  </div>
 
-  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-    <div class="card-body">
-      Выберите в календаре свободное время для проведения консультации 
-      <br/>
-      или оставьте заявку и мы обязательно с вами свяжемся
-      <%= render partial: '/pages/calendar'%>
-    </div>
-  </div>
-
-  <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-    <div class="card-body">
-      Оставьте заявку и мы обязательно с вами свяжемся
-      <br/>
-      <======================
+    <div id="collapseConsultFour" class="collapse-consult" >
+      <div class="card-body">
+        Оставьте заявку и мы обязательно с вами свяжемся
+        <br/>
+        <======================
+      </div>
     </div>
   </div>
 

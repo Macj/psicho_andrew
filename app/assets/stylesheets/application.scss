@@ -44,7 +44,7 @@
 
 .menu_line{
   height: 60px;
-  border-bottom: solid 1px black;
+  border-bottom: solid 3px gray ;
 }
 
 .contacts{
@@ -364,4 +364,29 @@ r-icon{
   font-size: 18pt;
   box-shadow: 0 2px 7px black;
   }
+}
+.navigation{
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-top: 30px;
+  height: 90px;
+  width: 100%; 
+
+}
+
+footer{
+  height:500px; 
+  width: 100%; 
+  margin-top: 20px; 
+  padding-top: 50px; 
+  background: lightblue;  
+  float: left;
+}
+
+.cl_fr_btn{
+  float: left;
+}
+
+.collapse-consult{
+  display: none;
 }

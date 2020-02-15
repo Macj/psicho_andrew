@@ -1,6 +1,8 @@
 - width = defined?(hide_right_block).nil? ? "width: 40%;" : "width: 100%;" 
 
 - hide_right_block = defined?(:hide_right_block) ? hide_right_block : nil 
+- hide_days = defined?(:hide_days) ? hide_days : nil
+
 .form-group.pl-5.pr-5{style: "min-height: 750px"}
   = form_for @client do |f|
     .left_group{style: "float:left; #{width} height: 600px"}
@@ -25,44 +27,45 @@
           = f.text_field :phone, class: 'form-control', placeholder: "Номер телефона", style: 'width:400px'
       .form-group.row.ml-3
         = text_area :request, :comment, class: 'form-control', placeholder: "Опишите проблему ", style: 'width:400px'
-      .row
-        .form-group{style: "float: left; width: 200px;  height: 220px"}
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "понедельник")
-            &#8195; 
-            = label(:request, :days, "Понедельник", class: "days-box")
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "вторник", nil)
-            &#8195; 
-            = label(:request, :days, "Вторник", class: "days-box")
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "среда", nil)
-            &#8195; 
-            = label(:request, :days, "Среда", class: "days-box")
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "четверг", nil)
-            &#8195; 
-            = label(:request, :days, "Четверг", class: "days-box")
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "пятница", nil)
-            &#8195; 
-            = label(:request, :days, "Пятница", class: "days-box")
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "суббота", nil)
-            &#8195; 
-            = label(:request, :days, "Суббота", class: "days-box")
-          .form-group.row.ml-3.days-row
-            = check_box(:request, :days, {:multiple => true}, "воскресение", nil)
-            &#8195; 
-            = label(:request, :days, "Воскресение", class: "days-box")
-        .form-group{style: "float: left; margin-left: 20px; height: 220px"}     
-          Свободен
-          .form-group.row.ml-3
-            с: &#8195;
-            = text_field(:request, :from)
-          .form-group.row.ml-3
-            по: &#8194;
-            = text_field(:request, :to)
+      - unless hide_days
+        .row
+          .form-group{style: "float: left; width: 200px;  height: 220px"}
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "понедельник")
+              &#8195; 
+              = label(:request, :days, "Понедельник", class: "days-box")
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "вторник", nil)
+              &#8195; 
+              = label(:request, :days, "Вторник", class: "days-box")
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "среда", nil)
+              &#8195; 
+              = label(:request, :days, "Среда", class: "days-box")
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "четверг", nil)
+              &#8195; 
+              = label(:request, :days, "Четверг", class: "days-box")
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "пятница", nil)
+              &#8195; 
+              = label(:request, :days, "Пятница", class: "days-box")
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "суббота", nil)
+              &#8195; 
+              = label(:request, :days, "Суббота", class: "days-box")
+            .form-group.row.ml-3.days-row
+              = check_box(:request, :days, {:multiple => true}, "воскресение", nil)
+              &#8195; 
+              = label(:request, :days, "Воскресение", class: "days-box")
+          .form-group{style: "float: left; margin-left: 20px; height: 220px"}     
+            Свободен
+            .form-group.row.ml-3
+              с: &#8195;
+              = text_field(:request, :from)
+            .form-group.row.ml-3
+              по: &#8194;
+              = text_field(:request, :to)
 
       - unless hide_right_block  
         .form-group.form-check.ml-3

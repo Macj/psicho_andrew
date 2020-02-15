@@ -1,6 +1,13 @@
-.conteiner{style: "margin-right: auto;; margin-left: auto; width: 49%;  height: 450px"}
-  %h2 Контакты
-  .text
+.header{style: "width: 100%; height: 80px"}
+  %h2{style: "margin-left: 420px"}
+    Контакты
+.conteiner{style: "height: 350px; width: 1500px"}
+  .form{style: "height: 500px; width: 550px;  display: block; float: left; "}
+    %h4{style: "text-align: center; "}
+      Есть вопрос - заполни форму
+    = render partial: "/clients/form", locals: {hide_right_block: true, hide_days: true}
+  
+  .text{style: "margin-top: 0px; height: 300px;  width: 490px; display: block; float: left; "}
     Отвечаю на сообщения и звонки с 10:00 до 20:00.
     %br
     Если я не отвечаю или не беру трубку - значит я занят. 
@@ -19,9 +26,3 @@
     %br
     Emeil: andreadetotti@gmail.com
     %br
-  .form
-    %br
-    %h4{style: "text-align: center"}
-      Есть вопрос - заполни форму
-    = render partial: "/clients/form", locals: {hide_right_block: true}
-
