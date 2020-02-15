@@ -22,6 +22,6 @@ class Article < ActiveRecord::Base
 
   def latest
     return [] unless self.cathegory
-    where('cathegory_id != ?', self.cathegory_id).last(3)
+    Article.where('cathegory_id != ?', self.cathegory_id).last(3)
   end
 end
