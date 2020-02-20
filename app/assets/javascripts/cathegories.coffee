@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-$( document ).ready ()->
+$( document ).on 'turbolinks:load', ()->
 	$('#v-cats-tab a').on 'mouseover', (e)->
 	  e.preventDefault()
 	  $(this).tab('show')

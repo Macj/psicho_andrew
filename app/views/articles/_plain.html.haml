@@ -17,6 +17,10 @@
         Андрей Ткаченко
       .date{style: 'float:right'}
         = card.created_at.strftime("%d.%m.%Y")
+      - unless current_user.nil?
+        %br
+        .edit{style: 'float:right'}
+          = link_to "Редактировать", edit_article_path(card)
       .share-block{style: "margin-top: 40px; margin-left: 25%; border-color: black; height: 50px; width: 50%;"}
         = social_share_button_tag("Share", :allow_sites => %w(vkontakte facebook telegram twitter))
 

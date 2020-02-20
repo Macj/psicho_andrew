@@ -4,7 +4,7 @@
 
 
 
-$( document ).ready ()->
+$( document ).on 'turbolinks:load', ()->
   $("#collapseBack").hide()
   $('.work-block').hide()
   $("#multiCollapseWork").hide()
@@ -15,16 +15,13 @@ $( document ).ready ()->
   $("#collapseContractOne").hide()
   $("#collapseContractOneBack").hide()
   $("#collapseConsultOne").show()
-  console.log('hide')
 
   $(".btn-consult").on 'click', (e)->
     e.preventDefault()
     point = $(this).attr('data-target')
     $(".collapse-consult").hide()
     $("#" + point).css('display', 'block')
-    console.log("#" + point)
 
-  console.log('inside')
   $("#consult").on 'mouseover', ->
     $("#sub_consult").show()
 
@@ -38,12 +35,10 @@ $( document ).ready ()->
   $(".contract_button").on 'click', (e)->
     $("#collapseContractOne").show()
     $("#collapseContractOneBack").show()
-    console.log('up')
     e.preventDefault()
 
   $(".get-service").on 'click', (e)->
     e.preventDefault()
-    console.log("get service")
     $('#request_comment').value = "HAHA"
     target = $(this).attr('data-target')
     $(".service").removeClass('selected')
@@ -75,7 +70,6 @@ $( document ).ready ()->
   $(".princip-btn").on 'click', ->
     $(".princip").hide()
     id = $(this).attr('href')
-    console.log(id)
     $(id).show()
 
   $('#search_submit').on 'click', ->

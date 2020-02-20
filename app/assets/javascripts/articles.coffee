@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-$( document ).ready ()->
+$( document ).on 'turbolinks:load', ()->
 
   $('#ajax').on 'click', ()->
     $.get( "/articles.js", (data)->
