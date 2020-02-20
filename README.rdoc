@@ -30,6 +30,9 @@ Things you may want to cover:
 	sudo systemctl stop elasticsearch.service
 
 
+sudo systemctl enable elasticsearch.service
+sudo systemctl start elasticsearch.service
+
 	Article.__elasticsearch__.create_index!
 
 * Deployment instructions
@@ -92,4 +95,8 @@ sudo find / -name "pg_hba.conf" -print
 
 
 Deploy
+onserver
 rake assets:precompile RAILS_ENV=production
+
+on local
+cap production deploy:restart

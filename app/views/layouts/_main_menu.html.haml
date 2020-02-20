@@ -16,9 +16,6 @@
         Консультации
     .collapse#sub_consult{style: "float:left; ml-5; #{shift}"}
       .card.card-body
-        %a{ href: "#{contacts_path}" }
-          %button.btn.btn-outline-dark{ type:"button" }
-            Контакты
         %a{ href: "#{my_faq_path}" } 
           %button.btn.btn-outline-dark{ type:"button" }
             Вопрос - ответ
@@ -41,3 +38,6 @@
         %a{ href: "#{methods_path}" }
           %button.btn.btn-outline-dark{ type:"button" }
             Мои методы
+  %a{ href: "#{contacts_path}" }
+    %button.btn.btn-outline-dark{ type:"button" }
+      Контакты

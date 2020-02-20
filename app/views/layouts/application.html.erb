@@ -63,7 +63,9 @@
         </div>
       </div>
     </div>
-
+    <div class="row" id="collapseContractPanel">
+      <%= render(partial: "pages/contract_document", locals: {on_forn: true}) %>
+    </div>
     <div class="content" style="clear: both; margin: 70px 0 0px;">
 
       <%= yield %>
