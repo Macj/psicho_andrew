@@ -25,6 +25,13 @@ class Article < ActiveRecord::Base
     Article.where('cathegory_id != ?', self.cathegory_id).last(3)
   end
 
+  def light_text
+    text = body[0...150]
+    words = text.split(" ")
+    words.delete(words.last)
+    words.join(" ") + "..."
+  end
+
   # elasticsearch
   after_commit on: [:create] do
     begin

@@ -3,7 +3,7 @@
     <h5 class="card-title"><%= card.name %></h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><%= "#{card.visit_num} консультаций по" if (card.visit_num && card.visit_num > 1) %> 2 часа </li>
+    <li class="list-group-item"><%= "#{card.visit_num} консультаций по" if (card.visit_num && card.visit_num > 1) %> <%= card.term %> </li>
   </ul>
   <ul class="list-group list-group-flush" style="text-align: center">
     <li class="list-group-item" >

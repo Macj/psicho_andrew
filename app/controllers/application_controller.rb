@@ -25,8 +25,8 @@ class ApplicationController < ActionController::Base
       @cat1 = set_cat 1
       @cat2 = set_cat 2
       @cat3 = {}
-      Cathegory.where(level: 3).pluck('cathegories.id, cathegories.name').each do |id, name|
-        @cat3[id] = { name: name }
+      Cathegory.where(level: 3).pluck('cathegories.id, cathegories.name, cathegories.logo_file_name').each do |id, name, logo|
+        @cat3[id] = { name: name, logo: logo }
       end
     end
 

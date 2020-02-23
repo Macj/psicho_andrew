@@ -4,7 +4,7 @@
     <h5 class="card-title"><%= card.name %></h5>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><%= "#{card.visit_num} консультаций по" if (card.visit_num && card.visit_num > 1) %> 2 часа </li>
+    <li class="list-group-item"><%= "#{card.visit_num} консультаций по" if (card.visit_num && card.visit_num > 1) %> <%= card.term %> </li>
   </ul>
   <div class="card-body" style="height: 140px; max-height: 140px">
     <p class="card-text"><%= card.description%></p>
@@ -12,7 +12,11 @@
   <ul class="list-group list-group-flush" style="text-align: center">
     <li class="list-group-item" >
       <h5 style="margin-bottom: 10px"> Стоимость: </h5>
-      <%= card.price_hr %> ГРН. | <%= card.price_rb %> РУБ. | <%= card.price_dl %> EUR 
+      <%- if card.price_hr == 0 %>
+        БЕСПЛАТНО
+      <%- else %>
+        <%= card.price_hr %> ГРН. | <%= card.price_rb %> РУБ. | <%= card.price_dl %> EUR
+      <% end %> 
     </li>
   </ul>
   
