@@ -27,6 +27,7 @@
 
 .nav a{
    text-decoration: none; 
+   color: white;
 }
 .nav a:hover{
     color: white;
@@ -44,7 +45,14 @@
 
 .menu_line{
   height: 60px;
-  border-bottom: solid 3px gray ;
+}
+
+#menu_collapse a{
+  padding: 0 15px;
+}
+
+.cat_btn {
+  background-color: #00a1e6
 }
 
 .contacts{
@@ -149,6 +157,10 @@
         height:100px;
         border: none
   }
+}
+
+.btn-sq{
+  border-radius: 0px;
 }
 
 .art_list_row{
@@ -326,6 +338,10 @@ r-icon{
   float: left;
 }
 
+.gr-border{
+  border: 3px solid #ababab;
+}
+
 .headline{
   margin-top: 30px;
 
@@ -366,12 +382,16 @@ r-icon{
   }
 }
 .navigation{
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-top: 30px;
-  height: 90px;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 14px;
+  text-align: center;
+  height: 66px;
   width: 100%; 
-
+  background: #2b6ca1;
+  float: left;
+  clear:both;
+  font: normal normal normal 17px/1.4em arial,'ｍｓ ｐゴシック','ms pgothic','돋움',dotum,helvetica,sans-serif;
 }
 
 footer{
@@ -379,8 +399,12 @@ footer{
   width: 100%; 
   margin-top: 20px; 
   padding-top: 50px; 
-  background: lightblue;  
+  background: #2b6ca1;  
   float: left;
+}
+
+.btn-white{
+  color: white; 
 }
 
 .cl_fr_btn{

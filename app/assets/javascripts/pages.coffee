@@ -59,6 +59,7 @@ $( document ).on 'turbolinks:load', ()->
 
   $("#work_btn").on 'click', ->
     $("#multiCollapseWork").toggle("slow")
+    $('.work-block').hide()
 
   $(".work-cur-btn").on 'click', ->
     id = $(this).attr('href')

@@ -1,4 +1,4 @@
-.container-fluid{style: "height: 862px; border: 4px solid lightgray; border-left: none; border-right: none; border-top: none;"}
+.container-fluid.gr-border{style: "height: 862px; border-left: none; border-right: none; border-top: none;"}
   
   .container.left{style: 'width:50%; float:left'}
     %img.img-fluid{src: "/assets/photo_x.jpg"}
@@ -26,17 +26,15 @@
         %p.card-text
           %b{style: "margin-left: 25%"} МОЯ ЗАДАЧА - СДЕЛАТЬ ВАС СИЛЬНЫМ.
           %br
-          На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Стандартная консультация длится минимум 2 часа, во время которой мы нарабатываем те навыки мышления и поведения, которые позволят Вам автоматически избавиться от накопленных проблем. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире. 
-          %br
-          %br
-          %a.btn.btn-light{ href: "/methods", style: "margin-left: 30%;background-color: lightblue"}
+          На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Стандартная консультация длится минимум 2 часа, во время которой мы нарабатываем те навыки мышления и поведения, которые позволят Вам автоматически избавиться от накопленных проблем. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
+          %a{ href: "/methods"}
             Подробнее о методах работы
   
 
-.container-fluid{style: "clear: both; border: 4px solid lightgray; border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; padding-top: 10px; padding-bottom: 50px"}
+.container-fluid.gr-border{style: "clear: both; border-left: none; border-right: none;  border-top:none; margin-bottom: 20px; margin-top: 20px; padding: 10px 0px 30px 0px; "}
   = render partial: "work_and_study"
 
-.container-fluid{style: "border: 4px solid lightgray; border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; height: 800px; padding-top: 10px;"}
+.container-fluid.gr-border{style: " border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; height: 800px; padding-top: 10px;"}
   .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 86%; "}
     %h3 Вместе мы преодолеем:
     - @problems.each do |problem|
@@ -52,7 +50,7 @@
   %br
   = render partial: 'include'
 
-.container-fluid#principles{style: "text-align: center; clear: both;  height: 450px; padding-top: 20px; padding-left: 7px; border: 4px solid lightgray; border-left: none; border-right: none;  border-top:none;"}
+.container-fluid#principles.gr-border{style: "text-align: center; clear: both;  height: 450px; padding-top: 20px; padding-left: 7px; border-left: none; border-right: none;  border-top:none;"}
   = render partial: 'principles'
 
 .container-fluid#feedbacks{style: " text-align: center; border: none;"}

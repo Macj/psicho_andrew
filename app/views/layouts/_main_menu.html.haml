@@ -2,42 +2,42 @@
 - shift = defined?(visible) ? "left:575px" : ""
 .collapse#menu_collapse{style: "float:left; ml-5; #{show}"}
   %a.ml-5{ href: "#{ about_path }" }
-    %button.btn.btn-outline-dark{ type:"button" }
+    %button.btn.btn-white{ type:"button" }
       Обо мне
   %a{ href: "#{articles_path}" }
-    %button.btn.btn-outline-dark{ type:"button" }
+    %button.btn.btn-white{ type:"button" }
       Статьи
   %a{ href: "#{education_path}" }
-    %button.btn.btn-outline-dark{ type:"button" }
+    %button.btn.btn-white{ type:"button" }
       Обучение
   #consult{style: "display: inline"}
     %a{ href: "#{consultation_path}" }
-      %button.btn.btn-outline-dark{ type:"button" }
+      %button.btn.btn-white{ type:"button" }
         Консультации
     .collapse#sub_consult{style: "float:left; ml-5; #{shift}"}
       .card.card-body
         %a{ href: "#{my_faq_path}" } 
-          %button.btn.btn-outline-dark{ type:"button" }
+          %button.btn.btn-white{ type:"button" }
             Вопрос - ответ
         %a{ href: "#{contract_path}" }
-          %button.btn.btn-outline-dark{ type:"button" }
+          %button.btn.btn-white{ type:"button" }
             Контракт
 
         %a{ href: "#{my_services_path}" }
-          %button.btn.btn-outline-dark{ type:"button" }
+          %button.btn.btn-white{ type:"button" }
             Услуги
 
         %a{ href: "#{my_reviews_path}" }
-          %button.btn.btn-outline-dark{ type:"button" }
+          %button.btn.btn-white{ type:"button" }
             Отзывы
 
         %a{ href: "#{work_with_path}" }
-          %button.btn.btn-outline-dark{ type:"button" }
+          %button.btn.btn-white{ type:"button" }
             С чем работаю
 
         %a{ href: "#{methods_path}" }
-          %button.btn.btn-outline-dark{ type:"button" }
+          %button.btn.btn-white{ type:"button" }
             Мои методы
   %a{ href: "#{contacts_path}" }
-    %button.btn.btn-outline-dark{ type:"button" }
+    %button.btn.btn-white{ type:"button" }
       Контакты
