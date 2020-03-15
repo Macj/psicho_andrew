@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Andrey</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag     "/assets/clock/dist/bootstrap-clockpicker.css" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -17,13 +16,13 @@
   <!-- include summernote css/js --> 
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote-bs4.min.js"></script>
-  <%- if defined?(@meta_block) && @meta_block.nil?%>
+  <%- if defined?(@meta_block) && @meta_block.nil? %>
     <title><%= @article.title %></title>
     <meta name="description"  content="#{@article.description}">
     <meta name="keywords" content="#{@article.tags}">
   <% end %>
 </head>
-<body >
+<body>
 
   <div class="navigation" style="">
     <%- unless(defined?(@hide_menu)) %>
