@@ -45,7 +45,7 @@ module ApplicationHelper
     ids.each do |id|
       cat = cats[id]
       card = Cathegory.find(id)
-      res +=  "<a class=\"nav-link cat_btn \" id=\"v-cats-#{id.to_s}-tab\" data-toggle=\"pill\"  
+      res +=  "<a class=\"nav-link cat_btn \" id=\"v-cats-#{id.to_s}-tab\" data-toggle=\"pill\"  style=\"background-color: #00a1e6; \"
               data-target=\"#v-cats-#{id.to_s}\" href=\"#{request.base_url}/cathegories/#{id.to_s}\" role=\"tab\" aria-controls=\"v-cats-#{id.to_s}\" aria-selected=\"true\">#{cat[:name]} </a>"
 
       body += "<div class=\"tab-pane fade\" id=\"v-cats-#{id.to_s}\" role=\"tabpanel\" aria-labelledby=\"v-cats-#{id.to_s}-tab\">

@@ -1,26 +1,24 @@
-<div class="card" style="width: 25rem; float: left; margin-right: 10px; height: 800px; max-height: 800px">
-  <img class='img-thumbnail ' src="<%= card.logo.url %>" class="card-img-top" style="height: 400px; min-height: 400px" alt="...">
-  <div class="card-body" style="height: 70px; max-height: 70px">
-    <h5 class="card-title"><%= card.name %></h5>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item"><%= "#{card.visit_num} консультаций по" if (card.visit_num && card.visit_num > 1) %> <%= card.term %> </li>
-  </ul>
-  <div class="card-body" style="height: 140px; max-height: 140px">
-    <p class="card-text"><%= card.description%></p>
-  </div>
-  <ul class="list-group list-group-flush" style="text-align: center">
-    <li class="list-group-item" >
-      <h5 style="margin-bottom: 10px"> Стоимость: </h5>
-      <%- if card.price_hr == 0 %>
-        БЕСПЛАТНО
-      <%- else %>
-        <%= card.price_hr %> ГРН. | <%= card.price_rb %> РУБ. | <%= card.price_dl %> EUR
-      <% end %> 
-    </li>
-  </ul>
-  
-  <div class="card-body">
-    <a  class='btn btn-success' style="margin-left:auto; display: block" href="#" class="card-link">Заказать</a>
+<div class="card up-corner-20" style=" border: none; width: 320px; float: left; margin-right: 30px; height: 1000px; max-height: 900px">
+  <%= image_tag(card.logo.url, class: 'up-corner-20 ', style: "width: 320; height: 300px; min-height: 300px" )  %>
+  <div class="card-body  dwn-corner-30 shadow-up" style="height: 440px; max-height: 440px; background-color: #2db34a">
+    <h5 class="card-title" style="color: white; font-size: 26px; height: 60px;"><%= card.name %></h5>
+    <div class="" style="width: 100px; margin: auto; color: black; border: 2px solid white; border-top: none; border-left: none; border-right: none;  "><%= "#{card.visit_num} консультаций по" if (card.visit_num && card.visit_num > 1) %> <%= card.term %>
+    </div>
+    <div class="card-body" style="margin-top: 15px; height: 170px; max-height: 170px; color: white; padding: 0.25rem">
+      <p class="card-text small-text" style=" "><%= card.description%></p>
+    </div>
+    <div class="list-group list-group-flush" style="font-weight: bold; text-align: center; width: 300px; margin: auto; color: white">
+      <h5 style="margin-bottom: 10px; color: black; font-family:helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; font-size: 18px; "> Стоимость: </h5>
+      <p>
+        <%- if card.price_hr == 0 %>
+          БЕСПЛАТНО
+        <%- else %>
+          <%= card.price_hr %> ГРН. <font style="color: black;">|</font>  <%= card.price_dl %> EUR
+        <% end %> 
+      </p>
+    </div>
+
+    <a class='btn btn-success' style="margin-left:auto; display: block" href="#" class="card-link">Заказать</a>
+
   </div>
 </div>

@@ -5,6 +5,12 @@
 
 $( document ).on 'turbolinks:load', ()->
 
+  $('.clockpicker').clockpicker({
+      placement: 'top',
+      align: 'left',
+      donetext: 'Done'
+  });
+
   $('#ajax').on 'click', ()->
     $.get( "/articles.js", (data)->
       console.log(data)

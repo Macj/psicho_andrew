@@ -1,12 +1,12 @@
-.container-fluid.gr-border{style: "height: 862px; border-left: none; border-right: none; border-top: none;"}
+.container-fluid.gr-border{style: "height: 720px; border-left: none; border-right: none; border-top: none;"}
   
   .container.left{style: 'width:50%; float:left'}
     %img.img-fluid{src: "/assets/photo_x.jpg"}
 
-  .container.left{style: 'width:50%; float:left'}
+  .container.left{style: 'width:50%; float:left; margin-top: 15px'}
     .card{style: "width: 36m; margin-left: auto; border: none;"}
       .card-body{style: "padding: 0px; "}
-        %h3{style: "margin-left: 30%"} Ткаченко Андрей
+        %h3{style: "margin-left: 30%; font-size: 30px; margin-bottom: 15px"} Ткаченко Андрей
         %h5.card-title{style: "margin-left: 40%"} психолог
         %p.card-text
           Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог. Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. Я помогаю улучшить качество жизни каждого моего клиента, избавляя его от невроза, тревоги, страхов, депрессии и проблем в личной жизни (смотрите полный 
@@ -18,15 +18,9 @@
           %br
           Я долго шел к тому, чтоб научиться лечить людей Словом, а не уколами и таблетками. Для начала, я окончил официальное психологическое образование, а также курсы и тренинги по нескольким современным направлениям психотерапии (КПТ, МКТ, АСТ). Чтоб закрепить полученные знания на практике, я получил опыт работы в сфере психологической помощи работая со взрослыми и детьми в психологических центрах, проводил лекции и тренинги, индивидуальные занятия и онлайн-марафоны.
         %p.card-text
-          Накопленные знания и навыки позволили мне создать информационный портал 
-          %a{href: "tkachenkoandrey.com" }
-            tkachenkoandrey.com
-          с бесплатной информацией для психологов и людей, желающих самостоятельно избавиться от своих психологических проблем.
-          Сейчас, я провожу Личные Консультации в кабинете и онлайн-консультации по Скайпу. Онлайн-работа ничем не отличается от очной, ведь инструментом диагностики и работы является специально выстроенный Диалог.
-        %p.card-text
           %b{style: "margin-left: 25%"} МОЯ ЗАДАЧА - СДЕЛАТЬ ВАС СИЛЬНЫМ.
           %br
-          На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Стандартная консультация длится минимум 2 часа, во время которой мы нарабатываем те навыки мышления и поведения, которые позволят Вам автоматически избавиться от накопленных проблем. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
+          На моих очных и онлайн-консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Стандартная консультация длится 2 часа, во время которой мы нарабатываем те навыки мышления и поведения, которые позволят Вам автоматически избавиться от накопленных проблем. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире. Подробнее о 
           %a{ href: "/methods"}
             Подробнее о методах работы
   
@@ -35,25 +29,30 @@
   = render partial: "work_and_study"
 
 .container-fluid.gr-border{style: " border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; height: 800px; padding-top: 10px;"}
-  .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 86%; "}
-    %h3 Вместе мы преодолеем:
+  .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 90%; "}
+    %h3 Мои направления работы:
     - @problems.each do |problem|
       = render partial: '/articles/min_card', locals: {card: problem}
 
 .container-fluid{style: " text-align: center; clear: both; width: 84%; height: 25rem; height: 870px; margin: auto"}
-  %h3 Услуги
-  - @services.each do |service|
-    = render partial: '/services/card', locals: {card: service}
-
-.container-fluid#include{style: ""}
+  %h3 Список услуг и стоимость
+  = render partial: 'services_block'
+ 
+.container-fluid#include
   %h3 В стоимость консультации входит:
   %br
-  = render partial: 'include'
+  %div{style: "width: 90%; margin: auto; "}
+    = render partial: 'include'
 
-.container-fluid#principles.gr-border{style: "text-align: center; clear: both;  height: 450px; padding-top: 20px; padding-left: 7px; border-left: none; border-right: none;  border-top:none;"}
+.container-fluid#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; padding-left: 7px; border-left: none; border-right: none;  border-top:none;"}
   = render partial: 'principles'
+
+.container-fluid#how_get_to{style: "margin-top: 50px; text-align: center; clear: both;  height: 450px;"}
+  %h3 Как попасть на консультацию?
+  %div{style: "width: 86%; margin: auto; margin-top: 40px "}
+    = render partial: 'how_to_get'
 
 .container-fluid#feedbacks{style: " text-align: center; border: none;"}
   %br
-  %h3 ОТЗЫВЫ
+  %h3 Видео-отзывы о моей работе
   = render partial: 'feedbacks'

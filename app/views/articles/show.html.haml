@@ -3,3 +3,10 @@
   = render partial: 'pages/articles_filters'
   
 = render partial: 'plain', locals: {card: @article}
+
+- content_for :meta_panel do
+  %title
+    = @article.title
+
+  %meta{name:"description", content: "#{@article.description}" }
+  %meta{name:"keywords", content:"#{@article.tags}"}

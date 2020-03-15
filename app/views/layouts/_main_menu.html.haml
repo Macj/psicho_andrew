@@ -1,43 +1,37 @@
 - show = defined?(visible) ? "display:block" : ""
-- shift = defined?(visible) ? "left:575px" : ""
-.collapse#menu_collapse{style: "float:left; ml-5; #{show}"}
+- shift = defined?(visible) ? "left:540px" : ""
+.collapse#menu_collapse{style: "float:left;  #{show}"}
   %a.ml-5{ href: "#{ about_path }" }
     %button.btn.btn-white{ type:"button" }
       Обо мне
-  %a{ href: "#{articles_path}" }
-    %button.btn.btn-white{ type:"button" }
-      Статьи
-  %a{ href: "#{education_path}" }
-    %button.btn.btn-white{ type:"button" }
-      Обучение
   #consult{style: "display: inline"}
     %a{ href: "#{consultation_path}" }
       %button.btn.btn-white{ type:"button" }
         Консультации
     .collapse#sub_consult{style: "float:left; ml-5; #{shift}"}
       .card.card-body
-        %a{ href: "#{my_faq_path}" } 
-          %button.btn.btn-white{ type:"button" }
-            Вопрос - ответ
-        %a{ href: "#{contract_path}" }
-          %button.btn.btn-white{ type:"button" }
-            Контракт
+        %a.btn.btn-white{ href: "#{my_faq_path}" } 
+          Вопрос - ответ
+        %a.btn.btn-white{ href: "#{contract_path}" }
+          Контракт
 
-        %a{ href: "#{my_services_path}" }
-          %button.btn.btn-white{ type:"button" }
-            Услуги
+        %a.btn.btn-white{ href: "#{my_services_path}" }
+          Услуги
 
-        %a{ href: "#{my_reviews_path}" }
-          %button.btn.btn-white{ type:"button" }
-            Отзывы
+        %a.btn.btn-white{ href: "#{my_reviews_path}" }
+          Отзывы
 
-        %a{ href: "#{work_with_path}" }
-          %button.btn.btn-white{ type:"button" }
-            С чем работаю
+        %a.btn.btn-white{ href: "#{work_with_path}" }
+          С чем работаю
 
-        %a{ href: "#{methods_path}" }
-          %button.btn.btn-white{ type:"button" }
-            Мои методы
+        %a.btn.btn-white{ href: "#{methods_path}" }
+          Мои методы
+  %a{ href: "#{articles_path}" }
+    %button.btn.btn-white{ type:"button" }
+      Статьи
+  %a{ href: "#{education_path}" }
+    %button.btn.btn-white{ type:"button" }
+      Обучение
   %a{ href: "#{contacts_path}" }
     %button.btn.btn-white{ type:"button" }
       Контакты

@@ -44,7 +44,7 @@ class PagesController < ApplicationController
   end
 
   def methods
-
+    @problems = Article.all[0..11] 
   end
 
   def reviews
@@ -60,7 +60,7 @@ class PagesController < ApplicationController
   end
 
   def text; end
-
   def make_order; end
+  def new_menu; end
 
 end

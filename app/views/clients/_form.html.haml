@@ -60,12 +60,19 @@
               = label(:request, :days, "Воскресение", class: "days-box")
           .form-group{style: "float: left; margin-left: 20px; height: 220px"}     
             Свободен
-            .form-group.row.ml-3
+            .form-group.input-group.clockpicker.row.ml-3
               с: &#8195;
-              = text_field(:request, :from)
-            .form-group.row.ml-3
+              = text_field(:request, :from, class:"form-control", value: "9:00", style: "width: 70px")
+              %span.input-group-addon{style: "display: table-cell;"}
+                %span.glyphicon.glyphicon-time{style: "display: inline-block; width: 20px; height: 20px;"}
+                  %i.fa.fa-clock-o{style: "font-size: 20px;"}
+                  
+            .form-group.clockpicker.input-group.row.ml-3
               по: &#8194;
-              = text_field(:request, :to)
+              = text_field(:request, :to, class:"form-control", value:"10:00", style: "width: 70px")
+              %span.input-group-addon
+                %span.glyphicon.glyphicon-time{style: "display: inline-block; width: 20px; height: 20px;"}
+                  %i.fa.fa-clock-o{style: "font-size: 20px;"}  
 
       - unless hide_right_block  
         .form-group.form-check.ml-3

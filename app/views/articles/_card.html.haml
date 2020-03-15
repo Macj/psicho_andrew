@@ -1,11 +1,13 @@
 - left = defined?(is_left) ? "float:left" : ""
-.card.ml-3.mt-3{ style: "width: 25rem; #{left}" }
-  .img-thunb-block
-    = image_tag(card.image.url, class: 'img-thumbnail  m-3') 
-  .card-body
-    %h5.card-title
+%div{ style: "width: 280px; margin-left: 60px; margin-bottom: 60px;  #{left}" }
+  %div{style: "position: relative; z-index: 1; width: 280px; height: 160px"}
+    = image_tag(card.image.url, class: 'up-corner-20', style: "position: relative; z-index: 1; width: 280px; height: 160px") 
+  .card-level.shadow-up.up-corner-20{ style: "position: relative; z-index: 2;  font-size: 15px; margin: auto; margin-top: -30px; width: 100px; width-max: 250px; height: 30px; background-color: white; text-align: center" }
+    = card.cathegory.name
+  .headline{style: "position: relative; z-index: 3; color: white; margin-top: -20px; margin-left: -25px; width: 320px; height: 60px;"}
+    .corner2
+    .content{style: "width: 320px; height: 60px;"}  
       = link_to card.title, card
-    .card-level
-      = parent_links(card.cathegory)
-    .card_text{style: "width: 350px; max-width: 350px;"}
-      = card.light_text.html_safe
+    
+  =# .card_text{style: "width: 320px; max-width: 320px;"}
+  =# card.light_text.html_safe

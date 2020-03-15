@@ -44,40 +44,34 @@
   </div>
   <div class="conteiner" style="height: 750px; clear: top;">
     <div id="collapseConsultOne" class="collapse-consult" >
+      
+    </div>
+
+    <div id="collapseConsultTwo" class="collapse-consult">
       <div class="card-body" style="width: 780px; margin-left: 10px; text-align:center">
         Ознакомьтесь со списком услуг и стоимостью.
         <br/>
         <%- if @services.nil? %>
           На данный момент нет активных сервисов.
         <%- else%>
-          <%- @services.each do |service| %>
-            <%= render partial: '/services/min_card', locals: {card: service}%>
-          <% end %>
+          <%= render partial: '/pages/services_min_cards' %>
         <% end %>
       </div>
     </div>
 
-     <div id="collapseConsultTwo" class="collapse-consult">
+    <div id="collapseConsultThree" class="collapse-consult" >
       <div class="card-body">
         Прочтите договор на предоставление психологических услуг.
         <%= render partial: '/pages/contract_body' %>
       </div>
     </div>
 
-    <div id="collapseConsultThree" class="collapse-consult" >
+    <div id="collapseConsultFour" class="collapse-consult" >
       <div class="card-body">
         Выберите в календаре свободное время для проведения консультации 
         <br/>
         или оставьте заявку и мы обязательно с вами свяжемся
         <%= render partial: '/pages/calendar'%>
-      </div>
-    </div>
-
-    <div id="collapseConsultFour" class="collapse-consult" >
-      <div class="card-body">
-        Оставьте заявку и мы обязательно с вами свяжемся
-        <br/>
-        <======================
       </div>
     </div>
   </div>
