@@ -13,19 +13,6 @@
     = render partial: 'card', locals: {card: article, is_left: true }
 
 %table#artical_lists
-  %tr
-    %th
-      icon
-    %th
-      groups
-    %th
-      title
-    %th
-      style
-    %th
-      tags
-    %th
-      buttons
   %tbody
     - @articles.each do |article|
       = render partial: 'list', locals: {card: article }

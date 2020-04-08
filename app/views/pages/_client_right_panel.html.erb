@@ -44,12 +44,14 @@
   </div>
   <div class="conteiner" style="height: 750px; clear: top;">
     <div id="collapseConsultOne" class="collapse-consult" >
-      
+      <div class="card-body step-deep-30" style="">
+      </div>
     </div>
 
     <div id="collapseConsultTwo" class="collapse-consult">
-      <div class="card-body" style="width: 780px; margin-left: 10px; text-align:center">
+      <div class="card-body step-deep-30" style="width: 780px; margin-left: 10px; text-align:center;">
         Ознакомьтесь со списком услуг и стоимостью.
+        <br/>
         <br/>
         <%- if @services.nil? %>
           На данный момент нет активных сервисов.
@@ -60,17 +62,20 @@
     </div>
 
     <div id="collapseConsultThree" class="collapse-consult" >
-      <div class="card-body">
+      <div class="card-body step-deep-30">
         Прочтите договор на предоставление психологических услуг.
+        <br/>
+        <br/>
         <%= render partial: '/pages/contract_body' %>
       </div>
     </div>
 
     <div id="collapseConsultFour" class="collapse-consult" >
-      <div class="card-body">
+      <div class="card-body step-deep-30">
         Выберите в календаре свободное время для проведения консультации 
         <br/>
         или оставьте заявку и мы обязательно с вами свяжемся
+        <br/>
         <%= render partial: '/pages/calendar'%>
       </div>
     </div>

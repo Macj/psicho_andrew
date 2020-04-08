@@ -1,5 +1,5 @@
 - show = defined?(visible) ? "display:block" : ""
-- shift = defined?(visible) ? "left:540px" : "left:320px"
+- shift = defined?(visible) ? "left:585px" : "left:300px"
 .collapse#menu_collapse{style: "float:left;  #{show}"}
   %a.ml-5{ href: "#{ about_path }" }
     %button.btn.btn-white{ type:"button" }
@@ -10,22 +10,19 @@
         Консультации
     .collapse#sub_consult{style: "float:left; ml-5; #{shift}"}
       .card.card-body
-        %a.btn.btn-white{ href: "#{my_faq_path}" } 
-          Вопрос - ответ
-        %a.btn.btn-white{ href: "#{contract_path}" }
-          Контракт
-
-        %a.btn.btn-white{ href: "#{my_services_path}" }
-          Услуги
-
-        %a.btn.btn-white{ href: "#{my_reviews_path}" }
-          Отзывы
-
         %a.btn.btn-white{ href: "#{work_with_path}" }
           С чем работаю
-
-        %a.btn.btn-white{ href: "#{methods_path}" }
+        %a.btn.btn-white{ href: "#{methods_path}", style: "margin-bottom: 2px;" }
           Мои методы
+        %a.btn.btn-white{ href: "#{my_services_path}" }
+          Услуги
+        %a.btn.btn-white{ href: "#{contract_path}" }
+          Договор
+        %a.btn.btn-white{ href: "#{my_reviews_path}" }
+          Отзывы
+        %a.btn.btn-white{ href: "#{my_faq_path}" } 
+          Вопрос - Ответ
+
   %a{ href: "#{articles_path}" }
     %button.btn.btn-white{ type:"button" }
       Статьи

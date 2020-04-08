@@ -51,8 +51,19 @@
   padding: 0 15px;
 }
 
-.cat_btn {
-  background-color: #00a1e6
+.cat-btn {
+  background-color: #00a1e6;
+  margin-bottom: 2px;
+}
+
+.logo-v-cats{
+  width: 300px;
+}
+
+.logo{
+  margin-top: -40px;
+  margin-right: 10px;
+  height: 300px;  
 }
 
 .contacts{
@@ -128,7 +139,7 @@
 }
 
 .small-text{
-  font-size: 13px; 
+  font-size: 15px; 
   text-align:center; 
   font-family: din-next-w01-light,din-next-w02-light, din-next-w10-light,sans-serif;
 }
@@ -203,9 +214,9 @@
 }
 
 .right{
-  position: absolute; 
+// position: absolute; 
   top: 105px; 
-  right: 50px
+  margin-left: 100px;
 }
 
 .f-block{
@@ -330,7 +341,7 @@ r-icon{
       background-color: #17a2c8;
     }
     .btn{
-      background-color: #17a2b8;
+      background-color: #2b6ca1;;
       margin-bottom: 1px;
       padding-top: 5px;
       height: 35px;
@@ -458,6 +469,7 @@ footer{
 
 .btn-white{
   color: white; 
+  background-color: #2b6ca1;
 }
 
 .cl_fr_btn{
@@ -534,4 +546,53 @@ footer{
 
 .input-group-addon, .input-group-btn {
     white-space: nowrap;
+}
+
+
+.step-out{
+  margin-bottom: 30px;
+}
+
+.step-up-30{
+  margin-top: -30px;
+}
+
+.step-deep-30{
+  padding-top: 30px;
+}
+
+.service-body{
+  height: 420px;
+  max-height: 420px;
+}
+
+.service-price{
+  font-weight: bold;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  margin-left: -10px;
+  color: white;
+}
+
+.service-text{
+  margin-top: 15px; 
+  height: 210px; 
+  max-height: 220px; 
+  color: white; 
+  padding: 0.25rem
+}
+
+.service-include{
+  position: absolute;
+  left: 0px;
+  margin-top: 30px;
+  padding-left: 17%;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  clear: both;
+  background-color: #00a1e6;
+  height: 450px;
+  padding-top: 20px
 }

@@ -45,11 +45,12 @@ module ApplicationHelper
     ids.each do |id|
       cat = cats[id]
       card = Cathegory.find(id)
-      res +=  "<a class=\"nav-link cat_btn \" id=\"v-cats-#{id.to_s}-tab\" data-toggle=\"pill\"  style=\"background-color: #00a1e6; \"
+      sub_block = menu_panel(cat[:ids], level+1) #if (cat[:ids].nil? || cat[:ids].compact.empty?)
+      res +=  "<a class=\"nav-link cat-btn \" id=\"v-cats-#{id.to_s}-tab\" data-toggle=\"pill\"  style=\"background-color: #00a1e6; \"
               data-target=\"#v-cats-#{id.to_s}\" href=\"#{request.base_url}/cathegories/#{id.to_s}\" role=\"tab\" aria-controls=\"v-cats-#{id.to_s}\" aria-selected=\"true\">#{cat[:name]} </a>"
 
       body += "<div class=\"tab-pane fade\" id=\"v-cats-#{id.to_s}\" role=\"tabpanel\" aria-labelledby=\"v-cats-#{id.to_s}-tab\">
-      #{menu_panel(cat[:ids], level+1) } <div class=\"cat-logo\"> <img src=\"#{cat[:logo]}\"></img> </div> </div>"
+      #{ sub_block } <div class=\"cat-logo\"> <img src=\"#{cat[:logo]}\"></img> </div> </div>"
       if card
         logo += image_tag(card.logo.url, class: 'img-thumbnail logo-v-cats m-3 ', id: "logo-v-cats-#{id.to_s}", style: "display: none;") if card.logo.exists?
       end
@@ -57,7 +58,7 @@ module ApplicationHelper
     res += '   </div>' +
              '</div>'
       #cat1 body
-      res += '<div class="col-9">' +
+      res += '<div class="col-7">' +
             '<div class="tab-content" id="v-cats-tabContent">'
       res += body
       res += '</div>' +

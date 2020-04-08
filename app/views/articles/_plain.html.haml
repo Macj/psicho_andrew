@@ -5,7 +5,7 @@
     = link_to 'Править', edit_article_path(card), class: 'btn btn-info'
     = link_to 'Удалить', card, class: 'btn btn-danger', method: :delete, data: { confirm: 'Уверен?' }
 
-.container.article{ style: "margin-left: 0px; border-color: black; width: 1100px; margin-top: 200px;" }
+.container.article{ style: "float: left; margin-left: 0px; border-color: black; width: 80%; height: max-content; margin-top: 200px;" }
   = image_tag(card.image.url, class: 'img-fluid', style: 'max-width: 100%; height: auto;') if card.image.exists?    
   
   .card{ style: "width: 70%; margin-left: 10%; margin-top:  -110px;" }
@@ -29,25 +29,25 @@
     %p
       = card.body.html_safe
 
-%h6.article-body
-  Tags:
-  = card.tags
+  %h6.article-body
+    Tags:
+    = card.tags
 
 
-.right
+.right{style: "float: left; margin-left: 50px; margin-right: -200px; text-align: center;"}
   %br
   %br
-  %h5{style: "margin-left: 200px; font-size: 24px"} Товары
-  - @courses.each do |course|
-    = render partial:  'courses/min_card', locals: {card: course}
+  -#%h5{style: "margin-left: 200px; font-size: 24px"} Товары
+  -# @courses.each do |course|
+  =# render partial:  'courses/min_card', locals: {card: course}
   %br
-  %h5{style: "margin-left: 200px; font-size: 24px"} Новинки
+  %h5{style: " font-size: 24px"} Новинки
   - @news.each do |n|
     = render partial: "articles/card", locals: {card: n} 
   
 
 - if !@latest.empty?
-  .container-fluid.latest{style: "margin-top: 40px;  "}
-    %h5{style: "margin-bottom: 20px; font-size: 24px "} Новое в разделе
+  .container-fluid.latest{style: "clear: left;  padding-top: 30px; "}
+    %h5{style: "margin-bottom: 20px; font-size: 24px; margin-left: 34% "} Новое в разделе
     - @latest.each do |art|
       = render partial: "articles/card", locals: {card: art, is_left: true} 

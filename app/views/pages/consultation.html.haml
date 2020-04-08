@@ -1,10 +1,10 @@
 .container-fluid
-  .title{style: 'margin: auto; width: 45%'}
+  .title{style: 'margin: auto; width: 50%'}
     %h2 
       ЛИЧНЫЕ КОНСУЛЬТАЦИИ ПСИХОЛОГА
 
-  .card.card-body{style: 'height: 650px; width: 80%; margin: auto; '}
-    = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/k9eph-UuMZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'.html_safe
+  = #.card.card-body{style: 'height: 650px; width: 80%; margin: auto; '}
+  = #'<iframe width="100%" height="100%" src="https://www.youtube.com/embed/k9eph-UuMZE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'.html_safe
 
   .container
     %font{style: "font-weight:bold"}
@@ -49,7 +49,7 @@
  
     Основная задача психолога - избавить клиента от симптомов проблемы и сделать его СИЛЬНЫМ, научить клиента справляться со своей жизнью самостоятельно, без психологов, врачей и таблеток.
 
-  .title{style: 'margin: auto; margin-top: 30px; width: 35%'}
+  .title{style: 'margin: auto; margin-top: 30px; width: 40%'}
     %h2 
       Онлайн-консультации психолога
   %p{style: 'margin: auto; width: 65%; text-align: center'}
@@ -57,7 +57,7 @@
     %br клиентов - это единственная возможность получить квалифицированную помощь психолога. 
     Подробнее в статье "Насколько эффективны онлайн-консультации психолога?"
 
-  .container{style: "margin-top: 30px;"}
+  .container{style: "margin-top: 30px; height: 330px"}
     .container.colored-panel.l-block{style: "background-color: #00b893;  "}
       %h4 Преимущества онлайн-консультаций
       %ul
@@ -88,8 +88,8 @@
         %li
           клиент может не так хорошо ощущать сопереживание и поддержку психолога.
 
-  .container{style: "margin-top: 30px;"}
-    %h4 Как проходит курс психотерапии?
+  .container{style: "margin-top: 60px;"}
+    %h4{style: "text-align: center;"} Как проходит курс психотерапии?
     %p
       Изначально, клиент записывается на консультацию, и договаривается о разовой консультации для диагностики и анализа ситуации. По результатам диагностики проводится Базовый курс психотерапии (5 консультаций), которого обычно хватает для устранения несложных проблем.
       Методом диагностики и методом работы психолога является специально выстроенный диалог.
@@ -119,7 +119,7 @@
 
         %li
           Завершающая консультация - окончание курса психотерапии. Точка. На ней закрываются все вопросы,  клиент и психолог смиряются с мыслью что психотерапия окончена. 
-  .container
+  .container{style: "margin-top: 30px"}
     %h4{style: "text-align: center"} Первая консультация (диагностика) проводится таким образом:
     = render partial: 'diagnosis_list'
   .container
@@ -149,11 +149,13 @@
       РЕЗУЛЬТАТ: человек способен самостоятельно справляться с возникающими эмоциональными, когнитивными и социальными трудностями.
 
 
-  .container{style: "margin-top: 30px; margin-bottom: 30px; padding: 30px; background-color: #00a7c4; height: 150px; text-align: center; color: white"}
+  .container{style: "margin-top: 30px; margin-bottom: 30px; margin-left: -280px; padding: 30px; background-color: #00a7c4; height: 150px; text-align: center; color: white; width: 1845px; max-width: 2500px"}
     %h4 Есть вопросы? Вероятно, я уже отвечал на них здесь:
-    .container
+    .container{style: "width: 2000px"}
       %a{ href:"/faq", class:"btn btn-success", role:"button", color: 'white' }
         FAQ (часто задаваемые вопросы) 
 
-  .container{style: "margin-top: 30px; height: 400px; margin-bottom: 30px; padding: 0" }
+  .container{style: "text-align: center; margin-top: 30px; height: 400px; margin-bottom: 30px; padding: 0" }
+    %h4 
+      Как попасть на консультацию
     = render partial: 'how_to_get'

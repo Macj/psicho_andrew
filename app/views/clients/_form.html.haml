@@ -1,4 +1,4 @@
-- width = defined?(hide_right_block).nil? ? "width: 40%;" : "width: 100%;" 
+- width = defined?(hide_right_block).nil? ? "width: 40%;" : "width: 110%;" 
 
 - hide_right_block = defined?(:hide_right_block) ? hide_right_block : nil 
 - hide_days = defined?(:hide_days) ? hide_days : nil
@@ -9,7 +9,6 @@
       - unless hide_right_block
         %h3 
           Запись на консультацию психолога
-      %br
       %br
       - if @client.errors.any?
         #error_explanation

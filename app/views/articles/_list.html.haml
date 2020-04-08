@@ -5,12 +5,6 @@
     = parent_links(card.cathegory)
   %td
     = link_to card.title, card
-  %td
-    Style: 
-    = Article::STYLES[card.style]
-  %td
-    Tags:
-    = card.tags
   - if user_signed_in?
     %td
       = link_to 'Открыть', card, class: '.btn.btn-primary'
