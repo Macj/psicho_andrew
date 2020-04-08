@@ -51,6 +51,8 @@ gem 'social-share-button'
 gem 'elasticsearch-model'
 gem 'elasticsearch-rails'
 
+gem 'faraday', '0.17.3'
+
 gem 'devise'
 
 gem 'foreman'

@@ -78,14 +78,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
 
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_host_name => 's3-us-west-1.amazonaws.com',
-    :s3_credentials => {
-      :access_key_id => 'AKIAILFJ5K2P64AMVYZQ',
-      :secret_access_key => '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',
-      :s3_region => "us-west-1"
-    },
-    :bucket => 'pl-consult'
-  }
+
 end
