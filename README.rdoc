@@ -101,3 +101,6 @@ rake assets:precompile RAILS_ENV=production
 
 on local
 cap production deploy:restart
+
+start server manualy
+bundle exec unicorn_rails -c ./config/unicorn.rb -E production -D
