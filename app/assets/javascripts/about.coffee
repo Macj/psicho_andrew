@@ -16,7 +16,6 @@ $( document ).ready ()->
 
   $('.sub-card-body').mouseout ()->
     id = $(this).attr('ref')
-    $(this).hide()
     $('#collapseCard' + id).hide()
     $('#find_out_card' + id).show()
 
