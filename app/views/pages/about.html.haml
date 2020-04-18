@@ -28,12 +28,6 @@
 .container-fluid.gr-border{style: "clear: both; border-left: none; border-right: none;  border-top:none; margin-bottom: 20px; margin-top: 20px; padding: 10px 0px 30px 0px; "}
   = render partial: "work_and_study"
 
-.container-fluid.gr-border{style: " border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; height: 800px; padding-top: 10px;"}
-  .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 90%; "}
-    %h3 Мои направления работы:
-    - @problems.each do |problem|
-      = render partial: '/articles/min_card', locals: {card: problem}
-
 .container-fluid{style: " text-align: center; clear: both; width: 84%; height: 25rem; height: 870px; margin: auto"}
   %h3 Список услуг и стоимость
   = render partial: 'services_block'
@@ -56,3 +50,10 @@
   %br
   %h3 Видео-отзывы о моей работе
   = render partial: 'feedbacks'
+
+.container-fluid.gr-border{style: " border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; height: 800px; padding-top: 10px;"}
+  .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 90%; "}
+    %h3 Мои направления работы:
+    - @problems.each do |problem|
+      = render partial: '/articles/min_card', locals: {card: problem}
+

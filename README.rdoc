@@ -104,3 +104,5 @@ cap production deploy:restart
 
 start server manualy
 bundle exec unicorn_rails -c ./config/unicorn.rb -E production -D
+
+kill -HUP `/var/www/apps/pl_consult/shared/pids/unicorn.pid`

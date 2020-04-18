@@ -30,6 +30,7 @@ namespace :deploy do
   task :init_conf do
   	on roles(:app) do
       execute "ln -s #{deploy_to}/shared/config/database.yml #{current_release}/config/database.yml"
+      execute "cp #{deploy_to}/shared/production.rb #{current_release}/config/environments/production.rb"
   	end
   end
 
