@@ -17,6 +17,13 @@
       $('#collapseCard' + id).hide();
       return $('#find_out_card' + id).show();
     });
+    $('.sub-card-body').mouseout(function() {
+      var id;
+      id = $(this).attr('ref');
+      $(this).hide();
+      $('#collapseCard' + id).hide();
+      return $('#find_out_card' + id).show();
+    });
     return $('#aja').on('click', function() {
       var elem;
       return elem = $('.aja_block');

@@ -12,7 +12,7 @@
     </div>
     <div class="collapse" id="collapseCard<%= card.id%>" style="float: left;  z-index:1; position: absolute; margin-top: 45px; color: black; ">
       <div class="card dwn-corner-30" style="height: 228px; margin-left: -1px; width: 285px">
-        <div class="card-body">
+        <div class="card-body sub-card-body" ref='<%= card.id%>'>
           <h5 class="card-title"><%= card.title %></h5>
           <p class="card-text"><%= strip_tags( card.body[0..70] ).split(' ').join(' ') %></p>
         </div>
