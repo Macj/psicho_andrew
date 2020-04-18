@@ -52,7 +52,7 @@ module ApplicationHelper
       body += "<div class=\"tab-pane fade\" id=\"v-cats-#{id.to_s}\" role=\"tabpanel\" aria-labelledby=\"v-cats-#{id.to_s}-tab\">
       #{ sub_block } <div class=\"cat-logo\"> <img src=\"#{cat[:logo]}\"></img> </div> </div>"
       if card
-        logo += image_tag(card.logo.url, class: 'img-thumbnail logo-v-cats m-3 ', id: "logo-v-cats-#{id.to_s}", style: "display: none;") if card.logo.exists?
+        logo += image_tag(card.logo.url, class: 'logo-v-cats m-3 ', id: "logo-v-cats-#{id.to_s}", style: "display: none;") if card.logo.exists?
       end
     end
     res += '   </div>' +
