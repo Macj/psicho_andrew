@@ -8,7 +8,7 @@ class PagesController < ApplicationController
 	end
 
 	def about
-		@problems = Article.all[0..11]
+		@problems = Article.first(12)
 		@services = Service.all[0..2]
 		@reviews = Review.first(3)
 	end

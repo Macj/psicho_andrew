@@ -58,7 +58,7 @@ module ApplicationHelper
     res += '   </div>' +
              '</div>'
       #cat1 body
-      res += '<div class="col-7">' +
+      res += '<div class="col-6">' +
             '<div class="tab-content" id="v-cats-tabContent">'
       res += body
       res += '</div>' +
