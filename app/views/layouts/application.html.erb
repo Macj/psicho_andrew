@@ -36,7 +36,7 @@
     <% end %>
 
     <div class="collapse" id="collapseExample" style="margin-top: 65px">
-      <div class="card card-body" style=" display: block">
+      <div class="card card-body" style=" display: block; height: 550px">
         <%= menu_panel(@cat1_ids, 1) if !@cat1_ids.nil? %>  
         <div class="logo">
           <%- Cathegory.all.each do |card| %>

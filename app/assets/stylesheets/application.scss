@@ -61,11 +61,12 @@
 }
 
 .logo{
-  margin-top: -170px;
   margin-right: 10px;
   height: 300px;
   width: 500px;
-  float: right  
+  position: fixed;
+  top: 160px;
+  right: 390px;
 }
 
 .contacts{
