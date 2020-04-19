@@ -61,9 +61,11 @@
 }
 
 .logo{
-  margin-top: -40px;
+  margin-top: -170px;
   margin-right: 10px;
-  height: 500px;  
+  height: 300px;
+  width: 500px;
+  float: right  
 }
 
 .contacts{
@@ -595,4 +597,8 @@ footer{
   background-color: #00a1e6;
   height: 450px;
   padding-top: 20px
+}
+
+.row{
+  margin-left: 0px;
 }

@@ -1,11 +1,18 @@
-%p#notice
-  - if notice
-    .alert.alert-success=notice
+- content_for :filters do
+  %div{style: "height: 20px; float: left; margin: 10px 10px"}
+    = link_to image_tag("/assets/icon/filter_blocks.png", size: "30"), nil, { id: 'filter_block', style: "margin-left: 10px" }
+    = link_to image_tag("/assets/icon/filter_list.png", size: "30"),  nil, { id: 'filter_list', style: "margin-left: 10px"}
 
+- content_for :filters_panel do
+  = render partial: 'pages/articles_filters'
 
-= render partial: "card", locals: { card: @cathegory }
+%br
 
-.m-3
-  = link_to 'Edit', edit_cathegory_path(@cathegory)
-  \|
-  = link_to 'Back', cathegories_path
+%div#artical_blocks{ style: 'clear: both; hight: 100%; margin-left: auto; width: 90%' }
+  - @articles.each do |article|
+    = render partial: 'articles/card', locals: {card: article, is_left: true }
+
+%table#artical_lists
+  %tbody
+    - @articles.each do |article|
+      = render partial: 'articles/list', locals: {card: article }

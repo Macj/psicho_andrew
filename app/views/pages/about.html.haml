@@ -38,11 +38,11 @@
   %h3 Список услуг и стоимость
   = render partial: 'services_block'
  
-.container-fluid#include
-  %h3 В стоимость консультации входит:
-  %br
-  %div{style: "width: 90%; margin: auto; "}
+.container-fluid.service-include#include{style: ""}
+  %h3{style: ""} В стоимость консультации входит:
+  %div{style: 'margin-left: 16%'}
     = render partial: 'include'
+
 
 .container-fluid#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; padding-left: 7px; border-left: none; border-right: none;  border-top:none;"}
   = render partial: 'principles'

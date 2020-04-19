@@ -8,7 +8,7 @@
 .container.article{ style: "float: left; margin-left: 0px; border-color: black; width: 80%; height: max-content; margin-top: 200px;" }
   = image_tag(card.image.url, class: 'img-fluid', style: 'max-width: 100%; height: auto;') if card.image.exists?    
   
-  .card{ style: "width: 70%; margin-left: 10%; margin-top:  -110px;" }
+  .card{ style: "width: 70%; margin-left: 16%; margin-top:  -110px;" }
     .card-body  
       %h5.card-title
         = link_to card.title, card

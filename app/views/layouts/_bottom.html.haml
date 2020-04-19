@@ -12,7 +12,7 @@
           Статьи
       %td{style: "width: 350px"}
         %a{ href: "#{education_path}" }
-          Обучение
+          =# Обучение
     %tr
 
   %tbody{style: "margin-top: 40px;"}
@@ -23,7 +23,8 @@
         %a{ href: "#{work_with_path}" }
           С чем я работаю
       %td
-        Решить проблему
+        %a{ href: "#{cathegory_path(id: 1)}" }
+          Решить проблему
       %td
         
 
@@ -34,7 +35,8 @@
         %a{ href: "#{methods_path}" }
           Мои методы работы
       %td
-        Психология отношений
+        %a{ href: "#{cathegory_path(id: 2 )}" }
+          Психология отношений
       %td
         
 
@@ -45,7 +47,8 @@
         %a{ href: "#{my_reviews_path}" }
           Отзывы клиентов
       %td
-        Общая психология
+        %a{ href: "#{cathegory_path(id: 3)}" }
+          Общая психология
       %td
         
 
@@ -57,7 +60,8 @@
         %a{ href: "#{my_services_path}" }
           Список услуг и стоимость
       %td
-        Исследование
+        %a{ href: "#{cathegory_path(id: 4)}" }
+          Исследование
       %td
         
 
@@ -70,7 +74,8 @@
         %a{ href: "#{contract_path}" }
           Правила проведения консультации
       %td
-        Саморазвитие
+        %a{ href: "#{cathegory_path(id: 5)}" }
+          Саморазвитие
       %td
         
 
@@ -81,7 +86,8 @@
         %a{ href: "#{my_faq_path}" } 
           Вопрос - Ответ
       %td
-        Для профи
+        %a{ href: "#{cathegory_path(id: 6)}" }
+          Для профи
       %td
         
 
@@ -94,7 +100,7 @@
         %a{ href: "#{contacts_path}" }
           Контакты
       %td
-        Саморазвитие
+
       %td
         
 

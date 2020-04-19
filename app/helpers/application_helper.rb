@@ -31,6 +31,24 @@ module ApplicationHelper
     "<li class=\"breadcrumb-item active\" aria-current=\"page\">#{line}</li>"
   end
 
+  def card_name card
+    array = {
+      11 => "Невроз и психосоматика",
+      12 => "Повышенная тревога",
+      13 => "Депрессия и уныние",
+      17 => "Навязчивые мысли и действия",
+      15 => "Панические атаки",
+      16 => "Проблемы с питанием и весом",
+      14 => "Страхи и фобии",
+      18 => "Низкая самооценка",
+      19 => "Психотравмы и ПТСР",
+      21 => "Проблемы в отношениях",
+      20 => "Экзистенциальные проблемы",
+      22 => "Коучинг и обучение"}
+
+    array[card.id]
+  end
+
 # _________________________________________________________
 
   def menu_panel(ids, level)
@@ -51,9 +69,6 @@ module ApplicationHelper
 
       body += "<div class=\"tab-pane fade\" id=\"v-cats-#{id.to_s}\" role=\"tabpanel\" aria-labelledby=\"v-cats-#{id.to_s}-tab\">
       #{ sub_block } <div class=\"cat-logo\"> <img src=\"#{cat[:logo]}\"></img> </div> </div>"
-      if card
-        logo += image_tag(card.logo.url, class: 'logo-v-cats m-3 ', id: "logo-v-cats-#{id.to_s}", style: "display: none;") if card.logo.exists?
-      end
     end
     res += '   </div>' +
              '</div>'
@@ -62,7 +77,6 @@ module ApplicationHelper
             '<div class="tab-content" id="v-cats-tabContent">'
       res += body
       res += '</div>' +
-          '<div class="logo"> ' + logo + '</div>' +
         '</div>' +
       '</div>'
       return res.html_safe

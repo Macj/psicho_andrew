@@ -11,6 +11,7 @@ class CathegoriesController < ApplicationController
   # GET /cathegories/1
   # GET /cathegories/1.json
   def show
+    @articles = Article.where(cathegory_id: @cathegory.id)
   end
 
   # GET /cathegories/new

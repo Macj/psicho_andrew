@@ -1,10 +1,11 @@
+<%- card_title = defined?(title) ? title : card.title %>
 <div class="card  text-white dwn-corner-30" style="width: 285px; height: 215px;  float: left; margin: 5px; margin-right: 90px; margin-bottom: 50px">
   <%= image_tag(card.image.url, class: 'card-img ', style: "height: 155px" )  %>
   <div class="under-line" style="width: 285px; height: 60px;" >
     <div class="card-img-overlay dwn-corner-30 shadow-up" style="opacity: 1; background-color: #2d76b3;  z-index:2; "></div>
     <div class=" card-img-overlay dwn-corner-30"  style="height: 50px; margin-top: 155px; ; z-index:3;">
       <a class="find_out_card" ref='<%= card.id%>' id='find_out_card<%= card.id%>' style="text-decoration: none;  color: white; " data-toggle="collapse" href="#collapseCard<%= card.id%>" role="button" aria-expanded="false" aria-controls="collapseCard<%= card.id%>">
-        <h5 class="card-title"><%= card.title %></h5>
+        <h5 class="card-title"><%= card_title %></h5>
       </a>
       <a style="text-decoration: none; color: white"  class="find_out" ref='<%= card.id%>' id="find_out<%= card.id%>" href="<%= article_path(card)%>">
         <h5 class="card-title">Узнать метод лечения >> </h5>
