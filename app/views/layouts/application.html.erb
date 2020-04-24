@@ -26,34 +26,24 @@
 <body>
 
   <div class="navigation" style="">
-    <%- unless(defined?(@hide_menu)) %>
-      <div class="menu_line">
-        <%= render partial: '/layouts/main_menu', locals: {visible: true} %>
-        <%- unless current_page?(action: 'new', controller: "/clients")%>
-          <%= render partial: '/layouts/call_me' %>
-        <% end %>
-      </div>
-    <% end %>
-
-    <div class="collapse" id="collapseExample" style="margin-top: 65px">
-      <div class="card card-body" style=" display: block; height: 550px">
-        <%= menu_panel(@cat1_ids, 1) if !@cat1_ids.nil? %>  
-        <div class="logo">
-          <%- Cathegory.all.each do |card| %>
-            <%= image_tag(card.logo.url, class: 'logo-v-cats m-3 ', id: "logo-v-cats-#{card.id.to_s}", style: "display: none;")  %>
+    <div class="navigation-block">
+      <%- unless(defined?(@hide_menu)) %>
+        <div class="menu_line" style="">
+          <%= render partial: '/layouts/main_menu', locals: {visible: true} %>
+          <%- unless current_page?(action: 'new', controller: "/clients")%>
+            <%= render partial: '/layouts/call_me' %>
           <% end %>
-        </div>      
-      </div>
+        </div>
+      <% end %>
     </div>
-
   </div>
 
-  <div class="navigation filters" style="height:60px; background-color: white; margin-top: 10px; clear:both;">
+  <div class="navigation-block filters" style="height:60px; background-color: white; margin-top: 10px; clear:both;">
      <%= yield :filters_panel %>
   </div>
 
 
-  <div class="container-fluid" style="float: left; width:1400px; margin-left:250px; margin-right:250px;">
+  <div  style="width: 100%; padding-left: 15%; padding-right: 15%">
     <div id="collapseBack" style="position: fixed; left: 0px; top: 0px; width: 100%; height:100%;  background-color: black; opacity: 50%; z-index: 1; display: none"></div>
     <div class="collapse" id="client_form" style="position:absolute; z-index: 9; margin-left:2.5%;" >
       <div class="row">

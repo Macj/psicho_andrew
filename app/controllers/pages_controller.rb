@@ -40,11 +40,11 @@ class PagesController < ApplicationController
   end
 
   def work_with
-  	@problems = Article.all[0..11]
+  	@problems = Article.all.order(:id => "ASC")[0..11]
   end
 
   def methods
-    @problems = Article.all[0..11] 
+    @problems = Article.where(id: (23..28).to_a) 
   end
 
   def reviews

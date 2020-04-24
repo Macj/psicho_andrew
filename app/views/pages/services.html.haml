@@ -1,12 +1,13 @@
 .container-fluid{style: " text-align: center; clear: both; height: 850px;"}
   %h3 Услуги
-  %div{style: "width: 79%; margin: auto; "}
+  %div{style: "width: 84%; margin: auto; "}
     = render partial: 'services_block'
 
 .container-fluid.service-include{style: ""}
   %h3{style: "margin-left: -250px"} В стоимость консультации входит:
   = render partial: 'include'
 
-.container-fluid{style: "width: 90%; margin-top: 530px; height: 400px; margin-bottom: 30px; padding: 0; text-align: center" }
+.container-fluid{style: "width: 90%; margin-top: 530px; height: 420px; margin-bottom: 30px; padding: 0; text-align: center" }
   %h3{style: "margin-left: -90px"} Как записаться на консультацию?
-  = render partial: 'how_to_get'
+  %div{style: "width: 1136px; margin-top: 40px; position:relative;"}
+    = render partial: 'how_to_get'

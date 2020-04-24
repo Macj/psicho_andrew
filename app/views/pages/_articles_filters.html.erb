@@ -1,8 +1,19 @@
- <a class="btn btn-primary cat-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="float:left; margin: 5px; ">
-	Каталог статей
-</a>
+<div style="width: 1080px; margin-left: 20px;">
+  <a class="btn btn-primary cat-btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="float:left; margin: 5px; ">
+    Каталог статей
+  </a>
+  <%= yield :filters %>
 
-<%= yield :filters %>
-
-<%= render partial: '/layouts/search'%>
-<%= link_to 'New Article', new_article_url, class: "btn btn-success", style: "float: right" %>
+  <%= render partial: '/layouts/search'%>
+  <%= link_to 'New Article', new_article_url, class: "btn btn-success", style: "float: right" %>
+</div>
+<div class="collapse" id="collapseExample" style="margin-top: 65px">
+  <div class="card card-body" style=" display: block; height: 550px">
+    <%= menu_panel(@cat1_ids, 1) if !@cat1_ids.nil? %>  
+    <div class="logo">
+      <%- Cathegory.all.each do |card| %>
+        <%= image_tag(card.logo.url, class: 'logo-v-cats m-3 ', id: "logo-v-cats-#{card.id.to_s}", style: "display: none;")  %>
+      <% end %>
+    </div>
+  </div>
+</div>

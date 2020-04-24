@@ -1,6 +1,9 @@
 - sign = link_to "Записаться на консультацию", '/make_order'
 - contacts = link_to "контактам", '/contacts'
 = render partial: 'minicard', locals: {left: "", image: "/assets/about/kpnk 1.png", title: "1. Онлайн-запись", body: "Вы нажимаете #{ sign } и оставляете свои контактные данные или связываетесь со мной по указанным #{ contacts }.".html_safe}
+%img.img-arrow{src: "/assets/about/arrow1.png", style: "left: 240px; top: -45px;"}
 = render partial: 'minicard', locals: {left: "margin-left: 45px;", image: "/assets/about/kpnk 2.png", title: "2. Звонок", body: "В течение 24 часов я вам перезваниваю/отвечаю на сообщение, анализирую вашу ситуацию, отвечаю на вопросы и мы вместе согласовываем дальнейшие действия."}
+%img.img-arrow{src: "/assets/about/arrow2.png", style: "left: 535px; top: 345px;"}
 = render partial: 'minicard', locals: {left: "margin-left: 45px;",image: "/assets/about/kpnk 3.png", title: "3. Консультация", body: "Очно или онлайн работаем с вашим запросом путем специально выстроенного диалога и психотерапевтических техник."}
+%img.img-arrow{src: "/assets/about/arrow1.png", style: "left: 830px; top: -45px;"}
 = render partial: 'minicard', locals: {left: "margin-left: 45px;",image: "/assets/about/kpnk 4.png", title: "4. Результат", body: "Вы чувствуете себя спокойно, комфортно и уверенно. Делаете то, что для Вас ценно и важно. Имеете навыки для самостоятельного решения проблем."}

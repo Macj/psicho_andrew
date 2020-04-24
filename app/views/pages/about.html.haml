@@ -34,22 +34,22 @@
     - @problems.each do |problem|
       = render partial: '/articles/min_card', locals: {card: problem}
 
-.container-fluid{style: " text-align: center; clear: both; width: 84%; height: 25rem; height: 870px; margin: auto"}
+.container-fluid{style: " text-align: center; clear: both; width: 1050px; height: 25rem; height: 870px; margin: auto"}
   %h3 Список услуг и стоимость
   = render partial: 'services_block'
  
 .container-fluid.service-include#include{style: ""}
   %h3{style: ""} В стоимость консультации входит:
-  %div{style: 'margin-left: 16%'}
+  #include-block
     = render partial: 'include'
 
 
-.container-fluid#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; padding-left: 7px; border-left: none; border-right: none;  border-top:none;"}
+#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; border-left: none; border-right: none;  border-top:none; margin-top: 600px"}
   = render partial: 'principles'
 
 .container-fluid#how_get_to{style: "margin-top: 50px; text-align: center; clear: both;  height: 450px;"}
   %h3 Как попасть на консультацию?
-  %div{style: "width: 86%; margin: auto; margin-top: 40px "}
+  %div{style: "width: 1136px; margin-top: 40px; position:relative; "}
     = render partial: 'how_to_get'
 
 .container-fluid#feedbacks{style: " text-align: center; border: none;"}

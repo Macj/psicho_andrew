@@ -1,14 +1,14 @@
-- show = defined?(visible) ? "display:block" : ""
-- shift = defined?(visible) ? "left:540px" : "left:300px"
-.collapse#menu_collapse{style: "float:left;  #{show}"}
-  %a.ml-5{ href: "#{ about_path }" }
+- show = defined?(visible) ? "max-height: 38px; display:block; float: left;  min-width: 660px;" : "min-height: 40px; height: 40px; margin-left: 70px; min-width: 780px; background-color: #2b6ca1; border-radius: 0.25rem; "
+- shift = defined?(visible) ? "" : "ml-5"
+.collapse#menu_collapse{style: " #{show}"}
+  %a{class: shift,  href: "#{ about_path }" }
     %button.btn.btn-white{ type:"button" }
       Обо мне
-  #consult{style: "display: inline"}
+  #consult
     %a{ href: "#{consultation_path}" }
       %button.btn.btn-white{ type:"button" }
         Консультации
-    .collapse#sub_consult{style: "float:left; ml-5; #{shift}"}
+    .collapse#sub_consult
       .card.card-body
         %a.btn.btn-white{ href: "#{work_with_path}" }
           С чем работаю
