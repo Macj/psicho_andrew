@@ -44,7 +44,7 @@ class PagesController < ApplicationController
   end
 
   def methods
-    @problems = Article.where(id: (23..28).to_a) 
+    @problems = Article.where(id: (23..28).to_a).order(:id => "ASC")
   end
 
   def reviews

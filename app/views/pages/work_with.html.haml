@@ -1,4 +1,4 @@
 %h3{style: 'text-align: center;'} Мои направления работы
 .container{style: "max-width: 1170px"}
   - @problems.each do |problem|
-    = render partial: '/articles/min_card', locals: {card: problem, title: card_name(problem)}
+    = render partial: '/articles/min_card', locals: {card: problem, title: card_name(problem), body: card_body(problem)}
