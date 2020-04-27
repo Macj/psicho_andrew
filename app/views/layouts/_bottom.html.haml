@@ -2,8 +2,7 @@
   %thead
     %tr
       %td{style: "width: 350px"}
-        %a{ href: "#{ about_path }" }
-          Обо мне
+        Обо мне
       %td{style: "width: 400px"}
         %a{ href: "#{consultation_path}" }
           Консультации
@@ -18,7 +17,8 @@
   %tbody{style: "margin-top: 40px;"}
     %tr
       %td
-        Кто я
+        %a{ href: "#{ about_path }" }
+          Кто я
       %td
         %a{ href: "#{work_with_path}" }
           С чем я работаю
@@ -30,7 +30,8 @@
 
     %tr
       %td
-        Моё образование
+        %a{ href: "#{ about_path }#work_and_study" }
+          Моё образование
       %td
         %a{ href: "#{methods_path}" }
           Мои методы работы
@@ -42,7 +43,8 @@
 
     %tr
       %td
-        Мой опыт
+        %a{ href: "#{ about_path }#work_and_study" }
+          Мой опыт
       %td
         %a{ href: "#{my_reviews_path}" }
           Отзывы клиентов
