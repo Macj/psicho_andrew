@@ -9,7 +9,9 @@
         %h3{style: "margin-left: 30%; font-size: 30px; margin-bottom: 15px"} Ткаченко Андрей
         %h5.card-title{style: "margin-left: 40%"} психолог
         %p.card-text
-          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог. Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. Я помогаю улучшить качество жизни каждого моего клиента, избавляя его от невроза, тревоги, страхов, депрессии и проблем в личной жизни (смотрите полный 
+          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог. Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. Я помогаю улучшить качество жизни каждого моего клиента, избавляя его от невроза, тревоги, страхов, депрессии и проблем в личной жизни 
+          %br
+          ( смотрите полный 
           %a{href: "/work-with" }
             список решаемых проблем
           ).
@@ -32,9 +34,9 @@
   .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 90%; "}
     %h3 Мои направления работы:
     - @problems.each do |problem|
-      = render partial: '/articles/min_card', locals: {card: problem}
+      = render partial: '/articles/min_card', locals: {card: problem, title: card_name(problem), body: card_body(problem)}
 
-.container-fluid{style: " text-align: center; clear: both; width: 1050px; height: 25rem; height: 870px; margin: auto"}
+.container-fluid{style: " text-align: center; clear: both; width: 1050px; height: 25rem; height: 830px; margin: auto; margin-top: 60px;"}
   %h3 Список услуг и стоимость
   = render partial: 'services_block'
  
@@ -44,12 +46,12 @@
     = render partial: 'include'
 
 
-#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; border-left: none; border-right: none;  border-top:none; margin-top: 600px"}
+#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; border-left: none; border-right: none;  border-top:none; margin-top: 555px"}
   = render partial: 'principles'
 
 .container-fluid#how_get_to{style: "margin-top: 50px; text-align: center; clear: both;  height: 450px;"}
-  %h3 Как попасть на консультацию?
-  %div{style: "width: 1136px;  position:relative; margin: auto; margin-top: 40px; "}
+  %h3{style: "margin-bottom: 60px; "} Как попасть на консультацию?
+  %div{style: "width: 1136px;  position:relative; margin: auto; margin-top: 40px; margin-left: 70px;"}
     = render partial: 'how_to_get'
 
 .container-fluid#feedbacks{style: " text-align: center; border: none;"}

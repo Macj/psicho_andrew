@@ -6,9 +6,8 @@
       %th Name
       %th Email
       %th Phone
-      %th Comment
-      %th
-      %th
+      %th 
+      %th Comments
       %th
 
   %tbody
@@ -17,7 +16,11 @@
         %td= client.name
         %td= client.email
         %td= client.phone
-        %td= client.comment
+        %td
+        %td
+          - client.requests.each do |r|
+            = r.comment
+            %br
         %td= link_to 'Show', client
         %td= link_to 'Edit', edit_client_path(client)
         %td= link_to 'Destroy', client, method: :delete, data: { confirm: 'Are you sure?' }

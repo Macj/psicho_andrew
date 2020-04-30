@@ -1,4 +1,4 @@
-$( document ).ready ()->
+$( document ).on 'turbolinks:load', ()->
   $('.find_out').hide()
 
   $('.find_out_card').hover ()->
