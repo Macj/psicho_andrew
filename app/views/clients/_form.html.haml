@@ -21,9 +21,8 @@
         = f.text_field :name, class: 'form-control', placeholder: "Имя", style: 'width:400px'
       .form-group.row.ml-3
         = f.text_field :email, class: 'form-control', placeholder: "E-mail", style: 'width:400px'
-      - unless hide_right_block
-        .form-group.row.ml-3
-          = f.text_field :phone, class: 'form-control', placeholder: "Номер телефона", style: 'width:400px'
+      .form-group.row.ml-3
+        = f.text_field :phone, class: 'form-control', placeholder: "Номер телефона", style: 'width:400px'
       .form-group.row.ml-3
         = text_area :request, :comment, class: 'form-control', placeholder: "Опишите проблему ", style: 'width:400px'
       - unless hide_days
