@@ -4,5 +4,6 @@
   .card-body
     %h5.card-title
       = card.name
-    = link_to 'Открыть', card, class: '.btn.btn-primary'
-    = link_to 'Удалить', card, class: 'pl-5', method: :delete, data: { confirm: 'Are you sure?' }
+    - if current_user
+      = link_to 'Открыть', card, class: '.btn.btn-primary'
+      = link_to 'Удалить', card, class: 'pl-5', method: :delete, data: { confirm: 'Are you sure?' }

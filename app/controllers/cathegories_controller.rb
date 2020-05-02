@@ -10,7 +10,9 @@ class CathegoriesController < ApplicationController
   # GET /cathegories/1
   # GET /cathegories/1.json
   def show
-    @articles = Article.where(cathegory_id: @cathegory.id)
+    cat = @cathegory.sub_cathegories.map(&:id) << @cathegory.id
+    @articles = Article.where(cathegory_id: cat)
+
   end
 
   # GET /cathegories/new

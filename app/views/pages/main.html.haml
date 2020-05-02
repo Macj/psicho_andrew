@@ -41,8 +41,8 @@
       %a{ href: "#{cathegory_path(5)}" }
         Саморазвитие
     %button.btn.btn-outline-dark.main-page-btn{ type:"button" }
-      %a{ href: "#{education_path}" }
-        Обучение
+      =#%a{ href: "#{education_path}" }
+      Обучение
 
 - content_for :contacts do
   = link_to image_tag("/assets/icon/1fb.png", size: "65"), "https://m.me/tkachenko.psychology", {:class => "c-icon r-icom"} 

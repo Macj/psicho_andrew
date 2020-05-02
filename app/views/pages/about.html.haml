@@ -30,8 +30,8 @@
   = render partial: "work_and_study"
 
 .container-fluid.gr-border{style: " border-left: none; border-right: none;  border-top:none; margin-bottom: 30px; margin-top: 39px; height: 1200px; padding-top: 10px;"}
-  .container-fluid{style: "text-align: center; clear: top; margin: auto;  height: 750px; width: 90%; "}
-    %h3 Мои направления работы:
+  .container-fluid{style: " clear: top; margin: auto;  height: 750px; width: 90%; "}
+    %h3{style: "text-align: center;"} Мои направления работы:
     - @problems.each do |problem|
       = render partial: '/articles/min_card', locals: {card: problem, title: card_name(problem), body: card_body(problem)}
 
