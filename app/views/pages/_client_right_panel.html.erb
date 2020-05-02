@@ -35,7 +35,7 @@
       <div class="card-header" id="headingThree">
         <h2 class="mb-0">
           <button class="btn btn-link btn-consult" type="button" data-target="collapseConsultFour" >
-            Шаг 4-й
+            Шаг четвертый
           </button>
         </h2>
       </div>
@@ -45,13 +45,19 @@
   <div class="conteiner" style="height: 750px; clear: top;">
     <div id="collapseConsultOne" class="collapse-consult" >
       <div class="card-body step-deep-30" style="">
+        Напишите свое имя, E-mail, телефон и проблему, которую хотите решить.   
+        <br/>
+        ЛИБО напишите мне напрямую в мои мессенджеры и соц.сети.
+        <br/>
         <img class="img-fluid" src="/assets/about/form4.gif" style="border: 2px solid lightgray; margin-left: -19px"> </img>
       </div>
     </div>
 
     <div id="collapseConsultTwo" class="collapse-consult">
-      <div class="card-body step-deep-30" style="width: 780px; margin-left: 10px; ">
-        Ознакомьтесь со списком услуг и стоимостью.
+      <div class="card-body step-deep-30" style="width: 780px; margin-left: 10px; text-align: center">
+        <font style="float: left;"> Выберите услугу.</font>
+        <br/>
+        <font style="float: left;">Если хотите, чтобы я вам перезвонил - выбирайте "Предварительная консультация".</font>
         <br/>
         <br/>
         <%- if @services.nil? %>
@@ -64,7 +70,7 @@
 
     <div id="collapseConsultThree" class="collapse-consult" >
       <div class="card-body step-deep-30">
-        Прочтите договор на предоставление психологических услуг.
+        Прочтите договор и поставьте галочку "С договором на предоставление психологических услуг ознакомлен и согласен".
         <br/>
         <br/>
         <%= render partial: '/pages/contract_body' %>
@@ -73,9 +79,11 @@
 
     <div id="collapseConsultFour" class="collapse-consult" >
       <div class="card-body step-deep-30">
-        Выберите в календаре свободное время для проведения консультации 
+        Ознакомьтесь с моим свободным временем, когда я могу Вас принять. Выберите  
         <br/>
-        или оставьте заявку и мы обязательно с вами свяжемся
+        дни недели и время, когда Вам удобно провести консультацию со мной. 
+        <br/>
+        Отправьте заявку. В течении 24 часов я Вам перезвоню.
         <br/>
         <%= render partial: '/pages/calendar'%>
       </div>

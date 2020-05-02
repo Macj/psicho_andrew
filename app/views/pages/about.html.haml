@@ -9,12 +9,11 @@
         %h3{style: "margin-left: 30%; font-size: 30px; margin-bottom: 15px"} Ткаченко Андрей
         %h5.card-title{style: "margin-left: 40%"} психолог
         %p.card-text
-          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог. Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. Я помогаю улучшить качество жизни каждого моего клиента, избавляя его от невроза, тревоги, страхов, депрессии и проблем в личной жизни 
+          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог. Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. Я помогаю улучшить качество жизни каждого моего клиента, избавляя его от невроза, тревоги, страхов, депрессии, проблем в личной жизни и т.д. 
           %br
-          ( смотрите полный 
           %a{href: "/work-with" }
-            список решаемых проблем
-          ).
+            Полный список решаемых проблем
+    
         %p.card-text
           %b{style: "margin-left: 40%"} МОЙ ПУТЬ
           %br
@@ -36,7 +35,7 @@
     - @problems.each do |problem|
       = render partial: '/articles/min_card', locals: {card: problem, title: card_name(problem), body: card_body(problem)}
 
-.container-fluid{style: " text-align: center; clear: both; width: 106 0px; height: 25rem; height: 830px; margin: auto; margin-top: 60px;"}
+.container-fluid{style: " text-align: center; clear: both; width: 1060px; height: 25rem; height: 830px; margin: auto; margin-top: 60px;"}
   %h3 Список услуг и стоимость
   = render partial: 'services_block'
  
@@ -46,7 +45,7 @@
     = render partial: 'include'
 
 
-#principles.gr-border{style: "text-align: center; clear: both;  height: 500px; padding-top: 20px; border-left: none; border-right: none;  border-top:none; margin-top: 555px"}
+#principles.gr-border{style: "text-align: center; clear: both;  height: 600px; padding-top: 20px; border-left: none; border-right: none;  border-top:none; margin-top: 555px"}
   = render partial: 'principles'
 
 .container-fluid#how_get_to{style: "margin-top: 50px; text-align: center; clear: both;  height: 450px;"}
