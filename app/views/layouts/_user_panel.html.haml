@@ -2,5 +2,3 @@
   - if current_user
     = "Приветствую " + current_user.email
     = link_to " Выйти", destroy_user_session_path(), method: 'delete', style: "text-decoration: none; color: white;"
-  - else
-    = link_to " Войти", new_user_session_path(), style: "text-decoration: none; color: white;"

@@ -30,4 +30,5 @@
 
 %br
 
-= link_to 'New Service', new_service_path
+- if current_user
+  = link_to 'New Service', new_service_path

@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 	def about
 		@problems = Article.first(12)
 		@services = Service.all[0..2]
-		@reviews = Review.first(3)
+		@reviews = Review.first(4)
 	end
 
 	def consultation

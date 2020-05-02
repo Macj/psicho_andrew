@@ -1,6 +1,6 @@
 %h1 Listing experiences
-
-= link_to 'New Experience', new_experience_path
+- if current_user
+  = link_to 'New Experience', new_experience_path
 
 %div{ style: 'clear: both; hight: 100%' }
   - @experiences.each do |experience|

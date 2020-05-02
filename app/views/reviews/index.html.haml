@@ -5,5 +5,5 @@
   - @reviews.each do |review|
     = render partial: "card", locals: { card: review, is_left: true }
 
-
-= link_to 'New Review', new_review_path, class: 'btn btn-info', style: "clear: both"
+- if current_user
+  = link_to 'New Review', new_review_path, class: 'btn btn-info', style: "clear: both"

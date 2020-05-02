@@ -5,7 +5,8 @@
   <%= yield :filters %>
 
   <%= render partial: '/layouts/search'%>
-  <%= link_to 'New Article', new_article_url, class: "btn btn-success", style: "float: right" %>
+  - if current_user
+    <%= link_to 'New Article', new_article_url, class: "btn btn-success", style: "float: right" %>
 </div>
 <div class="collapse" id="collapseExample" style="margin-top: 65px">
   <div class="card card-body" style=" display: block; height: 550px">

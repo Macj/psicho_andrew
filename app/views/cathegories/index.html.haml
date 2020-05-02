@@ -1,6 +1,7 @@
 %h1 Listing cathegories
 
-= link_to 'New Cathegory', new_cathegory_path
+- if current_user
+  = link_to 'New Cathegory', new_cathegory_path
 
 %div{ style: 'clear: both; hight: 100%' }
   - @cathegories.each do |cathegory|
