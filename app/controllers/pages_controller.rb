@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-  before_action :authenticate_user!, except: ['tmp']
 	layout "main", only: [:main]
 	
 	def main

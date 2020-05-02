@@ -29,6 +29,7 @@
     <div class="navigation-block">
       <%- unless(defined?(@hide_menu)) %>
         <div class="menu_line" style="">
+          <%= render partial: '/layouts/user_panel'%>
           <%= render partial: '/layouts/main_menu', locals: {visible: true} %>
           <%- unless current_page?(action: 'new', controller: "/clients")%>
             <%= render partial: '/layouts/call_me' %>

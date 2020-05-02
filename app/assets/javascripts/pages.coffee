@@ -40,11 +40,11 @@ $( document ).on 'turbolinks:load', ()->
 
   $(".get-service").on 'click', (e)->
     e.preventDefault()
-    $('#request_comment').value = "HAHA"
+    value = document.getElementById('request_comment').value
     target = $(this).attr('data-target')
     $(".service").removeClass('selected')
     $('#'+target).addClass("selected")
-    $('#request_comment').text( $(this).attr('data') )
+    document.getElementById('request_comment').value = $(this).attr('data')  + "\n" + value;
 
   $("#client_form_close").on 'click', ->
     $("#client_form").hide()

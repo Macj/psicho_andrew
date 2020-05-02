@@ -30,8 +30,8 @@
       = card.body.html_safe
 
   %h6.article-body
-    Tags:
-    = card.tags
+    - card.tags.split(" ").each do |t|
+      = link_to "\##{t}", articles_path(query: t)
 
 
 .right{style: "float: left; margin-left: 50px; margin-right: -200px; text-align: center;"}
