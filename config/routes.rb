@@ -38,6 +38,8 @@ get 'text' => 'pages#text', as: :text
 get 'make_order' => 'pages#make_order', as: :make_order
 get 'new_menu' => 'pages#new_menu', as: :new_menu
 
+get 'new' => 'new#main', as: :new
+
 root "pages#main"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

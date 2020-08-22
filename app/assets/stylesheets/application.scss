@@ -605,6 +605,8 @@ footer{
 }
 
 .service-price{
+
+
   font-weight: bold;
   text-align: center;
   width: 300px;
@@ -637,4 +639,16 @@ footer{
 
 .row{
   margin-left: 0px;
+}
+
+#test{
+  /* AT (1) 1 */
+
+position: absolute;
+width: 302px;
+height: 302px;
+left: -24px;
+top: -92px;
+background: url('/assets/AT_(1).png') ;
+background-color: gray;
 }
