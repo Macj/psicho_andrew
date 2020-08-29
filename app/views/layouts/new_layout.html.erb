@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'new_application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag     "/assets/clock/dist/bootstrap-clockpicker.css" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -21,15 +21,25 @@
     <meta name="description"  content="#{@article.description}">
     <meta name="keywords" content="#{@article.tags}">
   <% end %>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-  <body style="height: 708px; width: 1280px">
+  <body style="height: 708px; width: 100%; margin: 0;">
+    <header id="header" style="height: 108px; width: 100%;
+      background-image: url(assets/new/bacground_header8.png);
+      background-repeat:round;
+      background-size: cover;
+      position: absolute;">
+      <%= render partial: "/layouts/new_header"%> 
+    </header>
     
-    <div style="height: 108px; width: 1280px">
-      <%= render partial: '/layouts/header' %>
-    </div>
-    <div style="height: 84%, width: 100%">
+
+
+    <div id="content" style="height: 84%; width: 100%; 
+    background: linear-gradient(180.14deg, rgba(255, 176, 118, 0.1) 0.12%, rgba(255, 195, 152, 0.05) 57.83%, rgba(255, 255, 255, 0) 96.46%);">
       <%= yield %>
-    </div>>
+    </div>
   </body>
 </html>
 
