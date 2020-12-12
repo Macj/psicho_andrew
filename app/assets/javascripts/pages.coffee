@@ -5,7 +5,6 @@
 
 
 $( document ).on 'turbolinks:load', ()->
-  console.log('hdsfjdsgfjadskfjadsgfkjadsgkfjadskjf')
   $("#collapseBack").hide()
   $('.work-block').hide()
   $("#multiCollapseWork").hide()

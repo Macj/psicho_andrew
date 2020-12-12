@@ -20,3 +20,4 @@ $( document ).on 'turbolinks:load', ()->
   $('#close_ty_block').on 'click', (e)->
     e.preventDefault()
     $('#thank_you_block').hide()
+

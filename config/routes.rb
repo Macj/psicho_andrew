@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :faqs
   resources :clients
   resources :experiences
-  resources :reviews
+#  resources :reviews
 
 # get 'main' => 'pages#main'
 
@@ -27,7 +27,7 @@ get 'education' => 'pages#education'
 
 get 'my-services' => 'pages#services', as: :my_services
 
-get 'my-reviews' => 'pages#reviews', as: :my_reviews
+#get 'my-reviews' => 'pages#reviews', as: :my_reviews
 
 # get 'work-with' => 'pages#work_with', as: :work_with 
 
@@ -43,7 +43,7 @@ get 'new_menu' => 'pages#new_menu', as: :new_menu
   get '/about'          => 'new#about'
   get '/contacts'       => 'new#contacts'
   get '/faq'            => 'new#faq', as: :my_faq
-  get '/reviews'        => 'new#reviews'
+  get '/reviews'        => 'new#reviews', as: :my_reviews
   get '/consultations'  => 'new#consultations'
   get '/contract'       => 'new#contract'
   get '/methods'        => 'new#methods'

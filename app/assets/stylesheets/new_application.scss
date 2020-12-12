@@ -1272,6 +1272,59 @@ h2 {
   color: #ff7f50 !important;
 }
 
+
+// form css
+
+#button_client_form, #button_about, #button_faq, #button_form {
+  display: inline-block;
+  background: #ff7f50;
+  box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);
+  border-radius: 0.5vw;
+  border: 2px solid transparent;
+}
+
+#button_client_form a, #button_faq a {
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.8vw;
+  line-height: 1vw; /* identical to box height  #ffa066*/
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.1vw;
+}
+
+#button_about a, #button_form  {
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.8vw;
+  line-height: 1vw; /* identical to box height  #ffa066*/
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.1vw 2.4vw 1.1vw 2.4vw;
+}
+
+#button_client_form:hover, #button_about:hover, #button_form:hover {
+  border: 2px solid rgb(75,75,75) !important;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+#button_client_form:hover a, #button_about:hover a, #button_form:hover {
+  color: rgb(75,75,75) !important;
+}
+
+
+::-webkit-input-placeholder { color:#ACACAC; font-size: 0.8vw}
+::-moz-placeholder { color:#ACACAC; font-size: 0.8vw}
+:-ms-input-placeholder { color:#ACACAC; font-size: 0.8vw}
+:-moz-placeholder { color:#ACACAC; font-size: 0.8vw}
+
+//form css end
+
 .problem_box a:hover h3 {
   color: white;
   background-color: #ff7f50;

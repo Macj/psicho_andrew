@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200903174217) do
+ActiveRecord::Schema.define(version: 20201212214133) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,12 +50,14 @@ ActiveRecord::Schema.define(version: 20200903174217) do
     t.string   "name"
     t.string   "email"
     t.string   "phone"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
     t.boolean  "agree"
     t.boolean  "viber"
     t.boolean  "telegram"
     t.boolean  "whatsup"
+    t.boolean  "personal_info"
+    t.boolean  "contract"
   end
 
   create_table "courses", force: :cascade do |t|
@@ -94,12 +96,12 @@ ActiveRecord::Schema.define(version: 20200903174217) do
 
   create_table "requests", force: :cascade do |t|
     t.integer  "client_id"
-    t.text     "comment"
-    t.string   "days"
-    t.string   "from"
-    t.string   "to"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean  "viber"
+    t.boolean  "telegram"
+    t.boolean  "whatsapp"
+    t.text     "request"
   end
 
   create_table "reviews", force: :cascade do |t|

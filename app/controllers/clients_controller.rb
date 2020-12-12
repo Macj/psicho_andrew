@@ -1,4 +1,5 @@
 class ClientsController < ApplicationController
+  layout "new_layout"
   before_action :set_client, only: [:show, :edit, :update, :destroy]
 
   # GET /clients
@@ -73,10 +74,10 @@ class ClientsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def client_params
-      params.require(:client).permit(:name, :email, :phone)
+      params.require(:client).permit(:name, :email, :phone, :personal_info, :contract)
     end
 
     def request_params
-      params.require(:request).permit(:comment, :from, :to, days: [])
+      params.require(:request).permit(:viber, :telegram, :whatsapp, :request )
     end
 end

@@ -1,0 +1,51 @@
+<div style="width: 39vw; margin-top: -40px"><a id="client_form" name="client_form"></a>
+  <%= form_for @client do |f| %>
+    <%- if @client.errors.any? %>
+      <div id='error_explanation'>
+        <ul>
+          <%- @client.errors.full_messages.each do |message| %>
+            <li><%= message %> </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <p style="margin: 0vw 0vw 0.4vw 2vw; font-size: 0.9vw">Введите имя*</p>
+    <input type="text" placeholder="Имя" name="client[name]" required style="width: 30.2vw; height: 2vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 0.9vw">
+    <p style="margin: 0.7vw 0vw 0.4vw 2vw; font-size: 0.9vw;">Введите e-mail*</p>
+    <input type="text" placeholder="e-mail" name="client[email]" required  style="width: 30.2vw; height: 2vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 0.9vw">
+    <p style="margin: 0.7vw 0vw 0.4vw 2vw; font-size: 0.9vw;">Введите номер телефона*</p>
+    <input type="text" id='phone' placeholder="+_  (_ _ _) - _ _ _ - _ _ - _ _" required name="client[phone]" style="width: 30.2vw; height: 2vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 0.9vw">
+    <p style="margin: 0.5vw 6vw 0.4vw 2vw; font-size: 0.7vw; line-height: 1vw; font-weight: 300">Мне не хочется беспокоить вас звонками в неудобное для вас время, поэтому выберете один или несколько мессенджеров через который я с вами свяжусь</p>
+    <div style="display: flex; align-items: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 1.7vw">
+        <input type="checkbox" id="form_vider" name="request[viber]">
+        <label for="form_vider" style="font-size: 0.8vw; margin: 0.05vw 2vw 0vw 0.3vw">Viber</label>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <input type="checkbox" id="form_telegram" name="request[telegram]">
+        <label for="form_telegram" style="font-size: 0.8vw; margin: 0.05vw 2vw 0vw 0.3vw">Telegram</label>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <input type="checkbox" id="form_whatsapp" name="request[whatsapp]">
+        <label for="form_whatsapp" style="font-size: 0.8vw; margin: 0.05vw 0vw 0vw 0.3vw">Whatsapp</label>
+      </div>
+    </div>
+    <p style="margin: 0.8vw 0vw 0.4vw 2vw; font-size: 0.9vw">Кратко опишите вашу проблему</p>
+    <textarea placeholder="Краткое описание" name="request[request]"  style="width: 30.2vw; height: 6vw; margin-right: 4vw; padding-left: 2vw; padding-top: 1vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 0.9vw"></textarea>
+    <!--<input type="text" placeholder="Краткое описание" style="width: 32.2vw; height: 6vw; margin-right: 4vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07);"> -->
+    <div style="display: flex; align-items: center; margin-top: 0.3vw">
+      <input type="checkbox" id="form_contract" required name="client[contract]">
+      <label for="form_contract" style="font-size: 0.8vw; margin: 0.1vw 2vw 0vw 0.3vw">С <a href="contract.html" target="_blank" style="color: rgb(75,75,75);;
+      text-decoration: none; border-bottom: 1px solid currentColor">договором</a> на предоставление психологических услуг ознакомлен*</label>
+    </div>
+    <div style="display: flex; align-items: center; margin-top: 0.3vw; margin-bottom: 0.4vw">
+      <input type="checkbox" id="form_perinfo"  required name="client[personal_info]" style="box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.05); border: none;">
+      <label for="form_perinfo" style="font-size: 0.8vw; margin: 0.1vw 2vw 0vw 0.3vw">Выражаю согласие на обработку моих персональных данных*</label>
+    </div>
+    <input type="submit" id="button_form" value="ОТПРАВИТЬ" style="padding: 1vw 4vw 1vw 4vw; "></input>
+  <% end %>
+</div>
+<div id="error_block" > </div>
+<div id="thank_you_block"> 
+  <%= render partial: "/new/thank_you" %>
+</div>
