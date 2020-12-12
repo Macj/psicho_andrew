@@ -1,6 +1,4 @@
 - content_for :filters do
-  .card-level{ style: "float: left;" }
-    = parent_links(card.cathegory) 
   .actions{ style: "float: right;" }
     = link_to 'Править', edit_article_path(card), class: 'btn btn-info'
     = link_to 'Удалить', card, class: 'btn btn-danger', method: :delete, data: { confirm: 'Уверен?' }
@@ -10,29 +8,31 @@
   
   .card{ style: "width: 70%; margin-left: 16%; margin-top:  -110px;" }
     .card-body  
+      .card-data
+        %ul
+          %li Глаз 245
+          %li time 3 min
+          %li =card.created_at.strftime("%d %m %Y")
+      .card-level{ style: "float: left;" }
+        = parent_links(card.cathegory) 
       %h5.card-title
         = link_to card.title, card, style: "font-size: 2rem;"
       %h6{style: 'float:left'}
-        = # TODO author
-        Андрей Ткаченко
-      .date{style: 'float:right'}
-        = card.created_at.strftime("%d.%m.%Y")
+        = # TODO author Андрей Ткаченко
       - unless current_user.nil?
         %br
         .edit{style: 'float:right'}
           = link_to "Редактировать", edit_article_path(card)
       .share-block{style: "margin-top: 40px; margin-left: 25%; border-color: black; height: 50px; width: 50%;"}
-        = social_share_button_tag("Share", :allow_sites => %w(vkontakte facebook telegram))
+        - card.tags[0..3].split(" ").each do |t|
+          %font{class: "tags"}
+            = "\##{t}"
+      =# social_share_button_tag("Share", :allow_sites => %w(vkontakte facebook telegram))
 
 
   .article-body
     %p
       = card.body.html_safe
-
-  %h6.article-body
-    - card.tags.split(" ").each do |t|
-      = link_to "\##{t}", articles_path(query: t)
-
 
 .right{style: "float: left; margin-left: 50px; margin-right: -200px; text-align: center;"}
   %br

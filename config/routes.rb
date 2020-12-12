@@ -9,38 +9,64 @@ Rails.application.routes.draw do
   resources :experiences
   resources :reviews
 
-get 'main' => 'pages#main'
+# get 'main' => 'pages#main'
 
-get 'about' => 'pages#about'
+# get 'about' => 'pages#about'
 
 get 'consultation' => 'pages#consultation'
 
-get 'contacts' => 'pages#contacts', as: :contacts
+# get 'contacts' => 'pages#contacts', as: :contacts
 
 get 'education' => 'pages#education' 
 
-get 'tests' => 'pages#tests'
+# get 'tests' => 'pages#tests'
 
-get 'faq' => 'pages#faq', as: :my_faq
+# get 'faq' => 'pages#faq', as: :my_faq
 
-get 'contract' => 'pages#contract', as: :contract
+# get 'contract' => 'pages#contract', as: :contract
 
 get 'my-services' => 'pages#services', as: :my_services
 
 get 'my-reviews' => 'pages#reviews', as: :my_reviews
 
-get 'work-with' => 'pages#work_with', as: :work_with 
+# get 'work-with' => 'pages#work_with', as: :work_with 
 
-get 'methods' => 'pages#methods', as: :methods
+# get 'methods' => 'pages#methods', as: :methods
 
-get 'text' => 'pages#text', as: :text
+# get 'text' => 'pages#text', as: :text
 
 get 'make_order' => 'pages#make_order', as: :make_order
 get 'new_menu' => 'pages#new_menu', as: :new_menu
 
-get 'new' => 'new#main', as: :new
+#scope '/new' do
+  get '/'               => 'new#main', as: :new
+  get '/about'          => 'new#about'
+  get '/contacts'       => 'new#contacts'
+  get '/faq'            => 'new#faq', as: :my_faq
+  get '/reviews'        => 'new#reviews'
+  get '/consultations'  => 'new#consultations'
+  get '/contract'       => 'new#contract'
+  get '/methods'        => 'new#methods'
+  get '/price'          => 'new#price'
+  get '/work_with'      => 'new#work_with'
+  get '/Psychotherapy for panic disorder'   => 'new#psychotherapy_for_panic_disorder'
+  get '/Psychotherapy of anxiety'           => 'new#psychotherapy_of_anxiety'
+  get '/Psychotherapy of depression'        => 'new#psychotherapy_of_depression'
+  get '/Psychotherapy of neuroses'          => 'new#psychotherapy_of_neuroses'
+  get '/Psychotherapy of psychotrauma'      => 'new#psychotherapy_of_psychotrauma'
+  get '/Relationship counseling'            => 'new#relationship_counseling'
+  get '/Coaching and training'              => 'new#coaching_and_training'
+  get '/TA'                                 => 'new#ta'
+  get '/ACT'                                => 'new#act'
+  get '/CBT'                                => 'new#cbt'
+  get '/EIT'                                => 'new#eit'
+  get '/MCT'                                => 'new#mct'
+  get '/STA'                                => 'new#sta'
+  get '/OCD psychotherapy'                  => 'new#ocd_psychotherapy'
+  get '/Low self-esteem psychotherapy'      => 'new#low_selfesteem_psychotherapy'
+#end
 
-root "pages#main"
+root "new#main"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

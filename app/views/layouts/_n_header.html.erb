@@ -1,0 +1,68 @@
+<header id="header" style="background-image: url(/assets/bacground_header.png); background-repeat:round; background-size: cover; display: flex;">
+  <div class="container_header">
+    <a href="new_main.html" style="display: flex; align-items: center;">
+      <img class="logo" src="/assets/logo.png" style="height: 3.5vw;">
+      <div class="display_none" style="margin-left: 2%; line-height: initial;">
+        <span style="font-family: Playfair Display SC; font-size: 1.2vw;">Андрей Ткаченко</span>
+        <p style="font-family: Arial; font-size: 0.6vw; margin-top: -0.4vw; line-height: 1.3vw; color: #cacaca">ПРАКТИКУЮЩИЙ ПСИХОЛОГ</p>
+      </div>
+    </a>
+    <nav class="menu" style="position: relative;">
+      <ul style="width: 60vw; font-weight: 500; font-size: 0.9vw; line-height: 1.5vw;">
+        <li><a href="about.html">Обо мне</a></li>
+        <li id="arrow">
+          <a href="consultations.html">Консультации<img src="/assets/arrow.svg" class="arrow"></a>
+          <ul style="font-weight: 500; font-size: 0.9vw; line-height: 1.5vw;">
+            <li style="border-bottom: 1px solid rgb(86,86,86); border-radius: 0.4vw 0.4vw 0vw 0vw;"><a href="work_with.html">С чем я работаю</a></li>
+            <li style="border-bottom: 1px solid rgb(86,86,86);"><a href="methods.html">Методы работы</a></li>
+            <li style="border-bottom: 1px solid rgb(86,86,86);"><a href="price.html">Цена</a></li>
+            <li style="border: none; border-radius: 0vw 0vw 0.4vw 0.4vw;"><a href="contract.html">Договор</a></li>
+          </ul>
+        </li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="articles.html">Статьи</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+        <li><a href="faq.html">Вопрос-ответ</a></li>
+      </ul>
+    </nav>
+    <div class="contacts_box" style="width: 14%; line-height: initial;">
+      <div class="contacts display_none" style="margin-top: 0.5vw">+38 (096) 424 80 25</div>
+      <div class="contacts display_none">пн-вс 10:00 - 21:00</div>
+      <div style="display: flex; justify-content: flex-end">
+        <div class="contacts_icon"><a href="https://t.me/tkachenko_psychology" target="_blank"><img class="contacts_icon_style" src="/assets/icons/telegram.svg"></a></div>
+        <div class="contacts_icon"><a href="viber://chat?number=+380964248025" target="_blank"><img class="contacts_icon_style" src="/assets/icons/viber.svg"></a></div>
+        <div class="contacts_icon"><a href="https://api.whatsapp.com/send?phone=<+380964248025>" target="_blank"><img class="contacts_icon_style" src="/assets/icons/whatsapp.svg"></a></div>
+      </div>
+    </div>  
+  </div>
+  <!-- МЕНЮ моб -->
+  <div class="menu_mob" style="width: 100vw; height: 12vw; position: fixed; background-image: url(/assets/header_mob.png); background-repeat:round; background-size: cover; z-index: 1000;">
+    <label for="sandwich" style="width: 8vw; height: 8vw; float: left; padding: 2.8vw 3.7vw;"><img src="/assets/menu2.png" style="width: 7vw"></label>
+    <a href="new_main.html" style="float: right; padding: 2.3vw 3.7vw"><img src="/assets/logo2.png" style="height: 8vw;"></a>          
+  </div>
+  <input type="checkbox" id="sandwich" style="display: none;">
+  <section class="nav_mob"> 
+    <div style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 11.46%, rgba(35, 33, 32, 0.42) 82.81%), rgba(228, 204, 187, 0.11);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); height: 22vw">
+       <label for="sandwich"><img src="/assets/close.svg" style="width: 7vw; float: right; padding: 3vw; margin: 1vw;"></label>
+       <h2 style=" font-weight: 800; font-size: 6vw; color: #FFFFFF; margin: 0px; padding: 12vw 10vw;">Меню</h2>
+    </div>
+    <ul id="nav">
+      <li><a href="about.html">Обо мне</a></li>
+      <li style="margin: 0px; display: block;"> 
+        <input type="checkbox" id="inp_cons" style="display: none;">
+        <label for="inp_cons" style="text-decoration: none; color: white;  font-weight: normal; font-size: 3.8vw; padding: 6vw 10vw; display: block; border: none; margin: 0px; text-align: left;">Консультации<img src="/assets/arrow.svg" class="arrow_mob"></label>
+        <ul id="nav2">
+            <li class="sub_li" style=""><a href="work with.html">С чем я работаю</a></li>
+            <li class="sub_li" style=""><a href="methods.html">Методы работы</a></li>
+            <li class="sub_li" style=""><a href="price.html">Цена</a></li>
+            <li class="sub_li" style="border: none;"><a href="contract.html">Договор</a></li>
+        </ul>
+      </li>
+      <li><a href="reviews.html">Отзывы</a></li>
+      <%= # <li><a href="articles.html">Статьи</a></li> %>
+      <li><a href="contacts.html">Контакты</a></li>
+      <li><a href="faq.html">Вопрос-ответ</a></li>
+    </ul>
+  </section>
+</header>
