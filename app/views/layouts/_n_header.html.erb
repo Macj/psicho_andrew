@@ -11,7 +11,7 @@
       <ul style="width: 60vw; font-weight: 500; font-size: 0.9vw; line-height: 1.5vw;">
         <li><a href="about.html">Обо мне</a></li>
         <li id="arrow">
-          <a href="consultations.html">Консультации<img src="/assets/arrow.svg" class="arrow"></a>
+          <a href="consultations.html">Консультации<img src="<%= asset_url('arrow.svg')%>" class="arrow"></a>
           <ul style="font-weight: 500; font-size: 0.9vw; line-height: 1.5vw;">
             <li style="border-bottom: 1px solid rgb(86,86,86); border-radius: 0.4vw 0.4vw 0vw 0vw;"><a href="work_with.html">С чем я работаю</a></li>
             <li style="border-bottom: 1px solid rgb(86,86,86);"><a href="methods.html">Методы работы</a></li>
@@ -36,21 +36,21 @@
   </div>
   <!-- МЕНЮ моб -->
   <div class="menu_mob" style="width: 100vw; height: 12vw; position: fixed; background-image: url(/assets/header_mob.png); background-repeat:round; background-size: cover; z-index: 1000;">
-    <label for="sandwich" style="width: 8vw; height: 8vw; float: left; padding: 2.8vw 3.7vw;"><img src="/assets/menu2.png" style="width: 7vw"></label>
-    <a href="new_main.html" style="float: right; padding: 2.3vw 3.7vw"><img src="/assets/logo2.png" style="height: 8vw;"></a>          
+    <label for="sandwich" style="width: 8vw; height: 8vw; float: left; padding: 2.8vw 3.7vw;"><img src="<%= asset_url('menu2.png')%>" style="width: 7vw"></label>
+    <a href="new_main.html" style="float: right; padding: 2.3vw 3.7vw"><img src="<%= asset_url('logo2.png')%>" style="height: 8vw;"></a>          
   </div>
   <input type="checkbox" id="sandwich" style="display: none;">
   <section class="nav_mob"> 
     <div style="background: linear-gradient(180deg, rgba(0, 0, 0, 0) 11.46%, rgba(35, 33, 32, 0.42) 82.81%), rgba(228, 204, 187, 0.11);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); height: 22vw">
-       <label for="sandwich"><img src="/assets/close.svg" style="width: 7vw; float: right; padding: 3vw; margin: 1vw;"></label>
+       <label for="sandwich"><img src="<%= asset_url('close.svg')%>" style="width: 7vw; float: right; padding: 3vw; margin: 1vw;"></label>
        <h2 style=" font-weight: 800; font-size: 6vw; color: #FFFFFF; margin: 0px; padding: 12vw 10vw;">Меню</h2>
     </div>
     <ul id="nav">
       <li><a href="about.html">Обо мне</a></li>
       <li style="margin: 0px; display: block;"> 
         <input type="checkbox" id="inp_cons" style="display: none;">
-        <label for="inp_cons" style="text-decoration: none; color: white;  font-weight: normal; font-size: 3.8vw; padding: 6vw 10vw; display: block; border: none; margin: 0px; text-align: left;">Консультации<img src="/assets/arrow.svg" class="arrow_mob"></label>
+        <label for="inp_cons" style="text-decoration: none; color: white;  font-weight: normal; font-size: 3.8vw; padding: 6vw 10vw; display: block; border: none; margin: 0px; text-align: left;">Консультации<img src="<%= asset_url('arrow.svg')%>" class="arrow_mob"></label>
         <ul id="nav2">
             <li class="sub_li" style=""><a href="work with.html">С чем я работаю</a></li>
             <li class="sub_li" style=""><a href="methods.html">Методы работы</a></li>
