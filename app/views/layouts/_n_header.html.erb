@@ -1,7 +1,7 @@
-<header id="header" style="background-image: url(/assets/bacground_header.png); background-repeat:round; background-size: cover; display: flex;">
+<header id="header" style="background-image: url(<%= asset_url('bacground_header.png')%>); background-repeat:round; background-size: cover; display: flex;">
   <div class="container_header">
     <a href="/" style="display: flex; align-items: center;">
-      <img class="logo" src="/assets/logo.png" style="height: 3.5vw;">
+      <img class="logo" src="<%= asset_url('logo.png')%>" style="height: 3.5vw;">
       <div class="display_none" style="margin-left: 2%; line-height: initial;">
         <span style="font-family: Playfair Display SC; font-size: 1.2vw;">Андрей Ткаченко</span>
         <p style="font-family: Arial; font-size: 0.6vw; margin-top: -0.4vw; line-height: 1.3vw; color: #cacaca">ПРАКТИКУЮЩИЙ ПСИХОЛОГ</p>
@@ -28,9 +28,9 @@
       <div class="contacts display_none" style="margin-top: 0.5vw">+38 (096) 424 80 25</div>
       <div class="contacts display_none">пн-вс 10:00 - 21:00</div>
       <div style="display: flex; justify-content: flex-end">
-        <div class="contacts_icon"><a href="https://t.me/tkachenko_psychology" target="_blank"><img class="contacts_icon_style" src="/assets/icons/telegram.svg"></a></div>
-        <div class="contacts_icon"><a href="viber://chat?number=+380964248025" target="_blank"><img class="contacts_icon_style" src="/assets/icons/viber.svg"></a></div>
-        <div class="contacts_icon"><a href="https://api.whatsapp.com/send?phone=<+380964248025>" target="_blank"><img class="contacts_icon_style" src="/assets/icons/whatsapp.svg"></a></div>
+        <div class="contacts_icon"><a href="https://t.me/tkachenko_psychology" target="_blank"><img class="contacts_icon_style" src="<%= asset_url('icons/telegram.svg')%>"></a></div>
+        <div class="contacts_icon"><a href="viber://chat?number=+380964248025" target="_blank"><img class="contacts_icon_style" src="<%= asset_url('icons/viber.svg')%>"></a></div>
+        <div class="contacts_icon"><a href="https://api.whatsapp.com/send?phone=<+380964248025>" target="_blank"><img class="contacts_icon_style" src="<%= asset_url('icons/whatsapp.svg')%>"></a></div>
       </div>
     </div>  
   </div>
