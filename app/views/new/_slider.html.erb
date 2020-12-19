@@ -2,6 +2,7 @@
   'use strict';
   var multiItemSlider = (function () {
     return function (selector, config) {
+      console.log(selector)
       var
         _mainElement = document.querySelector(selector), // основный элемент блока
         _sliderWrapper = _mainElement.querySelector('.slider__wrapper'), // обертка для .slider-item
@@ -104,7 +105,7 @@
     }
   }());
 
-  var slider = multiItemSlider('#w_results')
   var slider = multiItemSlider('#w_reviews')
+  var slider = multiItemSlider('#w_results')
 
 </script>
