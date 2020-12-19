@@ -1,4 +1,4 @@
-<div class="pc_content">
+<div class="pc_content" id="w_reviews">
   <div class="container">
     <h1 style="text-align: center; font-weight: 800; font-size: 3vw; margin: 5vw 0px 2vw 0vw">Отзывы</h1>
     <p style="text-align: center; font-size: 1.2vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 2vw 0vw 4vw 0vw;">Предлагаю вам ознакомиться с тем, что говорят о проделанной мною работе мои клиенты.<br>Внизу сраницы вы также найдете видео отзывы людей, которых я консультировал</p>
@@ -145,5 +145,8 @@
     </div>
 
     <%= render partial: "/new/slider"%>
+    <script type="text/javascript">
+        var slider = multiItemSlider('#w_reviews')
+    </script>
 
   </div> <!-- Конец  container -->
