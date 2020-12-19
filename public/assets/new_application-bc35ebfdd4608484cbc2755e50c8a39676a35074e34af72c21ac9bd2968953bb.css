@@ -599,12 +599,12 @@ input#inp_cons:checked + label img {
 
 /* line 509, app/assets/stylesheets/new_application.scss */
 .slider__control_left::before {
-  background-image: url("/assets/стрелка влево.svg");
+  background-image: url(/assets/ll-0c900f3208eb1bbbb8ddb9c90e692228952f9c384607f97b997bb1252d133526.svg);
 }
 
 /* line 513, app/assets/stylesheets/new_application.scss */
 .slider__control_right::before {
-  background-image: url("/assets/стрелка вправо.svg");
+  background-image: url(/assets/lr-19b7c5a4fe9805d3c548fb62d01c76410f0fa83c84b61fe832f2ff00d78187c0.svg);
 }
 
 /* line 517, app/assets/stylesheets/new_application.scss */
@@ -1638,87 +1638,91 @@ input#video:checked ~ div {
 */
 /*     КОНЕЦ МОБИЛЬНОЙ ВЕРСИИ     */
 /* line 1400, app/assets/stylesheets/new_application.scss */
-.lb-loader, .lightbox {
-  text-align: center;
-  line-height: 0;
-  position: absolute;
-  left: 0;
-}
-
-/* line 1400, app/assets/stylesheets/new_application.scss */
 body.lb-disable-scrolling {
   overflow: hidden;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1404, app/assets/stylesheets/new_application.scss */
 .lightboxOverlay {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: #000;
-  filter: alpha(Opacity=80);
-  opacity: .8;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
   display: none;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1415, app/assets/stylesheets/new_application.scss */
 .lightbox {
+  position: absolute;
+  left: 0;
   width: 100%;
   z-index: 10000;
-  font-weight: 400;
-  outline: 0;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+  outline: none;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1426, app/assets/stylesheets/new_application.scss */
 .lightbox .lb-image {
   display: block;
   height: auto;
   max-width: inherit;
   max-height: none;
   border-radius: 3px;
-  border: 4px solid #fff;
+  /* Image border */
+  border: 4px solid white;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1437, app/assets/stylesheets/new_application.scss */
 .lightbox a img {
   border: none;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1441, app/assets/stylesheets/new_application.scss */
 .lb-outerContainer {
   position: relative;
+  *zoom: 1;
   width: 250px;
   height: 250px;
   margin: 0 auto;
   border-radius: 4px;
-  background-color: #fff;
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1454, app/assets/stylesheets/new_application.scss */
 .lb-outerContainer:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1460, app/assets/stylesheets/new_application.scss */
 .lb-loader {
+  position: absolute;
   top: 43%;
+  left: 0;
   height: 25%;
   width: 100%;
+  text-align: center;
+  line-height: 0;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1470, app/assets/stylesheets/new_application.scss */
 .lb-cancel {
   display: block;
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat;
+  background: url(/assets/loading-225aa88b6ab02c06222ec9468d62e15fa188e39cdb9431d1f55401ad380753ed.gif) no-repeat;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1478, app/assets/stylesheets/new_application.scss */
 .lb-nav {
   position: absolute;
   top: 0;
@@ -1728,83 +1732,84 @@ body.lb-disable-scrolling {
   z-index: 10;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1487, app/assets/stylesheets/new_application.scss */
 .lb-container > .nav {
   left: 0;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1491, app/assets/stylesheets/new_application.scss */
 .lb-nav a {
-  outline: 0;
-  background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
-.lb-next, .lb-prev {
+/* line 1496, app/assets/stylesheets/new_application.scss */
+.lb-prev, .lb-next {
   height: 100%;
   cursor: pointer;
   display: block;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1502, app/assets/stylesheets/new_application.scss */
 .lb-nav a.lb-prev {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../images/prev.png) left 48% no-repeat;
-  filter: alpha(Opacity=0);
+  background: url(/assets/prev-7fd9273f20fdb1229c224341271a119020a5eee74ccf6b4605730917c864caf2.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity .6s;
-  transition: opacity .6s;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1515, app/assets/stylesheets/new_application.scss */
 .lb-nav a.lb-prev:hover {
-  filter: alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1520, app/assets/stylesheets/new_application.scss */
 .lb-nav a.lb-next {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../images/next.png) right 48% no-repeat;
-  filter: alpha(Opacity=0);
+  background: url(/assets/next-15b869b02c6fbaa8c6c26445a2dd2d9bad80fd27b1409f8179e5dd89dc89d90a.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity .6s;
-  transition: opacity .6s;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1533, app/assets/stylesheets/new_application.scss */
 .lb-nav a.lb-next:hover {
-  filter: alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1538, app/assets/stylesheets/new_application.scss */
 .lb-dataContainer {
   margin: 0 auto;
   padding-top: 5px;
+  *zoom: 1;
   width: 100%;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1547, app/assets/stylesheets/new_application.scss */
 .lb-dataContainer:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1553, app/assets/stylesheets/new_application.scss */
 .lb-data {
   padding: 0 4px;
   color: #ccc;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1558, app/assets/stylesheets/new_application.scss */
 .lb-data .lb-details {
   width: 85%;
   float: left;
@@ -1812,45 +1817,45 @@ body.lb-disable-scrolling {
   line-height: 1.1em;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1565, app/assets/stylesheets/new_application.scss */
 .lb-data .lb-caption {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1em;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1571, app/assets/stylesheets/new_application.scss */
 .lb-data .lb-caption a {
   color: #4ae;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1575, app/assets/stylesheets/new_application.scss */
 .lb-data .lb-number {
   display: block;
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
-  color: #999;
+  color: #999999;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1583, app/assets/stylesheets/new_application.scss */
 .lb-data .lb-close {
   display: block;
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/close.png) top right no-repeat;
+  background: url(/assets/close-5d62e6c90005bfb71f6abb440f9e4753681cb23bbd5e60477ab6f442d2f0e69c.png) top right no-repeat;
   text-align: right;
-  outline: 0;
-  filter: alpha(Opacity=70);
-  opacity: .7;
-  -webkit-transition: opacity .2s;
-  transition: opacity .2s;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
-/* line 1400, app/assets/stylesheets/new_application.scss */
+/* line 1599, app/assets/stylesheets/new_application.scss */
 .lb-data .lb-close:hover {
   cursor: pointer;
-  filter: alpha(Opacity=100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
