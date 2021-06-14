@@ -22,6 +22,11 @@
 
   <body>
     <%= render partial: "layouts/n_header" %>
+    <% flash.each do |type, msg| %>
+      <div class="alert alert-info">
+        <%= msg %>
+      </div>
+    <% end %>
     <%= yield %>
     <%= render partial: "layouts/footer" %>
   </body>

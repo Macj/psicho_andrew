@@ -33,6 +33,7 @@ class ClientsController < ApplicationController
       if @client.save
         @request.client = @client
         @request.save
+        #flash[:alert] = "Ваш запрос был отправлен!"
         format.html { redirect_to :back }
         format.json { render :show, status: :created, location: @client }
       else
