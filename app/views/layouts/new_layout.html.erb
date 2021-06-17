@@ -9,6 +9,7 @@
 
   <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
   <%= csrf_meta_tags %>
+  <%= yield :head %>
 
   <%- if defined?(@meta_block) && @meta_block.nil? %>
     <title><%= @article.title %></title>

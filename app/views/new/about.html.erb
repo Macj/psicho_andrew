@@ -1,3 +1,7 @@
+<% content_for :head do %>
+
+<% end %>
+
 <div class="pc_content">
   <div class="container">
     <h1 style="text-align: center; font-weight: 800; font-size: 3vw; margin: 5vw 0px 2vw 0vw">Обо мне</h1>
@@ -210,123 +214,7 @@
 
 <!-- начало моб версии -->
 <div class="mob" style="background: #F7F7F7;">
-<img src="<%= asset_url('main_mob.png')%>" style="width: 100%">
-<h2 style="
-           position: absolute; 
-           top: 78vw;
-           left: 66vw;
-           font-size: 3vw;
-           line-height: 3vw;
-           letter-spacing: 0.01em;
-           color: #FFFFFF;">
-           Андрей Ткаченко</h2>
 
-<div style="background: #39383c; height: 33vw; position: absolute; top: 87vw; width: 100%">
-            <h1 style="
-            font-weight: 800;
-            font-size: 8.5vw;
-            line-height: 11vw;
-            color: #FFF7F7;
-            text-shadow: 1.5vw 0.2vw 0vw rgba(255, 173, 114, 0.25);
-            margin-top: 5.4vw;
-            text-align: center;">
-            Консультация психолога онлайн</h1>
-</div>
-<div style="background: #9e9b9b; height: 13vw; position: absolute; top: 124vw; width: 100%">
-            <h2 style=" 
-            
-            
-            font-weight: normal;
-            font-size: 4vw;
-            line-height: 4.1vw;
-            color: #FFF7F6;
-            text-align: center;
-            margin: 2.9vw 4vw;">
-            Я помогу вам разобраться с проблемами из любой точки мира</h2>
-</div>
-<button class="button1_style" style="position: absolute; top: 142vw; margin: 0px auto; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
-    <span class="button_text" style="font-size: 2.7vw; line-height: 2vw">Записаться на консультацию</span>
-</button>
-
-<h1 class="container" style="padding: 8vw 8vw 5vw 8vw;
-    text-align: center; 
-    
-    
-    font-weight: 800;
-    font-size: 4vw;
-    line-height: 4vw;
-    color: #494450;">
-    Мои направления работы
-    </h1>
-
-  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-    
-
-    <div class="problem_box">
-      <img class="problem_icon" src="<%= asset_url('anxiety.png')%>">
-      
-      <h3 class="problem_name">
-        Избавление от тревожных расстройств
-      </h3>
-      <p class="problem_text">
-          Генерализованное тревожное расстройство, тревожные мысли, предчувствия, мышечное напряжение <a class="problem_link" href="">больше...</a>
-      </p>
-    </div>
-
-    <div class="problem_box">
-        <img  class="problem_icon" src="<%= asset_url('self-esteem.png')%>">
-    
-        <h3 class="problem_name">
-          Повышение самооценки
-        </h3>
-        <p class="problem_text">
-            Избавление от мысленных самообвинений. Работа с установками “Я не смогу”, “Я не достоин” <a class="problem_link" href="">больше...</a>
-        </p>
-    </div>
-
-    <div class="problem_box">
-        <img  class="problem_icon" src="<%= asset_url('relationship.png')%>">
-    
-        <h3 class="problem_name">
-          Улучшение взаимоотношений
-        </h3>
-        <p class="problem_text">
-            Помощь в избавлении от конфликтов в семье, на работе, одиночества, страха отношений <a class="problem_link" href="">больше...</a>
-        </p>
-    </div>
-
-    <div class="problem_box">
-        <img  class="problem_icon" src="<%= asset_url('crisis.png')%>">
-    
-        <h3 class="problem_name">
-          Помощь в преодолении кризиса
-        </h3>
-        <p class="problem_text">
-            Работа с потерей смысла жизни, кризисом среднего возраста, проблемой самоопределения <a class="problem_link" href="">больше...</a>
-        </p>
-    </div>
-
-    <div class="problem_box">
-        <img  class="problem_icon" src="<%= asset_url('problem/neurosis.svg')%>">
-    
-        <h3 class="problem_name">
-          Психотерапия неврозов и психосоматики
-        </h3>
-        <p class="problem_text">
-            Работа с раздражительность, ранимостью, виной, стыдом, обидой, злостью, завистью, ВСД <a class="problem_link" href="">больше...</a>
-        </p>
-    </div>
-    <div class="problem_box">
-        <img class="problem_icon" src="<%= asset_url('depression.png')%>">
-    
-        <h3 class="problem_name">
-          Психологическая помощь при депрессии
-        </h3>
-        <p class="problem_text">
-            Работа с проблемой депрессии, дистимии, циклотомии, с грустью, печалью, апатитей, подавленностью <a class="problem_link" href="">больше...</a>
-        </p>
-    </div> 
-  </div>
   <%= javascript_include_tag  asset_url('lightbox-plus-jquery.js') %>
 </div>
 

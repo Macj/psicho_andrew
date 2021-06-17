@@ -1,0 +1,210 @@
+<div style="display: flex; justify-content: center; align-items: center; margin: 0vw 7vw">
+  <div id="mob_form" style="width: 86vw"><a id="client_form" name="client_form"></a>
+    <%= form_for @client do |f| %>
+      <%- if @client.errors.any? %>
+        <div id='error_explanation'>
+          <ul>
+            <%- @client.errors.full_messages.each do |message| %>
+              <li><%= message %> </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <p style="margin: 0vw 0vw 2vw 3vw; font-size: 3vw">Введите имя</p>
+      <input type="text" placeholder="Имя" name="client[name]" required style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw; font-family: 'Montserrat'">
+      <p style="margin: 4vw 0vw 2vw 3vw; font-size: 3vw;">Введите номер телефона</p>
+      <input type="text" id='phone' placeholder="+_  (_ _ _) - _ _ _ - _ _ - _ _" required name="client[phone]" style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw; font-family: 'Montserrat'">
+      <p style="margin: 2vw 0vw 4vw 0vw; font-size: 3vw; line-height: 3.3vw; font-weight: 300">Мне не хочется беспокоить вас звонками в неудобное для вас время, поэтому выберите мессенджер на который я вам напишу</p>
+      <div style="display: flex; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 3vw">
+          <input type="checkbox" id="form_vider" name="request[viber]">
+          <label for="form_vider" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Viber</label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <input type="checkbox" id="form_telegram" name="request[telegram]">
+          <label for="form_telegram" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Telegram</label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <input type="checkbox" id="form_whatsapp" name="request[whatsapp]">
+          <label for="form_whatsapp" style="font-size: 3vw; margin: 0.05vw 0vw 0vw 3vw">Whatsapp</label>
+        </div>
+      </div>
+      <p style="margin: 6vw 0vw 2vw 3vw; font-size: 3vw">Кратко опишите вашу проблему или вопрос</p>
+      <textarea placeholder="Краткое описание" name="request[request]"  style="width: 83vw; height: 20vw; margin-right: 4vw; padding-left: 4vw; padding-top: 3vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw; font-family: 'Montserrat'"></textarea>
+      <input type="submit" id="button_form" value="ОТПРАВИТЬ" style="padding: 1vw 4vw 1vw 4vw; "></input>
+    <% end %>
+  </div>
+  <div id="error_block" > </div>
+  <div id="thank_you_block"> 
+    <%= render partial: "/new/thank_you" %>
+  </div>
+
+<!--
+<div style="display: flex; justify-content: center; align-items: center;" id="client_form">
+  <div id="mob_form" style="width: 86vw"><a name="client_form"></a>
+    <p style="margin: 0vw 0vw 2vw 3vw; font-size: 3vw">Введите имя</p>
+    <input type="text" placeholder="Имя" style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw">
+    <p style="margin: 4vw 0vw 2vw 3vw; font-size: 3vw;">Введите номер телефона</p>
+    <input type="text" placeholder="+38 (0_ _) - _ _ _ - _ _ - _ _" style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw">
+    <p style="margin: 2vw 0vw 4vw 0vw; font-size: 3vw; line-height: 3.3vw; font-weight: 300">Мне не хочется беспокоить вас звонками в неудобное для вас время, поэтому выберите мессенджер на который я вам напишу</p>
+    <div style="display: flex; align-items: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 3vw">
+        <input type="checkbox" id="form_vider">
+        <label for="form_vider" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Viber</label>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <input type="checkbox" id="form_telegram">
+        <label for="form_telegram" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Telegram</label>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <input type="checkbox" id="form_whatsapp">
+        <label for="form_whatsapp" style="font-size: 3vw; margin: 0.05vw 0vw 0vw 3vw">Whatsapp</label>
+      </div>
+    </div>
+    <p style="margin: 6vw 0vw 2vw 3vw; font-size: 3vw">Кратко опишите вашу проблему или вопрос</p>
+    <textarea placeholder="Краткое описание" style="width: 83vw; height: 20vw; margin-right: 4vw; padding-left: 4vw; padding-top: 3vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw"></textarea>
+    <button id="button_form" style="margin: 5vw 18vw; height: 14vw; width: 50vw; border-radius: 2vw">
+      <a href="" style="padding: 1vw 4vw 1vw 4vw; font-size: 3vw">ОТПРАВИТЬ</a>
+    </button>
+  </div>
+</div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="pc_content">
+  <div style="width: 39vw; margin-top: -40px"><a id="client_form" name="client_form"></a>
+    <%= form_for @client do |f| %>
+      <%- if @client.errors.any? %>
+        <div id='error_explanation'>
+          <ul>
+            <%- @client.errors.full_messages.each do |message| %>
+              <li><%= message %> </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <p style="margin: 0vw 0vw 0.4vw 2vw; font-size: 0.9vw">Введите имя</p>
+      <input type="text" placeholder="Имя" name="client[name]" required style="width: 30.2vw; height: 2vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#4b4b4b; font-size: 0.9vw; font-family: 'Montserrat'">
+    <!--  <p style="margin: 0.8vw 0vw 0.4vw 2vw; font-size: 0.9vw;">Введите e-mail*</p>
+      <input type="text" placeholder="e-mail" name="client[email]" required  style="width: 30.2vw; height: 2vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 0.9vw"> -->
+      <p style="margin: 0.8vw 0vw 0.4vw 2vw; font-size: 0.9vw;">Введите номер телефона</p>
+      <input type="text" id='phone' placeholder="+_  (_ _ _) - _ _ _ - _ _ - _ _" required name="client[phone]" style="width: 30.2vw; height: 2vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#4b4b4b; font-size: 0.9vw; font-family: 'Montserrat'">
+      <p style="margin: 0.5vw 8vw 0.4vw 2vw; font-size: 0.83vw; line-height: 1vw; font-weight: 400">Мне не хочется беспокоить вас звонками в неудобное для вас время, поэтому выберите мессенджер на который я вам напишу</p>
+      <div style="display: flex; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 1.7vw">
+          <input type="checkbox" id="form_vider" name="request[viber]">
+          <label for="form_vider" style="font-size: 0.9vw; margin: 0.05vw 2vw 0vw 0.3vw">Viber</label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <input type="checkbox" id="form_telegram" name="request[telegram]">
+          <label for="form_telegram" style="font-size: 0.9vw; margin: 0.05vw 2vw 0vw 0.3vw">Telegram</label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <input type="checkbox" id="form_whatsapp" name="request[whatsapp]">
+          <label for="form_whatsapp" style="font-size: 0.9vw; margin: 0.05vw 0vw 0vw 0.3vw">Whatsapp</label>
+        </div>
+      </div>
+      <p style="margin: 0.8vw 0vw 0.4vw 2vw; font-size: 0.9vw">Кратко опишите вашу проблему или вопрос</p>
+      <textarea placeholder="Краткое описание" name="request[request]"  style="width: 30.2vw; height: 6vw; margin: 0vw 4vw 0.8vw 0vw; padding-left: 2vw; padding-top: 1vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#4b4b4b; font-size: 0.9vw; font-family: 'Montserrat'"></textarea>
+      <!--<input type="text" placeholder="Краткое описание" style="width: 32.2vw; height: 6vw; margin-right: 4vw; padding-left: 2vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07);"> -->
+    <!--  <div style="display: flex; align-items: center; margin-top: 0.3vw">
+        <input type="checkbox" id="form_contract" required name="client[contract]">
+        <label for="form_contract" style="font-size: 0.8vw; margin: 0.1vw 2vw 0vw 0.3vw">С <a href="contract.html" target="_blank" style="color: rgb(75,75,75);;
+        text-decoration: none; border-bottom: 1px solid currentColor">договором</a> на предоставление психологических услуг ознакомлен*</label>
+      </div>
+      <div style="display: flex; align-items: center; margin-top: 0.3vw; margin-bottom: 0.4vw">
+        <input type="checkbox" id="form_perinfo"  required name="client[personal_info]" style="box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.05); border: none;">
+        <label for="form_perinfo" style="font-size: 0.8vw; margin: 0.1vw 2vw 0vw 0.3vw">Выражаю согласие на обработку моих персональных данных*</label>
+      </div> -->
+      <input type="submit" id="button_form" value="ОТПРАВИТЬ" style="padding: 1vw 4vw 1vw 4vw; "></input>
+    <% end %>
+  </div>
+  <div id="error_block" > </div>
+  <div id="thank_you_block"> 
+    <%= render partial: "/new/thank_you" %>
+  </div>
+</div>
+
+<div class="mob" style="display: flex; justify-content: center; align-items: center;">
+  <div id="mob_form" style="width: 86vw"><a id="client_form" name="client_form"></a>
+    <%= form_for @client do |f| %>
+      <%- if @client.errors.any? %>
+        <div id='error_explanation'>
+          <ul>
+            <%- @client.errors.full_messages.each do |message| %>
+              <li><%= message %> </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <p style="margin: 0vw 0vw 2vw 3vw; font-size: 3vw">Введите имя</p>
+      <input type="text" placeholder="Имя" name="client[name]" required style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw; font-family: 'Montserrat'">
+      <p style="margin: 4vw 0vw 2vw 3vw; font-size: 3vw;">Введите номер телефона</p>
+      <input type="text" id='phone' placeholder="+_  (_ _ _) - _ _ _ - _ _ - _ _" required name="client[phone]" style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw; font-family: 'Montserrat'">
+      <p style="margin: 2vw 0vw 4vw 0vw; font-size: 3vw; line-height: 3.3vw; font-weight: 300">Мне не хочется беспокоить вас звонками в неудобное для вас время, поэтому выберите мессенджер на который я вам напишу</p>
+      <div style="display: flex; align-items: center;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 3vw">
+          <input type="checkbox" id="form_vider" name="request[viber]">
+          <label for="form_vider" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Viber</label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <input type="checkbox" id="form_telegram" name="request[telegram]">
+          <label for="form_telegram" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Telegram</label>
+        </div>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <input type="checkbox" id="form_whatsapp" name="request[whatsapp]">
+          <label for="form_whatsapp" style="font-size: 3vw; margin: 0.05vw 0vw 0vw 3vw">Whatsapp</label>
+        </div>
+      </div>
+      <p style="margin: 6vw 0vw 2vw 3vw; font-size: 3vw">Кратко опишите вашу проблему или вопрос</p>
+      <textarea placeholder="Краткое описание" name="request[request]"  style="width: 83vw; height: 20vw; margin-right: 4vw; padding-left: 4vw; padding-top: 3vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw; font-family: 'Montserrat'"></textarea>
+      <input type="submit" id="button_form" value="ОТПРАВИТЬ" style="padding: 1vw 4vw 1vw 4vw; "></input>
+    <% end %>
+  </div>
+  <div id="error_block" > </div>
+  <div id="thank_you_block"> 
+    <%= render partial: "/new/thank_you" %>
+  </div>
+</div>
+<!--
+<div style="display: flex; justify-content: center; align-items: center;" id="client_form">
+  <div id="mob_form" style="width: 86vw"><a name="client_form"></a>
+    <p style="margin: 0vw 0vw 2vw 3vw; font-size: 3vw">Введите имя</p>
+    <input type="text" placeholder="Имя" style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw">
+    <p style="margin: 4vw 0vw 2vw 3vw; font-size: 3vw;">Введите номер телефона</p>
+    <input type="text" placeholder="+38 (0_ _) - _ _ _ - _ _ - _ _" style="width: 83vw; height: 8vw; padding-left: 4vw; border: none; border-radius: 1vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw">
+    <p style="margin: 2vw 0vw 4vw 0vw; font-size: 3vw; line-height: 3.3vw; font-weight: 300">Мне не хочется беспокоить вас звонками в неудобное для вас время, поэтому выберите мессенджер на который я вам напишу</p>
+    <div style="display: flex; align-items: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-left: 3vw">
+        <input type="checkbox" id="form_vider">
+        <label for="form_vider" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Viber</label>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <input type="checkbox" id="form_telegram">
+        <label for="form_telegram" style="font-size: 3vw; margin: 0.05vw 6vw 0vw 3vw">Telegram</label>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <input type="checkbox" id="form_whatsapp">
+        <label for="form_whatsapp" style="font-size: 3vw; margin: 0.05vw 0vw 0vw 3vw">Whatsapp</label>
+      </div>
+    </div>
+    <p style="margin: 6vw 0vw 2vw 3vw; font-size: 3vw">Кратко опишите вашу проблему или вопрос</p>
+    <textarea placeholder="Краткое описание" style="width: 83vw; height: 20vw; margin-right: 4vw; padding-left: 4vw; padding-top: 3vw; border: none; border-radius: 0.5vw; box-shadow: 0 0 1em 0.01em rgba(0,0,0,0.07); color:#787878; font-size: 4vw"></textarea>
+    <button id="button_form" style="margin: 5vw 18vw; height: 14vw; width: 50vw; border-radius: 2vw">
+      <a href="" style="padding: 1vw 4vw 1vw 4vw; font-size: 3vw">ОТПРАВИТЬ</a>
+    </button>
+  </div>
+</div>
+-->
