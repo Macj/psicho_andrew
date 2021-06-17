@@ -82,7 +82,7 @@ html, body {
 
   @media only screen and (max-device-width: 767px){
     .container_header, .pc_content {
-      display: none;
+      display: none !important;
     }
     .problem_box {
       width: 38%;
