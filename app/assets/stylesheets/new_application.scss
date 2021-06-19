@@ -120,11 +120,45 @@ html, body {
       font-size: 1.6vw;
       font-weight: 700;
     }
+
+    table td, tfoot td {
+      font-size: 2.5vw !important;
+      line-height: 3vw;
+      border: 1px solid #454554;
+    }
+    table th {
+      font-size: 2.5vw !important;
+    }
+    td:first-child {
+      border-right: none !important;
+    }
+    table td {
+      border-bottom: none;
+    }
+    tfoot tr td {
+      border-bottom: 1px solid #454554;
+    }
+    h2 {
+      padding: 7vw 0vw 0vw 0vw;
+      margin: 0vw;
+      text-align: start;
+      font-weight: 800;
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+    p, ul {
+    font-size: 2.7vw; line-height: 3.4vw; text-align: start;
+    }
   }
 
   @media only screen and (min-device-width: 768px){
     .menu_mob, .mob {
       display: none !important;
+    }
+    h2 {
+      font-size: 2vw;
+      font-weight: 800;
+      margin: 4vw 0vw 2vw 4vw;
     }
     #mob_form {
       width: 0vw !important;
@@ -1317,11 +1351,27 @@ ul ul li {
   list-style-type: '\25B7';
 }
 
+table {
+  border-spacing: inherit; 
+  margin-bottom: 5vw;
+  font-weight: 500;
+}
+
 th {
   background-color: rgb(75,75,75);
   color: white;
   font-weight: 600; 
   font-size: 1.1vw;
+  text-align: center;
+  padding: 1vw;
+}
+
+th:first-child {
+  border-radius: 1vw 0vw 0vw 0vw;
+}
+
+th:last-child {
+  border-radius: 0vw 1vw 0vw 0vw;
 }
 
 td {
@@ -1340,11 +1390,23 @@ td:last-child {
   border-left: 1px solid #454554;
 }
 
+tr:nth-child(2) td {
+  border-top: none;
+}
+
 tfoot td {
   width: 40vw;
   padding: 0.9vw 2vw;
   font-size: 0.9vw;
   border-bottom: 2px solid #454554;
+}
+
+tfoot td:first-child {
+  border-radius: 0vw 0vw 0vw 1vw;
+}
+
+tfoot td:last-child {
+  border-radius: 0vw 0vw 1vw 0vw;
 }
 
 b {
@@ -1355,12 +1417,6 @@ p a {
   color: inherit;
   font-weight: 600;
   text-decoration: none;
-}
-
-h2 {
-  font-size: 2vw;
-  font-weight: 800;
-  margin: 4vw 0vw 2vw 4vw;
 }
 
 #button_client_form, #button_about, #button_faq, #button_form {
@@ -1538,15 +1594,6 @@ input#video:checked ~ div{
   font-size: 4vw;
 }
 
-
-
-.table_mob, .table_mob td {
-  border-collapse: collapse;
-  filter: drop-shadow(0px 4px 15px rgba(68, 68, 68, 0.3));
-  margin-bottom: 5vw;
-  font-size: 2.5vw;
-  line-height: 3vw;
-}
 
 #table_services_mob {
   width: auto;

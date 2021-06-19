@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   resources :cathegories
   resources :courses
   resources :articles
-  resources :services
+  # resources :services
   resources :faqs
   resources :clients
   resources :experiences
@@ -54,7 +54,7 @@ get 'new_menu' => 'pages#new_menu', as: :new_menu
   get '/Psychotherapy-of-depression'        => 'new#psychotherapy_of_depression'
   get '/Psychotherapy-of-neuroses'          => 'new#psychotherapy_of_neuroses'
   get '/Psychotherapy-of-psychotrauma'      => 'new#psychotherapy_of_psychotrauma'
-  get '/Relationship'                       => 'new#relationship_counseling'
+  get '/Relationship-counseling'            => 'new#relationship_counseling'
   get '/Coaching-and-training'              => 'new#coaching_and_training'
   get '/Transactional-analysis'             => 'new#ta'
   get '/Acceptance-and-Commitment-Therapy'  => 'new#act'
@@ -64,6 +64,11 @@ get 'new_menu' => 'pages#new_menu', as: :new_menu
   get '/STA'                                => 'new#sta'
   get '/OCD-psychotherapy'                  => 'new#ocd_psychotherapy'
   get '/Low-self-esteem-psychotherapy'      => 'new#low_selfesteem_psychotherapy'
+  get '/Hypnotherapy'                       => 'new#Hypnotherapy'
+  get '/Positive-psychotherapy'             => 'new#Positive-psychotherapy'
+  get '/Mindfulness'                        => 'new#Mindfulness'
+  
+  
 #end
 
 root "new#main"
