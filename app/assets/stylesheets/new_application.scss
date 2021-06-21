@@ -571,7 +571,7 @@ overflow: hidden;
 
 /*    АККОРДИОН     */
 
-.accordion * {
+.accordion *, .accordion2 * {
   margin:0;
   padding:0;
   border:0;
@@ -579,21 +579,21 @@ overflow: hidden;
   list-style:none;
 }
 /* стили блока аккордеон */
-.accordion {
+.accordion, .accordion2 {
   width:100%;
   margin: 0 auto;
 }
 /* секции аккордеона */
-.accordion .accordion_item {
+.accordion .accordion_item, .accordion2 .accordion_item2 {
   margin-bottom:0.5vw;
   position:relative;
   filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));
 }
-.mob .accordion .accordion_item {
-  margin-bottom:3vw;
+.mob .accordion2 .accordion_item2 {
+  margin-bottom: 3vw;
 }
 /* заголовки панелей аккордеона */
-.accordion .title_block {
+.accordion .title_block, .accordion2 .title_block2 {
   font-weight: 400;
   font-size: 1vw;
   color: black;
@@ -605,12 +605,12 @@ overflow: hidden;
   transition:all .5s linear 0;
   border-radius: 0.5vw;
 }
-.mob .accordion .title_block {
+.mob .accordion2 .title_block2 {
   font-size: 2.7vw;
   padding: 2.5vw 4vw;
 }
 /* переключатель панелей, положение вниз */
-.accordion .title_block:before {
+.accordion .title_block:before, .accordion2 .title_block2:before {
   content:'\3031';
   -ms-transform:rotate(-90deg);
   -webkit-transform:rotate(-90deg);
@@ -623,7 +623,7 @@ overflow: hidden;
   border-radius: 0.5vw 0.5vw 0vw 0vw;
 }
 /* активный переключатель, положение вверх */
-.accordion .active_block .title_block:before {
+.accordion .active_block .title_block:before, .accordion2 .active_block .title_block2:before {
   content:'\3031';
   -ms-transform:rotate(90deg);
   -webkit-transform:rotate(90deg);
@@ -632,22 +632,22 @@ overflow: hidden;
   display:block;
   position:absolute;
 }
-.mob .accordion .active_block .title_block:before {
+.mob .accordion2 .active_block .title_block2:before {
   right:4.195vw;
 }
-.accordion .title_block:hover {
+.accordion .title_block:hover, .accordion2 .title_block2:hover {
   color: #ff7f50;
   font-weight: 600;
 }
 /* заголовок активного блока  */
-.accordion .active_block .title_block {
+.accordion .active_block .title_block, .accordion2 .active_block .title_block2 {
   background: #FFFFFF;
   color:black;
   border-radius: 0.5vw 0.5vw 0vw 0vw;
   font-weight: 600;
 }
 /* блоки с содержанием */
-.accordion .info {
+.accordion .info, .accordion2 .info2 {
   display:none;
   padding: 1.5vw 4vw;
   overflow: hidden;
@@ -658,7 +658,7 @@ overflow: hidden;
   top: -0.18vw;
 }
 /* параграф внутри блоков с содержанием */
-.accordion .info_item {
+.accordion .info_item, .accordion2 .info_item2 {
   margin-bottom:1vw;
   z-index: 100000;
   position: relative;
@@ -1354,7 +1354,6 @@ ul ul li {
 table {
   border-spacing: inherit; 
   margin-bottom: 5vw;
-  font-weight: 500;
 }
 
 th {

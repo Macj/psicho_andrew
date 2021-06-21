@@ -1,7 +1,104 @@
 <div class="pc_content">
   <div class="container">
-    <h1 style="text-align: center; font-weight: 800; font-size: 3.5vw; margin: 5vw 0px 4vw 0vw">Цена</h1>
+    <h1 style="text-align: center; font-weight: 800; font-size: 3.5vw; margin: 5vw 0px 5vw 0vw">Услуги</h1>
 
+    <div>
+        <table style="margin-bottom: 1vw">
+          <th style="width: 1%">Услуга</th>
+          <th style="width: 12%">Длительность</th>
+          <th style="width: 21%">Цена</th>
+          <th style="width: 46%">Описание услуги</th>
+          <tr>
+            <td><a href="consultations.html" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Предварительная консультация</a></td>
+            <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">15 минут</td>
+            <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
+              <span style="font-size: 1.5vw; font-weight: 600">Бесплатно</span><br>
+            </td>
+            <td>В течение 24 часов, после оставления вами заявки на консультацию, я вам перезваниваю/отвечаю на ваше сообщение, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия.
+            </td>
+          </tr>
+          <tr>
+            <td><a href="consultations.html" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Групповая консультация</a></td>
+            <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">2 часа</td>
+            <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
+              <span style="font-size: 1.5vw; font-weight: 600">10 $</span><br>
+              4 сеанса по предоплате: 30 $
+            </td>
+            <td>Дешевая групповая психотерапия в Zoom (1–2 сеанса в неделю).<br>Группа от 3-х до 5-ми человек объединенных одной проблемой (например, низкая самооценка, тревога или ОКР).
+            </td>
+          </tr>
+          <tr>
+            <td><a href="consultations.html#group" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Индивидуальная консультация</a></td>
+            <td  style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">2 часа</td>
+            <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
+              <span style="font-size: 1.5vw; font-weight: 600">30 $</span><br>
+              4 сеанса по предоплате: 100 $
+            </td>
+            <td>Консультации и Курс Психотерапии (1–2 сеанса в неделю):<br>
+              ▷ взаимоотношения (конфликты, ревность, обида, вина, стыд, злость, страх)<br>
+              ▷ тревога<br>
+              ▷ депрессия<br>
+              ▷ панические атаки<br>
+              ▷ низкая самооценка<br>
+              ▷ невроз и психосоматика<br>
+              ▷ навязчивые мысли и действия (ОКР)<br>
+              ▷ последствия сильного стресса, детских психотравм, ПТСР<br>
+              ▷ обучение: стрессоустойчивости, медитации, самоанализу
+            </td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td><a href="consultations.html#Hypnotherapy" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Интенсивная психотерапия</a></td>
+              <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b; padding: 0.9vw 1.8vw;">5 дней подряд<br>по 4 часа</td>
+              <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b"><span style="font-size: 1.5vw; font-weight: 600">300 $</span></td>
+              <td>
+                5 дней интенсивной психотерапии с применением гипнотерапии и коучинга для тех, кому время важнее денег. Избавление от тревоги, психосоматики, неврозов, низкой самооценки, страха больших денег и потери бизнеса. Обучение медитации, стрессоустойчивости, самоанализу. Нахождение ценностей и смысла жизни.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+<!--
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center; margin: 0vw 2vw">
+        <div style="width: 29%;" id="service_box">
+          <a href="consultations.html#group" style="color: inherit; text-decoration:none;">
+            <img src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="height: 12vw; transition: 0.3s;">  
+            <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Групповая консультация</h3>
+          </a>
+          <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+            <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></div>
+            <div class="service_accordion_text">Дешевая групповая психотерапия в<br>Zoom (1 – 2 сеанса в неделю).<br>Группа от 3-х до 5-ти человек<br>объединенных одной проблемой<br>(например, низкая самооценка,<br>тревога, панические атаки или ОКР)</div>
+          </div>
+          <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">10 $</span>
+          <p>Скидка: 4 сеанса по предоплате 30 $</p>
+        </div>
+
+        <div style="width: 29%;" id="service_box">
+          <a href="consultations.html" style="color: inherit; text-decoration:none;">
+            <img src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="height: 12vw; transition: 0.3s;">  
+            <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Индивидуальная консультация</h3>
+          </a>
+          <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+            <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></div>
+            <div class="service_accordion_text">Консультация по Skype, Telegram, Viber, Zoom для тех, кто ценит свое время. Вы находитесь у себя дома, в безопасной обстановке, в удобном кресле, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя.</div>
+          </div>     
+          <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">30 $</span>
+          <p>Скидка: 4 сеанса по предоплате 100 $</p>
+        </div>
+
+        <div style="width: 29%;" id="service_box">
+          <a href="consultations.html#Coaching" style="color: inherit; text-decoration:none;">
+            <img src="<%= asset_url('problem/coaching.svg')%>" alt="интенсивный коучинг" style="height: 12vw; transition: 0.3s;">  
+            <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Интенсивный коучинг</h3>
+          </a>
+          <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+            <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 0vw 1vw 0vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">5 дней подряд по 4 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></div>
+            <div class="service_accordion_text">5 дней непрерывной психотерапии, гипнотерапии и консультирования до достижения результата. Работаем столько, сколько нужно по времени (2-6 часов). Избавление от тревоги, психосоматики, панических атак, неврозов, низкой самооценки, страха больших денег и потери бизнеса, прокрастинации. Обучение медитации, стрессоустойчивости, самоанализу. Нахождение ценностей и смысла жизни. Если вас не устроит результат - я верну вам деньги!</div>
+          </div>     
+          <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">300 $</span>
+        </div>
+      </div>
+    -->
+<!--
     <div style="display: flex; justify-content: space-evenly; align-items: center;">
       <img src="<%= asset_url('Price_main.svg')%>" style="width: 32vw">
       <div style="width: 36.5vw">
@@ -28,41 +125,38 @@
         </button>
       </div>
     </div>
-
-    <h2 style="font-weight: 800; font-size: 3vw; text-align: center; margin: 12vw 0px 4vw 0vw">Что входит в стоимость консультации</h2>
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-      <div class="service_box">
-        <img src="<%= asset_url('service1.svg')%>" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Консультация</h3>
-        <p class="service_text">
-          2 часа непрерывной работы с Вами (диагностика, изменение схем мышления и поведения, обретение новых навыков и способностей, улучшение эмоционального состояния)
-        </p>
+-->
+    <h2 style="font-size: 3vw; text-align: center; margin: 8vw 0px 3vw 0vw">Что входит в стоимость консультации</h2> 
+      <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+        <div class="service_box">
+          <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+          <h3 class="service_name">Консультация</h3>
+          <p class="service_text">
+            2 часа непрерывной работы с Вами (диагностика, изменение схем мышления и поведения, обретение новых навыков и способностей, улучшение эмоционального состояния)
+          </p>
+        </div>
+        <div class="service_box">
+          <img src="<%= asset_url('stenografiya.svg')%>" alt="стенография консультации психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+          <h3 class="service_name">Стенография</h3>
+          <p class="service_text">
+            Стенография консультации с описанием проделанной работы и применяемых техник, результатами диагностики и вашим домашним заданием<br>(в файле docx)
+          </p>
+        </div>
+        <div class="service_box">
+          <img src="<%= asset_url('support.svg')%>" alt="сопровождение психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+          <h3 class="service_name">Сопровождение</h3>
+          <p class="service_text">
+            Между консультациями мы продолжаем поддерживать с вами связь в мессенджерах для контроля вашего состояния, поддержки, ответов на ваши вопросы и корректировки дз.
+          </p>
+        </div>
+        <div class="service_box">
+          <img src="<%= asset_url('dopolnitelnye-materialy.svg')%>" alt="дополнительные материалы для психологической самопомощи" style="width: 80%; margin: 10% 10% 0% 10%">
+          <h3 class="service_name">Доп. материалы</h3>
+          <p class="service_text">
+            Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам<br>(в файлах docx, excel, mp3, mp4)
+          </p>
+        </div>
       </div>
-
-      <div class="service_box">
-        <img src="<%= asset_url('service2.svg')%>" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Стенография</h3>
-        <p class="service_text">
-          Стенография того, что было на консультации с описанием применяемых техник и домашним заданием (в файле docx)
-        </p>
-      </div>
-
-      <div class="service_box">
-        <img src="<%= asset_url('service3.svg')%>" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Сопровождение</h3>
-        <p class="service_text">
-          Между консультациями мы общаемся в мессенджерах, отслеживаем динамику Вашего состояния, Вы рассказываете мне всё, что Вас беспокоит и задаете любые вопросы для достижения максимального результата!
-        </p>
-      </div>
-
-      <div class="service_box">
-        <img src="<%= asset_url('price_dop.png')%>" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Доп. материалы</h3>
-        <p class="service_text">
-          Текстовые, аудио и видео-файлы для выполнения домашнего задания, фиксации результатов терапии, профилактики рецидивов и обучения (в файлах word, excel, mp3, mp4)
-        </p>
-      </div>
-    </div>
  
     <h2 style="font-size: 3vw; text-align: center; margin: 10vw 0px 2vw 0vw">Гарантия результата</h2>
     <p style="text-align: center; font-size: 1.2vw; letter-spacing: 0.01em; margin: 3vw 0vw 3vw 0vw;">
@@ -71,7 +165,7 @@
 
     <div style="display: flex; justify-content: center; align-items: center">
       <ul style="width: 40vw; margin: 1vw 4vw 0vw 0vw">
-        <li>4 года практики психологической помощи</li>
+        <li>5 лет практики психологической помощи</li>
         <li>Личная супервизия раз в месяц (анализ моих консультаций другими психологами)</li>
         <li>Мои дипломы и сертификаты об официальном образовании</li>
         <li>Ежедневный контроль Вашего состояния благодаря прямой связи со мной!</li>
@@ -79,17 +173,171 @@
         <li>Профессиональный подход: сначала полная диагностика - потом психотерапия!</li>
         <li>Индивидуальный подход: план психотерапии мы создаем ВМЕСТЕ, с учетом всех ваших потребностей и финансовых возможностей</li>
       </ul>
-      <img src="<%= asset_url('result.svg')%>" style="width: 32vw;">
+      <img src="<%= asset_url('guarantees.svg')%>" alt="гарантии результата консультаций психолога"  style="width: 32vw;">
     </div>
 
-    <h2 style="font-size: 3vw; text-align: center; margin: 10vw 0px 2vw 0vw">Запись на консультацию</h2> 
-    <p style="text-align: center; font-size: 1.2vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 2vw 0vw 0vw 0vw;">
+    <h2 style="font-size: 3vw; text-align: center; margin: 6vw 0px 2vw 0vw; padding-top: 3vw">Запись на консультацию</h2> 
+    <p style="text-align: center; font-size: 1.2vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
       Заполните форму или свяжитесь со мной любым удобным для вас способом.<br>Контакты вы найдете 
-      <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>.
+      <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
     </p>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5vw">
-      <img src="<%= asset_url('КПНК1.svg')%>" style="width: 40vw">
-      <%= render partial: '/new/form' %>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8vw">
+      <img src="<%= asset_url('form.svg')%>" style="width: 40vw">
+      <%= render partial: "/new/form"%>
     </div>
 
-  </div>  <!-- конец container -->
+  </div>  <!-- конец container --> 
+</div> <!-- конец pc_content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- начало моб версии -->
+<div class="mob" style="background: #F7F7F7; margin-bottom: 12vw">
+  <h1 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw">
+    Услуги
+  </h1>
+
+  <table style="margin-bottom: 1vw; border-collapse: collapse; width: 99%;">
+    <th style="width: 1%; padding: 2vw">Услуга</th>
+    <th style="width: 12%">Время</th>
+    <th style="width: 21%">Цена</th>
+    <th style="width: 46%">Описание услуги</th>
+    <tr>
+      <td><a href="consultations.html" style="color: inherit; font-weight: 600; text-decoration: none;">Предварительная консультация</a></td>
+      <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">15 минут</td>
+      <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
+        <span style="font-size: 2.7vw; font-weight: 600">Бесплатно</span><br>
+      </td>
+      <td>В течение 24 часов, после оставления вами заявки на консультацию, я вам перезваниваю/отвечаю на ваше сообщение, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия.
+      </td>
+    </tr>
+    <tr>
+      <td><a href="consultations.html" style="color: inherit; font-weight: 600; font-size: 2.5vw; text-decoration: none;">Групповая консультация</a></td>
+      <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">2 часа</td>
+      <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
+        <span style="font-size: 2.7vw; font-weight: 600">10 $</span><br>
+        4 сеанса по предоплате: 30 $
+      </td>
+      <td>Дешевая групповая психотерапия в Zoom (1–2 сеанса в неделю).<br>Группа от 3-х до 5-ми человек объединенных одной проблемой (например, низкая самооценка, тревога или ОКР).
+      </td>
+    </tr>
+    <tr>
+      <td><a href="consultations.html#group" style="color: inherit; font-weight: 600; font-size: 2.5vw; text-decoration: none;">Индивидуальная консультация</a></td>
+      <td  style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">2 часа</td>
+      <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
+        <span style="font-size: 2.7vw; font-weight: 600">30 $</span><br>
+        4 сеанса по предоплате: 100 $
+      </td>
+      <td>Консультации и Курс Психотерапии (1–2 сеанса в неделю):<br>
+        ▷ взаимоотношения (конфликты, ревность, обида, вина, стыд, злость, страх)<br>
+        ▷ тревога<br>
+        ▷ депрессия<br>
+        ▷ панические атаки<br>
+        ▷ низкая самооценка<br>
+        ▷ невроз и психосоматика<br>
+        ▷ навязчивые мысли и действия (ОКР)<br>
+        ▷ последствия сильного стресса, детских психотравм, ПТСР<br>
+        ▷ обучение: стрессоустойчивости, медитации, самоанализу
+      </td>
+    </tr>
+    <tfoot>
+      <tr>
+        <td><a href="consultations.html#Hypnotherapy" style="color: inherit; font-weight: 600; font-size: 2.5vw; text-decoration: none;">Интенсивная психотерапия</a></td>
+        <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b; padding: 0.9vw 1.8vw;">5 дней подряд<br>по<br>4 часа</td>
+        <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b"><span style="font-size: 2.7vw; font-weight: 600">300 $</span></td>
+        <td>
+          5 дней интенсивной психотерапии с применением гипнотерапии и коучинга для тех, кому время важнее денег. Избавление от тревоги, психосоматики, неврозов, низкой самооценки, страха больших денег и потери бизнеса. Обучение медитации, стрессоустойчивости, самоанализу. Нахождение ценностей и смысла жизни.</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 4vw; line-height: 5vw">
+    Что входит в стоимость консультации
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="консультация психолога">
+      <h3 class="problem_name">
+        Консультация
+      </h3>
+      <p class="problem_text">
+        2 часа непрерывной работы c Вами (диагностика, изменение схем мышления и поведения, обретение новых навыков и способностей, улучшение эмоционального состояния)
+      </p>
+    </div>
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('stenografiya.svg')%>" alt="стенография консультации психолога">
+      <h3 class="problem_name">
+        Стенография
+      </h3>
+      <p class="problem_text">
+        Стенография консультации с описанием проделанной работы, применяемых техник, результатами Вашей диагностики и домашним заданием (в файле docx)
+      </p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('support.svg')%>" alt="сопровождение психолога">
+      <h3 class="problem_name">
+        Сопровождение
+      </h3>
+      <p class="problem_text">
+        Между сеансами мы поддерживаем с Вами связь в мессенджерах для контроля Вашего состояния, поддержки, ответов на Ваши вопросы и корректировки дз.
+      </p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('dopolnitelnye-materialy.svg')%>" alt="дополнительные материалы для психологической самопомощи">
+      <h3 class="problem_name">
+        Доп. материалы
+      </h3>
+     <p class="problem_text">
+        Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам (в файлах docx, excel, mp3, mp4)
+      </p>
+    </div>
+  </div> <!-- конец Что входит в стоимость консультации -->
+
+  <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 4vw; line-height: 5vw">
+    Гарантия результата
+  </h2>
+  <p style="text-align: center; letter-spacing: 0.02em; margin: 2vw 7vw 7vw 7vw;">
+    Почему вам нужно выбрать меня? Мои преимущества:
+  </p>
+  <ul style="width: 80vw; padding: 0vw 10vw 0vw 10vw">
+    <li>5 лет практики психологической помощи</li>
+    <li>Личная супервизия раз в месяц (анализ моих консультаций другими психологами)</li>
+    <li>Мои дипломы и сертификаты об официальном образовании</li>
+    <li>Ежедневный контроль Вашего состояния благодаря прямой связи со мной!</li>
+    <li>Отзывы моих клиентов, которые достигли положительного результата</li>
+    <li>Профессиональный подход: сначала полная диагностика - потом психотерапия!</li>
+    <li>Индивидуальный подход: план психотерапии мы создаем ВМЕСТЕ, с учетом всех ваших потребностей и финансовых возможностей</li>
+  </ul>
+  <img src="<%= asset_url('guarantees.svg')%>" class="container" alt="гарантии результата консультаций психолога" style="width: 86vw;">
+
+  <h2 style="padding: 12vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 5vw;" id="client_form_mob">
+    Запись на консультацию
+  </h2>
+  <p class="container" style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 2vw 7vw 7vw 7vw;">
+    Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a>
+  </p>
+
+  <%= render partial: "/new/form"%>
+
+</div>  <!-- конец моб версии -->
