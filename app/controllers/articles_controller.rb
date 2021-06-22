@@ -15,6 +15,13 @@ class ArticlesController < ApplicationController
     else
       @articles = Article.all
     end
+    @articles = @articles.to_a
+
+    id = params[:category_id]
+    if id
+      @arts = Article.with_category(id)
+      @articles += @arts
+    end
   end
 
   # GET /articles/1

@@ -1,0 +1,38 @@
+<div class="pc_content">
+  <div class="container">
+    <h1 style="text-align: center; font-weight: 800; font-size: 3vw; margin: 5vw 0px 4vw 0vw">Статьи</h1>
+    <div style="float: right;">
+      <div class="sorting"><span style="display: block; position: absolute; top: 16.7vw; right: 22vw"><b>Сортировать по</b></span>
+        <div class="sorting_item">
+          <div class="sorting_item_checked">популярности<img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="padding: 0.2vw 0vw 0vw 0.4vw"></div>
+          <ul class="sorting_ul">
+            <li><a href="">популярности</a></li>
+            <li><a href="">дате - от самой новой</a></li>
+            <li><a href="">дате - от самой старой</a></li>
+            <li><a href="">длительности чтения - от<br>наименьшей</a></li>
+            <li style="border-bottom: none;"><a href="" style="border-radius: 0vw 0vw 0.5vw 0.5vw">длительности чтения - от<br>наибольшей</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h2 style="width: 15vw; margin: 5.5vw 0px 0vw 0vw; text-align: center;">Категории</h2>
+
+<div class="cathegory">
+- content_for :filters_panel do
+  = render partial: 'pages/articles_filters'
+   <%= render partial: "/pages/articles_filters"%>
+</div>
+%br
+
+
+
+%div#artical_blocks{ style: 'clear: both; hight: 100%; margin-left: auto; width: 90%' }
+  - @articles.each do |article|
+  <div style="width: 68vw; display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 0.9vw;">
+    = render partial: 'card', locals: {card: article }
+	</div>
+
+
+
+  </div> <!-- конец container -->
+</div> <!-- конец pc_content -->

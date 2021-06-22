@@ -19,3 +19,33 @@
     </div>
   </div>
 </div>
+
+<div class="category">
+  <ul style="padding: 0px">
+    <li><a href="">Все статьи</a></li>
+    <li id="sub_category">
+      <a href="">
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <span>Проблемы</span>
+          <img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" class="category_arrow">
+          <img src="<%= asset_url('arrow.svg')%>" alt="стрелка подкатегории" class="category_arrow_hover">
+          <img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" class="category_arrow_hover_sub">
+        </div>
+      </a>
+      <ul class="sub_category">
+        <li><a href="">Невроз и психосоматика</a></li>
+        <li><a href="">Тревога</a></li>
+        <li><a href="/articles?category_id=1">Навязчивости (ОКР)</a></li>
+        <li><a href="">Низкая самооценка</a></li>
+        <li><a href="">Психотравмы</a></li>
+        <li><a href="">Депрессия и уныние</a></li>
+        <li><a href="">Панические атаки</a></li>
+      </ul>
+    </li>
+    <li><a href="">Психология отношений</a></li>
+    <li><a href="">Общая психология</a></li>
+    <li><a href="">Исследования</a></li>
+    <li><a href="">Саморазвитие</a></li>
+    <li><a href="">Для профи</a></li>
+  </ul>
+</div>

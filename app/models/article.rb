@@ -10,6 +10,8 @@ class Article < ActiveRecord::Base
   # field :tags, type: String
   #index_name "articles-#{Rails.env}"
 
+  scope :with_category, ->(id) { where(cathegory_id: id) }
+
   has_attached_file :image, default_url: "/assets/:style/missing.png"
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
