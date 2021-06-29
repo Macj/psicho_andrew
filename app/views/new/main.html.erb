@@ -594,10 +594,12 @@
   </h2>
   <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-      <img class="problem_icon" src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="width: 30vw">
-      <h3 class="problem_name" style="font-size: 3vw">
-        Групповая консультация
-      </h3>
+      <a href="consultations.html#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="width: 30vw; padding: 0vw 21vw;">
+        <span class="problem_name" style="font-size: 3vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Групповая консультация
+        </span>
+      </a>
       <p class="problem_text" style="line-height: 3vw;">
         Дешевая групповая психотерапия в Zoom (1 – 2 сеанса в неделю). Группа от 3-х до 5-ти человек объединенных одной проблемой (например, низкая самооценка, тревога, панические атаки или ОКР)
       </p>
@@ -611,10 +613,12 @@
     </div>
 
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-      <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="width: 30vw">
-      <h3 class="problem_name" style="font-size: 3vw">
-        Индивидуальная консультация
-      </h3>
+      <a href="consultations.html" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="width: 30vw; padding: 0vw 21vw;">
+        <span class="problem_name" style="font-size: 3vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Индивидуальная консультация
+        </span>
+      </a>
       <p class="problem_text" style="line-height: 3vw;">
         Консультация по Skype, Telegram, Viber, Zoom (1 – 2 сеанса в неделю). Вы находитесь у себя дома, в безопасной обстановке, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя.
       </p>
@@ -628,10 +632,12 @@
     </div>
 
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-      <img class="problem_icon" src="<%= asset_url('intensive-psychotherapy.svg')%>" alt="интенсивная психотерапия" style="width: 30vw">
-      <h3 class="problem_name" style="font-size: 3vw">
-        Интенсивная психотерапия
-      </h3>
+      <a href="consultations.html#intensive-psychotherapy" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('intensive-psychotherapy.svg')%>" alt="интенсивная психотерапия" style="width: 30vw; padding: 0vw 21vw;">
+        <span class="problem_name" style="font-size: 3vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Интенсивная психотерапия
+        </span>
+      </a>
       <p class="problem_text" style="line-height: 3vw;">
         5 дней интенсивной психотерапии с применением гипноза и коучинга для тех, кому время важнее денег. Задача – максимально быстро вернуть вас в рабочее состояние, в котором вы можете продолжать жить и работать. Избавление от тревоги, психосоматики, страха публичных выступлений и потери бизнеса. Восстановление после сильного стресса. Обучение релаксации и стрессоустойчивости.
       </p>
@@ -801,7 +807,7 @@
     Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими вас проблемами - рекомендую ознакомится с моими <a href="" style="text-decoration: none; border-bottom: 1px solid currentColor;">статьями</a>
   </p>
   <div style="width: 86vw; display: flex; justify-content: space-around; flex-wrap: wrap; margin: 2vw 7vw;">
-    <section class="article_new_main_mob article_img">
+    <section class="article_new_main_mob article_img" style="background-image: url(/assets/article3.jpg); background-size: cover;">
       <div class="linear-gradient" style="filter: drop-shadow(0px 0.5vw 0.5vw rgba(0, 0, 0, 0.25));">
         <div style="width: 100%">
           <p class="article_category"><a href="">Невроз и психосоматика</a></p>
@@ -813,26 +819,26 @@
         </h3>
       </div>
     </section>
-    <section class="article_new_main_mob article_img">
+    <section class="article_new_main_mob article_img" style="background-image: url(/assets/article1.png); background-size: cover;">
+      <div class="linear-gradient">
+        <div style="width: 100%">
+          <p class="article_category"><a href="">Общая психология</a></p>
+        </div>
+        <h3 class="article_name">
+          <a href="article.html">
+            Виды позитивного мышления и восприятия. Как это работает?
+          </a>
+        </h3>
+      </div>
+    </section>
+    <section class="article_new_main_mob article_img" style="background-image: url(/assets/article2.png); background-size: cover;">
       <div class="linear-gradient">
         <div style="width: 100%">
           <p class="article_category"><a href="">Тревога</a></p>
         </div>
         <h3 class="article_name">
           <a href="article.html">
-            Насколько эффективны онлайн-консультации психолога?
-          </a>
-        </h3>
-      </div>
-    </section>
-    <section class="article_new_main_mob article_img">
-      <div class="linear-gradient">
-        <div style="width: 100%">
-          <p class="article_category"><a href="">Депрессия и уныние</a></p>
-        </div>
-        <h3 class="article_name">
-          <a href="article.html">
-            Виды депрессии и ее симптомы
+            Медитация доброты и сострадания
           </a>
         </h3>
       </div>

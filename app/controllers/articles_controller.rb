@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   before_action :set_service, only: [:show, :index]
+  layout "new_layout"
 
   def set_service
     @services = Service.all[0..2]

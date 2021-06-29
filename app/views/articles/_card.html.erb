@@ -1,43 +1,32 @@
-- left =  "float:left"
-%div{ style: "width: 280px; margin-left: 60px; text-align: center; margin-bottom: 60px;  #{left};" }
-  %div{style: "position: relative; z-index: 1; width: 280px; height: 160px"}
-    = image_tag(card.image.url, class: 'up-corner-20', style: "position: relative; z-index: 1; width: 280px; height: 160px") 
-  .card-level.shadow-up.up-corner-20{ style: "padding: 0px 10px 0px; position: relative; z-index: 2;  font-size: 18px;  margin-top: -30px !important; clear: none; margin: auto; width: max-content; height: 30px; background-color: white; text-align: center" }
-    = card.cathegory.name
-  .headline{style: "position: relative; z-index: 3; color: white; margin-top: -20px; margin-left: -25px; width: 320px; height: 60px;"}
-    .corner3
-    .content{style: "width: 320px; min-height: 50px; height: auto"}  
-      = link_to card.title, card
-    
-  =# .card_text{style: "width: 320px; max-width: 320px;"}
-  =# card.light_text.ght
-
-
-  
-    <section = image_tag(card.image.url) class="up-corner-20 article_box" style="background-size: cover; position: relative; z-index: 1">
-      <div class="linear-gradient">
-        <div style="display: flex; margin: 0vw;">
-          <div class="views">         
-            <img src="<%= asset_url('views.svg')%>" alt="количество просмотров статьи" style="height: 0.8vw">
-            <p class="views_text"></p>
-          </div>
-          <div class="time_read">
-            <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи"  style="height: 0.8vw">
-            <p class="time_read_text"></p>
-          </div>
-        </div>
-        <div style="width: 100%">
-          <p class="article_category"><a href=""></a></p>
-        </div>
-        <h3 class="article_name" >
-          <a href="">
-          = card.cathegory.name
-          </a>
-        </h3>
-        <div class="tags">
-          <p class="tags_item"><a href=""></a></p>
-          <p class="tags_item"><a href=""></a></p>
-          <p class="tags_item"><a href=""></a></p>
-        </div>
+<section class="up-corner-20 article_box" style="background-size: cover; position: relative; z-index: 1; background-image: url(<%= card.image.url %>)">
+  <div class="linear-gradient">
+    <div style="display: flex; margin: 0vw;">
+      <div class="views">         
+        <img src="<%= asset_url('views.svg')%>" alt="количество просмотров статьи" style="height: 0.8vw">
+        <p class="views_text"></p>
       </div>
-    </section>
+      <div class="time_read">
+        <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи"  style="height: 0.8vw">
+        <p class="time_read_text"></p>
+      </div>
+    </div>
+    <div style="width: 100%">
+      <p class="article_category">
+        <a href="<%= articles_path(cathegory_id: card.cathegory_id) %>">
+          <%= card.cathegory.name %>
+        </a>
+      </p>
+    </div>
+    <h3 class="article_name" >
+      <a href="<% %>">
+        <%= card.title %>
+      </a>
+    </h3>
+    <div class="tags">
+      <%- card.tags.each do |tag|%>
+        <p class="tags_item">
+          <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
+      <% end %>
+    </div>
+  </div>
+</section>

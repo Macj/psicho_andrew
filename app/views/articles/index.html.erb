@@ -16,23 +16,15 @@
       </div>
     </div>
     <h2 style="width: 15vw; margin: 5.5vw 0px 0vw 0vw; text-align: center;">Категории</h2>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; margin-top: 1vw">
 
-<div class="cathegory">
-- content_for :filters_panel do
-  = render partial: 'pages/articles_filters'
-   <%= render partial: "/pages/articles_filters"%>
-</div>
-%br
+		  <%= render partial: 'pages/articles_filters' %>
 
-
-
-%div#artical_blocks{ style: 'clear: both; hight: 100%; margin-left: auto; width: 90%' }
-  - @articles.each do |article|
-  <div style="width: 68vw; display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 0.9vw;">
-    = render partial: 'card', locals: {card: article }
-	</div>
-
-
-
+			<div style="width: 68vw; display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 0.9vw;">
+			  <%- @articles.each do |article| %>
+			  <%= render partial: 'card', locals: {card: article } %>
+				<% end %>
+	  	</div>
+	  </div>
   </div> <!-- конец container -->
 </div> <!-- конец pc_content -->

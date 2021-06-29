@@ -699,6 +699,7 @@ overflow: hidden;
   position: absolute;
   top: 16vw;
   right: 7vw;
+  z-index: 100;
 }
 
 .sorting_item_checked {
@@ -890,6 +891,20 @@ overflow: hidden;
   text-decoration: none;
 }
 
+.pop_articles {
+  width: 86vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.9vw;
+}
+
+.pop_articles .article_box {
+  transform: scale(0.9);
+  width: 33%;
+  height: 20%;
+}
+
 .article_box .linear-gradient {
   display: flex;
   background: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
@@ -899,6 +914,11 @@ overflow: hidden;
   padding: 1.5vw;
   align-content: flex-end;
   flex-wrap: wrap;
+}
+
+.pop_articles .article_box .linear-gradient {
+  width: 90%;
+  height: 16vw;
 }
 
 .article_box a {

@@ -38,15 +38,10 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+# config.paperclip_defaults = { 
+#   storage: :fog, 
+#   fog_credentials: { provider: "Local", local_root: "#{Rails.root}/public"}, 
+#   fog_directory: "", 
+#   fog_host: "localhost"}
 
-  config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_host_name => 's3-us-west-1.amazonaws.com',
-    :s3_credentials => {
-      :access_key_id => 'AKIASAPUBBHTHFXR2V66',
-      :secret_access_key => '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',
-      :s3_region => "us-west-1"
-    },
-    :bucket => 'pl-consult-new'
-  }
 end
