@@ -25,7 +25,7 @@ html, body {
 }
 
 ::-webkit-scrollbar {
-    width: calc(10px + 0.2vw);
+    width: auto;
 }
 
 ::-webkit-scrollbar-track {
@@ -881,7 +881,7 @@ overflow: hidden;
 
 
 
-.article_box {
+.pc_content .article_box {
   width: 33vw;
   height: 23vw;
   background-position: center;
@@ -889,6 +889,32 @@ overflow: hidden;
   margin-bottom: 1.8vw;
   color: white;
   text-decoration: none;
+}
+
+.mob .article_box {
+  width: 86vw;
+  height: 60vw;
+  background-position: center;
+  border-radius: 0.8vw;
+  margin-bottom: 5vw;
+  color: white;
+  text-decoration: none;
+}
+
+.pc_content .article_box_span {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1.5vw;
+  height: 100%;
+  padding-right: 1.5vw;
+}
+
+.mob .article_box_span {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 5vw;
+  height: 100%;
+  padding-right: 5vw;
 }
 
 .pop_articles {
@@ -906,20 +932,19 @@ overflow: hidden;
 }
 
 .article_box .linear-gradient {
-  display: flex;
-  background: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
-  width: 30vw;
-  height: 20vw;
-  border-radius: 0.8vw;
-  padding: 1.5vw;
-  align-content: flex-end;
-  flex-wrap: wrap;
+  position: absolute;
+  bottom: 1.5vw;
+  left: 1.5vw;
 }
 
-.pop_articles .article_box .linear-gradient {
-  width: 90%;
-  height: 16vw;
+.pop_articles .article_box {
+  width: 28vw;
+  height: 19vw;
 }
+
+.pop_articles #linear-gradient {
+  margin-top: -19.4vw !important;
+}     
 
 .article_box a {
   color: white;
@@ -937,41 +962,96 @@ overflow: hidden;
   margin: 0px;
  }
 
-.article_box .views {
+.pc_content .article_box .views {
   display: flex;
   margin-right: 1vw;
 }
 
-.article_box .views_text {
+.mob .article_box .views {
+  display: flex;
+  margin-right: 2vw;
+}
+
+.pc_content .views img, .pc_content .time_read img {
+  height: 0.8vw;
+}
+
+.mob .views img, .mob .time_read img, .mob .article_date img {
+  height: 2vw !important;
+}
+
+.pc_content .article_box .views_text, .pc_content .article_box .time_read_text {
   font-size: 0.8vw;
   line-height: 0.8vw;
   padding-left: 0.3vw;
   margin: 0px;
 }
 
-.article_box .article_category {
-  display: table;
+.mob .article_box .views_text, .mob .article_box .time_read_text,
+.mob .article .views_text, .mob .article .time_read_text, .mob .article .article_date_text {
+  font-size: 2vw;
+  line-height: 2.5vw;
+  padding-left: 1vw;
+  margin: 0px;
+}
+
+.pc_content .article_box .article_category {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  display: inline-block;
   background: rgba(100, 163, 133, 0.9);
   border-radius: 0.3vw;
   margin: 0.8vw 0vw 0.5vw 0vw;
 }
 
-.article_box .article_name {
-  font-size: 1.4vw;
-  line-height: 1.9vw;
-  margin: 0vw 0vw 0.5vw 0vw;
-  width: 100%;
+.mob .article_box .article_category {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  display: inline-block;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 1.5vw;
+  margin: 1vw 0vw 1vw 0vw;
 }
 
-.article_box .tags_item {
+.pc_content .article_box .article_name {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  font-size: 1.4vw;
+  line-height: 1.9vw;
+  font-weight: 800;
+  margin: 0vw 0vw 0.5vw 0vw;
+}
+
+.mob .article_box .article_name {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  font-size: 4vw;
+  line-height: 5vw;
+  font-weight: 800;
+  margin: 0vw 0vw 1vw 0vw;
+}
+
+.pc_content .article_box .tags_item {
   display: inline-block;
   background: rgba(161, 129, 108, 0.8);
   border-radius: 0.8vw;
-  margin: 0vw 0.3vw 0vw 0vw;
+  margin: 0vw 0.3vw 0.1vw 0vw;
   font-weight: 400;
 }
 
-.article_box .tags_item a, .article_box .article_category a {
+.mob .article_box .tags_item {
+  display: inline-block;
+  background: rgba(161, 129, 108, 0.8);
+  border-radius: 1.5vw;
+  margin: 0vw 2vw 3vw 0vw;
+  font-weight: 400;
+}
+
+.pc_content .tags_item a, .pc_content .article_category a {
   display: block;
   font-size: 0.8vw;
   font-weight: 500;
@@ -979,6 +1059,63 @@ overflow: hidden;
   text-transform: uppercase;
   padding: 0.2vw 0.8vw;
 }
+
+.mob .tags_item a, .mob .article_category a {
+  display: block;
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1.2vw 1.8vw;
+  line-height: 2vw;
+}
+
+.pc_content .article_box .card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.8vw;
+  margin-top: -23.5vw;
+  line-height: 0px;
+}
+
+.mob .article_box .card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2vw;
+  margin-top: -59.5vw;
+  line-height: 0px;
+}
+
+.pc_content #linear-gradient {
+  width: 100%;
+  height: 100%;
+  margin-top: -23.4vw;
+}
+
+.mob #linear-gradient {
+  width: 100%;
+  height: 100%;
+  margin-top: -60.4vw;
+}
+
+.pc_content #linear-gradient div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  border-radius: 0.8vw;
+  display: inline-block;
+}
+
+.mob #linear-gradient div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  border-radius: 2vw;
+  display: inline-block;
+}
+
 
 .article {
   width: 100%;
@@ -1003,11 +1140,17 @@ overflow: hidden;
   flex-wrap: wrap;
 }
 
+.mob .article .linear-gradient {
+  height: 42vw;
+  padding: 2% 7%;
+}
+
 .article .views,
 .article .time_read,
 .article .article_date {
   display: flex;
   margin-right: 1vw;
+  align-items: center;
 }
 
 .article .time_read_text,
@@ -1026,11 +1169,26 @@ overflow: hidden;
   margin: 1.2vw 0vw 0.5vw 0vw;
 }
 
+.mob .article .article_category {
+  display: table;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 1.5vw;
+  margin: 1vw 0vw 1vw 0vw;
+}
+
 .article .article_name {
   font-size: 3vw;
   font-weight: 800;
   line-height: 4vw;
   margin: 0vw 0vw 0.8vw 0vw;
+  width: 100%;
+}
+
+.mob .article .article_name {
+  font-size: 4vw;
+  font-weight: 800;
+  line-height: 5vw;
+  margin: 0vw 0vw 1vw 0vw;
   width: 100%;
 }
 
@@ -1059,6 +1217,16 @@ overflow: hidden;
   padding: 0.4vw 1vw;
 }
 
+.mob .article .tags_item a, .mob .article .article_category a, .mob .tags_all .tags_item a {
+  display: block;
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1.2vw 1.8vw;
+  line-height: 2vw;
+}
+
 .panel {
   display: flex;
   justify-content: center;
@@ -1085,6 +1253,11 @@ overflow: hidden;
 .panel_item:hover {
   color: white;
   background-color: rgba(161, 129, 108, 0.8);
+}
+
+
+#box_mini_card .article_box {
+  transform: scale(0.6);
 }
 
 
@@ -1170,12 +1343,64 @@ overflow: hidden;
   padding: 0.1vw 0.8vw;
 }
 
+.pagination {
+  margin: 1vw 0vw 3vw 0vw;
+  width: 100%;
+  text-align: center;
+}
 
+.pc_content .pagination .current {
+  border-radius: 100%;
+  margin: 0.1vw;
+  font-size: 1vw;
+  color: white;
+  background-color: rgba(161, 129, 108, 0.8);
+  padding: 0.15vw;
+  display: inline-block;
+  width: 1.6vw;
+}
 
+.mob .pagination .current {
+  border-radius: 100%;
+  margin: 0.5vw;
+  font-size: 3vw;
+  color: white;
+  background-color: rgba(161, 129, 108, 0.8);
+  padding: 2vw;
+  display: inline-block;
+  width: 2vw;
+}
 
+.pc_content .page a, .pc_content .pagination .next a, .pc_content .pagination .last a, .pc_content .pagination .first a, .pc_content .pagination .prev a {
+  border-radius: 100%;
+  margin: 0.1vw;
+  font-size: 1vw;
+  color: rgb(75,75,75);
+  text-decoration: none;
+  padding: 0.15vw;
+  display: inline-block;
+  width: 1.6vw;
+}
 
+.mob .page a, .mob .pagination .next a, .mob .pagination .last a, .mob .pagination .first a, .mob .pagination .prev a {
+  border-radius: 100%;
+  margin: 0.5vw;
+  font-size: 3vw;
+  color: #4b4b4b;
+  text-decoration: none;
+  padding: 2vw;
+  display: inline-block;
+  width: 2vw;
+}
 
+.page a:hover, .next a:hover, .last a:hover, .first a:hover, .prev a:hover {
+  color: white !important;
+  background-color: rgba(161, 129, 108, 0.8);
+}
 
+.tags::-webkit-scrollbar {
+  width: 0px;
+}
 
 
 
@@ -1203,12 +1428,8 @@ overflow: hidden;
   text-decoration: none;
 }
 
- .article_new_main .time_read_text,
- .article_new_main .views_text {
-  font-size: 0.6vw;
-  line-height: 0.6vw;
-  padding-left: 0.3vw;
-  margin: 0px;
+ .time_read_text, .views_text {
+  font-weight: 500;
  }
 
 .article_new_main .views {
@@ -1364,6 +1585,14 @@ ul ul li {
 table {
   border-spacing: inherit; 
   margin-bottom: 5vw;
+}
+
+.mob table {
+  margin-top: 2vw; 
+}
+
+.mob table th {
+  line-height: 3.4vw;
 }
 
 th {

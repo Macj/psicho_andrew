@@ -1,4 +1,6 @@
+<!--
 <section class="up-corner-20 article_box" style="background-size: cover; position: relative; z-index: 1; background-image: url(<%= card.image.url %>)">
+  <a href="<%= article_path(card) %>"></a>
   <div class="linear-gradient">
     <div style="display: flex; margin: 0vw;">
       <div class="views">         
@@ -18,7 +20,7 @@
       </p>
     </div>
     <h3 class="article_name" >
-      <a href="<% %>">
+      <a href="<%= article_path(card) %>">
         <%= card.title %>
       </a>
     </h3>
@@ -29,4 +31,45 @@
       <% end %>
     </div>
   </div>
+</section>
+
+-->
+
+<section class="up-corner-20 article_box">
+  <span class="article_box_span">
+    <span>
+      <span class="tags" style="display: flex; margin: 0vw; float: left; clear: left; overflow: overlay;">
+        <div class="views">         
+          <img src="<%= asset_url('views.svg')%>" alt="количество просмотров статьи">
+          <p class="views_text">3343</p>
+        </div>
+        <div class="time_read">
+          <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
+          <p class="time_read_text">2 мин</p>
+        </div>
+      </span>
+      <h3 class="article_category">
+        <a href="<%= articles_path(category_id: card.cathegory_id) %>">
+          <%= card.cathegory.name %>
+        </a>
+      </h3>
+      <span class="article_name">
+        <a href="<%= article_path(card) %>" style="display: block;">
+          <%= card.title %>
+        </a>
+      </span>
+      <span class="tags" style="float: left; clear: left; overflow: overlay;">
+        <%- card.tags.each do |tag|%>
+          <p class="tags_item">
+            <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
+        <% end %>
+      </span>
+    </span>
+  </span>
+  <a href="<%= article_path(card) %>">
+    <img class="card_image" src="<%= card.image.url %>">
+    <div id="linear-gradient">
+      <div></div>
+    </div>
+  </a>
 </section>

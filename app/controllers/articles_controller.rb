@@ -11,18 +11,16 @@ class ArticlesController < ApplicationController
   # GET /articles.json
   def index
     q = params["query"]
-    if q
-      @articles = Article.search(q).records.all
-    else
-      @articles = Article.all
-    end
-    @articles = @articles.to_a
+    
+    @articles = Article.search(q).records.all if q
+    @articles = @articles || Article.all
 
     id = params[:category_id]
-    if id
-      @arts = Article.with_category(id)
-      @articles += @arts
-    end
+    @articles = @articles.with_category(id) if id
+
+    page = params[:page] || 1
+    @articles = @articles.page(page).per(6) 
+
   end
 
   # GET /articles/1
@@ -36,6 +34,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
+    render :new, layout: "application"
   end
 
   # GET /articles/1/edit
@@ -90,6 +89,8 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      params.require(:article).permit(:title, :body, :cathegory_id, :style, :tags, :image)
+      attrs = params.require(:article).permit(:title, :body, :cathegory_id, :style, :tags, :image)
+      attrs[:tags] = attrs[:tags].split(" ")
+      attrs 
     end
 end
