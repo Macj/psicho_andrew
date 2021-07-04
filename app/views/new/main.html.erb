@@ -12,402 +12,372 @@
   <meta property="og:image" content="http://www.tkachenkoandrey.com/assets/Andrey-Tkachenko-psychologist.png">
 <% end %>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-    $("#button_client_form > a").on("click", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
-    event.preventDefault();
+<script type="text/javascript">
+  $(document).ready(function(){
+  $("#button_client_form > a").on("click", function (event) {
+  //отменяем стандартную обработку нажатия по ссылке
+  event.preventDefault();
 
-    //забираем идентификатор бока с атрибута href
-    var id = $(this).attr('href')
-    //узнаем высоту от начала страницы до блока на который ссылается якорь
-    var top = $(id).offset().top;
-    //анимируем переход на расстояние - top за 1500 мс
-    $('body,html').animate({scrollTop: top-50}, 1500);
-    });
-    });
-  </script>
-  <div class="pc_content">
-    <div class="container"> 
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="width: 50vw; margin-bottom: 6vw">
-          <p style="font-size: 2vw; letter-spacing: 0.01em; font-weight: 300">Андрей Ткаченко</p>
-          <h1 style="font-weight: 800; font-size: 4.5vw; line-height: 4.8vw; margin-bottom: 0px;">Консультация психолога онлайн</h1>
-          <p style="font-size: 1.4vw; line-height: 1.9vw; letter-spacing: 0.01em; width: 35vw; text-align: justify;">
-            Я помогу вам разобраться с проблемами из любой точки мира
-          </p>
+  //забираем идентификатор бока с атрибута href
+  var id = $(this).attr('href')
+  //узнаем высоту от начала страницы до блока на который ссылается якорь
+  var top = $(id).offset().top;
+  //анимируем переход на расстояние - top за 1500 мс
+  $('body,html').animate({scrollTop: top-50}, 1500);
+  });
+  });
+</script>
+<div class="pc_content">
+  <div class="container"> 
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="width: 50vw; margin-bottom: 6vw">
+        <p style="font-size: 2vw; letter-spacing: 0.01em; font-weight: 300">Андрей Ткаченко</p>
+        <h1 style="font-weight: 800; font-size: 4.5vw; line-height: 4.8vw; margin-bottom: 0px;">Консультация психолога онлайн</h1>
+        <p style="font-size: 1.4vw; line-height: 1.9vw; letter-spacing: 0.01em; width: 35vw; text-align: justify;">
+          Я помогу вам разобраться с проблемами из любой точки мира
+        </p>
+        <div style="display: inline-block;">
+          <button id="button_client_form">
+            <a href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+          </button>
           <div style="display: inline-block;">
-            <button id="button_client_form">
-              <a href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
-            </button>
-            <div style="display: inline-block;">
-              <button id="button_about" style="margin-left: 0.7vw;">
-                <a href="about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
-              </button>
-            </div>
-          </div>
-        </div>
-        <img src="<%= asset_url('consultation-psychologist-online-Tkachenko-Andrey.png') %>" alt="Консультации психолога онлайн Ткаченко Андрей" style="height: 46vw">
-      </div>
-
-      <h2 style="padding-top: 6vw; text-align: center; font-size: 3vw">Мои направления работы</h2>
-      <p style="text-align: center; font-size: 1.2vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
-        Если вы хотите узнать могу ли я помощь вам с вашей проблемой, вот список сфер моих компетенций.<br>Подробнее о каждой проблеме и методах работы с ней вы узнаете в разделе <a href="work-with.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">С чем я работаю</a>
-      </p>
-
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-        <div class="problem_box">
-          <img src="<%= asset_url('problem/relationship.svg')%>" alt="Улучшение взаимоотношений" class="problem_icon">
-          <h3 class="problem_name">Улучшение взаимоотношений</h3>
-          <p class="problem_text">
-            Помощь в принятии сложных решений, устранение конфликтов в семье и в коллективе. Работа с чувством одиночества, страхом отношений, изменами, ревностью, насилием. Развитие навыков коммуникации.
-          </p>
-        </div>
-
-        <div class="problem_box">
-          <img src="<%= asset_url('problem/neurosis.svg')%>" alt="Психотерапия неврозов и психосоматики" class="problem_icon">
-          <h3 class="problem_name">Психотерапия неврозов и психосоматики</h3>
-          <p class="problem_text">
-            Устранение раздражительности, ранимости, чувства обиды, вины, стыда, злости, ВСД, СРК, головных и мышечных болей, спазмов, проблем со сном, аппетитом и прочей психосоматики.
-          </p>
-        </div>
-
-        <div class="problem_box">
-          <img src="<%= asset_url('problem/anxiety.svg')%>" alt="Избавление от тревожных расстройств" class="problem_icon">
-          <h3 class="problem_name">Избавление от тревожных расстройств</h3>
-          <p class="problem_text">
-            Работа с тревожными предчувствиями, мыслями, мышечным напряжением, страхами, частой тревогой по поводу и без, ГТР, навязчивыми мыслями и действиями, паническими атаками.
-          </p>
-        </div>
-
-        <div class="problem_box">
-          <img src="<%= asset_url('problem/psychological-trauma.svg')%>" alt="Избавление от глубинных психотравм" class="problem_icon">
-          <h3 class="problem_name">Избавление от глубинных психотравм</h3>
-          <p class="problem_text">
-            Работа с последствиями сильного или длительного стресса. Помощь с детскими психотравмами, потерей близких, бизнеса, денег. Помощь в случаее насилия в семье, после катастроф, несчастных случаев.
-          </p>
-        </div>
-
-        <div class="problem_box">
-          <img src="<%= asset_url('problem/self-esteem.svg')%>" alt="Повышение самооценки" class="problem_icon">
-          <h3 class="problem_name">Повышение самооценки</h3>
-          <p class="problem_text">
-            Избавление от самообвинений, сравнений себя с другими, комплексов, нерешительности, непринятия своей внешности. Работа с установками “Я не смогу”, “Я не достоин”.
-          </p>
-        </div>
-
-        <div class="problem_box">
-          <img src="<%= asset_url('problem/depression.svg')%>" alt="Психологическая помощь при депрессии" class="problem_icon">
-          <h3 class="problem_name">Психологическая помощь при депрессии</h3>
-          <p class="problem_text">
-            Избавление от депрессии, апатии, грусти, печали, подавленности, ощущения того, что ничего не радует. Проработка пессимистичных мыслей, повышение концентрации внимания и активности.
-          </p>
-        </div>
-      </div>
-
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="<%= asset_url('Tkachenko-Andrey-psychologist.png')%>" alt="Ткаченко Андрей психолог" style="height: 50vw; width: 38%">
-        <div style="width: 65%; padding-left: 2vw">
-          <h2 style="font-size: 3.5vw; margin-bottom: 2.5vw">Обо мне</h2> 
-          <p style="width: 100%; text-align: justify">
-            Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я практикующий психолог с 5-ти летним стажем, предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).
-          </p>
-          <h3 style="font-weight: 700; margin-bottom: -0.7vw;">Мой путь</h3>
-          <p style="font-size: 0.95vw; text-align: justify">
-            Для начала, я прошел свою личную терапию, получил официальное психологическое образование, а также обучился консультированию и нескольким современным направлениям психотерапии. Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил индивидуальные консультации, лекции и тренинги.
-          </p>
-          <h3 style="font-weight: 700; margin-bottom: -0.7vw;">Моя миссия</h3>
-          <p style="font-size: 0.95vw; text-align: justify">
-            На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
-          </p>
-          <h3 style="font-weight: 700; margin-bottom: -0.7vw;">Мое образование и опыт</h3>
-          <p style="font-size: 0.95vw; text-align: justify">
-            Я окончил Днепровский Национальный Университет им. Олеся Гончара по специальности “Психология”, при универе организовывал группу по консультированию, прошел курсы повышения квалификции, был волонтером, работал в семейном цетре психологии, а также выступал экспертом в ряде изданий. Последние несколько лет веду частную практику.
-          </p>
-          <div style="margin: 2vw 14vw">
-            <button id="button_about">
+            <button id="button_about" style="margin-left: 0.7vw;">
               <a href="about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
             </button>
           </div>
         </div>
       </div>
+      <img src="<%= asset_url('consultation-psychologist-online-Tkachenko-Andrey.png') %>" alt="Консультации психолога онлайн Ткаченко Андрей" style="height: 46vw">
+    </div>
 
-      <h2 style="font-size: 3vw; text-align: center; margin: 8vw 0px 3vw 0vw"> Что входит в стоимость консультации</h2> 
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-        <div class="service_box">
-          <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Консультация</h3>
-          <p class="service_text">
-            2 часа непрерывной работы с Вами (диагностика, изменение схем мышления и поведения, обретение новых навыков и способностей, улучшение эмоционального состояния)
-          </p>
-        </div>
-        <div class="service_box">
-          <img src="<%= asset_url('stenografiya.svg')%>" alt="стенография консультации психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Стенография</h3>
-          <p class="service_text">
-            Стенография консультации с описанием проделанной работы и применяемых техник, результатами диагностики и вашим домашним заданием<br>(в файле docx)
-          </p>
-        </div>
-        <div class="service_box">
-          <img src="<%= asset_url('support.svg')%>" alt="сопровождение психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Сопровождение</h3>
-          <p class="service_text">
-            Между консультациями мы продолжаем поддерживать с вами связь в мессенджерах для контроля вашего состояния, поддержки, ответов на ваши вопросы и корректировки дз.
-          </p>
-        </div>
-        <div class="service_box">
-          <img src="<%= asset_url('dopolnitelnye-materialy.svg')%>" alt="дополнительные материалы для психологической самопомощи" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Доп. материалы</h3>
-          <p class="service_text">
-            Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам<br>(в файлах docx, excel, mp3, mp4)
-          </p>
-        </div>
+    <h2 style="padding-top: 6vw; text-align: center; font-size: 2.5vw">Мои направления работы</h2>
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
+      Если вы хотите узнать могу ли я помощь вам с вашей проблемой, вот список сфер моих компетенций.<br>Подробнее о каждой проблеме и методах работы с ней вы узнаете в разделе <a href="work-with.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">С чем я работаю</a>
+    </p>
+
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+      <div class="problem_box">
+        <img src="<%= asset_url('problem/relationship.svg')%>" alt="Улучшение взаимоотношений" class="problem_icon">
+        <h3 class="problem_name">Улучшение взаимоотношений</h3>
+        <p class="problem_text">
+          Помощь в принятии сложных решений, устранение конфликтов в семье и в коллективе. Работа с чувством одиночества, страхом отношений, изменами, ревностью, насилием. Развитие навыков коммуникации.
+        </p>
       </div>
 
-      <h2 style="text-align: center; font-size: 3.5vw; margin: 7vw 0px 3vw 0vw">Стоимость</h2>
-      <p style="text-align: center; font-size: 1.2vw; letter-spacing: 0.01em; margin: 2vw 15vw 4vw 15vw;">и описание моих услуг</p>
-
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center; margin: 0vw 2vw">
-        <div style="width: 29%;" id="service_box">
-          <a href="consultations.html#Group" style="color: inherit; text-decoration:none;">
-            <img src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="height: 12vw; transition: 0.3s;">  
-            <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Групповая консультация</h3>
-          </a>
-          <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
-            <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
-            <div class="service_accordion_text">Дешевая групповая психотерапия в<br>Zoom (1 – 2 сеанса в неделю).<br>Группа от 3-х до 5-ти человек<br>объединенных одной проблемой<br>(например, низкая самооценка,<br>тревога, невроз, ОКР)</div>
-          </div>
-          <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">10 $</span>
-          <p>Скидка: 4 сеанса по предоплате 30 $</p>
-        </div>
-
-        <div style="width: 29%;" id="service_box">
-          <a href="consultations.html" style="color: inherit; text-decoration:none;">
-            <img src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="height: 12vw; transition: 0.3s;">  
-            <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Индивидуальная консультация</h3>
-          </a>
-          <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
-            <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
-            <div class="service_accordion_text">Консультация по Skype, Telegram,<br>Viber, Zoom (1 – 2 сеанса в неделю).<br>Вы находитесь у себя дома, в<br>безопасной обстановке, говорите<br>о наболевшем с тем, кто вас<br>понимает, избавляетесь от страхов<br>и сомнений, наполняясь<br>спокойствием и верой в себя.</div>
-          </div>     
-          <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">30 $</span>
-          <p>Скидка: 4 сеанса по предоплате 100 $</p>
-        </div>
-
-        <div style="width: 29%;" id="service_box">
-          <a href="consultations.html#Intensive-psychotherapy" style="color: inherit; text-decoration:none;">
-            <img src="<%= asset_url('intensive-psychotherapy.svg')%>" alt="интенсивная психотерапия" style="height: 12vw; transition: 0.3s;"> 
-            <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Интенсивная психотерапия</h3>
-          </a>
-          <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
-            <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 0vw 1vw 0vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">5 дней подряд по 4 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
-            <div class="service_accordion_text">5 дней интенсивной психотерапии с<br>применением гипноза и коучинга<br>для тех, кому время важнее денег.<br>Задача – максимально быстро<br>вернуть вас в рабочее состояние, в<br>котором вы можете продолжать<br>жить и работать. Избавление от<br>тревоги, психосоматики, страха<br>публичных выступлений и потери<br>бизнеса. Восстановление после<br>сильного стресса. Обучение<br>релаксации и стрессоустойчивости.</div>
-          </div>     
-          <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">300 $</span>
-        </div>
+      <div class="problem_box">
+        <img src="<%= asset_url('problem/neurosis.svg')%>" alt="Психотерапия неврозов и психосоматики" class="problem_icon">
+        <h3 class="problem_name">Психотерапия неврозов и психосоматики</h3>
+        <p class="problem_text">
+          Устранение раздражительности, ранимости, чувства обиды, вины, стыда, злости, ВСД, СРК, головных и мышечных болей, спазмов, проблем со сном, аппетитом и прочей психосоматики.
+        </p>
       </div>
 
-      <!--
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <div style="display: flex; justify-content: space-evenly; align-items: center">
-          <div style="width: 36.5vw">
-            <div style="display: flex; justify-content: space-between; align-items: center">
-              <div style="display: flex; align-items: center;">
-                <img src="<%= asset_url('price6.svg')%>" style="width: 3.5vw; margin-right: 1vw">
-                <p style="font-size: 1.3vw">Длительность консультации</p>
-              </div>
-              <p style="font-weight: 800; font-size: 2vw">2 часа</p>
+      <div class="problem_box">
+        <img src="<%= asset_url('problem/anxiety.svg')%>" alt="Избавление от тревожных расстройств" class="problem_icon">
+        <h3 class="problem_name">Избавление от тревожных расстройств</h3>
+        <p class="problem_text">
+          Работа с тревожными предчувствиями, мыслями, мышечным напряжением, страхами, частой тревогой по поводу и без, ГТР, навязчивыми мыслями и действиями, паническими атаками.
+        </p>
+      </div>
+
+      <div class="problem_box">
+        <img src="<%= asset_url('problem/psychological-trauma.svg')%>" alt="Избавление от глубинных психотравм" class="problem_icon">
+        <h3 class="problem_name">Избавление от глубинных психотравм</h3>
+        <p class="problem_text">
+          Работа с последствиями сильного или длительного стресса. Помощь с детскими психотравмами, потерей близких, бизнеса, денег. Помощь в случаее насилия в семье, после катастроф, несчастных случаев.
+        </p>
+      </div>
+
+      <div class="problem_box">
+        <img src="<%= asset_url('problem/self-esteem.svg')%>" alt="Повышение самооценки" class="problem_icon">
+        <h3 class="problem_name">Повышение самооценки</h3>
+        <p class="problem_text">
+          Избавление от самообвинений, сравнений себя с другими, комплексов, нерешительности, непринятия своей внешности. Работа с установками “Я не смогу”, “Я не достоин”.
+        </p>
+      </div>
+
+      <div class="problem_box">
+        <img src="<%= asset_url('problem/depression.svg')%>" alt="Психологическая помощь при депрессии" class="problem_icon">
+        <h3 class="problem_name">Психологическая помощь при депрессии</h3>
+        <p class="problem_text">
+          Избавление от депрессии, апатии, грусти, печали, подавленности, ощущения того, что ничего не радует. Проработка пессимистичных мыслей, повышение концентрации внимания и активности.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <img src="<%= asset_url('Tkachenko-Andrey-psychologist.png')%>" alt="Ткаченко Андрей психолог" style="height: 50vw; width: 38%">
+      <div style="width: 65%; padding-left: 2vw">
+        <h2 style="font-size: 3vw; margin-bottom: 2vw">Обо мне</h2> 
+        <p style="text-align: justify">
+          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я практикующий психолог с 5-ти летним стажем, предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).
+        </p>
+        <h3 style="font-weight: 700; margin-bottom: -0.7vw;">Мой путь</h3>
+        <p style="font-size: 0.95vw; text-align: justify">
+          Для начала, я прошел свою личную терапию, получил официальное психологическое образование, а также обучился консультированию и нескольким современным направлениям психотерапии. Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил индивидуальные консультации, лекции и тренинги.
+        </p>
+        <h3 style="font-weight: 700; margin-bottom: -0.7vw;">Моя миссия</h3>
+        <p style="font-size: 0.95vw; text-align: justify">
+          На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
+        </p>
+        <h3 style="font-weight: 700; margin-bottom: -0.7vw;">Мое образование и опыт</h3>
+        <p style="font-size: 0.95vw; text-align: justify">
+          Я окончил Днепровский Национальный Университет им. Олеся Гончара по специальности “Психология”, при универе организовывал группу по консультированию, прошел курсы повышения квалификции, был волонтером, работал в семейном цетре психологии, а также выступал экспертом в ряде изданий. Последние несколько лет веду частную практику.
+        </p>
+        <div style="margin: 2vw 14vw">
+          <button id="button_about">
+            <a href="about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h2 style="font-size: 2.5vw; text-align: center; margin: 9vw 0px 3vw 0vw"> Что входит в стоимость консультации</h2> 
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+      <div class="service_box">
+        <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Консультация</h3>
+        <p class="service_text">
+          2 часа непрерывной работы с Вами (диагностика, изменение схем мышления и поведения, обретение новых навыков и способностей, улучшение эмоционального состояния)
+        </p>
+      </div>
+      <div class="service_box">
+        <img src="<%= asset_url('stenografiya.svg')%>" alt="стенография консультации психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Стенография</h3>
+        <p class="service_text">
+          Стенография консультации с описанием проделанной работы и применяемых техник, результатами диагностики и вашим домашним заданием<br>(в файле docx)
+        </p>
+      </div>
+      <div class="service_box">
+        <img src="<%= asset_url('support.svg')%>" alt="сопровождение психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Сопровождение</h3>
+        <p class="service_text">
+          Между консультациями мы продолжаем поддерживать с вами связь в мессенджерах для контроля вашего состояния, поддержки, ответов на ваши вопросы и корректировки дз.
+        </p>
+      </div>
+      <div class="service_box">
+        <img src="<%= asset_url('dopolnitelnye-materialy.svg')%>" alt="дополнительные материалы для психологической самопомощи" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Доп. материалы</h3>
+        <p class="service_text">
+          Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам<br>(в файлах docx, excel, mp3, mp4)
+        </p>
+      </div>
+    </div>
+
+    <h2 style="text-align: center; font-size: 2.5vw; margin: 8vw 0px 2vw 0vw">Стоимость</h2>
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 1vw 15vw 2vw 15vw;">и описание моих <a href="/services.html" style=" border-bottom: 1px solid currentColor;">услуг</a></p>
+
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center; margin: 0vw 2vw">
+      <div style="width: 29%;" id="service_box">
+        <a href="consultations.html#Group" style="color: inherit; text-decoration:none;">
+          <img src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="height: 12vw; transition: 0.3s;">  
+          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Групповая консультация</h3>
+        </a>
+        <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
+          <div class="service_accordion_text">Дешевая групповая психотерапия в<br>Zoom (1 – 2 сеанса в неделю).<br>Группа от 3-х до 5-ти человек<br>объединенных одной проблемой<br>(например, низкая самооценка,<br>тревога, невроз, ОКР)</div>
+        </div>
+        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">10 $</span>
+        <p>Скидка: 4 сеанса по предоплате 30 $</p>
+      </div>
+
+      <div style="width: 29%;" id="service_box">
+        <a href="consultations.html" style="color: inherit; text-decoration:none;">
+          <img src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="height: 12vw; transition: 0.3s;">  
+          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Индивидуальная консультация</h3>
+        </a>
+        <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
+          <div class="service_accordion_text">Консультация по Skype, Telegram,<br>Viber, Zoom (1 – 2 сеанса в неделю).<br>Вы находитесь у себя дома, в<br>безопасной обстановке, говорите<br>о наболевшем с тем, кто вас<br>понимает, избавляетесь от страхов<br>и сомнений, наполняясь<br>спокойствием и верой в себя.</div>
+        </div>     
+        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">30 $</span>
+        <p>Скидка: 4 сеанса по предоплате 100 $</p>
+      </div>
+
+      <div style="width: 29%;" id="service_box">
+        <a href="consultations.html#Intensive-psychotherapy" style="color: inherit; text-decoration:none;">
+          <img src="<%= asset_url('intensive-psychotherapy.svg')%>" alt="интенсивная психотерапия" style="height: 12vw; transition: 0.3s;"> 
+          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Интенсивная психотерапия</h3>
+        </a>
+        <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 0vw 1vw 0vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">5 дней подряд по 4 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
+          <div class="service_accordion_text">5 дней интенсивной психотерапии с<br>применением гипноза и коучинга<br>для тех, кому время важнее денег.<br>Задача – максимально быстро<br>вернуть вас в рабочее состояние, в<br>котором вы можете продолжать<br>жить и работать. Избавление от<br>тревоги, психосоматики, страха<br>публичных выступлений и потери<br>бизнеса. Восстановление после<br>сильного стресса. Обучение<br>релаксации и стрессоустойчивости.</div>
+        </div>     
+        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">300 $</span>
+      </div>
+    </div>
+
+    <h2 style="font-size: 2.5vw; text-align: center; margin: 10vw 0px 2vw 0vw"> Как попасть на консультацию</h2> 
+    <p style="text-align: center; font-size: 1vw; letter-spacing: 0.01em; margin: 2vw">и начать улучшать свою жизнь</p>
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 7vw">
+      <div class="service_box">
+        <img src="<%= asset_url('form.svg')%>" alt="форма записи на консультацию психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Онлайн-запись</h3>
+        <p class="service_text">
+          Вы заполняете <a href="#client_form" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
+          <a href="contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
+        </p>
+      </div>
+
+      <img src="<%= asset_url('arrow-right.svg')%>" style="width: 1vw; position: relative; top: 1.9vw">
+
+      <div class="service_box">
+        <img src="<%= asset_url('first-contact.svg')%>" alt="предварительная консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Первый контакт</h3>
+        <p class="service_text">
+          В течение 24 часов я с вами списываюсь / созваниваюсь, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем наши дальнейшие действия.
+        </p>
+      </div>
+
+      <img src="<%= asset_url('arrow-right.svg')%>" style="width: 1vw; position: relative; top: 1.9vw">
+
+      <div class="service_box">
+        <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Консультация</h3>
+        <p class="service_text">
+          По видеосвязи я работаю с вашей проблемой применяя специально выстроенный диалог и техники психотерапии. Подробнее о моих методах работы читайте 
+          <a href="methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
+        </p>
+      </div>
+
+      <img src="<%= asset_url('arrow-right.svg')%>" style="width: 1vw; position: relative; top: 1.9vw">
+
+      <div class="service_box">
+        <img src="<%= asset_url('result.svg')%>" alt="результат консультаций психолога" style="width: 80%; margin: 10% 10% 0% 10%">
+        <h3 class="service_name">Результат</h3>
+        <p class="service_text">
+          Вы чувствуете себя комфортно и уверенно в ранее стрессовой ситуации. Делаете то, что для вас ценно и важно. Имеете навыки для самостоятельного решения проблем.
+        </p>
+      </div>
+    </div>
+
+    <h2 style="font-size: 2.5vw; text-align: center; margin: 0vw 0px 1.7vw 0vw; padding-top: 2vw" id="client_form">Запись на консультацию</h2> 
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 0vw 0vw 5vw 0vw;">
+      Заполните форму или свяжитесь со мной любым удобным для вас способом.<br>Контакты вы найдете 
+      <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
+    </p>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <img src="<%= asset_url('form.svg')%>" alt="форма онлайн-записи на консультацию психолога" style="width: 40vw">
+      <div><a id="client_form" name="client_form"></a>
+        <%= render partial: '/new/form' %>
+      </div>
+    </div>
+
+    <h2 style="font-size: 2.5vw; text-align: center; margin: 10vw 0px 2vw 0vw"> Отзывы о моей работе</h2> 
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 2vw 0vw;">
+      Что о работе со мной говорят клиенты, с которыми я провел одну консультацию<br>или полноценный курс психотерапии
+    </p>
+
+    <%= render partial: "/new/review"%>
+    
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 3vw">
+      Больше мнений о моей работе и видео-отзывы вы найдете в закладке <a href="reviews.html" style="border-bottom: 1px solid currentColor;">Отзывы</a>
+    </p>
+
+    <h2 style="font-size: 2.5vw; text-align: center; margin: 10vw 0px 2vw 0vw">Интересные статьи</h2>
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 1vw 0vw;">
+      Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими<br>вас проблемами - рекомендую ознакомится с моими
+      <a href="articles.html" style="border-bottom: 1px solid currentColor;">статьями</a>
+    </p>
+
+    <div style="position: relative; height: 37vw;">
+      <div id="box_mini_card" style="position: relative; height: 15vw;">
+        <section class="up-corner-20 article_box" style="position: relative; left: -6vw; display: inline-block; top: -3vw">
+          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+            <span>
+              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles?category_id=3" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+                  Общая психология
+                </a>
+              </h3>
+              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles/1" style="display: block; font-size: 1.5vw;">
+                  Виды позитивного мышления и восприятия. Как это работает?
+                </a>
+              </span>
+            </span>
+          </span>
+          <a href="/articles/1">
+            <img src="<%= asset_url('article1.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
+            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
+            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
             </div>
-            <div style="display: flex; justify-content: space-between; align-items: center">
-              <div style="display: flex; align-items: center;">
-                <img src="<%= asset_url('price3.PNG')%>" style="width: 3.5vw; margin-right: 1vw">
-                <p style="font-size: 1.3vw">Цена консультации</p>
-              </div>
-              <p style="font-weight: 800; font-size: 2vw">30 $</p>
+          </a>
+        </section>
+
+        <section class="up-corner-20 article_box" style="position: relative; left: -18vw; display: inline-block; top: -3vw">
+          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+            <span>
+              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles?category_id=8" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+                  Тревога
+                </a>
+              </h3>
+              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles/1" style="display: block; font-size: 1.5vw;">
+                  Медитация доброты и сострадания
+                </a>
+              </span>
+            </span>
+          </span>
+          <a href="/articles/2">
+            <img src="<%= asset_url('article2.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
+            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
+            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
             </div>
-            <p style="font-size: 1.2vw; line-height: 1.7vw; text-align: justify;">
-              Консультация по Skype, Telegram, Viber, Hangouts для тех, кто ценит свое время. Вы находитесь у себя дома, в безопасной обстановке, в удобном кресле, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя. Подробнее о процессе консультации <a href="consultations.html"><b>тут</b></a>.
-            </p>
-            <button id="button_client_form" style="float: right;">
-              <a href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
-            </button>
-          </div>
-        </div>
-        <img src="<%= asset_url('process.svg')%>" style="width: 42vw">
-      </div>
--->
-      <h2 style="font-size: 3vw; text-align: center; margin: 10vw 0px 2vw 0vw"> Как попасть на консультацию</h2> 
-      <p style="text-align: center; font-size: 1.2vw; letter-spacing: 0.01em; margin: 2vw">и начать улучшать свою жизнь</p>
-      <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 9vw">
-        <div class="service_box">
-          <img src="<%= asset_url('form.svg')%>" alt="форма записи на консультацию психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Онлайн-запись</h3>
-          <p class="service_text">
-            Вы заполняете <a href="#client_form" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
-            <a href="contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
-          </p>
-        </div>
+          </a>
+        </section>
 
-        <img src="<%= asset_url('arrow-right.svg')%>" style="width: 1vw; position: relative; top: 1.9vw">
-
-        <div class="service_box">
-          <img src="<%= asset_url('first-contact.svg')%>" alt="предварительная консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Первый контакт</h3>
-          <p class="service_text">
-            В течение 24 часов я с вами списываюсь / созваниваюсь, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем наши дальнейшие действия.
-          </p>
-        </div>
-
-        <img src="<%= asset_url('arrow-right.svg')%>" style="width: 1vw; position: relative; top: 1.9vw">
-
-        <div class="service_box">
-          <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Консультация</h3>
-          <p class="service_text">
-            По видеосвязи я работаю с вашей проблемой применяя специально выстроенный диалог и техники психотерапии. Подробнее о моих методах работы читайте 
-            <a href="methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
-          </p>
-        </div>
-
-        <img src="<%= asset_url('arrow-right.svg')%>" style="width: 1vw; position: relative; top: 1.9vw">
-
-        <div class="service_box">
-          <img src="<%= asset_url('result.svg')%>" alt="результат консультаций психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-          <h3 class="service_name">Результат</h3>
-          <p class="service_text">
-            Вы чувствуете себя комфортно и уверенно в ранее стрессовой ситуации. Делаете то, что для вас ценно и важно. Имеете навыки для самостоятельного решения проблем.
-          </p>
-        </div>
-      </div>
-
-      <h2 style="font-size: 3vw; text-align: center; margin: 0vw 0px 1.7vw 0vw; padding-top: 1vw" id="client_form"> Запись на консультацию</h2> 
-      <p style="text-align: center; font-size: 1.17vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 0vw 0vw 5vw 0vw;">
-        Заполните форму или свяжитесь со мной любым удобным для вас способом.<br>Контакты вы найдете 
-        <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
-      </p>
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="<%= asset_url('form.svg')%>" alt="форма онлайн-записи на консультацию психолога" style="width: 40vw">
-        <div><a id="client_form" name="client_form"></a>
-          <%= render partial: '/new/form' %>
-        </div>
-      </div>
-
-      <h2 style="font-size: 3vw; text-align: center; margin: 10vw 0px 2vw 0vw"> Отзывы о моей работе</h2> 
-      <p style="text-align: center; font-size: 1.2vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 2vw 0vw 2vw 0vw;">
-        Что о работе со мной говорят клиенты, с которыми я провел одну консультацию<br>или полноценный курс психотерапии
-      </p>
-
-      <%= render partial: "/new/review"%>
-      
-      <p style="text-align: center; font-size: 1.2vw; letter-spacing: 0.01em; margin: 3vw">
-        Больше мнений о моей работе и видео-отзывы вы найдете в закладке <a href="reviews.html" style="border-bottom: 1px solid currentColor;">Отзывы</a>
-      </p>
-
-      <h2 style="font-size: 3vw; text-align: center; margin: 10vw 0px 2vw 0vw"> Интересные статьи</h2> 
-      <p style="text-align: center; font-size: 1.2vw; line-height: 1.7vw; letter-spacing: 0.01em; margin: 2vw 0vw -2vw 0vw;">
-        Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими<br> вас проблемами - рекомендую ознакомится с моими 
-        <a href="articles.html" style="border-bottom: 1px solid currentColor;">статьями</a>
-      </p>
-  
-      <div style="position: relative; height: 40vw;">
-        <div id="box_mini_card" style="position: relative; height: 15vw;">
-          <section class="up-corner-20 article_box" style="position: relative; left: -6vw;">
-            <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
-              <span>
-                <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles?category_id=3" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
-                    Общая психология
-                  </a>
-                </h3>
-                <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles/1" style="display: block; font-size: 1.5vw;">
-                    Виды позитивного мышления и восприятия. Как это работает?
-                  </a>
-                </span>
+        <section class="up-corner-20 article_box" style="position: relative; left: -6vw; top: -12.4vw; display: inline-block;">
+          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+            <span>
+              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles?category_id=7" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+                  НЕВРОЗ И ПСИХОСОМАТИКА
+                </a>
+              </h3>
+              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles/3" style="display: block; font-size: 1.5vw;">
+                  Психосоматика. Симптомы и причины возникновения
+                </a>
               </span>
             </span>
-            <a href="/articles/1">
-              <img src="<%= asset_url('article1.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-              <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-              <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-              </div>
-            </a>
-          </section>
+          </span>
+          <a href="/articles/3">
+            <img src="<%= asset_url('article3.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
+            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
+            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
+            </div>
+          </a>
+        </section>
 
-          <section class="up-corner-20 article_box" style="position: relative; left: 15.7vw; top: -24.8vw;">
-            <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
-              <span>
-                <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles?category_id=8" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
-                    Тревога
-                  </a>
-                </h3>
-                <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles/1" style="display: block; font-size: 1.5vw;">
-                    Медитация доброты и сострадания
-                  </a>
-                </span>
+        <section class="up-corner-20 article_box" style="position: relative; left: -18vw; top: -12.4vw; display: inline-block;">
+          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+            <span>
+              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles?category_id=2" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+                  Психология отношений
+                </a>
+              </h3>
+              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
+                <a href="/articles/5" style="display: block; font-size: 1.5vw;">
+                  5 фраз для решения конфликтов с близкими людьми
+                </a>
               </span>
             </span>
-            <a href="/articles/2">
-              <img src="<%= asset_url('article2.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-              <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-              <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-              </div>
-            </a>
-          </section>
-
-          <section class="up-corner-20 article_box" style="position: relative; left: -6vw; top: -34vw;">
-            <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
-              <span>
-                <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles?category_id=7" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
-                    НЕВРОЗ И ПСИХОСОМАТИКА
-                  </a>
-                </h3>
-                <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles/3" style="display: block; font-size: 1.5vw;">
-                    Психосоматика. Симптомы и причины возникновения
-                  </a>
-                </span>
-              </span>
-            </span>
-            <a href="/articles/3">
-              <img src="<%= asset_url('article3.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-              <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-              <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-              </div>
-            </a>
-          </section>
-
-          <section class="up-corner-20 article_box" style="position: relative; left: 15.7vw; top: -58.8vw;">
-            <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
-              <span>
-                <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles?category_id=2" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
-                    Психология отношений
-                  </a>
-                </h3>
-                <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                  <a href="/articles/5" style="display: block; font-size: 1.5vw;">
-                    5 фраз для решения конфликтов с близкими людьми
-                  </a>
-                </span>
-              </span>
-            </span>
-            <a href="/articles/5">
-              <img src="<%= asset_url('article4.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-              <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-              <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-              </div>
-            </a>
-          </section>
-        </div>
-        <img src="<%= asset_url('articles.svg')%>" alt="статьи психолога" style="width: 40vw; position: relative; top: -8.5vw; left: 45vw;">
+          </span>
+          <a href="/articles/5">
+            <img src="<%= asset_url('article4.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
+            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
+            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
+            </div>
+          </a>
+        </section>
       </div>
-    </div>   <!-- конец container -->
-
-  </div>  <!-- конец пк версии -->
+      <img src="<%= asset_url('articles.svg')%>" alt="статьи психолога" style="width: 40vw; position: relative; top: -11.5vw; left: 45vw;">
+    </div>
+  </div>   <!-- конец container -->
+</div>  <!-- конец пк версии -->
 
 
 
