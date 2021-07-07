@@ -1,5 +1,5 @@
-require 'telegram/bot'
 require 'tg'
+
 class Request < ActiveRecord::Base
 	belongs_to :client
 

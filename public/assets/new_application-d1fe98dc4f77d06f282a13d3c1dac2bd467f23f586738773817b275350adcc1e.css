@@ -1,0 +1,2475 @@
+@charset "UTF-8";
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+/* line 16, app/assets/stylesheets/new_application.scss */
+html, body {
+  height: 100%;
+  color: #4b4b4b;
+  background: #fafafa;
+  font-family: Montserrat;
+  font-size: 1vw;
+  line-height: 1.5vw;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* line 28, app/assets/stylesheets/new_application.scss */
+::-webkit-scrollbar {
+  width: auto;
+}
+
+/* line 32, app/assets/stylesheets/new_application.scss */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* line 36, app/assets/stylesheets/new_application.scss */
+::-webkit-scrollbar-thumb {
+  background: #ff7f50;
+}
+
+/* line 40, app/assets/stylesheets/new_application.scss */
+::-webkit-scrollbar-thumb:hover {
+  background: #3b3b3b;
+}
+
+@media only screen and (min-device-width: 1025px) {
+  /* line 45, app/assets/stylesheets/new_application.scss */
+  .page-menu-item {
+    font-size: 0.9vw;
+  }
+  /* line 48, app/assets/stylesheets/new_application.scss */
+  .container_header a {
+    width: 17%;
+  }
+  /* line 51, app/assets/stylesheets/new_application.scss */
+  .contacts_icon_style {
+    width: 1.4vw;
+  }
+  /* line 54, app/assets/stylesheets/new_application.scss */
+  .contacts_icon {
+    height: 2.3vw;
+    padding: 0.2vw 0vw 0.2vw 0.6vw;
+    margin-top: -0.4vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 62, app/assets/stylesheets/new_application.scss */
+  .display_none {
+    display: none;
+  }
+  /* line 65, app/assets/stylesheets/new_application.scss */
+  .page-menu-item {
+    font-weight: 500;
+    font-size: calc(10px + 0.1vw);
+  }
+  /* line 69, app/assets/stylesheets/new_application.scss */
+  .container_header a {
+    width: 8%;
+  }
+  /* line 72, app/assets/stylesheets/new_application.scss */
+  .contacts_icon_style {
+    width: 2.6vw;
+  }
+  /* line 75, app/assets/stylesheets/new_application.scss */
+  .contacts_icon {
+    height: 2.3vw;
+    padding: 0.2vw 0vw 0.2vw 1vw;
+  }
+  /* line 79, app/assets/stylesheets/new_application.scss */
+  .contacts_box {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-device-width: 767px) {
+  /* line 85, app/assets/stylesheets/new_application.scss */
+  .container_header, .pc_content {
+    display: none !important;
+  }
+  /* line 88, app/assets/stylesheets/new_application.scss */
+  .problem_box {
+    width: 38%;
+    height: 30vw;
+    padding: 4vw;
+    background-color: white;
+    border-radius: 3vw;
+    margin-bottom: 3vw;
+  }
+  /* line 96, app/assets/stylesheets/new_application.scss */
+  .price_con_box {
+    width: 38%;
+    height: 47vw;
+    padding: 4vw;
+    background-color: white;
+    border-radius: 3vw;
+    margin-bottom: 3vw;
+  }
+  /* line 104, app/assets/stylesheets/new_application.scss */
+  .problem_icon {
+    width: 100%;
+  }
+  /* line 107, app/assets/stylesheets/new_application.scss */
+  .problem_name {
+    font-size: 2.5vw;
+    line-height: 2.7vw;
+  }
+  /* line 111, app/assets/stylesheets/new_application.scss */
+  .problem_text {
+    font-size: 2.1vw;
+    line-height: 2.3vw;
+  }
+  /* line 115, app/assets/stylesheets/new_application.scss */
+  #header {
+    height: 12vw;
+  }
+  /* line 118, app/assets/stylesheets/new_application.scss */
+  .problem_link {
+    color: black;
+    text-decoration: underline;
+    font-size: 1.6vw;
+    font-weight: 700;
+  }
+  /* line 125, app/assets/stylesheets/new_application.scss */
+  table td, tfoot td {
+    font-size: 2.5vw !important;
+    line-height: 3vw;
+    border: 1px solid #454554;
+  }
+  /* line 130, app/assets/stylesheets/new_application.scss */
+  table th {
+    font-size: 2.5vw !important;
+  }
+  /* line 133, app/assets/stylesheets/new_application.scss */
+  td:first-child {
+    border-right: none !important;
+  }
+  /* line 136, app/assets/stylesheets/new_application.scss */
+  table td {
+    border-bottom: none;
+  }
+  /* line 139, app/assets/stylesheets/new_application.scss */
+  tfoot tr td {
+    border-bottom: 1px solid #454554;
+  }
+  /* line 142, app/assets/stylesheets/new_application.scss */
+  h2 {
+    padding: 7vw 0vw 0vw 0vw;
+    margin: 0vw;
+    text-align: start;
+    font-weight: 800;
+    font-size: 3vw;
+    line-height: 4vw;
+  }
+  /* line 150, app/assets/stylesheets/new_application.scss */
+  p, ul {
+    font-size: 2.7vw;
+    line-height: 3.4vw;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-device-width: 768px) {
+  /* line 156, app/assets/stylesheets/new_application.scss */
+  .menu_mob, .mob {
+    display: none !important;
+  }
+  /* line 159, app/assets/stylesheets/new_application.scss */
+  h2 {
+    font-size: 2vw;
+    font-weight: 800;
+    margin: 4vw 0vw 2vw 4vw;
+  }
+  /* line 164, app/assets/stylesheets/new_application.scss */
+  #mob_form {
+    width: 0vw !important;
+  }
+  /* line 167, app/assets/stylesheets/new_application.scss */
+  .problem_box, .price_con_box {
+    width: 28%;
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+  /* line 172, app/assets/stylesheets/new_application.scss */
+  .problem_icon {
+    width: 16vw;
+    padding-bottom: 1vw;
+    transition: 0.3s;
+  }
+  /* line 177, app/assets/stylesheets/new_application.scss */
+  .problem_name {
+    font-size: 1.05vw;
+    line-height: 1vw;
+    padding: 0.5vw;
+    margin: 0vw;
+  }
+  /* line 183, app/assets/stylesheets/new_application.scss */
+  .problem_text {
+    font-size: 1vw;
+    line-height: 1.2vw;
+    text-align: left;
+  }
+  /* line 188, app/assets/stylesheets/new_application.scss */
+  #header {
+    height: 5vw;
+  }
+  /* line 191, app/assets/stylesheets/new_application.scss */
+  .service_box {
+    width: 20%;
+    padding: 1vw;
+  }
+  /* line 195, app/assets/stylesheets/new_application.scss */
+  .service_name {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
+  }
+  /* line 199, app/assets/stylesheets/new_application.scss */
+  .service_text {
+    font-size: 1vw;
+    line-height: 1.2vw;
+  }
+}
+
+/*    ХЕДЕР     */
+/* line 212, app/assets/stylesheets/new_application.scss */
+.container_header {
+  margin: 0px 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 2.1vw;
+  color: #fafafa;
+}
+
+/* line 222, app/assets/stylesheets/new_application.scss */
+.logo:hover {
+  transform: rotate(360deg);
+  transition: 1s 0.2s ease;
+}
+
+/* line 227, app/assets/stylesheets/new_application.scss */
+.logo {
+  -webkit-transition: 1s 0.2s ease;
+  -moz-transition: 1s ease;
+  /* Firefox 4 */
+  -o-transition: 2s ease;
+  /* Opera */
+}
+
+/* line 233, app/assets/stylesheets/new_application.scss */
+.container_header A {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 238, app/assets/stylesheets/new_application.scss */
+.page-menu-item A {
+  color: #fafafa;
+  /* Цвет обычной ссылки */
+  text-decoration: none;
+}
+
+/* line 243, app/assets/stylesheets/new_application.scss */
+.page-menu-item A:visited, .container_header A:visited {
+  color: inherit;
+  /* Цвет посещенной ссылки */
+}
+
+/* line 247, app/assets/stylesheets/new_application.scss */
+.page-menu-item {
+  display: inline-block;
+  padding: 2%;
+  font-weight: 500;
+  line-height: 1.5vw;
+  color: #fafafa;
+}
+
+/* line 255, app/assets/stylesheets/new_application.scss */
+.contacts {
+  font-size: 0.8vw;
+  line-height: 1vw;
+  text-align: right;
+  color: #fafafa;
+}
+
+/* line 262, app/assets/stylesheets/new_application.scss */
+.arrow {
+  width: 0.8vw;
+  position: relative;
+  left: 0.4vw;
+}
+
+/* line 268, app/assets/stylesheets/new_application.scss */
+#arrow:hover .arrow {
+  transform: rotate(180deg);
+}
+
+/* line 272, app/assets/stylesheets/new_application.scss */
+#arrow:hover {
+  border-bottom: none;
+}
+
+/* line 276, app/assets/stylesheets/new_application.scss */
+.menu ul li {
+  border: 1px solid transparent;
+  margin: 1vw 1vw;
+  padding-left: 0vw;
+}
+
+/* line 281, app/assets/stylesheets/new_application.scss */
+.menu ul ul > li {
+  margin: 0px;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+/* line 286, app/assets/stylesheets/new_application.scss */
+.menu ul ul > li a {
+  display: block;
+  width: 100%;
+  padding: 0.8vw 0vw;
+}
+
+/* line 291, app/assets/stylesheets/new_application.scss */
+.arrow ul li > a {
+  color: inherit;
+}
+
+/* line 294, app/assets/stylesheets/new_application.scss */
+.menu ul ul > li:hover {
+  background-color: #ff7f50;
+  color: #FFFFFF;
+}
+
+/* line 298, app/assets/stylesheets/new_application.scss */
+.menu ul > li:hover, .active-menu {
+  border-bottom: 1px solid #fafafa;
+}
+
+/* line 301, app/assets/stylesheets/new_application.scss */
+.menu ul li, .menu ul {
+  display: inline-block;
+}
+
+/* line 304, app/assets/stylesheets/new_application.scss */
+.menu ul {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 309, app/assets/stylesheets/new_application.scss */
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 3vw;
+  left: 7.4vw;
+  width: 10vw;
+  background-color: #fdfdfd;
+  box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.4vw;
+  text-align: center;
+  color: #4b4b4b;
+}
+
+/* line 321, app/assets/stylesheets/new_application.scss */
+.menu li:hover ul {
+  display: block;
+}
+
+/* line 324, app/assets/stylesheets/new_application.scss */
+.menu li:hover li {
+  display: block;
+}
+
+/* line 327, app/assets/stylesheets/new_application.scss */
+.menu li a {
+  padding: 1vw 0.5vw;
+}
+
+/*    Конец ХЕДЕР     */
+/*    моб ХЕДЕР     */
+/* line 342, app/assets/stylesheets/new_application.scss */
+#nav {
+  padding-left: 0px;
+}
+
+/* line 346, app/assets/stylesheets/new_application.scss */
+#nav li {
+  padding-left: 0vw;
+  line-height: initial;
+  margin: 0px;
+}
+
+/* line 352, app/assets/stylesheets/new_application.scss */
+.arrow_mob {
+  width: 3.3vw;
+  padding-left: 2vw;
+}
+
+/* line 357, app/assets/stylesheets/new_application.scss */
+input#sandwich:checked ~ section {
+  transform: translateX(0%);
+}
+
+/* line 361, app/assets/stylesheets/new_application.scss */
+.nav_mob {
+  z-index: 1000000000;
+  width: 81vw;
+  height: 177.1vw;
+  transform: translateX(-100%);
+  transition: transform 0.4s;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: rgba(57, 52, 52, 0.9);
+  border: 1px solid #3D3D3D;
+  -webkit-backdrop-filter: blur(1.5vw);
+          backdrop-filter: blur(1.5vw);
+}
+
+/* line 375, app/assets/stylesheets/new_application.scss */
+.nav_mob ul {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 381, app/assets/stylesheets/new_application.scss */
+.nav_mob ul li {
+  display: flex;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+}
+
+/* line 386, app/assets/stylesheets/new_application.scss */
+.nav_mob ul li > a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 3.8vw;
+  padding: 6vw 10vw;
+  display: block;
+  width: 100%;
+}
+
+/* line 396, app/assets/stylesheets/new_application.scss */
+#nav2 li a {
+  font-size: 0vw;
+  padding: 0vw;
+  transition: 0.4s;
+}
+
+/* line 402, app/assets/stylesheets/new_application.scss */
+.nav_mob ul ul > li {
+  border: none;
+}
+
+/* line 406, app/assets/stylesheets/new_application.scss */
+input#inp_cons:checked ~ ul li > a {
+  font-size: 3.5vw;
+  padding: 4vw 18vw;
+}
+
+/* line 411, app/assets/stylesheets/new_application.scss */
+input#inp_cons:checked ~ ul li {
+  border-bottom: 1px solid rgba(236, 236, 236, 0.1);
+}
+
+/* line 415, app/assets/stylesheets/new_application.scss */
+input#inp_cons:checked + label {
+  background: rgba(228, 204, 187, 0.11);
+  box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* line 420, app/assets/stylesheets/new_application.scss */
+input#inp_cons:checked + label img {
+  transform-origin: center;
+  transform: rotate(180deg);
+  padding-right: 2vw;
+}
+
+/*    Конец моб ХЕДЕР     */
+/*    ПОДВАЛ     */
+/* line 438, app/assets/stylesheets/new_application.scss */
+.footer_text {
+  font-weight: 500;
+  font-size: 0.8vw;
+  color: #FFF7F7;
+  text-decoration: none;
+}
+
+/*    Конец ПОДВАЛа     */
+/*    моб ПОДВАЛ     */
+/* line 451, app/assets/stylesheets/new_application.scss */
+.footer_text_mob {
+  width: 20%;
+  font-weight: 500;
+  font-size: 2.3vw;
+  line-height: 3vw;
+  color: #FFF7F7;
+  text-decoration: none;
+}
+
+/*    Конец моб ПОДВАЛа     */
+/*    ОТЗЫВЫ    */
+/* line 469, app/assets/stylesheets/new_application.scss */
+.review_box {
+  width: 15vw;
+  height: 25vw;
+  background-color: white;
+  /*be763c slategray 727483 197664*/
+  border-radius: 1vw;
+  padding: 1.5vw;
+  margin: 1.5vw auto;
+}
+
+/* line 478, app/assets/stylesheets/new_application.scss */
+.review_icon {
+  width: 4.5vw;
+  border-radius: 100%;
+  background-blend-mode: normal;
+  filter: drop-shadow(0px 0.5vw 0.5vw rgba(0, 0, 0, 0.07));
+}
+
+/* line 485, app/assets/stylesheets/new_application.scss */
+.review_name {
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 0.9vw;
+}
+
+/* line 491, app/assets/stylesheets/new_application.scss */
+.review_text {
+  font-size: 0.9vw;
+  line-height: 1.1vw;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  text-align: left;
+}
+
+/* line 499, app/assets/stylesheets/new_application.scss */
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 504, app/assets/stylesheets/new_application.scss */
+.slider__wrapper {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+/* line 509, app/assets/stylesheets/new_application.scss */
+.slider__item {
+  flex: 0 0 25%;
+  max-width: 25%;
+  justify-content: center;
+  filter: drop-shadow(0.5px 0.5vw 0.5vw rgba(0, 0, 0, 0.25));
+}
+
+/* line 516, app/assets/stylesheets/new_application.scss */
+.slider__control {
+  position: absolute;
+  top: 50%;
+  right: -4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8vw;
+  color: #fff;
+  text-align: center;
+  opacity: 0.5;
+  height: 3vw;
+  transform: translateY(-50%);
+}
+
+/* line 531, app/assets/stylesheets/new_application.scss */
+.slider__control:hover,
+.slider__control:focus {
+  color: rgba(57, 52, 52, 0.6);
+  text-decoration: none;
+  outline: 0;
+  opacity: .9;
+}
+
+/* line 539, app/assets/stylesheets/new_application.scss */
+.slider__control_left {
+  left: -3.4vw;
+}
+
+/* line 543, app/assets/stylesheets/new_application.scss */
+.slider__control::before {
+  content: '';
+  display: inline-block;
+  width: 4vw;
+  height: 4vw;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+/* line 552, app/assets/stylesheets/new_application.scss */
+.slider__control_left::before {
+  background-image: url(/assets/ll-0c900f3208eb1bbbb8ddb9c90e692228952f9c384607f97b997bb1252d133526.svg);
+}
+
+/* line 556, app/assets/stylesheets/new_application.scss */
+.slider__control_right::before {
+  background-image: url(/assets/lr-19b7c5a4fe9805d3c548fb62d01c76410f0fa83c84b61fe832f2ff00d78187c0.svg);
+}
+
+/* line 560, app/assets/stylesheets/new_application.scss */
+.slider__item > div {
+  text-align: center;
+}
+
+/*    Конец ОТЗЫВЫ     */
+/*    АККОРДИОН     */
+/* line 575, app/assets/stylesheets/new_application.scss */
+.accordion *, .accordion2 * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: medium none;
+  list-style: none;
+}
+
+/* стили блока аккордеон */
+/* line 583, app/assets/stylesheets/new_application.scss */
+.accordion, .accordion2 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* секции аккордеона */
+/* line 588, app/assets/stylesheets/new_application.scss */
+.accordion .accordion_item, .accordion2 .accordion_item2 {
+  margin-bottom: 0.5vw;
+  position: relative;
+  filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));
+}
+
+/* line 593, app/assets/stylesheets/new_application.scss */
+.mob .accordion2 .accordion_item2 {
+  margin-bottom: 3vw;
+}
+
+/* заголовки панелей аккордеона */
+/* line 597, app/assets/stylesheets/new_application.scss */
+.accordion .title_block, .accordion2 .title_block2 {
+  font-weight: 400;
+  font-size: 1vw;
+  color: black;
+  cursor: pointer;
+  background: #FFFFFF;
+  padding: 1.4vw 4vw;
+  -webkit-transition: all .5s linear 0;
+  -webkit-transition-delay: .5s 0;
+  transition: all .5s linear 0;
+  border-radius: 0.5vw;
+}
+
+/* line 609, app/assets/stylesheets/new_application.scss */
+.mob .accordion2 .title_block2 {
+  font-size: 2.7vw;
+  padding: 2.5vw 4vw;
+}
+
+/* переключатель панелей, положение вниз */
+/* line 614, app/assets/stylesheets/new_application.scss */
+.accordion .title_block:before, .accordion2 .title_block2:before {
+  content: '\3031';
+  transform: rotate(-90deg);
+  transform-origin: center center;
+  display: block;
+  position: absolute;
+  right: 4vw;
+  font-weight: normal;
+  border-radius: 0.5vw 0.5vw 0vw 0vw;
+}
+
+/* активный переключатель, положение вверх */
+/* line 627, app/assets/stylesheets/new_application.scss */
+.accordion .active_block .title_block:before, .accordion2 .active_block .title_block2:before {
+  content: '\3031';
+  transform: rotate(90deg);
+  transform-origin: center center;
+  display: block;
+  position: absolute;
+}
+
+/* line 636, app/assets/stylesheets/new_application.scss */
+.mob .accordion2 .active_block .title_block2:before {
+  right: 4.195vw;
+}
+
+/* line 639, app/assets/stylesheets/new_application.scss */
+.accordion .title_block:hover, .accordion2 .title_block2:hover {
+  color: #ff7f50;
+  font-weight: 600;
+}
+
+/* заголовок активного блока  */
+/* line 644, app/assets/stylesheets/new_application.scss */
+.accordion .active_block .title_block, .accordion2 .active_block .title_block2 {
+  background: #FFFFFF;
+  color: black;
+  border-radius: 0.5vw 0.5vw 0vw 0vw;
+  font-weight: 600;
+}
+
+/* блоки с содержанием */
+/* line 651, app/assets/stylesheets/new_application.scss */
+.accordion .info, .accordion2 .info2 {
+  display: none;
+  padding: 1.5vw 4vw;
+  overflow: hidden;
+  background: #FFFFFF;
+  z-index: 100000;
+  border-radius: 0vw 0vw 0.5vw 0.5vw;
+  position: relative;
+  top: -0.18vw;
+}
+
+/* параграф внутри блоков с содержанием */
+/* line 662, app/assets/stylesheets/new_application.scss */
+.accordion .info_item, .accordion2 .info_item2 {
+  margin-bottom: 1vw;
+  z-index: 100000;
+  position: relative;
+}
+
+/* картинки внутри аккордеона */
+/* line 668, app/assets/stylesheets/new_application.scss */
+.accordion .info img {
+  height: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* полноразмерная картинка */
+/* line 673, app/assets/stylesheets/new_application.scss */
+.large-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* миниатюра слева */
+/* line 678, app/assets/stylesheets/new_application.scss */
+.img-left {
+  width: 25%;
+  float: left;
+  margin: 5px 15px 5px 0;
+}
+
+/* миниатюра справа */
+/* line 684, app/assets/stylesheets/new_application.scss */
+.img-right {
+  width: 25%;
+  float: right;
+  margin: 5px 0 5px 15px;
+}
+
+/*     КОНЕЦ АККОРДИОН     */
+/*    СТАТЬИ    */
+/* line 695, app/assets/stylesheets/new_application.scss */
+.sorting {
+  display: flex;
+}
+
+/* line 699, app/assets/stylesheets/new_application.scss */
+.sorting_item {
+  position: absolute;
+  top: 16vw;
+  right: 7vw;
+  z-index: 100;
+}
+
+/* line 706, app/assets/stylesheets/new_application.scss */
+.sorting_item_checked {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 13vw;
+  height: 3vw;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  padding-left: 1vw;
+}
+
+/* line 720, app/assets/stylesheets/new_application.scss */
+.sorting_item ul {
+  padding: 0px;
+  margin: 0px;
+  filter: drop-shadow(0px 0px 0.5vw rgba(68, 68, 68, 0.2));
+}
+
+/* line 726, app/assets/stylesheets/new_application.scss */
+.sorting ul li {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+}
+
+/* line 733, app/assets/stylesheets/new_application.scss */
+.sorting a {
+  height: 3vw;
+  align-items: center;
+  display: grid;
+  color: currentColor;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  padding-left: 1vw;
+}
+
+/* line 746, app/assets/stylesheets/new_application.scss */
+.sorting_item_checked {
+  filter: drop-shadow(0px 0px 0.5vw rgba(68, 68, 68, 0.2)) !important;
+  border-radius: 0.5vw;
+}
+
+/* line 751, app/assets/stylesheets/new_application.scss */
+.sorting_item:hover .sorting_item_checked {
+  border-radius: 0.5vw 0.5vw 0vw 0vw !important;
+}
+
+/* line 755, app/assets/stylesheets/new_application.scss */
+.sorting_item ~ ul li {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+/* line 761, app/assets/stylesheets/new_application.scss */
+.sorting_item:hover .sorting_item_checked img {
+  transform: rotate(180deg);
+  padding: 0vw 0.4vw 0.2vw 0vw !important;
+}
+
+/* line 766, app/assets/stylesheets/new_application.scss */
+.sorting_item:hover li {
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #646464;
+}
+
+/* line 772, app/assets/stylesheets/new_application.scss */
+.sorting_item a:hover {
+  background-color: #ff7f50;
+  color: white;
+}
+
+/* line 777, app/assets/stylesheets/new_application.scss */
+.sorting_item:hover .sorting_ul li,
+.sorting_item:hover .sorting_ul a {
+  height: 3vw;
+  font-size: 0.8vw;
+}
+
+/* line 783, app/assets/stylesheets/new_application.scss */
+.category {
+  width: 15vw;
+}
+
+/* line 787, app/assets/stylesheets/new_application.scss */
+.category ul li {
+  list-style-type: none;
+  filter: drop-shadow(0px 0px 0.5vw rgba(68, 68, 68, 0.2));
+  text-align: center;
+  padding: 0px;
+}
+
+/* line 794, app/assets/stylesheets/new_application.scss */
+.category a {
+  height: 4vw;
+  align-items: center;
+  display: grid;
+  color: currentColor;
+  font-size: 0.9vw;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 0.5vw;
+}
+
+/* line 806, app/assets/stylesheets/new_application.scss */
+.category a:hover {
+  background-color: rgba(100, 163, 133, 0.8);
+  color: white;
+}
+
+/* line 811, app/assets/stylesheets/new_application.scss */
+.category_arrow {
+  width: 0.8vw;
+  padding: 0.2vw 0vw 0vw 0.4vw;
+}
+
+/* line 816, app/assets/stylesheets/new_application.scss */
+.category_arrow_hover {
+  display: none;
+  width: 0.8vw;
+  transform: rotate(180deg);
+  padding: 0vw 0.4vw 0.2vw 0vw;
+}
+
+/* line 823, app/assets/stylesheets/new_application.scss */
+.category_arrow_hover_sub {
+  display: none;
+  width: 0.8vw;
+  transform: rotate(180deg);
+  padding: 0vw 0.4vw 0.2vw 0vw;
+}
+
+/* line 830, app/assets/stylesheets/new_application.scss */
+#sub_category:hover .category_arrow {
+  display: none;
+}
+
+/* line 834, app/assets/stylesheets/new_application.scss */
+#sub_category a:hover .category_arrow_hover {
+  display: block;
+}
+
+/* line 838, app/assets/stylesheets/new_application.scss */
+#sub_category:hover .category_arrow_hover_sub {
+  display: block;
+}
+
+/* line 842, app/assets/stylesheets/new_application.scss */
+#sub_category a:hover .category_arrow_hover_sub {
+  display: none;
+}
+
+/* line 846, app/assets/stylesheets/new_application.scss */
+#sub_category:hover .sub_category li,
+#sub_category:hover .sub_category a {
+  height: 3vw;
+  font-size: 0.8vw;
+  margin: 0.5vw !important;
+}
+
+/* line 853, app/assets/stylesheets/new_application.scss */
+.sub_category {
+  width: 14vw;
+  padding: 0px;
+}
+
+/* line 858, app/assets/stylesheets/new_application.scss */
+.sub_category li {
+  width: 14vw;
+  height: 0px;
+  list-style-type: none;
+  filter: drop-shadow(0px 0px 0.2vw rgba(68, 68, 68, 0.2));
+  text-align: center;
+  padding: 0px;
+  margin: 0vw 0.5vw !important;
+  transition: 0.3s;
+}
+
+/* line 869, app/assets/stylesheets/new_application.scss */
+.sub_category a {
+  height: 0vw;
+  align-items: center;
+  display: grid;
+  color: currentColor;
+  font-size: 0vw;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 0.5vw;
+  transition: 0.3s;
+}
+
+/* line 885, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box {
+  width: 33vw;
+  height: 23vw;
+  background-position: center;
+  border-radius: 0.8vw;
+  margin-bottom: 1.8vw;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 895, app/assets/stylesheets/new_application.scss */
+.mob .article_box {
+  width: 86vw;
+  height: 60vw;
+  background-position: center;
+  border-radius: 0.8vw;
+  margin-bottom: 5vw;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 905, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box_span {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 1.5vw;
+  height: 100%;
+  padding-right: 1.5vw;
+}
+
+/* line 913, app/assets/stylesheets/new_application.scss */
+.mob .article_box_span {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 5vw;
+  height: 100%;
+  padding-right: 5vw;
+}
+
+/* line 921, app/assets/stylesheets/new_application.scss */
+.pop_articles {
+  width: 86vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.9vw;
+}
+
+/* line 929, app/assets/stylesheets/new_application.scss */
+.pop_articles .article_box {
+  transform: scale(0.9);
+  width: 33%;
+  height: 20%;
+}
+
+/* line 935, app/assets/stylesheets/new_application.scss */
+.article_box .linear-gradient {
+  position: absolute;
+  bottom: 1.5vw;
+  left: 1.5vw;
+}
+
+/* line 941, app/assets/stylesheets/new_application.scss */
+.pop_articles .article_box {
+  width: 28vw;
+  height: 19vw;
+}
+
+/* line 946, app/assets/stylesheets/new_application.scss */
+.pop_articles #linear-gradient {
+  margin-top: -19.4vw !important;
+}
+
+/* line 950, app/assets/stylesheets/new_application.scss */
+.article_box a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 955, app/assets/stylesheets/new_application.scss */
+.time_read {
+  display: flex;
+}
+
+/* line 959, app/assets/stylesheets/new_application.scss */
+.article_box .time_read_text {
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  padding-left: 0.3vw;
+  margin: 0px;
+}
+
+/* line 966, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box .views {
+  display: flex;
+  margin-right: 1vw;
+}
+
+/* line 971, app/assets/stylesheets/new_application.scss */
+.mob .article_box .views {
+  display: flex;
+  margin-right: 2vw;
+}
+
+/* line 976, app/assets/stylesheets/new_application.scss */
+.pc_content .views img, .pc_content .time_read img {
+  height: 0.8vw;
+}
+
+/* line 980, app/assets/stylesheets/new_application.scss */
+.mob .views img, .mob .time_read img, .mob .article_date img {
+  height: 2vw !important;
+}
+
+/* line 984, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box .views_text, .pc_content .article_box .time_read_text {
+  font-size: 0.8vw;
+  line-height: 0.8vw;
+  padding-left: 0.3vw;
+  margin: 0px;
+}
+
+/* line 991, app/assets/stylesheets/new_application.scss */
+.mob .article_box .views_text, .mob .article_box .time_read_text,
+.mob .article .views_text, .mob .article .time_read_text, .mob .article .article_date_text {
+  font-size: 2vw;
+  line-height: 2.5vw;
+  padding-left: 1vw;
+  margin: 0px;
+}
+
+/* line 999, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box .article_category {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  display: inline-block;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 0.3vw;
+  margin: 0.8vw 0vw 0.5vw 0vw;
+}
+
+/* line 1009, app/assets/stylesheets/new_application.scss */
+.mob .article_box .article_category {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  display: inline-block;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 1.5vw;
+  margin: 1vw 0vw 1vw 0vw;
+}
+
+/* line 1019, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box .article_name {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  font-size: 1.4vw;
+  line-height: 1.9vw;
+  font-weight: 800;
+  margin: 0vw 0vw 0.5vw 0vw;
+}
+
+/* line 1029, app/assets/stylesheets/new_application.scss */
+.mob .article_box .article_name {
+  float: left;
+  clear: left;
+  overflow: overlay;
+  font-size: 4vw;
+  line-height: 5vw;
+  font-weight: 800;
+  margin: 0vw 0vw 1vw 0vw;
+}
+
+/* line 1039, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box .tags_item {
+  display: inline-block;
+  background: rgba(161, 129, 108, 0.8);
+  border-radius: 0.8vw;
+  margin: 0vw 0.3vw 0.1vw 0vw;
+  font-weight: 400;
+}
+
+/* line 1047, app/assets/stylesheets/new_application.scss */
+.mob .article_box .tags_item {
+  display: inline-block;
+  background: rgba(161, 129, 108, 0.8);
+  border-radius: 1.5vw;
+  margin: 0vw 2vw 3vw 0vw;
+  font-weight: 400;
+}
+
+/* line 1055, app/assets/stylesheets/new_application.scss */
+.pc_content .tags_item a, .pc_content .article_category a {
+  display: block;
+  font-size: 0.8vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2vw 0.8vw;
+}
+
+/* line 1064, app/assets/stylesheets/new_application.scss */
+.mob .tags_item a, .mob .article_category a {
+  display: block;
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1.2vw 1.8vw;
+  line-height: 2vw;
+}
+
+/* line 1074, app/assets/stylesheets/new_application.scss */
+.pc_content .article_box .card_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.8vw;
+  margin-top: -23.5vw;
+  line-height: 0px;
+}
+
+/* line 1083, app/assets/stylesheets/new_application.scss */
+.mob .article_box .card_image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2vw;
+  margin-top: -59.5vw;
+  line-height: 0px;
+}
+
+/* line 1092, app/assets/stylesheets/new_application.scss */
+.pc_content #linear-gradient {
+  width: 100%;
+  height: 100%;
+  margin-top: -23.4vw;
+}
+
+/* line 1098, app/assets/stylesheets/new_application.scss */
+.mob #linear-gradient {
+  width: 100%;
+  height: 100%;
+  margin-top: -60.4vw;
+}
+
+/* line 1104, app/assets/stylesheets/new_application.scss */
+.pc_content #linear-gradient div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  border-radius: 0.8vw;
+  display: inline-block;
+}
+
+/* line 1112, app/assets/stylesheets/new_application.scss */
+.mob #linear-gradient div {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  border-radius: 2vw;
+  display: inline-block;
+}
+
+/* line 1121, app/assets/stylesheets/new_application.scss */
+.article {
+  width: 100%;
+  height: 46vw;
+  margin-bottom: 1.8vw;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1129, app/assets/stylesheets/new_application.scss */
+.article a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1134, app/assets/stylesheets/new_application.scss */
+.article .linear-gradient {
+  display: flex;
+  background: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  width: 86%;
+  height: 36vw;
+  padding: 5% 7%;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* line 1144, app/assets/stylesheets/new_application.scss */
+.mob .article .linear-gradient {
+  height: 42vw;
+  padding: 2% 7%;
+}
+
+/* line 1149, app/assets/stylesheets/new_application.scss */
+.article .views,
+.article .time_read,
+.article .article_date {
+  display: flex;
+  margin-right: 1vw;
+  align-items: center;
+}
+
+/* line 1157, app/assets/stylesheets/new_application.scss */
+.article .time_read_text,
+.article .views_text,
+.article .article_date_text {
+  font-size: 0.9vw;
+  line-height: 0.9vw;
+  padding-left: 0.3vw;
+  margin: 0px;
+}
+
+/* line 1166, app/assets/stylesheets/new_application.scss */
+.article .article_category {
+  display: table;
+  background: rgba(100, 163, 133, 0.7);
+  border-radius: 0.4vw;
+  margin: 1.2vw 0vw 0.5vw 0vw;
+}
+
+/* line 1173, app/assets/stylesheets/new_application.scss */
+.mob .article .article_category {
+  display: table;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 1.5vw;
+  margin: 1vw 0vw 1vw 0vw;
+}
+
+/* line 1180, app/assets/stylesheets/new_application.scss */
+.article .article_name {
+  font-size: 3vw;
+  font-weight: 800;
+  line-height: 4vw;
+  margin: 0vw 0vw 0.8vw 0vw;
+  width: 100%;
+}
+
+/* line 1188, app/assets/stylesheets/new_application.scss */
+.mob .article .article_name {
+  font-size: 4vw;
+  font-weight: 800;
+  line-height: 5vw;
+  margin: 0vw 0vw 1vw 0vw;
+  width: 100%;
+}
+
+/* line 1196, app/assets/stylesheets/new_application.scss */
+.article .tags_item {
+  display: inline-block;
+  background: rgba(161, 129, 108, 0.7);
+  border-radius: 1.4vw;
+  margin: 0vw 0.5vw 0.5vw 0vw;
+  font-weight: 400;
+  color: white;
+}
+
+/* line 1205, app/assets/stylesheets/new_application.scss */
+.tags_all {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* line 1212, app/assets/stylesheets/new_application.scss */
+.article .tags_item a, .article .article_category a, .tags_all .tags_item a {
+  display: block;
+  font-size: 1vw;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.4vw 1vw;
+}
+
+/* line 1221, app/assets/stylesheets/new_application.scss */
+.mob .article .tags_item a, .mob .article .article_category a, .mob .tags_all .tags_item a {
+  display: block;
+  font-size: 2vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 1.2vw 1.8vw;
+  line-height: 2vw;
+}
+
+/* line 1231, app/assets/stylesheets/new_application.scss */
+.panel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vw;
+}
+
+/* line 1237, app/assets/stylesheets/new_application.scss */
+.panel a {
+  text-decoration: none;
+}
+
+/* line 1241, app/assets/stylesheets/new_application.scss */
+.panel_item {
+  display: flex;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2vw;
+  font-size: 1vw;
+  color: #4b4b4b;
+  text-decoration: none;
+}
+
+/* line 1254, app/assets/stylesheets/new_application.scss */
+.panel_item:hover {
+  color: white;
+  background-color: rgba(161, 129, 108, 0.8);
+}
+
+/* line 1260, app/assets/stylesheets/new_application.scss */
+#box_mini_card .article_box {
+  transform: scale(0.6);
+}
+
+/* line 1268, app/assets/stylesheets/new_application.scss */
+.article_box_mini .linear-gradient {
+  display: flex;
+  background: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  height: 16.8vw;
+  border-radius: 0.8vw;
+  padding: 1vw;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* line 1278, app/assets/stylesheets/new_application.scss */
+.article_box_mini {
+  width: 27vw;
+  height: 18.8vw;
+  background-position: center;
+  border-radius: 0.8vw;
+  margin-bottom: 1.8vw;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1288, app/assets/stylesheets/new_application.scss */
+.article_box_mini a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1293, app/assets/stylesheets/new_application.scss */
+.time_read {
+  display: flex;
+}
+
+/* line 1297, app/assets/stylesheets/new_application.scss */
+.article_box_mini .time_read_text {
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  padding-left: 0.3vw;
+  margin: 0px;
+}
+
+/* line 1304, app/assets/stylesheets/new_application.scss */
+.article_box_mini .views {
+  display: flex;
+  margin-right: 0.8vw;
+}
+
+/* line 1309, app/assets/stylesheets/new_application.scss */
+.article_box_mini .views_text {
+  font-size: 0.7vw;
+  line-height: 0.7vw;
+  padding-left: 0.3vw;
+  margin: 0px;
+}
+
+/* line 1316, app/assets/stylesheets/new_application.scss */
+.article_box_mini .article_category {
+  display: inline-flex;
+  background: rgba(100, 163, 133, 0.8);
+  border-radius: 0.3vw;
+  margin: 0.8vw 0vw 0.5vw 0vw;
+}
+
+/* line 1323, app/assets/stylesheets/new_application.scss */
+.article_box_mini .article_name {
+  font-size: 1.2vw;
+  line-height: 1.7vw;
+  margin: 0vw 0vw 0.5vw 0vw;
+  width: 100%;
+}
+
+/* line 1330, app/assets/stylesheets/new_application.scss */
+.article_box_mini .tags_item {
+  display: inline-flex;
+  background: rgba(161, 129, 108, 0.8);
+  border-radius: 0.8vw;
+  margin: 0vw 0.2vw 0vw 0vw;
+  font-weight: 400;
+}
+
+/* line 1338, app/assets/stylesheets/new_application.scss */
+.article_box_mini .tags_item a, .article_box_mini .article_category a {
+  display: block;
+  font-size: 0.6vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.1vw 0.8vw;
+}
+
+/* line 1347, app/assets/stylesheets/new_application.scss */
+.pagination {
+  margin: 1vw 0vw 3vw 0vw;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 1353, app/assets/stylesheets/new_application.scss */
+.pc_content .pagination .current {
+  border-radius: 100%;
+  margin: 0.1vw;
+  font-size: 1vw;
+  color: white;
+  background-color: rgba(161, 129, 108, 0.8);
+  padding: 0.15vw;
+  display: inline-block;
+  width: 1.6vw;
+}
+
+/* line 1364, app/assets/stylesheets/new_application.scss */
+.mob .pagination .current {
+  border-radius: 100%;
+  margin: 0.5vw;
+  font-size: 3vw;
+  color: white;
+  background-color: rgba(161, 129, 108, 0.8);
+  padding: 2vw;
+  display: inline-block;
+  width: 2vw;
+}
+
+/* line 1375, app/assets/stylesheets/new_application.scss */
+.pc_content .page a, .pc_content .pagination .next a, .pc_content .pagination .last a, .pc_content .pagination .first a, .pc_content .pagination .prev a {
+  border-radius: 100%;
+  margin: 0.1vw;
+  font-size: 1vw;
+  color: #4b4b4b;
+  text-decoration: none;
+  padding: 0.15vw;
+  display: inline-block;
+  width: 1.6vw;
+}
+
+/* line 1386, app/assets/stylesheets/new_application.scss */
+.mob .page a, .mob .pagination .next a, .mob .pagination .last a, .mob .pagination .first a, .mob .pagination .prev a {
+  border-radius: 100%;
+  margin: 0.5vw;
+  font-size: 3vw;
+  color: #4b4b4b;
+  text-decoration: none;
+  padding: 2vw;
+  display: inline-block;
+  width: 2vw;
+}
+
+/* line 1397, app/assets/stylesheets/new_application.scss */
+.page a:hover, .next a:hover, .last a:hover, .first a:hover, .prev a:hover {
+  color: white !important;
+  background-color: rgba(161, 129, 108, 0.8);
+}
+
+/* line 1402, app/assets/stylesheets/new_application.scss */
+.tags::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* line 1408, app/assets/stylesheets/new_application.scss */
+.article_new_main {
+  width: 21vw;
+  height: 14.6vw;
+  background-position: center;
+  border-radius: 0.8vw;
+  margin-bottom: 1vw;
+  color: white;
+}
+
+/* line 1417, app/assets/stylesheets/new_application.scss */
+.article_new_main .linear-gradient {
+  display: flex;
+  background: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  height: 12.6vw;
+  border-radius: 0.8vw;
+  padding: 1vw 1.5vw;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* line 1427, app/assets/stylesheets/new_application.scss */
+.article_new_main a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1432, app/assets/stylesheets/new_application.scss */
+.time_read_text, .views_text {
+  font-weight: 500;
+}
+
+/* line 1436, app/assets/stylesheets/new_application.scss */
+.article_new_main .views {
+  display: flex;
+  margin-right: 0.6vw;
+}
+
+/* line 1441, app/assets/stylesheets/new_application.scss */
+.article_new_main .article_category {
+  display: inline-flex;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 0.2vw;
+  margin: 0.6vw 0vw 0.4vw -0.5vw;
+}
+
+/* line 1448, app/assets/stylesheets/new_application.scss */
+.article_new_main .article_name {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  margin: 0vw;
+  width: 100%;
+}
+
+/* line 1455, app/assets/stylesheets/new_application.scss */
+.article_new_main .article_category a {
+  font-size: 0.6vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0vw 0.6vw;
+  text-transform: uppercase;
+}
+
+/* line 1467, app/assets/stylesheets/new_application.scss */
+.article_new_main_mob {
+  width: 86vw;
+  height: 54.8vw;
+  background-position: center;
+  border-radius: 3vw;
+  margin-bottom: 2.5vw;
+  color: white;
+}
+
+/* line 1476, app/assets/stylesheets/new_application.scss */
+.article_new_main_mob .linear-gradient {
+  display: flex;
+  background: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);
+  height: 46.8vw;
+  border-radius: 3vw;
+  padding: 4vw 6vw;
+  align-content: flex-end;
+  flex-wrap: wrap;
+}
+
+/* line 1486, app/assets/stylesheets/new_application.scss */
+.article_new_main_mob a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 1491, app/assets/stylesheets/new_application.scss */
+.article_new_main_mob .article_category {
+  display: inline-flex;
+  background: rgba(100, 163, 133, 0.9);
+  border-radius: 0.8vw;
+  margin: 0.6vw 0vw 2vw -0.5vw;
+}
+
+/* line 1498, app/assets/stylesheets/new_application.scss */
+.article_new_main_mob .article_category a {
+  font-size: 2.5vw;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.1vw 2.5vw;
+  line-height: 5vw;
+  text-transform: uppercase;
+}
+
+/* line 1507, app/assets/stylesheets/new_application.scss */
+.article_new_main_mob .article_name {
+  font-size: 4vw;
+  line-height: 5vw;
+  margin: 0vw;
+  width: 100%;
+}
+
+/*   КОНЕЦ СТАТЬИ    */
+/*   НАЧАЛО УСЛУГИ    */
+/* line 1518, app/assets/stylesheets/new_application.scss */
+.service_accordion_text {
+  margin-top: 0vw;
+  font-size: 0vw;
+  line-height: 0px;
+  transition: 0.25s;
+  background-color: white;
+  padding: 0px;
+  text-align: center;
+}
+
+/* line 1528, app/assets/stylesheets/new_application.scss */
+.service_accordion:hover .service_accordion_text {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  padding: 1.5vw 2vw 1.5vw 2vw;
+  border-radius: 0vw 0vw 0.4vw 0.4vw;
+}
+
+/* line 1535, app/assets/stylesheets/new_application.scss */
+#service_box:hover .service_accordion_text {
+  font-size: 1vw;
+  line-height: 1.5vw;
+  padding: 1.5vw 2vw 1.5vw 2vw;
+  border-radius: 0vw 0vw 0.4vw 0.4vw;
+}
+
+/* line 1542, app/assets/stylesheets/new_application.scss */
+#service_box:hover img {
+  transform: scale(1.1);
+}
+
+/* переключатель панелей, положение вниз */
+/* line 1547, app/assets/stylesheets/new_application.scss */
+.service_accordion_title .arrow {
+  width: 1vw;
+  margin-left: 1vw;
+}
+
+/* активный переключатель, положение вверх */
+/* line 1552, app/assets/stylesheets/new_application.scss */
+.service_accordion:hover .arrow,
+#service_box:hover .arrow {
+  transform: rotate(180deg);
+  width: 1vw;
+  margin-left: 1vw;
+}
+
+/*   КОНЕЦ УСЛУГИ    */
+/*     ВЕБ ВЕРСИЯ     */
+/* line 1568, app/assets/stylesheets/new_application.scss */
+.container {
+  margin: auto 7vw;
+}
+
+/* line 1572, app/assets/stylesheets/new_application.scss */
+ul {
+  padding-left: 0.9vw;
+}
+
+/* line 1576, app/assets/stylesheets/new_application.scss */
+ul li {
+  padding-left: 1vw;
+  list-style-type: '\25C9';
+  margin-bottom: 1em;
+}
+
+/* line 1582, app/assets/stylesheets/new_application.scss */
+ul ul li {
+  list-style-type: '\25B7';
+}
+
+/* line 1586, app/assets/stylesheets/new_application.scss */
+table {
+  border-spacing: inherit;
+  margin-bottom: 5vw;
+}
+
+/* line 1591, app/assets/stylesheets/new_application.scss */
+.mob table {
+  margin-top: 2vw;
+}
+
+/* line 1595, app/assets/stylesheets/new_application.scss */
+.mob table th {
+  line-height: 3.4vw;
+}
+
+/* line 1599, app/assets/stylesheets/new_application.scss */
+th {
+  background-color: #4b4b4b;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1vw;
+  text-align: center;
+  padding: 1vw;
+}
+
+/* line 1608, app/assets/stylesheets/new_application.scss */
+th:first-child {
+  border-radius: 1vw 0vw 0vw 0vw;
+}
+
+/* line 1612, app/assets/stylesheets/new_application.scss */
+th:last-child {
+  border-radius: 0vw 1vw 0vw 0vw;
+}
+
+/* line 1616, app/assets/stylesheets/new_application.scss */
+td {
+  width: 40vw;
+  padding: 0.9vw 2vw;
+  border: 2px solid #454554;
+  font-size: 0.9vw;
+  border-bottom: none;
+}
+
+/* line 1624, app/assets/stylesheets/new_application.scss */
+td:first-child {
+  border-right: 1px solid #454554;
+}
+
+/* line 1628, app/assets/stylesheets/new_application.scss */
+td:last-child {
+  border-left: 1px solid #454554;
+}
+
+/* line 1632, app/assets/stylesheets/new_application.scss */
+tr:nth-child(2) td {
+  border-top: none;
+}
+
+/* line 1636, app/assets/stylesheets/new_application.scss */
+tfoot td {
+  width: 40vw;
+  padding: 0.9vw 2vw;
+  font-size: 0.9vw;
+  border-bottom: 2px solid #454554;
+}
+
+/* line 1643, app/assets/stylesheets/new_application.scss */
+tfoot td:first-child {
+  border-radius: 0vw 0vw 0vw 1vw;
+}
+
+/* line 1647, app/assets/stylesheets/new_application.scss */
+tfoot td:last-child {
+  border-radius: 0vw 0vw 1vw 0vw;
+}
+
+/* line 1651, app/assets/stylesheets/new_application.scss */
+b {
+  font-weight: 700;
+}
+
+/* line 1655, app/assets/stylesheets/new_application.scss */
+p a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* line 1661, app/assets/stylesheets/new_application.scss */
+#button_client_form, #button_about, #button_faq, #button_form {
+  display: inline-block;
+  background: #ff7f50;
+  box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);
+  border-radius: 0.5vw;
+  border: 2px solid transparent;
+}
+
+/* line 1669, app/assets/stylesheets/new_application.scss */
+#button_client_form a, #button_faq a {
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  /* identical to box height  #ffa066*/
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.1vw;
+}
+
+/* line 1681, app/assets/stylesheets/new_application.scss */
+#button_about a, #button_form a {
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  /* identical to box height  #ffa066*/
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.1vw 2.4vw 1.1vw 2.4vw;
+}
+
+/* line 1693, app/assets/stylesheets/new_application.scss */
+#button_client_form:hover, #button_about:hover, #button_form:hover {
+  border: 2px solid #4b4b4b !important;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+/* line 1699, app/assets/stylesheets/new_application.scss */
+#button_client_form:hover a, #button_about:hover a, #button_form:hover a {
+  color: #4b4b4b !important;
+}
+
+/* line 1703, app/assets/stylesheets/new_application.scss */
+::-webkit-input-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1704, app/assets/stylesheets/new_application.scss */
+::-moz-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1705, app/assets/stylesheets/new_application.scss */
+:-ms-input-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1706, app/assets/stylesheets/new_application.scss */
+:-moz-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1708, app/assets/stylesheets/new_application.scss */
+#button_faq:hover {
+  border: 2px solid #ff7f50 !important;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+/* line 1714, app/assets/stylesheets/new_application.scss */
+#button_faq:hover a {
+  color: #ff7f50 !important;
+}
+
+/* line 1721, app/assets/stylesheets/new_application.scss */
+#button_client_form, #button_about, #button_faq, #button_form {
+  display: inline-block;
+  background: #ff7f50;
+  box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);
+  border-radius: 0.5vw;
+  border: 2px solid transparent;
+}
+
+/* line 1729, app/assets/stylesheets/new_application.scss */
+#button_client_form a, #button_faq a {
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  /* identical to box height  #ffa066*/
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.1vw;
+}
+
+/* line 1741, app/assets/stylesheets/new_application.scss */
+#button_about a, #button_form {
+  display: block;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.8vw;
+  line-height: 1vw;
+  /* identical to box height  #ffa066*/
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 1.1vw 2.4vw 1.1vw 2.4vw;
+}
+
+/* line 1753, app/assets/stylesheets/new_application.scss */
+#button_client_form:hover, #button_about:hover, #button_form:hover {
+  border: 2px solid #4b4b4b !important;
+  background-color: transparent !important;
+  cursor: pointer;
+}
+
+/* line 1759, app/assets/stylesheets/new_application.scss */
+#button_client_form:hover a, #button_about:hover a, #button_form:hover {
+  color: #4b4b4b !important;
+}
+
+/* line 1764, app/assets/stylesheets/new_application.scss */
+::-webkit-input-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1765, app/assets/stylesheets/new_application.scss */
+::-moz-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1766, app/assets/stylesheets/new_application.scss */
+:-ms-input-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1767, app/assets/stylesheets/new_application.scss */
+:-moz-placeholder {
+  color: #ACACAC;
+  font-size: 0.8vw;
+}
+
+/* line 1771, app/assets/stylesheets/new_application.scss */
+.problem_box a:hover h3 {
+  color: white;
+  background-color: #ff7f50;
+  border-radius: 0.5vw;
+}
+
+/* line 1777, app/assets/stylesheets/new_application.scss */
+.problem_box a:hover img {
+  transform: scale(1.1);
+}
+
+/* line 1781, app/assets/stylesheets/new_application.scss */
+.problem_name {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* line 1788, app/assets/stylesheets/new_application.scss */
+.service_name {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* line 1794, app/assets/stylesheets/new_application.scss */
+.gallery div {
+  width: 18vw;
+  align-self: flex-end;
+  font-size: 0.8vw;
+  font-weight: 600;
+  align-items: flex-end;
+  padding: 0vw 1vw 3vw 0vw;
+}
+
+/* line 1802, app/assets/stylesheets/new_application.scss */
+.gallery img {
+  width: 100%;
+  filter: drop-shadow(0px 0px 0.5vw rgba(68, 68, 68, 0.3));
+  transition: 0.3s;
+}
+
+/* line 1808, app/assets/stylesheets/new_application.scss */
+.gallery img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+/* line 1813, app/assets/stylesheets/new_application.scss */
+input#video:checked ~ div {
+  display: none;
+}
+
+/*      КОНЕЦ ВЕБ ВЕРСИИ     */
+/*      МОБИЛЬНАЯ ВЕРСИЯ     */
+/* line 1828, app/assets/stylesheets/new_application.scss */
+.mob {
+  width: 100%;
+}
+
+/* line 1832, app/assets/stylesheets/new_application.scss */
+#mob_form input::-moz-placeholder, #mob_form textarea::-moz-placeholder {
+  font-size: 4vw;
+}
+#mob_form input:-ms-input-placeholder, #mob_form textarea:-ms-input-placeholder {
+  font-size: 4vw;
+}
+#mob_form input::placeholder, #mob_form textarea::placeholder {
+  font-size: 4vw;
+}
+
+/* line 1837, app/assets/stylesheets/new_application.scss */
+#table_services_mob {
+  width: auto;
+  border-collapse: collapse;
+  border: none;
+  filter: drop-shadow(0px 4px 15px rgba(68, 68, 68, 0.3));
+  margin-bottom: 5vw;
+  line-height: 2.5vw;
+}
+
+/* line 1846, app/assets/stylesheets/new_application.scss */
+#table_services_mob td {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  width: auto;
+  padding: 2vw 2vw;
+}
+
+/* line 1853, app/assets/stylesheets/new_application.scss */
+#category_mob {
+  width: 14vw;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0vw;
+}
+
+/* line 1860, app/assets/stylesheets/new_application.scss */
+#category_mob li {
+  width: 41vw;
+  list-style-type: none;
+  filter: drop-shadow(0px 0px 0.2vw rgba(68, 68, 68, 0.2));
+  text-align: center;
+  padding: 0px;
+  margin: 0vw !important;
+  transition: 0.15s;
+}
+
+/* line 1870, app/assets/stylesheets/new_application.scss */
+#category_mob a {
+  align-items: center;
+  display: grid;
+  font-size: 0vw;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.5vw;
+  transition: 0.15s;
+}
+
+/* line 1881, app/assets/stylesheets/new_application.scss */
+#input_catedory:checked + label img {
+  transform: rotate(180deg);
+}
+
+/* line 1885, app/assets/stylesheets/new_application.scss */
+#input_catedory:checked ~ label {
+  border-radius: 4vw 4vw 0vw 0vw !important;
+}
+
+/* line 1889, app/assets/stylesheets/new_application.scss */
+#input_catedory:checked ~ #category_mob {
+  font-size: 3w;
+  margin: 0vw !important;
+}
+
+/* line 1894, app/assets/stylesheets/new_application.scss */
+#input_catedory:checked ~ #category_mob li {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  margin: 0vw !important;
+  border-bottom: 1px solid white;
+  transition: 0.3s;
+}
+
+/* line 1902, app/assets/stylesheets/new_application.scss */
+#input_catedory:checked ~ #category_mob a {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  font-weight: 700;
+  margin: 0vw !important;
+  color: white !important;
+  padding: 3vw;
+  transition: 0.3s;
+}
+
+/* line 1914, app/assets/stylesheets/new_application.scss */
+#sorting_mob {
+  width: 14vw;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0vw;
+}
+
+/* line 1921, app/assets/stylesheets/new_application.scss */
+#sorting_mob li {
+  line-height: 0vw;
+  width: 41vw;
+  list-style-type: none;
+  filter: drop-shadow(0px 0px 0.2vw rgba(68, 68, 68, 0.2));
+  text-align: center;
+  padding: 0px;
+  margin: 0vw !important;
+  transition: 0.3s;
+}
+
+/* line 1932, app/assets/stylesheets/new_application.scss */
+#sorting_mob a {
+  line-height: 0vw;
+  align-items: center;
+  display: grid;
+  font-size: 0vw;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.5vw;
+  transition: 0.3s;
+}
+
+/* line 1944, app/assets/stylesheets/new_application.scss */
+#input_sorting:checked + label img {
+  transform: rotate(180deg);
+}
+
+/* line 1948, app/assets/stylesheets/new_application.scss */
+#input_sorting:checked ~ label {
+  border-radius: 4vw 4vw 0vw 0vw !important;
+}
+
+/* line 1952, app/assets/stylesheets/new_application.scss */
+#input_sorting:checked ~ #sorting_mob {
+  font-size: 3w;
+  margin: 0vw !important;
+}
+
+/* line 1957, app/assets/stylesheets/new_application.scss */
+#input_sorting:checked ~ #sorting_mob li {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  margin: 0vw !important;
+  border-bottom: 1px solid white;
+}
+
+/* line 1964, app/assets/stylesheets/new_application.scss */
+#input_sorting:checked ~ #sorting_mob a {
+  font-size: 2.5vw;
+  line-height: 3vw;
+  font-weight: 700;
+  margin: 0vw !important;
+  color: white !important;
+  padding: 3vw;
+}
+
+/*.mob p {
+  font-size: calc(14px + 1vw);
+  line-height: calc(14px + 1vw);
+}
+*/
+/*     КОНЕЦ МОБИЛЬНОЙ ВЕРСИИ     */
+/* line 1983, app/assets/stylesheets/new_application.scss */
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+/* line 1987, app/assets/stylesheets/new_application.scss */
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: black;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+/* line 1998, app/assets/stylesheets/new_application.scss */
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+  outline: none;
+}
+
+/* line 2009, app/assets/stylesheets/new_application.scss */
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: 3px;
+  /* Image border */
+  border: 4px solid white;
+}
+
+/* line 2020, app/assets/stylesheets/new_application.scss */
+.lightbox a img {
+  border: none;
+}
+
+/* line 2024, app/assets/stylesheets/new_application.scss */
+.lb-outerContainer {
+  position: relative;
+  *zoom: 1;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 4px;
+  /* Background color behind image.
+     This is visible during transitions. */
+  background-color: white;
+}
+
+/* line 2037, app/assets/stylesheets/new_application.scss */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 2043, app/assets/stylesheets/new_application.scss */
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 2053, app/assets/stylesheets/new_application.scss */
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: url(/assets/loading-225aa88b6ab02c06222ec9468d62e15fa188e39cdb9431d1f55401ad380753ed.gif) no-repeat;
+}
+
+/* line 2061, app/assets/stylesheets/new_application.scss */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 2070, app/assets/stylesheets/new_application.scss */
+.lb-container > .nav {
+  left: 0;
+}
+
+/* line 2074, app/assets/stylesheets/new_application.scss */
+.lb-nav a {
+  outline: none;
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
+}
+
+/* line 2079, app/assets/stylesheets/new_application.scss */
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+/* line 2085, app/assets/stylesheets/new_application.scss */
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: url(/assets/prev-7fd9273f20fdb1229c224341271a119020a5eee74ccf6b4605730917c864caf2.png) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+/* line 2098, app/assets/stylesheets/new_application.scss */
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 2103, app/assets/stylesheets/new_application.scss */
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: url(/assets/next-15b869b02c6fbaa8c6c26445a2dd2d9bad80fd27b1409f8179e5dd89dc89d90a.png) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+/* line 2116, app/assets/stylesheets/new_application.scss */
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 2121, app/assets/stylesheets/new_application.scss */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  *zoom: 1;
+  width: 100%;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* line 2130, app/assets/stylesheets/new_application.scss */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 2136, app/assets/stylesheets/new_application.scss */
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+/* line 2141, app/assets/stylesheets/new_application.scss */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+/* line 2148, app/assets/stylesheets/new_application.scss */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+/* line 2154, app/assets/stylesheets/new_application.scss */
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+/* line 2158, app/assets/stylesheets/new_application.scss */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+/* line 2166, app/assets/stylesheets/new_application.scss */
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(/assets/close-5d62e6c90005bfb71f6abb440f9e4753681cb23bbd5e60477ab6f442d2f0e69c.png) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+/* line 2182, app/assets/stylesheets/new_application.scss */
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}

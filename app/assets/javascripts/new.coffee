@@ -3,6 +3,7 @@ $( document ).on 'turbolinks:load', ()->
   $('#thank_you_block').hide()      
 
   $('#new_request').on 'click', (e)->
+    console.log('before form submit')
     e.preventDefault()
     $.ajax({
         url:     "/clients",

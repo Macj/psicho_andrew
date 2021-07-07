@@ -27,7 +27,12 @@ class ClientsController < ApplicationController
   # POST /clients.json
   def create
     @client = Client.find_or_create_by(client_params)
+    puts "+++++++"
+    puts @client.inspect
+    puts '++++++'
+    puts request_params.inspect
     @request = Request.new(request_params)
+    puts @request.inspect
 
     respond_to do |format|
       if @client.save

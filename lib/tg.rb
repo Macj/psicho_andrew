@@ -1,3 +1,5 @@
+require 'telegram/bot'
+
 class TG
   Token = '978070548:AAHlVAw0YIo9vB4dOv3kr5JS4V7E5JQtPso'
   @@chat_id = 329449539
