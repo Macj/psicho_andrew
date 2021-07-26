@@ -30,7 +30,7 @@
           <p class="tags_item">
             <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
         <% end %>
-        <% end %>
+      <% end %>
     </div>
   </div>
 </section>
@@ -61,9 +61,11 @@
         </a>
       </span>
       <span class="tags" style="float: left; clear: left; overflow: overlay;">
-        <%- card.tags.each do |tag|%>
-          <p class="tags_item">
-            <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
+        <%- if card.tags.is_a?(Array) %>
+          <%- card.tags.each do |tag|%>
+            <p class="tags_item">
+              <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
+          <% end %>
         <% end %>
       </span>
     </span>
