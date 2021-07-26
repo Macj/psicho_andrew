@@ -15,7 +15,7 @@
     <div style="width: 100%">
       <p class="article_category">
         <a href="<%= articles_path(cathegory_id: card.cathegory_id) %>">
-          <%= card.cathegory.name %>
+          <%= card.cathegory.name if card.cathegory %>
         </a>
       </p>
     </div>
@@ -52,7 +52,7 @@
       </span>
       <h3 class="article_category">
         <a href="<%= articles_path(category_id: card.cathegory_id) %>">
-          <%= card.cathegory.name %>
+          <%= card.cathegory.name if card.cathegory %>
         </a>
       </h3>
       <span class="article_name">

@@ -5,9 +5,7 @@ class Article < ActiveRecord::Base
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
 
-  field :title, type: String
-  field :body, type: String
-  field :tags, type: String
+ 
   index_name "articles-#{Rails.env}"
 
   scope :with_category, ->(id) { where(cathegory_id: id) }
