@@ -25,10 +25,12 @@
       </a>
     </h3>
     <div class="tags">
-      <%- card.tags.each do |tag|%>
-        <p class="tags_item">
-          <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
-      <% end %>
+      <%- if card.tags.is_a?(Array) %>
+        <%- card.tags.each do |tag|%>
+          <p class="tags_item">
+            <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a></p>
+        <% end %>
+        <% end %>
     </div>
   </div>
 </section>
