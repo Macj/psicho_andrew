@@ -32,7 +32,7 @@ gem 'kaminari'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '>= 0.4.0', group: :doc
-
+gem 'dry-inflector'
 gem 'telegram-bot-ruby', '~> 0.11.0'
 
 # Use ActiveModel has_secure_password
