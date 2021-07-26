@@ -81,8 +81,8 @@ Rails.application.configure do
     :storage => :s3,
     :s3_host_name => 's3-us-west-1.amazonaws.com',
     :s3_credentials => {
-      :access_key_id => 'AKIASAPUBBHTHFXR2V66',
-      :secret_access_key => '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',
+      :access_key_id => 'AKIASAPUBBHTBLH36E72',
+      :secret_access_key => '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',
       :s3_region => "us-west-1"
     },
     :bucket => 'pl-consult-new'

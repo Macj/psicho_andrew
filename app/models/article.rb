@@ -12,6 +12,7 @@ class Article < ActiveRecord::Base
   serialize :tags, Array
 
   has_attached_file :image, default_url: "/assets/:style/missing.png"
+  #,:s3_credentials => "#{Rails.root}/config/s3.yml"
   validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
   belongs_to :cathegory

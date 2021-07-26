@@ -43,5 +43,15 @@ Rails.application.configure do
 #   fog_credentials: { provider: "Local", local_root: "#{Rails.root}/public"}, 
 #   fog_directory: "", 
 #   fog_host: "localhost"}
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_host_name => 's3-us-west-1.amazonaws.com',
+    :s3_credentials => {
+      :access_key_id => 'AKIASAPUBBHTBLH36E72',
+      :secret_access_key => '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',
+      :s3_region => "us-west-1"
+    },
+    :bucket => 'pl-consult-new'
+  }
 
 end

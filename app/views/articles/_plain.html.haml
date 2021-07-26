@@ -17,7 +17,7 @@
       %div{style: "width: 100%"}
         %p.article_category
           %a{href:"<%= articles_path(category_id: card.cathegory_id) %>"}
-            = card.cathegory.name
+            = card.cathegory.name if card.cathegory 
       %h3.article_name
         = link_to card.title, card
       - unless current_user.nil?
@@ -67,7 +67,7 @@
       %div{style: "width: 100%"}
         %p.article_category
           %a{href:""}
-            = card.cathegory.name
+            = card.cathegory.name if card.cathegory 
       %h3.article_name
         = link_to card.title, card
       - unless current_user.nil?
