@@ -686,12 +686,13 @@
         <h2 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw" id="form">
           Запись на консультацию
         </h2>
-        <p style="text-align: center; font-size: 2.9vw; line-height: 3.7vw; margin: 2vw 7vw 10vw 7vw">
-          Заполните форму или свяжитесь со мной любым удобным для вас способом. Контакты вы найдете 
-          <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
-        </p>
+        <div class="container">
+          <p style="text-align: center; font-size: 2.7vw; line-height: 3.3vw; letter-spacing: 0.01em; margin: 2vw 0vw 10vw 0vw;">
+            Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
+              
+          <%= render partial: "/new/form_mob"%>
 
-        <%= render partial: "/new/form"%>
+        </div>
   
       </div> <!-- конец div цвета -->
           

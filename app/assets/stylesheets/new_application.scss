@@ -1689,13 +1689,17 @@ p a {
   padding: 1.1vw 2.4vw 1.1vw 2.4vw;
 }
 
-#button_client_form:hover, #button_about:hover, #button_form:hover {
+#button_client_form:hover, #button_about:hover, #button_form:hover, #mob_button_form:hover {
   border: 2px solid rgb(75,75,75) !important;
   background-color: transparent !important;
   cursor: pointer;
 }
 
 #button_client_form:hover a, #button_about:hover a, #button_form:hover a {
+  color: rgb(75,75,75) !important;
+}
+
+#mob_button_form:hover {
   color: rgb(75,75,75) !important;
 }
 

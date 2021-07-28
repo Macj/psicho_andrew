@@ -48,8 +48,8 @@
 
 
 <!-- начало моб версии -->
-<div class="mob" style="background: #F7F7F7; margin-bottom: 12vw">
-  <div class="container" style="margin-bottom: 8vw; font-size: 2.5vw; line-height: 3vw">
+<div class="mob" style="background: #F7F7F7; padding-bottom: 10vw">
+  <div class="container" style="font-size: 2.5vw; line-height: 3vw">
     <h1 style="padding: 10vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; margin:0vw">
       Контакты
     </h1>
@@ -79,8 +79,9 @@
     <p style="text-align: center; font-size: 2.9vw; line-height: 3.7vw; margin: 2vw 0vw 5vw 0vw">
       Если вы хотите меня о чем-то спросить - просто заполните форму и получите ответ в течении 24 часов.
     </p>
+
+    <%= render partial: "/new/form_mob"%>
+
   </div> <!-- конец container -->
   
-  <%= render partial: '/new/form' %>
- 
 </div> <!-- конец моб версии  -->
