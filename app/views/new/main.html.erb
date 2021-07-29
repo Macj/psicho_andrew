@@ -215,7 +215,7 @@
         <h3 class="service_name">Онлайн-запись</h3>
         <p class="service_text">
           Вы заполняете <a href="#client_form" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
-          <a href="contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
+          <a href="/contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
         </p>
       </div>
 
@@ -271,110 +271,98 @@
     <%= render partial: "/new/review"%>
     
     <p style="text-align: center; letter-spacing: 0.01em; margin: 3vw">
-      Больше мнений о моей работе и видео-отзывы вы найдете в закладке <a href="reviews.html" style="border-bottom: 1px solid currentColor;">Отзывы</a>
+      Больше мнений о моей работе и видео-отзывы вы найдете в закладке <a href="/reviews.html" style="border-bottom: 1px solid currentColor;">Отзывы</a>
     </p>
 
     <h2 style="font-size: 2.5vw; text-align: center; margin: 10vw 0px 2vw 0vw">Интересные статьи</h2>
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 1vw 0vw;">
+    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 2vw 0vw;">
       Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими<br>вас проблемами - рекомендую ознакомится с моими
-      <a href="articles.html" style="border-bottom: 1px solid currentColor;">статьями</a>
+      <a href="/articles.html" style="border-bottom: 1px solid currentColor;">статьями</a>
     </p>
 
-    <div style="position: relative; height: 37vw;">
-      <div id="box_mini_card" style="position: relative; height: 15vw;">
-        <section class="up-corner-20 article_box" style="position: relative; left: -6vw; display: inline-block; top: -3vw">
-          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+    <div style="position: relative; display: flex; justify-content: space-between; padding-bottom: 4vw">
+      <div id="box_mini_card" style="position: relative; width: 44vw">
+        <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw; margin-right: 1.8vw">
+          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
             <span>
-              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles?category_id=3" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+              <h3 class="article_category" style="float: left; clear: left; position: relative;">
+                <a href="/articles?category_id=3" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
                   Общая психология
                 </a>
               </h3>
-              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles/1" style="display: block; font-size: 1.5vw;">
+              <span class="article_name" style="float: left; clear: left; position: relative;">
+                <a href="/articles/1" style="display: block; font-size: 0.9vw; line-height: 1.15vw">
                   Виды позитивного мышления и восприятия. Как это работает?
                 </a>
               </span>
             </span>
           </span>
           <a href="/articles/1">
-            <img src="<%= asset_url('article1.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-            </div>
+            <img src="<%= asset_url('article1.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -5.5vw; line-height: 0px">
           </a>
         </section>
 
-        <section class="up-corner-20 article_box" style="position: relative; left: -18vw; display: inline-block; top: -3vw">
-          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+        <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw">
+          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
             <span>
-              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles?category_id=8" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+              <h3 class="article_category" style="float: left; clear: left; position: relative;">
+                <a href="/articles?category_id=8" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
                   Тревога
                 </a>
               </h3>
-              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles/1" style="display: block; font-size: 1.5vw;">
-                  Медитация доброты и сострадания
+              <span class="article_name" style="float: left; clear: left; position: relative;">
+                <a href="/articles/1" style="display: block; font-size: 0.9vw; line-height: 1.15vw">
+                  Медитация доброты и<br>сострадания
                 </a>
               </span>
             </span>
           </span>
           <a href="/articles/2">
-            <img src="<%= asset_url('article2.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-            </div>
+            <img src="<%= asset_url('article2.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -5.5vw; line-height: 0px">
           </a>
         </section>
 
-        <section class="up-corner-20 article_box" style="position: relative; left: -6vw; top: -12.4vw; display: inline-block;">
-          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+        <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw; margin-right: 1.8vw">
+          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
             <span>
-              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles?category_id=7" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+              <h3 class="article_category" style="float: left; clear: left; position: relative;">
+                <a href="/articles?category_id=7" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
                   НЕВРОЗ И ПСИХОСОМАТИКА
                 </a>
               </h3>
-              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles/3" style="display: block; font-size: 1.5vw;">
-                  Психосоматика. Симптомы и причины возникновения
+              <span class="article_name" style="float: left; clear: left; position: relative;">
+                <a href="/articles/3" style="display: block; font-size: 0.9vw; line-height: 1.15vw">
+                  Психосоматика. Симптомы и<br>причины возникновения
                 </a>
               </span>
             </span>
           </span>
           <a href="/articles/3">
-            <img src="<%= asset_url('article3.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-            </div>
+            <img src="<%= asset_url('article3.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -5.5vw; line-height: 0px">
           </a>
         </section>
 
-        <section class="up-corner-20 article_box" style="position: relative; left: -18vw; top: -12.4vw; display: inline-block;">
-          <span style="display: flex; align-items: flex-end; margin-left: 2vw; height: 100%; padding-right: 2vw;">
+        <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw">
+          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
             <span>
-              <h3 class="article_category" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles?category_id=2" style="font-size: 1vw; padding: 0.3vw 0.9vw;">
+              <h3 class="article_category" style="float: left; clear: left; position: relative;">
+                <a href="/articles?category_id=2" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
                   Психология отношений
                 </a>
               </h3>
-              <span class="article_name" style="float: left; clear: left; overflow: overlay;">
-                <a href="/articles/5" style="display: block; font-size: 1.5vw;">
+              <span class="article_name" style="float: left; clear: left; position: relative;">
+                <a href="/articles/5" style="display: block; font-size: 0.9vw; line-height: 1.15vw">
                   5 фраз для решения конфликтов с близкими людьми
                 </a>
               </span>
             </span>
           </span>
           <a href="/articles/5">
-            <img src="<%= asset_url('article4.png')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -23.5vw; line-height: 0px">
-            <div id="linear-gradient" style="width: 100%; height: 100%; margin-top: -23.4vw;">
-            <div style="width: 100%; height: 100%; background-image: linear-gradient(0.81deg, rgba(0, 0, 0, 0.49) 32.9%, rgba(255, 255, 255, 0) 99.16%);  border-radius: 0.8vw; display: inline-block;"></div>
-            </div>
+            <img src="<%= asset_url('article4.jpg')%>" style="width: 100%; height: 100%; object-fit: cover; border-radius: 0.8vw; margin-top: -5.5vw; line-height: 0px">
           </a>
         </section>
       </div>
-      <img src="<%= asset_url('articles.svg')%>" alt="статьи психолога" style="width: 40vw; position: relative; top: -11.5vw; left: 45vw;">
+      <img src="<%= asset_url('articles.svg')%>" alt="статьи психолога" style="width: 40vw;">
     </div>
   </div>   <!-- конец container -->
 </div>  <!-- конец пк версии -->
@@ -573,16 +561,16 @@
           Групповая консультация
         </span>
       </a>
-      <p class="problem_text" style="line-height: 3vw;">
+      <p class="problem_text" style="font-size: 2.6vw; line-height: 3.6vw;">
         Дешевая групповая психотерапия в Zoom (1 – 2 сеанса в неделю). Группа от 3-х до 5-ти человек объединенных одной проблемой (например, низкая самооценка, тревога, панические атаки или ОКР)
       </p>
       <div style="display:flex; justify-content: center;">
-        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 1.5vw ; font-size: 2.1vw; font-weight: 600; color: #FFFFFF; text-align:center;">2 часа
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">2 часа
         </div>
-        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 1.5vw ; font-size: 2.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">10 $
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">10 $
         </div>
       </div>
-      <p class="problem_text" style="margin-bottom: 0vw;">Скидка: 4 сеанса по предоплате 30 $</p>
+      <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.6vw; line-height: 3.6vw;">Скидка: 4 сеанса по предоплате = 30 $</p>
     </div>
 
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
@@ -592,16 +580,16 @@
           Индивидуальная консультация
         </span>
       </a>
-      <p class="problem_text" style="line-height: 3vw;">
+      <p class="problem_text" style="font-size: 2.6vw; line-height: 3.6vw;">
         Консультация по Skype, Telegram, Viber, Zoom (1 – 2 сеанса в неделю). Вы находитесь у себя дома, в безопасной обстановке, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя.
       </p>
       <div style="display:flex; justify-content: center;">
-        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 1.5vw ; font-size: 2.1vw; font-weight: 600; color: #FFFFFF; text-align:center;">2 часа
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">2 часа
         </div>
-        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 1.5vw ; font-size: 2.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">30 $
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">30 $
         </div>
       </div>
-      <p class="problem_text" style="margin-bottom: 0vw;">Скидка: 4 сеанса по предоплате 100 $</p>
+      <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.6vw; line-height: 3.6vw;">Скидка: 4 сеанса по предоплате = 100 $</p>
     </div>
 
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
@@ -611,13 +599,13 @@
           Интенсивная психотерапия
         </span>
       </a>
-      <p class="problem_text" style="line-height: 3vw;">
+      <p class="problem_text" style="font-size: 2.6vw; line-height: 3.6vw;">
         5 дней интенсивной психотерапии с применением гипноза и коучинга для тех, кому время важнее денег. Задача – максимально быстро вернуть вас в рабочее состояние, в котором вы можете продолжать жить и работать. Избавление от тревоги, психосоматики, страха публичных выступлений и потери бизнеса. Восстановление после сильного стресса. Обучение релаксации и стрессоустойчивости.
       </p>
       <div style="display:flex; justify-content: center;">
-        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 1.5vw ; font-size: 2.1vw; font-weight: 600; color: #FFFFFF; text-align:center;">5 дней подряд по 4 часа
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.31vw ; font-size: 2.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">5 дней подряд по 4 часа
         </div>
-        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 1.5vw ; font-size: 2.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">300 $
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">300 $
         </div>
       </div>
     </div>
@@ -672,7 +660,7 @@
       <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">Онлайн-запись</h3>
       <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
         Вы заполняете <a href="#client_form_mob" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
-        <a href="contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
+        <a href="/contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
       </p>
     </div>
   </div>
@@ -703,7 +691,7 @@
       </h3>
       <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
         По видеосвязи я работаю с вашей проблемой применяя специально выстроенный диалог и техники психотерапии. Подробнее о моих методах работы читайте 
-            <a href="methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
+            <a href="/methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
       </p>
     </div>
   </div>
@@ -727,7 +715,7 @@
   </h2>
   <div class="container">
     <p style="text-align: center; font-size: 2.7vw; line-height: 3.3vw; letter-spacing: 0.01em; margin: 2vw 0vw 7vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
+      Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="/contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
         
     <%= render partial: "/new/form_mob"%>
 
@@ -737,7 +725,7 @@
     Отзывы о моей работе
   </h2>
    <p class="container" style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 1vw 7vw 4vw 7vw;">
-    Больше мнений о моей работе и видео отзывы вы найдете в закладке  <a href="" style="text-decoration: none; border-bottom: 1px solid currentColor;">Отзывы</a>
+    Больше мнений о моей работе и видео отзывы вы найдете в закладке  <a href="/reviews.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">Отзывы</a>
   </p>
   <div class="review_box" style="width: 76vw; height: 27vw; padding: 5vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
     <div style="float: left; margin-right: 5vw; height: 27vw; text-align: center; width: 14vw">
@@ -779,7 +767,7 @@
     Интересные статьи
   </h2>
   <p class="container" style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 2vw 7vw 3vw 7vw;">
-    Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими вас проблемами - рекомендую ознакомится с моими <a href="" style="text-decoration: none; border-bottom: 1px solid currentColor;">статьями</a>
+    Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими вас проблемами - рекомендую ознакомится с моими <a href="/articles.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">статьями</a>
   </p>
   <div style="width: 86vw; display: flex; justify-content: space-around; flex-wrap: wrap; margin: 2vw 7vw;">
     <section class="up-corner-20 article_box">
@@ -821,7 +809,7 @@
         </span>
       </span>
       <a href="/articles/5">
-        <img class="card_image" src="<%= asset_url('article1.png')%>">
+        <img class="card_image" src="<%= asset_url('article1.jpg')%>">
         <div id="linear-gradient">
           <div></div>
         </div>
@@ -844,7 +832,7 @@
         </span>
       </span>
       <a href="/articles/3">
-        <img class="card_image" src="<%= asset_url('article2.png')%>">
+        <img class="card_image" src="<%= asset_url('article2.jpg')%>">
         <div id="linear-gradient">
           <div></div>
         </div>

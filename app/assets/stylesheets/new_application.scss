@@ -91,14 +91,16 @@ html, body {
       background-color: white;
       border-radius: 3vw;
       margin-bottom: 3vw;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.10);
     }
     .price_con_box {
       width: 38%;
-      height: 47vw;
+      height: 54vw;
       padding: 4vw;
       background-color: white;
       border-radius: 3vw;
       margin-bottom: 3vw;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.10);
     }
     .problem_icon {
       width: 100%;
@@ -108,8 +110,8 @@ html, body {
       line-height: 2.7vw;
     }
     .problem_text {
-      font-size: 2.1vw;
-      line-height: 2.3vw;
+      font-size: 2.3vw;
+      line-height: 2.7vw;
     }
     #header {
       height: 12vw;
@@ -998,7 +1000,7 @@ overflow: hidden;
 .pc_content .article_box .article_category {
   float: left;
   clear: left;
-  overflow: overlay;
+  position: relative;
   display: inline-block;
   background: rgba(100, 163, 133, 0.9);
   border-radius: 0.3vw;
@@ -1008,17 +1010,17 @@ overflow: hidden;
 .mob .article_box .article_category {
   float: left;
   clear: left;
-  overflow: overlay;
+  position: relative;
   display: inline-block;
   background: rgba(100, 163, 133, 0.9);
   border-radius: 1.5vw;
-  margin: 1vw 0vw 1vw 0vw;
+  margin: 1vw 0vw 1.5vw 0vw;
 }
 
 .pc_content .article_box .article_name {
   float: left;
   clear: left;
-  overflow: overlay;
+  position: relative;
   font-size: 1.4vw;
   line-height: 1.9vw;
   font-weight: 800;
@@ -1028,11 +1030,19 @@ overflow: hidden;
 .mob .article_box .article_name {
   float: left;
   clear: left;
-  overflow: overlay;
+  position: relative;
   font-size: 4vw;
   line-height: 5vw;
   font-weight: 800;
   margin: 0vw 0vw 1vw 0vw;
+}
+
+.pc_content .article_box .card_tags {
+  height: 1.9vw;
+}
+
+.mob .article_box .card_tags {
+  height: 7vw;
 }
 
 .pc_content .article_box .tags_item {
@@ -1062,12 +1072,12 @@ overflow: hidden;
 
 .mob .tags_item a, .mob .article_category a {
   display: block;
-  font-size: 2vw;
+  font-size: 2.3vw;
   font-weight: 500;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 1.2vw 1.8vw;
-  line-height: 2vw;
+  padding: 1.5vw 2vw;
+  line-height: 2.3vw;
 }
 
 .pc_content .article_box .card_image {
@@ -1188,7 +1198,7 @@ overflow: hidden;
   font-size: 4vw;
   font-weight: 800;
   line-height: 5vw;
-  margin: 0vw 0vw 1vw 0vw;
+  margin: 0vw 0vw 5vw 0vw;
   width: 100%;
 }
 
@@ -1254,12 +1264,6 @@ overflow: hidden;
   color: white;
   background-color: rgba(161, 129, 108, 0.8);
 }
-
-
-#box_mini_card .article_box {
-  transform: scale(0.6);
-}
-
 
 
 
@@ -2187,3 +2191,18 @@ body.lb-disable-scrolling {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+
+
+
+
+.mob .article .linear-gradient:after {
+  content: "";
+  background-color: #fafafa;
+  border-radius: 7vw;
+  width: 100vw;
+  border-bottom-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+  margin: -4vw -7vw -3vw -7vw;
+}
+
+

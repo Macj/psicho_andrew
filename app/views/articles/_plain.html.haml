@@ -3,15 +3,15 @@
     .linear-gradient
       %div{style: "display: flex; margin: 0vw; width: 100%"}
         .views
-          %img{src: "/assets/views.svg", style:"height: 0.9vw"}
+          %img{src: "<%= asset_url('views.svg')%>", style:"height: 0.9vw"}
           %p.views_text
             card.views_count 0
         .time_read
-          %img{src:"/assets/time-read.svg", style:"height: 0.9vw"}
+          %img{src: "<%= asset_url('time-read')%>", style:"height: 0.9vw"}
           %p.time_read_text
             card.time_to_read 0
         .article_date
-          %img{src:"/assets/article-date.svg", style:"height: 0.9vw"}
+          %img{src: "<%= asset_url('article-date.svg')%>", style:"height: 0.9vw"}
           %p.article_date_text
             = card.created_at.strftime("%d %m %Y")
       %div{style: "width: 100%"}
@@ -38,7 +38,7 @@
         %p.tags_item
           %a{href:"<%= articles_path(tag_name: t)%>"}
             = t
-    %h2{style: "margin: 7vw 0vw 1vw 0vw; text-align: center"} Популярное на сайте
+    %h2{style: "margin: 0vw 0vw 1vw 0vw; padding-top: 5vw; text-align: center"} Популярное на сайте
 
     .pop_articles
       - @latest.each do |art|
@@ -53,15 +53,15 @@
     .linear-gradient
       %div{style: "display: flex; margin: 0vw; width: 100%"}
         .views
-          %img{src: "/assets/views.svg", style:"height: 0.9vw"}
+          %img{src: "<%= asset_url('views.svg')%>", style:"height: 0.9vw"}
           %p.views_text
             card.views_count 0
         .time_read
-          %img{src:"/assets/time-read.svg", style:"height: 0.9vw"}
+          %img{src: "<%= asset_url('time-read')%>", style:"height: 0.9vw"}
           %p.time_read_text
             card.time_to_read 0
         .article_date
-          %img{src:"/assets/article-date.svg", style:"height: 0.9vw"}
+          %img{src: "<%= asset_url('article-date.svg')%>", style:"height: 0.9vw"}
           %p.article_date_text
             = card.created_at.strftime("%d %m %Y")
       %div{style: "width: 100%"}
@@ -74,11 +74,6 @@
         %br
         .edit{style: 'float:right'}
           = link_to "Редактировать", edit_article_path(card)
-      .tags
-        - card.tags.each do |t|
-          %p.tags_item
-            %a{href:"<%= articles_path(tag_name: t)%>"}
-              = t
 
   .container{style: "margin-bottom: 2vw;"}
     = card.body.html_safe
