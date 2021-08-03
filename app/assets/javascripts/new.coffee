@@ -1,8 +1,9 @@
 $( document ).on 'turbolinks:load', ()->
+  console.log("Form behavioure!!!!")
   $('#error_block').hide()
-  $('#thank_you_block').hide()      
+  $('.thank_you_block').hide()      
 
-  $('#new_request').on 'click', (e)->
+  $('#new_client').on 'submit', (e)->
     console.log('before form submit')
     e.preventDefault()
     $.ajax({
@@ -11,7 +12,7 @@ $( document ).on 'turbolinks:load', ()->
         dataType: "html",
         data: $("#new_client").serialize(),
         success: -> 
-          $('#thank_you_block').show()
+          $('.thank_you_block').show()
         ,
         error: ->
           $('#error_block').show()
@@ -20,5 +21,5 @@ $( document ).on 'turbolinks:load', ()->
         
   $('#close_ty_block').on 'click', (e)->
     e.preventDefault()
-    $('#thank_you_block').hide()
+    $('.thank_you_block').hide()
 
