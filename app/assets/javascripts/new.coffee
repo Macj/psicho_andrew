@@ -1,5 +1,4 @@
 $( document ).on 'turbolinks:load', ()->
-  console.log("Form behavioure!!!!")
   $('#error_block').hide()
   $('.thank_you_block').hide()
   $('.mob_thank_you_block').hide()      
@@ -25,6 +24,7 @@ $( document ).on 'turbolinks:load', ()->
     $('.thank_you_block').hide()
 
   $('#mob_close_ty_block').on 'click', (e)->
+    console.log("Mob close block")
     e.preventDefault()
     $('.mob_thank_you_block').hide()
 
