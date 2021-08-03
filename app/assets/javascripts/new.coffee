@@ -1,7 +1,8 @@
 $( document ).on 'turbolinks:load', ()->
   console.log("Form behavioure!!!!")
   $('#error_block').hide()
-  $('.thank_you_block').hide()      
+  $('.thank_you_block').hide()
+  $('.mob_thank_you_block').hide()      
 
   $('#new_client').on 'submit', (e)->
     console.log('before form submit')
@@ -23,3 +24,23 @@ $( document ).on 'turbolinks:load', ()->
     e.preventDefault()
     $('.thank_you_block').hide()
 
+  $('#mob_close_ty_block').on 'click', (e)->
+    e.preventDefault()
+    $('.mob_thank_you_block').hide()
+
+
+  $('#mob_client_form').on 'submit', (e)->
+    console.log('before form submit')
+    e.preventDefault()
+    $.ajax({
+        url:     "/clients",
+        type:     "POST",
+        dataType: "html",
+        data: $("#mob_client_form").serialize(),
+        success: -> 
+          $('.mob_thank_you_block').show()
+        ,
+        error: ->
+          $('#error_block').show()
+          $('#error_block').html('Ошибка. Данные не отправлены.')
+    })
