@@ -131,14 +131,14 @@
 
 <!-- начало моб версии -->
 <div class="mob" style="background: #F7F7F7; padding-bottom: 8vw">
-  <div class="container" style="margin-bottom: 8vw; font-size: 2.7vw; line-height: 3.4vw; text-align: start; ">
-    <h1 style="padding: 9vw 0vw 0vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw; margin: 0px;">
+  <div class="container">
+    <h1 class="methods-name">
       Транзактный анализ
     </h1>
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 5vw 0vw 7vw 0vw">
+    <p class="methods-description">
       В 60-70-хх годах был разработан метод анализа взаимодействия людей, который  помогает решать конфликты, и выстраивать комфортные отношения в семье и на работе. Имя ему – ТА.
     </p>
-    <img src="<%= asset_url('methods/Transactional-analysis.svg')%>" alt="Транзактный анализ" style="width: 86vw">
+    <img src="<%= asset_url('methods/Transactional-analysis.svg')%>" alt="Транзактный анализ" class="methods-img">
     <h2>Что такое ТА</h2>
     <p>
         <b>Транзактный анализ</b> (ТА) – одно из самых популярных направлений в психологическом консультировании для решения проблем в отношениях. Метод был создан Эриком Берном на основе его наблюдений за клиентами. ТА призвано выявлять роль и транзакции (послания). Только выявив роль человека, можно подстроиться и суметь найти с ним общий язык.
@@ -217,16 +217,9 @@
       </p>
 
       </div> <!-- конец container -->
-    
-  <h2 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw">
-    Запись на консультацию
-  </h2>
-  <div class="container">
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.3vw; letter-spacing: 0.01em; margin: 2vw 0vw 10vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
-        
+ 
+  <div class="container">        
     <%= render partial: "/new/form_mob"%>
-
   </div>
 
 </div> <!-- конец моб версии -->

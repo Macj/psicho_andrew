@@ -140,14 +140,14 @@
 
 <!-- начало моб версии -->
 <div class="mob" style="background: #F7F7F7; padding-bottom: 8vw">
-  <div class="container" style="margin-bottom: 8vw; font-size: 2.7vw; line-height: 3.4vw; text-align: start; ">
-    <h1 style="padding: 9vw 0vw 0vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw; margin: 0px">
+  <div class="container">
+    <h1 class="methods-name">
       Психотерапия неврозов и психосоматики
     </h1>
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 5vw 0vw 7vw 0vw">
+    <p class="methods-description">
       Если вы это читаете, то, вероятно, у вас психосоматика или невроз. Эта статья призвана кратко объяснить процесс психотерапии с практической точки зрения: описание проблемы, результата и применяемых мною техник в нашей совместной работе
     </p>
-    <img src="<%= asset_url('problem/neurosis.svg')%>" alt="Психотерапия неврозов и психосоматики" style="width: 86vw">
+    <img src="<%= asset_url('problem/neurosis.svg')%>" alt="Психотерапия неврозов и психосоматики" class="methods-img">
     <h2>
       Как практически будет выглядеть наша работа
     </h2>
@@ -162,7 +162,7 @@
       Вы никому ничего не обязаны. В любое время мы можем остановится. Всё, что мы обсуждаем, будет строго конфиденциально. Когда вы радуетесь – я разделяю с вами эту радость, когда вы грустите – я поддерживаю вас и помогаю найти верное решение. Я безоценочен, мне не важно какие поступки вы совершали и насколько глупо выглядели при этом, моя задача – сделать так, чтобы вы избавились от невроза и научились конструктивно удовлетворять свои потребности.
     </p>
 
-    <h2 style="margin: 4vw 0vw 2vw 3vw">Критерии наличия невроза и критерии достижения результата</h2>
+    <h2>Критерии наличия невроза и критерии достижения результата</h2>
     <table>
       <th>Невроз и психосоматика</th>
       <th>Результат психотерапии</th>
@@ -246,15 +246,8 @@
 
     </div> <!-- конец container -->
     
-  <h2 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw">
-    Запись на консультацию
-  </h2>
-  <div class="container">
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.3vw; letter-spacing: 0.01em; margin: 2vw 0vw 10vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
-        
+  <div class="container">        
     <%= render partial: "/new/form_mob"%>
-
   </div>
 
 </div> <!-- конец моб версии -->

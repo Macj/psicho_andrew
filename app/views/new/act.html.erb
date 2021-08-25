@@ -112,14 +112,14 @@
 
 <!-- начало моб версии -->
 <div class="mob" style="background: #F7F7F7; padding-bottom: 8vw">
-  <div class="container" style="margin-bottom: 8vw; font-size: 2.7vw; line-height: 3.4vw; text-align: start; ">
-    <h1 style="padding: 9vw 0vw 0vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw; margin: 0px;">
+  <div class="container">
+    <h1 class="methods-name">
       Терапия принятия и ответственности
     </h1>
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 5vw 0vw 7vw 0vw">
+    <p class="methods-description">
       В 80-хх годах был разработан метод, который помогает избавиться от невротических проблем и наслаждаться жизнью даже тем людям, которые страдают от хронических заболеваний. Имя ему – АСТ.
     </p>
-    <img src="<%= asset_url('methods/ACT.svg')%>" alt="Терапия принятия и ответственности" style="width: 86vw">
+    <img src="<%= asset_url('methods/ACT.svg')%>" alt="Терапия принятия и ответственности" class="methods-img">
     <h2>Что такое АСТ</h2>
       <p>
         <b>Терапия принятия и ответственности</b> (АСТ) – направление 3-й волны КПТ, которое совмещает в себе поведенческую терапию, майндфулнес и свои индивидуальные наработки. Улучшая осознанность, выявляя ценности, делая акцент на действиях, важных для человека, достигаются стойкие результаты психотерапии.
@@ -187,13 +187,8 @@
     </p>
   </div> <!-- конец container -->
 
-  <h2 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw">Запись на консультацию</h2>
-  <div class="container">
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.3vw; letter-spacing: 0.01em; margin: 2vw 0vw 10vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
-        
+  <div class="container">        
     <%= render partial: "/new/form_mob"%>
-
   </div>
 
 </div> <!-- конец моб версии -->

@@ -327,7 +327,7 @@
         <label for="ac-12">Как записаться на консультацию?</label>
         <article class="ac-46">
           <p>Чтобы записаться на консультацию, вам следует:<br><br>
-          1. Оставить <a href="#question">заявку</a> или связаться со мной любым из доступных вам способов по моим <a href="/contacts.html">контактам</a>;;<br><br>
+          1. Оставить <a href="#questions">заявку</a> или связаться со мной любым из доступных вам способов по моим <a href="/contacts.html">контактам</a>;;<br><br>
           2. Обсудить со мной ваш случай, согласовать все детали, точное место и время консультации;<br><br>
           3. Оплатить мои услуги;<br><br>
           4. Явиться на консультацию.</p>
@@ -345,7 +345,7 @@
         <input id="ac-14" name="accordion-1" type="checkbox" />
         <label for="ac-14">Работаете ли вы с детьми, подростками, семейными парами?</label>
         <article class="ac-18">
-          <p>Да, в индивидуальном порядке я готов работать с парами и детьми. <a href="#question">Напишите</a> мне, мы обсудим данную возможность.</p>
+          <p>Да, в индивидуальном порядке я готов работать с парами и детьми. <a href="#questions">Напишите</a> мне, мы обсудим данную возможность.</p>
         </article>
       </div>
       <div>
@@ -371,15 +371,15 @@
       
     <img src="<%= asset_url('faq.svg')%>" alt="вопрос" style="width: 86vw; margin-top: 5vw">
 
-    <h2 style="padding: 10vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw" id="question">
+    <h2 style="padding: 10vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw" id="questions">
       Задайте мне вопрос
     </h2>
-    <p style="text-align: center; font-size: 2.9vw; line-height: 3.7vw; margin: 2vw 0vw 5vw 0vw">
+    <p style="text-align: center; font-size: 3vw; line-height: 3.7vw; margin: 2vw 0vw 5vw 0vw">
       Если вы хотите меня о чем-то спросить - просто заполните форму и получите ответ в течении 24 часов.
     </p>
-
-    <%= render partial: "/new/form_mob"%>
-
+    <div class="questions">
+      <%= render partial: "/new/form_mob"%>
+    </div>
   </div> <!-- конец container -->
  
 </div> <!-- конец моб версии  -->

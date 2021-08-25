@@ -107,14 +107,14 @@
 
 <!-- начало моб версии -->
 <div class="mob" style="background: #F7F7F7; padding-bottom: 8vw">
-  <div class="container" style="margin-bottom: 8vw; font-size: 2.7vw; line-height: 3.4vw; text-align: start; ">
-    <h1 style="padding: 9vw 0vw 0vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw; margin: 0px;">
+  <div class="container">
+    <h1 class="methods-name">
       Когнитивно-поведенческая терапия
     </h1>
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 5vw 0vw 7vw 0vw">
+    <p class="methods-description">
       В 60-70-хх годах был разработан метод, который помогает избавиться от негативных убеждений, изменить восприятие мира и выработать новую стратегию поведения. Имя ему – КПТ.
     </p>
-    <img src="<%= asset_url('methods/CBT.svg')%>" alt="Когнитивно-поведенческая терапия" style="width: 86vw">
+    <img src="<%= asset_url('methods/CBT.svg')%>" alt="Когнитивно-поведенческая терапия" class="methods-img">
     <h2>Что такое КПТ</h2>
     <p>
       <b>Когнитивно-поведенческая терапия</b> (КПТ) – одна из самых эффективных направлений психотерапии, в котором основная работа заключается в том, чтоб помочь изменить поведение и психоэмоциональное состояние человека, путем анализа его мыслей и действий. Метод помогает менять <b>реакцию человека</b> на определенные раздражители, выявляя <b>автоматические мысли</b>, которые предшествовали ей и обучаясь новым стратегиям <b>поведения</b>.
@@ -172,16 +172,9 @@
       Стандартная краткосрочная терапия это 8-10 сессий 1-2 раза в неделю. В зависимости от сложности проблемы, работа может длиться до полу года. По желанию клиента может проводиться поддерживающая терапия (1 сессия раз в 2-4 недели).
     </p>
   </div> <!-- конец container -->
-    
-  <h2 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw">
-    Запись на консультацию
-  </h2>
-  <div class="container">
-    <p style="text-align: center; font-size: 2.7vw; line-height: 3.3vw; letter-spacing: 0.01em; margin: 2vw 0vw 10vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом по указанным <a href="contacts.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">контактам</a></p>
-        
-    <%= render partial: "/new/form_mob"%>
 
+  <div class="container">        
+    <%= render partial: "/new/form_mob"%>
   </div>
 
 </div> <!-- конец моб версии -->
