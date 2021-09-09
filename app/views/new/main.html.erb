@@ -28,28 +28,25 @@
   });
 </script>
 <div class="pc_content">
-  <div class="container"> 
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-      <div style="width: 50vw; margin-bottom: 6vw">
-        <p style="font-size: 2vw; letter-spacing: 0.01em; font-weight: 300">Андрей Ткаченко</p>
-        <h1 style="font-weight: 800; font-size: 4.5vw; line-height: 4.8vw; margin-bottom: 0px;">Консультация психолога онлайн</h1>
-        <p style="font-size: 1.4vw; line-height: 1.9vw; letter-spacing: 0.01em; width: 35vw; text-align: justify;">
-          Я помогу вам разобраться с проблемами из любой точки мира
-        </p>
-        <div style="display: inline-block;">
-          <button id="button_client_form">
-            <a href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
-          </button>
-          <div style="display: inline-block;">
-            <button id="button_about" style="margin-left: 0.7vw;">
-              <a href="/about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
-            </button>
-          </div>
-        </div>
+  <img src="<%= asset_url('consultation-psychologist-online-Tkachenko-Andrey.jpg') %>" alt="Консультации психолога онлайн Ткаченко Андрей" style="width: 100%">
+  <div style="width: 50vw; margin: 7vw 0vw 7vw 7vw; position: absolute; top: 4vw">
+    <p style="font-size: 2vw; letter-spacing: 0.01em; font-weight: 300">Андрей Ткаченко</p>
+    <h1 style="font-weight: 800; font-size: 4.6vw; line-height: 4.8vw; margin-bottom: 0px;">Консультация психолога онлайн</h1>
+    <p style="font-size: 1.4vw; line-height: 1.9vw; letter-spacing: 0.01em; width: 35vw; text-align: justify;">
+      Я помогу вам разобраться с проблемами из любой точки мира
+    </p>
+    <div style="display: inline-block;">
+      <button id="button_client_form">
+        <a href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+      </button>
+      <div style="display: inline-block;">
+        <button id="button_about" style="margin-left: 0.7vw;">
+          <a href="/about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+        </button>
       </div>
-      <img src="<%= asset_url('consultation-psychologist-online-Tkachenko-Andrey.png') %>" alt="Консультации психолога онлайн Ткаченко Андрей" style="height: 46vw">
     </div>
-
+  </div>
+  <div class="container">
     <h2 style="padding-top: 4vw; text-align: center; font-size: 2.5vw">Мои направления работы</h2>
     <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
       Если вы хотите узнать могу ли я помощь вам с вашей проблемой, вот список сфер моих компетенций.<br>Подробнее о каждой проблеме и методах работы с ней вы узнаете в разделе <a href="/work-with.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">С чем я работаю</a>
@@ -105,8 +102,8 @@
       </div>
     </div>
 
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-      <img src="<%= asset_url('Tkachenko-Andrey-psychologist.png')%>" alt="Ткаченко Андрей психолог" style="height: 50vw; width: 38%">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 3vw">
+      <img src="<%= asset_url('Tkachenko-Andrey-psychologist.jpg')%>" alt="Ткаченко Андрей психолог" style="width: 35%; margin-top: 2vw">
       <div style="width: 65%; padding-left: 2vw">
         <h2 style="font-size: 3vw; margin-bottom: 2vw">Обо мне</h2> 
         <p style="text-align: justify">
@@ -283,7 +280,7 @@
     <div style="position: relative; display: flex; justify-content: space-between; padding-bottom: 4vw">
       <div id="box_mini_card" style="position: relative; width: 44vw">
         <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw; margin-right: 1.8vw">
-          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
+          <span style="display: block; position: relative; top: 8vw; left: 1.5vw;">
             <span>
               <h3 class="article_category" style="float: left; clear: left; position: relative;">
                 <a href="/articles?category_id=3" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
@@ -303,7 +300,7 @@
         </section>
 
         <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw">
-          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
+          <span style="display: block; position: relative; top: 8vw; left: 1.5vw;">
             <span>
               <h3 class="article_category" style="float: left; clear: left; position: relative;">
                 <a href="/articles?category_id=8" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
@@ -323,7 +320,7 @@
         </section>
 
         <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw; margin-right: 1.8vw">
-          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
+          <span style="display: block; position: relative; top: 8vw; left: 1.5vw;">
             <span>
               <h3 class="article_category" style="float: left; clear: left; position: relative;">
                 <a href="/articles?category_id=7" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
@@ -343,7 +340,7 @@
         </section>
 
         <section class="up-corner-20 article_box" style="display: inline-block; width: 20vw; height: 14vw">
-          <span style="height: 100%; position: relative; top: 8vw; left: 1.5vw;">
+          <span style="display: block; position: relative; top: 8vw; left: 1.5vw;">
             <span>
               <h3 class="article_category" style="float: left; clear: left; position: relative;">
                 <a href="/articles?category_id=2" style="font-size: 0.7vw; padding: 0.1vw 0.6vw;">
@@ -394,21 +391,21 @@
   
 
 
-  <!-- начало моб версии -->
+  <!-- начало моб версии #9e9b9b  -->
 <div class="mob" style="background: #F7F7F7;">
-  <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.png')%>" alt="Онлайн консультации психолога Ткаченко Андрей" style="width: 100%">
-  <h2 style="position: absolute; top: 81vw; left: 62vw; font-size: 3vw; letter-spacing: 0.01em; color: #FFFFFF; padding: 1vw;">Андрей Ткаченко</h2>
-  <div style="background: #39383c; height: 33vw; position: absolute; top: 87vw; width: 100%">
+  <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.jpg')%>" alt="Онлайн консультации психолога Ткаченко Андрей" style="width: 100%">
+  <h2 style="position: absolute; top: 75vw; left: 59vw; font-size: 3vw; letter-spacing: 0.01em; color: #39383c; padding: 0vw">Андрей Ткаченко</h2>
+  <div style="background: #39383c; height: 33vw; position: absolute; top: 82vw; width: 100%"> 
     <h1 style="font-weight: 800; font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; text-align: center">
       Консультация психолога онлайн
     </h1>
   </div>
-  <div style="background: #9e9b9b; height: 13vw; position: absolute; top: 124vw; width: 100%">
-    <h2 style="font-weight: normal; font-size: 4vw; line-height: 4.1vw; color: #FFF7F6; text-align: center; margin: 2.9vw 4vw; padding: 0vw;">
+  <div style="background: #888787; height: 15.5vw; position: absolute; top: 119vw; width: 100%">
+    <h2 style="font-weight: normal; font-size: 4vw; line-height: 5.1vw; color: #FFF7F6; text-align: center; margin: 2.9vw 4vw; padding: 0vw">
       Я помогу вам разобраться с проблемами из любой точки мира
     </h2>
   </div>
-  <button id="button_client_form" style="position: absolute; top: 142vw; margin: 0px auto; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
+  <button id="button_client_form" style="position: absolute; top: 139vw; margin: 0px auto; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
     <a href="#client_form_mob" style="font-size: 2.5vw">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
   </button>
 
@@ -462,13 +459,13 @@
       Подробнее о том, с чем я работаю читайте <a href="work-with.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">здесь</a>
     </p>
   </div> <!-- конец Мои направления работы -->
-  <img src="<%= asset_url('psychologist-Tkachenko-Andrey.png')%>" alt="психолог Ткаченко Андрей" style="width: 100%">
-  <div style="background: rgba(57, 56, 60, 0.75); position: absolute; top: 418vw; width: 100%;">
+  <img src="<%= asset_url('psychologist-Tkachenko-Andrey.jpg')%>" alt="психолог Ткаченко Андрей" style="width: 100%">
+  <div style="background: rgba(36, 36, 30, 0.85); position: absolute; top: 385vw; width: 100%;">
     <h2 style="font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; margin: 4vw; text-align: center; padding: 0vw;">
       Обо мне
     </h2>
   </div>
-  <div style="background: rgba(57, 56, 60, 0.75); background: blur; position: absolute; top: 440vw; width: 100%">
+  <div style="background: rgba(36, 36, 30, 0.85); backdrop-filter: blur(3px); position: absolute; top: 409vw; width: 100%">
     <p class="container" style="font-weight: normal; font-size: 3.5vw; line-height: 4.5vw; color: #FFF7F6; text-align: center; margin: 4vw 7vw;" >
       Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог.<br><br>
       Предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).

@@ -14,7 +14,7 @@
 
 html, body {
     height: 100%;
-    color: rgb(75,75,75);
+    color: rgb(65,65,65);
     background: rgb(250,250,250);  
     font-family: Montserrat;
     font-size: 1vw;
@@ -1671,7 +1671,7 @@ p a {
 #button_client_form, #button_about, #button_faq, #button_form {
   display: inline-block;
   background: #ff7f50;
-  box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
   border-radius: 0.5vw;
   border: 2px solid transparent;
 }
@@ -1701,17 +1701,17 @@ p a {
 }
 
 #button_client_form:hover, #button_about:hover, #button_form:hover, #mob_button_form:hover {
-  border: 2px solid rgb(75,75,75) !important;
+  border: 2px solid rgb(65,65,65) !important;
   background-color: transparent !important;
   cursor: pointer;
 }
 
 #button_client_form:hover a, #button_about:hover a, #button_form:hover a {
-  color: rgb(75,75,75) !important;
+  color: rgb(65,65,65) !important;
 }
 
 #mob_button_form:hover {
-  color: rgb(75,75,75) !important;
+  color: rgb(65,65,65) !important;
 }
 
 ::-webkit-input-placeholder { color:#ACACAC; font-size: 0.8vw}
@@ -1735,7 +1735,7 @@ p a {
 #button_client_form, #button_about, #button_faq, #button_form {
   display: inline-block;
   background: #ff7f50;
-  box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.5vw;
   border: 2px solid transparent;
 }
