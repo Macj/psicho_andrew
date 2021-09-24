@@ -24,6 +24,9 @@
       = f.label :style, class: 'col-sm-1'
       = f.select :style, [['Ordinary', 1], ['Pro', 2]], class: 'form-control'
     .form-group.row
+      = f.label :reading_time, "Время прочтения",class: 'col-sm-1'
+      = f.text_field :reading_time, class: 'form-control'
+    .form-group.row
       = f.label :tags, class: 'col-sm-1'
       = f.text_field :tags, class: 'form-control'
     .form-group.row

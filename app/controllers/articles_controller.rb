@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_article, only: [:show, :edit, :update, :destroy]
+  before_action :set_article, only: [:show, :edit, :update, :delete]
   before_action :set_service, only: [:show, :index]
   layout "new_layout"
 
@@ -21,6 +21,25 @@ class ArticlesController < ApplicationController
     page = params[:page] || 1
     @articles = @articles.page(page).per(6) 
 
+    s = params[:sort]
+    case s
+    when "views"
+      @articles = @articles.order("view_counter ASC")      
+    when "new"
+      @articles = @articles.order("created_at ASC")
+    when "old"
+      @articles = @articles.order("created_at DESC")
+    when "time_less"
+      @articles = @articles.order("reading_time ASC")
+    when "time_more" 
+      @articles = @articles.order("reading_time DESC")
+    end
+
+    tag = params[:tag_name]
+    if tag
+      @articles = @articles.where("tags like '%#{tag}%'")
+    end
+
   end
 
   # GET /articles/1
@@ -29,6 +48,7 @@ class ArticlesController < ApplicationController
     @courses = Course.first(3)
     @latest = Article.latest(@article.id)
     @news = @article.latest
+    @article.increment!(:view_counter)
   end
 
   # GET /articles/new
@@ -73,7 +93,7 @@ class ArticlesController < ApplicationController
 
   # DELETE /articles/1
   # DELETE /articles/1.json
-  def destroy
+  def delete
     @article.destroy
     respond_to do |format|
       format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
@@ -89,7 +109,7 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      attrs = params.require(:article).permit(:title, :body, :cathegory_id, :style, :tags, :image)
+      attrs = params.require(:article).permit(:title, :body, :description, :cathegory_id, :style, :tags, :image)
       attrs[:tags] = attrs[:tags].split(" ")
       attrs 
     end

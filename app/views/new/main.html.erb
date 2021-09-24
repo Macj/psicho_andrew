@@ -166,41 +166,68 @@
 
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center; margin: 0vw 2vw">
       <div style="width: 29%;" id="service_box">
-        <a href="consultations.html#Group" style="color: inherit; text-decoration:none;">
-          <img src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="height: 12vw; transition: 0.3s;">  
-          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Групповая консультация</h3>
-        </a>
-        <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
-          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
-          <div class="service_accordion_text">Дешевая групповая психотерапия в<br>Zoom (1 – 2 сеанса в неделю).<br>Группа от 3-х до 5-ти человек<br>объединенных одной проблемой<br>(например, низкая самооценка,<br>тревога, невроз, ОКР)</div>
-        </div>
-        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">10 $</span>
-        <p>Скидка: 4 сеанса по предоплате 30 $</p>
-      </div>
-
-      <div style="width: 29%;" id="service_box">
         <a href="consultations.html" style="color: inherit; text-decoration:none;">
           <img src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="height: 12vw; transition: 0.3s;">  
           <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Индивидуальная консультация</h3>
         </a>
         <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
-          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 6vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
-          <div class="service_accordion_text">Консультация по Skype, Telegram,<br>Viber, Zoom (1 – 2 сеанса в неделю).<br>Вы находитесь у себя дома, в<br>безопасной обстановке, говорите<br>о наболевшем с тем, кто вас<br>понимает, избавляетесь от страхов<br>и сомнений, наполняясь<br>спокойствием и верой в себя.</div>
+          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 7.5vw 1vw 8.5vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">1 час<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
+          <div class="service_accordion_text" style="text-align: start">
+            <b>Метод – позитивная психотерапия.</b><br>
+            ▷ Диагностика<br>
+            ▷ Проблемы в отношениях<br>
+            ▷ Принять решение<br>
+            ▷ Поставить цель<br>
+            ▷ Выговориться</div>
         </div>     
-        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">30 $</span>
-        <p>Скидка: 4 сеанса по предоплате 100 $</p>
+        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">500 грн</span>
+      </div>
+
+      <div style="width: 29%;" id="service_box">
+        <a href="consultations.html#Group" style="color: inherit; text-decoration:none;">
+          <img src="<%= asset_url('psychotherapy.svg')%>" alt="курс психотерапии" style="height: 12vw; transition: 0.3s;">  
+          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Курс психотерапии</h3>
+        </a>
+        <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
+          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 3.5vw 1vw 3.5vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">10 сеансов по 2 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
+          <div class="service_accordion_text" style="text-align: start">
+            <b>Метод – КПТ, АСТ, Майндфулнесс.</b><br>
+            ▷ Невроз (обида, вина, стыд, злость,<br>ревность, бессонница)<br>
+            ▷ Тревога и ГТР<br>
+            ▷ Депрессия, уныние, апатия<br>
+            ▷ Панические атаки<br>
+            ▷ Навязчивости (ОКР)<br>
+            ▷ Низкая самооценка<br>
+            ▷ Повышение осознанности<br>
+            ▷ Развитие эмоц. интеллекта<br>
+            ▷ Обучение медитации</div>
+        </div>
+        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">7000 грн</span>
+        <p>Разовый сеанс психотерапии = 800грн</p>
       </div>
 
       <div style="width: 29%;" id="service_box">
         <a href="consultations.html#Intensive-psychotherapy" style="color: inherit; text-decoration:none;">
-          <img src="<%= asset_url('intensive-psychotherapy.svg')%>" alt="интенсивная психотерапия" style="height: 12vw; transition: 0.3s;"> 
-          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Интенсивная психотерапия</h3>
+          <img src="<%= asset_url('methods/Hypnotherapy.svg')%>" alt="интенсивная психотерапия" style="height: 12vw; transition: 0.3s;"> 
+          <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Курс гипнотерапии</h3>
         </a>
         <div class="service_accordion" style="margin-bottom: 1vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.25));">
-          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 0vw 1vw 0vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">5 дней подряд по 4 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
-          <div class="service_accordion_text">5 дней интенсивной психотерапии с<br>применением гипноза и коучинга<br>для тех, кому время важнее денег.<br>Задача – максимально быстро<br>вернуть вас в рабочее состояние, в<br>котором вы можете продолжать<br>жить и работать. Избавление от<br>тревоги, психосоматики, страха<br>публичных выступлений и потери<br>бизнеса. Восстановление после<br>сильного стресса. Обучение<br>релаксации и стрессоустойчивости.</div>
+          <div class="service_accordion_title" style="background-color: #454554; border-radius: 0.4vw; padding: 1vw 4vw 1vw 4vw; font-size: 1.2vw; font-weight: 600; color: #FFFFFF;">5 сеансов по 4 часа<img src="<%= asset_url('arrow.svg')%>" alt="стрелка раскрытия блока" class="arrow"></div>
+          <div class="service_accordion_text" style="text-align: start">
+            <b>Метод – гипнотерапия.</b><br>
+            ▷ Невроз (обида, вина, стыд, злость,<br>ревность, бессонница)<br>
+            ▷ Тревога и ГТР<br>
+            ▷ Депрессия, уныние, апатия<br>
+            ▷ Психосоматика (боли, спазмы,<br>СРК, энурез, диарея, заикание, аноргазмия, потеря эрекции)<br>
+            ▷ Панические атаки<br>
+            ▷ Навязчивости (ОКР)<br>
+            ▷ Низкая самооценка<br>
+            ▷ Психотравмы, стрессы<br>
+            ▷ Прокрастинация<br>
+            ▷ Страхи и фобии</div>
         </div>     
-        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">300 $</span>
+        <span style="font-size: 2vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #ff7f50; border-radius: 0.4vw; padding: 1vw">7500 грн</span>
+        <p>Разовый сеанс гипнотерапии = 2000грн</p>
       </div>
     </div>
 

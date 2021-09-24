@@ -79,13 +79,13 @@ Rails.application.configure do
 
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_host_name => 's3-us-west-1.amazonaws.com',
+    :s3_host_name => 's3-us-east-2.amazonaws.com',
     :s3_credentials => {
-      :access_key_id => 'AKIASAPUBBHTBLH36E72',
-      :secret_access_key => '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',
-      :s3_region => "us-west-1"
+      :access_key_id => 'AKIASWVNZ7F4CY7MLLYM',
+      :secret_access_key => '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',
+      :s3_region => "us-east-2"
     },
-    :bucket => 'pl-consult-new'
+    :bucket => 'andrey-pl1'
   }
 
 end

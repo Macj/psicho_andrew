@@ -2,7 +2,11 @@ Rails.application.routes.draw do
   devise_for :users
   resources :cathegories
   resources :courses
-  resources :articles
+  resources :articles do
+    member do
+       get :delete
+    end
+  end
   # resources :services
   resources :faqs
   resources :clients

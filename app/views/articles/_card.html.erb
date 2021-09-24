@@ -86,11 +86,11 @@
       <span class="tags" style="display: flex; margin: 0vw; float: left; clear: left; position: relative;">
         <div class="views">         
           <img src="<%= asset_url('views.svg')%>" alt="количество просмотров статьи">
-          <p class="views_text">3343</p>
+          <p class="views_text"><%= card.view_counter %></p>
         </div>
         <div class="time_read">
           <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
-          <p class="time_read_text">2 мин</p>
+          <p class="time_read_text"><%= card.reading_time %> мин</p>
         </div>
       </span>
       <h3 class="article_category">
