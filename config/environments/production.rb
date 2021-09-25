@@ -81,8 +81,8 @@ Rails.application.configure do
     :storage => :s3,
     :s3_host_name => 's3-us-east-2.amazonaws.com',
     :s3_credentials => {
-      :access_key_id => 'AKIASWVNZ7F4CY7MLLYM',
-      :secret_access_key => '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',
+      :access_key_id => 'AKIASWVNZ7F4A6LG434I',
+      :secret_access_key => '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',
       :s3_region => "us-east-2"
     },
     :bucket => 'andrey-pl1'
