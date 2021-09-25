@@ -87,5 +87,4 @@ Rails.application.configure do
     },
     :bucket => 'andrey-pl1'
   }
-
 end
