@@ -38,6 +38,8 @@ class Article < ActiveRecord::Base
   after_commit on: [:create] do
     begin
       __elasticsearch__.index_document
+      puts "+++++++++++++++++++++++++++"
+      puts "CREATE"
     rescue Exception => ex
       logger.error "ElasticSearch after_commit error on create: #{ex.message}"
     end
@@ -53,6 +55,8 @@ class Article < ActiveRecord::Base
 
   after_commit on: [:destroy] do
     begin
+      puts "+++++++++++++++++++++++++++"
+      puts "DELETE"
       __elasticsearch__.delete_document
     rescue Exception => ex
       logger.error "ElasticSearch after_commit error on delete: #{ex.message}"
