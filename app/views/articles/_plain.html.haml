@@ -18,8 +18,8 @@
         %p.article_category
           %a{href:"<%= articles_path(category_id: card.cathegory_id) %>"}
             = card.cathegory.name if card.cathegory 
-      %h3.article_name
-        = link_to card.title, card
+      %h1.article_name
+        = card.title
       .edit
         - unless current_user.nil?
           .edit{style: 'clear: both'}
@@ -53,25 +53,12 @@
 .mob
   %section.article{style: "background-image: url(#{card.image.url}); background-size: cover"}
     .linear-gradient
-      %div{style: "display: flex; margin: 0vw; width: 100%"}
-        .views
-          %img{src: "<%= asset_url('views.svg')%>", style:"height: 0.9vw"}
-          %p.views_text
-            card.views_count 0
-        .time_read
-          %img{src: "<%= asset_url('time-read')%>", style:"height: 0.9vw"}
-          %p.time_read_text
-            card.time_to_read 0
-        .article_date
-          %img{src: "<%= asset_url('article-date.svg')%>", style:"height: 0.9vw"}
-          %p.article_date_text
-            = card.created_at.strftime("%d %m %Y")
       %div{style: "width: 100%"}
         %p.article_category
           %a{href:""}
             = card.cathegory.name if card.cathegory 
-      %h3.article_name
-        = link_to card.title, card
+      %h1.article_name
+        = card.title
       - unless current_user.nil?
         %br
         .edit{style: 'float:right'}

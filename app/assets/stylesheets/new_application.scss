@@ -151,12 +151,25 @@ html, body {
       font-size: 4vw;
       line-height: 5vw;
     }
+    .h3-article {
+      padding: 6vw 0vw 0vw 0vw;
+      margin: 0vw;
+      text-align: start;
+      font-weight: 800;
+      font-size: 3.3vw;
+      line-height: 4vw;
+    }
     p, ul {
       font-size: 3.3vw; line-height: 4.3vw; text-align: start;
     }
 
     ul {
       padding-left: 2vw !important;
+    }
+    .img-article {
+      width: 80vw !important;
+      height: auto !important;
+      margin: 2vw !important;
     }
   }
 
