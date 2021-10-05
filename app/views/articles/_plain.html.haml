@@ -24,8 +24,6 @@
         - unless current_user.nil?
           .edit{style: 'clear: both'}
             = link_to "Редактировать", edit_article_path(card)
-          .edit{style: 'float:right'}
-            = link_to "Delete", delete_article_path(card)
       .tags
         - card.tags.each do |t|
           %p.tags_item
