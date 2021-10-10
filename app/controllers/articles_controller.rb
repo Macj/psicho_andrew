@@ -24,11 +24,11 @@ class ArticlesController < ApplicationController
     s = params[:sort]
     case s
     when "views"
-      @articles = @articles.order("view_counter ASC")      
+      @articles = @articles.order("view_counter DESC")      
     when "new"
-      @articles = @articles.order("created_at ASC")
-    when "old"
       @articles = @articles.order("created_at DESC")
+    when "old"
+      @articles = @articles.order("created_at ASC")
     when "time_less"
       @articles = @articles.order("reading_time ASC")
     when "time_more" 
