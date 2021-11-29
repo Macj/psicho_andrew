@@ -21,19 +21,26 @@ class ArticlesController < ApplicationController
     page = params[:page] || 1
     @articles = @articles.page(page).per(6) 
 
-    s = params[:sort]
-    case s
+    @sort = params[:sort] || 'new'
+
+    case @sort
     when "views"
-      @articles = @articles.order("view_counter DESC")      
+      @articles = @articles.order("view_counter DESC")
+      @sort_text = 'популярности'      
     when "new"
       @articles = @articles.order("created_at DESC")
+      @sort_text = 'дате - от самой новой'
     when "old"
       @articles = @articles.order("created_at ASC")
+      @sort_text = 'дате - от самой старой'
     when "time_less"
       @articles = @articles.order("reading_time ASC")
+      @sort_text = 'длительности чтения - от<br>наименьшей'
     when "time_more" 
       @articles = @articles.order("reading_time DESC")
+      @sort_text = 'длительности чтения - от<br>наибольшей'
     end
+    @sort_text = @sort_text.html_safe
 
     tag = params[:tag_name]
     if tag
@@ -46,7 +53,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @courses = Course.first(3)
-    @latest = Article.latest(@article.id)
+    @popular = Article.popular(@article.id)
     @news = @article.latest
     @article.increment!(:view_counter)
   end

@@ -16,7 +16,7 @@
             = card.created_at.strftime("%d %m %Y")
       %div{style: "width: 100%"}
         %p.article_category
-          %a{href:"<%= articles_path(category_id: card.cathegory_id) %>"}
+          %a{href: "#{articles_path(category_id: card.cathegory_id)}"}
             = card.cathegory.name if card.cathegory 
       %h1.article_name
         = card.title
@@ -27,7 +27,7 @@
       .tags
         - card.tags.each do |t|
           %p.tags_item
-            %a{href:"<%= articles_path(tag_name: t)%>"}
+            %a{href: "#{articles_path(tag_name: t)}"}
               = t
 
   .container{style: "margin-bottom: 2vw;"}
@@ -36,12 +36,12 @@
     .article.tags_all{style: "height: 0vw; margin: 3vw 0vw; width: 86vw;"}
       - card.tags.each do |t|
         %p.tags_item
-          %a{href:"<%= articles_path(tag_name: t)%>"}
+          %a{href: "#{articles_path(tag_name: t)}"}
             = t
     %h2{style: "margin: 0vw 0vw 1vw 0vw; padding-top: 5vw; text-align: center"} Популярное на сайте
 
     .pop_articles
-      - @latest.each do |art|
+      - @popular.each do |art|
         = render partial: "articles/card", locals: {card: art}
 
 
@@ -73,5 +73,5 @@
     %h2{style: "font-size: 5vw; margin: 8vw 0vw 4vw 0vw; text-align: center"} Популярное на сайте
 
     .articles
-      - @latest.each do |art|
+      - @popular.each do |art|
         = render partial: "articles/card", locals: {card: art}

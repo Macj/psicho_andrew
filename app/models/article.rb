@@ -19,12 +19,16 @@ class Article < ActiveRecord::Base
   STYLES = [[1,'Ordinary'], [2,'Pro']].to_h
 
   def self.latest(id)
-  	Article.where('id != ?', id).last(3)
+  	where('id != ?', id).last(3)
   end
 
   def latest
     return [] unless self.cathegory
     Article.where('cathegory_id != ?', self.cathegory_id).last(3)
+  end
+
+  def self.popular(id)
+    where('id != ?', id).order("view_counter DESC").first(3)
   end
 
   def light_text
