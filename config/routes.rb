@@ -53,6 +53,7 @@ get 'new_menu' => 'pages#new_menu', as: :new_menu
   get '/methods'        => 'new#methods'
   get '/services'       => 'new#services'
   get '/work-with'      => 'new#work_with'
+  get '/dnepr'          => 'new#dnepr'
   get '/Psychotherapy-for-panic-disorder'   => 'new#psychotherapy_for_panic_disorder'
   get '/Psychotherapy-of-anxiety'           => 'new#psychotherapy_of_anxiety'
   get '/Psychotherapy-of-depression'        => 'new#psychotherapy_of_depression'
