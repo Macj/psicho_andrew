@@ -7,35 +7,14 @@
   <%= stylesheet_link_tag    'new_application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!-- Global site tag (gtag.js) - Google Ads: 420311628 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-420311628"></script>
-  <script src="http://tinymce.cachefly.net/4.0/tinymce.min.js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-420311628');
-  </script>
-  <!--  End -->
-  
-
-  <!-- Event snippet for Website lead conversion page
-  In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-  <script>
-  function gtag_report_conversion(url) {
-    var callback = function () {
-      if (typeof(url) != 'undefined') {
-        window.location = url;
-      }
-    };
-    gtag('event', 'conversion', {
-        'send_to': 'AW-420311628/uJk_CNSC9vUBEMzktcgB',
-        'event_callback': callback
-    });
-    return false;
-  }
-  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NH52LFD');</script>
+  <!-- End Google Tag Manager -->
+ 
 
   <%= csrf_meta_tags %>
   <%= yield :head %>
@@ -52,6 +31,13 @@
 </head>
 
   <body>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NH52LFD');</script>
+    <!-- End Google Tag Manager -->
     <%= render partial: "layouts/n_header" %>
     <% flash.each do |type, msg| %>
       <div class="alert alert-info">
