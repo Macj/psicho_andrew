@@ -12,7 +12,7 @@ $( document ).on 'turbolinks:load', ()->
         dataType: "html",
         data: $("#new_client").serialize(),
         success: -> 
-          $('.thank_you_block').show()
+          window.location.href = "http://www.tkachenkoandrey.com/thank-you.html";
         ,
         error: ->
           $('#error_block').show()
@@ -39,7 +39,7 @@ $( document ).on 'turbolinks:load', ()->
         dataType: "html",
         data: $("#mob_client_form").serialize(),
         success: -> 
-          $('.mob_thank_you_block').show()
+          window.location.href = "http://www.tkachenkoandrey.com/thank-you.html";
         ,
         error: ->
           $('#error_block').show()
