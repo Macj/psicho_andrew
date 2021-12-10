@@ -1,6 +1,6 @@
 <div class="mob_thank_you_block" id="mob_thank_you_block" style="position: absolute;left: 0; z-index: 10000; clear: both">
   <div class="mob_thank_you_block" style="position: absolute; left: 0; top: -100vh; width: 99vw; height: 500vw; background-color: black; opacity: 30%"></div>
-  
+  <%= render partial: "/new/mob_thank_you" %>
 </div>
      <%= form_for @client, html: {id: 'mob_client_form'} do |f| %>
       <%- if @client.errors.any? %>
