@@ -53294,7 +53294,7 @@ function(a,b){"function"==typeof define&&define.amd?define(["jquery"],b):"object
         dataType: "html",
         data: $("#new_client").serialize(),
         success: function() {
-          return $('.thank_you_block').show();
+          window.location.href = "/thank-you.html";
         },
         error: function() {
           $('#error_block').show();
@@ -53321,7 +53321,7 @@ function(a,b){"function"==typeof define&&define.amd?define(["jquery"],b):"object
         dataType: "html",
         data: $("#mob_client_form").serialize(),
         success: function() {
-          return $('.mob_thank_you_block').show();
+          window.location.href = "/thank-you.html";
         },
         error: function() {
           $('#error_block').show();
