@@ -47,11 +47,11 @@ Rails.application.configure do
     :storage => :s3,
     :s3_host_name => 's3-us-east-2.amazonaws.com',
     :s3_credentials => {
-      :access_key_id => 'AKIA6OUG4ARLB3OX5ENK',
-      :secret_access_key => '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',
+      :access_key_id => '***',
+      :secret_access_key => '***',
       :s3_region => "us-east-2"
     },
-    :bucket => 'andrey-pl2'
+    :bucket => '***'
   }
 
 end
