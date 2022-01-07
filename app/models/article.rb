@@ -11,9 +11,9 @@ class Article < ActiveRecord::Base
   scope :with_category, ->(id) { where(cathegory_id: id) }
   serialize :tags, Array
 
-  has_attached_file :image, default_url: "/assets/:style/missing.png"
+  #has_attached_file :image, default_url: "/assets/:style/missing.png"
   #,:s3_credentials => "#{Rails.root}/config/s3.yml"
-  validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
+  #validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
 
   belongs_to :cathegory
   STYLES = [[1,'Ordinary'], [2,'Pro']].to_h
