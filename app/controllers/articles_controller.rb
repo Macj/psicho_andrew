@@ -116,7 +116,7 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      attrs = params.require(:article).permit(:title, :body, :description, :reading_time, :cathegory_id, :style, :tags, :image)
+      attrs = params.require(:article).permit(:title, :body, :description, :reading_time, :cathegory_id, :style, :tags, :image_file_name)
       attrs[:tags] = attrs[:tags].split(" ")
       attrs 
     end
