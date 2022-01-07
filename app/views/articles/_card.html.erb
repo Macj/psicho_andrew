@@ -1,5 +1,5 @@
 <!--
-<section class="up-corner-20 article_box" style="background-size: cover; position: relative; z-index: 1; background-image: url(<%= card.image.url %>)">
+<section class="up-corner-20 article_box" style="background-size: cover; position: relative; z-index: 1; background-image: url(<%= card.image_file_name_file_name %>)">
   <a href="<%= article_path(card) %>"></a>
   <div class="linear-gradient">
     <div style="display: flex; margin: 0vw;">
@@ -71,7 +71,7 @@
     </span>
   </span>
   <a href="<%= article_path(card) %>">
-    <img class="card_image" src="<%= card.image.url %>"> src="<%= asset_url('article4.png')%>"
+    <img class="card_image" src="<%= card.image_file_name %>"> src="<%= asset_url('article4.png')%>"
     <div id="linear-gradient">
       <div></div>
     </div>
@@ -114,7 +114,7 @@
     </span>
   </span>
   <a href="<%= article_path(card) %>">
-    <img class="card_image" src="<%= card.image %>">
+    <img class="card_image" src="<%= card.image_file_name %>">
     <div id="linear-gradient">
       <div></div>
     </div>
