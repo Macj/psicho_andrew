@@ -12,114 +12,82 @@
   <meta property="og:image" content="http://tkachenkoandrey.com/assets/Tkachenko-Andrey-0ccd9afe47bf51522e172c3619a0dd1b97986605188615048acbc034288baecf.jpg">
 <% end %>
 
-<div class="pc_content">
-  <div class="container" style="margin-bottom: 3vw">
-    <h1 style="text-align: center; font-weight: 800; font-size: 2.5vw; margin: 5vw 0px 4vw 0vw">Статьи</h1>
-    <div style="float: right;">
-      <div class="sorting"><span style="display: block; position: absolute; top: 16.7vw; right: 22vw"><b>Сортировать по</b></span>
-        <div class="sorting_item">
-          <div class="sorting_item_checked"><%= @sort_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 0.8vw; padding: 0.2vw 0vw 0vw 0.4vw"></div>
-          <ul class="sorting_ul">
-            <li <%= "selected" if (@sort == 'views')%> ><a href="<%= articles_path(sort: "views") %>"        >популярности</a></li>
-            <li <%= "selected" if (@sort == 'new')%> ><a href="<%= articles_path(sort: "new") %>"            >дате - от самой новой</a></li>
-            <li <%= "selected" if (@sort == 'old')%> ><a href="<%= articles_path(sort: "old") %>"            >дате - от самой старой</a></li>
-            <li <%= "selected" if (@sort == 'time_less')%> ><a href="<%= articles_path(sort: "time_less") %>">длительности чтения - от<br>наименьшей</a></li>
-            <li <%= "selected" if (@sort == 'time_more')%>  style="border-bottom: none;"><a href="<%= articles_path(sort: "time_more") %>" style="border-radius: 0vw 0vw 0.5vw 0.5vw">длительности чтения - от<br>наибольшей</a></li>
-          </ul>
-        </div>
+<div class="articles">
+  <div class="articles__body container">
+    <div class="articles__header  header_box">
+      <h1 class="articles__title title">Статьи</h1>
+    </div>
+    <div class="articles__row_menu">
+      <div class="articles__column">
+        <h3 class="articles__title-cathegory">Категории</h3>
+        <nav class="cathegory">
+          <input type="checkbox" id="cathegory" style="display: none;">
+          <label for="cathegory">
+            <p class="cathegory__mous" style="padding: 15px 5px; margin: 0px"><%= @category_id_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px"></p>
+            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white)">Категории</h3>
+            <ul class="cathegory__list">
+              <li>
+                <a href="/articles" class="cathegory__link" style="border-top: 1px solid var(--gray);">Все статьи</a>
+              </li>
+              <li class="cathegory__link cathegory__problem" style="padding: 15px 5px; background: var(--white); color: var(--black);">Проблемы<img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px; transform: rotate(-90deg);">
+                <ul class="sub-cathegory__list">
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=7">Невроз и психосоматика</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=8">Тревога</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=15">Психотравмы</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=11">Панические атаки</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=14">Низкая самооценка</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=9" style="border: none">Депрессия и уныние</a></li>
+                </ul>
+              </li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=7">Невроз и психосоматика</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=8">Тревога</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=15">Психотравмы</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=11">Панические атаки</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=14">Низкая самооценка</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=9">Депрессия и уныние</a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=2">Психология отношений</a> </li>
+              <li><a class="cathegory__link" href="/articles?category_id=3">Общая психология</a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=4">Исследования</a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=5">Саморазвитие</a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=6" style="border: none">Для профи</a></li>
+            </ul>
+          </label>
+        </nav>
+      </div>
+      <div class="articles__column">
+        <h3 class="articles__title-cathegory">Сортировать по</h3>
+        <nav class="cathegory">
+          <input type="checkbox" id="sorting" style="display: none;">
+          <label for="sorting">
+            <p class="cathegory__mous" style="padding: 15px 5px; margin: 0px"><%= @sort_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px"></p>
+            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white)">Сортировать по</h3>
+            <ul class="cathegory__list">
+              <li <%= "selected" if (@sort == 'views')%> style="border-top: 1px solid var(--gray);">
+                <a class="cathegory__link" href="<%= articles_path(sort: "views") %>">популярности</a>
+              </li>
+              <li <%= "selected" if (@sort == 'new')%> >
+                <a class="cathegory__link" href="<%= articles_path(sort: "new") %>">дате - от самой новой</a>
+              </li>
+              <li <%= "selected" if (@sort == 'old')%> >
+                <a class="cathegory__link" href="<%= articles_path(sort: "old") %>">дате - от самой старой</a>
+              </li>
+              <li <%= "selected" if (@sort == 'time_less')%> >
+                <a class="cathegory__link" href="<%= articles_path(sort: "time_less") %>">длительности чтения - от<br>наименьшей</a>
+              </li>
+              <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none;">
+                <a class="cathegory__link" href="<%= articles_path(sort: "time_more") %>">длительности чтения - от<br>наибольшей</a></li>
+            </ul>
+          </label>
+        </nav>
       </div>
     </div>
-    <h2 style="width: 15vw; margin: 5.5vw 0px 0vw 0vw; text-align: center; font-size: 1.7vw">Категории</h2>
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; width: 100%; margin-top: 1vw">
-
-		  <%= render partial: 'pages/articles_filters' %>
-
-			<div style="width: 68vw; display: flex; justify-content: space-between; flex-wrap: wrap;">
-			  <%- @articles.each do |article| %>
-			  <%= render partial: 'card', locals: {card: article } %>
-				<% end %>	  		
-	  		<%= paginate @articles, window: 2 %>
-	  	</div>
-	    
-	  </div>
-  	
-  </div> <!-- конец container -->
-</div> <!-- конец pc_content -->
-
-
-
-
-
-
-
-
-
-
-
-<!-- начало моб версии -->
-<div class="mob" style="background: #F7F7F7;">  
-  <h1 style="padding: 10vw 0vw 8vw 0vw; margin: 0vw; text-align: center; font-weight: 800; font-size: 5vw">
-    Статьи
-  </h1>
-  <div class="container">
-    <div style="position: relative; margin-bottom: 5vw; font-size: 2.5vw; line-height: 3vw; float: left;">
-		  <li style="margin: 0px; display: block; background-color: rgb(112 181 148);; border-radius: 4vw;"> 
-		    <input type="checkbox" id="input_catedory" style="height: 8vw; font-size: 4vw; line-height: 5vw; text-decoration: none; background-color: white; border-radius: 1w; display: none">
-		    <label for="input_catedory" id="label_input_catedory" style="margin: 0px; width: 40vw; border-radius: 4vw; border: 2px solid transparent; background-color: rgba(100, 163, 133, 0.9); display: inline-block; box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);  z-index: 10;
-		    transition: 0.2s;">
-		      <div style="display: flex; justify-content: space-around; align-items: center;">
-		        <span style="display: block; font-size: 2.7vw; letter-spacing: 0.1em; font-weight: 700; color: #FFFFFF; text-align: center; padding: 3vw">
-		          Категории
-		        </span>
-		        <img src="<%= asset_url('arrow.svg')%>" alt="стрелка категорий" id="arrow_mob_input" style="width: 2.7vw; padding: 3vw">
-		      </div>
-		    </label>
-        <ul id="category_mob" style="padding-left: 0px !important; width: 40vw; margin: 0vw; z-index: 1">
-          <li><a href="/articles">Все статьи</a></li>
-          <li><a href="/articles?category_id=7">Невроз и психосоматика</a></li>
-          <li><a href="/articles?category_id=8">Тревога</a></li>
-          <li><a href="/articles?category_id=15">Психотравмы</a></li>
-          <li><a href="/articles?category_id=11">Панические атаки</a></li>
-          <li><a href="/articles?category_id=14">Низкая самооценка</a></li>
-          <li><a href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
-          <li><a href="/articles?category_id=9">Депрессия и уныние</a></li>
-          <li><a href="/articles?category_id=2">Психология отношений</a></li>
-          <li><a href="/articles?category_id=3">Общая психология</a></li>
-          <li><a href="/articles?category_id=4">Исследования</a></li>
-    			<li><a href="/articles?category_id=5">Саморазвитие</a></li>
-          <li style="border: none"><a href="/articles?category_id=6">Для профи</a></li>
-        </ul>
-      </li>
-    </div>  <!-- конец катеории -->
-
-    <div style="position: relative; margin-bottom: 5vw; font-size: 2.5vw; line-height: 3vw; float: right;">
-
-      <li style="margin: 0px; display: block; background-color: rgb(112 181 148); border-radius: 4vw;"> 
-        <input type="checkbox" id="input_sorting" style="height: 8vw; font-size: 4vw; line-height: 5vw; text-decoration: none; background-color: white; border-radius: 1w; display: none">
-        <label for="input_sorting" id="label_input_sorting" style="margin: 0px; width: 40vw; border-radius: 4vw; border: 2px solid transparent; background-color: rgba(100, 163, 133, 0.9); display: inline-block; box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.4);  z-index: 10;
-        transition: 0.2s;">
-          <div style="display: flex; justify-content: space-around; align-items: center;">
-            <span style="display: block; font-size: 2.7vw; letter-spacing: 0.1em; font-weight: 700; color: #FFFFFF; text-align: center; padding: 3vw 0vw 3vw 3vw">
-              Сортировать по
-            </span>
-            <img src="<%= asset_url('arrow.svg')%>" id="arrow_mob_input" style="width: 2.7vw; padding: 3vw">
-          </div>
-        </label>
-        <ul id="sorting_mob" style="padding-left: 0px !important; width: 40vw; margin: 0vw; z-index: 1">
-          <li><a href="<%= articles_path(sort: "views") %>">популярности</a></li>
-          <li><a href="<%= articles_path(sort: "new") %>">дате - от самой новой</a></li>
-          <li><a href="<%= articles_path(sort: "old") %>">дате - от самой старой</a></li>
-          <li><a href="<%= articles_path(sort: "time_less") %>">длительности чтения - от<br>наименьшей</a></li>
-          <li style="border: none"><a href="<%= articles_path(sort: "time_more") %>">длительности чтения - от<br>наибольшей</a></li>
-        </ul>
-      </li>
-     </div>  
-  </div> <!-- конец container -->
-  <div style="width: 86vw; display: flex; justify-content: space-around; flex-wrap: wrap; margin: 15vw 7vw 5vw 7vw;">
-  	<%- @articles.each do |article| %>
-	  <%= render partial: 'card', locals: {card: article } %>
-		<% end %>	  		
-		<%= paginate @articles, window: 2 %>
-	</div>
-
-</div> <!-- конец моб версии -->
+    <div class="articles__row">
+      <%- @articles.each do |article| %>
+      <%= render partial: 'card', locals: {card: article } %>
+      <% end %>       
+      <%= paginate @articles, window: 2 %>
+    </div>
+  </div>
+</div> 

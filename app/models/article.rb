@@ -28,7 +28,7 @@ class Article < ActiveRecord::Base
   end
 
   def self.popular(id)
-    where('id != ?', id).order("view_counter DESC").first(3)
+    where('id != ?', id).order("view_counter DESC").first(2)
   end
 
   def light_text

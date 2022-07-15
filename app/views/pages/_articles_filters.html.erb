@@ -13,6 +13,8 @@
       <ul class="sub_category">
         <li><a href="/articles?category_id=7">Невроз и психосоматика</a></li>
         <li><a href="/articles?category_id=8">Тревога</a></li>
+        <li <%= "selected" if (@category_id == '8')%> ><a href="<%= articles_path(category_id: "8") %>" >популярностиA</a></li>
+        <li <%= "selected" if (@sort == 'views')%> ><a href="<%= articles_path(sort: "views") %>"        >популярности</a></li>
         <li><a href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
         <li><a href="/articles?category_id=14">Низкая самооценка</a></li>
         <li><a href="/articles?category_id=15">Психотравмы</a></li>

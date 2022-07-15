@@ -1,77 +1,47 @@
-.pc_content
-  %section.article{style: "background-image: url(#{card.image_file_name}); background-size: cover"}
-    .linear-gradient
-      %div{style: "display: flex; margin: 0vw; width: 100%"}
-        .views
-          %img{src: "#{asset_url('views.svg')}", style:"height: 0.9vw"}
-          %p.views_text
+.article
+  .article__fullscreen.fullscreen
+    .article__fullscreen_content.fullscreen_content.container
+      %div.article__info{style: "display: flex; z-index: 1"}
+        .article__views
+          %svg{viewBox:"0 0 612 438.578"}
+            %g
+              %path{d:"M234.886,219.402c0,39.29,31.824,71.114,71.114,71.114s71.114-31.824,71.114-71.114l0,0 c0-39.29-31.824-71.114-71.114-71.114S234.886,180.112,234.886,219.402z"}
+              %path{d:"M306,0C111.384,0,6.12,219.402,6.12,219.402S112.302,438.804,306,438.804 c194.616,0,299.88-219.402,299.88-219.402S499.698,0,306,0z M306,359.917c-77.602,0-140.515-62.914-140.515-140.515 S228.398,78.887,306,78.887S446.515,141.8,446.515,219.402S383.602,359.917,306,359.917z"}
+          %p
             = card.view_counter
-        .time_read
-          %img{src: "#{asset_url('time-read.svg')}", style:"height: 0.9vw"}
-          %p.time_read_text
+        .article__time-read
+          %svg{viewBox:"0.95 -0.022 10.05 10.05"}
+            %path{d:"M5.944,0.001c-2.747,0-4.994,2.251-4.994,5.003s2.247,5.003,4.994,5.003s4.994-2.251,4.994-5.003 S8.691,0.001,5.944,0.001z M8.241,6.781C8.131,6.96,7.897,7.016,7.718,6.905L6.36,6.068c-0.569-0.351-0.915-0.971-0.915-1.64V2.877 c0-0.207,0.168-0.375,0.375-0.375c0.207,0,0.375,0.168,0.375,0.375v1.287C6.194,4.747,6.5,5.288,7,5.588l1.113,0.669 C8.294,6.366,8.351,6.601,8.241,6.781z"}
+          %p
             = card.reading_time.to_s + " мин"
-        .article_date
-          %img{src: "#{asset_url('article-date.svg')}", style:"height: 0.9vw"}
-          %p.article_date_text
+        .article__date
+          %svg{viewBox:"0 0 18 20"}
+            %path{d:"M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z"}
+          %p
             = card.created_at.strftime("%d %m %Y")
-      %div{style: "width: 100%"}
-        %p.article_category
-          %a{href: "#{articles_path(category_id: card.cathegory_id)}"}
-            = card.cathegory.name if card.cathegory 
-      %h1.article_name
+      %a.article__category{href: "#{articles_path(category_id: card.cathegory_id)}"}
+        = card.cathegory.name if card.cathegory 
+      %h1.article__name{style: "z-index: 1"}
         = card.title
-      .edit
-        - unless current_user.nil?
-          .edit{style: 'clear: both'}
-            = link_to "Редактировать", edit_article_path(card)
-      .tags
+      .article__tags.pc_content{style: "z-index: 1; height: 40px; overflow: hidden;"}
         - card.tags.each do |t|
-          %p.tags_item
-            %a{href: "#{articles_path(tag_name: t)}"}
-              = t
-
-  .container{style: "margin-bottom: 2vw;"}
-    = card.body.html_safe
-
-    .article.tags_all{style: "height: 0vw; margin: 3vw 0vw; width: 86vw;"}
-      - card.tags.each do |t|
-        %p.tags_item
           %a{href: "#{articles_path(tag_name: t)}"}
             = t
-    %h2{style: "margin: 0vw 0vw 1vw 0vw; padding-top: 5vw; text-align: center"} Популярное на сайте
-
-    .pop_articles
-      - @popular.each do |art|
-        = render partial: "articles/card", locals: {card: art}
-
-
-
-
-
-.mob
-  %section.article{style: "background-image: url(#{card.image_file_name}); background-size: cover"}
-    .linear-gradient
-      %div{style: "width: 100%"}
-        %p.article_category
-          %a{href:""}
-            = card.cathegory.name if card.cathegory 
-      %h1.article_name
-        = card.title
-      - unless current_user.nil?
-        %br
-        .edit{style: 'float:right'}
-          = link_to "Редактировать", edit_article_path(card)
-
-  .container{style: "margin-bottom: 2vw;"}
-    = card.body.html_safe
-
-    .article.tags_all{style: "height: 0vw; margin: 3vw 0vw; width: 86vw;"}
-      - card.tags.each do |t|
-        %p.tags_item
-          %a{href:"<%= articles_path(tag_name: t)%>"}
+      .fullscreen__image{style: "background-image: url(#{card.image_file_name});"}
+    
+  %article.article__content
+    .article__body.container
+      = card.body.html_safe 
+  
+      .tags_all
+        - card.tags.each do |t|
+          %a{href: "#{articles_path(tag_name: t)}"}
             = t
-    %h2{style: "font-size: 5vw; margin: 8vw 0vw 4vw 0vw; text-align: center"} Популярное на сайте
-
-    .articles
-      - @popular.each do |art|
-        = render partial: "articles/card", locals: {card: art}
+    
+  .articles{style: "position: relative; background: var(--background-body); z-index: 10; margin-top: -3px;"}
+    .articles__body.container{style: "padding-top: 20px; padding-bottom: 70px;"}
+      .articles__header.header_box{style: "margin-bottom: 7px;"}
+        %h2.articles__title.title Популярное на сайте
+      .articles__row.pop_articles
+        - @popular.each do |art|
+          = render partial: "articles/card", locals: {card: art}

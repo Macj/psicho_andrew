@@ -1,73 +1,33 @@
-<footer class="pc_content" style="background: #383838; height: 12vw;">
-  <div class="container" style="display: flex; justify-content: space-between; height: 9vw; align-items: center;">
-    <div style="width: 45%; display: flex; flex-wrap: wrap; justify-content: space-between;">
-      <div>
-        <p style="margin: 1vw auto"><a href="about.html"class="footer_text">Обо мне</a></p>
-        <p style="margin: 1vw auto"><a href="consultations.html"class="footer_text">Консультации</a></p>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__body">
+      <nav class="footer__menu">
+        <div class="footer__menu-column" style="width: 165px">
+          <div class="footer__menu-item"><a class="footer__link" href="/">Главная</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/about.html">Обо мне</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/contacts.html">Контакты</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/articles.html">Статьи</a></div>
+        </div>
+        <div class="footer__menu-column"  style="width: 260px">
+          <div class="footer__menu-item"><a class="footer__link" href="/individual_consultation.html">Индивидуальные сеансы</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/group_consultation.html">Групповые сеансы</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/reviews.html">Отзывы</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/faq.html">FAQ</a></div>
+        </div>
+        <div class="footer__menu-column" style="width: 170px">   
+          <div class="footer__menu-item"><a class="footer__link" href="/work-with.html">Направления работы</a></div>     
+          <div class="footer__menu-item"><a class="footer__link" href="/methods.html">Методы работы</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/contract.html">Договор</a></div>
+        </div>
+      </nav>
+      <div class="footer__contacts">
+        <a class="footer__contacts_link" href="https://t.me/tkachenko_psychology" target="_blank"><img src="<%= asset_url('icons/telegram.svg')%>" alt="телеграм"></a>
+        <a class="footer__contacts_link" href="viber://chat?number=+380964248025" target="_blank"><img src="<%= asset_url('icons/viber.svg')%>" alt="вайбер"> </a>
+        <a class="footer__contacts_link" href="https://api.whatsapp.com/send?phone=<+380964248025>" target="_blank"><img src="<%= asset_url('icons/whatsapp.svg')%>" alt="вотсап"></a>
+        <a class="footer__contacts_link" href="https://www.facebook.com/tkachenko.psychology" target="_blank"><img src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
+        <a class="footer__contacts_link" href="https://www.instagram.com/tkachenko_psychology" target="_blank"><img src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
       </div>
-      <div>
-        <p style="margin: 1vw auto"><a href="work-with.html"class="footer_text">С чем я работаю</a></p>
-        <p style="margin: 1vw auto"><a href="methods.html"class="footer_text">Мои методы</a></p>
-      </div>
-      <div>
-        <p style="margin: 1vw auto"><a href="services.html"class="footer_text">Услуги</a></p>
-        <p style="margin: 1vw auto"><a href="contract.html"class="footer_text">Договор</a></p>
-      </div>
-      <div>
-        <p style="margin: 1vw auto"><a href="reviews.html"class="footer_text">Отзывы</a></p>
-        <p style="margin: 1vw auto"><a href="articles.html"class="footer_text">Статьи</a></p>
-      </div>
-      <div>
-        <p style="margin: 1vw auto"><a href="contacts.html"class="footer_text">Контакты</a></p>
-        <p style="margin: 1vw auto"><a href="faq.html"class="footer_text">Вопрос-ответ</a></p>
-      </div>
-    </div>
-    <div style="width: 42%; display: flex; justify-content: flex-end;">
-      <a href="https://t.me/tkachenko_psychology" target="_blank"><img style="width: 2.5vw; margin: 0.5vw" src="<%= asset_url('icons/telegram.svg')%>" alt="телеграм"></a>
-      <a href="viber://chat?number=+380964248025" target="_blank"><img style="width: 2.5vw; margin: 0.5vw" src="<%= asset_url('icons/viber.svg')%>" alt="вайбер"></a>
-      <a href="https://api.whatsapp.com/send?phone=<+380964248025>" target="_blank"><img style="width: 2.5vw; margin: 0.5vw" src="<%= asset_url('icons/whatsapp.svg')%>" alt="вотсап"></a>
-      <a href="https://www.facebook.com/tkachenko.psychology" target="_blank"><img style="width: 2.5vw; margin: 0.5vw" src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
-      <a href="https://www.instagram.com/tkachenko_psychology" target="_blank"><img style="width: 2.5vw; margin: 0.5vw 0vw 0.5vw 0.5vw" src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
+      <p class="footer__property">© 2020-2022 Все права защищены</p>
     </div>
   </div>
-  <p style=" font-weight: normal; font-size: 0.8vw; color: #FFF7F6; text-align: center;">© 2020-2021 Все права защищены</p>
 </footer>
-
-
-
-
-
-
-
-<!-- начало моб версии -->
-
-<footer class="mob" style="background: #383838; height: 40vw;">
-  <div class="container" style="display: flex; justify-content: center;">
-    <a href="https://t.me/tkachenko_psychology"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/telegram.svg')%>" alt="телеграм"></a>
-    <a href="viber://chat?number=+380964248025"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/viber.svg')%>" alt="вайбер"></a>
-    <a href="https://api.whatsapp.com/send?phone=<+380964248025>"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/whatsapp.svg')%>" alt="вотсап"></a>
-    <a href="https://www.facebook.com/tkachenko.psychology"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
-    <a href="https://www.instagram.com/tkachenko_psychology"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
-  </div>
-  <div class="container" style="display: flex; justify-content: space-between; height: 9vw; align-items: center; flex-wrap: wrap;">
-    <div>
-      <p style="margin-bottom: 4vw"><a href="about.html"class="footer_text_mob">Обо мне</a></p>
-      <p style="margin-bottom: 4vw"><a href="articles.html"class="footer_text_mob">Статьи</a></p>
-    </div>
-    <div>
-      <p style="margin-bottom: 4vw"><a href="work-with.html"class="footer_text_mob">С чем я работаю</a></p>
-      <p style="margin-bottom: 4vw"><a href="consultations.html"class="footer_text_mob">Консультации</a></p>
-    </div>
-    <div>
-      <p style="margin-bottom: 4vw"><a href="services.html"class="footer_text_mob">Услуги</a></p>
-      <p style="margin-bottom: 4vw"><a href="reviews.html"class="footer_text_mob">Отзывы</a></p>
-    </div>
-    <div>
-      <p style="margin-bottom: 4vw"><a href="faq.html"class="footer_text_mob">Вопрос-ответ</a></p>
-      <p style="margin-bottom: 4vw"><a href="contacts.html"class="footer_text_mob">Контакты</a></p>
-    </div>
-  </div>
-  <p style="font-weight: normal; font-size: 2vw; line-height: 1vw; color: #FFF7F6; text-align: center; margin-top: 12vw">© 2020-2021 Все права защищены</p>
-</footer>
-
-<!-- конец моб версии -->

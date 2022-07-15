@@ -12,496 +12,293 @@
   <meta property="og:image" content="http://tkachenkoandrey.com/assets/Tkachenko-Andrey-0ccd9afe47bf51522e172c3619a0dd1b97986605188615048acbc034288baecf.jpg">
 <% end %>
 
-<div class="pc_content">
-  <div class="container">
-    <h1 style="text-align: center; font-weight: 800; font-size: 3vw; margin: 5vw 0px 5vw 0vw">Обо мне</h1>
-    <div style="display: flex; justify-content: space-between;">
-      <div style="width: 49vw; margin-right: 3vw">
-        <h2 style="margin: 0vw">Ткаченко Андрей</h2>
-        <p style="text-align: justify;">
-          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я практикующий психолог с 5-ти летним стажем, предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).
-        </p>
-        <h2 style="margin: 3vw 0vw 0vw 0vw">Моя задача - сделать вас сильными</h2>
-        <p style="text-align: justify;">
-          Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток.
-        </p>
-        <p style="text-align: justify;">
-          Во время консультаций мы нарабатываем те навыки мышления и поведения, которые позволят вам автоматически избавиться от накопленных проблем. Данные навыки останутся с вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире. 
-        </p>
-      </div>
-      <img src="<%= asset_url('Tkachenko-Andrey-certified-psychologist.jpg')%>" alt="Ткаченко Андрей психолог обо мне" style="height: 28vw">
-    </div>
 
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 5vw 0vw 2vw 0vw">Мое образование</h2>
-    <div style="display: flex; justify-content: space-around; align-items: center">
-      <img src="<%= asset_url('education.svg')%>" alt="образование" style="height: 16vw">
-      <div style="width: 40vw">
-        <p style="text-align: justify">
-          Я окончил Днепровский Национальный Университет по специальности "Психология", изучил консультирование в World Association for Positive Psychotherapy, а также прошел ряд курсов иных методов психотерапии (КПТ, АСТ, гипноз) для полноты профессиональных знаний и навыков.
-        </p>
-        <p style="text-align: justify;">
-          Безусловно, годы практики нужны и важны в психологическом ремесле, однако теоретическая база ничуть не меньше повлияла на становление меня как специалиста.
-        </p>
+<div class="about">
+  <div class="about-me">
+    <div class="about-me__body container">
+      <div class="about-me__header  header_box" style="margin: 0px 0px 7px 0px">
+        <h1 class="about-me__title title">Обо мне</h1>
       </div>
-    </div>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 7vw 0px 2vw 0vw">Дипломы и сертификаты</h2> 
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 15vw 1vw 15vw;">Подтверждающие мои компетенции</p>
-
-    <div class="gallery" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-      <div style="width: 15vw;">
-        <a href="<%= asset_url('certificates/1.png')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate1.png')%>" title="Диплом психолога" alt="Диплом психолога ДНУ">
-        </a>
-        <p>Днепропетровский национальный университет - Специальность “Психология”</p>
-      </div>
-      <div>
-        <a href="<%= asset_url('certificates/6.jpg')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate6.jpg')%>" title="Диплом психолога-консультанта" alt="Диплом психолога World Association for Positive Psychotherapy">
-        </a>
-        <p>Психолог-консультант в методе Позитивной Психотерапии - World Association for Positive Psychotherapy</p>
-      </div>
-      <div>
-        <a href="<%= asset_url('certificates/2.png')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate2.png')%>" title="Сертификат обучения консультированию" alt="Сертификат социально-психологическое консультирование">
-        </a>
-        <p>Социально-психологическое консультирование - Социально-психологическая служба ДНУ</p>
-      </div>
-      <div>
-        <a href="<%= asset_url('certificates/3.png')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate3.png')%>" title="Сертификат обучения техникам стрессоустойчивости" alt="Сертификат техники стрессоустойчивости, резильентности">
-        </a>
-        <p>Технологии социально-психологической резильентности - Социально-психологическая служба ДНУ</p>
-      </div>
-      <div>
-        <a href="<%= asset_url('certificates/4.png')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate4.png')%>" title="Сертификат обучения методу СМД" alt="Сертификат СМД">
-        </a>
-        <p>Системно-мыследеятельностный подход - Социально-псиологическая служба ДНУ</p>
-      </div>
-      <div style="padding-left: 0px">
-        <a href="<%= asset_url('certificates/5.jpg')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate5.jpg')%>" title="Сертификат обучения детской психологии" alt="Сертификат детский психолог Мир Инсайт">
-        </a>
-        <p>Воспитание детей в стиле коучинг - Центр семейной психологии "Мир Инсайт"</p>
-      </div>
-      <div>
-        <a href="<%= asset_url('certificates/7.jpg')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate7.jpg')%>" title="Сертификат массажиста" alt="Сертификат массажист">
-        </a>
-        <p>Массажист. Ароматерапевтический, косметический и массаж для похудения - Первые Региональные Курсы</p>
-      </div>
-      <div style="width: 15vw; padding-left: 0px">
-        <a href="<%= asset_url('certificates/8.png')%>" data-lightbox="test">
-          <img src="<%= asset_url('certificates/certificate8.png')%>" title="Сертификат обучения работе с последствиями стресса" alt="Сертификат Puselik foundation">
-        </a>
-        <p>Социальная адаптация ветеранов - ГО "Простір людини" Puselik foundation</p>
-      </div>   
-    </div>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 5vw 0vw 2vw 0vw">Мой путь</h2>
-    <div style="display: flex; justify-content: space-around; align-items: center">
-      <div style="width: 40vw">
-        <p style="text-align: justify;">
-          Я вырос в семье медработников и всегда хотел стать врачем, но видел, что доктора не всегда могут помочь. Поэтому я долго шел к тому, чтобы научиться лечить людей словом, вместо уколов и таблеток. Для начала, я прошел свою личную терапию, получил официальное психологическое образование и обучился нескольким современным направлениям психотерапии. 
-        </p>
-        <p style="text-align: justify;">
-          Чтоб закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил лекции и тренинги, индивидуальные консультации и онлайн-марафоны.
-        </p>
-      </div>
-      <img src="<%= asset_url('my-walk.svg')%>" alt="мой путь в психологию" style="height: 16vw">
-    </div>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 8vw 0px 3vw 0vw">Опыт работы</h2> 
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center">
-
-      <div style="width: 21%; padding: 1vw;">
-        <img src="<%= asset_url('child-psychologist.svg')%>" alt="детский психолог" style="width: 80%; margin: 10% 10% 0% 10%">  
-        <h3 class="service_name" style="margin: 1vw 0vw 0.7vw 0vw">Детский психолог</h3>
-        <span style="font-size: 0.9vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #454554; border-radius: 0.4vw; line-height: 1.8vw">2016 фев - 2018 авг</span>
-        <p class="service_text">Центр семейной психологии "Мир Инсайт"</p>
-      </div>
-
-      <div style="width: 21%; padding: 1vw;">
-        <img src="<%= asset_url('psychologist-lecturer.svg')%>" alt="психолог-лектор" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name" style="margin: 1vw 0vw 0.7vw 0vw">Психолог-лектор</h3>
-        <span style="font-size: 0.9vw; font-weight: 600; color: #FFFFFF; margin-top: 0.5vw; display: block; background-color: #454554; border-radius: 0.4vw; line-height: 1.8vw">2017 янв - 2019 янв</span>
-        <p class="service_text">Центр практической психологии "Диалог"</p>
-      </div>
-
-      <div style="width: 21%; padding: 1vw;">
-        <img src="<%= asset_url('psychologist-expert.svg')%>" alt="психолог-эксперт" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name" style="margin: 1vw 0vw 0.7vw 0vw">Психолог-эксперт</h3>
-        <span style="font-size: 0.9vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #454554; border-radius: 0.4vw; line-height: 1.8vw">2018 ноя - 2019 май</span>
-        <p class="service_text">Женский журнал clutch.ua,<br>форум dnevniki-pifagora.ru</p>
-      </div>
-
-      <div style="width: 21%; padding: 1vw;">
-        <img src="<%= asset_url('practicing-psychologist.svg')%>" alt="практикующий психолог" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name" style="margin: 1vw 0vw 0.7vw 0vw">Практикующий психолог</h3>
-        <span style="font-size: 0.9vw; font-weight: 600; color: #FFFFFF; display: block; background-color: #454554; border-radius: 0.4vw; line-height: 1.8vw">2018 сен - сегодня</span>
-        <p class="service_text">Частная практика</p>
-      </div>
-
-    </div>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 7vw 0px 3vw 0vw">Результаты моей работы на примерах</h2> 
-    <div class="slider" id="w_results">
-      <div class="slider__wrapper" style="display: flex;">
-        <div class="slider__item" style="flex: 0 0 50%; max-width: 50%;">
-          <section class="review_box" style="width: 29.6vw; height: 34vw; background-color: #FFFFFF; padding: 2vw 3vw">
-            <h3 style="margin: 0vw 0vw 0.5vw 0vw; font-size: 1.1vw">Генерализованное тревожное расстройство</h3>
-            <span style="font-size: 0.9vw">Мария - 20 лет</span>
-            <p style="text-align: left; font-size: 0.9vw; text-align: justify">Главный запрос терапии был - проблемы в отношениях. Неумение строить и сохранять длительные интимные отношения с противоположным полом.<br><br>
-            На шестой консультации я выявил у клиентки неочевидное Генерализованное тревожное расстройство. Девушка не могла спать, мысль о предстоящем "волнительном” событии вводило ее в состояние паники, жара, судорог, проблем с дыханием.<br><br>
-            Я применил когнитивно-поведенческую терапию: составил личный опросник для фиксации результатов, мы вместе проработали тревожные мысли, улучшили эмоциональный интеллект, обучились навыкам осознанности и принятия, и после полу года клиентка счастливо и самостоятельно живет свою жизнь. Перестала тревожится, улучшилось качество ее сна и, интересный факт, в данный момент она находится в серьезных близких отношениях.<br><br>
-            Видео-отзыв клиентки вы можете посмотреть <a href="reviews.html" style="border-bottom: 1px solid currentColor; font-weight: 700">здесь</a> 
-            </p>
-          </section>
+      <div class="about-me__row">
+        <div class="about-me__column_1">
+          <div class="about-me__item">
+            <img class="about-me__foto pc" src="<%= asset_url('Tkachenko-Andrey-certified-psychologist.jpg')%>" alt="Ткаченко Андрей психолог">
+            <img class="about-me__foto mob" src="<%= asset_url('Andrey-Tkachenko-certified-psychologist.jpg')%>" alt="Ткаченко Андрей психолог">
+          </div>
         </div>
-        <div class="slider__item" style="flex: 0 0 50%; max-width: 50%;">
-          <section class="review_box" style="width: 29.6vw; height: 34vw; background-color: #FFFFFF; padding: 2vw 3vw">
-            <h3 style="margin: 0vw 0vw 0.5vw 0vw; font-size: 1.1vw">Ипохондрия</h3>
-            <span style="font-size: 0.9vw">Светлана - 37 лет</span>
-            <p style="text-align: left; font-size: 0.9vw; text-align: justify">Основная проблема - повторяющиеся тревожные мысли о своем здоровьи, общее состояние напряжения.<br><br>
-            На первой диагностической консультации мы выстроили доверительные отношения, разобрали массу примеров тревожных мыслей, сформировали личный опросник для фиксации результатов.<br><br>
-            Я применил терапию АСТ и элементы из КПТ: сделали декатастрофизацию страхов, сформировали конструктивные убеждения, обучились технике принятия эмоций. Далее, мы вели дневник, таблицу позицивных изменений и АВС-схему (клиентка самостоятельно научилась анализировать тревожные события в ее жизни, а мне лишь оставалось проверять домашнее задание).<br><br>
-            В итоге, тревожность ушла, появились полезные навыки самоанализа и стрессоустойчивости.<br><br>
-            Видео-отзыв клиентки вы можете посмотреть <a href="reviews.html" style="border-bottom: 1px solid currentColor; font-weight: 700">здесь</a> 
-            </p>
-          </section>
-        </div>
-        <div class="slider__item" style="flex: 0 0 50%; max-width: 50%;">
-          <section class="review_box" style="width: 29.6vw; height: 34vw; background-color: #FFFFFF; padding: 2vw 3vw">
-            <h3 style="margin: 0vw 0vw 0.5vw 0vw; font-size: 1.1vw">Панические атаки</h3>
-            <span style="font-size: 0.9vw">Богдан - 29 лет</span>
-            <p style="text-align: left; font-size: 0.9vw; text-align: justify">Главным запросом терапии была проблема с внезапными приступами страха, учащенный пульс, удушье, ощущение, что сильно бьется сердце.<br><br>
-            На первой консультации я провел диагностику и проанализировал начало ПА. Им оказался сонный паралич. Также, выявил стандартный набор страхов: "а вдруг умру / опозорюсь / сойду с ума".<br><br>
-            Я предпринял ряд действий метакогнитивной терапии: мы проанализировали объективность "опасности" ПА, научились не обращать внимания на возникающее беспокойство, откладывать тревогу, сформировали конструктивные убеждения о "неконтролируемости" и "опасности" страха, развили навык принятия эмоций.<br><br>
-            Прошло пол года, клиент чувствует себя хорошо, благодарит меня за проделанную работу.<br><br>Видео-отзыв клиента вы можете посмотреть <a href="reviews.html" style="border-bottom: 1px solid currentColor; font-weight: 700">здесь</a> 
-            </p>
-          </section>
-        </div>
-        <div class="slider__item" style="flex: 0 0 50%; max-width: 50%;">
-          <section class="review_box" style="width: 29.6vw; height: 34vw; background-color: #FFFFFF; padding: 2vw 3vw">
-            <h3 style="margin: 0vw 0vw 0.5vw 0vw; font-size: 1.1vw">Низкая самооценка</h3>
-            <span style="font-size: 0.9vw">Михаил - 28 лет</span>
-            <p style="text-align: left; font-size: 0.9vw; text-align: justify">Клиент пришел на консультацию, как он сказал: "познакомиться и понять, сможет ли он довериться мне, как психологу". В неспешном диалоге, он начал рассказывать всё больше о своей ситуации. Оказалось, что он сейчас разводится с женой и рад этому: "она жутко издевалась надо мной, мучала, доводила до безумия, что я даже пошел к психиатру за таблетками", "хочу повысить самооценку, я всегда был чувствительный, у меня сильно религиозная семья, меня воспитывали в основном кнутом".<br><br>
-            Для лечения психотравм на 2-7 консультациях я проводил техники гипнотерапии без гипноза, потому что клиент был против "внушений", он их боялся. Такой подход оказался сложнее обычного, но в совокупности с Позитивной психотерапией и Майндфулнесс был достигнут результат: старые воспоминания о наказаниях, публичных унижениях родителей и сверстников были переработаны психикой и более не вызывали сильных негативных эмоций, клиент начал говорить громче, ушел ком в горле, изменилось отношение к себе и своим мыслям.
-            </p>
-          </section>
-        </div>
-        <div class="slider__item" style="flex: 0 0 50%; max-width: 50%;">
-          <section class="review_box" style="width: 29.6vw; height: 34vw; background-color: #FFFFFF; padding: 2vw 3vw">
-            <h3 style="margin: 0vw 0vw 0.5vw 0vw; font-size: 1.1vw">Депрессия</h3>
-            <span style="font-size: 0.9vw">Яна - 33 года</span>
-            <p style="text-align: left; font-size: 0.9vw; text-align: justify">Пришла в печальном состоянии: полный пессимизм, заторможенность, отсутствие сил. На фоне родов, проблем в работе и отношениях у клиентки накопилось много невысказанной обиды и невыраженной злости. Психиатр выписал антидепрессанты и мы начали работу.<br><br>
-            На первых 3-х консультациях я помогал ей осознавать свои чувства, проявлять злость, изменить отношение к образу себя, перестать себя жалеть и составить таблицу "поведенческой активации" - постепенный план увеличения физических нагрузок и реализации действий приносящих удовольствие.<br><br>
-            На 4-8 сеансах работа состояла в поддержке, корректировки "поведенческой активации" и в работе с убеждениями "я не смогу", "будущего нет", "жизнь ужасна", методом КПТ мы анализировали достоверность и причину возникновения подобных мыслей, таким образом уменьшая веру в них. Техниками АСТ я научил принимать эмоции и останавливать бесполезные размышления. В итоге, ушел пессимизм, появились силы и уверенность в будущем.
-            </p>
-          </section>
-        </div>
-        <div class="slider__item" style="flex: 0 0 50%; max-width: 50%;">
-          <section class="review_box" style="width: 29.6vw; height: 34vw; background-color: #FFFFFF; padding: 2vw 3vw">
-            <h3 style="margin: 0vw 0vw 0.5vw 0vw; font-size: 1.1vw">Невроз, психотравмы</h3>
-            <span style="font-size: 0.9vw">Ярослав - 27 лет</span>
-            <p style="text-align: left; font-size: 0.9vw; text-align: justify">Основная проблема - постоянная тревога и воспоминания о ссоре с другом 2-х летней давности: "я уволился с работы, перехал в другую страну, изменил свой образ жизни, но воспоимнания не дают покоя".<br><br>
-            На первой консультации я провел диагностику, выявил причину проблемы (когда друг назвал его "ненормальным", у клиента возникла ассоциация со своим папой-алкоголиком, на которого он боялся стать похожим), объяснил клиенту механизм работы его воспоминаний и методы работы с ними, клиенту полегчало.<br><br>
-            На 2-5 сеансах я проводил гипнотерапию: вместе мы нашли и перепрожили детские психотравмы (насилие в семье, измены, крики) и воспоминания перестали докучать.<br><br>
-            На 6-м сеансе я уменьшил тревогу техниками Майнлфулнесс: я научил клиента медитациям, показал как воспринимать мысли отстраненно, не вовликаться к них. Это усилило терапевтический эффект гипнотерапии.
-            </p>
-          </section>
+        <div class="about-me__column_2">
+          <div class="about-me__item">
+            <h2 class="about-me__name">Ткаченко Андрей</h2>
+            <p class="about-me__text">Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я практикующий психолог. 6 лет предоставляю услуги психологического консультирования и психотерапии. Имею официальное образование, являюсь членом Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).</p>
+            <h3 class="about-me__subtitle">Моя задача - сделать вас сильными</h3>
+            <p class="about-me__text">Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток.</p>
+            <p class="about-me__text" style="margin-bottom: 0px;">Во время консультаций мы нарабатываем те навыки мышления и поведения, которые позволят вам автоматически избавиться от накопленных проблем. Данные навыки останутся с вами на всю жизнь и помогут решать проблемы в нашем быстроменяющемся мире.</p>
+          </div>
         </div>
       </div>
-      <a class="slider__control slider__control_left" href="#" role="button"></a>
-      <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
     </div>
+  </div>
 
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 8vw 0px 2vw 0vw">Отзывы моих клиентов</h2> 
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 3vw 0vw;">
-      Что о работе со мной говорят клиенты, с которыми я провел одну консультацию<br>или полноценный курс психотерапии
-    </p>
 
-    <%= render partial: "/new/review"%>
 
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 3vw 3vw 8vw 3vw">
-      Больше мнений о моей работе и видео-отзывы вы найдете в закладке <a href="reviews.html" style="border-bottom: 1px solid currentColor;">Отзывы</a>
-    </p>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 8vw 0px 2vw 0vw">Запись на консультацию</h2> 
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом.<br>Контакты вы найдете 
-      <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
-    </p>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8vw">
-      <img src="<%= asset_url('form.svg')%>" style="width: 40vw">
-      <%= render partial: "/new/form"%>
+  <div class="education">
+    <div class="education__body container">
+      <div class="articles__header  header_box">
+        <h2 class="articles__title title">Мое образование</h2>
+        <p class="experience__subtitle subtitle">Я окончил Днепровский Национальный Университет по специальности "Психология", изучил консультирование в World Association for Positive Psychotherapy, а также прошел ряд курсов иных методов психотерапии для полноты профессиональных знаний и навыков</p>
+      </div>
+      <div class="education__gallery gallery">
+      <a href="<%= asset_url('certificates/Diploma.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/Diploma.jpg')%>" title="Диплом психолога" alt="Диплом психолога ДНУ">
+      </a>
+      <a href="<%= asset_url('certificates/WAPP.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/WAPP.jpg')%>" title="Диплом психолога-консультанта" alt="Диплом психолога World Association for Positive Psychotherapy">
+      </a>
+      <a href="<%= asset_url('certificates/Consultancy.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/Consultancy.jpg')%>" title="Сертификат обучения консультированию" alt="Сертификат социально-психологическое консультирование">
+      </a>
+      <a href="<%= asset_url('certificates/Resilience.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/Resilience.jpg')%>" title="Сертификат обучения техникам стрессоустойчивости" alt="Сертификат обучения техникам стрессоустойчивости (резильентности)">
+      </a>
+      <a href="<%= asset_url('certificates/STA.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/STA.jpg')%>" title="Сертификат обучения методу СМД" alt="Сертификат СМД">
+      </a>
+      <a href="<%= asset_url('certificates/Insight.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/Insight.jpg')%>" title="Сертификат обучения работы с детьми" alt="Сертификат детский психолог Мир Инсайт">
+      </a>
+      <a href="<%= asset_url('certificates/Puselik.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/Puselik.jpg')%>" title="Сертификат обучения работе с последствиями стресса" alt="Сертификат Puselik foundation">
+      </a>
+      <a href="<%= asset_url('certificates/VSPU.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/VSPU.jpg')%>" title="Сертификат обучения кризисной психологической помощи" alt="Сертификат обучения психологической помощи военного времени">
+      </a>
+      <a href="<%= asset_url('certificates/ASSYST.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/ASSYST.jpg')%>" title="Сертификат обучения работы с острым стрессом" alt="Сертификат обучения работы с острым стрессом методом ASSYST">
+      </a>
+      <a href="<%= asset_url('certificates/ILDC.jpg')%>" data-lightbox="test">
+        <img src="<%= asset_url('certificates/ILDC.jpg')%>" title="Сертификат обучения организации и проведения групп поддержки" alt="Сертификат обучения проведению групп поддержки">
+      </a>
+      </div>
     </div>
-
-  </div> <!-- Конец  container -->
-</div>  <!-- конец пк версии -->
+  </div>
 
 
 
+  <div class="experience">
+    <div class="experience__body container">
+      <div class="experience__header header_box ">
+        <h2 class="experience__title title">Опыт работы</h2>
+        <p class="experience__subtitle subtitle">Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил лекции и тренинги, индивидуальные консультации и онлайн-марафоны.</p>
+      </div>
+      <div class="experience__row">
+        <div class="experience__column">
+          <div class="experience__item">
+            <h3 class="experience__name">Детский психолог</h3>
+            <p class="experience__info">2016 фев - 2018 авг</p>
+            <p class="experience__text">Центр семейной психологии "Мир Инсайт"</p>
+          </div>
+        </div>
+        <div class="experience__column">
+          <div class="experience__item">
+            <h3 class="experience__name">Психолог-лектор</h3>
+            <p class="experience__info">2017 янв - 2019 янв</p>
+            <p class="experience__text">Центр практической психологии "Диалог"</p>
+          </div>
+        </div>
+        <div class="experience__column">
+          <div class="experience__item">
+            <h3 class="experience__name">Психолог-эксперт</h3>
+            <p class="experience__info">2018 ноя - сегодня</p>
+            <p class="experience__text">Женский журнал clutch.ua, Международный Центр Развития и Лидерства</p>
+          </div>
+        </div>
+        <div class="experience__column">
+          <div class="experience__item">
+            <h3 class="experience__name">Практикующий психолог</h3>
+            <p class="experience__info">2018 сен - сегодня</p>
+            <p class="experience__text">Частная практика</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="results pc">
+    <div class="results__body container">
+      <div class="results__header header_box">
+        <h2 class="results__title title">Результаты моей работы на примерах</h2>
+      </div>
+      <div class="text-reviews" id="w_results">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">  
+                  <h3 class="review__name">Генерализованное тревожное расстройство</h3>
+                  <p class="review__text">
+                    Девушка, 20 лет. Главный запрос терапии был - проблемы в отношениях. Неумение строить и сохранять длительные интимные отношения с противоположным полом.<br><br>
+                    На шестой консультации я выявил у клиентки неочевидное Генерализованное тревожное расстройство. Девушка не могла спать, мысль о предстоящем "волнительном” событии вводило ее в состояние паники, жара, судорог, проблем с дыханием.<br><br>
+                    Я применил когнитивно-поведенческую терапию: составил личный опросник для фиксации результатов, мы вместе проработали тревожные мысли, улучшили эмоциональный интеллект, обучились навыкам осознанности и принятия, и после полу года клиентка счастливо и самостоятельно живет свою жизнь. Перестала тревожится, улучшилось качество ее сна и, интересный факт, в данный момент она находится в серьезных близких отношениях.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name">Ипохондрия</h3>
+                  <p class="review__text">
+                    Женщина, 37 лет. Основная проблема - повторяющиеся тревожные мысли о своем здоровье, общее состояние напряжения.<br><br>
+                    На первой диагностической консультации мы выстроили доверительные отношения, разобрали массу примеров тревожных мыслей, сформировали личный опросник для фиксации результатов.<br><br>
+                    Я применил терапию АСТ и элементы из КПТ: сделали декатастрофизацию страхов, сформировали конструктивные убеждения, обучились технике принятия эмоций. Далее, мы вели дневник, таблицу позитивных изменений и АВС-схему (клиентка самостоятельно научилась анализировать тревожные события в ее жизни, а мне лишь оставалось проверять домашнее задание).<br><br>
+                    В итоге, тревожность ушла, появились полезные навыки самоанализа и стрессоустойчивости.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name">Панические атаки</h3>
+                  <p class="review__text">
+                    Мужчина, 29 лет. Главным запросом терапии была проблема с внезапными приступами страха, учащенный пульс, удушье, ощущение, что сильно бьется сердце.<br><br>На первой консультации я провел диагностику и проанализировал начало ПА. Им оказался сонный паралич. Также, выявил стандартный набор страхов: "а вдруг умру / опозорюсь / сойду с ума".<br><br>Я предпринял ряд действий метакогнитивной терапии: мы проанализировали объективность "опасности" ПА, научились не обращать внимания на возникающее беспокойство, откладывать тревогу, сформировали конструктивные убеждения о "неконтролируемости" и "опасности" страха, развили навык принятия эмоций.<br><br>Прошло пол года, клиент чувствует себя хорошо, благодарит меня за проделанную работу.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name">Низкая самооценка</h3>
+                  <p class="review__text">
+                    Мужчина, 28 лет. Клиент пришел на консультацию, как он сказал: "познакомиться и понять, сможет ли он довериться мне, как психологу". В неспешном диалоге, он начал рассказывать всё больше о своей ситуации. Оказалось, что он сейчас разводится с женой и рад этому: "она жутко издевалась надо мной, мучала, доводила до безумия, что я даже пошел к психиатру за таблетками", "хочу повысить самооценку, я всегда был чувствительный, у меня сильно религиозная семья, меня воспитывали в основном кнутом".<br><br>
+                    Для лечения психотравм на 2-7 консультациях я проводил техники гипнотерапии без гипноза, потому что клиент был против "внушений", он их боялся. Такой подход оказался сложнее обычного, но в совокупности с Позитивной психотерапией и Майндфулнесс был достигнут результат: старые воспоминания о наказаниях, публичных унижениях родителей и сверстников были переработаны психикой и более не вызывали сильных негативных эмоций, клиент начал говорить громче, ушел ком в горле, изменилось отношение к себе и своим мыслям.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name">Депрессия</h3>
+                  <p class="review__text">
+                    Женщина, 33 года. Пришла в печальном состоянии: полный пессимизм, заторможенность, отсутствие сил. На фоне родов, проблем в работе и отношениях у клиентки накопилось много невысказанной обиды и невыраженной злости. Психиатр выписал антидепрессанты и мы начали работу.<br><br>
+                    На первых 3-х консультациях я помогал ей осознавать свои чувства, проявлять злость, изменить отношение к образу себя, перестать себя жалеть и составить таблицу "поведенческой активации" - постепенный план увеличения физических нагрузок и реализации действий приносящих удовольствие.<br><br>
+                    На 4-8 сеансах работа состояла в поддержке, корректировки "поведенческой активации" и в работе с убеждениями "я не смогу", "будущего нет", "жизнь ужасна", методом КПТ мы анализировали достоверность и причину возникновения подобных мыслей, таким образом уменьшая веру в них. Техниками АСТ я научил принимать эмоции и останавливать бесполезные размышления. В итоге, ушел пессимизм, появились силы и уверенность в будущем.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name">Невроз, психотравмы</h3>
+                  <p class="review__text">
+                    Мужчина, 27 лет. Основная проблема - постоянная тревога и воспоминания о ссоре с другом 2-х летней давности: "я уволился с работы, перехал в другую страну, изменил свой образ жизни, но воспоминания не дают покоя".<br><br>
+                    На первой консультации я провел диагностику, выявил причину проблемы (когда друг назвал его "ненормальным", у клиента возникла ассоциация со своим папой-алкоголиком, на которого он боялся стать похожим), объяснил клиенту механизм работы его воспоминаний и методы работы с ними, клиенту полегчало.<br><br>
+                    На 2-5 сеансах я проводил гипнотерапию: вместе мы нашли и перепрожили детские психотравмы (насилие в семье, измены, крики) и воспоминания перестали докучать.<br><br>
+                    На 6-м сеансе я уменьшил тревогу техниками Майнлфулнесс: я научил клиента медитациям, показал как воспринимать мысли отстраненно, не вовлекаться к них. Это усилило терапевтический эффект гипнотерапии.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+      </div>
+      <%= render partial: "/new/slider"%>
+      <script type="text/javascript">
+        var slider = multiItemSlider('w_results')
+      </script>
+    </div>
+  </div>
 
 
 
+  <div class="reviews">
+    <div class="reviews__body container">
+      <div class="reviews__header header_box">
+        <h2 class="reviews__title title">Отзывы</h2>
+      </div>
+
+      <%= render partial: "/new/review"%>
+
+    <div class="video-reviews" id="w_video">
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZARsaKAtUcE" frameborder="0" showinfo="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IBAo8tFKcPU" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7AsF2wwtl88" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KeSHTC-NdP8" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sfScVNRsE7o" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M3bIAkj8g2I" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zt6S3vXjCNM" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+          <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+
+        <%= render partial: "/new/slider"%>
+        <script type="text/javascript">
+            var slider = multiItemSlider('w_video')
+        </script>
+    </div>
+  </div>
 
 
 
+  <div class="sign-up">
+    <div class="sign-up__body container">
+      <div class="sign-up__item">
+        <h2 class="sign-up__title title" id="client_form">Запись на консультацию</h2>
+        <p class="sign-up__text">Напишите мне в мессенджер. В течение 24 часов я вам отвечу, проанализирую вашу ситуацию и мы вместе согласуем наши дальнейшие действия.</p>
+        <div class="sign-up__btn-row">
+          <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
+          <a class="btn btn_contact" href="viber://chat?number=+380964248025" target="_blank">Viber</a>
+          <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
+        </div>
+        <p class="sign-up__text pc">
+          По всем вопросам, звонить: +380964248025<br>Пн-Вс 10:00-20:00
+        </p>
+      </div>
+    </div>
+  </div>
 
   <%= javascript_include_tag  asset_url('lightbox-plus-jquery.js') %>
+</div>
 
 
 
 
-
-
-
-<!-- начало моб версии -->
-    <div class="mob" style="background: #F7F7F7;">
-      <img src="<%= asset_url('Andrey-Tkachenko-certified-psychologist.jpg')%>" alt="Ткаченко Андрей психолог обо мне" style="width: 100%">
-      <div style="background: rgba(60, 59, 59, 0.95); /background: rgba(255, 239, 232, 0.1); backdrop-filter: blur(3px); position: absolute; top: 93vw; width: 100%;">
-        <h1 style="font-weight: 800; font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; margin: 4vw; text-align: center;">
-          Обо мне
-        </h1>
-      </div>
-      <div style="background: rgba(60, 59, 59, 0.95); /background: rgba(255, 239, 232, 0.1); /background: rgba(255, 239, 232, 0.1); /opacity: 0.5; backdrop-filter: blur(3px); position: absolute; top: 115vw; width: 100%">
-        <p class="container" style="font-weight: normal; font-size: 3.5vw; line-height: 5vw; color: #FFF7F6; text-align: center; margin: 4vw 7vw;">
-          Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог.
-        </p>
-      </div>
-      <div style="margin: 5vw 7vw; text-align: center;">
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).
-        </p>
-      </div>
-      <div style="width: 86vw; background-color: #383838; border-radius: 1.5vw; margin: 5vw 7vw;">
-        <p style="font-size: 4.6vw; line-height: 6vw; font-weight: 600; color: white; text-align: center; padding: 4vw">
-          Моя задача - сделать вас сильными!
-        </p>        
-      </div>
-      <div style="margin: 5vw 7vw; text-align: center;">
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток.
-        </p>
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Во время консультаций мы нарабатываем те навыки мышления и поведения, которые позволят вам автоматически избавиться от накопленных проблем. Данные навыки останутся с вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
-        </p>
-        <h2 style="font-size: 5vw; line-height: 6vw; font-weight: 700; margin-top: 10vw; margin-bottom: 2vw; text-align: center;">
-          Мое образование
-        </h2>
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Я окончил Днепровский Национальный Университет по специальности "Психология", изучил консультирование в World Association for Positive Psychotherapy, а также прошел ряд курсов иных методов психотерапии (КПТ, АСТ, гипноз) для полноты профессиональных знаний и навыков.
-        </p>
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Безусловно, годы практики нужны и важны в психологическом ремесле, однако теоретическая база ничуть не меньше повлияла на становление меня как специалиста.
-        </p>
-        <img src="<%= asset_url('education.svg')%>" alt="образование" style="width: 86vw;">
-        <h2 style="font-size: 5vw; line-height: 6vw; font-weight: 700; margin-top: 10vw; margin-bottom: 4vw; text-align: center;">
-          Дипломы и сертификаты
-        </h2>
-        <div style="width: 85vw; text-align: center;">
-          <a href="<%= asset_url('certificates/1.png')%>" data-lightbox="test">
-            <img src="<%= asset_url('certificates/certificate1.png')%>" style="width: 56vw" title="Диплом психолога" alt="Сертификат ДНУ">
-          </a>
-          <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Днепропетровский национальный университет - Специальность “Психология”</p>
-        </div>
-        <div style="font-size: 3vw; line-height: 3.8vw; font-weight: 600">
-          <div>
-            <a href="<%= asset_url('certificates/6.jpg')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate6.jpg')%>" style="width: 100%" title="Диплом психолога-консультанта" alt="Сертификат World Association for Positive Psychotherapy">
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Психолог-консультант в методе Позитивной Психотерапии - World Association for Positive Psychotherapy</p> 
-          </div>
-          <div>
-            <a href="<%= asset_url('certificates/2.png')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate2.png')%>"  style="width: 100%" title="Сертификат обучения консультированию" alt="Сертификат социально-психологическое консультирование">
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Социально-психологическое консультирование - Социально-психологическая служба ДНУ</p>
-          </div>
-          <div>
-            <a href="<%= asset_url('certificates/3.png')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate3.png')%>" style="width: 100%" title="Сертификат обучения техникам стрессоустойчивости" alt="Сертификат техники стрессоустойчивости, резильентности">
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Технологии социально-психологической резильентности - Социально-психологическая служба ДНУ</p>
-          </div>
-          <div>
-            <a href="<%= asset_url('certificates/4.png')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate4.png')%>" style="width: 100%" title="Сертификат обучения методу СМД" alt="Сертификат СМД"> 
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Системно-мыследеятельностный подход - Социально-психологическая служба ДНУ</p>
-          </div>
-          <div style="padding-left: 0px">
-            <a href="<%= asset_url('certificates/5.jpg')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate5.jpg')%>" style="width: 100%" title="certificate 6" alt="Сертификат детский психолог Мир Инсайт">
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Воспитание детей в стиле коучинг - Центр семейной психологии "Мир Инсайт"</p>
-          </div>
-          <div>
-            <a href="<%= asset_url('certificates/7.jpg')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate7.jpg')%>" style="width: 100%" title="Сертификат обучения детской психологии" alt="Сертификат массажист"> 
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Массажист. Косметический, ароматерапевтический и массаж для похудения - First Regional Courses</p>
-          </div>
-          <div style="width: 86vw; padding-left: 0px">
-            <a href="<%= asset_url('certificates/8.png')%>" data-lightbox="test">
-              <img src="<%= asset_url('certificates/certificate8.png')%>" style="width: 56vw" title="Сертификат обучения работе с последствиями стресса" alt="Сертификат Puselik foundation">
-            </a>
-            <p style="font-size: 3vw; line-height: 3.8vw; font-weight: 600; margin-bottom: 6vw">Социальная адаптация ветеранов - ГО "Простір людини" Puselik foundation</p>
-          </div> 
-        </div>
-        <h2 style="font-size: 5vw; line-height: 6vw; font-weight: 700; margin-top: 10vw; margin-bottom: 2vw; text-align: center;">
-          Мой путь
-        </h2>
-        <img src="<%= asset_url('my-walk.svg')%>" alt="мой путь в психологию" style="width: 86vw;">
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Я вырос в семье медработников и всегда хотел стать врачем, но видел, что доктора не всегда могут помочь. Поэтому я долго шел к тому, чтобы научиться лечить людей словом, вместо уколов и таблеток. Для начала, я прошел свою личную терапию, получил официальное психологическое образование и обучился нескольким современным направлениям психотерапии.
-        </p>
-        <p style="font-size: 3.4vw; line-height: 4.3vw">
-          Чтоб закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил лекции и тренинги, индивидуальные консультации и онлайн-марафоны.
-        </p>
-        <h2 style="font-size: 5vw; line-height: 6vw; font-weight: 700; margin-top: 10vw; margin-bottom: 3vw; text-align: center;">
-          Опыт работы
-        </h2>
-        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-          <div class="problem_box" style="height: 44vw; width: 39%; padding: 4vw;">
-            <img class="problem_icon" src="<%= asset_url('child-psychologist.svg')%>" alt="детский психолог">
-            <h3 class="problem_name" style="font-size: 3vw">
-              Детский психолог
-            </h3>
-            <p style="font-size: 2.9vw; line-height: 3.5vw">
-              Центр семейной психологии "Мир Инсайт"<br>2016 фев - 2018 авг
-            </p>
-          </div>
-          <div class="problem_box" style="height: 44vw; width: 39%; padding: 4vw;">
-            <img class="problem_icon" src="<%= asset_url('psychologist-lecturer.svg')%>" alt="психолог-лектор">
-            <h3 class="problem_name" style="font-size: 3vw">
-              Психолог-лектор
-            </h3>
-            <p style="font-size: 2.9vw; line-height: 3.5vw">
-              Центр практической психологии "Диалог"<br>2017 янв - 2019 янв
-            </p>
-          </div>
-          <div class="problem_box" style="height: 44vw; width: 39%; padding: 4vw;">
-            <img class="problem_icon" src="<%= asset_url('psychologist-expert.svg')%>" alt="психолог-эксперт">
-            <h3 class="problem_name" style="font-size: 3vw">
-              Психолог-эксперт
-            </h3>
-            <p style="font-size: 2.9vw; line-height: 3.5vw">
-              Женский журнал clutch.ua, форум dnevniki-pifagora.ru"<br>2018 ноя - 2019 май
-            </p>
-          </div>
-          <div class="problem_box" style="height: 44vw; width: 39%; padding: 4vw;">
-            <img class="problem_icon" src="<%= asset_url('practicing-psychologist.svg')%>" alt="практикующий психолог">
-            <h3 class="problem_name" style="font-size: 3vw">
-              Практикующий психолог
-            </h3>
-            <p style="font-size: 2.9vw; line-height: 3.5vw">
-              Частная практика<br>2018 сен - сегодня
-            </p>
-          </div>
-        </div>
-        <h2 style="font-size: 5vw; line-height: 6vw; font-weight: 700; margin-top: 8vw; margin-bottom: 3vw; text-align: center;">
-          Результаты моей работы на примерах
-        </h2>
-        <div style="width: 78vw; background-color: #383838; border-radius: 1.5vw; color: white; text-align: start; padding: 4vw; margin-bottom: 7vw">
-          <h3 style="font-size: 3.2vw; line-height: 4vw; font-weight: 600;">
-            Генерализованное тревожное расстройство
-          </h3>
-          <p style="font-size: 3vw; line-height: 3.8vw;">
-            Мария - 20 лет
-            <br><br>
-            Главный запрос терапии был - проблемы в отношениях. Неумение строить и сохранять длительные интимные отношения с противоположным полом.
-            <br><br>
-            На шестой консультации я выявил у клиентки неочевидное Генерализованное тревожное расстройство. Девушка не могла спать, мысль о предстоящем „волнительном” событии вводило ее в состояние паники, жара, судорог, проблем с дыханием.
-            <br><br>
-            Я применил когнитивно-поведенческую терапию: составил личный опросник для фиксации результатов, мы вместе проработали тревожные мысли, улучшили эмоциональный интеллект, обучились навыкам осознанности и принятия, и после полу года клиентка счастливо и самостоятельно живет свою жизнь. Перестала тревожится, улучшилось качество ее сна и, интересный факт, в данный момент она находится в серьезных близких отношениях.
-            <br><br>
-            Видео-отзыв клиента вы можете посмотреть <a href="/reviews.html" style="color: #ff7f50; font-weight: 700">тут</a>
-          </p>        
-        </div>
-        <div style="width: 78vw; background-color: #383838; border-radius: 1.5vw; color: white; text-align: start; padding: 4vw; margin-bottom: 7vw">
-          <h3 style="font-size: 3.2vw; font-weight: 600;">
-            Ипохондрия
-          </h3>
-          <p style="font-size: 3vw; line-height: 3.8vw;">
-            Светлана - 37 лет
-            <br><br>
-            Основная проблема - повторяющиеся тревожные мысли о своем здоровьи, общее состояние напряжения.
-            <br><br>
-            На первой диагностической консультации мы выстроили доверительные отношения, разобрали массу примеров тревожных мыслей, сформировали личный опросник для фиксации результатов.
-            <br><br>
-            Я применил терапию АСТ и элементы из КПТ: сделали декатастрофизацию страхов, сформировали конструктивные убеждения, обучились технике принятия эмоций. Далее, мы вели дневник, таблицу позицивных изменений и АВС-схему (клиентка самостоятельно научилась анализировать тревожные события в ее жизни, а мне лишь оставалось проверять домашнее задание).
-            <br><br>
-            В итоге, тревожность ушла, появились полезные навыки самоанализа и стрессоустойчивости.
-            <br><br>
-            Видео-отзыв клиента вы можете посмотреть <a href="/reviews.html" style="color: #ff7f50; font-weight: 700">тут</a>  
-          </p>
-        </div>
-        <div style="width: 78vw; background-color: #383838; border-radius: 1.5vw; color: white; text-align: start; padding: 4vw; margin-bottom: 7vw">
-          <h3 style="font-size: 3.2vw; font-weight: 600;">
-            Панические атаки
-          </h3>
-          <p style="font-size: 3vw; line-height: 3.8vw;">
-            Богдан - 29 лет
-            <br><br>
-            Главным запросом терапии была проблема с внезапными приступами страха, учащенный пульс, удушье, ощущение, что сильно бьется сердце.
-            <br><br>
-            На первой консультации я провел диагностику и проанализировал начало ПА, им оказался сонный паралич. Также, выявил стандартный набор страхов: "а вдруг умру / опозорюсь / сойду с ума".
-            <br><br>
-            Я предпринял ряд действий метакогнитивной терапии: мы проанализировали объективность "опасности" ПА, научились не обращать внимания на возникающее беспокойство, откладывать тревогу, сформировали конструктивные убеждения о "неконтролируемости" и "опасности" страха, развили навык принятия эмоций.
-            <br><br>
-            Прошло пол года, клиент чувствует себя хорошо, благодарит меня за проделанную работу.
-            <br><br>
-            Видео-отзыв клиента вы можете посмотреть <a href="/reviews.html" style="color: #ff7f50; font-weight: 700">тут</a>
-          </p>        
-        </div>
-
-        <h2 style="padding: 10vw 8vw 3vw 8vw; text-align: center; font-size: 5vw; line-height: 6vw">
-          Отзывы о моей работе
-        </h2>
-         <p style="text-align: center; font-size: 3vw; line-height: 3.7vw; letter-spacing: 0.01em; margin: 1vw 0vw 4vw 0vw;">
-          Больше мнений о моей работе и видео отзывы вы найдете в закладке  <a href="/reviews.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">Отзывы</a>
-        </p>
-        <div class="review_box" style="width: 78vw; height: 41vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
-          <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
-            <img class="review_icon"  src="<%= asset_url('review/Мария-20-лет.jpg')%>" alt="отзыв психолог Ткаченко Андрей Мария 20 лет" style="width: 12vw;">
-            <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
-              Мария<br>20 лет
-            </h3>
-          </div>
-          <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
-            «Я пол года занималась еженедельно с Андреем. Я не понимала, почему у меня не складываются отношения, но на определенном этапе работы оказалось, что то, с чем я пришла - это верхушка айсберга, а причина всему - тревога. Я не могу передать словами то, какого было мое удивление, восхищение методиками работы Андрея...»
-          </p>
-        </div>
-
-        <div class="review_box" style="width: 78vw; height: 37vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
-          <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
-            <img class="review_icon" src="<%= asset_url('review/Богдан-29-лет.png')%>" alt="отзыв психолог Ткаченко Андрей Богдан 29 лет" style="width: 12vw;">
-            <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
-              Богдан<br>29 лет
-            </h3>
-          </div>
-          <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
-            «У меня 3 месяца была тревога и ПА. Я взял пробный урок, без особых надежд на успех, потому что у меня был уже отрицательный опыт. Тем не менее, после первого занятия, техники, которые дал мне Андрей, дали эффект, поэтому я поверил в то, что с этим специалистом можно работать. И мои ожидания абсолютно оправдались...»
-          </p>
-        </div>
-
-        <div class="review_box" style="width: 78vw; height: 38vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
-          <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
-            <img class="review_icon" src="<%= asset_url('review/Светлана-37-лет.jpg')%>" alt="отзыв психолог Ткаченко Андрей Светлана 37 лет" style="width: 12vw;">
-            <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
-              Светлана<br>37 лет
-            </h3>
-          </div>
-          <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
-            «Андрея я нашла, когда в моей жизни был непростой период. Мне понравился его энтузиазм и то, что он никогда не оставлял меня одну (у нас были домашние задания и постоянная связь в вайбере), и после каждой консультации мы уже могли отмечать какой-то результат. Андрей грамотный психолог, он каждую ситуацию...»
-          </p>
-        </div>
-        
-        <%= render partial: "/new/form_mob"%>
-
-      </div>
-
-    </div>  <!-- конец моб версии -->

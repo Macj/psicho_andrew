@@ -1,667 +1,1237 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <title>Онлайн консультации психолога | Индивидуальная и групповая психотерапия</title>
-  <meta name="description" content="Консультация - специально выстроенный диалог между психологом и клиентом с применением вербальных и поведенческих техник. Психотерапия - курс консультаций.">
+  <title>Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей</title>
+  <meta name="description" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Оставьте Заявку на Сайте. 2-х часовая психотерапия сложных проблем.">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Онлайн консультации психолога | Индивидуальная и групповая психотерапия">
-  <meta property="og:description" content="Консультация - специально выстроенный диалог между психологом и клиентом с применением вербальных и поведенческих техник. Психотерапия - курс консультаций.">
+  <meta property="og:title" content="Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей">
+  <meta property="og:description" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Оставьте Заявку на Сайте. 2-х часовая психотерапия сложных проблем.">
   <meta property="og:url" content="http://www.tkachenkoandrey.com/consultations">
   <meta property="og:site_name" content="Психолог Ткаченко Андрей">
   <meta property="article:publisher" content="https://www.facebook.com/tkachenko.psychology/">
   <meta property="og:image" content="http://tkachenkoandrey.com/assets/Tkachenko-Andrey-0ccd9afe47bf51522e172c3619a0dd1b97986605188615048acbc034288baecf.jpg">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $("#button_client_form > a").on("click", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href')
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    var top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top-50}, 1500);
+    });
+    });
+  </script>
 <% end %>
 
+
+
+
+
 <div class="pc_content">
-  <div style="background-image: url(<%= asset_url('consultations.png')%>); background-repeat:round; background-size: cover; width: 100%; height: 46vw;">
-    <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.21) 0%, rgba(141, 141, 141, 0.52) 45%, rgb(59,59,59) 100%); height: 100%">
+  <div class="main" style="background-image: url(<%= asset_url('Main.jpg')%>);">
+    <div class="main__body container">
+      <div class="main__item" style="top: 14vw; width: 575px; margin-bottom: 0px;">
+        <h1 class="main__title" style="text-align-last: left; font-size: 55px; margin: 0px; padding: 30px 35px; color: var(--gray)">Андрей Ткаченко</h1>
+        <p class="main__text" style="font-size: 18px; font-weight: 500; color: var(--white); margin: 0px; padding: 30px 35px; background-color: var(--brown); box-shadow: var(--box-shadow);">Практический психолог в области неврозов, тревожно-фобических расстройств и стрессоустойчивости</p>
+      </div>
+    </div>
     </div>
   </div>
-  <div class="container">
-    <div style="position: absolute; top: 30vw;">
-      <p style="font-weight: 800; font-size: 4vw; line-height: 4.7vw; color: #FFFFFF; margin: 0vw">Консультации</p>
-      <p style="background: rgba(187, 160, 143, 0.9); text-align: left; font-size: 1.3vw; line-height: 1.6vw; letter-spacing: 0.01em; padding: 1vw;
-        margin: 1vw 0vw 0vw 0vw; color: #FFFFFF; display: inline-block; border-radius: 0.7vw">
-        Психологическое консультирование - один из видов психологической помощи
-      </p>
-      <p style="text-align: left; font-size: 1.2vw; line-height: 1.6vw; letter-spacing: 0.01em; color: #FFFFFF; margin-right: 8vw;">
-        Консультация - специально выстроенный диалог между психологом и клиентом с применением вербальных и поведенческих техник направленных на изменение эмоций, убеждений и поведения клиента, чтобы избавить его от социальных и психологических проблем.
-      </p>
+
+  <div class="problem">
+    <div class="problem__body container">
+      <div class="problem__header header_box" style="position: relative;">
+        <h2 class="problem__title title">Продукты и услуги</h2>
+      </div>
+      <div class="problem__row">
+        <a class="problem__column problem__link" href="Psychotherapy-of-neuroses.html">
+          <div class="problem__item">
+            <h3 class="problem__name">Курс стрессоустойчивости</h3>
+            <p class="problem__text">Избавление от панических атак, навязчивых мыслей и действий, беспокойства, тревожных предчувствий и сомнений о здоровьи и благополучии.</p>
+          </div>
+        </a>
+        <a class="problem__column problem__link" href="Psychotherapy-of-neuroses.html">
+          <div class="problem__item">
+            <h3 class="problem__name">Вебинары</h3>
+            <p class="problem__text">Устранение раздражительности, ранимости, вины, стыда, обиды, злости, ВСД, проблем со сном, аппетитом, сексом, мышечных болей и прочей психосоматики.</p>
+          </div>
+        </a>
+        <a class="problem__column problem__link" href="Psychotherapy-of-neuroses.html">
+          <div class="problem__item">
+            <h3 class="problem__name">Книги</h3>
+            <p class="problem__text">Работа с последствиями сильного или длительного стресса, детскими психотравмами. Психологическая поддержка в случае насилия, утраты близких.</p>
+          </div>
+        </a>
+        <a class="problem__column problem__link" href="Psychotherapy-of-neuroses.html">
+          <div class="problem__item">
+            <h3 class="problem__name">Индивидуальные консультации</h3>
+            <p class="problem__text">Избавление от депрессии, апатии, грусти, подавленности. Проработка пессимистичных мыслей, повышение концентрации внимания и активности.</p>
+          </div>
+        </a>
+        <a class="problem__column problem__link" href="Psychotherapy-of-neuroses.html">
+          <div class="problem__item">
+            <h3 class="problem__name">Групповые консультации</h3>
+            <p class="problem__text">Избавление от самообвинений, сравнений себя с другими, комплексов внешности, нерешительности. Работа с установками “Я не смогу”, “Я не достоин”.</p>
+          </div>
+        </a>
+      </div>
     </div>
+  </div>
+
+  <div class="about">
+    <div class="about__body container">
+      <div class="about__row">
+        <div class="about__column_1">
+          <div class="about__item">
+            <img class="about__foto" src="<%= asset_url('Tkachenko-Andrey-psychologist.jpg')%>" alt="Ткаченко Андрей психолог">
+          </div>
+        </div>
+        <div class="about__column_2">
+          <div class="about__item">
+            <h2 class="about__title title">Обо мне</h2>
+            <p class="about__text">Здравствуйте, друзья!
+            Меня зовут Ткаченко Андрей, я практикующий психолог. 6 лет предоставляю услуги психологического консультирования и психотерапии. Имею официальное образование, являюсь членом Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).</p>
+            <h3 class="about__subtitle">Мой путь</h3>
+            <p class="about__text">Для начала, я прошел свою личную терапию, получил официальное психологическое образование, а также обучился консультированию и нескольким современным направлениям психотерапии. Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил индивидуальные консультации, лекции и тренинги.</p>
+            <h3  class="about__subtitle">Моя миссия</h3>
+            <p class="about__text">На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.</p>
+            <h3  class="about__subtitle">Мое образование и опыт</h3>
+            <p class="about__text">Я окончил Днепровский Национальный Университет им. Олеся Гончара по специальности “Психология”, при универе организовывал группу по консультированию, прошел курсы повышения квалификции, был волонтером, работал в семейном цетре психологии, а также выступал экспертом в ряде изданий. Последние несколько лет веду частную практику.
+            <div class="about__button">
+              <a class="btn btn_sign-up" href="/about.html" style="display: inline-block;">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="sign-up">
+    <div class="sign-up__body container">
+      <div class="sign-up__item">
+        <h2 class="sign-up__title title" id="client_form">Запись на консультацию</h2>
+        <p class="sign-up__text">Напишите мне в мессенджер. В течение 24 часов я вам отвечу, проанализирую вашу ситуацию и мы вместе согласуем наши дальнейшие действия.</p>
+        <div class="sign-up__btn-row">
+          <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
+          <a class="btn btn_contact" href="viber://chat?number=+380964248025" target="_blank">Viber</a>
+          <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
+        </div>
+        <p class="sign-up__text pc">
+          По всем вопросам, звонить: +380964248025<br>Пн-Вс 10:00-20:00
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="reviews">
+    <div class="reviews__body container">
+      <div class="reviews__header header_box">
+        <h2 class="reviews__title title">Отзывы</h2>
+      </div>
+
+      <%= render partial: "/new/review"%>
+
+    <div class="video-reviews" id="w_results">
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZARsaKAtUcE" frameborder="0" showinfo="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IBAo8tFKcPU" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7AsF2wwtl88" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KeSHTC-NdP8" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sfScVNRsE7o" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M3bIAkj8g2I" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item" style="flex: 0 0 33.33%; max-width: 33.33%; justify-content: center;">
+            <div class="slider__video">
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zt6S3vXjCNM" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+          <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+
+        <%= render partial: "/new/slider"%>
+        <script type="text/javascript">
+            var slider = multiItemSlider('w_results')
+        </script>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="articles">
+    <div class="articles__body container"  style="padding-top: 50px; padding-bottom: 70px;">
+      <div class="articles__header header_box"  style="margin-bottom: 7px;">
+        <h2 class="articles__title title ">Интересные статьи</h2>
+      </div>
+      <div class="articles__row pop_articles">
+        <section class="articles__card" style="background-image: url(<%= asset_url('article59.jpg') %>);">
+          <a class="articles__card_link" href="/articles/59"></a>
+          <sspan class="articles__card_content">
+            <span class="articles__card_info">
+              <div class="articles__card_time_read" style="margin:0px">
+                <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
+                <p>22 мин</p>
+              </div>
+            </span>
+            <a class="articles__card_category" href="/articles?category_id=2">
+              Психология отношений
+            </a>
+            <a class="articles__card_name" href="/articles/59">
+              5 фраз для решения конфликтов с близкими людьми
+            </a>
+            <span class="articles__card_tags">
+              <a href="/articles?tag_name=Отношения">Отношения</a>
+              <a href="/articles?tag_name=Конфликт">Конфликт</a>
+              <a href="/articles?tag_name=Коммуникация">Коммуникация</a>
+              <a href="/articles?tag_name=Я-сообщение">Я-сообщение</a>
+            </span>
+          </span>
+        </section>
+        <section class="articles__card" style="background-image: url(<%= asset_url('article60.jpg') %>);">
+          <a class="articles__card_link" href="/articles/60"></a>
+          <sspan class="articles__card_content">
+            <span class="articles__card_info">
+              <div class="articles__card_time_read" style="margin:0px">
+                <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
+                <p>3 мин</p>
+              </div>
+            </span>
+            <a class="articles__card_category" href="/articles?category_id=5">
+              Саморазвитие
+            </a>
+            <a class="articles__card_name" href="/articles/60">
+              Медитация на принятие себя и сострадание
+            </a>
+            <span class="articles__card_tags">
+              <a href="/articles?tag_name=Майндфулнесс">Майндфулнесс</a>
+              <a href="/articles?tag_name=Медитации">Медитации</a>
+              <a href="/articles?tag_name=Принятие">Принятие</a>
+              <a href="/articles?tag_name=Психотехники">Психотехники</a>
+              <a href="/articles?tag_name=Самосострадание">Самосострадание</a>
+            </span>
+          </span>
+        </section>
+        <section class="articles__card" style="background-image: url(<%= asset_url('article50.jpg') %>);">
+          <a class="articles__card_link" href="/articles/50"></a>
+          <sspan class="articles__card_content">
+            <span class="articles__card_info">
+              <div class="articles__card_time_read" style="margin:0px">
+                <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
+                <p>21 мин</p>
+              </div>
+            </span>
+            <a class="articles__card_category" href="/articles?category_id=7">
+              Невроз и психосоматика
+            </a>
+            <a class="articles__card_name" href="/articles/50">
+              Психосоматика. Симптомы и причины возникновения
+            </a>
+            <span class="articles__card_tags">
+              <a href="/articles?tag_name=Психосоматика">Психосоматика</a>
+              <a href="/articles?tag_name=Диагностика">Диагностика</a>
+              <a href="/articles?tag_name=Стресс">Стресс</a>
+              <a href="/articles?tag_name=ВСД">ВСД</a>
+            </span>
+          </span>
+        </section>
+        <section class="articles__card" style="background-image: url(<%= asset_url('article55.jpg') %>);">
+          <a class="articles__card_link" href="/articles/55"></a>
+          <sspan class="articles__card_content">
+            <span class="articles__card_info">
+              <div class="articles__card_time_read" style="margin:0px">
+                <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
+                <p>15 мин</p>
+              </div>
+            </span>
+            <a class="articles__card_category" href="/articles?category_id=14">
+              Низкая самооценка
+            </a>
+            <a class="articles__card_name" href="/articles/55">
+              Самооценка. Низкая, завышенная, нарциссизм. Причины и следствия
+            </a>
+            <span class="articles__card_tags">
+              <a href="/articles?tag_name=Самооценка">Самооценка</a>
+              <a href="/articles?tag_name=Диагностика">Диагностика</a>
+              <a href="/articles?tag_name=Нарциссизм">Нарциссизм</a>
+              <a href="/articles?tag_name=Перфекционизм">Перфекционизм</a>
+              <a href="/articles?tag_name=Механизм">Механизм</a>
+              <a href="/articles?tag_name=Терапия">Терапия</a>
+            </span>
+          </span>
+        </section>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
-    <h1 style="padding-top: 6vw; text-align: center; font-weight: 800; font-size: 2.5vw">Онлайн-консультации психолога</h1>
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 8vw 0vw 8vw;">
-      Онлайн-консультации также эффективны, как и очные консультации психолога, а для некоторых клиентов - это единственная возможность получить квалифицированную помощь психолога
-    </p>
-    <h2 style="margin: 6vw 0vw 1.5vw 0vw">Преимущества онлайн-консультаций</h2>
-    <ul>
-      <li>не надо никуда ехать, нет транспортных расходов;</li>
-      <li>можно быть дома в тепле и комфорте;</li>
-      <li>можно частично сохранить конфиденциальность;</li>
-      <li>если вы уезжаете в отпуск, можно не прерывать консультации;</li>
-      <li>если вам понадобилась срочная консультация - вы получите ее быстрее и проще;</li>
-      <li>можно получить качественные услуги, если в вашем месте жительства нет компетентных психологов;</li>
-      <li>также достаточно эффективны как и очные консультации.</li>
-    </ul>
-    <h2 style="margin: 5vw 0vw 1.5vw 0vw">Цели консультаций</h2>
-    <ul>
-      <li>оказание психологической помощи, т.е. разговор с психологом должен помочь человеку в решении его проблем и налаживании взаимоотношений с окружающими;</li>
-      <li>расширение представления клиента о сути и причинах возникновения своей проблемной ситуации;</li>
-      <li>помощь в нахождении целей в жизни, ценностей, приоритетов и задач на будущее, создание самоопределения клиента;</li>
-      <li>избавления клиента от симптомов проблемы;</li>
-      <li>облегчение эмоционального состояния клиента;</li>
-      <li>развитие гибкости, умения находить новые, эффективные модели мышления и поведения.</li>
-    </ul>
-    <h2 id="Consultations" style="margin: 0vw 0vw 1.5vw 0vw; padding-top: 5vw">Что такое консультации и психотерапия</h2>
-    <p style="text-align: justify;">
-      <b><i>Консультация</i></b> - специально выстроенный диалог между психологом и клиентом с применением вербальных и поведенческих техник направленных на изменение эмоций, убеждений и поведения клиента, чтобы избавить его от социальных и психологических проблем.<br>
-      <b><i>Психотерапия</i></b> - курс из нескольких психологических консультаций (сеансов). Это комплексное воздействие на эмоции, убеждения и поведение клиента для избавления от многих социальных, психологических и психосоматических проблем при помощи специальных техник и приемов.<br>
-      <b><i>Гипнотерапия</i></b> - вид психотерапии с применением гипноза.<br>
-      <b><i>Предварительная консультация:</i></b> в течение 24 часов, после вашей <a href="/consultations.html#Form" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>записи на консультацию</b></a>, я вам пишу в мессенджер (если вы хотите – мы созваниемся), анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия. Далее, мы выбираем какой вид терапии вам подходит больше всего: <a href="/consultations.html#Ind" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>курс психотерапии</b></a> или <a href="/consultations.html#Hypnotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>курс гипнотерапии</b></a>, либо их комбинация.
-    </p>
-
-    <h2 style=" margin: 0vw 0vw 1.5vw 0vw; padding-top: 5vw;" id="Ind">Как проходят консультации и психотерапия</h2>
-    <p style="text-align: justify;">
-      Консультации проходят в кабинете, либо онлайн по Skype, Viber, Hangouts (1-2 раза в неделю). Длительность консультации 2 часа. По желанию, можно проводить 3-х, 4-х часовые консультации (например, 3-х часовую <a href="/Hypnotherapy.html" style="border-bottom: 1px solid currentColor;"><b>гипнотерапию</b></a>) для достижения максимально быстрого результата.
-      <br><br>
-      Во время онлайн-консультации вы находитесь у себя дома, в безопасной обстановке, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя.
-      <br><br>
-      На курсе психотерапии, перед каждой консультацией вы заполняете специальный опросник, который создан мною на основе вашей индивидуальной ситуации. Опросник позволяет понять динамику вашего состояния и то, с какой составляющей проблемы следует работать в первую очередь. На протяжении всей консультации я пишу стенографию. Дома, вы ее перечитываете, заново переосмысливаете проделанную работу и полученные результаты, видите описание техник, которые использовались, список своего домашнего задания и дополнительные обучающие материалы (если они будут вам необходимы). Между консультациями я поддерживаю связь с вами в мессенджерах для отслеживания динамики состояния, корректировки домашнего задания и ответов на возникающие вопросы.
-    </p>
-    <h2 style="margin: 5vw 0vw 1.5vw 0vw">Структура курса психотерапии</h2>
-    <p style="text-align: justify;">
-      <b>1. На первой консультации</b> происходит диагностика, анализ вашей ситуации, формулирование запроса и работа с вашей проблемой. По результатам диагностики становятся ясными: содержание проблемы, приблизительные сроки и план терапии. Методом диагностики и работы является специально выстроенный диалог с применением психотерапевтических <a href="/methods.html" style="border-bottom: 1px solid currentColor;"><b>методов</b></a>. Если мы решили вашу проблему за одну консультацию - отлично. Если нет - мы согласовываем начало краткосрочного курса психотерапии или <a href="/consultations.html#Hypnotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>курс гипнотерапии</b></a>, либо их комбинацию.
-    </p>
-    <p style="text-align: justify;">
-      <b>2. Последующие консультации (сеансы)</b><br>
-      <b><i>Краткосрочная психотерапия</i></b> (10 сеансов 1-2 раза в неделю) - устранение основных симптомов вашей проблемы. Происходит научение новым моделям мышления и поведения. Если на 10-м сеансе мы понимаем, что надо продолжать работу - это уже будет считаться Среднесрочной психотерапией.<br>
-      <b><i>Среднесрочная психотерапия</i></b> (от 10 сеансов 1-2 раза в неделю) - для более сложных случаев. Удаление оставшихся симптомов. Разбор внутренних конфликтов, избавление от сложных психотравм. Если на 19-м сеансе мы понимаем, что надо продолжать работу - это уже будет считаться Длительной психотерапией.<br>
-      <b><i>Длительная психотерапия</i></b> (20 и более сеансов 1-2 раза в неделю) - полная трансформация личности. Работа с тяжелыми случаями;<br>
-      <b><i>Поддерживающая психотерапия</i></b> (1 сеанс в 2-4 недели) – после окончания психотерапии, возвращаясь в привычное русло жизни, иногда, человеку требуется поддержка для предотвращения рецидива проблемы. Для этого, несколько раз в месяц, проводятся сеансы на которых мы совместно анализируем произошедшие за последнее время события, развиваем навыки стрессоустойчивости, коммуникации и т.д. Отличный способ получить максимально эффективный результат.
-    </p>
-    <p>
-      <b>3. Завершающая консультация (сеанс)</b> - окончание курса психотерапии. Точка. На ней закрываются все вопросы, фиксируется полученный результат.
-    </p>
-    <h2 id="First" style="padding: 4vw 0vw 2vw 0vw; margin: 2vw 0vw 0vw 4vw;">Первая консультация проводится таким образом:</h2>
-
-    <!-- блок аккордеон -->
-    <div class="accordion" style="text-align: justify;">
-      <section class="accordion_item">
-        <h3 class="title_block">1. Установление контакта и проговаривание правил консультации</h3>
-        <div class="info">
-          <p class="info_item">
-            Первичное знакомство уже произошло, когда мы договаривались о сотрудничестве. В начале первой сессии происходит установление и поддержание контакта. Контакт есть, когда мы хотим слышать и понимать друг друга и реализуем это желание. Я проговариваю основные правила и принципы нашей работы, рассказываю как проходит процесс консультирования и предлагаю вам ввести свои дополнительные правила.<br>
-            <b>Результат:</b> вы чувствуете себя комфортно и безопасно. Это почва для дальнейшей работы.
-           </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">2. Основной блок диагностических вопросов</h3>
-        <div class="info">
-          <p class="info_item">Я задаю вам ряд общих вопросов для выяснения вашего физического и психологического состояния, выясняю, есть ли противопоказания к психотерапии, какие есть установленные диагнозы и т.п.<br>
-          <b>Результат:</b> я узнаю общую информацию о вас и принимаю решение, есть ли у меня компетенция для работы с данным случаем, либо нужно обратиться к другим специалистам (неврологу, эндокринологу психиатру и т.п.).
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">3. Активное слушание и совместный анализ ситуации</h3>
-        <div class="info">
-          <p class="info_item"><b>3.1. Активное слушание</b><br>
-          Если необходимо, вы "выговариваетесь". Всё мое внимание сконцентрировано на вашем рассказе, я безоценочно воспринимаю сказанное, активно слушаю и задаю уточняющие вопросы, проявляю эмпатию и сострадание, либо разделяю с вами ваши положительные эмоции (если это требуется).<br>
-          <b>Результат:</b> таким образом, происходит установление доверительных отношений. Вы начинаете осознавать суть своей проблемной ситуации (за счет проговаривания всего того, что беспокоит и моей обратной связи). Возникает приятное чувство доверия и товарищества, ведь вас понимают, а не оценивают или осуждают.
-          </p>
-          <p class="info_item"><b>3.2. Совместный анализ ситуации</b><br>
-          Вы предметно описываете волнующую вас ситуацию, а я провожу ее мыслительный анализ, задаю уточняющие вопросы, разбираюсь в фактах, выясняю внутреннюю картину проблемы (как вы воспринимаете происходящее и как реагируете на ситуацию), выявляю все текущие жалобы, восстанавливаю цепь событий, предшествующих появлению проблемы, выясняю динамику развития симптомов, возможные причины и объективную картину вашей жизненной ситуации. Полученные данные заношу в диагностические таблицы и стенографию.<br>
-          <b>Результат:</b> вы осознаете причинно-следственные связи в вашей проблемной ситуации, причины поведения других людей и собственные модели мышления и поведения.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">4. Формулирование запроса</h3>
-        <div class="info">
-          <p class="info_item">После проведения анализа, вы понимаете, что в вашей ситуации является проблемой, а что - естественной нормой, поэтому легко формулируете точное описание имеющиеся у вас проблемы и образ желаемого результата - общей цели консультирования.<br>
-          <b>Результат:</b> вы имеете четкое представление о своей проблеме и конечной цели. Ваша цель измерима, достижима и позитивно сформулирована.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">5. Подведение итогов диагностики</h3>
-        <div class="info">
-          <p class="info_item">Я структурирую всё сказанное вами, информирую вас о результатах диагностики, объясняю возможные причины появления вашей психологической проблемы, на схемах и метафорах объясняю механизмы ее функционирования. Исходя из диагностики, даю возможный прогноз на будущее (что будет дальше, если ничего не менять) и необходимые рекомендации. Сообщаю, могу ли я вам помочь, нужен ли вам курс психотерапии и какой именно.<br>
-          <b>Результат:</b> у вас формируется полная картина происходящего, вы знаете прогноз на будущее и какие есть методы избавления от подобных проблем.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">6. Создание курса психотерапии</h3>
-        <div class="info">
-          <p class="info_item"><b>6.1. Составление плана</b><br>
-          Я задаю вопрос: "какое решение вы принимаете?" Если вы согласны пройти курс психотерапии со мной, то мы начинаем его создавать на основании диагностики, ваших финансовых возможностей, индивидуальных особенностей вашей ситуации и того, в какие сроки вам нужно получить желаемый результат.<br>
-          <b>Результат:</b> вы имеете четкое представление о том, как будет проходить процесс избавления от вашей проблемы.
-          </p>
-          <br>
-          <p class="info_item"><b>6.2. Подготовка к работе, поддержка</b><br>
-          На этом этапе часто наблюдается сопротивление клиентов. У вас могут возникать страхи, открываться новые убеждения об опасности, неконтролируемости или неизбежности происходящего с вами, либо наоборот о пользе данных проблем (вторичная выгода). Я работаю с данными убеждениями, отвечаю на все ваши вопросы, поддерживаю и морально подготавливаю вас к предстоящей работе.<br>
-          <b>Результат:</b> у вас возникает уверенность в себе и в своих силах, готовность к изменениям.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">7. Работа с проблемой</h3>
-        <div class="info">
-          <p class="info_item">
-          Основной этап. Направление и содержание работы определяется как вашим запросом, так и моим профессиональным видением. Я применяю диалоговые и поведенческие техники направленные на работу с эмоциями, мыслями, поведением и на анализ ваших взаимоотношений с другими людьми.<br>
-          <b>Результат:</b> вы чувствуете облегчение своего эмоционального и физического состояния, осознаете свою роль в сложившейся ситуации, берете ответственность за происходящее с вами. С моей помощью, вы сами осознаете какое именно решение вам стоит принять в данной ситуации, чтобы чувствовать себя максимально комфортно в будущем.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">8. Подведение итогов консультации</h3>
-        <div class="info">
-          <p class="info_item">Я проговариваю и анализирую вместе с вами всё то, что было на консультации. Мы оцениваем исходный план и полученный результат.<br>
-          <b>Результат:</b> вы осознаете что и какими методами было реализовано, понимаете, какое знание, озарение, чувство или достижение стало сегодня для вас самым важным и ценным приобретением.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">9. Домашнее задание</h3>
-        <div class="info">
-          <p class="info_item">Консультация - лишь подготовка к тому, что должно быть реализовано в жизни. Психотерапевтическое дз – это список рекомендуемых действий для изменения мышления и поведения, выработки новых навыков и убеждений, проверки полученных результатов, которые следует выполнять между консультациями. Дз мы составляем вместе.<br>
-          <b>Результат:</b> у вас есть план действий до следующей консультации и осознание того, как дз должно вам помочь в достижении вашей цели. Выполнение дз помогает проверить эффективность новых моделей мышления и поведения, проанализировать свое состояние, проверить, получается ли реализовать те решения, которые были приняты на консультации.
-          </p>
-        </div>
-      </section>
-      <section class="accordion_item">
-        <h3 class="title_block">10. Завершение консультации</h3>
-        <div class="info">
-          <p class="info_item">Я проверяю поняли ли вы, что вам нужно сделать дома, нет ли сомнений, страхов, даю необходимую мотивацию, поддержку и установку на позитив.<br>
-          <b>Результат:</b> вы уходите домой в ресурсном состоянии (спокойно, бодро, уверенно).
-          </p>
-        </div>
-      </section>
-    </div>  <!-- конец аккордиона -->
-       
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-    <script type="text/javascript">
-    ! function(i) {
-      var o, n;
-      i(".title_block").on("click", function() {
-        o = i(this).parents(".accordion_item"), n = o.find(".info"),
-          o.hasClass("active_block") ? (o.removeClass("active_block"),
-            n.slideUp()) : (o.addClass("active_block"), n.stop(!0, !0).slideDown(400),
-            o.siblings(".active_block").removeClass("active_block").children(
-              ".info").stop(!0, !0).slideUp(400))
-      })
-    }(jQuery);
-    </script>
-    <!-- конец блока аккордеон -->
-
-    <p style="margin-top: 3vw; text-align: justify;">
-      В перерыве между консультациями (сеансами) мы поддерживаем связь в мессенджерах. Вы можете рассказывать мне всё, что вас беспокоит и задавать любые вопросы для достижения максимального результата. Вы читаете стенографию прошлой консультации (сеанса), изучаете обучающие материалы, делаете домашнее задание.
-    </p>
-
-    <h2 style="margin: 5vw 0vw 1.5vw 0vw">Последующие консультации (сеансы) состоят из таких этапов:</h2>
-    <ul style="text-align: justify;">
-      <li>Начало. Обсуждаем то, что было на предыдущем сеансе и что произошло у вас в жизни в перерыве между сеансами. Анализируем результаты домашнего задания и данные опросника, который вы заполнили перед сеансом. Если необходимо, вы выговариваетесь;</li>
-      <li>Составление плана сегодняшнего сеанса. Я спрашиваю: «с чем хотите сегодня поработать? Чем я могу сегодня помочь?». Исходя из ваших пожеланий, вносим корректировки в имеющийся план психотерапии;</li>
-      <li>Работа с проблемой;</li>
-      <li>Подведение итогов;</li>
-      <li>Домашнее задание;</li>
-      <li>Завершение сеанса.</li>
-    </ul>
-
-    <h2 style=" margin: 5vw 0vw 1.5vw 0vw">Завершающая консультация (сеанс) проводится так:</h2>
-    <p style="text-align: justify;">
-      Мы вместе анализируем то, как проходила психотерапия, проводим техники для профилактики рецидивов, закрываем все вопросы, фиксируем полученные результаты и окончательно утверждаем поставленные задачи.<br>
-    <b>Результат:</b> вы способны самостоятельно справляться с возникающими психологическими, эмоциональными, поведенческими и социальными трудностями.
-    </p>
-
-
-
-    <h2 style=" margin: 0vw 0vw 1.5vw 0vw; padding-top: 5vw; text-align: center;" id="Hypnotherapy">Курс гипнотерапии</h2>
-    <p style="text-align: justify;">
-      <a href="/Hypnotherapy.html" style="border-bottom: 1px solid currentColor;"><b>Гипнотерапия</b></a> – вид психотерапии, эффективный метод работы с психосоматикой, неврозами, страхами. Быстрый способ для тех, кто ценит свое время.<br>
-      В ходе гипнотерапии я использую все <a href="/methods.html" style="border-bottom: 1px solid currentColor;"><b>методы современной психотерапии</b></a>, в том числе  и <a href="/Coaching-and-training.html" style="border-bottom: 1px solid currentColor;"><b>коучинг</b></a>.<br>
-      <b>Задача</b> – максимально быстро избавиться от дискомфортных чувств и психосоматики, чтобы вернуть вас в строй, в рабочее состояние, в котором вы можете продолжать жить и работать.<br>
-      Мы 5 сеансов по 3 часа (1-5 сеансов в неделю) упорно работаем над такими запросами:<br>
-      ▷ Невроз<br>
-      ▷ Тревога<br>
-      ▷ Депрессия<br>
-      ▷ Навязчивости<br>
-      ▷ Панические атаки<br>
-      ▷ Низкая самооценка<br>
-      ▷ Психотравмы и ПТСР<br>
-      ▷ Психосоматика (боли, спазмы, СРК, энурез, заикание, аноргазмия)
-    </p>
-    <p>
-      Вы записываетесь на первую консультацию для диагностики своего состояния. После чего мы можем решить начать курс гипнотерапии. Вы сразу оплачиваете все 5 сеансов терапии и мы приступаем к работе.
-    </p>
-    <h2 style="margin: 5vw 0vw 1.5vw 0vw">Сеансы гипнотерапии состоят из таких этапов:</h2>
-    <ul style="text-align: justify;">
-      <li>Начало. Обсуждаем то, что было на предыдущем сеансе и что произошло у вас в жизни в перерыве между сеансами. Анализируем результаты домашнего задания и данные опросника, который вы заполнили перед сеансом. Если необходимо, вы выговариваетесь;</li>
-      <li>Составление плана сегодняшнего сеанса. Я спрашиваю: «с чем хотите сегодня поработать? Чем я могу сегодня помочь?». Исходя из ваших пожеланий, вносим корректировки в имеющийся план психотерапии;</li>
-      <li>Погружение в гипноз, транс, медитацию;</li>
-      <li>Работа с проблемой (подробнее о работе читайте в статье о <a href="/Hypnotherapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>гипнотерапии</b></a>);</li>
-      <li>Выход из погружения;</li>
-      <li>Подведение итогов;</li>
-      <li>Домашнее задание;</li>
-      <li>Завершение сеанса.</li>
-    </ul>
-    <p>
-      После курса гипнотерапии, вы можете продолжать консультации 1-2 раза в неделю, если это будет необходимо, либо снова заказать курс гипнотерапии для решения другого вопроса. В 90% случаев стандартных 5-ти сеансов хваатет для решения одной проблемы.
-    </p>
-
-    <div style="width: 100%; height: 11vw; background: #383838; box-shadow: 3px 3px 15px rgba(63, 62, 62, 0.4); border-radius: 0.6vw; text-align: center; margin: 5vw auto">
-      <h3 style="color: #fafafa; padding: 2vw; margin-bottom: 0.4vw">Остались еще вопросы? Вероятно, я уже ответил на них здесь:</h3>
-      <button id="button_faq" style="box-shadow: 0px 0px 0.3vw rgba(184, 202, 226, 0.2);">
-        <a href="faq.html">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
-      </button>
-    </div>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 8vw 0px 2vw 0vw">Как попасть на консультацию</h2> 
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 3vw 0vw 1vw 0vw;">
-      и начать улучшать свою жизнь
-    </p>
-
-    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 7vw">
-      <div class="service_box">
-        <img src="<%= asset_url('form.svg')%>" alt="форма записи на консультацию психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Онлайн-запись</h3>
-        <p class="service_text">
-          Вы заполняете <a href="#client-form" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
-          <a href="contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
-        </p>
-      </div>
-
-      <img src="<%= asset_url('arrow-right.svg')%>" alt="стреока вправо" style="width: 1vw; position: relative; top: 1.9vw">
-
-      <div class="service_box">
-        <img src="<%= asset_url('first-contact.svg')%>" alt="предварительная консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Первый контакт</h3>
-        <p class="service_text">
-          В течение 24 часов я с вами списываюсь / созваниваюсь, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем наши дальнейшие действия.
-        </p>
-      </div>
-
-      <img src="<%= asset_url('arrow-right.svg')%>" alt="стреока вправо" style="width: 1vw; position: relative; top: 1.9vw">
-
-      <div class="service_box">
-        <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Консультация</h3>
-        <p class="service_text">
-          По видеосвязи я работаю с вашей проблемой применяя специально выстроенный диалог и техники психотерапии. Подробнее о моих методах работы читайте 
-          <a href="methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
-        </p>
-      </div>
-
-      <img src="<%= asset_url('arrow-right.svg')%>" alt="стреока вправо" style="width: 1vw; position: relative; top: 1.9vw">
-
-      <div class="service_box">
-        <img src="<%= asset_url('result.svg')%>" alt="результат консультаций психолога" style="width: 80%; margin: 10% 10% 0% 10%">
-        <h3 class="service_name">Результат</h3>
-        <p class="service_text">
-          Вы чувствуете себя комфортно и уверенно в ранее стрессовой ситуации. Делаете то, что для вас ценно и важно. Имеете навыки для самостоятельного решения проблем.
-        </p>
-      </div>
-    </div>
-
-    <h2 style="font-size: 2.5vw; text-align: center; margin: 4vw 0px 2vw 0vw; padding-top: 3vw" id="Form">Запись на консультацию</h2> 
-    <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
-      Заполните форму или свяжитесь со мной любым удобным для вас способом.<br>Контакты вы найдете 
-      <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
-    </p>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8vw">
-      <img src="<%= asset_url('form.svg')%>" style="width: 40vw">
-      <%= render partial: "/new/form"%>
-    </div>
-
-  </div> <!-- конец container -->
-</div> <!-- конец pc_content -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- начало моб версии -->
-    <div class="mob" style="background: #F7F7F7; padding-bottom: 8vw">
-      <div style="background-image: url(<%= asset_url('consultations.png')%>); background-repeat:round; background-size: cover; width: 100%; height: 41vw;">
-        <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 0.21) 0%, rgba(141, 141, 141, 0.52) 45%, rgb(59,59,59) 100%); height: 100%">
-        </div>
-      </div>
-      
-      <h1 style="position: absolute; top: 35vw; left: 10vw; font-weight: 800; font-size: 6vw; color: white">
-        Консультации
-      </h1>
-      <div style="background-color: #F7F7F7; border-radius: 7vw; margin-top: -7vw; padding-top: 5vw">
-        <div class="container" style="margin-bottom: 8vw; font-size: 2.7vw; line-height: 3.5vw">
-          <p>
-            Психологическое консультирование - один из видов психологической помощи
-          </p>
-          <p>
-            Психотерапия состоит из нескольких психологических консультаций. Это комплексное воздействие на эмоции, убеждения и поведение человека для избавления от многих социальных, психологических и психосоматических проблем при помощи специальных техник и приемов
-          </p>
-
-          <h2>
-            Онлайн-консультации психолога
-          </h2>
-          <p>
-            Онлайн-консультации также эффективны, как и очные консультации психолога, а для некоторых клиентов - это единственная возможность получить квалифицированную помощь психолога
-          </p>
-          <h2>
-            Преимущества онлайн-консультаций
-          </h2>
-          <ul>
-            <li>не надо никуда ехать, нет транспортных расходов;</li>
-            <li>можно быть дома в тепле и комфорте;</li>
-            <li>можно частично сохранить конфиденциальность;</li>
-            <li>если вы уезжаете в отпуск, можно не прерывать консультации;</li>
-            <li>если вам понадобилась срочная консультация - вы получите ее быстрее и проще;</li>
-            <li>можно получить качественные услуги, если в вашем месте жительства нет компетентных психологов;</li>
-            <li>также достаточно эффективны как и очные консультации.</li>
-          </ul>
-          <h2>
-            Цели консультаций
-          </h2>
-          <ul style="margin-bottom: -4vw">
-            <li>оказание психологической помощи, т.е. разговор с психологом должен помочь человеку в решении его проблем и налаживании взаимоотношений с окружающими;</li>
-            <li>расширение представления клиента о сути и причинах возникновения своей проблемной ситуации;</li>
-            <li>помощь в нахождении целей в жизни, ценностей, приоритетов и задач на будущее, создание самоопределения клиента;</li>
-            <li>избавления клиента от симптомов проблемы;</li>
-            <li>облегчение эмоционального состояния клиента;</li>
-            <li>развитие гибкости, умения находить новые, эффективные модели мышления и поведения.</li>
-          </ul>
-
-          <h2 id="consultations" style="padding-top: 14vw; margin-bottom: -4vw">Что такое консультации и психотерапия</h2>
-          <p>
-            <b><i>Консультация</i></b> - специально выстроенный диалог между психологом и клиентом с применением вербальных и поведенческих техник направленных на изменение эмоций, убеждений и поведения клиента, чтобы избавить его от социальных и психологических проблем.<br>
-            <b><i>Психотерапия</i></b> - курс из нескольких психологических консультаций (сеансов). Это комплексное воздействие на эмоции, убеждения и поведение клиента для избавления от многих социальных, психологических и психосоматических проблем при помощи специальных техник и приемов.<br>
-            <b><i>Гипнотерапия</i></b> - вид психотерапии с применением гипноза.<br>
-            <b><i>Предварительная консультация:</i></b> в течение 24 часов, после вашей <a href="/consultations.html#form" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>записи на консультацию</b></a>, я вам пишу в мессенджер (если вы хотите – мы созваниемся), анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия. Далее, мы выбираем какой вид терапии вам подходит больше всего: <a href="consultations.html#ind" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>курс психотерапии</b></a> или <a href="consultations.html#hypnotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>курс гипнотерапии</b></a>, либо их комбинация.
-          </p>
-
-          <h2 id="ind" style="padding-top: 14vw">Как проходят консультации и психотерапия</h2>
-          <p>
-            Консультации проходят в кабинете, либо онлайн по Skype, Viber, Hangouts (1-2 раза в неделю). Длительность консультации 2 часа. По желанию, можно проводить 3-х, 4-х часовые консультации (например, 3-х часовую <a href="/Hypnotherapy.html" style="border-bottom: 1px solid currentColor;"><b>гипнотерапию</b></a>) для достижения максимально быстрого результата.
-            <br><br>
-            Во время онлайн-консультации вы находитесь у себя дома, в безопасной обстановке, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя.
-            <br><br>
-            На курсе психотерапии, перед каждой консультацией вы заполняете специальный опросник, который создан мною на основе вашей индивидуальной ситуации. Опросник позволяет понять динамику вашего состояния и то, с какой составляющей проблемы следует работать в первую очередь. На протяжении всей консультации я пишу стенографию. Дома, вы ее перечитываете, заново переосмысливаете проделанную работу и полученные результаты, видите описание техник, которые использовались, список своего домашнего задания и дополнительные обучающие материалы (если они будут вам необходимы). Между консультациями я поддерживаю связь с вами в мессенджерах для отслеживания динамики состояния, корректировки домашнего задания и ответов на возникающие вопросы.
-          </p>
-          <h2>Структура курса психотерапии</h2>
-          <p>
-            <b>1. На первой консультации</b> происходит диагностика, анализ вашей ситуации, формулирование запроса и работа с вашей проблемой. По результатам диагностики становятся ясными: содержание проблемы, приблизительные сроки и план терапии. Методом диагностики и работы является специально выстроенный диалог с применением психотерапевтических <a href="/methods.html" style="border-bottom: 1px solid currentColor;"><b>методов</b></a>. Если мы решили вашу проблему за одну консультацию - отлично. Если нет - мы согласовываем начало краткосрочного курса психотерапии или <a href="/consultations.html#hypnotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>курс гипнотерапии</b></a>, либо их комбинацию.
-          </p>
-          <p>
-            <b>2. Последующие консультации (сеансы)</b><br>
-            <b><i>Краткосрочная психотерапия</i></b> (10 сеансов 1-2 раза в неделю) - устранение основных симптомов вашей проблемы. Происходит научение новым моделям мышления и поведения. Если на 10-м сеансе мы понимаем, что надо продолжать работу - это уже будет считаться Среднесрочной психотерапией.<br>
-            <b><i>Среднесрочная психотерапия</i></b> (от 10 сеансов 1-2 раза в неделю) - для более сложных случаев. Удаление оставшихся симптомов. Разбор внутренних конфликтов, избавление от сложных психотравм. Если на 19-м сеансе мы понимаем, что надо продолжать работу - это уже будет считаться Длительной психотерапией.<br>
-            <b><i>Длительная психотерапия</i></b> (20 и более сеансов 1-2 раза в неделю) - полная трансформация личности. Работа с тяжелыми случаями;<br>
-            <b><i>Поддерживающая психотерапия</i></b> (1 сеанс в 2-4 недели) – после окончания психотерапии, возвращаясь в привычное русло жизни, иногда, человеку требуется поддержка для предотвращения рецидива проблемы. Для этого, несколько раз в месяц, проводятся сеансы на которых мы совместно анализируем произошедшие за последнее время события, развиваем навыки стрессоустойчивости, коммуникации и т.д. Отличный способ получить максимально эффективный результат.
-          </p>
-          <p style="margin-bottom: -4vw">
-            <b>3. Завершающая консультация (сеанс)</b> - окончание курса психотерапии. Точка. На ней закрываются все вопросы, фиксируется полученный результат.
-          </p>
-          <h2 id="first" style="padding-top: 14vw">
-            Первая консультация проводится таким образом:
-          </h2>
-
-          <section class="ac-container">
-            <div>
-              <input id="ac-1" name="accordion-1" type="checkbox" />
-              <label for="ac-1">1. Установление контакта и проговаривание правил консультации</label>
-              <article class="ac-24">
-                <p>
-                  Первичное знакомство уже произошло, когда мы договаривались о сотрудничестве. В начале первой сессии происходит установление и поддержание контакта. Контакт есть, когда мы хотим слышать и понимать друг друга и реализуем это желание. Я проговариваю основные правила и принципы нашей работы, рассказываю как проходит процесс консультирования и предлагаю вам ввести свои дополнительные правила.<br>
-                  <b>Результат:</b> вы чувствуете себя комфортно и безопасно. Это почва для дальнейшей работы.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-2" name="accordion-1" type="checkbox" />
-              <label for="ac-2">2. Основной блок диагностических вопросов</label>
-              <article class="ac-27">
-                <p>
-                  Я задаю вам ряд общих вопросов для выяснения вашего физического и психологического состояния, выясняю, есть ли противопоказания к психотерапии, какие есть установленные диагнозы и т.п.<br>
-                  <b>Результат:</b> я узнаю общую информацию о вас и принимаю решение, есть ли у меня компетенция для работы с данным случаем, либо нужно обратиться к другим специалистам (неврологу, эндокринологу психиатру и т.п.).
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-3" name="accordion-1" type="checkbox" />
-              <label for="ac-3">3. Активное слушание и совместный анализ ситуации</label>
-              <article class="ac-116">
-                <p>
-                  <b>3.1. Активное слушание</b><br>
-                  Если необходимо, вы "выговариваетесь". Всё мое внимание сконцентрировано на вашем рассказе, я безоценочно воспринимаю сказанное, активно слушаю и задаю уточняющие вопросы, проявляю эмпатию и сострадание, либо разделяю с вами ваши положительные эмоции (если это требуется).
-                  <br>
-                  <b>Результат:</b> таким образом, происходит установление доверительных отношений. Вы начинаете осознавать суть своей проблемной ситуации (за счет проговаривания всего того, что беспокоит и моей обратной связи). Возникает приятное чувство доверия и товарищества, ведь вас понимают, а не оценивают или осуждают.
-                  <br><br>
-                  <b>3.2. Совместный анализ ситуации</b><br>
-                  Вы предметно описываете волнующую вас ситуацию, а я провожу ее мыслительный анализ, задаю уточняющие вопросы, разбираюсь в фактах, выясняю внутреннюю картину проблемы (как вы воспринимаете происходящее и как реагируете на ситуацию), выявляю все текущие жалобы, восстанавливаю цепь событий, предшествующих появлению проблемы, выясняю динамику развития симптомов, возможные причины и объективную картину вашей жизненной ситуации. Полученные данные заношу в диагностические таблицы и стенографию.
-                  <br>
-                  <b>Результат:</b> вы осознаете причинно-следственные связи в вашей проблемной ситуации, причины поведения других людей и собственные модели мышления и поведения.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-4" name="accordion-1" type="checkbox" />
-              <label for="ac-4">4. Формулирование запроса</label>
-              <article class="ac-143">
-                <p>
-                  После проведения анализа, вы понимаете, что в вашей ситуации является проблемой, а что - естественной нормой, поэтому легко формулируете точное описание имеющиеся у вас проблемы и образ желаемого результата - общей цели консультирования.<br>
-                  <b>Результат:</b> вы имеете четкое представление о своей проблеме и конечной цели. Ваша цель измерима, достижима и позитивно сформулирована.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-5" name="accordion-1" type="checkbox" />
-              <label for="ac-5">5. Подведение итогов диагностики</label>
-              <article class="ac-111">
-                <p>
-                  Я структурирую всё сказанное вами, информирую вас о результатах диагностики, объясняю возможные причины появления вашей психологической проблемы, на схемах и метафорах объясняю механизмы ее функционирования. Исходя из диагностики, даю возможный прогноз на будущее (что будет дальше, если ничего не менять) и необходимые рекомендации. Сообщаю, могу ли я вам помочь, нужен ли вам курс психотерапии и какой именно.<br>
-                  <b>Результат:</b> у вас формируется полная картина происходящего, вы знаете прогноз на будущее и какие есть методы избавления от подобных проблем.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-6" name="accordion-1" type="checkbox" />
-              <label for="ac-6">6. Создание курса психотерапии</label>
-              <article class="ac-38">
-                <p>
-                  <b>6.1. Составление плана</b><br>
-                  Я задаю вопрос: "какое решение вы принимаете?" Если вы согласны пройти курс психотерапии со мной, то мы начинаем его создавать на основании диагностики, ваших финансовых возможностей, индивидуальных особенностей вашей ситуации и того, в какие сроки вам нужно получить желаемый результат.<br>
-                  <b>Результат:</b> вы имеете четкое представление о том, как будет проходить процесс избавления от вашей проблемы.
-                  <br><br>
-                  <b>6.2. Подготовка к работе, поддержка</b><br>
-                  На этом этапе часто наблюдается сопротивление клиентов. У вас могут возникать страхи, открываться новые убеждения об опасности, неконтролируемости или неизбежности происходящего с вами, либо наоборот о пользе данных проблем (вторичная выгода). Я работаю с данными убеждениями, отвечаю на все ваши вопросы, поддерживаю и морально подготавливаю вас к предстоящей работе.<br>
-                  <b>Результат:</b> у вас возникает уверенность в себе и в своих силах, готовность к изменениям.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-7" name="accordion-1" type="checkbox" />
-              <label for="ac-7">7. Работа с проблемой</label>
-              <article class="ac-82">
-                <p>
-                  Основной этап. Направление и содержание работы определяется как вашим запросом, так и моим профессиональным видением. Я применяю диалоговые и поведенческие техники направленные на работу с эмоциями, мыслями, поведением и на анализ ваших взаимоотношений с другими людьми.<br>
-                  <b>Результат:</b> вы чувствуете облегчение своего эмоционального и физического состояния, осознаете свою роль в сложившейся ситуации, берете ответственность за происходящее с вами. С моей помощью, вы сами осознаете какое именно решение вам стоит принять в данной ситуации, чтобы чувствовать себя максимально комфортно в будущем.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-8" name="accordion-1" type="checkbox" />
-              <label for="ac-8">8. Подведение итогов консультации</label>
-              <article class="ac-46">
-                <p>
-                  Я проговариваю и анализирую вместе с вами всё то, что было на консультации. Мы оцениваем исходный план и полученный результат.<br>
-                  <b>Результат:</b> вы осознаете что и какими методами было реализовано, понимаете, какое знание, озарение, чувство или достижение стало сегодня для вас самым важным и ценным приобретением.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-9" name="accordion-1" type="checkbox" />
-              <label for="ac-9">9. Домашнее задание</label>
-              <article class="ac-100">
-                <p>
-                  Консультация - лишь подготовка к тому, что должно быть реализовано в жизни. Психотерапевтическое дз – это список рекомендуемых действий для изменения мышления и поведения, выработки новых навыков и убеждений, проверки полученных результатов, которые следует выполнять между консультациями. Дз мы составляем вместе.<br>
-                  <b>Результат:</b> у вас есть план действий до следующей консультации и осознание того, как дз должно вам помочь в достижении вашей цели. Выполнение дз помогает проверить эффективность новых моделей мышления и поведения, проанализировать свое состояние, проверить, получается ли реализовать те решения, которые были приняты на консультации.
-                </p>
-              </article>
-            </div>
-            <div>
-              <input id="ac-10" name="accordion-1" type="checkbox" />
-              <label for="ac-10">10. Завершение консультации</label>
-              <article class="ac-16">
-                <p>
-                  Я проверяю поняли ли вы, что вам нужно сделать дома, нет ли сомнений, страхов, даю необходимую мотивацию, поддержку и установку на позитив.
-                  <br>
-                  <b>Результат:</b> вы уходите домой в ресурсном состоянии (спокойно, бодро, уверенно).
-                </p>
-              </article>
-            </div>
-          </section>
-           
-          <p style="margin-top: 3vw;">
-            В перерыве между консультациями (сеансами) мы поддерживаем связь в мессенджерах. Вы можете рассказывать мне всё, что вас беспокоит и задавать любые вопросы для достижения максимального результата. Вы читаете стенографию прошлой консультации (сеанса), изучаете обучающие материалы, делаете домашнее задание.
-          </p>
-          <h2>
-            Последующие консультации (сеансы) состоят из таких этапов:
-          </h2>
-          <ul>
-            <li>Начало. Обсуждаем то, что было на предыдущем сеансе и что произошло у вас в жизни в перерыве между сеансами. Анализируем результаты домашнего задания и данные опросника, который вы заполнили перед сеансом. Если необходимо, вы выговариваетесь;</li>
-            <li>Составление плана сегодняшнего сеанса. Я спрашиваю: «с чем хотите сегодня поработать? Чем я могу сегодня помочь?». Исходя из ваших пожеланий, вносим корректировки в имеющийся план психотерапии;</li>
-            <li>Работа с проблемой;</li>
-            <li>Подведение итогов;</li>
-            <li>Домашнее задание;</li>
-            <li>Завершение сеанса.</li>
-          </ul>
-          <h2>
-            Завершающая консультация (сеанс) проводится так:
-          </h2>
-          <p style="margin-bottom: -4vw">
-            Мы вместе анализируем то, как проходила психотерапия, проводим техники для профилактики рецидивов, закрываем все вопросы, фиксируем полученные результаты и окончательно утверждаем поставленные задачи.<br>
-            <b>Результат:</b> вы способны самостоятельно справляться с возникающими психологическими, эмоциональными, поведенческими и социальными трудностями.
-          </p>
-
-          
-          <h2 id="hypnotherapy" style="text-align: center; padding-top: 14vw">Курс гипнотерапии</h2>
-          <p>
-            <a href="/Hypnotherapy.html" style="border-bottom: 1px solid currentColor;"><b>Гипнотерапия</b></a> – вид психотерапии, эффективный метод работы с психосоматикой, неврозами, страхами. Быстрый способ для тех, кто ценит свое время.<br>
-            В ходе гипнотерапии я использую все <a href="/methods.html" style="border-bottom: 1px solid currentColor;"><b>методы современной психотерапии</b></a>, в том числе  и <a href="/Coaching-and-training.html" style="border-bottom: 1px solid currentColor;"><b>коучинг</b></a>.<br>
-            <b>Задача</b> – максимально быстро избавиться от дискомфортных чувств и психосоматики, чтобы вернуть вас в строй, в рабочее состояние, в котором вы можете продолжать жить и работать.<br>
-            Мы 5 сеансов по 3 часа (1-5 сеансов в неделю) упорно работаем над такими запросами:<br>
-            ▷ Невроз<br>
-            ▷ Тревога<br>
-            ▷ Депрессия<br>
-            ▷ Навязчивости<br>
-            ▷ Панические атаки<br>
-            ▷ Низкая самооценка<br>
-            ▷ Психотравмы и ПТСР<br>
-            ▷ Психосоматика (боли, спазмы, СРК, энурез, заикание, аноргазмия)
-          </p>
-          <p>
-            Вы записываетесь на первую консультацию для диагностики своего состояния. После чего мы можем решить начать курс гипнотерапии. Вы сразу оплачиваете все 5 сеансов терапии и мы приступаем к работе.
-          </p>
-          <h2>Сеансы гипнотерапии состоят из таких этапов:</h2>
-          <ul>
-            <li>Начало. Обсуждаем то, что было на предыдущем сеансе и что произошло у вас в жизни в перерыве между сеансами. Анализируем результаты домашнего задания и данные опросника, который вы заполнили перед сеансом. Если необходимо, вы выговариваетесь;</li>
-            <li>Составление плана сегодняшнего сеанса. Я спрашиваю: «с чем хотите сегодня поработать? Чем я могу сегодня помочь?». Исходя из ваших пожеланий, вносим корректировки в имеющийся план психотерапии;</li>
-            <li>Погружение в гипноз, транс, медитацию;</li>
-            <li>Работа с проблемой (подробнее о работе читайте в статье о <a href="/Hypnotherapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>гипнотерапии</b></a>);</li>
-            <li>Выход из погружения;</li>
-            <li>Подведение итогов;</li>
-            <li>Домашнее задание;</li>
-            <li>Завершение сеанса.</li>
-          </ul>
-          <p>
-            После курса гипнотерапии, вы можете продолжать консультации 1-2 раза в неделю, если это будет необходимо, либо снова заказать курс гипнотерапии для решения другого вопроса. В 90% случаев стандартных 5-ти сеансов хваатет для решения одной проблемы.
-          </p>
-          <div style="width: 100%; height: 40vw; background: #383838; box-shadow: 3px 3px 15px rgba(63, 62, 62, 0.4); border-radius: 2vw; text-align: center; margin: 5vw auto">
-            <h3 style="color: #fafafa; padding: 5vw; margin-bottom: 0.4vw; font-size: 3.7vw; line-height: 5vw; text-align: center;">
-              Остались еще вопросы? Вероятно, я уже ответил на них здесь:
-            </h3>
-            <button id="button_faq" style="align-items: center; margin: 0px auto; height: 14vw; width: 55vw; border-radius: 2vw; margin-bottom: 5vw;box-shadow: 3px 3px 10px rgba(184, 202, 226, 0.2);">
-              <a style="font-size: 2.7vw; line-height: 3vw" href="faq.html">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
-            </button>
-          </div>
-
-        </div> <!-- конец контейнера-->
-
-        <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw;">
-          Как записаться на консультацию
-        </h2>
-        <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between; align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
-          <img src="<%= asset_url('form.svg')%>" alt="форма записи на консультацию психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
-          <div style="display: inline-block;">
-            <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">Онлайн-запись</h3>
-            <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
-              Вы заполняете <a href="#client_form_mob" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным <a href="/contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
-            </p>
-          </div>
-        </div>
-
-        <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw"> 
-
-        <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between;
-        align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
-          <img src="<%= asset_url('first-contact.svg')%>" alt="предварительная консультация психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
-          <div style="display: inline-block;">
-            <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
-              Первый контакт
-            </h3>
-            <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
-              В течение 24 часов я Вам перезваниваю/отвечаю на Ваше сообщение, анализирую Вашу ситуацию, отвечаю на вопросы и мы вместе согласовываем дальнейшие действия.
-            </p>
-          </div>
-        </div>
-
-        <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
-
-        <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between;
-        align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
-          <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога"  style="display: inline-block; width: 25vw; padding-right: 3vw">
-          <div style="display: inline-block;">
-            <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
-              Консультация
-            </h3>
-            <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
-              По видеосвязи работаем с Вашей проблемой применяя специально выстроенный диалог и техники психотерапии.
-            </p>
-          </div>
-        </div>
-
-        <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
-        <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw 0vw 7vw; display: flex; justify-content: space-between;
-        align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
-          <img src="<%= asset_url('result.svg')%>" alt="результат консультаций психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
-          <div style="display: inline-block;">
-            <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
-              Результат
-            </h3>
-            <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
-              Вы чувствуете себя спокойно, комфортно и уверенно. Делаете то, что для Вас ценно и важно. Имеете навыки для самостоятельного решения проблем.
-            </p>
-          </div>
-        </div>      
-
-        <div class="container" id="form">       
-          <%= render partial: "/new/form_mob"%>
-        </div>
   
-      </div> <!-- конец div цвета -->
-          
-    </div>  <!-- конец моб версии -->
+  
+
+
+<div class="mob" style="background: #F7F7F7; display: none;">
+  <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.jpg')%>" alt="Онлайн консультации психолога Ткаченко Андрей" style="width: 100%">
+  <h2 style="position: absolute; top: 75vw; left: 59vw; font-size: 3vw; letter-spacing: 0.01em; color: #39383c; padding: 0vw">Андрей Ткаченко</h2>
+  <div style="background: #39383c; height: 33vw; position: absolute; top: 82vw; width: 100%"> 
+    <h1 style="font-weight: 800; font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; text-align: center">
+      Консультация психолога онлайн
+    </h1>
+  </div>
+  <div style="background: #888787; height: 15.5vw; position: absolute; top: 119vw; width: 100%">
+    <h2 style="font-weight: normal; font-size: 4vw; line-height: 5.1vw; color: #FFF7F6; text-align: center; margin: 2.9vw 4vw; padding: 0vw">
+      Я помогу вам разобраться с проблемами из любой точки мира
+    </h2>
+  </div>
+  <button id="button_client_form" style="position: absolute; top: 139vw; margin: 0px auto; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
+    <a href="#client_form_mob" style="font-size: 2.5vw">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+  </button>
+
+  <h2 style="padding: 8vw 8vw 5vw 8vw; text-align: center; font-size: 5vw;">
+    Мои направления работы
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img class="problem_icon" src="<%= asset_url('problem/relationship.svg')%>" alt="Улучшение взаимоотношений">
+      <h3 class="problem_name" style="font-size: 2.7vw;">
+        Улучшение взаимоотношений
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/neurosis.svg')%>" alt="Психотерапия неврозов и психосоматики">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Психотерапия неврозов
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/anxiety.svg')%>" alt="Избавление от тревожных расстройств">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Избавление от психосоматики
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/psychological-trauma.svg')%>" alt="Избавление от глубинных психотравм">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Избавление от психотравм
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/self-esteem.svg')%>" alt="Повышение самооценки">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Повышение самооценки
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img class="problem_icon" src="<%= asset_url('problem/depression.svg')%>" alt="Психологическая помощь при депрессии">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Психотерапия депрессии
+      </h3>
+    </div>
+
+    <p class="container" style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 2vw 10vw 10vw 10vw;">
+      Подробнее о том, с чем я работаю читайте <a href="work-with.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">здесь</a>
+    </p>
+  </div> <!-- конец Мои направления работы -->
+  <img src="<%= asset_url('psychologist-Tkachenko-Andrey.jpg')%>" alt="психолог Ткаченко Андрей" style="width: 100%">
+  <div style="background: rgba(33, 22, 12, 0.85); position: absolute; top: 385vw; width: 100%;">
+    <h2 style="font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; margin: 4vw; text-align: center; padding: 0vw;">
+      Обо мне
+    </h2>
+  </div>
+  <div style="background: rgba(33, 22, 12, 0.85); position: absolute; top: 409vw; width: 100%">
+    <p class="container" style="font-weight: normal; font-size: 3.5vw; line-height: 4.5vw; color: #FFF7F6; text-align: center; margin: 4vw 7vw;" >
+      Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог.<br><br>
+      Предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).
+    </p>
+  </div>
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 5vw 7vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <h3 style="font-size: 4vw; text-align: center;">
+      Мой путь
+    </h3>
+    <p style="font-size: 3.2vw; line-height: 4.1vw">
+      Для начала, я прошел свою личную терапию, получил официальное психологическое образование, а также обучился консультированию и нескольким современным направлениям психотерапии. <br><br>
+      Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил индивидуальные консультации, лекции и тренинги.
+    </p>
+  </div>
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 5vw 7vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <h3 style="font-size: 4vw; text-align: center;">
+      Моя миссия
+    </h3>
+    <p style="font-size: 3.2vw; line-height: 4.1vw">
+      На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
+    </p>
+  </div>
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 5vw 7vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <h3 style="font-size: 4vw; text-align: center;">
+      Мое образование и опыт
+    </h3>
+    <p style="font-size: 3.2vw; line-height: 4.1vw">
+      Я окончил Днепровский Национальный Университет им. Олеся Гончара по специальности “Психология”, при универе организовывал группу по консультированию, прошел курсы повышения квалификции, был волонтером, работал в семейном цетре психологии, а также выступал экспертом в ряде изданий. Последние несколько лет веду частную практику.
+    </p>
+  </div>
+
+  <button id="button_about" style="align-items: center; margin: 0px 22.5vw; height: 14vw; width: 55vw; border-radius: 2vw">
+    <a style="font-size: 2.7vw; line-height: 2vw" href="about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+  </button>
+
+  <h2 style="padding: 10vw 8vw 3vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw">
+    Что входит в стоимость консультации
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="консультация психолога">
+      <h3 class="problem_name">
+        Консультация
+      </h3>
+      <p class="problem_text">
+        2 часа непрерывной работы c Вами (диагностика, изменение схем мышления и поведения, обретение новых способностей и навыков, улучшение эмоционального состояния)
+      </p>
+    </div>
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('stenografiya.svg')%>" alt="стенография консультации психолога">
+      <h3 class="problem_name">
+        Стенография
+      </h3>
+      <p class="problem_text">
+        Стенография консультации с описанием проделанной работы, применяемых техник, результатами Вашей диагностики и домашним заданием (в файле docx)
+      </p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('support.svg')%>" alt="сопровождение психолога">
+      <h3 class="problem_name">
+        Сопровождение
+      </h3>
+      <p class="problem_text">
+        Между сеансами мы поддерживаем с Вами связь в мессенджерах для контроля Вашего состояния, поддержки, ответов на Ваши вопросы и корректировки дз.
+      </p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('dopolnitelnye-materialy.svg')%>" alt="дополнительные материалы для психологической самопомощи">
+      <h3 class="problem_name">
+        Доп. материалы
+      </h3>
+     <p class="problem_text">
+        Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам (в файлах docx, excel, mp3, mp4)
+      </p>
+    </div>
+  </div> <!-- конец Что входит в стоимость консультации -->
+
+  <h2 style="padding: 10vw 0vw 4vw 0vw; margin: 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 5vw;">
+    Стоимость
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
+      <a href="consultations.html#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="width: 30vw; padding: 0vw 21vw 1vw 21vw;">
+        <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Индивидуальная консультация
+        </span>
+      </a>
+      <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
+        <b>Метод – позитивная психотерапия.</b><br>
+        ▷ Диагностика<br>
+        ▷ Постановка целей<br>
+        ▷ Принятие решений<br>
+        ▷ Проблемы в отношениях<br>
+        ▷ Обида, вина, стыд, злость, страх
+      </p>
+      <div style="display:flex; justify-content: center;">
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">2 часа
+        </div>
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">30 $
+        </div>
+      </div>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
+      <a href="consultations.html" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('psychotherapy.svg')%>" alt="курс психотерапии" style="width: 30vw; padding: 0vw 21vw 1vw 21vw;">
+        <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Курс психотерапии
+        </span>
+      </a>
+      <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
+        <b>Метод – КПТ, АСТ, Майндфулнесс.</b><br>
+        ▷ Невроз<br>
+        ▷ Тревога<br>
+        ▷ Депрессия<br>
+        ▷ Навязчивости<br>
+        ▷ Панические атаки<br>
+        ▷ Низкая самооценка<br>
+        ▷ Обучение медитации<br>
+        ▷ Развитие стрессоустойчивости
+      </p>
+      <div style="display:flex; justify-content: center;">
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">10 сеансов по 2 часа
+        </div>
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">250 $
+        </div>
+      </div>
+      <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.8vw; line-height: 3.7vw;">Разовый сеанс психотерапии = 30 $</p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
+      <a href="consultations.html#hypnotherapy" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('methods/Hypnotherapy.svg')%>" alt="курс гипнотерапии" style="width: 30vw; padding: 0vw 21vw 1vw 21vw;">
+        <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Курс гипнотерапии
+        </span>
+      </a>
+      <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
+        <b>Метод – регрессивная гипнотерапия.</b><br>
+        ▷ Невроз<br>
+        ▷ Тревога<br>
+        ▷ Депрессия<br>
+        ▷ Навязчивости<br>
+        ▷ Панические атаки<br>
+        ▷ Низкая самооценка<br>
+        ▷ Психотравмы и ПТСР<br>
+        ▷ Психосоматика (боли, спазмы, СРК, энурез, заикание, аноргазмия)
+      </p>
+      <div style="display:flex; justify-content: center;">
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">5 сеансов по 3 часа
+        </div>
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">200 $
+        </div>
+      </div>
+      <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.8vw; line-height: 3.7vw;">Разовый сеанс гипнотерапии = 50 $</p>
+    </div>
+    
+  </div> <!-- конец услуг -->
+
+  <button id="button_client_form" style="align-items: center; width: 100%; margin: 5vw 22.5vw; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
+    <a style="font-size: 2.5vw" href="#client_form_mob">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+  </button>
+  <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw;">
+    Как записаться на консультацию
+  </h2>
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between; align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('form.svg')%>" alt="форма записи на консультацию психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">Онлайн-запись</h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        Вы заполняете <a href="#client_form_mob" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
+        <a href="/contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
+      </p>
+    </div>
+  </div>
+
+  <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between;
+  align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('first-contact.svg')%>" alt="предварительная консультация психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
+        Первый контакт
+      </h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        В течение 24 часов я с вами списываюсь / созваниваюсь, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем наши дальнейшие действия.
+      </p>
+    </div>
+  </div>
+
+  <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between;
+  align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
+        Консультация
+      </h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        По видеосвязи я работаю с вашей проблемой применяя специально выстроенный диалог и техники психотерапии. Подробнее о моих методах работы читайте 
+            <a href="/methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
+      </p>
+    </div>
+  </div>
+
+  <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw 0vw 7vw; display: flex; justify-content: space-between;
+  align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('result.svg')%>" alt="результат консультаций психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
+        Результат
+      </h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        Вы чувствуете себя комфортно и уверенно в ранее стрессовой ситуации. Делаете то, что для вас ценно и важно. Имеете навыки для самостоятельного решения проблем.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">        
+    <%= render partial: "/new/form_mob"%>
+  </div>
+ 
+  <h2 style="padding: 10vw 8vw 3vw 8vw; text-align: center; font-size: 5vw; line-height: 6vw">
+    Отзывы о моей работе
+  </h2>
+   <p class="container" style="text-align: center; font-size: 3vw; line-height: 3.8vw; letter-spacing: 0.01em; margin: 1vw 7vw 4vw 7vw;">
+    Больше мнений о моей работе и видео отзывы вы найдете в закладке  <a href="/reviews.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">Отзывы</a>
+  </p>
+  <div class="review_box" style="width: 78vw; height: 41vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
+    <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
+      <img class="review_icon"  src="<%= asset_url('review/Мария-20-лет.jpg')%>" alt="отзыв психолог Ткаченко Андрей Мария 20 лет" style="width: 12vw;">
+      <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
+        Мария<br>20 лет
+      </h3>
+    </div>
+    <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
+      «Я пол года занималась еженедельно с Андреем. Я не понимала, почему у меня не складываются отношения, но на определенном этапе работы оказалось, что то, с чем я пришла - это верхушка айсберга, а причина всему - тревога. Я не могу передать словами то, какого было мое удивление, восхищение методиками работы Андрея...»
+    </p>
+  </div>
+
+  <div class="review_box" style="width: 78vw; height: 37vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
+    <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
+      <img class="review_icon" src="<%= asset_url('review/Богдан-29-лет.png')%>" alt="отзыв психолог Ткаченко Андрей Богдан 29 лет" style="width: 12vw;">
+      <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
+        Богдан<br>29 лет
+      </h3>
+    </div>
+    <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
+      «У меня 3 месяца была тревога и ПА. Я взял пробный урок, без особых надежд на успех, потому что у меня был уже отрицательный опыт. Тем не менее, после первого занятия, техники, которые дал мне Андрей, дали эффект, поэтому я поверил в то, что с этим специалистом можно работать. И мои ожидания абсолютно оправдались...»
+    </p>
+  </div>
+
+  <div class="review_box" style="width: 78vw; height: 38vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
+    <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
+      <img class="review_icon" src="<%= asset_url('review/Светлана-37-лет.jpg')%>" alt="отзыв психолог Ткаченко Андрей Светлана 37 лет" style="width: 12vw;">
+      <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
+        Светлана<br>37 лет
+      </h3>
+    </div>
+    <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
+      «Андрея я нашла, когда в моей жизни был непростой период. Мне понравился его энтузиазм и то, что он никогда не оставлял меня одну (у нас были домашние задания и постоянная связь в вайбере), и после каждой консультации мы уже могли отмечать какой-то результат. Андрей грамотный психолог, он каждую ситуацию...»
+    </p>
+  </div>
+
+  <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 5vw;">
+    Интересные статьи
+  </h2>
+  <p class="container" style="text-align: center; font-size: 3vw; line-height: 3.8vw; letter-spacing: 0.01em; margin: 2vw 7vw 3vw 7vw;">
+    Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими вас проблемами - рекомендую ознакомится с моими <a href="/articles.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">статьями</a>
+  </p>
+  <div style="width: 86vw; display: flex; justify-content: space-around; flex-wrap: wrap; margin: 2vw 7vw;">
+    <section class="up-corner-20 article_box">
+      <span class="article_box_span">
+        <span>
+          <h3 class="article_category">
+            <a href="/articles?category_id=7">
+              Невроз и психосоматика
+            </a>
+          </h3>
+          <span class="article_name" style="margin-bottom: 2vw">
+            <a href="/articles/50.html" style="display: block;">
+              Психосоматика. Симптомы и причины возникновения
+            </a>
+          </span>
+        </span>
+      </span>
+      <a href="/articles/50.html">
+        <img class="card_image" src="<%= asset_url('article3.jpg')%>">
+        <div id="linear-gradient">
+          <div></div>
+        </div>
+      </a>
+    </section>
+
+    <section class="up-corner-20 article_box">
+      <span class="article_box_span">
+        <span>
+          <h3 class="article_category">
+            <a href="/articles?category_id=2">
+              Психология отношений
+            </a>
+          </h3>
+          <span class="article_name" style="margin-bottom: 2vw">
+            <a href="/articles/59.html" style="display: block;">
+              5 фраз для решения конфликтов с близкими людьми
+            </a>
+          </span>
+        </span>
+      </span>
+      <a href="/articles/59.html">
+        <img class="card_image" src="<%= asset_url('article4.jpg')%>">
+        <div id="linear-gradient">
+          <div></div>
+        </div>
+      </a>
+    </section>
+
+    <section class="up-corner-20 article_box">
+      <span class="article_box_span">
+        <span>
+          <h3 class="article_category">
+            <a href="/articles?category_id=5">
+              Саморазвитие
+            </a>
+          </h3>
+          <span class="article_name" style="margin-bottom: 2vw">
+            <a href="/articles/60.html" style="display: block;">
+              Медитация на принятие себя и сострадание
+            </a>
+          </span>
+        </span>
+      </span>
+      <a href="/articles/60.html">
+        <img class="card_image" src="<%= asset_url('article2.jpg')%>">
+        <div id="linear-gradient">
+          <div></div>
+        </div>
+      </a>
+    </section>
+  </div>
+</div>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+  
+
+
+<div class="mob" style="background: #F7F7F7; display: none;">
+  <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.jpg')%>" alt="Онлайн консультации психолога Ткаченко Андрей" style="width: 100%">
+  <h2 style="position: absolute; top: 75vw; left: 59vw; font-size: 3vw; letter-spacing: 0.01em; color: #39383c; padding: 0vw">Андрей Ткаченко</h2>
+  <div style="background: #39383c; height: 33vw; position: absolute; top: 82vw; width: 100%"> 
+    <h1 style="font-weight: 800; font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; text-align: center">
+      Консультация психолога онлайн
+    </h1>
+  </div>
+  <div style="background: #888787; height: 15.5vw; position: absolute; top: 119vw; width: 100%">
+    <h2 style="font-weight: normal; font-size: 4vw; line-height: 5.1vw; color: #FFF7F6; text-align: center; margin: 2.9vw 4vw; padding: 0vw">
+      Я помогу вам разобраться с проблемами из любой точки мира
+    </h2>
+  </div>
+  <button id="button_client_form" style="position: absolute; top: 139vw; margin: 0px auto; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
+    <a href="#client_form_mob" style="font-size: 2.5vw">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+  </button>
+
+  <h2 style="padding: 8vw 8vw 5vw 8vw; text-align: center; font-size: 5vw;">
+    Мои направления работы
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img class="problem_icon" src="<%= asset_url('problem/relationship.svg')%>" alt="Улучшение взаимоотношений">
+      <h3 class="problem_name" style="font-size: 2.7vw;">
+        Улучшение взаимоотношений
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/neurosis.svg')%>" alt="Психотерапия неврозов и психосоматики">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Психотерапия неврозов
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/anxiety.svg')%>" alt="Избавление от тревожных расстройств">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Избавление от психосоматики
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/psychological-trauma.svg')%>" alt="Избавление от глубинных психотравм">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Избавление от психотравм
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img  class="problem_icon" src="<%= asset_url('problem/self-esteem.svg')%>" alt="Повышение самооценки">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Повышение самооценки
+      </h3>
+    </div>
+
+    <div class="problem_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15));">
+      <img class="problem_icon" src="<%= asset_url('problem/depression.svg')%>" alt="Психологическая помощь при депрессии">
+      <h3 class="problem_name" style="font-size: 2.7vw">
+        Психотерапия депрессии
+      </h3>
+    </div>
+
+    <p class="container" style="text-align: center; font-size: 2.7vw; line-height: 3.2vw; letter-spacing: 0.01em; margin: 2vw 10vw 10vw 10vw;">
+      Подробнее о том, с чем я работаю читайте <a href="work-with.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">здесь</a>
+    </p>
+  </div> <!-- конец Мои направления работы -->
+  <img src="<%= asset_url('psychologist-Tkachenko-Andrey.jpg')%>" alt="психолог Ткаченко Андрей" style="width: 100%">
+  <div style="background: rgba(33, 22, 12, 0.85); position: absolute; top: 385vw; width: 100%;">
+    <h2 style="font-size: 8.5vw; line-height: 11vw; color: #FFF7F7; margin: 4vw; text-align: center; padding: 0vw;">
+      Обо мне
+    </h2>
+  </div>
+  <div style="background: rgba(33, 22, 12, 0.85); position: absolute; top: 409vw; width: 100%">
+    <p class="container" style="font-weight: normal; font-size: 3.5vw; line-height: 4.5vw; color: #FFF7F6; text-align: center; margin: 4vw 7vw;" >
+      Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я психолог.<br><br>
+      Предоставляю свои услуги населению стран СНГ (на русском и украинском языках). Я являюсь официальным представителем Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).
+    </p>
+  </div>
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 5vw 7vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <h3 style="font-size: 4vw; text-align: center;">
+      Мой путь
+    </h3>
+    <p style="font-size: 3.2vw; line-height: 4.1vw">
+      Для начала, я прошел свою личную терапию, получил официальное психологическое образование, а также обучился консультированию и нескольким современным направлениям психотерапии. <br><br>
+      Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил индивидуальные консультации, лекции и тренинги.
+    </p>
+  </div>
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 5vw 7vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <h3 style="font-size: 4vw; text-align: center;">
+      Моя миссия
+    </h3>
+    <p style="font-size: 3.2vw; line-height: 4.1vw">
+      На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Данные навыки останутся с Вами на всю жизнь и помогут решать трудности в нашем быстроменяющемся мире.
+    </p>
+  </div>
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 5vw 7vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <h3 style="font-size: 4vw; text-align: center;">
+      Мое образование и опыт
+    </h3>
+    <p style="font-size: 3.2vw; line-height: 4.1vw">
+      Я окончил Днепровский Национальный Университет им. Олеся Гончара по специальности “Психология”, при универе организовывал группу по консультированию, прошел курсы повышения квалификции, был волонтером, работал в семейном цетре психологии, а также выступал экспертом в ряде изданий. Последние несколько лет веду частную практику.
+    </p>
+  </div>
+
+  <button id="button_about" style="align-items: center; margin: 0px 22.5vw; height: 14vw; width: 55vw; border-radius: 2vw">
+    <a style="font-size: 2.7vw; line-height: 2vw" href="about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+  </button>
+
+  <h2 style="padding: 10vw 8vw 3vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw">
+    Что входит в стоимость консультации
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="консультация психолога">
+      <h3 class="problem_name">
+        Консультация
+      </h3>
+      <p class="problem_text">
+        2 часа непрерывной работы c Вами (диагностика, изменение схем мышления и поведения, обретение новых способностей и навыков, улучшение эмоционального состояния)
+      </p>
+    </div>
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('stenografiya.svg')%>" alt="стенография консультации психолога">
+      <h3 class="problem_name">
+        Стенография
+      </h3>
+      <p class="problem_text">
+        Стенография консультации с описанием проделанной работы, применяемых техник, результатами Вашей диагностики и домашним заданием (в файле docx)
+      </p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('support.svg')%>" alt="сопровождение психолога">
+      <h3 class="problem_name">
+        Сопровождение
+      </h3>
+      <p class="problem_text">
+        Между сеансами мы поддерживаем с Вами связь в мессенджерах для контроля Вашего состояния, поддержки, ответов на Ваши вопросы и корректировки дз.
+      </p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+      <img  class="problem_icon" src="<%= asset_url('dopolnitelnye-materialy.svg')%>" alt="дополнительные материалы для психологической самопомощи">
+      <h3 class="problem_name">
+        Доп. материалы
+      </h3>
+     <p class="problem_text">
+        Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам (в файлах docx, excel, mp3, mp4)
+      </p>
+    </div>
+  </div> <!-- конец Что входит в стоимость консультации -->
+
+  <h2 style="padding: 10vw 0vw 4vw 0vw; margin: 0vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 5vw;">
+    Стоимость
+  </h2>
+  <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
+      <a href="consultations.html#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="width: 30vw; padding: 0vw 21vw 1vw 21vw;">
+        <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Индивидуальная консультация
+        </span>
+      </a>
+      <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
+        <b>Метод – позитивная психотерапия.</b><br>
+        ▷ Диагностика<br>
+        ▷ Постановка целей<br>
+        ▷ Принятие решений<br>
+        ▷ Проблемы в отношениях<br>
+        ▷ Обида, вина, стыд, злость, страх
+      </p>
+      <div style="display:flex; justify-content: center;">
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">2 часа
+        </div>
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">30 $
+        </div>
+      </div>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
+      <a href="consultations.html" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('psychotherapy.svg')%>" alt="курс психотерапии" style="width: 30vw; padding: 0vw 21vw 1vw 21vw;">
+        <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Курс психотерапии
+        </span>
+      </a>
+      <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
+        <b>Метод – КПТ, АСТ, Майндфулнесс.</b><br>
+        ▷ Невроз<br>
+        ▷ Тревога<br>
+        ▷ Депрессия<br>
+        ▷ Навязчивости<br>
+        ▷ Панические атаки<br>
+        ▷ Низкая самооценка<br>
+        ▷ Обучение медитации<br>
+        ▷ Развитие стрессоустойчивости
+      </p>
+      <div style="display:flex; justify-content: center;">
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">10 сеансов по 2 часа
+        </div>
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">250 $
+        </div>
+      </div>
+      <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.8vw; line-height: 3.7vw;">Разовый сеанс психотерапии = 30 $</p>
+    </div>
+
+    <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
+      <a href="consultations.html#hypnotherapy" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <img class="problem_icon" src="<%= asset_url('methods/Hypnotherapy.svg')%>" alt="курс гипнотерапии" style="width: 30vw; padding: 0vw 21vw 1vw 21vw;">
+        <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
+          Курс гипнотерапии
+        </span>
+      </a>
+      <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
+        <b>Метод – регрессивная гипнотерапия.</b><br>
+        ▷ Невроз<br>
+        ▷ Тревога<br>
+        ▷ Депрессия<br>
+        ▷ Навязчивости<br>
+        ▷ Панические атаки<br>
+        ▷ Низкая самооценка<br>
+        ▷ Психотравмы и ПТСР<br>
+        ▷ Психосоматика (боли, спазмы, СРК, энурез, заикание, аноргазмия)
+      </p>
+      <div style="display:flex; justify-content: center;">
+        <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">5 сеансов по 3 часа
+        </div>
+        <div style="width: 100%; background-color: #ff7f50; border-radius: 0vw 1vw 1vw 0vw; padding: 2.5vw ; font-size: 3.5vw; font-weight: 600; color: #FFFFFF; text-align:center;">200 $
+        </div>
+      </div>
+      <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.8vw; line-height: 3.7vw;">Разовый сеанс гипнотерапии = 50 $</p>
+    </div>
+    
+  </div> <!-- конец услуг -->
+
+  <button id="button_client_form" style="align-items: center; width: 100%; margin: 5vw 22.5vw; height: 14vw; width: 55vw; left: 22vw; border-radius: 2vw">
+    <a style="font-size: 2.5vw" href="#client_form_mob">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+  </button>
+  <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw;">
+    Как записаться на консультацию
+  </h2>
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between; align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('form.svg')%>" alt="форма записи на консультацию психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">Онлайн-запись</h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        Вы заполняете <a href="#client_form_mob" style=" border-bottom: 1px solid currentColor;">форму</a> записи на консультацию и оставляете свои контактные данные или связываетесь со мной напрямую по указанным
+        <a href="/contacts.html" style=" border-bottom: 1px solid currentColor;">контактам</a>.
+      </p>
+    </div>
+  </div>
+
+  <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between;
+  align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('first-contact.svg')%>" alt="предварительная консультация психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
+        Первый контакт
+      </h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        В течение 24 часов я с вами списываюсь / созваниваюсь, анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем наши дальнейшие действия.
+      </p>
+    </div>
+  </div>
+
+  <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw; display: flex; justify-content: space-between;
+  align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('consultation.svg')%>" alt="консультация психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
+        Консультация
+      </h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        По видеосвязи я работаю с вашей проблемой применяя специально выстроенный диалог и техники психотерапии. Подробнее о моих методах работы читайте 
+            <a href="/methods.html" style=" border-bottom: 1px solid currentColor;">здесь</a>.
+      </p>
+    </div>
+  </div>
+
+  <img src="<%= asset_url('mob-arrow-bottom.svg')%>" alt="стрелка вниз" style="width: 5vw; margin: 0vw 47.5vw">
+
+  <div style="background-color: #FDFDFD; border-radius: 1vw; padding: 5vw; margin: 4vw 7vw 0vw 7vw; display: flex; justify-content: space-between;
+  align-items: center; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10));">
+    <img src="<%= asset_url('result.svg')%>" alt="результат консультаций психолога" style="display: inline-block; width: 25vw; padding-right: 3vw">
+    <div style="display: inline-block;">
+      <h3 style="font-size: 3.5vw; text-align: center; display: inline-block; margin-bottom: 0px">
+        Результат
+      </h3>
+      <p style="font-size: 3vw; line-height: 3.8vw; display: inline-block;">
+        Вы чувствуете себя комфортно и уверенно в ранее стрессовой ситуации. Делаете то, что для вас ценно и важно. Имеете навыки для самостоятельного решения проблем.
+      </p>
+    </div>
+  </div>
+
+  <div class="container">        
+    <%= render partial: "/new/form_mob"%>
+  </div>
+ 
+  <h2 style="padding: 10vw 8vw 3vw 8vw; text-align: center; font-size: 5vw; line-height: 6vw">
+    Отзывы о моей работе
+  </h2>
+   <p class="container" style="text-align: center; font-size: 3vw; line-height: 3.8vw; letter-spacing: 0.01em; margin: 1vw 7vw 4vw 7vw;">
+    Больше мнений о моей работе и видео отзывы вы найдете в закладке  <a href="/reviews.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">Отзывы</a>
+  </p>
+  <div class="review_box" style="width: 78vw; height: 41vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
+    <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
+      <img class="review_icon"  src="<%= asset_url('review/Мария-20-лет.jpg')%>" alt="отзыв психолог Ткаченко Андрей Мария 20 лет" style="width: 12vw;">
+      <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
+        Мария<br>20 лет
+      </h3>
+    </div>
+    <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
+      «Я пол года занималась еженедельно с Андреем. Я не понимала, почему у меня не складываются отношения, но на определенном этапе работы оказалось, что то, с чем я пришла - это верхушка айсберга, а причина всему - тревога. Я не могу передать словами то, какого было мое удивление, восхищение методиками работы Андрея...»
+    </p>
+  </div>
+
+  <div class="review_box" style="width: 78vw; height: 37vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
+    <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
+      <img class="review_icon" src="<%= asset_url('review/Богдан-29-лет.png')%>" alt="отзыв психолог Ткаченко Андрей Богдан 29 лет" style="width: 12vw;">
+      <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
+        Богдан<br>29 лет
+      </h3>
+    </div>
+    <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
+      «У меня 3 месяца была тревога и ПА. Я взял пробный урок, без особых надежд на успех, потому что у меня был уже отрицательный опыт. Тем не менее, после первого занятия, техники, которые дал мне Андрей, дали эффект, поэтому я поверил в то, что с этим специалистом можно работать. И мои ожидания абсолютно оправдались...»
+    </p>
+  </div>
+
+  <div class="review_box" style="width: 78vw; height: 38vw; padding: 4vw; margin-bottom: 4vw; filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.15))">
+    <div style="float: left; margin-right: 5vw; height: 100%; text-align: center; width: 14vw">
+      <img class="review_icon" src="<%= asset_url('review/Светлана-37-лет.jpg')%>" alt="отзыв психолог Ткаченко Андрей Светлана 37 лет" style="width: 12vw;">
+      <h3 class="review_name" style="font-size: 3vw; line-height: 3.5vw; text-align: center">
+        Светлана<br>37 лет
+      </h3>
+    </div>
+    <p class="review_text" style="font-size: 3vw; line-height: 3.7vw; margin-top: 0vw;">
+      «Андрея я нашла, когда в моей жизни был непростой период. Мне понравился его энтузиазм и то, что он никогда не оставлял меня одну (у нас были домашние задания и постоянная связь в вайбере), и после каждой консультации мы уже могли отмечать какой-то результат. Андрей грамотный психолог, он каждую ситуацию...»
+    </p>
+  </div>
+
+  <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 5vw;">
+    Интересные статьи
+  </h2>
+  <p class="container" style="text-align: center; font-size: 3vw; line-height: 3.8vw; letter-spacing: 0.01em; margin: 2vw 7vw 3vw 7vw;">
+    Если вам интересна тема психологии и вы хотите больше узнать о работе с волнующими вас проблемами - рекомендую ознакомится с моими <a href="/articles.html" style="text-decoration: none; border-bottom: 1px solid currentColor;">статьями</a>
+  </p>
+  <div style="width: 86vw; display: flex; justify-content: space-around; flex-wrap: wrap; margin: 2vw 7vw;">
+    <section class="up-corner-20 article_box">
+      <span class="article_box_span">
+        <span>
+          <h3 class="article_category">
+            <a href="/articles?category_id=7">
+              Невроз и психосоматика
+            </a>
+          </h3>
+          <span class="article_name" style="margin-bottom: 2vw">
+            <a href="/articles/50.html" style="display: block;">
+              Психосоматика. Симптомы и причины возникновения
+            </a>
+          </span>
+        </span>
+      </span>
+      <a href="/articles/50.html">
+        <img class="card_image" src="<%= asset_url('article3.jpg')%>">
+        <div id="linear-gradient">
+          <div></div>
+        </div>
+      </a>
+    </section>
+
+    <section class="up-corner-20 article_box">
+      <span class="article_box_span">
+        <span>
+          <h3 class="article_category">
+            <a href="/articles?category_id=2">
+              Психология отношений
+            </a>
+          </h3>
+          <span class="article_name" style="margin-bottom: 2vw">
+            <a href="/articles/59.html" style="display: block;">
+              5 фраз для решения конфликтов с близкими людьми
+            </a>
+          </span>
+        </span>
+      </span>
+      <a href="/articles/59.html">
+        <img class="card_image" src="<%= asset_url('article4.jpg')%>">
+        <div id="linear-gradient">
+          <div></div>
+        </div>
+      </a>
+    </section>
+
+    <section class="up-corner-20 article_box">
+      <span class="article_box_span">
+        <span>
+          <h3 class="article_category">
+            <a href="/articles?category_id=5">
+              Саморазвитие
+            </a>
+          </h3>
+          <span class="article_name" style="margin-bottom: 2vw">
+            <a href="/articles/60.html" style="display: block;">
+              Медитация на принятие себя и сострадание
+            </a>
+          </span>
+        </span>
+      </span>
+      <a href="/articles/60.html">
+        <img class="card_image" src="<%= asset_url('article2.jpg')%>">
+        <div id="linear-gradient">
+          <div></div>
+        </div>
+      </a>
+    </section>
+  </div>
+</div>
+

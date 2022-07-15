@@ -12,93 +12,27 @@
   <meta property="og:image" content="http://tkachenkoandrey.com/assets/Tkachenko-Andrey-0ccd9afe47bf51522e172c3619a0dd1b97986605188615048acbc034288baecf.jpg">
 <% end %>
 
-<div class="pc_content">
-  <div class="container">
-    <h1 style="margin: 5vw; text-align: center; font-weight: 800; font-size: 2.5vw;">Контакты</h1>
-
-    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 7vw">      
-      <img src="<%= asset_url('contacts.svg')%>" alt="контакты" style="width: 28%">
-      <div style="width: 36%; padding-left: 10vw">
-        <h4 style="margin-bottom: -0.7vw;">Адрес для консультаций в кабинете:</h4>
-        <p>
-          ул.Артема 11, Днепр, Украина
-        </p>
-        <h4 style="margin-bottom: -0.7vw;">Телефон для звонков:</h4>
-        <p>
-          +38(096)424-80-25 (telegram, viber, whatsapp)
-        </p>
-        <p style="margin-top: 2vw">
-          Со мной также можно связаться через мои соц. сети. Ждете максимального быстрого ответа? Пишите сюда:
-        </p>
-        <div>
-          <a href="https://t.me/tkachenko_psychology"><img style="width: 2.5vw; margin: 0.3vw" src="<%= asset_url('icons/telegram.svg')%>" alt="телеграм"></a>
-          <a href="viber://chat?number=+380964248025"><img style="width: 2.5vw; margin: 0.3vw" src="<%= asset_url('icons/viber.svg')%>" alt="вайбер"></a>
-          <a href="https://api.whatsapp.com/send?phone=%3C+380964248025%3E"><img style="width: 2.5vw; margin: 0.3vw" src="<%= asset_url('icons/whatsapp.svg')%>" alt="вотсап"></a>
-          <a href="https://www.facebook.com/tkachenko.psychology"><img style="width: 2.5vw; margin: 0.3vw" src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
-          <a href="https://www.instagram.com/tkachenko_psychology"><img style="width: 2.5vw; margin: 0.3vw" src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
-        </div>
+<div class="contacts">
+  <div class="contacts__body container">
+    <div class="contacts__header  header_box" style="padding-left: 20px; padding-right: 20px">
+      <h1 class="contacts__title title">Контакты</h1>
+      <p class="contacts__text sign-up__text">Адрес для консультаций в кабинете: ул.Артема 11, Днепр, Украина</p>
+      <p class="сontacts__text sign-up__text">Телефон для записи на консультацию: +380964248025 (telegram, viber, whatsapp) Пн-Вс 10:00-20:00</p>
+      <div class="sign-up__btn-row">
+        <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
+        <a class="btn btn_contact" href="viber://chat?number=+380964248025" target="_blank">Viber</a>
+        <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
       </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 7vw;">
-      <div style="width: 43vw">
-        <h3 style="margin: 0vw 0vw 0vw 3vw; text-align: left; font-weight: 800; font-size: 2.5vw;">Задайте мне вопрос</h3>
-        <p style="margin: 2vw 3vw 4vw 3vw;">
-          Если вы хотите меня о чем-то спросить - просто заполните<br>форму и получите ответ в течении 24 часов.
-        </p>
-        <div style="margin-left: 3.1vw; width: 35vw">
-          <%= render partial: '/new/form' %>
-        </div>
+      <br>
+      <h2 class="contacts__title title">Соцсети</h2>
+      <div class="contacts__row sign-up__btn-row">
+        <a class="contact__icon" href="https://www.youtube.com/channel/UCmruWY6mnZlAlkYWvooDq3Q"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/youtube.svg')%>" alt="ютуб"></a>
+        <a class="contact__icon" href="https://www.facebook.com/tkachenko.psychology"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
+        <a class="contact__icon" href="https://www.instagram.com/tkachenko_psychology"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
       </div>
-      <img src="<%= asset_url('contacts-mail.svg')%>" style="width: 35vw">
-    </div>  
-
-  </div> <!-- конец container -->
-</div> <!-- конец pc_content -->
-
-
-
-
-
-
-
-<!-- начало моб версии -->
-<div class="mob" style="background: #F7F7F7; padding-bottom: 10vw">
-  <div class="container" style="font-size: 2.5vw; line-height: 3vw">
-    <h1 style="padding: 10vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; margin:0vw">
-      Контакты
-    </h1>
-    
-    <p style="text-align: center; font-size: 3vw; line-height: 3.8vw; margin: 2vw auto">
-      Со мной можно связаться через мои соц. сети.<br>Ждете максимального быстрого ответа? Пишите сюда:
-    </p>
-    <div style="display: flex; justify-content: center; filter: drop-shadow(0px 0.5vw 0.5vw rgba(0, 0, 0, 0.35));">
-      <a href="https://t.me/tkachenko_psychology"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/telegram.svg')%>" alt="телеграм"></a>
-      <a href="viber://chat?number=+380964248025"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/viber.svg')%>" alt="вайбер"></a>
-      <a href="https://api.whatsapp.com/send?phone=<+380964248025>"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/whatsapp.svg')%>" alt="вотсап"></a>
-      <a href="https://www.facebook.com/tkachenko.psychology"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
-      <a href="https://www.instagram.com/tkachenko_psychology"><img style="width: 7vw; margin: 3vw 4vw" src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
+      <br>
+      <h2 class="contacts__title title">Сотрудничество</h2>
+      <p class="сontacts__text sign-up__text">Почта для предложений: tkachenko.psychology@gmail.com</p>
     </div>
-    <p style="text-align: center; font-size: 3.3vw; line-height: 4.3vw; margin: 2vw auto">
-      <b>Адрес для консультаций в кабинете:</b><br>ул.Артема 11, Днепр, Украина
-    </p>
-    <p style="text-align: center; font-size: 3.3vw; line-height: 4.3vw; margin: 2vw auto">
-      <b>Телефон для звонков:</b><br>+38(096)424-80-25 (telegram, viber, whatsapp)
-    </p>
-
-    <img src="<%= asset_url('contacts.svg')%>" alt="контакты" style="width: 86vw; margin-top: 5vw">
-
-    <h2 style="padding: 7vw 0vw 2vw 0vw; text-align: center; font-weight: 800; font-size: 5vw">
-      Задайте мне вопрос
-    </h2>
-    <p style="text-align: center; font-size: 3vw; line-height: 3.8vw; margin: 2vw 0vw 5vw 0vw">
-      Если вы хотите меня о чем-то спросить - просто заполните форму и получите ответ в течении 24 часов.
-    </p>
-
-    <div class="questions">
-
-    <%= render partial: "/new/form_mob"%>
-    </div>
-
-  </div> <!-- конец container -->
-  
-</div> <!-- конец моб версии  -->
+  </div>
+</div>

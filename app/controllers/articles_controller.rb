@@ -22,6 +22,7 @@ class ArticlesController < ApplicationController
     @articles = @articles.page(page).per(6) 
 
     @sort = params[:sort] || 'new'
+    @category_id = params[:category_id] || 'new'
 
     case @sort
     when "views"
@@ -42,6 +43,35 @@ class ArticlesController < ApplicationController
     end
     @sort_text = @sort_text.html_safe
 
+    @category_id_text = 'Все статьи'
+
+    case @category_id
+    when "7"
+      @category_id_text = 'Невроз и психосоматика'
+    when "8"
+      @category_id_text = 'Тревога'
+    when "13"
+      @category_id_text = 'Навязчивости (ОКР)'
+    when "14"
+      @category_id_text = 'Низкая самооценка'
+    when "15"
+      @category_id_text = 'Психотравмы'
+    when "9"
+      @category_id_text = 'Депрессия и уныние'
+    when "11"
+      @category_id_text = 'Панические атаки'
+    when "2"
+      @category_id_text = 'Психология отношений'
+    when "3"
+      @category_id_text = 'Общая психология'
+    when "4"
+      @category_id_text = 'Исследования'
+    when "5"
+      @category_id_text = 'Саморазвитие'
+    when "6"
+      @category_id_text = 'Для профи'
+    end
+
     tag = params[:tag_name]
     if tag
       @articles = @articles.where("tags like '%#{tag}%'")
@@ -52,7 +82,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1
   # GET /articles/1.json
   def show
-    @courses = Course.first(3)
+    @courses = Course.first(2)
     @popular = Article.popular(@article.id)
     @news = @article.latest
     @article.increment!(:view_counter)
