@@ -19,25 +19,25 @@
     </div>
     <div class="articles__row_menu">
       <div class="articles__column">
-        <h3 class="articles__title-cathegory">Категории</h3>
+        <h3 class="articles__title-cathegory" style="border-radius: 4px 0px 0px 4px">Категории</h3>
         <nav class="cathegory">
           <input type="checkbox" id="cathegory" style="display: none;">
           <label for="cathegory">
-            <p class="cathegory__mous" style="padding: 15px 5px; margin: 0px"><%= @category_id_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px"></p>
-            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white)">Категории</h3>
+            <p class="cathegory__mous" style="padding: 15px 5px; margin: 0px"><%= @category_id_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px;"></p>
+            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);">Категории</h3>
             <ul class="cathegory__list">
               <li>
                 <a href="/articles" class="cathegory__link" style="border-top: 1px solid var(--gray);">Все статьи</a>
               </li>
               <li class="cathegory__link cathegory__problem" style="padding: 15px 5px; background: var(--white); color: var(--black);">Проблемы<img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px; transform: rotate(-90deg);">
                 <ul class="sub-cathegory__list">
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=7">Невроз и психосоматика</a></li>
+                  <li style="border-top-right-radius: 4px"><a class="sub-cathegory__link" style="border-top-right-radius: 4px" href="/articles?category_id=7">Невроз и психосоматика</a></li>
                   <li><a class="sub-cathegory__link" href="/articles?category_id=8">Тревога</a></li>
                   <li><a class="sub-cathegory__link" href="/articles?category_id=15">Психотравмы</a></li>
                   <li><a class="sub-cathegory__link" href="/articles?category_id=11">Панические атаки</a></li>
                   <li><a class="sub-cathegory__link" href="/articles?category_id=14">Низкая самооценка</a></li>
                   <li><a class="sub-cathegory__link" href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=9" style="border: none">Депрессия и уныние</a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=9" style="border: none; border-radius: 0px 0px 4px 4px">Депрессия и уныние</a></li>
                 </ul>
               </li>
               <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=7">Невроз и психосоматика</a></li>
@@ -51,18 +51,18 @@
               <li><a class="cathegory__link" href="/articles?category_id=3">Общая психология</a></li>
               <li><a class="cathegory__link" href="/articles?category_id=4">Исследования</a></li>
               <li><a class="cathegory__link" href="/articles?category_id=5">Саморазвитие</a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=6" style="border: none">Для профи</a></li>
+              <li class="for_profi" style="border-radius: 0px 0px 4px 4px"><a style="border-radius: 0px 0px 4px 4px; border-bottom: none;" class="cathegory__link" href="/articles?category_id=6">Для профи</a></li>
             </ul>
           </label>
         </nav>
       </div>
       <div class="articles__column">
-        <h3 class="articles__title-cathegory">Сортировать по</h3>
+        <h3 class="articles__title-cathegory" style="border-radius: 4px 0px 0px 4px;">Сортировать по</h3>
         <nav class="cathegory">
           <input type="checkbox" id="sorting" style="display: none;">
           <label for="sorting" style="height: 50px;">
             <p class="cathegory__mous" style="padding: 5px; margin: 0px"><%= @sort_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px"></p>
-            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white)">Сортировать по</h3>
+            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);">Сортировать по</h3>
             <ul class="cathegory__list">
               <li <%= "selected" if (@sort == 'views')%> style="border-top: 1px solid var(--gray);">
                 <a class="cathegory__link" href="<%= articles_path(sort: "views") %>">популярности</a>
@@ -76,8 +76,8 @@
               <li <%= "selected" if (@sort == 'time_less')%>>
                 <a class="cathegory__link" style="padding: 6px" href="<%= articles_path(sort: "time_less") %>">длительности чтения - от<br>наименьшей</a>
               </li>
-              <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none">
-                <a class="cathegory__link" style="padding: 6px" href="<%= articles_path(sort: "time_more") %>" style="border-bottom: none;">длительности чтения - от<br>наибольшей</a></li>
+              <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none; border-radius: 0px 0px 4px 4px">
+                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none;" href="<%= articles_path(sort: "time_more") %>" >длительности чтения - от<br>наибольшей</a></li>
             </ul>
           </label>
         </nav>

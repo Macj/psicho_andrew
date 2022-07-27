@@ -21,13 +21,14 @@
             = card.created_at.strftime("%d %m %Y")
       %a.article__category{href: "#{articles_path(category_id: card.cathegory_id)}"}
         = card.cathegory.name if card.cathegory 
-      %h1.article__name{style: "z-index: 1"}
+      %h1.article__name
         = card.title
       .article__tags.pc_content{style: "z-index: 1; height: 40px; overflow: hidden;"}
         - card.tags.each do |t|
           %a{href: "#{articles_path(tag_name: t)}"}
             = t
       .fullscreen__image{style: "background-image: url(#{card.image_file_name});"}
+      .fullscreen__shadow
     
   %article.article__content
     .article__body.container

@@ -15,9 +15,10 @@
 <div class="article">
   <div class="article__fullscreen fullscreen">
     <div class="article__fullscreen_content fullscreen_content container group_consultations">
-      <h1 class="article__name" style="z-index: 1">Психологические группы онлайн</h1>
-        <h3 class="article__description" style="z-index: 1; background: var(--brown); padding: 25px; color: var(--white); font-weight: 400; margin: 5px 0">Психологическая группа – вид психологической помощи направленный на обретение знаний и навыков, осуществление такого взаимодействия между участниками группы, которое помогло бы им избавиться от социальных и психологических проблем.</h3>
-      <div class="fullscreen__image" style="background-image: url(<%= asset_url('group.jpg')%>)"></div>
+      <h1 class="article__name">Психологические группы онлайн</h1>
+      <p class="article__description pc">Психологическая группа – вид психологической помощи направленный на обретение знаний и навыков, осуществление такого взаимодействия между участниками группы, которое помогло бы им избавиться от социальных и психологических проблем.</p>
+      <img class="fullscreen__image" src="<%= asset_url('group.webp')%>" title="Психологические группы онлайн" alt="Психологические группы онлайн">
+      <div class="fullscreen__shadow"></div>
     </div>
   </div>
 
@@ -317,11 +318,11 @@
           <div class="services__item">
             <h3 class="services__name">Группа психологической поддержки</h3>
             <p class="services__info">2 часа | раз в неделю | 4-12 участников</p>
-            <p class="services__text">
-              ▷ Психологическая поддержка пострадавшим от военных действий<br>
-              ▷ Отработка техник стрессоустойчивости<br>
-              ▷ Коллективное обсуждение и психоанализ насущных вопросов
-            </p>
+            <ul class="services__text">
+              <li>Психологическая поддержка пострадавшим от военных действий</li>
+              <li>Отработка техник стрессоустойчивости</li>
+              <li>Коллективное обсуждение и психоанализ насущных вопросов</li>
+            </ul>
             <p class="services__price">Донат</p>
           </div>
         </div>
@@ -329,11 +330,14 @@
           <div class="services__item">
             <h3 class="services__name">Групповая психотерапия</h3>
             <p class="services__info">2 часа | раз в неделю | 4-8 участников</p>
-            <p class="services__text">
-              ▷ Невроз<br>
-              ▷ Тревога, панические атаки<br>
-              ▷ Развитие стрессоустойчивости
-            </p>
+            <ul class="services__text">
+              <li>Невроз</li>
+              <li>Тревога</li>
+              <li>Навязчивости</li>
+              <li>Панические атаки</li>
+              <li>Низкая самооценка</li>
+              <li>Развитие стрессоустойчивости</li>
+            </ul>
             <p class="services__price">200 грн</p>
           </div>
         </div>
