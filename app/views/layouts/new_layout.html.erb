@@ -4,6 +4,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
   <%= stylesheet_link_tag    'new_application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -24,6 +25,8 @@
 
     gtag('config', 'G-ERVHDW6FFJ');
   </script>
+
+
 
  
 
@@ -58,6 +61,45 @@
       </main>
       <%= render partial: "layouts/footer" %>
     </div>
+
+    <script>
+      const animItems = document.querySelectorAll('._anim-items');
+
+      if (animItems.length > 0) {
+        window.addEventListener('scroll', animOnScroll);
+        function animOnScroll() {
+          for (let index = 0; index < animItems.length; index++) {
+            const animItem = animItems[index];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animStart = 3;
+
+            let animItemPoint = window.innerHeight - animItemHeight / animStart;
+            if (animItemHeight > window.innerHeight) {
+               animItemPoint = window.innerHeight - window.innerHeight / animStart;
+            }
+
+            if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+               animItem.classList.add('_active');
+            } else {
+               if (animItem.classList.contains('_anim-no-hide')) {
+                  animItem.classList.remove('_active');
+               }
+            }
+          }
+        }
+        function offset(el) {
+          const rect = el.getBoundingClientRect(),
+             scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+             scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+        }
+
+        setTimeout(() => {
+           animOnScroll();
+        }, 300);
+      }
+    </script>
   </body>
 </html>
 
