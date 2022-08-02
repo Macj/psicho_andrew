@@ -763,20 +763,7 @@ main {
 
 
 
-._anim-show {
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-._anim-show-step {
-  transform: translate(0px, 120%);
-  opacity: 0;
-  transition: all 0.5s ease 0s;
-}
-._anim-show ._active, ._active ._anim-show, ._active ._anim-show-step {
-  opacity: 1;
-  transform: translate(0px, 0px);
-}
+
 
 .main {
     width: 100%;
@@ -809,15 +796,6 @@ main {
     margin: 2vw 0px 0px 0px;
     color: var(--gray);
   }
-  &__name, &__title {
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-  }
-  &__name._active, &__title._active {
-    transform: translate(0px, 0px);
-    opacity: 1;
-  }
   &__row {
     display: flex;
     justify-content: space-between;
@@ -826,16 +804,6 @@ main {
     font-weight: 300;
     letter-spacing: 0.02em;
     text-align: justify;
-  }
-  &__row, &__text {
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-  }
-  &__row._active, &__text._active {
-    transform: translate(0px, 0px);
-    opacity: 1;
-    transition: all 0.8s ease 0.4s;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -997,39 +965,6 @@ main {
     box-shadow: var(--box-shadow);
     transition: .3s;
     border-radius: var(--border-radius);
-    transform: translate(-100%, 0px);
-    opacity: 0;
-    overflow: hidden;
-  }
-  ._active .problem__column:nth-child(1), ._active .services__column:nth-child(1) {
-    transition: all 0.8s ease 0s;
-  }
-  ._active .problem__column:nth-child(2), ._active .services__column:nth-child(2) {
-    transition: all 0.8s ease 0.15s;
-  }
-  ._active .problem__column:nth-child(3), ._active .services__column:nth-child(3) {
-    transition: all 0.8s ease 0.3s;
-  }
-  ._active .problem__column:nth-child(4), ._active .services__column:nth-child(4) {
-    transition: all 0.8s ease 0.45s;
-  }
-  ._active .problem__column:nth-child(5), ._active .services__column:nth-child(5) {
-    transition: all 0.8s ease 0.60s;
-  }
-  ._active .problem__column:nth-child(6), ._active .services__column:nth-child(6) {
-    transition: all 0.8s ease 0.75s;
-  }
-  ._active .problem__column:nth-child(7), ._active .services__column:nth-child(7) {
-    transition: all 0.8s ease 0.90s;
-  }
-  ._active .problem__column:nth-child(8), ._active .services__column:nth-child(8) {
-    transition: all 0.8s ease 1.05s;
-  }
-  ._active .problem__column:nth-child(9), ._active .services__column:nth-child(9) {
-    transition: all 0.8s ease 1.2s;
-  }
-  &__row._active, .services__row._active {
-    transform: translate(0px, 0px);
   }
   &__img {
     overflow: hidden;
@@ -1547,9 +1482,6 @@ main {
     min-width: 360px;
     padding: 5px;
     display: flex;
-    transform: translate(-100%, 0px);
-    opacity: 0;
-    overflow: hidden;
   }
   &__item {
     flex: 1;
