@@ -42,7 +42,7 @@
   .articles{style: "position: relative; background: var(--background-body); z-index: 10; margin-top: -3px;"}
     .articles__body.container{style: "padding-top: 20px; padding-bottom: 70px;"}
       .articles__header.header_box{style: "margin-bottom: 7px;"}
-        %h2.articles__title.title Популярное на сайте
+        %p.articles__title.title Популярное на сайте
       .articles__row.pop_articles
         - @popular.each do |art|
           = render partial: "articles/card", locals: {card: art}
