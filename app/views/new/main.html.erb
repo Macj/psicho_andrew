@@ -1,36 +1,56 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://tkachenkoandrey.com/about">
-  <title>Обо мне | Психолог Ткаченко Андрей</title>
-  <meta name="description" content="Ткаченко Андрей - практикующий психолог, член Ассоциации Позитивной Психотерапии. Официальное образование, 6 лет опыта работы, реальные результаты.">
-  <meta name="keywords" content="психолог, психотерапевт, психолог онлайн, профессиональный психолог, сертифицированный психолог, психолог по скайпу, психолог Ткаченко Андрей">
+  <link rel="canonical" href="http://tkachenkoandrey.com">
+  <title>Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей</title>
+  <meta name="description" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Оставьте Заявку на Сайте. 2-х часовая психотерапия сложных проблем.">
+  <meta name="keywords" content="психолог, консультация психолога, консультация психолога онлайн, психолог онлайн, психологическая консультация, психолог по скайпу, психотерапия по скайп, консультация психолога по скайпу, психотерапия онлайн, консультация профессионального психолога, психолог Ткаченко Андрей">
   <meta name="author" content="Ткаченко Андрей">
   <meta property="og:locale" content="ru_UA">
-  <meta property="og:url" content="http://www.tkachenkoandrey.com/about">
-  <meta property="og:site_name" content="Психолог Ткаченко Андрей">
+  <meta property='og:url' content='http://tkachenkoandrey.com'>
+  <meta property='og:site_name' content='Психолог Ткаченко Андрей'>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Обо мне | Психолог Ткаченко Андрей">
-  <meta property="og:description" content="Ткаченко Андрей - практикующий психолог, член Ассоциации Позитивной Психотерапии. Официальное образование, 6 лет опыта работы, реальные результаты.">
+  <meta property="og:title" content="Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей">
+  <meta property="og:description" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Оставьте Заявку на Сайте. 2-х часовая психотерапия сложных проблем.">
   <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1133">
   <meta property="og:image:height" content="780">
-  <meta property="article:publisher" content="https://www.facebook.com/tkachenko.psychology/">
+  <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
   <meta property="article:tag" content="психолог">
-  <meta property="article:tag" content="психотерапевт">
+  <meta property="article:tag" content="консультация психолога">
+  <meta property="article:tag" content="консультация психолога онлайн">
   <meta property="article:tag" content="психолог онлайн">
-  <meta property="article:tag" content="профессиональный психолог">
-  <meta property="article:tag" content="сертифицированный психолог">
+  <meta property="article:tag" content="психологическая консультация">
   <meta property="article:tag" content="психолог по скайпу">
+  <meta property="article:tag" content="психотерапия по скайп">
+  <meta property="article:tag" content="консультация психолога по скайпу">
+  <meta property="article:tag" content="психотерапия онлайн">
+  <meta property="article:tag" content="консультация профессионального психолога">
   <meta property="article:tag" content="психолог Ткаченко Андрей">
-  <meta name="twitter:url" content="http://tkachenkoandrey.com/about">
-  <meta name="twitter:title" content="Обо мне | Психолог Ткаченко Андрей">
-  <meta name="twitter:desctiption" content="Ткаченко Андрей - практикующий психолог, член Ассоциации Позитивной Психотерапии. Официальное образование, 6 лет опыта работы, реальные результаты.">
+  <meta name="twitter:url" content="http://tkachenkoandrey.com">
+  <meta name="twitter:title" content="Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей">
+  <meta name="twitter:desctiption" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Оставьте Заявку на Сайте. 2-х часовая психотерапия сложных проблем.">
   <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="relap-image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
-  <link rel="image_src" href='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
+  <link rel="image_src" href="<%= asset_url('Tkachenko-Andrey.jpg')%>">
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $("#button_client_form > a").on("click", function (event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id = $(this).attr('href')
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    var top = $(id).offset().top;
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top-50}, 1500);
+    });
+    });
+  </script>
 <% end %>
 
 <div class="home-page">
