@@ -1,14 +1,34 @@
 - content_for :head do
   %meta{name: "robots", content: "index, follow"}
+  %link{rel:'canonical', href:"#{article_url(@article)}"}
   %title
     = @article.title
   %meta{name: "description", content:"#{@article.description}"}
-  %meta{property:"og:title", content:"#{@article.title}"}
-  %meta{property:"og:description", content:"#{@article.description}"}
+  %meta{name: "keywords", content:"#{@article.tags}"}
+  %meta{name: "author", content:"Ткаченко Андрей"}
+  %meta{property:"og:locale", content:"ru_RU"}
   %meta{property:'og:url', content:"#{article_url(@article)}"}
   %meta{property:'og:site_name', content:'Психолог Ткаченко Андрей'}
-  %meta{property:'article:publisher', content:'https://www.facebook.com/tkachenko.psychology/'}
+  %meta{property:'og:type', content:'article'}
+  %meta{property:"og:title", content:"#{@article.title}"}
+  %meta{property:"og:description", content:"#{@article.description}"}
   %meta{property:'og:image', content:"#{@article.image_file_name}"}
+  %meta{property:'og:image:secure_url', content:"#{@article.image_file_name}"}
+  %meta{property:'og:image:type', content:"image/webp"}
+  %meta{property:'og:image:width', content:"1920"}
+  %meta{property:'og:image:height', content:"1080"}
+  %meta{property:'article:publisher', content:'https://www.facebook.com/tkachenko.psychology/'}
+  
+ 
+  %meta{property:'article:tag', content:"#{@article.tags}"}
+  %meta{name: "twitter:url", content:"#{article_url(@article)}"}
+  %meta{name: "twitter:title", content:"#{@article.title}"}
+  %meta{name: "twitter:desctiption", content:"#{@article.description}"}
+  %meta{name: "twitter:image", content:"#{@article.image_file_name}"}
+  %meta{name: "twitter:card", content:"summary_large_image"}
+  %link{rel: "preload", as:"image", type:"image/webp", href:"#{@article.image_file_name}"}
+  %meta{name: "relap-image", content:"#{@article.image_file_name}"}
+  %link{rel: "image_src", href:"#{@article.image_file_name}"}
 
 - content_for :filters_panel do
   = render partial: 'pages/articles_filters'

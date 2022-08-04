@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light dark">
@@ -9,6 +8,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-ERVHDW6FFJ"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script>
@@ -26,8 +26,6 @@
     gtag('config', 'G-ERVHDW6FFJ');
   </script>
 
- 
-
   <%= csrf_meta_tags %>
   <%= yield :head %>
 
@@ -36,14 +34,23 @@
     <meta name="description"  content="#{@article.description}">
     <meta name="keywords" content="#{@article.tags}">
   <% end %>
-  
+  <meta property="fb:app_id" content="403499743729149">
+  <link rel="icon" type="image/svg+xml" sizes="any" href="<%= asset_url('favicon.svg')%>">
+  <link rel="shortcut icon" type="image/svg+xml" sizes="any" href="<%= asset_url('favicon.svg')%>">
+  <link rel="icon" href="<%= asset_url('favicon.ico')%>">
+
+  <link rel="manifest" href="http://tkachenkoandrey.com/manifest.json">
+  <link rel="search" type="application/opensearchdescription+xml" title="tkachenkoandrey.com" href="http://tkachenkoandrey.com/opensearch.xml">
+  <meta name="msapplication-TileColor" content="#292724">
+  <meta name="msapplication-TileImage" content="<%= asset_url('favicon.svg')%>">
+  <meta name="theme-color" content="#b59f7d">
+
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="<%= asset_url('favicon.png')%>" type="image/png">
 </head>
 
   <body>
@@ -59,6 +66,48 @@
       </main>
       <%= render partial: "layouts/footer" %>
     </div>
+    <!--
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        
+        const animItems = document.querySelectorAll('._anim-items');
+
+        if (animItems.length > 0) {
+          window.addEventListener('scroll', animOnScroll);
+          function animOnScroll() {
+            for (let index = 0; index < animItems.length; index++) {
+              const animItem = animItems[index];
+              const animItemHeight = animItem.offsetHeight;
+              const animItemOffset = offset(animItem).top;
+              const animStart = 4;
+
+              let animItemPoint = window.innerHeight - animItemHeight / animStart;
+              if (animItemHeight > window.innerHeight) {
+                animItemPoint = window.innerHeight - window.innerHeight / animStart;
+              }
+
+              if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+                animItem.classList.add('_active');
+              } else {
+                if (!animItem.classList.contains('_anim-no-hide')) {
+                  animItem.classList.remove('_active');
+                }
+              }
+            }
+          }
+          function offset(el) {
+            const rect = el.getBoundingClientRect(),
+              scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+              scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+          }
+
+          setTimeout(() => {
+            animOnScroll();
+          }, 300);
+        }
+      });
+    </script> -->
   </body>
 </html>
 

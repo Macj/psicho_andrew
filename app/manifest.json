@@ -1,0 +1,16 @@
+{
+ "name": "tkachenkoandrey.com",
+ "short_name": "tkachenkoandrey",
+ "scope": "/",
+ "start_url": "/?utm_source=a2hs",
+ "display": "standalone",
+ "theme_color": "#6a452f",
+ "background_color": "#6a452f",
+ "icons": [
+  {
+   "src": "<%= asset_url('favicon.svg')%>", 
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}

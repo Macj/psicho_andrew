@@ -1,0 +1,9 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>tkachenkoandrey.com</ShortName>
+	<Description>Психолог Ткаченко Андрей</Description>
+	<Image sizes="any" type="image/svg+xml">/assets/favicon-e79c9a412b81fe028b316195480d90b112e7c74b12193aa68b933cd91a7b7fb8.svg</Image>
+	<Url type="text/html" method="GET" template="https://tkachenkoandrey.com/search?query={searchTerms}" resultDomain="tkachenkoandrey.com"/>
+	<OutputEncoding>utf-8</OutputEncoding>
+	<InputEncoding>utf-8</InputEncoding>
+	<moz:SearchForm>https://html.spec.whatwg.org/multipage/</moz:SearchForm>
+</OpenSearchDescription>
