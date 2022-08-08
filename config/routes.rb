@@ -48,7 +48,6 @@ get 'new_menu' => 'pages#new_menu', as: :new_menu
   get '/contacts'                           => 'new#contacts'
   get '/faq'                                => 'new#faq', as: :my_faq
   get '/reviews'                            => 'new#reviews', as: :my_reviews
-  get '/consultations'                      => 'new#consultations'
   get '/contract'                           => 'new#contract'
   get '/methods'                            => 'new#methods'
   get '/services'                           => 'new#services'
