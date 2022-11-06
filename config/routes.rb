@@ -78,6 +78,7 @@ get 'new_menu' => 'pages#new_menu', as: :new_menu
   get '/Positive-psychotherapy'             => 'new#Positive-psychotherapy'
   get '/Mindfulness'                        => 'new#Mindfulness'
   get '/successful-registration'            => 'new#successful-registration'
+  get '/emotional'            => 'new#emotional'
 
   
   
