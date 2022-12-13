@@ -1247,7 +1247,7 @@ GEM
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
     kgio (2.11.4)
-    loofah (2.10.0)
+    loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -1267,7 +1267,7 @@ GEM
       net-ssh (>= 2.6.5, < 7.0.0)
     net-ssh (6.1.0)
     nio4r (2.5.7)
-    nokogiri (1.11.7-x86_64-linux)
+    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     paperclip (5.3.0)
@@ -1278,7 +1278,7 @@ GEM
       terrapin (~> 0.6.0)
     pg (0.18.4)
     popper_js (1.16.0)
-    racc (1.5.2)
+    racc (1.6.1)
     rack (2.2.3)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -1389,7 +1389,6 @@ GEM
     websocket-extensions (0.1.5)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
