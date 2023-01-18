@@ -1279,7 +1279,7 @@ GEM
     pg (0.18.4)
     popper_js (1.16.0)
     racc (1.5.2)
-    rack (2.2.3)
+    rack (2.2.6.2)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (5.0.7.2)
@@ -1389,7 +1389,6 @@ GEM
     websocket-extensions (0.1.5)
 
 PLATFORMS
-  ruby
   x86_64-linux
 
 DEPENDENCIES
