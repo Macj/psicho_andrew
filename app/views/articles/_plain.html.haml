@@ -1,3 +1,5 @@
+- content = I18n.locale == :ru ? card.article_contents.first : card.article_contents.last 
+
 .article
   .article__fullscreen.fullscreen
     .article__fullscreen_content.fullscreen_content.container
@@ -22,9 +24,9 @@
       %a.article__category{href: "#{articles_path(category_id: card.cathegory_id)}"}
         = card.cathegory.name if card.cathegory 
       %h1.article__name
-        = card.title
+        = content.title
       .article__tags.pc_content{style: "z-index: 1; height: 40px; overflow: hidden;"}
-        - card.tags.each do |t|
+        - content&.tags&.each do |t|
           %a{href: "#{articles_path(tag_name: t)}"}
             = t
       .fullscreen__image{style: "background-image: url(#{card.image_file_name});"}
@@ -32,10 +34,10 @@
     
   %article.article__content
     .article__body.container
-      = card.body.html_safe 
+      = content&.body&.html_safe 
   
       .tags_all
-        - card.tags.each do |t|
+        - content&.tags&.each do |t|
           %a{href: "#{articles_path(tag_name: t)}"}
             = t
     

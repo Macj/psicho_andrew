@@ -1,0 +1,14 @@
+%h3=article_content.ln
+= form_for article_content do |ff|
+	.form-group.row
+		= ff.label :title, class: 'col-sm-1'
+		= ff.text_field :title, class: 'form-control'
+	.form-group.row
+		= ff.label :description, class: 'col-sm-1'
+		= ff.text_field :description, class: 'form-control'
+	.form-group.row
+		= ff.label :body, class: 'col-sm-1'
+		= ff.text_area :body, class: 'form-control ', id: 'summernote', placeholder:"Начни свою статью ..."
+	.form-group.row
+		= ff.label :tags, class: 'col-sm-1'
+		= ff.text_field :tags, class: 'form-control'

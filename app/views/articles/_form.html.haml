@@ -1,3 +1,5 @@
+- content_ru = @article.article_contents.first
+- content_ua = @article.article_contents.last
 .form-group.pl-5
   = form_for @article do |f|
     - if @article.errors.any?
@@ -6,16 +8,7 @@
         %ul
           - @article.errors.full_messages.each do |message|
             %li= message
-
-    .form-group.row
-      = f.label :title, class: 'col-sm-1'
-      = f.text_field :title, class: 'form-control'
-    .form-group.row
-      = f.label :description, class: 'col-sm-1'
-      = f.text_field :description, class: 'form-control'
-    .form-group.row
-      = f.label :body, class: 'col-sm-1'
-    = f.text_area :body, class: 'form-control ', id: 'summernote', placeholder:"Начни свою статью ..."
+    
     %br
     .form-group.row
       = f.label :cathegory_id, class: 'col-sm-1'
@@ -26,12 +19,52 @@
     .form-group.row
       = f.label :reading_time, "Время прочтения",class: 'col-sm-1'
       = f.text_field :reading_time, class: 'form-control'
-    .form-group.row
-      = f.label :tags, class: 'col-sm-1'
-      = f.text_field :tags, class: 'form-control'
+    
     .form-group.row
       = f.label :image_file_name, class: 'col-sm-1'
       = f.text_field :image_file_name, class: 'form-control', style:"height:auto; border:none"
+
+    %br
+    .form-group.row
+      - if content_ru.id
+        %input{name: "article[article_contents_attributes][1][id]", value: "#{content_ru.id}"}
+    .form-group.row
+      %h3 Language
+      %input{name: "article[article_contents_attributes][1][ln]", value: "#{content_ru.ln}"}
+    .form-group.row
+      %h3 title
+      %input{name: "article[article_contents_attributes][1][title]",  value: "#{content_ru.title}"}
+    .form-group.row
+      %h3 description
+      %input{name: "article[article_contents_attributes][1][description]", value: "#{content_ru.description}"}
+    .form-group.row
+      %h3 tags
+      %input{name:"article[article_contents_attributes][1][tags]", value:"#{content_ru.tags.join(" ")}"}
+    .form-group.row
+      %h3 Body
+      %textarea{name:"article[article_contents_attributes][1][body]"}
+        = content_ru.body
+
+    .form-group.row
+      - if content_ua.id
+        %input{name: "article[article_contents_attributes][2][id]", value: "#{content_ua.id}"}
+    .form-group.row
+      %h3 Language
+      %input{name: "article[article_contents_attributes][2][ln]", value:"#{content_ua.ln}"}
+    .form-group.row
+      %h3 title
+      %input{name: "article[article_contents_attributes][2][title]",  value:"#{content_ua.title}"}
+    .form-group.row
+      %h3 description
+      %input{name: "article[article_contents_attributes][2][description]", value: "#{content_ua.description}"}
+    .form-group.row
+      %h3 tags
+      %input{name: "article[article_contents_attributes][2][tags]", value: "#{content_ua.tags.join(" ")}"}
+    .form-group.row
+      %h3 Body
+      %textarea{name: "article[article_contents_attributes][2][body]"}
+        = content_ua.body
+    
     .actions
       = f.submit 'Save', class: 'btn btn-info'
 

@@ -91,6 +91,7 @@ class ArticlesController < ApplicationController
   # GET /articles/new
   def new
     @article = Article.new
+    @article.make_content
     render :new, layout: "application"
   end
 
@@ -146,8 +147,10 @@ class ArticlesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def article_params
-      attrs = params.require(:article).permit(:title, :body, :description, :reading_time, :cathegory_id, :style, :tags, :image_file_name)
-      attrs[:tags] = attrs[:tags].split(" ")
+      attrs = params.require(:article).permit(:reading_time, :cathegory_id, :style, :image_file_name, article_contents_attributes: [:id, :ln, :tags, :body, :description, :title])
+      attrs[:article_contents_attributes].each do |key,val|
+        val[:tags] = val[:tags]&.split(" ")
+      end
       attrs 
     end
 end

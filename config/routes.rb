@@ -1,90 +1,92 @@
 Rails.application.routes.draw do
-  devise_for :users
-  resources :cathegories
-  resources :courses
-  resources :articles do
-    member do
-       get :delete
+  scope "(:locale)", locale: /ua|ru|en/, defaults: {locale: "ua"} do
+    devise_for :users
+    resources :cathegories
+    resources :courses
+    resources :articles do
+      member do
+         get :delete
+      end
     end
+    # resources :services
+    resources :faqs
+    resources :clients
+    resources :experiences
+  #  resources :reviews
+
+  # get 'main' => 'pages#main'
+
+  # get 'about' => 'pages#about'
+
+  get 'consultation' => 'pages#consultation'
+
+  # get 'contacts' => 'pages#contacts', as: :contacts
+
+  get 'education' => 'pages#education' 
+
+  # get 'tests' => 'pages#tests'
+
+  # get 'faq' => 'pages#faq', as: :my_faq
+
+  # get 'contract' => 'pages#contract', as: :contract
+
+  get 'my-services' => 'pages#services', as: :my_services
+
+  #get 'my-reviews' => 'pages#reviews', as: :my_reviews
+
+  # get 'work-with' => 'pages#work_with', as: :work_with 
+
+  # get 'methods' => 'pages#methods', as: :methods
+
+  # get 'text' => 'pages#text', as: :text
+
+  get 'make_order' => 'pages#make_order', as: :make_order
+  get 'new_menu' => 'pages#new_menu', as: :new_menu
+
+  #scope '/new' do
+    get '/'                                   => 'new#main', as: :new
+    get '/about'                              => 'new#about'
+    get '/contacts'                           => 'new#contacts'
+    get '/faq'                                => 'new#faq', as: :my_faq
+    get '/reviews'                            => 'new#reviews', as: :my_reviews
+    get '/contract'                           => 'new#contract'
+    get '/methods'                            => 'new#methods'
+    get '/services'                           => 'new#services'
+    get '/work-with'                          => 'new#work_with'
+    get '/individual_consultation'            => 'new#individual_consultation'
+    get '/group_consultation'                 => 'new#group_consultation'
+    get '/webinars'                           => 'new#webinars'
+    get '/books'                              => 'new#books'
+    get '/EMDR'                               => 'new#emdr'
+    get '/dnepr'                              => 'new#dnepr'
+    get '/thank-you'                          => 'new#thank-you'
+    get '/Psychotherapy-for-panic-disorder'   => 'new#psychotherapy_for_panic_disorder'
+    get '/Psychotherapy-of-anxiety'           => 'new#psychotherapy_of_anxiety'
+    get '/Psychotherapy-of-depression'        => 'new#psychotherapy_of_depression'
+    get '/Psychotherapy-of-neuroses'          => 'new#psychotherapy_of_neuroses'
+    get '/Psychotherapy-of-psychotrauma'      => 'new#psychotherapy_of_psychotrauma'
+    get '/Relationship-counseling'            => 'new#relationship_counseling'
+    get '/Training'                           => 'new#training'
+    get '/Transactional-analysis'             => 'new#ta'
+    get '/Acceptance-and-Commitment-Therapy'  => 'new#act'
+    get '/Cognitive-Behavioral-Therapy'       => 'new#cbt'
+    get '/Emotional-Figurative-Therapy'       => 'new#eit'
+    get '/Metacognitive-therapy'              => 'new#mct'
+    get '/STA'                                => 'new#sta'
+    get '/OCD-psychotherapy'                  => 'new#ocd_psychotherapy'
+    get '/Low-self-esteem-psychotherapy'      => 'new#low_selfesteem_psychotherapy'
+    get '/Hypnotherapy'                       => 'new#Hypnotherapy'
+    get '/Positive-psychotherapy'             => 'new#Positive-psychotherapy'
+    get '/Mindfulness'                        => 'new#Mindfulness'
+    get '/successful-registration'            => 'new#successful-registration'
+    get '/emotional'            => 'new#emotional'
+
+    
+    
+    #end
+
+    root "new#main"
   end
-  # resources :services
-  resources :faqs
-  resources :clients
-  resources :experiences
-#  resources :reviews
-
-# get 'main' => 'pages#main'
-
-# get 'about' => 'pages#about'
-
-get 'consultation' => 'pages#consultation'
-
-# get 'contacts' => 'pages#contacts', as: :contacts
-
-get 'education' => 'pages#education' 
-
-# get 'tests' => 'pages#tests'
-
-# get 'faq' => 'pages#faq', as: :my_faq
-
-# get 'contract' => 'pages#contract', as: :contract
-
-get 'my-services' => 'pages#services', as: :my_services
-
-#get 'my-reviews' => 'pages#reviews', as: :my_reviews
-
-# get 'work-with' => 'pages#work_with', as: :work_with 
-
-# get 'methods' => 'pages#methods', as: :methods
-
-# get 'text' => 'pages#text', as: :text
-
-get 'make_order' => 'pages#make_order', as: :make_order
-get 'new_menu' => 'pages#new_menu', as: :new_menu
-
-#scope '/new' do
-  get '/'                                   => 'new#main', as: :new
-  get '/about'                              => 'new#about'
-  get '/contacts'                           => 'new#contacts'
-  get '/faq'                                => 'new#faq', as: :my_faq
-  get '/reviews'                            => 'new#reviews', as: :my_reviews
-  get '/contract'                           => 'new#contract'
-  get '/methods'                            => 'new#methods'
-  get '/services'                           => 'new#services'
-  get '/work-with'                          => 'new#work_with'
-  get '/individual_consultation'            => 'new#individual_consultation'
-  get '/group_consultation'                 => 'new#group_consultation'
-  get '/webinars'                           => 'new#webinars'
-  get '/books'                              => 'new#books'
-  get '/EMDR'                               => 'new#emdr'
-  get '/dnepr'                              => 'new#dnepr'
-  get '/thank-you'                          => 'new#thank-you'
-  get '/Psychotherapy-for-panic-disorder'   => 'new#psychotherapy_for_panic_disorder'
-  get '/Psychotherapy-of-anxiety'           => 'new#psychotherapy_of_anxiety'
-  get '/Psychotherapy-of-depression'        => 'new#psychotherapy_of_depression'
-  get '/Psychotherapy-of-neuroses'          => 'new#psychotherapy_of_neuroses'
-  get '/Psychotherapy-of-psychotrauma'      => 'new#psychotherapy_of_psychotrauma'
-  get '/Relationship-counseling'            => 'new#relationship_counseling'
-  get '/Training'                           => 'new#training'
-  get '/Transactional-analysis'             => 'new#ta'
-  get '/Acceptance-and-Commitment-Therapy'  => 'new#act'
-  get '/Cognitive-Behavioral-Therapy'       => 'new#cbt'
-  get '/Emotional-Figurative-Therapy'       => 'new#eit'
-  get '/Metacognitive-therapy'              => 'new#mct'
-  get '/STA'                                => 'new#sta'
-  get '/OCD-psychotherapy'                  => 'new#ocd_psychotherapy'
-  get '/Low-self-esteem-psychotherapy'      => 'new#low_selfesteem_psychotherapy'
-  get '/Hypnotherapy'                       => 'new#Hypnotherapy'
-  get '/Positive-psychotherapy'             => 'new#Positive-psychotherapy'
-  get '/Mindfulness'                        => 'new#Mindfulness'
-  get '/successful-registration'            => 'new#successful-registration'
-  get '/emotional'            => 'new#emotional'
-
-  
-  
-#end
-
-root "new#main"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

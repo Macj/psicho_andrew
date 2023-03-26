@@ -1,17 +1,18 @@
+- content = I18n.locale == "ru" ? @article.article_contents.first : @article.article_contents.last 
 - content_for :head do
   %meta{name: "robots", content: "index, follow"}
   %link{rel:'canonical', href:"#{article_url(@article)}"}
   %title
     = @article.title
-  %meta{name: "description", content:"#{@article.description}"}
-  %meta{name: "keywords", content:"#{@article.tags}"}
+  %meta{name: "description", content:"#{content.description}"}
+  %meta{name: "keywords", content:"#{content.tags}"}
   %meta{name: "author", content:"Ткаченко Андрей"}
   %meta{property:"og:locale", content:"ru_UA"}
   %meta{property:'og:url', content:"#{article_url(@article)}"}
   %meta{property:'og:site_name', content:'Психолог Ткаченко Андрей'}
   %meta{property:'og:type', content:'article'}
-  %meta{property:"og:title", content:"#{@article.title}"}
-  %meta{property:"og:description", content:"#{@article.description}"}
+  %meta{property:"og:title", content:"#{content.title}"}
+  %meta{property:"og:description", content:"#{content.description}"}
   %meta{property:'og:image', content:"#{@article.image_file_name}"}
   %meta{property:'og:image:secure_url', content:"#{@article.image_file_name}"}
   %meta{property:'og:image:type', content:"image/webp"}
@@ -20,10 +21,10 @@
   %meta{property:'article:publisher', content:'https://www.facebook.com/tkachenko.psychology/'}
   
  
-  %meta{property:'article:tag', content:"#{@article.tags}"}
+  %meta{property:'article:tag', content:"#{content.tags}"}
   %meta{name: "twitter:url", content:"#{article_url(@article)}"}
-  %meta{name: "twitter:title", content:"#{@article.title}"}
-  %meta{name: "twitter:desctiption", content:"#{@article.description}"}
+  %meta{name: "twitter:title", content:"#{content.title}"}
+  %meta{name: "twitter:desctiption", content:"#{content.description}"}
   %meta{name: "twitter:image", content:"#{@article.image_file_name}"}
   %meta{name: "twitter:card", content:"summary_large_image"}
   %link{rel: "preload", as:"image", type:"image/webp", href:"#{@article.image_file_name}"}

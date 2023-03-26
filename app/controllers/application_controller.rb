@@ -5,8 +5,14 @@ class ApplicationController < ActionController::Base
   before_action :set_cat_struct
   before_action :set_client
   before_filter :set_cache_headers
+  around_action :switch_locale
+
 
   private
+    def switch_locale(&action)
+      locale = params[:locale] || I18n.default_locale
+      I18n.with_locale(locale, &action)
+    end
   
     def set_cache_headers
       response.headers["Cache-Control"] = "no-cache, no-store"
