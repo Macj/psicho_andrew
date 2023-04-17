@@ -5,7 +5,7 @@ class ArticleContent < ApplicationRecord
   include Elasticsearch::Model
   include Elasticsearch::Model::Callbacks
 
-  index_name "article-contentss-#{Rails.env}-#{ln}"
+  index_name "article-contentss-#{Rails.env}"
 	
   # elasticsearch
   after_commit on: [:create] do
