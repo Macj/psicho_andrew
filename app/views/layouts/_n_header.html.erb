@@ -40,16 +40,16 @@
             </ul>
           </li> -->
           <li>
-            <a href="/reviews.html" class="header__link">Отзывы</a>
+            <a href="/<%= I18n.locale%>/reviews.html" class="header__link">Отзывы</a>
           </li>
           <li>
-            <a href="/articles.html" class="header__link">Статьи</a>
+            <a href="/<%= I18n.locale%>/articles.html" class="header__link">Статьи</a>
           </li>
           <li>
-            <a href="/contacts.html" class="header__link">Контакты</a>
+            <a href="/<%= I18n.locale%>/contacts.html" class="header__link">Контакты</a>
           </li>
           <li>
-            <a href="/faq.html" class="header__link">FAQ</a>
+            <a href="/<%= I18n.locale%>/faq.html" class="header__link">FAQ</a>
           </li>
         </ul>
       </nav>
@@ -57,7 +57,7 @@
         
         <%= link_to('ua', locale: :ua) %>
         <%= link_to('ru', locale: :ru) %>
-        
+        <%= link_to('ru', locale: I18n.locale %>
       </div>
       <div class="header__contacts">
         <div class="header__contacts-icon"><a href="https://t.me/TkachenkoAndrii" target="_blank"><img alt="телеграм канал" src="<%= asset_url('icons/telegram.svg')%>"></a></div>

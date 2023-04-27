@@ -1,3 +1,5 @@
+<%- content = I18n.locale == :ru ? card.article_contents.first : card.article_contents.last %>
+
 <section class="articles__card" style="background-image: url(<%= card.image_file_name %>);">
   <a class="articles__card_link" href="<%= article_path(card) %>"></a>
   <sspan class="articles__card_content">
@@ -18,8 +20,8 @@
       <%= card.title %>
     </a>
     <span class="articles__card_tags">
-      <%- if card.tags.is_a?(Array) %>
-        <%- card.tags.each do |tag|%>
+      <%- if content.tags.is_a?(Array) %>
+        <%- content&.tags&.each do |tag|%>
           <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a>
         <% end %>
       <% end %>
