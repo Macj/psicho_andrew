@@ -1,10 +1,10 @@
 <header class="header">
   <div class="container">
     <div class="header__body">
-      <a href="/" class="header__logo" style="display: flex; align-items: center;"> 
+      <a href="/<%= I18n.locale%>/" class="header__logo" style="display: flex; align-items: center;"> 
         <img src="<%= asset_url('logo.png')%>" alt="логотип">
         <div class="header__logo-name" style="font-family: 'Lora'; font-family: 'STIX Two Text'; font-family: Playfair Display SC; font-size: 17px; padding-left: 15px; letter-spacing: 0.05em; color: var(--white)">
-          <p style="margin: 0px;">Андрей</p>
+          <p style="margin: 0px;"><%= I18n.t 'menu.Андрей' %></p>
           <p style="padding-left: 7px; margin: -2px 0px 0px 0px;">Ткаченко</p>
         </div>
       </a>
@@ -17,20 +17,22 @@
           margin: -10px 0px 0px 0px; padding: 15px 40px 15px 40px; height: 50px;">Меню</p>
         <ul class="header__list">
           <li>
-            <a href="/about.html" class="header__link">Обо мне</a>
+            <a href="/<%= I18n.locale%>/about.html" class="header__link"><%= I18n.t 'menu.ОБО МНЕ' %></a>
           </li>
           <li id="consultation">
             <input type="checkbox" id="inp_cons" style="display: none;">
-            <label for="inp_cons">КОНСУЛЬТАЦИИ<img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></label>
+            <label for="inp_cons"><%= I18n.t 'menu.КОНСУЛЬТАЦИИ' %><img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></label>
             <ul style="border-radius: var(--border-radius)">
-              <li class="header__link"><a href="/individual_consultation.html">Индивидуальные</a></li>
-              <li class="header__link"><a href="/group_consultation.html">Групповые</a></li>
-              <li class="header__link"><a href="/work-with.html">Направления работы</a></li>
-              <li class="header__link"><a href="/methods.html">Методы работы</a></li>
-              <li class="header__link" style="border-radius: 0px 0px 4px 4px"><a href="/contract.html" style="border: none; border-radius: 0px 0px 4px 4px">Договор</a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/individual_consultation.html"><%= I18n.t 'menu.ИНДИВИДУАЛЬНЫЕ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/group_consultation.html"><%= I18n.t 'menu.ГРУППОВЫЕ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/work-with.html"><%= I18n.t 'menu.НАПРАВЛЕНИЯ РАБОТЫ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/methods.html"><%= I18n.t 'menu.МЕТОДЫ РАБОТЫ' %></a></li>
+              <li class="header__link" style="border-radius: 0px 0px 4px 4px"><a href="/<%= I18n.locale%>/contract.html" style="border: none; border-radius: 0px 0px 4px 4px"><%= I18n.t 'menu.ДОГОВОР' %></a></li>
             </ul>
           </li>
-          <!-- <li id="products">
+              
+          <!-- 
+          <li id="products">
             <input type="checkbox" id="inp_products" style="display: none;">
             <label for="inp_products">ПРОДУКТЫ<img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></label>
             <ul>
@@ -40,24 +42,37 @@
             </ul>
           </li> -->
           <li>
-            <a href="/<%= I18n.locale%>/reviews.html" class="header__link">Отзывы</a>
+            <a href="/<%= I18n.locale%>/reviews.html" class="header__link"><%= I18n.t 'menu.ОТЗЫВЫ' %></a>
           </li>
           <li>
-            <a href="/<%= I18n.locale%>/articles.html" class="header__link">Статьи</a>
+            <a href="/<%= I18n.locale%>/articles.html" class="header__link"><%= I18n.t 'menu.СТАТЬИ' %></a>
           </li>
           <li>
-            <a href="/<%= I18n.locale%>/contacts.html" class="header__link">Контакты</a>
+            <a href="/<%= I18n.locale%>/contacts.html" class="header__link"><%= I18n.t 'menu.КОНТАКТЫ' %></a>
           </li>
-          <li>
-            <a href="/<%= I18n.locale%>/faq.html" class="header__link">FAQ</a>
+          <li style="margin-right: calc(1vw + 20px);">
+            <a href="/<%= I18n.locale%>/faq.html" class="header__link"><%= I18n.t 'menu.FAQ' %></a>
+          </li>
+          <li id="localization">
+            <input type="checkbox" id="inp_loc" style="display: none;">
+            <label for="inp_loc"><%= I18n.t 'menu.ЯЗЫК' %><img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></label>
+            <ul style="border-radius: var(--border-radius)">
+              <li class="header__link"><%= link_to('Українська', locale: :ua) %></li>
+              <li class="header__link"><%= link_to('Русский', locale: :ru) %></li>
+            </ul>
           </li>
         </ul>
       </nav>
-      <div>
-        
-        <%= link_to('ua', locale: :ua) %>
-        <%= link_to('ru', locale: :ru) %>
-
+      <div class="header__locale" style="">
+        <div class="header__locale-list" style="display: flex;"> 
+          <div class="header__locale-link" style="">
+            <%= link_to('UA', locale: :ua) %> 
+          </div>
+          <div class="header__locale-link" style="">/</div> 
+          <div class="header__locale-link" style="">
+            <%= link_to('RU', locale: :ru) %>
+          </div>
+        </div>
       </div>
       <div class="header__contacts">
         <div class="header__contacts-icon"><a href="https://t.me/TkachenkoAndrii" target="_blank"><img alt="телеграм канал" src="<%= asset_url('icons/telegram.svg')%>"></a></div>

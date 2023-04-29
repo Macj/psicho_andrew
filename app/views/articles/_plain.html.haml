@@ -15,14 +15,14 @@
           %svg{viewBox:"0.95 -0.022 10.05 10.05"}
             %path{d:"M5.944,0.001c-2.747,0-4.994,2.251-4.994,5.003s2.247,5.003,4.994,5.003s4.994-2.251,4.994-5.003 S8.691,0.001,5.944,0.001z M8.241,6.781C8.131,6.96,7.897,7.016,7.718,6.905L6.36,6.068c-0.569-0.351-0.915-0.971-0.915-1.64V2.877 c0-0.207,0.168-0.375,0.375-0.375c0.207,0,0.375,0.168,0.375,0.375v1.287C6.194,4.747,6.5,5.288,7,5.588l1.113,0.669 C8.294,6.366,8.351,6.601,8.241,6.781z"}
           %p
-            = card.reading_time.to_s + " мин"
+            = card.reading_time.to_s + " " + I18n.t('articles.мин')
         .article__date
           %svg{viewBox:"0 0 18 20"}
             %path{d:"M6 9H4V11H6V9ZM10 9H8V11H10V9ZM14 9H12V11H14V9ZM16 2H15V0H13V2H5V0H3V2H2C0.89 2 0.00999999 2.9 0.00999999 4L0 18C0 19.1 0.89 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM16 18H2V7H16V18Z"}
           %p
             = card.created_at.strftime("%d %m %Y")
       %a.article__category{href: "#{articles_path(category_id: card.cathegory_id)}"}
-        = card.cathegory.name if card.cathegory 
+        = I18n.t('articles.cathegory.'+card.cathegory.name) if card.cathegory
       %h1.article__name
         = content.title
       .article__tags.pc_content{style: "z-index: 1; height: 40px; overflow: hidden;"}
@@ -44,7 +44,8 @@
   .articles{style: "position: relative; background: var(--background-body); z-index: 10; margin-top: -3px;"}
     .articles__body.container{style: "padding-top: 20px; padding-bottom: 70px;"}
       .articles__header.header_box{style: "margin-bottom: 7px;"}
-        %p.articles__title.title Популярное на сайте
+        %p.articles__title.title 
+          = I18n.t('articles.Популярное на сайте')
       .articles__row.pop_articles
         - @popular.each do |art|
           = render partial: "articles/card", locals: {card: art}

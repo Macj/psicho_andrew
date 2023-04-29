@@ -3,21 +3,21 @@
     <div class="footer__body">
       <nav class="footer__menu">
         <div class="footer__menu-column" style="width: 165px">
-          <div class="footer__menu-item"><a class="footer__link" href="/">Главная</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/about.html">Обо мне</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/contacts.html">Контакты</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/articles.html">Статьи</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/"><%= I18n.t 'menu.Главная' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/about.html"><%= I18n.t 'menu.ОБО МНЕ' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/contacts.html"><%= I18n.t 'menu.КОНТАКТЫ' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/articles.html"><%= I18n.t 'menu.СТАТЬИ' %></a></div>
         </div>
         <div class="footer__menu-column"  style="width: 260px">
-          <div class="footer__menu-item"><a class="footer__link" href="/individual_consultation.html">Индивидуальные сеансы</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/group_consultation.html">Групповые сеансы</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/reviews.html">Отзывы</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/faq.html">FAQ</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/individual_consultation.html"><%= I18n.t 'menu.Индивидуальные сеансы' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/group_consultation.html"><%= I18n.t 'menu.Групповые сеансы' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/reviews.html"><%= I18n.t 'menu.ОТЗЫВЫ' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/faq.html"><%= I18n.t 'menu.FAQ' %></a></div>
         </div>
         <div class="footer__menu-column" style="width: 170px">   
-          <div class="footer__menu-item"><a class="footer__link" href="/work-with.html">Направления работы</a></div>     
-          <div class="footer__menu-item"><a class="footer__link" href="/methods.html">Методы работы</a></div>
-          <div class="footer__menu-item"><a class="footer__link" href="/contract.html">Договор</a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/work-with.html"><%= I18n.t 'menu.НАПРАВЛЕНИЯ РАБОТЫ' %></a></div>     
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/methods.html"><%= I18n.t 'menu.МЕТОДЫ РАБОТЫ' %></a></div>
+          <div class="footer__menu-item"><a class="footer__link" href="/<%= I18n.locale%>/contract.html"><%= I18n.t 'menu.ДОГОВОР' %></a></div>
         </div>
       </nav>
       <div class="footer__contacts">
@@ -27,7 +27,7 @@
         <a class="footer__contacts_link" href="https://www.facebook.com/tkachenko.psychology" target="_blank"><img src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
         <a class="footer__contacts_link" href="https://www.instagram.com/tkachenko_psychology" target="_blank"><img src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
       </div>
-      <p class="footer__property">© 2020-2022 Все права защищены</p>
+      <p class="footer__property"><%= I18n.t 'menu.Права' %></p>
     </div>
   </div>
 </footer>

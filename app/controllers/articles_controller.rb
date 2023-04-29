@@ -27,54 +27,56 @@ class ArticlesController < ApplicationController
     case @sort
     when "views"
       @articles = @articles.order("view_counter DESC")
-      @sort_text = 'популярности'      
+      @sort_text = I18n.t 'articles.sorting.views'      
     when "new"
       @articles = @articles.order("created_at DESC")
-      @sort_text = 'дате - от самой новой'
+      @sort_text = I18n.t 'articles.sorting.new'
     when "old"
       @articles = @articles.order("created_at ASC")
-      @sort_text = 'дате - от самой старой'
+      @sort_text = I18n.t 'articles.sorting.old'
     when "time_less"
       @articles = @articles.order("reading_time ASC")
-      @sort_text = 'длительности чтения - от<br>наименьшей'
+      @sort_text = I18n.t 'articles.sorting.time_less'
     when "time_more" 
       @articles = @articles.order("reading_time DESC")
-      @sort_text = 'длительности чтения - от<br>наибольшей'
+      @sort_text = I18n.t 'articles.sorting.time_more'
     end
     @sort_text = @sort_text.html_safe
 
-    @category_id_text = 'Все статьи'
+    @category_id_text = I18n.t 'articles.cathegory.Все статьи'
 
     case @category_id
     when "7"
-      @category_id_text = 'Невроз и психосоматика'
+      @category_id_text = I18n.t 'articles.cathegory.Невроз и психосоматика'
     when "8"
-      @category_id_text = 'Тревога'
+      @category_id_text = I18n.t 'articles.cathegory.Тревога'  
     when "13"
-      @category_id_text = 'Навязчивости (ОКР)'
+      @category_id_text = I18n.t 'articles.cathegory.Навязчивости (ОКР)'
     when "14"
-      @category_id_text = 'Низкая самооценка'
+      @category_id_text = I18n.t 'articles.cathegory.Низкая самооценка'
     when "15"
-      @category_id_text = 'Психотравмы'
+      @category_id_text = I18n.t 'articles.cathegory.Психотравмы'
     when "9"
-      @category_id_text = 'Депрессия и уныние'
+      @category_id_text = I18n.t 'articles.cathegory.Депрессия и уныние'
     when "11"
-      @category_id_text = 'Панические атаки'
+      @category_id_text = I18n.t 'articles.cathegory.Панические атаки'
     when "2"
-      @category_id_text = 'Психология отношений'
+      @category_id_text = I18n.t 'articles.cathegory.Психология отношений'
     when "3"
-      @category_id_text = 'Общая психология'
+      @category_id_text = I18n.t 'articles.cathegory.Общая психология'
     when "4"
-      @category_id_text = 'Исследования'
+      @category_id_text = I18n.t 'articles.cathegory.Исследования'
     when "5"
-      @category_id_text = 'Саморазвитие'
+      @category_id_text = I18n.t 'articles.cathegory.Саморазвитие'
     when "6"
-      @category_id_text = 'Для профи'
+      @category_id_text = I18n.t 'articles.cathegory.Для профи'
     end
 
     tag = params[:tag_name]
     if tag
-      @articles = @articles.where("tags like '%#{tag}%'")
+      contents = ArticleContent.where("tags like '%#{tag}%'")
+      article_ids = contents.map(&:article).map(&:id).uniq
+      @articles = @articles.where(id: article_ids)
     end
 
   end

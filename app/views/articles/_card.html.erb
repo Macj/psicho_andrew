@@ -1,7 +1,7 @@
 <%- content = I18n.locale == :ru ? card.article_contents.first : card.article_contents.last %>
 
 <section class="articles__card" style="background-image: url(<%= card.image_file_name %>);">
-  <a class="articles__card_link" href="<%= article_path(card) %>"></a>
+  <a class="articles__card_link" href="<%= article_path(card,locale: I18n.locale) %>"></a>
   <sspan class="articles__card_content">
     <span class="articles__card_info">
       <div class="articles__card_views">         
@@ -10,19 +10,19 @@
       </div>
       <div class="articles__card_time_read" style="margin:0px">
         <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
-        <p><%= card.reading_time %> мин</p>
+        <p><%= card.reading_time %> <%= I18n.t 'articles.мин' %></p>
       </div>
     </span>
-    <a class="articles__card_category" href="<%= articles_path(category_id: card.cathegory_id) %>">
-      <%= card.cathegory.name if card.cathegory %>
+    <a class="articles__card_category" href="<%= articles_path(category_id: card.cathegory_id,locale: I18n.locale) %>">
+      <%= I18n.t('articles.cathegory.'+card.cathegory.name) if card.cathegory %>
     </a>
-    <a class="articles__card_name" href="<%= article_path(card) %>">
-      <%= card.title %>
+    <a class="articles__card_name" href="<%= article_path(card,locale: I18n.locale) %>">
+      <%= content.title %>
     </a>
     <span class="articles__card_tags">
       <%- if content.tags.is_a?(Array) %>
         <%- content&.tags&.each do |tag|%>
-          <a href="<%= articles_path(tag_name: tag)%>"><%= tag%></a>
+          <a href="<%= articles_path(tag_name: tag,locale: I18n.locale)%>"><%= tag%></a>
         <% end %>
       <% end %>
     </span>

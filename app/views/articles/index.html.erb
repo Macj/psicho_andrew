@@ -38,69 +38,69 @@
 <div class="articles">
   <div class="articles__body container">
     <div class="articles__header  header_box">
-      <h1 class="articles__title title">Статьи</h1>
+      <h1 class="articles__title title"><%= I18n.t 'articles.Статьи' %></h1>
     </div>
     <div class="articles__row_menu">
       <div class="articles__column">
-        <h3 class="articles__title-cathegory" style="border-radius: 4px 0px 0px 4px">Категории</h3>
+        <h3 class="articles__title-cathegory" style="border-radius: 4px 0px 0px 4px"><%= I18n.t 'articles.cathegory.Категории' %></h3>
         <nav class="cathegory">
           <input type="checkbox" id="cathegory" style="display: none;">
           <label for="cathegory">
             <p class="cathegory__mous" style="padding: 15px 5px; margin: 0px"><%= @category_id_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px;"></p>
-            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);">Категории</h3>
+            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);"><%= I18n.t 'articles.cathegory.Категории' %></h3>
             <ul class="cathegory__list">
               <li>
-                <a href="/articles" class="cathegory__link" style="border-top: 1px solid var(--gray);">Все статьи</a>
+                <a href="/articles" class="cathegory__link" style="border-top: 1px solid var(--gray);"><%= I18n.t 'articles.cathegory.Все статьи' %></a>
               </li>
-              <li class="cathegory__link cathegory__problem" style="padding: 15px 5px; background: var(--white); color: var(--black);">Проблемы<img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px; transform: rotate(-90deg);">
+              <li class="cathegory__link cathegory__problem" style="padding: 15px 5px; background: var(--white); color: var(--black);"><%= I18n.t 'articles.cathegory.Проблемы' %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px; transform: rotate(-90deg);">
                 <ul class="sub-cathegory__list">
-                  <li style="border-top-right-radius: 4px"><a class="sub-cathegory__link" style="border-top-right-radius: 4px" href="/articles?category_id=7">Невроз и психосоматика</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=8">Тревога</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=15">Психотравмы</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=11">Панические атаки</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=14">Низкая самооценка</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=9" style="border: none; border-radius: 0px 0px 4px 4px">Депрессия и уныние</a></li>
+                  <li style="border-top-right-radius: 4px"><a class="sub-cathegory__link" style="border-top-right-radius: 4px" href="/articles?category_id=7"><%= I18n.t 'articles.cathegory.Невроз и психосоматика' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=8"><%= I18n.t 'articles.cathegory.Тревога' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=15"><%= I18n.t 'articles.cathegory.Психотравмы' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=11"><%= I18n.t 'articles.cathegory.Панические атаки' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=14"><%= I18n.t 'articles.cathegory.Низкая самооценка' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=13"><%= I18n.t 'articles.cathegory.Навязчивости (ОКР)' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/articles?category_id=9" style="border: none; border-radius: 0px 0px 4px 4px"><%= I18n.t 'articles.cathegory.Депрессия и уныние' %></a></li>
                 </ul>
               </li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=7">Невроз и психосоматика</a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=8">Тревога</a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=15">Психотравмы</a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=11">Панические атаки</a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=14">Низкая самооценка</a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=13">Навязчивости (ОКР)</a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=9">Депрессия и уныние</a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=2">Психология отношений</a> </li>
-              <li><a class="cathegory__link" href="/articles?category_id=3">Общая психология</a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=4">Исследования</a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=5">Саморазвитие</a></li>
-              <li class="for_profi" style="border-radius: 0px 0px 4px 4px"><a style="border-radius: 0px 0px 4px 4px; border-bottom: none;" class="cathegory__link" href="/articles?category_id=6">Для профи</a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=7"><%= I18n.t 'articles.cathegory.Невроз и психосоматика' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=8"><%= I18n.t 'articles.cathegory.Тревога' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=15"><%= I18n.t 'articles.cathegory.Психотравмы' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=11"><%= I18n.t 'articles.cathegory.Панические атаки' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=14"><%= I18n.t 'articles.cathegory.Низкая самооценка' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=13"><%= I18n.t 'articles.cathegory.Навязчивости (ОКР)' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=9"><%= I18n.t 'articles.cathegory.Депрессия и уныние' %></a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=2"><%= I18n.t 'articles.cathegory.Психология отношений' %></a> </li>
+              <li><a class="cathegory__link" href="/articles?category_id=3"><%= I18n.t 'articles.cathegory.Общая психология' %></a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=4"><%= I18n.t 'articles.cathegory.Исследования' %></a></li>
+              <li><a class="cathegory__link" href="/articles?category_id=5"><%= I18n.t 'articles.cathegory.Саморазвитие' %></a></li>
+              <li class="for_profi" style="border-radius: 0px 0px 4px 4px"><a style="border-radius: 0px 0px 4px 4px; border-bottom: none;" class="cathegory__link" href="/articles?category_id=6"><%= I18n.t 'articles.cathegory.Для профи' %></a></li>
             </ul>
           </label>
         </nav>
       </div>
       <div class="articles__column">
-        <h3 class="articles__title-cathegory" style="border-radius: 4px 0px 0px 4px;">Сортировать по</h3>
+        <h3 class="articles__title-cathegory" style="border-radius: 4px 0px 0px 4px;"><%= I18n.t 'articles.sorting.Сортировать по' %></h3>
         <nav class="cathegory">
           <input type="checkbox" id="sorting" style="display: none;">
           <label for="sorting" style="height: 50px;">
             <p class="cathegory__mous" style="padding: 5px; margin: 0px"><%= @sort_text %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px"></p>
-            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);">Сортировать по</h3>
+            <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);"><%= I18n.t 'articles.sorting.Сортировать по' %></h3>
             <ul class="cathegory__list">
               <li <%= "selected" if (@sort == 'views')%> style="border-top: 1px solid var(--gray);">
-                <a class="cathegory__link" href="<%= articles_path(sort: "views") %>">популярности</a>
+                <a class="cathegory__link" href="<%= articles_path(sort: "views") %>"><%= I18n.t 'articles.sorting.views' %></a>
               </li>
               <li <%= "selected" if (@sort == 'new')%> >
-                <a class="cathegory__link" href="<%= articles_path(sort: "new") %>">дате - от самой новой</a>
+                <a class="cathegory__link" href="<%= articles_path(sort: "new") %>"><%= I18n.t 'articles.sorting.new' %></a>
               </li>
               <li <%= "selected" if (@sort == 'old')%> >
-                <a class="cathegory__link" href="<%= articles_path(sort: "old") %>">дате - от самой старой</a>
+                <a class="cathegory__link" href="<%= articles_path(sort: "old") %>"><%= I18n.t 'articles.sorting.old' %></a>
               </li>
               <li <%= "selected" if (@sort == 'time_less')%>>
-                <a class="cathegory__link" style="padding: 6px" href="<%= articles_path(sort: "time_less") %>">длительности чтения - от<br>наименьшей</a>
+                <a class="cathegory__link" style="padding: 6px" href="<%= articles_path(sort: "time_less") %>"><%= I18n.t 'articles.sorting.time_less' %></a>
               </li>
               <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none; border-radius: 0px 0px 4px 4px">
-                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none;" href="<%= articles_path(sort: "time_more") %>" >длительности чтения - от<br>наибольшей</a></li>
+                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none;" href="<%= articles_path(sort: "time_more") %>" ><%= I18n.t 'articles.sorting.time_more' %></a></li>
             </ul>
           </label>
         </nav>

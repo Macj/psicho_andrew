@@ -164,8 +164,8 @@ main {
     display: none;
     z-index: 3;
     justify-content:flex-end;
-    flex: 1 0 128px;
-    margin-left: 10px;
+    flex: 0 0 123px;
+    margin-left: 8px;
   }
   &__contacts-icon {
     margin: 5px;
@@ -213,7 +213,7 @@ main {
   &__menu li a, label {
     padding: 10px;
     color: var(--white);
-    letter-spacing: 0.05em;
+    letter-spacing: 0.06em;
     font-size: 12px;
     line-height: 20px;
   }
@@ -224,6 +224,28 @@ main {
     padding-left: 40px;
     font-size: 24px;
     font-weight: 800;
+  }
+  &__locale {
+    display: flex; 
+    z-index: 3; 
+    justify-content: flex-end;
+    flex: 1;
+  }
+  &__locale {
+    color: var(--white);
+    letter-spacing: 0.06em;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0px 8px;
+  }
+  &__locale-link {
+    margin: 2px 0px;
+  }
+  &__locale-link a {
+    padding: 10px 6px;
+    color: var(--white);
+    border-bottom: 1px solid transparent;
   }
 }
 @media screen and (max-width: 767px), (orientation: landscape) and (max-width: 1023px) {
@@ -295,17 +317,20 @@ main {
       left: 0px;
       z-index: 4;
     }
+    &__locale {
+      display: none;
+    }
     &__menu.active {
       top: 0;
     }
     &__list {
       display: block;
     }
-    &__list li, #consultation label, #products label {
+    &__list li, #consultation label, #products label, #localization label {
       margin: 0px;
       border-bottom: 1px solid rgba(236, 236, 236, 0.1);
     }
-    &__link {
+    &__link, &__locale-link, &__locale-link a {
       font-size: 18px !important;
     }
     .arrow {
@@ -332,34 +357,38 @@ main {
       color: var(--white);
       font-size: 18px;
     }
-    #consultation label, .menu, #products label {
+    #consultation label, .menu, #products label, #localization label {
       display: block !important;
     }
-    #consultation ul li, #products ul li {
+    #consultation ul li, #products ul li, , #localization ul li {
       border: none;
     }
     .consultation, .header__products {
       display: none !important;
     }
-    #consultation, #products {
+    #consultation, #products, #localization {
       border-bottom: none;
     }
-    input#burger:checked ~ .header__menu{
+    input#burger:checked ~ .header__menu {
       transform: translateY(0%);
     }
-    #consultation li a, #products li a {
+    input#burger:checked ~ .header__locale {
+      transform: translateY(608%);
+      left: -50%;
+    }
+    #consultation li a, #products li a, #localization li a {
       font-size: 0vw;
       padding: 0vw;
       transition: 0.4s;
     }
-    input#inp_cons:checked ~ ul li > a, input#inp_products:checked ~ ul li > a {
+    input#inp_cons:checked ~ ul li > a, input#inp_products:checked ~ ul li > a, input#inp_loc:checked ~ ul li > a {
       font-size: 14px !important;
       padding: 18px 30px 18px 95px !important;
     }
-    input#inp_cons:checked ~ ul li, input#inp_products:checked ~ ul li {
+    input#inp_cons:checked ~ ul li, input#inp_products:checked ~ ul li, input#inp_loc:checked ~ ul li {
       border-bottom: 1px solid rgba(236, 236, 236, 0.1) !important;
     }
-    input#inp_cons:checked + label, input#inp_products:checked + label {
+    input#inp_cons:checked + label, input#inp_products:checked + label, input#inp_loc:checked + label {
       background: rgba(200, 200, 200, 0.1);
       box-shadow: inset 0px 4px 15px rgba(0, 0, 0, 0.15);
     }
@@ -392,20 +421,23 @@ main {
   .header__contacts {
     display: flex;
   }
+  #localization {
+    display: none;
+  }
 }
 @media screen and (min-width: 1024px) {
-  #consultation:hover .arrow, #products:hover .arrow {
+  #consultation:hover .arrow, #products:hover .arrow, #localization:hover .arrow {
     transform: rotate(180deg);
   }
   #consultation:hover, #products:hover{
     border-bottom: none;
   }
-  .header__list .consultation:hover .header__list .consultation ul, .header__list .header__products:hover .header__list .header__products ul {
+  .header__list .consultation:hover .header__list .consultation ul, .header__list .header__products:hover .header__list .header__products ul, .header__list .localization:hover .header__list .localization ul {
     display: flex;
     position: relative;
     z-index: 2;
   }
-  .header__list > li:hover {
+  .header__list > li:hover, .header__locale-link:hover {
     border-bottom: 1px solid rgb(235,225,220);
   }
   .header__menu ul ul > li:hover {
@@ -422,10 +454,10 @@ main {
   }
 }
 @media screen and (max-width: 1023px) {
-  input#inp_cons:checked ~ ul, input#inp_products:checked ~ ul {
+  input#inp_cons:checked ~ ul, input#inp_products:checked ~ ul, input#inp_loc:checked ~ ul {
     display: block;
   }
-  input#inp_cons:checked + label img, input#inp_products:checked + label img {
+  input#inp_cons:checked + label img, input#inp_products:checked + label img, input#inp_loc:checked + label img {
     transform-origin: center;
     transform: rotate(180deg);
   }
@@ -435,6 +467,8 @@ main {
     margin-left: -65px !important;
   }
 }
+
+
 
 
 
