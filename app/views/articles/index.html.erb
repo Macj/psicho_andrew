@@ -96,11 +96,11 @@
               <li <%= "selected" if (@sort == 'old')%> >
                 <a class="cathegory__link" href="/<%= I18n.locale%>/<%= articles_path(sort: "old") %>"><%= I18n.t 'articles.sorting.old' %></a>
               </li>
-              <li <%= "selected" if (@sort == 'time_less')%>>
-                <a class="cathegory__link" style="padding: 6px" href="/<%= I18n.locale%>/<%= articles_path(sort: "time_less") %>"><%= I18n.t 'articles.sorting.time_less' %></a>
+              <li <%= "selected" if (@sort == 'time_less')%> style="display: flex; min-height: 51px;">
+                <a class="cathegory__link" style="padding: 6px; display: flex; align-items: center; justify-content: center;" href="/<%= I18n.locale%>/<%= articles_path(sort: "time_less") %>"><%= I18n.t 'articles.sorting.time_less' %></a>
               </li>
-              <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none; border-radius: 0px 0px 4px 4px">
-                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none;" href="/<%= I18n.locale%>/<%= articles_path(sort: "time_more") %>" ><%= I18n.t 'articles.sorting.time_more' %></a></li>
+              <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none; border-radius: 0px 0px 4px 4px; display: flex; min-height: 50px;">
+                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none; display: flex; align-items: center; justify-content: center;" href="/<%= I18n.locale%>/<%= articles_path(sort: "time_more") %>" ><%= I18n.t 'articles.sorting.time_more' %></a></li>
             </ul>
           </label>
         </nav>
