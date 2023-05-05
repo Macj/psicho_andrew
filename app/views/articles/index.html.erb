@@ -50,31 +50,31 @@
             <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);"><%= I18n.t 'articles.cathegory.Категории' %></h3>
             <ul class="cathegory__list">
               <li>
-                <a href="/articles" class="cathegory__link" style="border-top: 1px solid var(--gray);"><%= I18n.t 'articles.cathegory.Все статьи' %></a>
+                <a href="/<%= I18n.locale%>/articles" class="cathegory__link" style="border-top: 1px solid var(--gray);"><%= I18n.t 'articles.cathegory.Все статьи' %></a>
               </li>
               <li class="cathegory__link cathegory__problem" style="padding: 15px 5px; background: var(--white); color: var(--black);"><%= I18n.t 'articles.cathegory.Проблемы' %><img src="<%= asset_url('arrow-category.svg')%>" alt="стрелка подкатегории" style="width: 12px; margin-left: 5px; transform: rotate(-90deg);">
                 <ul class="sub-cathegory__list">
-                  <li style="border-top-right-radius: 4px"><a class="sub-cathegory__link" style="border-top-right-radius: 4px" href="/articles?category_id=7"><%= I18n.t 'articles.cathegory.Невроз и психосоматика' %></a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=8"><%= I18n.t 'articles.cathegory.Тревога' %></a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=15"><%= I18n.t 'articles.cathegory.Психотравмы и ПТСР' %></a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=11"><%= I18n.t 'articles.cathegory.Панические атаки' %></a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=14"><%= I18n.t 'articles.cathegory.Низкая самооценка' %></a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=13"><%= I18n.t 'articles.cathegory.Навязчивые мысли и действия' %></a></li>
-                  <li><a class="sub-cathegory__link" href="/articles?category_id=9" style="border: none; border-radius: 0px 0px 4px 4px"><%= I18n.t 'articles.cathegory.Депрессия и уныние' %></a></li>
+                  <li style="border-top-right-radius: 4px"><a class="sub-cathegory__link" style="border-top-right-radius: 4px" href="/<%= I18n.locale%>/articles?category_id=7"><%= I18n.t 'articles.cathegory.Невроз и психосоматика' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/<%= I18n.locale%>/articles?category_id=8"><%= I18n.t 'articles.cathegory.Тревога' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/<%= I18n.locale%>/articles?category_id=15"><%= I18n.t 'articles.cathegory.Психотравмы и ПТСР' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/<%= I18n.locale%>/articles?category_id=11"><%= I18n.t 'articles.cathegory.Панические атаки' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/<%= I18n.locale%>/articles?category_id=14"><%= I18n.t 'articles.cathegory.Низкая самооценка' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/<%= I18n.locale%>/articles?category_id=13"><%= I18n.t 'articles.cathegory.Навязчивые мысли и действия' %></a></li>
+                  <li><a class="sub-cathegory__link" href="/<%= I18n.locale%>/articles?category_id=9" style="border: none; border-radius: 0px 0px 4px 4px"><%= I18n.t 'articles.cathegory.Депрессия и уныние' %></a></li>
                 </ul>
               </li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=7"><%= I18n.t 'articles.cathegory.Невроз и психосоматика' %></a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=8"><%= I18n.t 'articles.cathegory.Тревога' %></a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=15"><%= I18n.t 'articles.cathegory.Психотравмы и ПТСР' %></a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=11"><%= I18n.t 'articles.cathegory.Панические атаки' %></a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=14"><%= I18n.t 'articles.cathegory.Низкая самооценка' %></a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=13"><%= I18n.t 'articles.cathegory.Навязчивые мысли и действия' %></a></li>
-              <li class="cathegory__touch"><a class="cathegory__link" href="/articles?category_id=9"><%= I18n.t 'articles.cathegory.Депрессия и уныние' %></a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=2"><%= I18n.t 'articles.cathegory.Психология отношений' %></a> </li>
-              <li><a class="cathegory__link" href="/articles?category_id=3"><%= I18n.t 'articles.cathegory.Общая психология' %></a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=4"><%= I18n.t 'articles.cathegory.Исследования' %></a></li>
-              <li><a class="cathegory__link" href="/articles?category_id=5"><%= I18n.t 'articles.cathegory.Саморазвитие' %></a></li>
-              <li class="for_profi" style="border-radius: 0px 0px 4px 4px"><a style="border-radius: 0px 0px 4px 4px; border-bottom: none;" class="cathegory__link" href="/articles?category_id=6"><%= I18n.t 'articles.cathegory.Для профи' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=7"><%= I18n.t 'articles.cathegory.Невроз и психосоматика' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=8"><%= I18n.t 'articles.cathegory.Тревога' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=15"><%= I18n.t 'articles.cathegory.Психотравмы и ПТСР' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=11"><%= I18n.t 'articles.cathegory.Панические атаки' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=14"><%= I18n.t 'articles.cathegory.Низкая самооценка' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=13"><%= I18n.t 'articles.cathegory.Навязчивые мысли и действия' %></a></li>
+              <li class="cathegory__touch"><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=9"><%= I18n.t 'articles.cathegory.Депрессия и уныние' %></a></li>
+              <li><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=2"><%= I18n.t 'articles.cathegory.Психология отношений' %></a> </li>
+              <li><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=3"><%= I18n.t 'articles.cathegory.Общая психология' %></a></li>
+              <li><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=4"><%= I18n.t 'articles.cathegory.Исследования' %></a></li>
+              <li><a class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=5"><%= I18n.t 'articles.cathegory.Саморазвитие' %></a></li>
+              <li class="for_profi" style="border-radius: 0px 0px 4px 4px"><a style="border-radius: 0px 0px 4px 4px; border-bottom: none;" class="cathegory__link" href="/<%= I18n.locale%>/articles?category_id=6"><%= I18n.t 'articles.cathegory.Для профи' %></a></li>
             </ul>
           </label>
         </nav>
@@ -88,19 +88,19 @@
             <h3 class="cathegory__touch" style="margin: 0px; background: var(--green); padding: 15px 5px; color: var(--white);"><%= I18n.t 'articles.sorting.Сортировать по' %></h3>
             <ul class="cathegory__list">
               <li <%= "selected" if (@sort == 'views')%> style="border-top: 1px solid var(--gray);">
-                <a class="cathegory__link" href="<%= articles_path(sort: "views") %>"><%= I18n.t 'articles.sorting.views' %></a>
+                <a class="cathegory__link" href="/<%= I18n.locale%>/<%= articles_path(sort: "views") %>"><%= I18n.t 'articles.sorting.views' %></a>
               </li>
               <li <%= "selected" if (@sort == 'new')%> >
-                <a class="cathegory__link" href="<%= articles_path(sort: "new") %>"><%= I18n.t 'articles.sorting.new' %></a>
+                <a class="cathegory__link" href="/<%= I18n.locale%>/<%= articles_path(sort: "new") %>"><%= I18n.t 'articles.sorting.new' %></a>
               </li>
               <li <%= "selected" if (@sort == 'old')%> >
-                <a class="cathegory__link" href="<%= articles_path(sort: "old") %>"><%= I18n.t 'articles.sorting.old' %></a>
+                <a class="cathegory__link" href="/<%= I18n.locale%>/<%= articles_path(sort: "old") %>"><%= I18n.t 'articles.sorting.old' %></a>
               </li>
               <li <%= "selected" if (@sort == 'time_less')%>>
-                <a class="cathegory__link" style="padding: 6px" href="<%= articles_path(sort: "time_less") %>"><%= I18n.t 'articles.sorting.time_less' %></a>
+                <a class="cathegory__link" style="padding: 6px" href="/<%= I18n.locale%>/<%= articles_path(sort: "time_less") %>"><%= I18n.t 'articles.sorting.time_less' %></a>
               </li>
               <li <%= "selected" if (@sort == 'time_more')%> style="border-bottom: none; border-radius: 0px 0px 4px 4px">
-                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none;" href="<%= articles_path(sort: "time_more") %>" ><%= I18n.t 'articles.sorting.time_more' %></a></li>
+                <a class="cathegory__link" style="padding: 6px; border-radius: 0px 0px 4px 4px; border-bottom: none;" href="/<%= I18n.locale%>/<%= articles_path(sort: "time_more") %>" ><%= I18n.t 'articles.sorting.time_more' %></a></li>
             </ul>
           </label>
         </nav>
