@@ -225,22 +225,21 @@ main {
     font-size: 24px;
     font-weight: 800;
   }
-  &__loc {
-    display: flex; 
+  &__locales {
+    display: flex;
     z-index: 3; 
     justify-content: flex-end;
     flex: 1;
-    color: var(--white);
     letter-spacing: 0.06em;
     font-size: 13px;
     line-height: 20px;
     font-weight: 600;
     margin: 0px 8px;
   }
-  &__loc-link {
+  &__locale_link {
     margin: 2px 0px;
   }
-  &__loc-link a {
+  &__locale_link a {
     padding: 10px 6px;
     color: var(--white);
     border-bottom: 1px solid transparent;
@@ -315,7 +314,7 @@ main {
       left: 0px;
       z-index: 4;
     }
-    &__loc {
+    .header__locales {
       display: none;
     }
     &__menu.active {
@@ -328,7 +327,7 @@ main {
       margin: 0px;
       border-bottom: 1px solid rgba(236, 236, 236, 0.1);
     }
-    &__link, &__loc-link, &__loc-link a {
+    &__link, &__locale_link, &__locale_link a {
       font-size: 18px !important;
     }
     .arrow {
@@ -370,7 +369,7 @@ main {
     input#burger:checked ~ .header__menu {
       transform: translateY(0%);
     }
-    input#burger:checked ~ .header__loc {
+    input#burger:checked ~ .header__locales {
       transform: translateY(608%);
       left: -50%;
     }
@@ -435,7 +434,7 @@ main {
     position: relative;
     z-index: 2;
   }
-  .header__list > li:hover, .header__loc-link:hover {
+  .header__list > li:hover, .header__locale_link:hover {
     border-bottom: 1px solid rgb(235,225,220);
   }
   .header__menu ul ul > li:hover {
