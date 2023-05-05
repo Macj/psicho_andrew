@@ -51,11 +51,11 @@ class ArticlesController < ApplicationController
     when "8"
       @category_id_text = I18n.t 'articles.cathegory.Тревога'  
     when "13"
-      @category_id_text = I18n.t 'articles.cathegory.Навязчивости (ОКР)'
+      @category_id_text = I18n.t 'articles.cathegory.Навязчивые мысли и действия'
     when "14"
       @category_id_text = I18n.t 'articles.cathegory.Низкая самооценка'
     when "15"
-      @category_id_text = I18n.t 'articles.cathegory.Психотравмы'
+      @category_id_text = I18n.t 'articles.cathegory.Психотравмы и ПТСР'
     when "9"
       @category_id_text = I18n.t 'articles.cathegory.Депрессия и уныние'
     when "11"
