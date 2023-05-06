@@ -2209,6 +2209,8 @@ iframe {
 }
 .cathegory li {
   list-style: none;
+  display: flex;
+  min-height: 51px;
 }
 .cathegory__list {
   display: none;
@@ -2284,7 +2286,13 @@ iframe {
     display: none !important;
   }
   .cathegory__mob, .cathegory__touch {
-    display: block !important;
+    display: flex !important;
+  }
+  .cathegory a {
+    padding: 6px 8px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
   }
 }
 
