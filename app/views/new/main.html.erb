@@ -1,36 +1,36 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://tkachenkoandrey.com">
-  <title>Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей</title>
-  <meta name="description" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Записаться на сеанс. 2-х часовая психотерапия сложных проблем.">
-  <meta name="keywords" content="психолог, консультация психолога, консультация психолога онлайн, психолог онлайн, психологическая консультация, психолог по скайпу, психотерапия по скайп, консультация психолога по скайпу, психотерапия онлайн, консультация профессионального психолога, психолог Ткаченко Андрей">
-  <meta name="author" content="Ткаченко Андрей">
-  <meta property="og:locale" content="ru_UA">
-  <meta property='og:url' content='http://tkachenkoandrey.com'>
-  <meta property='og:site_name' content='Психолог Ткаченко Андрей'>
+  <link rel="canonical" href="<%= t 'main.head.url' %>">
+  <title><%= t 'main.head.title' %></title>
+  <meta name="description" content="<%= t 'main.head.description' %>">
+  <meta name="keywords" content="<%= t 'main.head.keywords' %>">
+  <meta name="author" content="<%= t 'main.head.author' %>">
+  <meta property="og:locale" content="<%= t 'main.head.og:locale' %>">
+  <meta property='og:url' content='<%= t 'main.head.url' %>'>
+  <meta property='og:site_name' content='<%= t 'main.head.og:site_name' %>'>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей">
-  <meta property="og:description" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Записаться на сеанс. 2-х часовая психотерапия сложных проблем.">
+  <meta property="og:title" content="<%= t 'main.head.title' %>">
+  <meta property="og:description" content="<%= t 'main.head.description' %>">
   <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1133">
   <meta property="og:image:height" content="780">
   <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
-  <meta property="article:tag" content="психолог">
-  <meta property="article:tag" content="консультация психолога">
-  <meta property="article:tag" content="консультация психолога онлайн">
-  <meta property="article:tag" content="психолог онлайн">
-  <meta property="article:tag" content="психологическая консультация">
-  <meta property="article:tag" content="психолог по скайпу">
-  <meta property="article:tag" content="психотерапия по скайп">
-  <meta property="article:tag" content="консультация психолога по скайпу">
-  <meta property="article:tag" content="психотерапия онлайн">
-  <meta property="article:tag" content="консультация профессионального психолога">
-  <meta property="article:tag" content="психолог Ткаченко Андрей">
-  <meta name="twitter:url" content="http://tkachenkoandrey.com">
-  <meta name="twitter:title" content="Консультация психолога онлайн | Психотерапия по Скайп | Ткаченко Андрей">
-  <meta name="twitter:desctiption" content="Специалист с международным дипломом, член Ассоциации Позитивной Психотерапии в Украине. Записаться на сеанс. 2-х часовая психотерапия сложных проблем.">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag7' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag8' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag9' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag10' %>">
+  <meta property="article:tag" content="<%= t 'main.head.article:tag11' %>">
+  <meta name="twitter:url" content="<%= t 'main.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'main.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'main.head.description' %>">
   <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
@@ -60,15 +60,15 @@
     <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.webp')%>" alt="Онлайн консультации психолога Ткаченко Андрей" class="mob" style="width: 100%;">
     <div class="main__body container">
       <div class="main__item">
-        <h2 class="main__name"><%= t 'views.myname' %></h2>
-        <h1 class="main__title">Консультация<br>психолога онлайн</h1>
-        <p class="main__text">Профессиональная психотерапия из любой точки мира</p>
+        <h2 class="main__name"><%= t 'main.myname' %></h2>
+        <h1 class="main__title"><%= t 'main.title' %><br>психолога онлайн</h1>
+        <p class="main__text"><%= t 'main.text' %></p>
         <div class="main__row">
           <div class="main__column">
-            <a id="button_client_form" class="btn btn_sign-up" href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
+            <a id="button_client_form" class="btn btn_sign-up" href="#client_form"><%= t 'button.sign-up' %></a>
           </div>
           <div class="main__column pc">
-            <a class="btn btn_about" href="/about.html">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+            <a class="btn btn_about" href="/<%= I18n.locale%>/about.html"><%= t 'button.about' %></a>
           </div>
         </div>
       </div>
@@ -79,43 +79,43 @@
   <div class="problem">
     <div class="problem__body container">
       <div class="problem__header header_box" style="position: relative;">
-        <h2 class="problem__title title">Мои направления работы</h2>
+        <h2 class="problem__title title"><%= t 'main.problem.title' %></h2>
       </div>
       <div class="problem__row">
         <div class="problem__column">
           <div class="problem__item">
-            <h3 class="problem__name">Невроз и психосоматика</h3>
-              <p class="problem__text">Устранение раздражительности, ранимости, вины, стыда, обиды, злости, ВСД, мышечных болей, проблем со сном, аппетитом, сексом и прочей психосоматики.</p>
+            <h3 class="problem__name"><%= t 'main.problem.Невроз.title' %></h3>
+              <p class="problem__text"><%= t 'main.problem.Невроз.text' %></p>
           </div>
         </div>
         <div class="problem__column">
           <div class="problem__item">
-            <h3 class="problem__name">Тревога, ПА, ОКР</h3>
-            <p class="problem__text">Избавление от панических атак, навязчивых мыслей и действий, беспокойства, тревожных предчувствий и сомнений о здоровье и благополучии.</p>
+            <h3 class="problem__name"><%= t 'main.problem.Тревога.title' %></h3>
+            <p class="problem__text"><%= t 'main.problem.Тревога.text' %></p>
           </div>
         </div>
         <div class="problem__column">
           <div class="problem__item">
-            <h3 class="problem__name">Депрессия</h3>
-            <p class="problem__text">Избавление от депрессии, подавленности, апатии, грусти. Проработка пессимистичных мыслей, повышение концентрации внимания и активности.</p>
+            <h3 class="problem__name"><%= t 'main.problem.Депрессия.title' %></h3>
+            <p class="problem__text"><%= t 'main.problem.Депрессия.text' %></p>
           </div>
         </div>
         <div class="problem__column">
           <div class="problem__item">
-            <h3 class="problem__name">Пcихотравмы</h3>
-            <p class="problem__text">Работа с последствиями сильного или длительного стресса, детскими психотравмами. Психологическая поддержка в случае насилия, утраты близких.</p>
+            <h3 class="problem__name"><%= t 'main.problem.Пcихотравмы.title' %></h3>
+            <p class="problem__text"><%= t 'main.problem.Пcихотравмы.text' %></p>
           </div>
         </div>
         <div class="problem__column">
           <div class="problem__item">
-            <h3 class="problem__name">Низкая самооценка</h3>
-            <p class="problem__text">Избавление от самообвинений, сравнений себя с другими, комплексов внешности, нерешительности. Работа с установками “Я не смогу”, “Я не достоин”.</p>
+            <h3 class="problem__name"><%= t 'main.problem.Низкая самооценка.title' %></h3>
+            <p class="problem__text"><%= t 'main.problem.Низкая самооценка.text' %></p>
           </div>
         </div>
         <div class="problem__column">
           <div class="problem__item">
-            <h3 class="problem__name">Взаимоотношения</h3>
-            <p class="problem__text">Помощь в принятии сложных решений. Развитие навыков коммуникации. Работа с чувством одиночества, ревностью, конфликтами.</p>
+            <h3 class="problem__name"><%= t 'main.problem.Взаимоотношения.title' %></h3>
+            <p class="problem__text"><%= t 'main.problem.Взаимоотношения.text' %></p>
           </div>
         </div>
       </div>
@@ -134,17 +134,16 @@
         </div>
         <div class="introduce__column_2">
           <div class="introduce__item">
-            <h2 class="introduce__title title">Обо мне</h2>
-            <p class="introduce__text">Здравствуйте, друзья!
-            Меня зовут Ткаченко Андрей, я практикующий психолог. 6 лет предоставляю услуги психологического консультирования и психотерапии. Имею официальное образование, являюсь членом Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).</p>
-            <h3 class="introduce__subtitle pc">Мой путь</h3>
-            <p class="introduce__text pc">Для начала, я прошел свою личную терапию, получил официальное психологическое образование, а также обучился консультированию и нескольким современным направлениям психотерапии. Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил индивидуальные консультации, лекции и тренинги.</p>
-            <h3  class="introduce__subtitle pc">Моя миссия</h3>
-            <p class="introduce__text pc">На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток. Данные навыки останутся с вами на всю жизнь и помогут решать проблемы в нашем быстроменяющемся мире.</p>
-            <h3  class="introduce__subtitle pc">Мое образование и опыт</h3>
-            <p class="introduce__text pc">Я окончил Днепровский Национальный Университет им. Олеся Гончара по специальности “Психология”, при универе организовывал группу по консультированию, прошел курсы повышения квалификации, был волонтером, работал в семейном центре психологии, а также выступал экспертом в ряде изданий. Последние несколько лет веду частную практику.</p>
+            <h2 class="introduce__title title"><%= t 'main.about.title' %></h2>
+            <p class="introduce__text"><%= t 'main.about.hello' %></p>
+            <h3 class="introduce__subtitle pc"><%= t 'main.about.my-walk.sub-title' %></h3>
+            <p class="introduce__text pc"><%= t 'main.about.my-walk.text' %></p>
+            <h3  class="introduce__subtitle pc"><%= t 'main.about.my-mission.sub-title' %></h3>
+            <p class="introduce__text pc"><%= t 'main.about.my-mission.text' %></p>
+            <h3  class="introduce__subtitle pc"><%= t 'main.about.my-education.sub-title' %></h3>
+            <p class="introduce__text pc"><%= t 'main.about.my-education.text' %></p>
             <div class="introduce__button">
-              <a class="btn btn_sign-up" href="/about.html" style="display: inline-block;">УЗНАТЬ ОБО МНЕ БОЛЬШЕ</a>
+              <a class="btn btn_sign-up" href="/<%= I18n.locale%>/about.html" style="display: inline-block;"><%= t 'button.about' %></a>
             </div>
           </div>
         </div>
@@ -156,54 +155,54 @@
   <div class="services">
     <div class="services__body container">
       <div class="services__header header_box ">
-        <h2 class="services__title title">Услуги</h2>
+        <h2 class="services__title title"><%= t 'main.services.title' %></h2>
       </div>
       <div class="services__row">
         <div class="services__column">
           <div class="services__item">
-            <h3 class="services__name">Индивидуальная консультация</h3>
-            <p class="services__info">2 часа</p>
+            <h3 class="services__name"><%= t 'main.services.ind.title' %></h3>
+            <p class="services__info"><%= t 'main.services.ind.time' %></p>
             <ul class="services__text">
-              <li>Диагностика</li>
-              <li>Постановка целей</li>
-              <li>Принятие решений</li>
-              <li>Проблемы в отношениях</li>
-              <li>Состояния острого стресса</li>
-              <li>Обида, вина, стыд, злость, грусть</li>
+              <li><%= t 'main.services.ind.problem1' %></li>
+              <li><%= t 'main.services.ind.problem2' %></li>
+              <li><%= t 'main.services.ind.problem3' %></li>
+              <li><%= t 'main.services.ind.problem4' %></li>
+              <li><%= t 'main.services.ind.problem5' %></li>
+              <li><%= t 'main.services.ind.problem6' %></li>
             </ul>
-            <p class="services__price">800 грн</p>
+            <p class="services__price"><%= t 'main.services.ind.price' %></p>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
-            <h3 class="services__name">Индивидуальный курс психотерапии</h3>
-            <p class="services__info">2 часа | 10 сеансов | 1-2 сеанса в неделю</p>
+            <h3 class="services__name"><%= t 'main.services.course.title' %></h3>
+            <p class="services__info"><%= t 'main.services.course.time' %></p>
             <ul class="services__text">
-              <li>Невроз</li>
-              <li>Тревога</li>
-              <li>Депрессия</li>
-              <li>Психотравмы</li>
-              <li>Навязчивости</li>
-              <li>Психосоматика</li>
-              <li>Панические атаки</li>
-              <li>Низкая самооценка</li>
+              <li><%= t 'main.services.course.problem1' %></li>
+              <li><%= t 'main.services.course.problem2' %></li>
+              <li><%= t 'main.services.course.problem3' %></li>
+              <li><%= t 'main.services.course.problem4' %></li>
+              <li><%= t 'main.services.course.problem5' %></li>
+              <li><%= t 'main.services.course.problem6' %></li>
+              <li><%= t 'main.services.course.problem7' %></li>
+              <li><%= t 'main.services.course.problem8' %></li>
             </ul>
-            <p class="services__price">7000 грн</p>
+            <p class="services__price"><%= t 'main.services.course.price' %></p>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
-            <h3 class="services__name">Групповая психотерапия</h3>
-            <p class="services__info">2 часа | раз в неделю | 4-8 участников</p>
+            <h3 class="services__name"><%= t 'main.services.group.title' %></h3>
+            <p class="services__info"><%= t 'main.services.group.time' %></p>
             <ul class="services__text">
-              <li>Невроз</li>
-              <li>Тревога</li>
-              <li>Навязчивости</li>
-              <li>Панические атаки</li>
-              <li>Низкая самооценка</li>
-              <li>Развитие стрессоустойчивости</li>
+              <li><%= t 'main.services.group.problem1' %></li>
+              <li><%= t 'main.services.group.problem2' %></li>
+              <li><%= t 'main.services.group.problem3' %></li>
+              <li><%= t 'main.services.group.problem4' %></li>
+              <li><%= t 'main.services.group.problem5' %></li>
+              <li><%= t 'main.services.group.problem6' %></li>
             </ul>
-            <p class="services__price">200 грн</p>
+            <p class="services__price"><%= t 'main.services.group.price' %></p>
           </div>
         </div>
       </div>
@@ -214,16 +213,14 @@
   <div class="sign-up" id="client_form">
     <div class="sign-up__body container">
       <div class="sign-up__item">
-        <h2 class="sign-up__title title">Запись на консультацию</h2>
-        <p class="sign-up__text">Напишите мне в мессенджер. В течение 24 часов я вам отвечу, проанализирую вашу ситуацию и мы вместе согласуем наши дальнейшие действия.</p>
+        <h2 class="sign-up__title title"><%= t 'sign-up.title' %></h2>
+        <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
         <div class="sign-up__btn-row">
           <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
           <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
           <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
         </div>
-        <p class="sign-up__text pc">
-          По всем вопросам, звонить: +380964248025<br>Пн-Вс 10:00-20:00
-        </p>
+        <p class="sign-up__text pc"><%= t 'sign-up.text1' %><br><%= t 'sign-up.text2' %></p>
       </div>
     </div>
   </div>
@@ -232,7 +229,7 @@
   <div class="reviews">
     <div class="reviews__body container">
       <div class="reviews__header header_box">
-        <h2 class="reviews__title title">Отзывы</h2>
+        <h2 class="reviews__title title"><%= t 'slider-reviews.title' %></h2>
       </div>
 
       <%= render partial: "/new/review"%>
@@ -298,101 +295,101 @@
   <div class="articles">
     <div class="articles__body container"  style="padding-top: 50px; padding-bottom: 70px;">
       <div class="articles__header header_box"  style="margin-bottom: 7px;">
-        <h2 class="articles__title title ">Интересные статьи</h2>
+        <h2 class="articles__title title "><%= t 'main.articles.title' %></h2>
       </div>
       <div class="articles__row pop_articles">
         <section class="articles__card" style="background-image: url(https://andrey-pl2.s3.us-east-2.amazonaws.com/articles/images/59.webp);">
-          <a class="articles__card_link" href="/articles/59"></a>
+          <a class="articles__card_link" href="/<%= I18n.locale%>/articles/59"></a>
           <span class="articles__card_content">
             <span class="articles__card_info">
               <div class="articles__card_time_read" style="margin:0px">
                 <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
-                <p>22 мин</p>
+                <p><%= t 'main.articles.article1.time' %></p>
               </div>
             </span>
-            <a class="articles__card_category" href="/articles?category_id=2">
-              Психология отношений
+            <a class="articles__card_category" href="/<%= I18n.locale%>/articles?category_id=2">
+              <%= t 'main.articles.article1.cathegory' %>
             </a>
-            <a class="articles__card_name" href="/articles/59">
-              5 фраз для решения конфликтов с близкими людьми
+            <a class="articles__card_name" href="/<%= I18n.locale%>/articles/59">
+              <%= t 'main.articles.article1.title' %>
             </a>
             <span class="articles__card_tags">
-              <a href="/articles?tag_name=Отношения">Отношения</a>
-              <a href="/articles?tag_name=Конфликт">Конфликт</a>
-              <a href="/articles?tag_name=Коммуникация">Коммуникация</a>
-              <a href="/articles?tag_name=Я-сообщение">Я-сообщение</a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Отношения"><%= t 'main.articles.article1.tags.tag1' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Конфликт"><%= t 'main.articles.article1.tags.tag2' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Коммуникация"><%= t 'main.articles.article1.tags.tag3' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Я-сообщение"><%= t 'main.articles.article1.tags.tag4' %></a>
             </span>
           </span>
         </section>
         <section class="articles__card" style="background-image: url(https://andrey-pl2.s3.us-east-2.amazonaws.com/articles/images/60.webp);">
-          <a class="articles__card_link" href="/articles/60"></a>
+          <a class="articles__card_link" href="/<%= I18n.locale%>/articles/60"></a>
           <span class="articles__card_content">
             <span class="articles__card_info">
               <div class="articles__card_time_read" style="margin:0px">
                 <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
-                <p>3 мин</p>
+                <p><%= t 'main.articles.article2.time' %></p>
               </div>
             </span>
-            <a class="articles__card_category" href="/articles?category_id=5">
-              Саморазвитие
+            <a class="articles__card_category" href="/<%= I18n.locale%>/articles?category_id=5">
+              <%= t 'main.articles.article2.cathegory' %>
             </a>
-            <a class="articles__card_name" href="/articles/60">
-              Медитация на принятие себя и сострадание
+            <a class="articles__card_name" href="/<%= I18n.locale%>/articles/60">
+              <%= t 'main.articles.article2.title' %>
             </a>
             <span class="articles__card_tags">
-              <a href="/articles?tag_name=Майндфулнесс">Майндфулнесс</a>
-              <a href="/articles?tag_name=Медитации">Медитации</a>
-              <a href="/articles?tag_name=Принятие">Принятие</a>
-              <a href="/articles?tag_name=Психотехники">Психотехники</a>
-              <a href="/articles?tag_name=Самосострадание">Самосострадание</a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Майндфулнесс"><%= t 'main.articles.article2.tags.tag1' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Медитации"><%= t 'main.articles.article2.tags.tag2' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Принятие"><%= t 'main.articles.article2.tags.tag3' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Психотехники"><%= t 'main.articles.article2.tags.tag4' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Самосострадание"><%= t 'main.articles.article2.tags.tag5' %></a>
             </span>
           </span>
         </section>
         <section class="articles__card" style="background-image: url(https://andrey-pl2.s3.us-east-2.amazonaws.com/articles/images/50.webp);">
-          <a class="articles__card_link" href="/articles/50"></a>
+          <a class="articles__card_link" href="/<%= I18n.locale%>/articles/50"></a>
           <span class="articles__card_content">
             <span class="articles__card_info">
               <div class="articles__card_time_read" style="margin:0px">
                 <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
-                <p>21 мин</p>
+                <p><%= t 'main.articles.article3.time' %></p>
               </div>
             </span>
-            <a class="articles__card_category" href="/articles?category_id=7">
-              Невроз и психосоматика
+            <a class="articles__card_category" href="/<%= I18n.locale%>/articles?category_id=7">
+              <%= t 'main.articles.article3.cathegory' %>
             </a>
-            <a class="articles__card_name" href="/articles/50">
-              Психосоматика. Симптомы и причины возникновения
+            <a class="articles__card_name" href="/<%= I18n.locale%>/articles/50">
+              <%= t 'main.articles.article3.title' %>
             </a>
             <span class="articles__card_tags">
-              <a href="/articles?tag_name=Психосоматика">Психосоматика</a>
-              <a href="/articles?tag_name=Диагностика">Диагностика</a>
-              <a href="/articles?tag_name=Стресс">Стресс</a>
-              <a href="/articles?tag_name=ВСД">ВСД</a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Психосоматика"><%= t 'main.articles.article3.tags.tag1' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Диагностика"><%= t 'main.articles.article3.tags.tag2' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Стресс"><%= t 'main.articles.article3.tags.tag3' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=ВСД"><%= t 'main.articles.article3.tags.tag4' %></a>
             </span>
           </span>
         </section>
         <section class="articles__card" style="background-image: url(https://andrey-pl2.s3.us-east-2.amazonaws.com/articles/images/55.webp);">
-          <a class="articles__card_link" href="/articles/55"></a>
+          <a class="articles__card_link" href="/<%= I18n.locale%>/articles/55"></a>
           <span class="articles__card_content">
             <span class="articles__card_info">
               <div class="articles__card_time_read" style="margin:0px">
                 <img src="<%= asset_url('time-read.svg')%>" alt="время чтения статьи">
-                <p>15 мин</p>
+                <p><%= t 'main.articles.article4.time' %></p>
               </div>
             </span>
-            <a class="articles__card_category" href="/articles?category_id=14">
-              Низкая самооценка
+            <a class="articles__card_category" href="/<%= I18n.locale%>/articles?category_id=14">
+              <%= t 'main.articles.article4.cathegory' %>
             </a>
-            <a class="articles__card_name" href="/articles/55">
-              Самооценка. Низкая, завышенная, нарциссизм. Причины и следствия
+            <a class="articles__card_name" href="/<%= I18n.locale%>/articles/55">
+              <%= t 'main.articles.article4.title' %>
             </a>
             <span class="articles__card_tags">
-              <a href="/articles?tag_name=Самооценка">Самооценка</a>
-              <a href="/articles?tag_name=Диагностика">Диагностика</a>
-              <a href="/articles?tag_name=Нарциссизм">Нарциссизм</a>
-              <a href="/articles?tag_name=Перфекционизм">Перфекционизм</a>
-              <a href="/articles?tag_name=Механизм">Механизм</a>
-              <a href="/articles?tag_name=Терапия">Терапия</a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Самооценка"><%= t 'main.articles.article4.tags.tag1' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Диагностика"><%= t 'main.articles.article4.tags.tag2' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Нарциссизм"><%= t 'main.articles.article4.tags.tag3' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Перфекционизм"><%= t 'main.articles.article4.tags.tag4' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Механизм"><%= t 'main.articles.article4.tags.tag5' %></a>
+              <a href="/<%= I18n.locale%>/articles?tag_name=Терапия"><%= t 'main.articles.article4.tags.tag6' %></a>
             </span>
           </span>
         </section>

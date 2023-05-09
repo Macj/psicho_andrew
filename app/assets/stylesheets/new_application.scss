@@ -754,6 +754,9 @@ main {
     padding: 12px 44px;
     display: inline-block;
   }
+  .main__column .btn_about {
+    padding: 12px 36px;  
+  }
 }
 @media screen and (max-width: 1359px) {
   .button a, .button_about a, #button_form a, #button_faq a {
@@ -775,7 +778,12 @@ main {
     width: 200px;
   }
 }
-
+@media screen and (min-width: 1360px) and (max-width: 1599px) {
+  .main__column .btn_about {
+    padding: 12px 28px;
+  }
+}
+ 
 
 
 
@@ -834,7 +842,7 @@ main {
   }
   &__text {
     font-weight: 300;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.025em;
     text-align: justify;
   }
 }
@@ -845,7 +853,6 @@ main {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__item {
-    width: 43%;
     top: 50px;
     padding-left: 30px;
   }
@@ -854,22 +861,25 @@ main {
     margin-top: 0px;
   }
   .main__title {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 33px;
+    line-height: 35px;
     text-align-last: left !important;
   }
   .main__text {
     font-size: 14px;
     text-align: left !important;
-    width: 83%;
+    margin-bottom: 1.2em;
   }
   .main__row {
     display: block !important;
   }
+  .main__column .btn_about {
+    display: none;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1359px) {
   .main__item {
-    width: 57%;
+    width: 61%;
     top: 50px;
     padding-left: 30px;
   }
@@ -878,12 +888,13 @@ main {
     margin-top: 0px;
   }
   .main__title {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 50px;
+    line-height: 50px;
     text-align-last: left !important;
   }
   .main__text {
     font-size: 19px;
+    margin-bottom: 1.2em;
   }
   .main__row {
     display: inline-flex !important;
@@ -899,15 +910,17 @@ main {
   }
   .main__text {
     font-size: 18px;
+    margin-bottom: 1.2em;
   }
 }
 @media screen and (min-width: 1600px) {
   .main__title {
-    font-size: 57px;
+    font-size: 58px;
     line-height: 63px;
   }
   .main__text {
     font-size: 20px;
+    margin-bottom: 1.2em;
   }
 }
 @media screen and (max-width: 767px) {
@@ -1128,11 +1141,13 @@ main {
     border-radius: var(--border-radius);
   }
   &__item {
+    height: 100%;
   }
   &__foto {
     display: block;
     width: 100%;
     object-fit: cover;
+    height: 100%;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
   }
@@ -1147,6 +1162,11 @@ main {
   &__button {
     text-align: left;
     margin: 2vw 0px 0px 0px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .introduce__button {
+    margin: 38.4px 0px 0px 0px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1201,6 +1221,8 @@ main {
     text-align: center;
   }
 }
+
+
 
 
 
