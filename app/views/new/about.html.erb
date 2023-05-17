@@ -1,32 +1,33 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://tkachenkoandrey.com/about">
-  <title>Обо мне | Психолог Ткаченко Андрей</title>
-  <meta name="description" content="Ткаченко Андрей - практикующий психолог, член Ассоциации Позитивной Психотерапии. Официальное образование, 6 лет опыта работы, реальные результаты.">
-  <meta name="keywords" content="психолог, психотерапевт, психолог онлайн, профессиональный психолог, сертифицированный психолог, психолог по скайпу, психолог Ткаченко Андрей">
-  <meta name="author" content="Ткаченко Андрей">
-  <meta property="og:locale" content="ru_UA">
-  <meta property="og:url" content="http://www.tkachenkoandrey.com/about">
-  <meta property="og:site_name" content="Психолог Ткаченко Андрей">
+  <link rel="canonical" href="<%= t 'about.head.url' %>">
+  <title><%= t 'about.head.title' %></title>
+  <meta name="description" content="<%= t 'about.head.description' %>">
+  <meta name="keywords" content="<%= t 'about.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'about.head.url' %>">
+  <meta property="og:site_name" content="<%= t 'head.og:site_name' %>">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Обо мне | Психолог Ткаченко Андрей">
-  <meta property="og:description" content="Ткаченко Андрей - практикующий психолог, член Ассоциации Позитивной Психотерапии. Официальное образование, 6 лет опыта работы, реальные результаты.">
+  <meta property="og:title" content="<%= t 'about.head.title' %>">
+  <meta property="og:description" content="<%= t 'about.head.description' %>">
   <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1133">
   <meta property="og:image:height" content="780">
   <meta property="article:publisher" content="https://www.facebook.com/tkachenko.psychology/">
-  <meta property="article:tag" content="психолог">
-  <meta property="article:tag" content="психотерапевт">
-  <meta property="article:tag" content="психолог онлайн">
-  <meta property="article:tag" content="профессиональный психолог">
-  <meta property="article:tag" content="сертифицированный психолог">
-  <meta property="article:tag" content="психолог по скайпу">
-  <meta property="article:tag" content="психолог Ткаченко Андрей">
-  <meta name="twitter:url" content="http://tkachenkoandrey.com/about">
-  <meta name="twitter:title" content="Обо мне | Психолог Ткаченко Андрей">
-  <meta name="twitter:desctiption" content="Ткаченко Андрей - практикующий психолог, член Ассоциации Позитивной Психотерапии. Официальное образование, 6 лет опыта работы, реальные результаты.">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag7' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag8' %>">
+  <meta name="twitter:url" content="<%= t 'about.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'about.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'about.head.description' %>">
   <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="relap-image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
@@ -37,67 +38,64 @@
 <div class="about">
   <div class="about-me">
     <div class="about-me__body container">
-      <div class="about-me__header  header_box" style="margin: 0px 0px 7px 0px">
-        <h1 class="about-me__title title">Обо мне</h1>
+      <div class="about-me__header header_box" style="margin: 0px 0px 7px 0px">
+        <h1 class="about-me__title title"><%= t 'about.title' %></h1>
       </div>
       <div class="about-me__row">
         <div class="about-me__column_1">
           <div class="about-me__item" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-            <img class="about-me__foto pc" src="<%= asset_url('Tkachenko-Andrey-certified-psychologist.webp')%>" src="<%= asset_url('1x1.png')%>" alt="Ткаченко Андрей психолог">
-            <img class="about-me__foto mob" src="<%= asset_url('Andrey-Tkachenko-certified-psychologist.webp')%>" alt="Ткаченко Андрей психолог">
+            <img class="about-me__foto pc" src="<%= asset_url('Tkachenko-Andrey-certified-psychologist.webp')%>" src="<%= asset_url('1x1.png')%>" alt="<%= t 'about.alt' %>">
+            <img class="about-me__foto mob" src="<%= asset_url('Andrey-Tkachenko-certified-psychologist.webp')%>" alt="<%= t 'about.alt' %>">
           </div>
         </div>
         <div class="about-me__column_2">
           <div class="about-me__item">
-            <h2 class="about-me__name">Ткаченко Андрей</h2>
-            <p class="about-me__text">Здравствуйте, друзья! Меня зовут Ткаченко Андрей, я практикующий психолог. 6 лет предоставляю услуги психологического консультирования и психотерапии. Имею официальное образование, являюсь членом Ассоциации Позитивной Психотерапии и в своей практике использую комбинации методов (КПТ, гипноз, позитивная психотерапия).</p>
-            <h3 class="about-me__subtitle">Моя задача - сделать вас сильными</h3>
-            <p class="about-me__text">Ко мне обращаются люди, которые попали в непростые жизненные обстоятельства. На моих консультациях я поддерживаю своих клиентов, аккуратно и безболезненно обучаю их справляться со своей жизнью самостоятельно, без врачей и таблеток.</p>
-            <p class="about-me__text" style="margin-bottom: 0px;">Во время консультаций мы нарабатываем те навыки мышления и поведения, которые позволят вам автоматически избавиться от накопленных проблем. Данные навыки останутся с вами на всю жизнь и помогут решать проблемы в нашем быстроменяющемся мире.</p>
+            <h2 class="about-me__name"><%= t 'about.name' %></h2>
+            <p class="about-me__text"><%= t 'about.hello' %></p>
+            <h3 class="about-me__subtitle"><%= t 'about.my-target.sub-title' %></h3>
+            <p class="about-me__text"><%= t 'about.my-target.text' %></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-
-
   <div class="education">
     <div class="education__body container">
-      <div class="articles__header  header_box">
-        <h2 class="articles__title title">Мое образование</h2>
-        <p class="experience__subtitle subtitle">Я окончил Днепровский Национальный Университет по специальности "Психология", изучил консультирование в World Association for Positive Psychotherapy, а также прошел ряд курсов иных методов психотерапии для полноты профессиональных знаний и навыков</p>
+      <div class="articles__header header_box">
+        <h2 class="articles__title title"><%= t 'about.my-education.title' %></h2>
+        <p class="experience__subtitle subtitle"><%= t 'about.my-education.sub-title' %></p>
       </div>
       <div class="education__gallery gallery">
       <a href="<%= asset_url('certificates/Diploma.jpg')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/Diploma.jpg')%>" src="<%= asset_url('certificates/1196x1693.png')%>" title="Диплом психолога" alt="Диплом психолога ДНУ">
+        <img src="<%= asset_url('certificates/Diploma.jpg')%>" src="<%= asset_url('certificates/1196x1693.png')%>" title="<%= t 'about.my-education.gallery.Diploma.title' %>" alt="<%= t 'about.my-education.gallery.Diploma.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/WAPP.jpg')%>" data-lightbox="test">
-        <img src="<%= asset_url('certificates/WAPP.jpg')%>" src="<%= asset_url('certificates/1800x1271.png')%>" title="Диплом психолога-консультанта" alt="Диплом психолога World Association for Positive Psychotherapy">
+        <img src="<%= asset_url('certificates/WAPP.jpg')%>" src="<%= asset_url('certificates/1800x1271.png')%>" title="<%= t 'about.my-education.gallery.WAPP.title' %>" alt="<%= t 'about.my-education.gallery.WAPP.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/Consultancy.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/Consultancy.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>" title="Сертификат обучения консультированию" alt="Сертификат социально-психологическое консультирование">
+        <img src="<%= asset_url('certificates/Consultancy.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>" title="<%= t 'about.my-education.gallery.Consultancy.title' %>" alt="<%= t 'about.my-education.gallery.Consultancy.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/Resilience.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/Resilience.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>" title="Сертификат обучения техникам стрессоустойчивости" alt="Сертификат обучения техникам стрессоустойчивости (резильентности)">
+        <img src="<%= asset_url('certificates/Resilience.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>" title="<%= t 'about.my-education.gallery.Resilience.title' %>" alt="<%= t 'about.my-education.gallery.Resilience.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/STA.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/STA.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>"title="Сертификат обучения методу СМД" alt="Сертификат СМД">
+        <img src="<%= asset_url('certificates/STA.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>"title="<%= t 'about.my-education.gallery.STA.title' %>" alt="<%= t 'about.my-education.gallery.STA.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/Insight.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/Insight.webp')%>" src="<%= asset_url('certificates/1280x995.png')%>" title="Сертификат обучения работы с детьми" alt="Сертификат детский психолог Мир Инсайт">
+        <img src="<%= asset_url('certificates/Insight.webp')%>" src="<%= asset_url('certificates/1280x995.png')%>" title="<%= t 'about.my-education.gallery.Insight.title' %>" alt="<%= t 'about.my-education.gallery.Insight.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/Puselik.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/Puselik.webp')%>" src="<%= asset_url('certificates/909x1290.png')%>" title="Сертификат обучения работе с последствиями стресса" alt="Сертификат Puselik foundation">
+        <img src="<%= asset_url('certificates/Puselik.webp')%>" src="<%= asset_url('certificates/909x1290.png')%>" title="<%= t 'about.my-education.gallery.Puselik.title' %>" alt="<%= t 'about.my-education.gallery.Puselik.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/VSPU.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/VSPU.webp')%>" src="<%= asset_url('certificates/1600x1131.png')%>" title="Сертификат обучения кризисной психологической помощи" alt="Сертификат обучения психологической помощи военного времени">
+        <img src="<%= asset_url('certificates/VSPU.webp')%>" src="<%= asset_url('certificates/1600x1131.png')%>" title="<%= t 'about.my-education.gallery.VSPU.title' %>" alt="<%= t 'about.my-education.gallery.VSPU.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/ASSYST.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/ASSYST.webp')%>" src="<%= asset_url('certificates/2000x1395.png')%>" title="Сертификат обучения работы с острым стрессом" alt="Сертификат обучения работы с острым стрессом методом ASSYST">
+        <img src="<%= asset_url('certificates/ASSYST.webp')%>" src="<%= asset_url('certificates/2000x1395.png')%>" title="<%= t 'about.my-education.gallery.ASSYST.title' %>" alt="<%= t 'about.my-education.gallery.ASSYST.alt' %>">
       </a>
       <a href="<%= asset_url('certificates/ILDC.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-        <img src="<%= asset_url('certificates/ILDC.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="Сертификат обучения организации и проведения групп поддержки" alt="Сертификат обучения проведению групп поддержки">
+        <img src="<%= asset_url('certificates/ILDC.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.ILDC.title' %>" alt="<%= t 'about.my-education.gallery.ILDC.alt' %>">
       </a>
       </div>
     </div>
@@ -108,36 +106,36 @@
   <div class="experience">
     <div class="experience__body container">
       <div class="experience__header header_box ">
-        <h2 class="experience__title title">Опыт работы</h2>
-        <p class="experience__subtitle subtitle">Чтобы закрепить полученные знания на практике, я работал со взрослыми и детьми в психологических центрах, проводил лекции и тренинги, индивидуальные консультации и онлайн-марафоны.</p>
+        <h2 class="experience__title title"><%= t 'about.my-experience.title' %></h2>
+        <p class="experience__subtitle subtitle"><%= t 'about.my-experience.sub-title' %></p>
       </div>
       <div class="experience__row">
         <div class="experience__column">
           <div class="experience__item">
-            <h3 class="experience__name">Детский психолог</h3>
-            <p class="experience__info">2016 фев - 2018 авг</p>
-            <p class="experience__text">Центр семейной психологии "Мир Инсайт"</p>
+            <h3 class="experience__name"><%= t 'about.my-experience.works.child.title' %></h3>
+            <p class="experience__info"><%= t 'about.my-experience.works.child.date' %></p>
+            <p class="experience__text"><%= t 'about.my-experience.works.child.text' %></p>
           </div>
         </div>
         <div class="experience__column">
           <div class="experience__item">
-            <h3 class="experience__name">Психолог-лектор</h3>
-            <p class="experience__info">2017 янв - 2019 янв</p>
-            <p class="experience__text">Центр практической психологии "Диалог"</p>
+            <h3 class="experience__name"><%= t 'about.my-experience.works.lecturer.title' %></h3>
+            <p class="experience__info"><%= t 'about.my-experience.works.lecturer.date' %></p>
+            <p class="experience__text"><%= t 'about.my-experience.works.lecturer.text' %></p>
           </div>
         </div>
         <div class="experience__column">
           <div class="experience__item">
-            <h3 class="experience__name">Психолог-эксперт</h3>
-            <p class="experience__info">2018 ноя - сегодня</p>
-            <p class="experience__text">Женский журнал clutch.ua, Международный Центр Развития и Лидерства</p>
+            <h3 class="experience__name"><%= t 'about.my-experience.works.expert.title' %></h3>
+            <p class="experience__info"><%= t 'about.my-experience.works.expert.date' %></p>
+            <p class="experience__text"><%= t 'about.my-experience.works.expert.text' %></p>
           </div>
         </div>
         <div class="experience__column">
           <div class="experience__item">
-            <h3 class="experience__name">Практикующий психолог</h3>
-            <p class="experience__info">2018 сен - сегодня</p>
-            <p class="experience__text">Частная практика</p>
+            <h3 class="experience__name"><%= t 'about.my-experience.works.practice.title' %></h3>
+            <p class="experience__info"><%= t 'about.my-experience.works.practice.date' %></p>
+            <p class="experience__text"><%= t 'about.my-experience.works.practice.text' %></p>
           </div>
         </div>
       </div>
@@ -148,7 +146,7 @@
   <div class="results pc">
     <div class="results__body container">
       <div class="results__header header_box">
-        <h2 class="results__title title">Результаты моей работы на примерах</h2>
+        <h2 class="results__title title"><%= t 'about.results.title' %></h2>
       </div>
       <div class="text-reviews" id="w_results">
         <div class="slider">
@@ -156,11 +154,10 @@
             <div class="slider__column">
               <div class="slider__item">
                 <div class="slider__content">  
-                  <h3 class="review__name">Генерализованное тревожное расстройство</h3>
-                  <p class="review__text">
-                    Девушка, 20 лет. Главный запрос терапии был - проблемы в отношениях. Неумение строить и сохранять длительные интимные отношения с противоположным полом.<br><br>
-                    На шестой консультации я выявил у клиентки неочевидное Генерализованное тревожное расстройство. Девушка не могла спать, мысль о предстоящем "волнительном” событии вводило ее в состояние паники, жара, судорог, проблем с дыханием.<br><br>
-                    Я применил когнитивно-поведенческую терапию: составил личный опросник для фиксации результатов, мы вместе проработали тревожные мысли, улучшили эмоциональный интеллект, обучились навыкам осознанности и принятия, и после полу года клиентка счастливо и самостоятельно живет свою жизнь. Перестала тревожится, улучшилось качество ее сна и, интересный факт, в данный момент она находится в серьезных близких отношениях.
+                  <h3 class="review__name"><%= t 'about.results.problems.1.name' %></h3>
+                  <p class="review__text"><%= t 'about.results.problems.1.text1' %>
+                    <br><br><%= t 'about.results.problems.1.text2' %>
+                    <br><br><%= t 'about.results.problems.1.text3' %>
                   </p>
                 </div>
               </div>
@@ -168,12 +165,11 @@
             <div class="slider__column">
               <div class="slider__item">
                 <div class="slider__content">
-                  <h3 class="review__name">Ипохондрия</h3>
-                  <p class="review__text">
-                    Женщина, 37 лет. Основная проблема - повторяющиеся тревожные мысли о своем здоровье, общее состояние напряжения.<br><br>
-                    На первой диагностической консультации мы выстроили доверительные отношения, разобрали массу примеров тревожных мыслей, сформировали личный опросник для фиксации результатов.<br><br>
-                    Я применил терапию АСТ и элементы из КПТ: сделали декатастрофизацию страхов, сформировали конструктивные убеждения, обучились технике принятия эмоций. Далее, мы вели дневник, таблицу позитивных изменений и АВС-схему (клиентка самостоятельно научилась анализировать тревожные события в ее жизни, а мне лишь оставалось проверять домашнее задание).<br><br>
-                    В итоге, тревожность ушла, появились полезные навыки самоанализа и стрессоустойчивости.
+                  <h3 class="review__name"><%= t 'about.results.problems.2.name' %></h3>
+                  <p class="review__text"><%= t 'about.results.problems.2.text1' %>
+                    <br><br><%= t 'about.results.problems.2.text2' %>
+                    <br><br><%= t 'about.results.problems.2.text3' %>
+                    <br><br><%= t 'about.results.problems.2.text4' %>
                   </p>
                 </div>
               </div>
@@ -181,9 +177,11 @@
             <div class="slider__column">
               <div class="slider__item">
                 <div class="slider__content">
-                  <h3 class="review__name">Панические атаки</h3>
-                  <p class="review__text">
-                    Мужчина, 29 лет. Главным запросом терапии была проблема с внезапными приступами страха, учащенный пульс, удушье, ощущение, что сильно бьется сердце.<br><br>На первой консультации я провел диагностику и проанализировал начало ПА. Им оказался сонный паралич. Также, выявил стандартный набор страхов: "а вдруг умру / опозорюсь / сойду с ума".<br><br>Я предпринял ряд действий метакогнитивной терапии: мы проанализировали объективность "опасности" ПА, научились не обращать внимания на возникающее беспокойство, откладывать тревогу, сформировали конструктивные убеждения о "неконтролируемости" и "опасности" страха, развили навык принятия эмоций.<br><br>Прошло пол года, клиент чувствует себя хорошо, благодарит меня за проделанную работу.
+                  <h3 class="review__name"><%= t 'about.results.problems.3.name' %></h3>
+                  <p class="review__text"><%= t 'about.results.problems.3.text1' %>
+                    <br><br><%= t 'about.results.problems.3.text2' %>
+                    <br><br><%= t 'about.results.problems.3.text3' %>
+                    <br><br><%= t 'about.results.problems.3.text4' %>
                   </p>
                 </div>
               </div>
@@ -191,10 +189,10 @@
             <div class="slider__column">
               <div class="slider__item">
                 <div class="slider__content">
-                  <h3 class="review__name">Низкая самооценка</h3>
+                  <h3 class="review__name"><%= t 'about.results.problems.4.name' %></h3>
                   <p class="review__text">
-                    Мужчина, 28 лет. Клиент пришел на консультацию, как он сказал: "познакомиться и понять, сможет ли он довериться мне, как психологу". В неспешном диалоге, он начал рассказывать всё больше о своей ситуации. Оказалось, что он сейчас разводится с женой и рад этому: "она жутко издевалась надо мной, мучала, доводила до безумия, что я даже пошел к психиатру за таблетками", "хочу повысить самооценку, я всегда был чувствительный, у меня сильно религиозная семья, меня воспитывали в основном кнутом".<br><br>
-                    Для лечения психотравм на 2-7 консультациях я проводил техники гипнотерапии без гипноза, потому что клиент был против "внушений", он их боялся. Такой подход оказался сложнее обычного, но в совокупности с Позитивной психотерапией и Майндфулнесс был достигнут результат: старые воспоминания о наказаниях, публичных унижениях родителей и сверстников были переработаны психикой и более не вызывали сильных негативных эмоций, клиент начал говорить громче, ушел ком в горле, изменилось отношение к себе и своим мыслям.
+                    <%= t 'about.results.problems.4.text1' %>
+                    <br><br><%= t 'about.results.problems.4.text2' %>
                   </p>
                 </div>
               </div>
@@ -202,11 +200,10 @@
             <div class="slider__column">
               <div class="slider__item">
                 <div class="slider__content">
-                  <h3 class="review__name">Депрессия</h3>
-                  <p class="review__text">
-                    Женщина, 33 года. Пришла в печальном состоянии: полный пессимизм, заторможенность, отсутствие сил. На фоне родов, проблем в работе и отношениях у клиентки накопилось много невысказанной обиды и невыраженной злости. Психиатр выписал антидепрессанты и мы начали работу.<br><br>
-                    На первых 3-х консультациях я помогал ей осознавать свои чувства, проявлять злость, изменить отношение к образу себя, перестать себя жалеть и составить таблицу "поведенческой активации" - постепенный план увеличения физических нагрузок и реализации действий приносящих удовольствие.<br><br>
-                    На 4-8 сеансах работа состояла в поддержке, корректировки "поведенческой активации" и в работе с убеждениями "я не смогу", "будущего нет", "жизнь ужасна", методом КПТ мы анализировали достоверность и причину возникновения подобных мыслей, таким образом уменьшая веру в них. Техниками АСТ я научил принимать эмоции и останавливать бесполезные размышления. В итоге, ушел пессимизм, появились силы и уверенность в будущем.
+                  <h3 class="review__name"><%= t 'about.results.problems.5.name' %></h3>
+                  <p class="review__text"><%= t 'about.results.problems.5.text1' %>
+                    <br><br><%= t 'about.results.problems.5.text2' %>
+                    <br><br><%= t 'about.results.problems.5.text3' %>
                   </p>
                 </div>
               </div>
@@ -214,12 +211,11 @@
             <div class="slider__column">
               <div class="slider__item">
                 <div class="slider__content">
-                  <h3 class="review__name">Невроз, психотравмы</h3>
-                  <p class="review__text">
-                    Мужчина, 27 лет. Основная проблема - постоянная тревога и воспоминания о ссоре с другом 2-х летней давности: "я уволился с работы, перехал в другую страну, изменил свой образ жизни, но воспоминания не дают покоя".<br><br>
-                    На первой консультации я провел диагностику, выявил причину проблемы (когда друг назвал его "ненормальным", у клиента возникла ассоциация со своим папой-алкоголиком, на которого он боялся стать похожим), объяснил клиенту механизм работы его воспоминаний и методы работы с ними, клиенту полегчало.<br><br>
-                    На 2-5 сеансах я проводил гипнотерапию: вместе мы нашли и перепрожили детские психотравмы (насилие в семье, измены, крики) и воспоминания перестали докучать.<br><br>
-                    На 6-м сеансе я уменьшил тревогу техниками Майнлфулнесс: я научил клиента медитациям, показал как воспринимать мысли отстраненно, не вовлекаться к них. Это усилило терапевтический эффект гипнотерапии.
+                  <h3 class="review__name"><%= t 'about.results.problems.6.name' %></h3>
+                  <p class="review__text"><%= t 'about.results.problems.6.text1' %>
+                    <br><br><%= t 'about.results.problems.6.text2' %>
+                    <br><br><%= t 'about.results.problems.6.text3' %>
+                    <br><br><%= t 'about.results.problems.6.text4' %>
                   </p>
                 </div>
               </div>
@@ -241,7 +237,7 @@
   <div class="reviews">
     <div class="reviews__body container">
       <div class="reviews__header header_box">
-        <h2 class="reviews__title title">Отзывы</h2>
+        <h2 class="reviews__title title"><%= t 'slider-reviews.title' %></h2>
       </div>
 
       <%= render partial: "/new/review"%>
@@ -251,42 +247,42 @@
         <div class="slider__wrapper">
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZARsaKAtUcE" frameborder="0" showinfo="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Maria20' %>" frameborder="0" showinfo="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IBAo8tFKcPU" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Bogdan29' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7AsF2wwtl88" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Svetlana37' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tLPKFmIP-sY " frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Julia29' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KeSHTC-NdP8" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Danil20' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/sfScVNRsE7o" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Kate22' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/M3bIAkj8g2I" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Stanislav' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
           <div class="slider__item slider__item-video">
             <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zt6S3vXjCNM" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Maksim' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -308,16 +304,14 @@
   <div class="sign-up">
     <div class="sign-up__body container">
       <div class="sign-up__item">
-        <h2 class="sign-up__title title" id="client_form">Запись на консультацию</h2>
-        <p class="sign-up__text">Напишите мне в мессенджер. В течение 24 часов я вам отвечу, проанализирую вашу ситуацию и мы вместе согласуем наши дальнейшие действия.</p>
+        <h2 class="sign-up__title title" id="client_form"><%= t 'sign-up.title' %></h2>
+        <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
         <div class="sign-up__btn-row">
           <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
           <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
           <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
         </div>
-        <p class="sign-up__text pc">
-          По всем вопросам, звонить: +380964248025<br>Пн-Вс 10:00-20:00
-        </p>
+        <p class="sign-up__text pc"><%= t 'sign-up.text1' %><br><%= t 'sign-up.text2' %></p>
       </div>
     </div>
   </div>
