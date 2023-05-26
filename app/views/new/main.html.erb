@@ -154,57 +154,69 @@
 
   <div class="services">
     <div class="services__body container">
-      <div class="services__header header_box ">
-        <h2 class="services__title title"><%= t 'main.services.title' %></h2>
+      <div class="services__header header_box">
+        <h2 class="services__title title"><%= t 'services.title' %></h2>
+        <p class="experience__subtitle subtitle"><%= t 'services.subtitle' %></p>
       </div>
       <div class="services__row">
         <div class="services__column">
           <div class="services__item">
-            <h3 class="services__name"><%= t 'main.services.ind.title' %></h3>
-            <p class="services__info"><%= t 'main.services.ind.time' %></p>
+            <h3 class="services__name"><%= t 'services.ind-cons.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-cons.time' %></p>
             <ul class="services__text">
-              <li><%= t 'main.services.ind.problem1' %></li>
-              <li><%= t 'main.services.ind.problem2' %></li>
-              <li><%= t 'main.services.ind.problem3' %></li>
-              <li><%= t 'main.services.ind.problem4' %></li>
-              <li><%= t 'main.services.ind.problem5' %></li>
-              <li><%= t 'main.services.ind.problem6' %></li>
+              <%= raw t(:'services.ind-cons.problems') %>
             </ul>
-            <p class="services__price"><%= t 'main.services.ind.price' %></p>
+            <p class="services__price"><%= t 'services.ind-cons.price' %></p>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
-            <h3 class="services__name"><%= t 'main.services.course.title' %></h3>
-            <p class="services__info"><%= t 'main.services.course.time' %></p>
+            <h3 class="services__name"><%= t 'services.ind-course.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-course.time' %></p>
             <ul class="services__text">
-              <li><%= t 'main.services.course.problem1' %></li>
-              <li><%= t 'main.services.course.problem2' %></li>
-              <li><%= t 'main.services.course.problem3' %></li>
-              <li><%= t 'main.services.course.problem4' %></li>
-              <li><%= t 'main.services.course.problem5' %></li>
-              <li><%= t 'main.services.course.problem6' %></li>
-              <li><%= t 'main.services.course.problem7' %></li>
-              <li><%= t 'main.services.course.problem8' %></li>
+              <%= raw t(:'services.ind-course.problems') %>
             </ul>
-            <p class="services__price"><%= t 'main.services.course.price' %></p>
+            <p class="services__info" style="text-align: center; border-top: 1px solid var(--black);border-bottom: none">
+              <%= raw t 'services.ind-course.bonus' %>
+            </p>
+            <p class="services__price"><%= raw t 'services.ind-course.price' %></p>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
-            <h3 class="services__name"><%= t 'main.services.group.title' %></h3>
-            <p class="services__info"><%= t 'main.services.group.time' %></p>
+            <h3 class="services__name"><%= t 'services.ind-hypnosession.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-hypnosession.time' %></p>
             <ul class="services__text">
-              <li><%= t 'main.services.group.problem1' %></li>
-              <li><%= t 'main.services.group.problem2' %></li>
-              <li><%= t 'main.services.group.problem3' %></li>
-              <li><%= t 'main.services.group.problem4' %></li>
-              <li><%= t 'main.services.group.problem5' %></li>
-              <li><%= t 'main.services.group.problem6' %></li>
+              <%= raw t(:'services.ind-hypnosession.problems') %>
             </ul>
-            <p class="services__price"><%= t 'main.services.group.price' %></p>
+            <p class="services__price"><%= t 'services.ind-hypnosession.price' %></p>
           </div>
         </div>
+      <!--
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.ind-session.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-session.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.ind-session.problems') %>
+            </ul>
+            <p class="services__price">
+              <%= raw t 'services.ind-session.price' %>
+            </p>
+          </div>
+        </div>
+
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.group-course.title' %></h3>
+            <p class="services__info"><%= t 'services.group-course.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.group-course.problems') %>
+            </ul>
+            <p class="services__price"><%= t 'services.group-course.price' %></p>
+          </div>
+        </div>
+      -->
       </div>
     </div>
   </div>
@@ -220,7 +232,7 @@
           <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
           <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
         </div>
-        <p class="sign-up__text pc"><%= t 'sign-up.text1' %><br><%= t 'sign-up.text2' %></p>
+        <p class="sign-up__text pc"><%= raw t 'sign-up.text' %></p>
       </div>
     </div>
   </div>

@@ -1,32 +1,32 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://tkachenkoandrey.com/contacts">
+  <link rel="canonical" href="<%= t 'contacts.head.url' %>">
   <title><%= t 'contacts.head.title' %></title>
-  <meta name="description" content="Телефон для звонков: +38(096)424-80-25 (telegram, viber, whatsapp), Адрес для консультаций в кабинете: ул.Артема 11, Днепр, Украина.">
-  <meta name="keywords" content="контакты психолога, психолог в Днепре, психотерапия в кабинете, консультация психолога онлайн, профессиональный психолог, сертифицированный психолог, психолог Ткаченко Андрей">
-  <meta name="author" content="Ткаченко Андрей">
-  <meta property="og:locale" content="ru_UA">
-  <meta property="og:url" content="http://www.tkachenkoandrey.com/contacts">
-  <meta property='og:site_name' content='Психолог Ткаченко Андрей'>
+  <meta name="description" content="<%= t 'contacts.head.description' %>">
+  <meta name="keywords" content="<%= t 'contacts.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'contacts.head.url' %>">
+  <meta property='og:site_name' content="<%= t 'head.og:site_name' %>">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Контакты | Психолог Ткаченко Андрей">
-  <meta property="og:description" content="Телефон для звонков: +38(096)424-80-25 (telegram, viber, whatsapp), Адрес для консультаций в кабинете: ул.Артема 11, Днепр, Украина.">
+  <meta property="og:title" content="<%= t 'contacts.head.title' %>">
+  <meta property="og:description" content="<%= t 'contacts.head.description' %>">
   <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1133">
   <meta property="og:image:height" content="780">
   <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
-  <meta property="article:tag" content="контакты психолога">
-  <meta property="article:tag" content="психолог в Днепре">
-  <meta property="article:tag" content="психотерапия в кабинете">
-  <meta property="article:tag" content="консультация психолога онлайн">
-  <meta property="article:tag" content="профессиональный психолог">
-  <meta property="article:tag" content="сертифицированный психолог">
-  <meta property="article:tag" content="психолог Ткаченко Андрей">
-  <meta name="twitter:url" content="http://tkachenkoandrey.com/contacts">
-  <meta name="twitter:title" content="Контакты | Психолог Ткаченко Андрей">
-  <meta name="twitter:desctiption" content="Телефон для звонков: +38(096)424-80-25 (telegram, viber, whatsapp), Адрес для консультаций в кабинете: ул.Артема 11, Днепр, Украина.">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'contacts.head.article:tag7' %>">
+  <meta name="twitter:url" content="<%= t 'contacts.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'contacts.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'contacts.head.description' %>">
   <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
@@ -36,24 +36,24 @@
 <div class="contacts">
   <div class="contacts__body container">
     <div class="contacts__header  header_box" style="padding-left: 20px; padding-right: 20px">
-      <h1 class="contacts__title title">Контакты</h1>
-      <p class="contacts__text sign-up__text">Адрес для консультаций в кабинете: ул.Артема 11, Днепр, Украина</p>
-      <p class="сontacts__text sign-up__text">Телефон для записи на консультацию: +380964248025 (telegram, viber, whatsapp) Пн-Вс 10:00-20:00</p>
+      <h1 class="contacts__title title"><%= t 'contacts.title' %></h1>
+      <p class="contacts__text sign-up__text"><%= t 'contacts.address' %></p>
+      <p class="сontacts__text sign-up__text"><%= t 'contacts.phone' %></p>
       <div class="sign-up__btn-row">
         <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
         <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
         <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
       </div>
       <br>
-      <h2 class="contacts__title title">Соцсети</h2>
+      <h2 class="contacts__title title"><%= t 'contacts.social_network' %></h2>
       <div class="contacts__row sign-up__btn-row">
-        <a class="contact__icon" href="https://t.me/TkachenkoAndrii" target="_blank"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/telegram.svg')%>" alt="телеграм канал"></a>
-        <a class="contact__icon" href="https://www.facebook.com/tkachenko.psychology"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/facebook.svg')%>" alt="фейсбук"></a>
-        <a class="contact__icon" href="https://www.instagram.com/tkachenko_psychology"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/instagram.svg')%>" alt="инстаграм"></a>
+        <a class="contact__icon" href="https://t.me/TkachenkoAndrii" target="_blank"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/telegram.svg')%>" alt="telegram"></a>
+        <a class="contact__icon" href="https://www.facebook.com/tkachenko.psychology"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/facebook.svg')%>" alt="facebook"></a>
+        <a class="contact__icon" href="https://www.instagram.com/tkachenko_psychology"><img style="width: 45px; margin: 10px" src="<%= asset_url('icons/instagram.svg')%>" alt="instagram"></a>
       </div>
       <br>
-      <h2 class="contacts__title title">Сотрудничество</h2>
-      <p class="сontacts__text sign-up__text"><%= t 'contacts.body.post' %></p>
+      <h2 class="contacts__title title"><%= t 'contacts.cooperation' %></h2>
+      <p class="сontacts__text sign-up__text"><%= t 'contacts.post' %></p>
     </div>
   </div>
 </div>
