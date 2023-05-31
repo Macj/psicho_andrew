@@ -1,38 +1,38 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://tkachenkoandrey.com/methods">
-  <title>Методы работы психолога | Ткаченко Андрей</title>
-  <meta name="description" content="Мои методы работы: КПТ, позитивная психотерапия, гипнотерапия, Майндфулнесс, ДПДГ, АСТ, МКТ, СМД.">
-  <meta name="keywords" content="методы работы психолога, как работает психолог, как работает психотерапия, виды психотерапии, когнитивно-поведенческая терапия, позитивная психотерапия, гипнотерапия, майндфулнесс, десенсибилизация и переработка движением глаз, терапия принятия и ответственности, метакогнитивная терапия, системно-мыследеятельностный подход, психолог Ткаченко Андрей">
-  <meta name="author" content="Ткаченко Андрей">
-  <meta property="og:locale" content="ru_UA">
-  <meta property="og:url" content="http://www.tkachenkoandrey.com/methods">
-  <meta property='og:site_name' content='Психолог Ткаченко Андрей'>
+  <link rel="canonical" href="<%= t 'methods.head.url' %>">
+  <title><%= t 'methods.head.title' %></title>
+  <meta name="description" content="<%= t 'methods.head.description' %>">
+  <meta name="keywords" content="<%= t 'methods.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'methods.head.url' %>">
+  <meta property='og:site_name' content='<%= t 'head.og:site_name' %>'>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Методы работы психолога | Ткаченко Андрей">
-  <meta property="og:description" content="Мои методы работы: КПТ, позитивная психотерапия, гипнотерапия, Майндфулнесс, ДПДГ, АСТ, МКТ, СМД.">
+  <meta property="og:title" content="<%= t 'methods.head.title' %>">
+  <meta property="og:description" content="<%= t 'methods.head.description' %>">
   <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1133">
   <meta property="og:image:height" content="780">
   <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
-  <meta property="article:tag" content="методы работы психолога">
-  <meta property="article:tag" content="как работает психолог">
-  <meta property="article:tag" content="как работает психотерапия">
-  <meta property="article:tag" content="виды психотерапии">
-  <meta property="article:tag" content="когнитивно-поведенческая терапия">
-  <meta property="article:tag" content="позитивная психотерапия">
-  <meta property="article:tag" content="гипнотерапия">
-  <meta property="article:tag" content="майндфулнесс">
-  <meta property="article:tag" content="десенсибилизация и переработка движением глаз">
-  <meta property="article:tag" content="терапия принятия и ответственности">
-  <meta property="article:tag" content="метакогнитивная терапия">
-  <meta property="article:tag" content="системно-мыследеятельностный подход">
-  <meta property="article:tag" content="психолог Ткаченко Андрей">
-  <meta name="twitter:url" content="http://tkachenkoandrey.com/methods">
-  <meta name="twitter:title" content="Методы работы психолога | Ткаченко Андрей">
-  <meta name="twitter:desctiption" content="Мои методы работы: КПТ, позитивная психотерапия, гипнотерапия, Майндфулнесс, ДПДГ, АСТ, МКТ, СМД.">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag7' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag8' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag9' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag10' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag11' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag12' %>">
+  <meta property="article:tag" content="<%= t 'methods.head.article:tag13' %>">
+  <meta name="twitter:url" content="<%= t 'methods.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'methods.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'methods.head.description' %>">
   <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
@@ -43,68 +43,68 @@
   <div class="problem">
     <div class="problem__body container">
       <div class="problem__header header_box" style="margin: 0px 0px 7px 0px">
-        <h1 class="problem__title title">Мои методы работы</h1>
+        <h1 class="problem__title title"><%= t 'methods.title' %></h1>
       </div>
       <div class="problem__row">
-        <a class="problem__column problem__link" href="/Cognitive-Behavioral-Therapy.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/Cognitive-Behavioral-Therapy.html">
           <div class="problem__item">
-            <h3 class="problem__name">Когнитивно-поведенческая терапия</h3>
-            <p class="problem__info">Психотерапия неврозов и депрессий</p>
-            <p class="problem__text">Самый эффективный метод работы с невротическими и депрессивными состояниями. Основа для иных методов психотерапии. Используя протоколы лечения, постепенно изменяя поведение, анализируя свои мысли, заполняя таблицы и дневники, достигается отличный результат.</p>
+            <h3 class="problem__name"><%= t 'methods.CBT.title' %></h3>
+            <p class="problem__info"><%= t 'methods.CBT.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.CBT.text' %></p>
           </div>
         </a>
-        <a class="problem__column problem__link" href="/Hypnotherapy.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/Hypnotherapy.html">
           <div class="problem__item">
-            <h3 class="problem__name">Гипнотерапия</h3>
-            <p class="problem__info">Избавление от психотравм и психосоматики</p>
-            <p class="problem__text">Идеальное средство для избавления от глубоких психотравм и псиосоматики. Серьезный инструмент в умелых руках. Работая с телом и психикой, применяя внушение, человек достигает расслабления, перепроживает ситуации из жизни и научается реагировать на стрессы иначе.</p>
+            <h3 class="problem__name"><%= t 'methods.Hypnotherapy.title' %></h3>
+            <p class="problem__info"><%= t 'methods.Hypnotherapy.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.Hypnotherapy.text' %></p>
           </div>
         </a>
-        <a class="problem__column problem__link" href="/Positive-psychotherapy.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/Positive-psychotherapy.html">
           <div class="problem__item">
-            <h3 class="problem__name">Позитивная психотерапия</h3>
-            <p class="problem__info">Разрешение внутренних конфликтов</p>
-            <p class="problem__text">Прекрасный метод работы с внутренними конфликтами. Взращивая свои способности, используя позитивные формулировки, концентрируясь на сильных сторонах своей личности, человек научается самостоятельно применять свои ресурсы для решения жизненных трудностей.</p>
+            <h3 class="problem__name"><%= t 'methods.PPT.title' %></h3>
+            <p class="problem__info"><%= t 'methods.PPT.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.PPT.text' %></p>
           </div>
         </a>
       </div>
       <div class="problem__header header_box" style="margin: 50px 0px 7px 0px">
-        <h2 class="problem__title title">Вспомогательные методы</h2>
+        <h2 class="problem__title title"><%= t 'methods.subtitle' %></h2>
       </div>
       <div class="problem__row">
-        <a class="problem__column problem__link" href="/Metacognitive-therapy.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/Metacognitive-therapy.html">
           <div class="problem__item">
-            <h3 class="problem__name">Метакогнитивная терапия</h3>
-            <p class="problem__info">Психотерапия тревожных расстройств</p>
-            <p class="problem__text">Направление 3-й волны КПТ, которое расширяет функционал и улучшает эффективность КПТ при работе с тревожно-депрессивными состояниями. Развивая гибкость мышления и внимания, человек научается самостоятельно справляться со своими проблемами.</p>
+            <h3 class="problem__name"><%= t 'methods.MCT.title' %></h3>
+            <p class="problem__info"><%= t 'methods.MCT.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.MCT.text' %></p>
           </div>
         </a>
-        <a class="problem__column problem__link" href="/EMDR.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/EMDR.html">
           <div class="problem__item">
-            <h3 class="problem__name">ДПДГ</h3>
-            <p class="problem__info">Терапия острого стресса</p>
-            <p class="problem__text">Отличный метод работы с сильным стрессом (потеря близких, насилие, болезнь). Специальными техниками (без детального описания произошедшего) клиент успокаивается, начинает воспринимать событие как факт из прошлого, как опыт, а не как травму.</p>
+            <h3 class="problem__name"><%= t 'methods.EMDR.title' %></h3>
+            <p class="problem__info"><%= t 'methods.EMDR.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.EMDR.text' %></p>
           </div>
         </a>
-        <a class="problem__column problem__link" href="/Acceptance-and-Commitment-Therapy.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/Acceptance-and-Commitment-Therapy.html">
           <div class="problem__item">
-            <h3 class="problem__name">Терапия принятия и ответственности</h3>
-            <p class="problem__info">Психотерапия неврозов</p>
-            <p class="problem__text">Направление 3-й волны КПТ, помогает при работе с невротическими состояниями. Улучшая осознанность, выявляя ценности, делая акцент на действиях, важных для человека, достигаются стойкие результаты психотерапии. Также, помогает решать экзистенциальные проблемы.</p>
+            <h3 class="problem__name"><%= t 'methods.ACT.title' %></h3>
+            <p class="problem__info"><%= t 'methods.ACT.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.ACT.text' %></p>
           </div>
         </a>
-        <a class="problem__column problem__link" href="/Mindfulness.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/Mindfulness.html">
           <div class="problem__item">
-            <h3 class="problem__name">Майндфулнесс</h3>
-            <p class="problem__info">Развитие стрессоустойчивости и осознанности</p>
-            <p class="problem__text">Направление 3-й волны КПТ, практика осознанности и развития внимания, которая заимствовала техники йоги и медитации из Востока, для работы с навязчивыми мыслями, невротическими желаниями и страхами. Самый эффективный метод управления стрессом.</p>
+            <h3 class="problem__name"><%= t 'methods.Mindfulness.title' %></h3>
+            <p class="problem__info"><%= t 'methods.Mindfulness.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.Mindfulness.text' %></p>
           </div>
         </a>
-        <a class="problem__column problem__link" href="/STA.html">
+        <a class="problem__column problem__link" href="/<%= I18n.locale%>/STA.html">
           <div class="problem__item">
-            <h3 class="problem__name">Системно-мыследеятельностный подход</h3>
-            <p class="problem__info">Развитие мышления и улучшение взаимоотношений</p>
-            <p class="problem__text">Прекрасный метод консультирования и коучинга, принятия решений и общего саморазвития. Беря за основу лозунг: «я действую так, как я мыслю», стремимся улучшить качество своего мышления. С помощью схем проверяем мышление на наличие противоречий и устраняем их.</p>
+            <h3 class="problem__name"><%= t 'methods.STA.title' %></h3>
+            <p class="problem__info"><%= t 'methods.STA.info' %></p>
+            <p class="problem__text"><%= raw t 'methods.STA.text' %></p>
           </div>
         </a>
       </div>

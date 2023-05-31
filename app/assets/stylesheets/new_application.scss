@@ -1045,7 +1045,6 @@ main {
   &__text {
     height: 100%;
     color: var(--black);
-    text-align: left;
     margin: 15px 10px 0px 10px;
   }
   &__link:hover {
@@ -1054,6 +1053,11 @@ main {
   &__link:hover .problem__name {
     color: white;
     background-color: var(--chocolate);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .problem__text {
+    text-align: justify;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -2056,7 +2060,7 @@ main {
   text-align: center;
   box-shadow: var(--box-shadow);
   background: var(--background-white);
-  padding: 20px 25px;
+  padding: 22px 25px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -2141,6 +2145,9 @@ iframe {
 @media screen and (min-width: 1600px) {
   .slider__video {
     height: 210px;
+  }
+  .review__text {
+    text-align: justify;
   }
 }
 @media screen and (min-width: 1360px) and (max-width: 1599px) {
@@ -3551,6 +3558,7 @@ body.lb-disable-scrolling {
   }
   &__client-text p {
     text-align: justify;
+    margin-bottom: 0px;
   }
   .video-reviews__row {
     display: flex;
@@ -3584,7 +3592,7 @@ body.lb-disable-scrolling {
 }
 @media screen and (min-width: 768px) {
   .reviews__column {
-    padding: 20px 30px;
+    padding: 25px 30px 25px 30px;
   }
 }
 @media screen and (max-width: 767px) {
