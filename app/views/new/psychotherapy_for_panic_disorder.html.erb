@@ -1,34 +1,36 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="http://tkachenkoandrey.com/Psychotherapy-for-panic-disorder">
-  <title>Психотерапия панических атак | Психолог Ткаченко Андрей</title>
-  <meta name="description" content="Краткое объяснение процесса психотерапии с практической точки зрения: как диагностировать наличие панических атак и как психолог помогает от них избавиться.">
-  <meta name="keywords" content="психотерапия панических атак, консультация психолога панические атаки, как лечатся панические атаки, терапия панических атак, убрать панику, симптомы панической атаки, КПТ панических атак, психолог Ткаченко Андрей">
-  <meta name="author" content="Ткаченко Андрей">
-  <meta property="og:locale" content="ru_UA">
-  <meta property="og:url" content="http://www.tkachenkoandrey.com/Psychotherapy-for-panic-disorder">
-  <meta property='og:site_name' content='Психолог Ткаченко Андрей'>
+  <link rel="canonical" href="<%= t 'ПА.head.url' %>">
+  <title><%= t 'ПА.head.title' %></title>
+  <meta name="description" content="<%= t 'ПА.head.description' %>">
+  <meta name="keywords" content="<%= t 'ПА.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'ПА.head.url' %>">
+  <meta property='og:site_name' content='<%= t 'head.og:site_name' %>'>
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Психотерапия панических атак | Психолог Ткаченко Андрей">
-  <meta property="og:description" content="Краткое объяснение процесса психотерапии с практической точки зрения: как диагностировать наличие панических атак и как психолог помогает от них избавиться.">
+  <meta property="og:title" content="<%= t 'ПА.head.title' %>">
+  <meta property="og:description" content="<%= t 'ПА.head.description' %>">
   <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1133">
   <meta property="og:image:height" content="780">
   <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
-  <meta property="article:tag" content="психотерапия панических атак">
-  <meta property="article:tag" content="консультация психолога панические атаки">
-  <meta property="article:tag" content="как лечатся панические атаки">
-  <meta property="article:tag" content="терапия панических атак">
-  <meta property="article:tag" content="психотерапия ГТР">
-  <meta property="article:tag" content="убрать панику">
-  <meta property="article:tag" content="симптомы панической атаки">
-  <meta property="article:tag" content="КПТ панических атак">
-  <meta property="article:tag" content="психолог Ткаченко Андрей">
-  <meta name="twitter:url" content="http://tkachenkoandrey.com/Psychotherapy-for-panic-disorder">
-  <meta name="twitter:title" content="Психотерапия панических атак | Психолог Ткаченко Андрей">
-  <meta name="twitter:desctiption" content="Краткое объяснение процесса психотерапии с практической точки зрения: как диагностировать наличие панических атак и как психолог помогает от них избавиться.">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag7' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag8' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag9' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag10' %>">
+  <meta property="article:tag" content="<%= t 'ПА.head.article:tag11' %>">
+  <meta name="twitter:url" content="<%= t 'ПА.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'ПА.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'ПА.head.description' %>">
   <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
@@ -38,9 +40,9 @@
 <div class="article">
   <div class="article__fullscreen fullscreen">
     <div class="article__fullscreen_content fullscreen_content container">
-      <h1 class="article__name">Психотерапия панических атак</h1>
-      <p class="article__description pc">Если вы это читаете, то, вероятно, у вас панические атаки. Эта статья призвана кратко объяснить процесс психотерапии с практической точки зрения: описание проблемы, результата и применяемых мною техник в нашей совместной работе.</p>
-      <img class="fullscreen__image" src="<%= asset_url('problem/Panic-disorder.webp')%>" title="Психотерапия панических атак" alt="Психотерапия панических атак">
+      <h1 class="article__name"><%= t 'ПА.title' %></h1>
+      <p class="article__description pc"><%= t 'ПА.description' %></p>
+      <img class="fullscreen__image" src="<%= asset_url('problem/Panic-disorder.webp')%>" title="<%= t 'ПА.title' %>" alt="<%= t 'ПА.title' %>">
       <div class="fullscreen__shadow"></div>
     </div>
   </div>
@@ -143,15 +145,15 @@
   <div class="sign-up" id="sign-up" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -10px;">
     <div class="sign-up__body container">
       <div class="sign-up__item">
-        <h2 class="sign-up__title title" id="client_form">Запись на консультацию</h2>
-        <p class="sign-up__text">Напишите мне в мессенджер. В течение 24 часов я вам отвечу, проанализирую вашу ситуацию и мы вместе согласуем наши дальнейшие действия.</p>
+        <h2 class="sign-up__title title" id="client_form"><%= t 'sign-up.title' %></h2>
+        <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
         <div class="sign-up__btn-row">
           <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
           <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
           <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
         </div>
         <p class="sign-up__text pc">
-          По всем вопросам, звонить: +380964248025<br>Пн-Вс 10:00-20:00
+          <%= raw t 'sign-up.text' %>
         </p>
       </div>
     </div>
