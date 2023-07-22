@@ -41,7 +41,7 @@
   <div class="reviews__body container">
     <div class="reviews__header  header_box">
       <h1 class="reviews__title title"><%= t 'reviews.title' %></h1>
-      <p class="subtitle"><%= t 'reviews.subtitle1' %><br><%= t 'reviews.subtitle2' %></p>
+      <p class="subtitle"><%= raw t 'reviews.subtitle' %></p>
     </div>
     <div class="reviews__row">
       <div class="reviews__column">
@@ -200,7 +200,19 @@
           </div>
         </div>
       </div>
-      <div class="reviews__column" style="flex: 0 100%">
+      <div class="reviews__column">
+        <div class="reviews__item">
+          <div class="reviews__client-info">
+            <img class="reviews__client-foto" src="<%= asset_url('review/Юлия-39-лет.webp')%>" alt="<%= t 'reviews.Julia39.alt' %>">
+            <h3 class="reviews__client-name"><%= t 'reviews.Julia39.name' %><br><%= t 'reviews.Julia39.age' %></h3>
+          </div>
+          <div class="reviews__client-text">
+            <h3><%= t 'reviews.Julia39.title' %></h3>
+            <p><%= t 'reviews.Julia39.text' %></p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__column">
         <div class="reviews__item">
           <div class="reviews__client-info">
             <img class="reviews__client-foto" src="<%= asset_url('review/Марина-28-лет.webp')%>" alt="<%= t 'reviews.Marina28.alt' %>">
@@ -209,6 +221,18 @@
           <div class="reviews__client-text">
             <h3><%= t 'reviews.Marina28.title' %></h3>
             <p><%= t 'reviews.Marina28.text' %></p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__column">
+        <div class="reviews__item">
+          <div class="reviews__client-info">
+            <img class="reviews__client-foto" src="<%= asset_url('review/Геннадий-43-года.webp')%>" alt="<%= t 'reviews.Evgen43.alt' %>">
+            <h3 class="reviews__client-name"><%= t 'reviews.Evgen43.name' %><br><%= t 'reviews.Evgen43.age' %></h3>
+          </div>
+          <div class="reviews__client-text">
+            <h3><%= t 'reviews.Evgen43.title' %></h3>
+            <p><%= t 'reviews.Evgen43.text' %></p>
           </div>
         </div>
       </div>
