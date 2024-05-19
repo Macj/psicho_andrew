@@ -1,0 +1,676 @@
+<% content_for :head do %>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="<%= t 'ind.head.url' %>">
+  <title><%= t 'ind.head.title' %></title>
+  <meta name="description" content="<%= t 'ind.head.description' %>">
+  <meta name="keywords" content="<%= t 'ind.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'ind.head.url' %>">
+  <meta property='og:site_name' content='<%= t 'head.og:site_name' %>'>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<%= t 'ind.head.title' %>">
+  <meta property="og:description" content="<%= t 'ind.head.description' %>">
+  <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1133">
+  <meta property="og:image:height" content="780">
+  <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag7' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag8' %>">
+  <meta name="twitter:url" content="<%= t 'ind.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'ind.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'ind.head.description' %>">
+  <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
+  <link rel="image_src" href="<%= asset_url('Tkachenko-Andrey.jpg')%>">
+<% end %>
+
+<div class="home-page">
+  <div class="main-web" style="width: 100%;">
+    <div class="main-web__body container" style="padding-top: 60px; padding-bottom: 0px;">
+      <div class="main-web__row" style="display: flex; justify-content: space-between; flex-wrap: wrap; margin: 0px -7px;">
+        <div class="main-web__column" style="min-width: 300px; flex: 1 0 45%; padding: 24px 24px; margin: 7px;
+        background: var(--background-white); box-shadow: var(--box-shadow);
+        transition: .3s; border-radius: var(--border-radius);">
+          <div class="main-web__item" style="">
+            <h2 class="main-web__name" style="font-size: 1.4rem; font-weight: 300;"><%= t 'webinar.myname' %></h2>
+            <h1 class="main-web__title" style="text-align-last: left; font-size: 58px; line-height: 63px; font-weight: 900;
+            letter-spacing: 0.01em; margin: 2vw 0px 0px 0px; color: var(--gray);"><%= raw t(:'webinar.title') %></h1>
+            <p class="main__text" style="font-weight: 300; letter-spacing: 0.025em; text-align: justify;"><%= t 'webinar.text' %></p>
+            <div class="main__button">
+              <a id="button_client_form" class="btn btn_sign-up" href="#client_form"><%= t 'button-web.sign-up' %></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-web__column"  style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat; min-width: 300px; flex: 1 0 45%; padding: 0px; margin: 7px; box-shadow: var(--box-shadow);
+        transition: .3s; border-radius: var(--border-radius);">
+          <div class="main-web__item" style="width: 100%; height: 100%;">
+            <iframe style="flex: 0 0 32%; display: block; width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; box-shadow: var(--box-shadow); border-radius: var(--border-radius);" width="100%" height="100%" src="https://www.youtube.com/embed/lAxADnQhprU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+
+
+<!-- Для кого буде корисним цей вебінар? -->
+  <div class="problem">
+    <div class="problem__body container">
+      <div class="problem__header header_box" style="position: relative; margin-top: 30px">
+        <h2 class="problem__title title"><%= t 'webinar.problem.title' %></h2>
+      </div>
+      <div class="problem__row">
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Невроз.title' %></h3>
+            <p class="problem__text"><%= t 'webinar.problem.Невроз.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Тревога.title' %></h3>
+            <p class="problem__text"><%= t 'webinar.problem.Тревога.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Депрессия.title' %></h3>
+            <p class="problem__text"><%= t 'webinar.problem.Депрессия.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Пcихотравмы.title' %></h3>
+            <p class="problem__text"><%= t 'webinar.problem.Пcихотравмы.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Низкая самооценка.title' %></h3>
+            <p class="problem__text"><%= t 'webinar.problem.Низкая самооценка.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Взаимоотношения.title' %></h3>
+            <p class="problem__text"><%= t 'webinar.problem.Взаимоотношения.text' %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Переваги. Чорні плитки з назвою маленькі 
+  <div class="problem">
+    <div class="problem__body container" style="padding-top: 0;">
+      <div class="problem__header header_box" style="position: relative;">
+        <h2 class="problem__title title"><%= t 'webinar_ocd.advantages.h2' %></h2>
+      </div>
+      <div class="problem__row">
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a1' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a2' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a3' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a4' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a5' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a6' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a7' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a8' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar_ocd.advantages.a9' %></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+<!-- Програма вебінару -->
+  <div class="services">
+    <div class="services__body container">
+      <div class="services__header header_box">
+        <h2 class="services__title title"><%= t 'webinar_ocd.plan.title' %></h2>
+      </div>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__item">
+            <div class="services__text" style="padding: 0; margin: 0px auto; font-size: 1.2rem; line-height: 1.9rem">
+              <%= raw t(:'webinar_ocd.plan.text') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Карусель для програми вебінару або результатів
+  <div class="results pc">
+    <div class="results__body container">
+      <div class="results__header header_box">
+        <h2 class="results__title title"><%= t 'webinar_ocd.plan.h2' %></h2>
+      </div>
+      <div class="text-reviews" id="w_results">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">  
+                  <h3 class="review__name"><%= t 'webinar_ocd.plan.p1' %></h3>
+                  <p class="review__text"><%= raw t 'webinar_ocd.plan.p1.text' %></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name"><%= t 'about.results.problem2.name' %></h3>
+                  <p class="review__text"><%= raw t 'about.results.problem2.text' %></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name"><%= t 'about.results.problem3.name' %></h3>
+                  <p class="review__text"><%= raw t 'about.results.problem3.text' %></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name"><%= t 'about.results.problem4.name' %></h3>
+                  <p class="review__text"><%= raw t 'about.results.problem4.text' %></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name"><%= t 'about.results.problem5.name' %></h3>
+                  <p class="review__text"><%= raw t 'about.results.problem5.text' %></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <h3 class="review__name"><%= t 'about.results.problem6.name' %></h3>
+                  <p class="review__text"><%= raw t 'about.results.problem6.text' %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+        <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+      </div>
+      <%= render partial: "/new/slider"%>
+      <script type="text/javascript">
+        var slider = multiItemSlider('w_results')
+      </script>
+    </div>
+  </div>
+-->
+
+
+<!-- Переваги -->
+  <div class="problem">
+    <div class="problem__body container" style="padding-top: 0;">
+      <div class="problem__header header_box" style="position: relative;">
+        <h2 class="problem__title title"><%= t 'webinar_ocd.advantages.h2' %></h2>
+      </div>
+      <div class="problem__row">
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a1' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a2' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a3' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a4' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a5' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a6' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a7' %></h3>
+          </div>
+        </div>
+        <div class="problem__column" style="padding: 0">
+          <div class="problem__item">
+            <h3 class="problem__info" style="border-bottom: 0"><%= t 'webinar_ocd.advantages.a8' %></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Результати -->
+  <div class="services">
+    <div class="services__body container">
+      <div class="services__header header_box">
+        <h2 class="services__title title"><%= t 'webinar_ocd.results.title' %></h2>
+        <p class="experience__subtitle subtitle"><%= t 'webinar_ocd.results.sub-title' %></p>
+      </div>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__item">
+            <div class="services__text" style="padding: 0; margin: 0px auto; font-size: 1.2rem; line-height: 1.9rem">
+              <%= raw t(:'webinar_ocd.results.text') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Переваги. Плитки з назвою, инфо + низня риска, текст
+  <div class="problem">
+    <div class="problem__body container">
+      <div class="problem__header header_box" style="position: relative;">
+        <h2 class="problem__title title"><%= t 'webinar_ocd.advantages.h2' %></h2>
+      </div>
+      <div class="problem__row">
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Невроз.title' %></h3>
+            <p class="problem__info"><%= t 'webinar.problems.Невроз.info' %></p>
+            <p class="problem__text"><%= t 'webinar.problem.Невроз.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Тревога.title' %></h3>
+            <p class="problem__info"><%= t 'webinar.problems.Невроз.info' %></p>
+            <p class="problem__text"><%= t 'webinar.problem.Тревога.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Депрессия.title' %></h3>
+            <p class="problem__info"><%= t 'webinar.problems.Невроз.info' %></p>
+            <p class="problem__text"><%= t 'webinar.problem.Депрессия.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Пcихотравмы.title' %></h3>
+            <p class="problem__info"><%= t 'webinar.problems.Невроз.info' %></p>
+            <p class="problem__text"><%= t 'webinar.problem.Пcихотравмы.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Низкая самооценка.title' %></h3>
+            <p class="problem__info"><%= t 'webinar.problems.Невроз.info' %></p>
+            <p class="problem__text"><%= t 'webinar.problem.Низкая самооценка.text' %></p>
+          </div>
+        </div>
+        <div class="problem__column">
+          <div class="problem__item">
+            <h3 class="problem__name"><%= t 'webinar.problem.Взаимоотношения.title' %></h3>
+            <p class="problem__info"><%= t 'webinar.problems.Невроз.info' %></p>
+            <p class="problem__text"><%= t 'webinar.problem.Взаимоотношения.text' %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+<!-- Переваги. Чорні плитки з назвою маленькі
+    <div class="faq-block" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -3px">
+      <div class="faq-block__body container">
+        <div class="faq-block__item">
+          <h3 class="faq-block__title title" style="font-size: 17px"><%= t 'faq-block.text' %></h3>
+          <a class="btn btn_faq" href="/faq.html" style="margin-top: 25px"><%= t 'faq-block.button' %></a>
+        </div>
+      </div>
+    </div>
+-->
+
+
+<!-- Ведучий вебінару -->
+  <div class="introduce">
+    <div class="introduce__body container">
+      <div class="introduce__row">
+        <div class="introduce__column_1" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+          <div class="introduce__item">
+            <img class="introduce__foto pc" src="<%= asset_url('Tkachenko-Andrey-psychologist.webp')%>" src="<%= asset_url('1133x1700.png')%>" alt="Ткаченко Андрей психолог">
+            <img class="introduce__foto mob" src="<%= asset_url('psychologist-Tkachenko-Andrey.webp')%>" alt="Ткаченко Андрей психолог">
+          </div>
+        </div>
+        <div class="introduce__column_2">
+          <div class="introduce__item">
+            <h2 class="introduce__title title"><%= t 'webinar.about.title' %></h2>
+            <h3 class="introduce__subtitle"><%= t 'webinar.about.sub-title' %></h3>
+            <p class="introduce__text"><%= raw t(:'webinar.about.text') %></p>
+            <h3 class="introduce__subtitle pc"><%= t 'webinar.about.pc.sub-title' %></h3>
+            <p class="introduce__text pc"><%= t 'webinar.about.pc.text' %></p>
+            <div class="introduce__button">
+              <a class="btn btn_sign-up" href="/<%= I18n.locale%>/about.html" style="display: inline-block;" target="_blank"><%= t 'button.about' %></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Тарифи та вартість -->
+  <div class="services">
+    <div class="services__body container" style="padding-bottom: 43px">
+      <div class="services__header header_box">
+        <h2 class="services__title title"><%= t 'tariffs.title' %></h2>
+        <p class="experience__subtitle subtitle"><%= t 'tariffs.subtitle' %></p>
+      </div>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'tariffs.cheap.title' %></h3>
+            <p class="services__info"><%= t 'tariffs.cheap.components' %></p>
+            <ul class="services__text">
+              <%= raw t(:'tariffs.cheap.text') %>
+            </ul>
+            <p class="services__price"><%= t 'tariffs.cheap.price' %></p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'tariffs.midle.title' %></h3>
+            <p class="services__info"><%= t 'tariffs.midle.components' %></p>
+            <ul class="services__text">
+              <%= raw t(:'tariffs.midle.text') %>
+            </ul>
+            </p>
+            <p class="services__price"><%= raw t 'tariffs.midle.price' %></p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'tariffs.vip.title' %></h3>
+            <p class="services__info"><%= t 'tariffs.vip.components' %></p>
+            <ul class="services__text">
+              <%= raw t(:'tariffs.vip.text') %>
+            </ul>
+            <p class="services__price"><%= t 'tariffs.vip.price' %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Запис на вебінар -->
+  <div class="sign-up" id="client_form">
+    <div class="sign-up__body container">
+      <div class="sign-up__item">
+        <h2 class="sign-up__title title"><%= t 'sign-up.title-webinar' %></h2>
+        <p class="sign-up__text"><%= t 'sign-up.sub-title-webinar2' %></p>
+        <div class="sign-up__btn-row">
+          <a class="btn btn_contact" style="min-width: 250px; font-size: 15px" href="https://t.me/tkachenko_psychology" target="_blank">ЗАРЕЄСТРУВАТИСЬ</a>
+        </div>
+        <p class="sign-up__text pc"><%= raw t 'sign-up.text-webinar' %></p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Відгуки -->
+  <div class="reviews">
+    <div class="reviews__body container">
+      <div class="reviews__header header_box">
+        <h2 class="reviews__title title"><%= t 'slider-reviews.title' %></h2>
+      </div>
+
+      <%= render partial: "/new/review"%>
+
+    <div class="video-reviews" id="w_video">
+      <div class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Maria20' %>" frameborder="0" showinfo="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Bogdan29' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Svetlana37' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Julia29' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Danil20' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Kate22' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Stanislav' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="slider__item slider__item-video">
+            <div class="slider__video" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+              <iframe width="100%" height="100%" src="<%= t 'video-reviews.Maksim' %>" frameborder="0" showinfo="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+          
+        </div>
+        <a class="slider__control slider__control_left" href="#" role="button"></a>
+          <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+
+        <%= render partial: "/new/slider"%>
+        <script type="text/javascript">
+            var slider = multiItemSlider('w_video')
+        </script>
+    </div>
+  </div>
+
+
+
+<!-- Найпоширеніші запитання -->
+  <div class="faq">
+    <div class="faq__body container">
+      <div class="faq__header  header_box">
+        <h1 class="faq__title title"><%= t 'faq.title' %></h1>
+      </div>
+      <div class="faq__accordion accordion" style="margin-top: 25px; border-radius: 4px">
+        <div class="accordion__item" style="border-top: none !important; border-radius: 4px 4px 0px 0px">
+          <input id="accordion1" type="checkbox">
+          <label for="accordion1" style="border-radius: 4px 4px 0px 0px"><%= t 'faq.question1.title' %></label>
+          <section>
+            <p><%= t 'faq.question1.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion2" type="checkbox">
+          <label for="accordion2"><%= t 'faq.question2.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question2.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion3" type="checkbox">
+          <label for="accordion3"><%= t 'faq.question3.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question3.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion4" type="checkbox">
+          <label for="accordion4"><%= t 'faq.question4.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question4.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion5" type="checkbox">
+          <label for="accordion5"><%= t 'faq.question5.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question5.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion6" type="checkbox">
+          <label for="accordion6"><%= t 'faq.question6.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question6.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion7" type="checkbox">
+          <label for="accordion7"><%= t 'faq.question7.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question7.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion8" type="checkbox">
+          <label for="accordion8"><%= t 'faq.question8.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question8.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion9" type="checkbox">
+          <label for="accordion9"><%= t 'faq.question9.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question9.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion10" type="checkbox">
+          <label for="accordion10"><%= t 'faq.question10.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question10.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion11" type="checkbox">
+          <label for="accordion11"><%= t 'faq.question11.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question11.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion12" type="checkbox">
+          <label for="accordion12"><%= t 'faq.question12.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question12.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion13" type="checkbox">
+          <label for="accordion13"><%= t 'faq.question13.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question13.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion14" type="checkbox">
+          <label for="accordion14"><%= t 'faq.question14.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question14.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion15" type="checkbox">
+          <label for="accordion15"><%= t 'faq.question15.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question15.text' %></p>
+          </section>
+        </div>
+        <div class="accordion__item" style="border-bottom: none !important">
+          <input id="accordion16" type="checkbox">
+          <label for="accordion16"><%= t 'faq.question16.title' %></label>
+          <section>
+            <p><%= raw t 'faq.question16.text' %></p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+

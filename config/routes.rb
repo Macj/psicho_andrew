@@ -79,7 +79,8 @@ Rails.application.routes.draw do
     get '/Positive-psychotherapy'             => 'new#Positive-psychotherapy'
     get '/Mindfulness'                        => 'new#Mindfulness'
     get '/successful-registration'            => 'new#successful-registration'
-    get '/emotional'            => 'new#emotional'
+    get '/emotional'                          => 'new#emotional'
+    get '/webinar_ocd'                        => 'new#webinar_ocd'
 
     
     
