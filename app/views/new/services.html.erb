@@ -12,12 +12,104 @@
   <meta property="og:image" content="http://tkachenkoandrey.com/assets/Tkachenko-Andrey-0ccd9afe47bf51522e172c3619a0dd1b97986605188615048acbc034288baecf.jpg">
 <% end %>
 
-<div class="pc_content">
-  <div class="container">
-    <div class="problem__header  header_box">
-        <h1 class="title">Услуги</h1>
+<div class="services-page">
+  <div class="services">
+    <div class="services__body container">
+      <div class="services__header header_box">
+        <h2 class="services__title title"><%= t 'services.title' %></h2>
+        <p class="experience__subtitle subtitle"><%= raw t 'services.subtitle-page' %></p>
+      </div>
+      <div class="services__header header_box" style="margin-top: 50px">
+        <h2 class="services__title title"><%= t 'services.title-ind' %></h2>
+      </div>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.ind-50.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-50.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.ind-50.problems') %>
+            </ul>
+            <p class="services__price"><%= t 'services.ind-50.price' %></p>
+            <p class="services__package"><%= t 'services.ind-50.price-package' %></p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.ind-90.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-90.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.ind-90.problems') %>
+            </ul>
+            <p class="services__price"><%= raw t 'services.ind-90.price' %></p>
+            <p class="services__package"><%= t 'services.ind-90.price-package' %></p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.ind-120.title' %></h3>
+            <p class="services__info"><%= t 'services.ind-120.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.ind-120.problems') %>
+            </ul>
+            <p class="services__price"><%= t 'services.ind-120.price' %></p>
+            <p class="services__package"><%= t 'services.ind-120.price-package' %></p>
+          </div>
+        </div>
       </div>
 
+
+
+      <div class="services__header header_box" style="margin-top: 50px">
+        <h2 class="services__title title"><%= t 'services.title-group' %></h2>
+      </div>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.group-therapy.title' %></h3>
+            <p class="services__info"><%= t 'services.group-therapy.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.group-therapy.problems') %>
+            </ul>
+            <p class="services__price"><%= t 'services.group-therapy.price' %></p>
+            <p class="services__package"><%= t 'services.group-therapy.price-package' %></p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.group-support.title' %></h3>
+            <p class="services__info"><%= t 'services.group-support.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.group-support.problems') %>
+            </ul>
+            <p class="services__price"><%= raw t 'services.group-support.price' %></p>
+            <p class="services__package"><%= t 'services.group-support.price-package' %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- конец container --> 
+
+
+  <div class="sign-up" id="client_form">
+    <div class="sign-up__body container">
+      <div class="sign-up__item">
+        <h2 class="sign-up__title title"><%= t 'sign-up.title' %></h2>
+        <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
+        <div class="sign-up__btn-row">
+          <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
+          <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
+          <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
+        </div>
+        <p class="sign-up__text pc"><%= raw t 'sign-up.text' %></p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<!--
     <div>
         <table style="margin-bottom: 1vw">
           <th style="width: 1%">Услуга</th>
@@ -86,6 +178,8 @@
           </tfoot>
         </table>
       </div>
+
+  -->
 <!--
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center; margin: 0vw 2vw">
         <div style="width: 29%;" id="service_box">
@@ -154,7 +248,7 @@
         </button>
       </div>
     </div>
--->
+
     <h2 style="font-size: 2.5vw; text-align: center; margin: 8vw 0px 3vw 0vw">Что входит в стоимость консультации</h2> 
       <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
         <div class="service_box">
@@ -214,11 +308,8 @@
       <img src="<%= asset_url('form.svg')%>" style="width: 40vw">
       <%= render partial: "/new/form"%>
     </div>
-
-  </div>  <!-- конец container --> 
-</div> <!-- конец pc_content -->
-
-
+-->
+</div>
 
 
 
@@ -240,6 +331,7 @@
 
 
 <!-- начало моб версии -->
+<!--
 <div class="mob" style="background: #F7F7F7; padding-bottom: 10vw">
   <h1 style="padding: 9vw 0vw 6vw 0vw; text-align: center; font-weight: 800; font-size: 5vw; margin: 0px">
     Услуги
@@ -336,7 +428,7 @@
       <p class="problem_text" style="margin-bottom: 0vw; font-size: 2.8vw; line-height: 3.7vw;">Разовый сеанс гипнохотерапии = 50 $</p>
     </div>
     
-  </div> <!-- конец услуг -->
+  </div>
 
   
 
@@ -382,7 +474,7 @@
         Текстовые, аудио и видео-файлы для выполнения дз, фиксации результатов терапии, профилактики рецидивов и обучения полезным навыкам (в файлах docx, excel, mp3, mp4)
       </p>
     </div>
-  </div> <!-- конец Что входит в стоимость консультации -->
+  </div>
 
   <h2 style="padding: 10vw 8vw 2vw 8vw; text-align: center; font-weight: 800; font-size: 5vw; line-height: 6vw">
     Гарантия результата
@@ -405,4 +497,5 @@
     <%= render partial: "/new/form_mob"%>
   </div>
 
-</div>  <!-- конец моб версии -->
+</div>
+-->
