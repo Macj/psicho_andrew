@@ -55,6 +55,7 @@ Rails.application.routes.draw do
     get '/work-with'                          => 'new#work_with'
     get '/individual_consultation'            => 'new#individual_consultation'
     get '/group_consultation'                 => 'new#group_consultation'
+    get '/family_consultation'                => 'new#family_consultation'
     get '/webinars'                           => 'new#webinars'
     get '/books'                              => 'new#books'
     get '/EMDR'                               => 'new#emdr'

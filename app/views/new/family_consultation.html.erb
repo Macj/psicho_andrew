@@ -1,0 +1,177 @@
+<% content_for :head do %>
+  <link rel="canonical" href="<%= t 'family.head.url' %>">
+  <title><%= t 'family.head.title' %></title>
+  <meta name="description" content="<%= t 'family.head.description' %>">
+  <meta name="keywords" content="<%= t 'family.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'family.head.url' %>">
+  <meta property='og:site_name' content='<%= t 'head.og:site_name' %>'>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<%= t 'family.head.title' %>">
+  <meta property="og:description" content="<%= t 'family.head.description' %>">
+  <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1133">
+  <meta property="og:image:height" content="780">
+  <meta property='article:publisher' content='https://www.facebook.com/tkachenko.psychology/'>
+  <meta property="article:tag" content="<%= t 'family.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'family.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'family.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'family.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'family.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'family.head.article:tag6' %>">
+  <meta name="twitter:url" content="<%= t 'family.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'family.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'family.head.description' %>">
+  <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="relap-image" content="<%= asset_url('Tkachenko-Andrey.jpg')%>">
+  <link rel="image_src" href="<%= asset_url('Tkachenko-Andrey.jpg')%>">
+<% end %>
+
+<div class="article">
+  <div class="article__fullscreen fullscreen">
+    <div class="article__fullscreen_content fullscreen_content container group_consultations">
+      <h1 class="article__name"><%= t 'family.title' %></h1>
+      <p class="article__description pc"><%= raw t 'family.description' %></p>
+      <img class="fullscreen__image" src="<%= asset_url('family-therapy.webp')%>" title="<%= t 'family.title' %>" alt="<%= t 'family.title' %>">
+      <div class="fullscreen__shadow"></div>
+    </div>
+  </div>
+
+  <article class="article__content">
+    <div class="article__body container">
+      <section>
+        <h2 id="Consultations"><%= t 'family.what-is.h2' %></h2>
+        <%= raw t 'family.what-is.text' %>
+      </section>
+
+      <section>
+        <h2><%= t 'family.advantages.h2' %></h2>
+        <%= raw t 'family.advantages.text' %>
+      </section>
+
+      <section>
+        <h2><%= t 'family.setting.h2' %></h2>
+        <%= raw t 'family.setting.text' %>
+      </section>
+
+      <section id="family-psychotherapy-rules">
+        <h2><%= t 'family.rules.h2' %></h2>
+        <%= raw t 'family.rules.text' %>
+      </section>
+
+      <section id="family-psychotherapy-rules">
+        <h2><%= t 'family.stages.h2' %></h2>
+        <%= raw t 'family.stages.text' %>
+      </section>
+
+      <h2 class="article__accordion_title"><%= t 'family.psychotherapy-structure.h2' %></h2>
+      <div class="accordion">
+        <div class="accordion__item">
+          <input id="accordion1" type="checkbox">
+          <label for="accordion1"><%= t 'family.psychotherapy-structure.1.title' %></label>
+          <section>
+            <%= raw t 'family.psychotherapy-structure.1.text' %>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion2" type="checkbox">
+          <label for="accordion2"><%= t 'family.psychotherapy-structure.2.title' %></label>
+          <section>
+            <%= raw t 'family.psychotherapy-structure.2.text' %>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion3" type="checkbox">
+          <label for="accordion3"><%= t 'family.psychotherapy-structure.3.title' %></label>
+          <section>
+            <%= raw t 'family.psychotherapy-structure.3.text' %>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion4" type="checkbox">
+          <label for="accordion4"><%= t 'family.psychotherapy-structure.4.title' %></label>
+          <section>
+            <%= raw t 'family.psychotherapy-structure.4.text' %>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion5" type="checkbox">
+          <label for="accordion5"><%= t 'family.psychotherapy-structure.5.title' %></label>
+          <section>
+            <%= raw t 'family.psychotherapy-structure.5.text' %>
+          </section>
+        </div>
+        <div class="accordion__item">
+          <input id="accordion6" type="checkbox">
+          <label for="accordion6"><%= t 'family.psychotherapy-structure.6.title' %></label>
+          <section>
+            <%= raw t 'family.psychotherapy-structure.6.text' %>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <div class="faq-block" id="client_form" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -3px">
+      <div class="faq-block__body container">
+        <div class="faq-block__item">
+          <h3 class="faq-block__title title" style="font-size: 17px"><%= t 'faq-block.text' %></h3>
+          <a class="btn btn_faq" href="/<%= I18n.locale%>/faq.html" style="margin-top: 25px"><%= t 'faq-block.button' %></a>
+        </div>
+      </div>
+    </div>
+
+  <div class="services" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -3px">
+    <div class="services__body container" style="padding-bottom: 20px; padding-top: 20px">
+      <div class="services__header header_box ">
+        <h2 class="services__title title"  style="font-size: 25px;"><%= t 'services.title' %></h2>
+      </div>
+      <div class="services__row">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.family-90.title' %></h3>
+            <p class="services__info"><%= t 'services.family-90.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.family-90.problems') %>
+            </ul>
+            <p class="services__price"><%= t 'services.family-90.price' %></p>
+            <p class="services__package"><%= t 'services.family-90.price-package' %></p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.family-120.title' %></h3>
+            <p class="services__info"><%= t 'services.family-120.time' %></p>
+            <ul class="services__text">
+              <%= raw t(:'services.family-120.problems') %>
+            </ul>
+            <p class="services__price"><%= raw t 'services.family-120.price' %></p>
+            <p class="services__package"><%= t 'services.family-120.price-package' %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="sign-up" id="client_form" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -3px">
+      <div class="sign-up__body container">
+        <div class="sign-up__item">
+          <h2 class="sign-up__title title"><%= t 'sign-up.title' %></h2>
+          <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
+          <div class="sign-up__btn-row">
+            <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
+            <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
+            <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
+          </div>
+          <p class="sign-up__text pc">
+            <%= raw t 'sign-up.text' %>
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+</div>
