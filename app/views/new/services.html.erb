@@ -19,9 +19,273 @@
         <h2 class="services__title title"><%= t 'services.title' %></h2>
         <p class="experience__subtitle subtitle"><%= raw t 'services.subtitle' %></p>
       </div>
-      <div class="services__header header_box" style="margin-top: 50px">
-        <h2 class="services__title title"><%= t 'services.title-ind' %></h2>
+
+      <div class="services__row" style="margin-top: 0">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.service1.title' %></h3>
+            <p class="services__text">
+              <%= raw t(:'services.service1.text') %>
+            </p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.service2.title' %></h3>
+            <p class="services__text">
+              <%= raw t(:'services.service2.text') %>
+            </p>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.service3.title' %></h3>
+            <p class="services__text">
+              <%= raw t(:'services.service3.text') %>
+            </p>
+          </div>
+        </div>
       </div>
+
+      <div class="faq-block" id="client_form" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -3px">
+        <div class="faq-block__body container" style="padding-right: 0px; padding-left: 0px">
+          <div class="faq-block__item">
+            <h3 class="faq-block__title title" ><%= raw t(:'services.service.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.service.text') %></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="services__row" style="margin-top: 0px">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.session.ind-30.title' %></h3>
+            <p class="services__info"><%= t 'services.session.ind-30.time' %></p>
+            <ul class="services__text"><%= raw t(:'services.session.ind-30.text') %></ul>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.session.ind-50.title' %></h3>
+            <p class="services__info"><%= t 'services.session.ind-50.time' %></p>
+            <ul class="services__text"><%= raw t(:'services.session.ind-50.text') %></ul>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.session.ind-80.title' %></h3>
+            <p class="services__info"><%= t 'services.session.ind-80.time' %></p>
+            <ul class="services__text"><%= raw t(:'services.session.ind-80.text') %></ul>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.session.ind-170.title' %></h3>
+            <p class="services__info"><%= t 'services.session.ind-170.time' %></p>
+            <ul class="services__text"><%= raw t(:'services.session.ind-170.text') %></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="services__row">
+        <div class="services__column_bigtext1">
+          <div class="services__item_bigtext1">
+            <h2 class="services__text_bigtext1"><%= raw t 'services.bigtext1' %></h2>
+          </div>
+        </div>
+        <div class="services__column_accordion">
+          <div class="services__item_accordion">
+            <h2 class="services__accordion_title"><%= raw t 'services.accordion.title' %></h2>
+            <div class="accordion">
+              <div class="accordion__item">
+                <input id="accordion1" type="checkbox">
+                <label for="accordion1"><%= t 'services.accordion.label1' %></label>
+                <section>
+                  <%= raw t 'services.accordion.text1' %>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion2" type="checkbox">
+                <label for="accordion2"><%= t 'services.accordion.label2' %></label>
+                <section>
+                  <%= raw t 'services.accordion.text2' %>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion3" type="checkbox">
+                <label for="accordion3"><%= t 'services.accordion.label3' %></label>
+                <section>
+                  <%= raw t 'services.accordion.text3' %>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion4" type="checkbox">
+                <label for="accordion4"><%= t 'services.accordion.label4' %></label>
+                <section>
+                  <%= raw t 'services.accordion.text4' %>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion5" type="checkbox">
+                <label for="accordion5"><%= t 'services.accordion.label5' %></label>
+                <section>
+                  <%= raw t 'services.accordion.text5' %>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="services__row">
+        <div class="services__column_stendup_text1">
+          <article style="margin: 0">
+            <section style="margin: 0">
+              <h2><%= raw t 'services.stendup.text1.title' %></h2> 
+              <p><%= raw t 'services.stendup.text1.text' %></p>
+            </section>
+          </article>
+        </div>
+        <div class="services__column_bigtext2">
+          <div class="services__item_bigtext2 faq-block__item">
+            <h3 class="services__text_bigtext2 faq-block__title title" ><%= raw t(:'services.bigtext2.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext2.text') %></h3>
+          </div>
+        </div>
+        <div class="services__column_stendup_text2">
+          <div>
+            <article style="margin: 0">
+              <section style="margin: 0">
+                <h2><%= raw t 'services.stendup.text2.title' %></h2> 
+                <p><%= raw t 'services.stendup.text2.text' %></p>
+              </section>
+            </article>
+          </div>
+        </div>
+        <div class="services__column_stendup_text3">
+          <div>
+            <article style="margin: 0">
+              <section style="margin: 0">
+                <h2><%= raw t 'services.stendup.text3.title' %></h2> 
+                <p><%= raw t 'services.stendup.text3.text' %></p>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="services__header header_box" style="margin-top: 50px; margin-bottom: 5px">
+          <h2 class="services__title title"><%= raw t 'services.Basic.title' %></h2>
+        </div>
+        <table style="margin-top: 0px; background: var(--background-white);">
+          <%= raw t 'services.Basic.table' %>
+        </table>
+      </div>
+
+      <div class="services__row">
+        <div class="services__column_plus">
+          <table style="margin: 0px; background: var(--background-white);">
+            <%= raw t 'services.Plus.table' %>
+          </table>
+        </div>
+        <div class="services__column_bigtext3 display1360">
+          <div class="services__item_bigtext3 faq-block__item">
+            <h3 class="services__text_bigtext3 faq-block__title title" ><%= raw t(:'services.bigtext3.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext3.text') %></h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="services__row">
+        <div class="services__column_bigtext3 display1360">
+          <div class="services__item_bigtext3 faq-block__item">
+            <h3 class="services__text_bigtext3 faq-block__title title" ><%= raw t(:'services.bigtext4.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext4.text') %></h3>
+          </div>
+        </div>
+        <div class="services__column_plus">
+          <table style="margin: 0px; background: var(--background-white);">
+            <%= raw t 'services.VIP.table' %>
+          </table>
+        </div>
+      </div>
+
+      <div class="services__row">
+        <div class="services__column_tables">
+          <table style="margin: 0px; background: var(--background-white);">
+            <%= raw t 'services.family.table' %>
+          </table>
+        </div>
+        <div class="services__column_tables">
+          <table style="margin: 0px; background: var(--background-white);">
+            <%= raw t 'services.group.table' %>
+          </table>
+        </div>
+      </div>
+
+      <div class="services__header header_box" style="margin-top: 50px">
+        <h2 class="services__title title"><%= raw t 'services.spesialist.title' %></h2>
+      </div>
+      <div class="services__row" style="margin-top: 0">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.spesialist.service1.title' %></h3>
+            <ul class="services__text">
+              <%= raw t(:'services.spesialist.service1.text') %>
+            </ul>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.spesialist.service2.title' %></h3>
+            <ul class="services__text">
+              <%= raw t(:'services.spesialist.service2.text') %>
+            </ul>
+          </div>
+        </div>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.spesialist.service3.title' %></h3>
+            <ul class="services__text">
+              <%= raw t(:'services.spesialist.service3.text') %>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <table style="margin-top: 0px; background: var(--background-white);">
+          <%= raw t 'services.spesialist.tarifs.table' %>
+        </table>
+      </div>
+  
+    </div>
+    
+      <div class="sign-up" id="client_form">
+        <div class="sign-up__body container">
+          <div class="sign-up__item">
+            <h2 class="sign-up__title title"><%= t 'sign-up.title' %></h2>
+            <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
+            <div class="sign-up__btn-row">
+              <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
+              <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
+              <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
+            </div>
+            <p class="sign-up__text pc"><%= raw t 'sign-up.text' %></p>
+          </div>
+        </div>
+      </div>
+
+    
+  </div>
+</div>
+
+
+
+<!--
+
+
       <div class="services__row">
         <div class="services__column">
           <div class="services__item">
@@ -88,28 +352,8 @@
         </div>
       </div>
     </div>
-  </div>  <!-- конец container --> 
+  </div>  конец container
 
-
-  <div class="sign-up" id="client_form">
-    <div class="sign-up__body container">
-      <div class="sign-up__item">
-        <h2 class="sign-up__title title"><%= t 'sign-up.title' %></h2>
-        <p class="sign-up__text"><%= t 'sign-up.sub-title' %></p>
-        <div class="sign-up__btn-row">
-          <a class="btn btn_contact" href="https://t.me/tkachenko_psychology" target="_blank">Telegram</a>
-          <a class="btn btn_contact" href="viber://chat?number=%2B380964248025" target="_blank">Viber</a>
-          <a class="btn btn_contact" href="https://wa.me/380964248025" target="_blank">WhatsApp</a>
-        </div>
-        <p class="sign-up__text pc"><%= raw t 'sign-up.text' %></p>
-      </div>
-    </div>
-  </div>
-
-
-
-
-<!--
     <div>
         <table style="margin-bottom: 1vw">
           <th style="width: 1%">Услуга</th>
@@ -309,7 +553,7 @@
       <%= render partial: "/new/form"%>
     </div>
 -->
-</div>
+
 
 
 
