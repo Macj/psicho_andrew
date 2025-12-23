@@ -1790,10 +1790,10 @@ main {
     padding: 15px 10px;
     margin: 0px;
   }
-  &__text li {
+  &__text li, section ul li {
     list-style-type: '\25FC';
-    padding-left: 15px;
-    margin-left: 10px;
+    padding-left: 12px;
+    margin-left: 12px;
   }
   &__price {
     font-size: 1.4rem;
@@ -1840,6 +1840,10 @@ main {
 
 
 
+.padding0 ul {
+  padding: 0;
+  margin: 0;
+}
 
 
 
