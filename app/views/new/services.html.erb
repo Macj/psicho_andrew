@@ -24,7 +24,7 @@
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.service1.title' %></h3>
-            <ul class="services__text">
+            <ul class="services__text pc_justify">
               <%= raw t(:'services.service1.text') %>
             </ul>
           </div>
@@ -32,7 +32,7 @@
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.service2.title' %></h3>
-            <ul class="services__text">
+            <ul class="services__text pc_justify">
               <%= raw t(:'services.service2.text') %>
             </ul>
           </div>
@@ -40,7 +40,7 @@
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.service3.title' %></h3>
-            <ul class="services__text">
+            <ul class="services__text pc_justify">
               <%= raw t(:'services.service3.text') %>
             </ul>
           </div>
@@ -61,28 +61,28 @@
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.session.ind-30.title' %></h3>
             <p class="services__info"><%= t 'services.session.ind-30.time' %></p>
-            <ul class="services__text"><%= raw t(:'services.session.ind-30.text') %></ul>
+            <ul class="services__text pc_justify"><%= raw t(:'services.session.ind-30.text') %></ul>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.session.ind-50.title' %></h3>
             <p class="services__info"><%= t 'services.session.ind-50.time' %></p>
-            <ul class="services__text"><%= raw t(:'services.session.ind-50.text') %></ul>
+            <ul class="services__text pc_justify"><%= raw t(:'services.session.ind-50.text') %></ul>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.session.ind-80.title' %></h3>
             <p class="services__info"><%= t 'services.session.ind-80.time' %></p>
-            <ul class="services__text"><%= raw t(:'services.session.ind-80.text') %></ul>
+            <ul class="services__text pc_justify"><%= raw t(:'services.session.ind-80.text') %></ul>
           </div>
         </div>
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.session.ind-170.title' %></h3>
             <p class="services__info"><%= t 'services.session.ind-170.time' %></p>
-            <ul class="services__text"><%= raw t(:'services.session.ind-170.text') %></ul>
+            <ul class="services__text pc_justify"><%= raw t(:'services.session.ind-170.text') %></ul>
           </div>
         </div>
       </div>
@@ -100,35 +100,35 @@
               <div class="accordion__item">
                 <input id="accordion1" type="checkbox">
                 <label for="accordion1"><%= t 'services.accordion.label1' %></label>
-                <section class="padding0">
+                <section class="padding0 pc_justify">
                   <ul><%= raw t 'services.accordion.text1' %></ul>
                 </section>
               </div>
               <div class="accordion__item">
                 <input id="accordion2" type="checkbox">
                 <label for="accordion2"><%= t 'services.accordion.label2' %></label>
-                <section class="padding0">
+                <section class="padding0 pc_justify">
                   <ul><%= raw t 'services.accordion.text2' %></ul>
                 </section>
               </div>
               <div class="accordion__item">
                 <input id="accordion3" type="checkbox">
                 <label for="accordion3"><%= t 'services.accordion.label3' %></label>
-                <section class="padding0">
+                <section class="padding0 pc_justify">
                   <ul><%= raw t 'services.accordion.text3' %></ul>
                 </section>
               </div>
               <div class="accordion__item">
                 <input id="accordion4" type="checkbox">
                 <label for="accordion4"><%= t 'services.accordion.label4' %></label>
-                <section class="padding0">
+                <section class="padding0 pc_justify">
                   <ul><%= raw t 'services.accordion.text4' %></ul>
                 </section>
               </div>
               <div class="accordion__item">
                 <input id="accordion5" type="checkbox">
                 <label for="accordion5"><%= t 'services.accordion.label5' %></label>
-                <section class="padding0">
+                <section class="padding0 pc_justify">
                   <ul><%= raw t 'services.accordion.text5' %></ul>
                 </section>
               </div>
@@ -138,6 +138,12 @@
       </div>
 
       <div class="services__row">
+        <div class="services__column_bigtext2 mob">
+          <div class="services__item_bigtext2 faq-block__item">
+            <h3 class="services__text_bigtext2 faq-block__title title" ><%= raw t(:'services.bigtext2.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext2.text') %></h3>
+          </div>
+        </div>
         <div class="services__column_stendup_text1">
           <article style="margin: 0">
             <section style="margin: 0">
@@ -146,7 +152,7 @@
             </section>
           </article>
         </div>
-        <div class="services__column_bigtext2">
+        <div class="services__column_bigtext2 pc">
           <div class="services__item_bigtext2 faq-block__item">
             <h3 class="services__text_bigtext2 faq-block__title title" ><%= raw t(:'services.bigtext2.title') %></h3>
             <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext2.text') %></h3>
@@ -184,12 +190,18 @@
       </div>
 
       <div class="services__row">
+        <div class="services__column_bigtext3 display1360 mob">
+          <div class="services__item_bigtext3 faq-block__item">
+            <h3 class="services__text_bigtext3 faq-block__title title" ><%= raw t(:'services.bigtext3.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext3.text') %></h3>
+          </div>
+        </div>
         <div class="services__column_plus">
           <table style="margin: 0px; background: var(--background-white);">
             <%= raw t 'services.Plus.table' %>
           </table>
         </div>
-        <div class="services__column_bigtext3 display1360">
+        <div class="services__column_bigtext3 display1360 pc">
           <div class="services__item_bigtext3 faq-block__item">
             <h3 class="services__text_bigtext3 faq-block__title title" ><%= raw t(:'services.bigtext3.title') %></h3>
             <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext3.text') %></h3>
@@ -231,7 +243,7 @@
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.spesialist.service1.title' %></h3>
-            <ul class="services__text">
+            <ul class="services__text pc_justify">
               <%= raw t(:'services.spesialist.service1.text') %>
             </ul>
           </div>
@@ -239,7 +251,7 @@
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.spesialist.service2.title' %></h3>
-            <ul class="services__text">
+            <ul class="services__text pc_justify">
               <%= raw t(:'services.spesialist.service2.text') %>
             </ul>
           </div>
@@ -247,7 +259,7 @@
         <div class="services__column">
           <div class="services__item">
             <h3 class="services__name"><%= t 'services.spesialist.service3.title' %></h3>
-            <ul class="services__text">
+            <ul class="services__text pc_justify">
               <%= raw t(:'services.spesialist.service3.text') %>
             </ul>
           </div>
@@ -255,7 +267,7 @@
       </div>
 
       <div>
-        <table style="margin-top: 0px; background: var(--background-white);">
+        <table style="margin-top: 0px; margin-bottom: 0px; background: var(--background-white);">
           <%= raw t 'services.spesialist.tarifs.table' %>
         </table>
       </div>

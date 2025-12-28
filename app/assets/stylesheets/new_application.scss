@@ -419,6 +419,8 @@ main {
   .header__contacts {
     display: flex;
   }
+}
+@media screen and (min-width: 768px) {
   #localization {
     display: none;
   }
@@ -1846,10 +1848,11 @@ main {
 }
 
 
-
-
-
-
+@media screen and (max-width: 767px), screen and (orientation: landscape) and (max-width: 1023px) {
+  .padding0 ul {
+   padding: 15px 0px;
+  }
+}
 
 
 
@@ -4275,7 +4278,17 @@ caption ~ thead th {
 
 
 
+@media screen and (min-width: 768px) {
+  .mob {
+    display: none !important;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .pc_justify {
+    text-align: justify;
+  }
+}
 
 
 

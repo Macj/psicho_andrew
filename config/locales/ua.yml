@@ -31,6 +31,7 @@ ua:
     ГРУППОВЫЕ: "Групові"
     НАПРАВЛЕНИЯ РАБОТЫ: "Напрямки роботи"
     МЕТОДЫ РАБОТЫ: "Методи роботи"
+    УСЛУГИ: "Послуги"
     ДОГОВОР: "Договір"
     ОТЗЫВЫ: "Відгуки"
     СТАТЬИ: "Статті"
@@ -41,7 +42,7 @@ ua:
     Индивидуальные сессии: "Індивідуальні сесії"
     Групповые сессии: "Групові сесії"
     Семейные сессии: "Сімейні сесії"
-    Права:  "© 2018-2025 Усі права захищені"
+    Права:  "© 2018-2026 Усі права захищені"
 
   articles:
     Статьи: 'Статті'
@@ -137,6 +138,11 @@ ua:
       my-education: 
         sub-title: 'Моя освіта та досвід'
         text: 'Я закінчив Дніпровський Національний Університет за спеціальністю "Психологія". В універі організовував навчальну групу з консультування та працював дитячим психологом у сімейному центрі "Світ Інсайт". Потім став психологом в методі Позитивної психотерапії, проводив лекції та писав статті. З 2018 року веду приватну практику. Продовжую відвідувати супервізію та курси підвищення кваліфікації.'
+    services:
+      title: 'Послуги'
+      subtitle: |
+        Всі послуги універсальні та підходять для вирішення цього списку <a href="/ua/work_with.html">запитів</a>.<br>
+        Ви можете обрати той темп, формат та <a href="/ua/methods.html">метод</a> роботи, який підходить саме вам.
     articles:
       title: 'Цікаві статті'
       article1:
@@ -192,11 +198,11 @@ ua:
         <b>Фокус:</b> усвідомлення того, що відбувається тут і зараз, виявлення протиріч у мисленні, комунікації та діяльності.<br>
         <br>
         <b>Підходить для:</b>
-        <li>впорядкування життя;</li>
-        <li>підвищення стресостійкості;</li>
-        <li>розвитку впевненості в собі;</li>
-        <li>адаптації до змін і нових умов;</li>
-        <li>прийняття рішень та їх реалізації.</li>
+        <li>впорядкування життя</li>
+        <li>підвищення стресостійкості</li>
+        <li>розвитку впевненості в собі</li>
+        <li>адаптації до змін і нових умов</li>
+        <li>прийняття рішень та їх реалізації</li>
     service2:
       title: 'Терапія'
       text: |
@@ -204,21 +210,21 @@ ua:
         <b>Фокус:</b> тригери, сприйняття, реакції, минулий досвід і стосунки.<br>
         <br>
         <b>Підходить для:</b>
-        <li>складних запитів;</li>
-        <li>розладів та дисфункцій;</li>
-        <li>відновлення гармонії у стосунках;</li>
-        <li>зміни деструктивних життєвих сценаріїв.</li>        
+        <li>складних запитів</li>
+        <li>розладів та дисфункцій</li>
+        <li>відновлення гармонії у стосунках</li>
+        <li>зміни деструктивних життєвих сценаріїв</li>        
     service3:
       title: 'Коучинг'
       text: |
-        Професійно організований діалог, орієнтований на досягнення конкретних результатів і реалізацію потенціалу клієнта.<br>
+        Професійно організований діалог, орієнтований на досягнення конкретних результатів та реалізацію потенціалу клієнта.<br>
         <b>Фокус:</b> чітке формування цілей, планування, виявлення ресурсів, подолання перешкод, підготовка до дій та посилення мотивації.<br>
         <br>
         <b>Підходить для:</b>
-        <li>кар'єрного зростання;</li>
-        <li>бізнесу та управління;</li>
-        <li>реалізації амбітних цілей;</li>
-        <li>підвищення особистої ефективності.</li>
+        <li>кар'єрного зростання</li>
+        <li>бізнесу та управління</li>
+        <li>реалізації амбітних цілей</li>
+        <li>підвищення особистої ефективності</li>
     service:
       title: |
         Одна сесія – три послуги 
@@ -254,7 +260,7 @@ ua:
         title: 'Розширена сесія'
         time: '80 хв'
         text: |
-          Оптимальний вибір для глибокої роботи без поспіху. Комфортний простір для вираження почуттів та одночасного застосування декількох методик.<br>
+          Оптимальний вибір для глибокої роботи без поспіху. Комфортний простір для вираження почуттів та застосування декількох технік одночасно.<br>
           <br>
           <b>Підходить для:</b>
           <li>регулярної терапії</li>
@@ -266,7 +272,7 @@ ua:
         title: 'Інтенсивна сесія'
         time: '170 хв'
         text: |
-          Відчутний результат за одну сесію. Ексклюзивний формат для тих, хто прагне швидких змін. Унікальне поєднання сучасних методів для глибокого опрацювання конкретного запиту.<br>
+          Відчутний результат за одну сесію. Ексклюзивний формат для тих, хто прагне швидких змін. Унікальне поєднання сучасних методів для комплексного та глибокого опрацювання конкретного запиту.<br>
           <br>
           <b>Підходить для:</b>
           <li>термінових запитів</li>
@@ -371,47 +377,47 @@ ua:
         <li>досягати амбітних цілей.</li>
     stendup:
       text1:
-        title: "Регулярність, яка рухає вперед"
+        title: "Регулярність, що рухає вперед"
         text: |
-          <p style="margin-bottom: 0px; text-align: left;">
-            <b>Стендапи</b> – це короткі 15-хвилинні зустрічі, які суттєво прискорюють ваш прогрес між основними сесіями. Вони допомагають зафіксувати досягнення, зберегти фокус і швидко розібратися з тим, що зараз гальмує рух уперед.<br>
+          <p style="margin-bottom: 0px;">
+            <b>Стендапи</b> – це концентровані 15-хвилинні зустрічі, які кардинально прискорюють ваш прогрес між основними сесіями. Вони допомагають зафіксувати досягнення, зберегти фокус і швидко розібратися з тим, що зараз гальмує рух уперед.<br>
             <br>
-            Формат запозичений з методології Agile та адаптований для особистого розвитку, формування дисципліни та керованих змін у житті. Це не терапія і не коучинг у класичному сенсі, а регулярний ритуал підтримки й ясності, який не дає «випадати» з процесу. Особливо цінно в періоди інтенсивних змін, коли важливо тримати темп і напрям.<br>
+            Формат запозичений з методології Agile та адаптований для особистісного розвитку, формування дисципліни та керованих змін у житті. Це не терапія і не коучинг у класичному сенсі, а засіб регулярної підтримки ясності, який не дає «випадати» з процесу. Стендапи надзвичайно корисні як у періоди інтенсивних змін, так і в повсякденному житті.<br>
             <br>
             <b>Стендапи допоможуть:</b><br>
             <ul class="service_stendup_text" style="margin-top: 0;">
-              <li style="margin-bottom: 0;">тримати фокус на цілях;</li>
-              <li style="margin-bottom: 0;">фіксувати результати та прогрес;</li>
-              <li style="margin-bottom: 0;">зменшувати хаос і прокрастинацію;</li>
-              <li style="margin-bottom: 0;">діяти дисципліновано, без перевантаження;</li>
-              <li style="margin-bottom: 0;">вчасно виявляти перепони та знаходити рішення;</li>
-              <li style="margin-bottom: 0;">чітко визначати наступний крок.</li>
+              <li style="margin-bottom: 0;">тримати фокус на цілях</li>
+              <li style="margin-bottom: 0;">фіксувати результати та прогрес</li>
+              <li style="margin-bottom: 0;">зменшувати хаос і прокрастинацію</li>
+              <li style="margin-bottom: 0;">діяти дисципліновано, без перевантаження</li>
+              <li style="margin-bottom: 0;">вчасно виявляти перепони та знаходити рішення</li>
+              <li style="margin-bottom: 0;">чітко визначати наступний крок</li>
             </ul>
           </p>
       text2:
         title: "Ранковий стендап"
         text: |
-          <p style="text-align: left;">
+          <p>
            Ранковий стендап допомагає почати день з ясним розумінням напрямку та ресурсним станом.<br>
            <ul class="service_stendup_text" style="margin-top: 0;">
            <b>Ранковий стендап містить:</b>
-              <li style="margin-bottom: 0;">техніки пробудження та активації сил;</li>
-              <li style="margin-bottom: 0;">формування ключових цілей та задач на день;</li>
-              <li style="margin-bottom: 0;">прогнозування потенційних перешкод і стратегію їх подолання;</li>
-              <li style="margin-bottom: 0;">пошук ресурсів, підняття мотивації та впевненості для продуктивного дня.</li>
+              <li style="margin-bottom: 0;">техніки пробудження та активації сил</li>
+              <li style="margin-bottom: 0;">формування ключових цілей та задач на день</li>
+              <li style="margin-bottom: 0;">прогнозування потенційних перешкод і стратегію їх подолання</li>
+              <li style="margin-bottom: 0;">пошук ресурсів, підняття мотивації та впевненості для продуктивного дня</li>
             </ul>
           </p>
       text3:
         title: "Вечірній стендап"
         text: |
-          <p style="text-align: left;">
+          <p>
             Вечірній стендап допомагає завершити день з відчуттям спокою та ясністю в думках.<br>
             <ul class="service_stendup_text" style="margin-top: 0;">
             <b>Вечірній стендап містить:</b>
-              <li style="margin-bottom: 0;">обговорення досягнень і прогресу;</li>
-              <li style="margin-bottom: 0;">аналіз труднощів та пошук рішень;</li>
-              <li style="margin-bottom: 0;">стабілізацію емоційного стану та зняття напруги;</li>
-              <li style="margin-bottom: 0;">фокус на вдячності собі та організація вечірнього відновлення.</li>
+              <li style="margin-bottom: 0;">обговорення досягнень і прогресу</li>
+              <li style="margin-bottom: 0;">аналіз труднощів та формування висновків</li>
+              <li style="margin-bottom: 0;">стабілізацію емоційного стану та зняття напруги</li>
+              <li style="margin-bottom: 0;">фокус на вдячності собі та організація вечірнього відновлення</li>
             </ul>
           </p>
     bigtext2:
@@ -435,30 +441,30 @@ ua:
         <tbody>
           <tr>
             <td data-label="Кількість сесій">1 сесія</td>
-            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€40</td>
-            <td data-label="Стандартна сесія (50 хв)"style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center">€50</td>
+            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€27</td>
+            <td data-label="Стандартна сесія (50 хв)"style="text-align: center">€35</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€55</td>
+            <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center">€200</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">4 сесії</td>
-            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€40</td>
-            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center">€50</td>
+            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€105</td>
+            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€135</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€215</td>
+            <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center">€775</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">8 сесій</td>
-            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€40</td>
-            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€200</td>
+            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€260</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€415</td>
             <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center"></td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">12 сесій</td>
-            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€40</td>
-            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+            <td data-label="Експрес сесія (30 хв)" style="text-align: center">€295</td>
+            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€375</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€605</td>
             <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center"></td>
           </tr>
         </tbody>
@@ -476,26 +482,26 @@ ua:
         <tbody>
           <tr>
             <td data-label="Кількість сесій">4 сесії</td>
-            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€325</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€405</td>
+            <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center">€970</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">8 сесій</td>
-            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€635</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€790</td>
             <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center"></td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">12 сесій</td>
-            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€920</td>
+            <td data-label="Розширена сесія (80 хв)" style="text-align: center">€1150</td>
             <td data-label="Інтенсивна сесія (170 хв)" style="text-align: center"></td>
           </tr>
         </tbody>
     bigtext3:
       title: |
-        <b>Чудовий буст</b><br>
+        <b>Крутий буст</b><br>
       text: |
         Пакет сесій + 4 ранкових стендапи після кожної сесії, по будням
     VIP:
@@ -505,36 +511,31 @@ ua:
           <tr>
             <th scope="col" style="width: 15%"></th>
             <th scope="col">4 розширені сесії (80 хв) в місяць</th>
-            <th scope="col">8 розширених сесії (80 хв) в місяць</th>
+            <th scope="col">8 розширених сесій (80 хв) в місяць</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td data-label="Кількість сесій">1 місяць</td>
-            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€50</td>
-            <td data-label="8 розширених сесії (80 хв) в місяць" style="text-align: center">€50</td>
-          </tr>
-          <tr>
-            <td scope="row" data-label="Кількість сесій">2 місяці</td>
-            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€50</td>
-            <td data-label="8 розширених сесії (80 хв) в місяць" style="text-align: center">€50</td>
+            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€1800</td>
+            <td data-label="8 розширених сесій (80 хв) в місяць" style="text-align: center">€2000</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">3 місяці</td>
-            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€50</td>
-            <td data-label="8 розширених сесії (80 хв) в місяць" style="text-align: center">€50</td>
+            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€4700</td>
+            <td data-label="8 розширених сесій (80 хв) в місяць" style="text-align: center">€4900</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">6 місяців</td>
-            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€50</td>
-            <td data-label="8 розширених сесії (80 хв) в місяць" style="text-align: center">€50</td>
+            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€9000</td>
+            <td data-label="8 розширених сесій (80 хв) в місяць" style="text-align: center">€9200</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">12 місяців</td>
-            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€50</td>
-            <td data-label="8 розширених сесії (80 хв) в місяць" style="text-align: center">€50</td>
+            <td data-label="4 розширені сесії (80 хв) в місяць" style="text-align: center">€17200</td>
+            <td data-label="8 розширених сесій (80 хв) в місяць" style="text-align: center">€17400</td>
           </tr>
-        </tbody>
+        </tbody> 
     bigtext4:
       title: |
         <b>Максимальний буст</b><br>
@@ -542,7 +543,7 @@ ua:
         1-12 місяців сесій + щоденні ранкові та вечірні стендапи. Можливість бронювати експрес сесії день в день.
     family:
       table: |
-        <caption class="title header_box tarif_flex_table_title" style="margin-bottom: 5px;">Тарифи сімейної терапії</caption>
+        <caption class="title header_box tarif_flex_table_title" style="margin-bottom: 5px;">Тарифи сімейних сесій</caption>
         <thead>
           <tr>
             <th scope="col" style="width: 20%"></th>
@@ -553,23 +554,23 @@ ua:
         <tbody>
           <tr>
             <td data-label="Кількість сесій">1 сесія</td>
-            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€60</td>
+            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€80</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">4 сесії</td>
-            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€230</td>
+            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€315</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">8 сесій</td>
-            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€445</td>
+            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€610</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">12 сесій</td>
-            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€50</td>
-            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Стандартна сесія (80 хв)" style="text-align: center">€650</td>
+            <td data-label="Розширена сесія (110 хв)" style="text-align: center">€890</td>
           </tr>
         </tbody>
     group:
@@ -585,23 +586,23 @@ ua:
         <tbody>
           <tr>
             <td data-label="Кількість сесій">1 сесія</td>
-            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€50</td>
-            <td data-label="Група підтримки (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€11</td>
+            <td data-label="Група підтримки (110 хв)" style="text-align: center">€5</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">4 сесії</td>
-            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€50</td>
-            <td data-label="Група підтримки (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€43</td>
+            <td data-label="Група підтримки (110 хв)" style="text-align: center">€21</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">8 сесій</td>
-            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€50</td>
-            <td data-label="Група підтримки (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€83</td>
+            <td data-label="Група підтримки (110 хв)" style="text-align: center">€40</td>
           </tr>
           <tr>
             <td scope="row" data-label="Кількість сесій">12 сесій</td>
-            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€50</td>
-            <td data-label="Група підтримки (110 хв)" style="text-align: center">€50</td>
+            <td data-label="Групова психотерапія (110 хв)" style="text-align: center">€120</td>
+            <td data-label="Група підтримки (110 хв)" style="text-align: center">€58</td>
           </tr>
         </tbody>
 
@@ -617,14 +618,14 @@ ua:
       service2:
         title: 'Менторство'
         text: |
-          Індивідуальне наставництво, спрямоване на ваше професійне зростання, підвищення заробітку та розвиток власного стилю роботи.<br>
+          Індивідуальне наставництво, спрямоване на ваше професійне зростання, розвиток власного стилю роботи та збільшення доходів.<br>
           <b>Частота сесій:</b> 1-4 сесії в місяць.<br>
           <b>Важливо:</b> взяття на менторство відбувається тільки після одної пробної менторської сесії.<br>
           <b>Для кого:</b> психологи, психотерапевти, сексологи, коучі, викладачі.
       service3:
         title: 'Навчання'
         text: |
-          Набуття знань та навичок роботи, які зразу можна використовувати в практиці.<br>
+          Набуття знань та навичок роботи, які одразу можна використовувати в практиці.<br>
           <b>Формати:</b> індивідуальне та групове (слідкуйте за анонсами в моїх <a href="/ua/contacts.html" style="color: var(--gray); border-bottom: 1px solid var(--gray) !important; font-weight: 800;">соц.мережах</a>)<br>
           <b>Частота сесій:</b> за домовленістю.<br>
           <b>Напрямки:</b> консультування (психологічне, сексологічне, коучинг); інтегративна психотерапія; загальна психологія, сексологія, коучинг.
@@ -641,56 +642,35 @@ ua:
           <tbody>
             <tr>
               <td data-label="Кількість сесій">1 сесія</td>
-              <td data-label="Супервізійна сесія (50 хв)" style="text-align: center">€40</td>
-              <td data-label="Стандартна сесія (50 хв)"style="text-align: center">€50</td>
-              <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+              <td data-label="Супервізійна сесія (50 хв)" style="text-align: center">€45</td>
+              <td data-label="Менторська сесія (50 хв)"style="text-align: center">€50</td>
+              <td data-label="Навчальна сесія (110 хв)" style="text-align: center">€60</td>
             </tr>
             <tr>
               <td scope="row" data-label="Кількість сесій">4 сесії</td>
-              <td data-label="Супервізійна сесія (50 хв)" style="text-align: center">€40</td>
-              <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-              <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+              <td data-label="Супервізійна сесія (50 хв)" style="text-align: center">€160</td>
+              <td data-label="Менторська сесія (50 хв)" style="text-align: center">€200</td>
+              <td data-label="Навчальна сесія (110 хв)" style="text-align: center">€235</td>
             </tr>
             <tr>
               <td scope="row" data-label="Кількість сесій">8 сесій</td>
-              <td data-label="Експрес сесія (30 хв)" style="text-align: center">€40</td>
-              <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-              <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+              <td data-label="Супервізійна сесія (50 хв)" style="text-align: center">€310</td>
+              <td data-label="Менторська сесія (50 хв)" style="text-align: center">€390</td>
+              <td data-label="Навчальна сесія (110 хв)" style="text-align: center">€460</td>
             </tr>
             <tr>
               <td scope="row" data-label="Кількість сесій">12 сесій</td>
-              <td data-label="Експрес сесія (30 хв)" style="text-align: center">€40</td>
-              <td data-label="Стандартна сесія (50 хв)" style="text-align: center">€50</td>
-              <td data-label="Розширена сесія (80 хв)" style="text-align: center">€50</td>
+              <td data-label="Супервізійна сесія (50 хв)" style="text-align: center">€450</td>
+              <td data-label="Менторська сесія (50 хв)" style="text-align: center">€565</td>
+              <td data-label="Навчальна сесія (110 хв)" style="text-align: center">€665</td>
             </tr>
           </tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     family-90:
       title: 'Стандартна сімейна сесія'
       title-main: 'Сімейна сесія'
-      time: '90 хв | 2+ учасника'
+      time: '80 хв | 2+ учасника'
       problems: |
         Ефективний формат для сімей або пар, які прагнуть зміцнити стосунки, подолати труднощі або пройти складний період разом. 
         Безпечний простір для відкритого діалогу та спільного вирішення найактуальніших проблем:
@@ -700,11 +680,9 @@ ua:
         <li>Емоційна віддаленість</li>
         <li>Труднощі в сексуальній сфері</li>
         <li>Пошук глибшого взаєморозуміння</li>
-      price: '2500 грн'
-      price-package: 'Пакет з 10 сесій = 24000 грн'
     family-120:
       title: 'Розширена сімейна сесія'
-      time: '120 хв | 2+ учасника'
+      time: '110 хв | 2+ учасника'
       problems: |
         Розширений формат для сімей або пар, які потребують більше часу для опрацювання важливих питань.
         Ідеально підходить для 3-х і більше учасників, коли потрібно глибше розібрати складну ситуацію:
@@ -714,12 +692,10 @@ ua:
         <li>Емоційна віддаленість</li>
         <li>Труднощі в сексуальній сфері</li>
         <li>Пошук глибшого взаєморозуміння</li>
-      price: '3200 грн'
-      price-package: 'Пакет з 10 сесій = 31000 грн'
     group-therapy:
       title: 'Сесія групової психотерапії'
       title-main: 'Групова сесія'
-      time: '120 хв | раз на тиждень | 6-10 учасників'
+      time: '110 хв | раз на тиждень | 6-10 учасників'
       problems: |
         Зручний формат групової взаємодії для тих, хто прагне емоційної рівноваги, впевненості та здорових стосунків. Безпечне середовище для самодослідження й терапії найболючіших проблем:
         <li>Невроз</li>
@@ -730,11 +706,9 @@ ua:
         <li>Нав'язливі думки та дії</li>
         <li>Відсутність стресостійкості</li>
         <li>Дефіцит навичок комунікації</li>
-      price: '500 грн'
-      price-package: 'Пакет з 10 сесій = 4000 грн'
     group-support:
       title: 'Сесія групи психологічної підтримки'
-      time: '120 хв | раз на тиждень | 10-16 учасників'
+      time: '110 хв | раз на тиждень | 10-16 учасників'
       problems: |
         Теплий простір емоційної підтримки для тих, хто пережив наслідки війни, знаходиться у кризі або шукає однодумців.
         Дбайлива та структурована робота з запитами, які відкликаються в кожного учасника:
@@ -744,8 +718,6 @@ ua:
         <li>Відновлення безпеки та довіри до людей</li>
         <li>Проживання й інтеграція травматичного досвіду</li>
         <li>Робота з тривогою, втратою, безсиллям і наслідками війни</li>
-      price: '200 грн'
-      price-package: 'Пакет з 10 сесій = 1000 грн'
 
     title-group: 'Групові сесії'
 
