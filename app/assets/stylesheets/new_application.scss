@@ -1511,7 +1511,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .education__gallery {
-    column-count: 5;
+    column-count: 6;
   }
   .education__gallery img:hover {
     transform: scale(1.05);
@@ -1833,7 +1833,12 @@ main {
     font-size: 19px;
     line-height: 23px;
   }
-
+  .services__accordion_title {
+    padding-left: 15px;
+  }
+  .home-padding-top {
+    padding-top: 10px !important;
+  }
 }
 @media screen and (min-width: 768px) {
   .tarif_flex_table_title {
