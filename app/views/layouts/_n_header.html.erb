@@ -17,18 +17,18 @@
           margin: -10px 0px 0px 0px; padding: 15px 40px 15px 40px; height: 50px;">Меню</p>
         <ul class="header__list">
           <li>
-            <a href="/<%= I18n.locale%>/about.html" class="header__link"><%= I18n.t 'menu.ОБО МНЕ' %></a>
+            <a href="/<%= I18n.locale%>/about" class="header__link"><%= I18n.t 'menu.ОБО МНЕ' %></a>
           </li>
           <li id="consultation">
             <input type="checkbox" id="inp_cons" style="display: none;">
             <label for="inp_cons"><%= I18n.t 'menu.КОНСУЛЬТАЦИИ' %><img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></label>
             <ul style="border-radius: var(--border-radius)">
-              <li class="header__link"><a href="/<%= I18n.locale%>/individual_consultation.html"><%= I18n.t 'menu.ИНДИВИДУАЛЬНЫЕ' %></a></li>
-              <li class="header__link"><a href="/<%= I18n.locale%>/family_consultation.html"><%= I18n.t 'menu.СЕМЕЙНЫЕ' %></a></li>
-              <li class="header__link"><a href="/<%= I18n.locale%>/group_consultation.html"><%= I18n.t 'menu.ГРУППОВЫЕ' %></a></li>
-              <li class="header__link"><a href="/<%= I18n.locale%>/work-with.html"><%= I18n.t 'menu.НАПРАВЛЕНИЯ РАБОТЫ' %></a></li>
-              <li class="header__link"><a href="/<%= I18n.locale%>/methods.html"><%= I18n.t 'menu.МЕТОДЫ РАБОТЫ' %></a></li>
-              <li class="header__link" style="border-radius: 0px 0px 4px 4px"><a href="/<%= I18n.locale%>/contract.html" style="border: none; border-radius: 0px 0px 4px 4px"><%= I18n.t 'menu.ДОГОВОР' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/individual_consultation"><%= I18n.t 'menu.ИНДИВИДУАЛЬНЫЕ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/family_consultation"><%= I18n.t 'menu.СЕМЕЙНЫЕ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/group_consultation"><%= I18n.t 'menu.ГРУППОВЫЕ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/work-with"><%= I18n.t 'menu.НАПРАВЛЕНИЯ РАБОТЫ' %></a></li>
+              <li class="header__link"><a href="/<%= I18n.locale%>/methods"><%= I18n.t 'menu.МЕТОДЫ РАБОТЫ' %></a></li>
+              <li class="header__link" style="border-radius: 0px 0px 4px 4px"><a href="/<%= I18n.locale%>/contract" style="border: none; border-radius: 0px 0px 4px 4px"><%= I18n.t 'menu.ДОГОВОР' %></a></li>
             </ul>
           </li>
               
@@ -37,25 +37,25 @@
             <input type="checkbox" id="inp_products" style="display: none;">
             <label for="inp_products">ПРОДУКТЫ<img src="<%= asset_url('arrow.svg')%>" alt="стрелка категории" class="arrow"></label>
             <ul>
-              <li class="header__link"><a href="/work-with.html">Курс стрессоустойчивости</a></li>
-              <li class="header__link"><a href="/webinars.html">Вебинары</a></li>
-              <li class="header__link"><a href="/books.html" style="border: none;">Книги</a></li>
+              <li class="header__link"><a href="/work-with">Курс стрессоустойчивости</a></li>
+              <li class="header__link"><a href="/webinars">Вебинары</a></li>
+              <li class="header__link"><a href="/books" style="border: none;">Книги</a></li>
             </ul>
           </li> -->
           <li>
-            <a href="/<%= I18n.locale%>/services.html" class="header__link"><%= I18n.t 'menu.УСЛУГИ' %></a>
+            <a href="/<%= I18n.locale%>/services" class="header__link"><%= I18n.t 'menu.УСЛУГИ' %></a>
           </li>
           <li>
-            <a href="/<%= I18n.locale%>/reviews.html" class="header__link"><%= I18n.t 'menu.ОТЗЫВЫ' %></a>
+            <a href="/<%= I18n.locale%>/reviews" class="header__link"><%= I18n.t 'menu.ОТЗЫВЫ' %></a>
           </li>
           <li>
-            <a href="/<%= I18n.locale%>/articles.html" class="header__link"><%= I18n.t 'menu.СТАТЬИ' %></a>
+            <a href="/<%= I18n.locale%>/articles" class="header__link"><%= I18n.t 'menu.СТАТЬИ' %></a>
           </li>
           <li>
-            <a href="/<%= I18n.locale%>/contacts.html" class="header__link"><%= I18n.t 'menu.КОНТАКТЫ' %></a>
+            <a href="/<%= I18n.locale%>/contacts" class="header__link"><%= I18n.t 'menu.КОНТАКТЫ' %></a>
           </li>
           <li style="margin-right: calc(1vw + 20px);">
-            <a href="/<%= I18n.locale%>/faq.html" class="header__link"><%= I18n.t 'menu.FAQ' %></a>
+            <a href="/<%= I18n.locale%>/faq" class="header__link"><%= I18n.t 'menu.FAQ' %></a>
           </li>
           <li id="localization">
             <input type="checkbox" id="inp_loc" style="display: none;">

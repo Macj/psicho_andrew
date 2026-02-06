@@ -1511,7 +1511,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .education__gallery {
-    column-count: 4;
+    column-count: 5;
   }
   .education__gallery img:hover {
     transform: scale(1.05);
@@ -1738,7 +1738,7 @@ main {
   &__text_bigtext1 {
     font-size: 1.7rem;
     line-height: 2.5rem;
-    color: var(--white);
+    color: var(--white) !important;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -1796,6 +1796,7 @@ main {
     list-style-type: '\25FC';
     padding-left: 12px;
     margin-left: 12px;
+    margin-bottom: 0px;
   }
   &__price {
     font-size: 1.4rem;
@@ -1828,10 +1829,21 @@ main {
     padding: 7px;
     width: 100%;
   }
+  .services__text_bigtext2 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
 }
 @media screen and (min-width: 768px) {
   .tarif_flex_table_title {
     padding: 1.5rem 50px !important;
+  }
+  .indivc .service_stendup_text {
+    padding-left: 50px !important;
+  }
+  .indivc .service_stendup_text_b {
+    margin-left: -15px;
   }
 }
 @media screen and (min-width: 1360px) {
@@ -1839,6 +1851,7 @@ main {
     display: flex !important;
   }
 }
+
 
 
 
@@ -3841,6 +3854,138 @@ body.lb-disable-scrolling {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Загальні налаштування --- */
+
+.experience-section h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+  font-size: 2.2rem;
+  font-weight: 300; /* Більш тонкий, елегантний шрифт */
+}
+
+/* --- Стилі для ДЕСКТОПУ (Таймлайн) --- */
+.timeline {
+  position: relative;
+  border-left: 2px solid var(--black); /* Тонша лінія */
+  padding: 18px 20px 18px 40px;
+  margin: 20px 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+/* Крапка на лінії */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -48px; /* Центрування крапки на лінії */
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--background-white);
+  border: 3px solid var(--black); 
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Ефект при наведенні на пункт (для десктопу) */
+.timeline-item:hover::before {
+  background-color: var(--black);
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 1.2px;
+  background: var(--green);
+  color: var(--white);
+  display: inline-block;
+  border-radius: var(--border-radius);
+  letter-spacing: 0.5px;
+  padding: 2px 10px;
+}
+
+.timeline-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.25rem;
+  color: var(--black);
+  font-weight: 700;
+}
+
+.timeline-content .company {
+  color: var(--black);
+  font-size: 1rem;
+  display: block; /* Щоб переносилось коректно */
+}
+
+/* --- Стилі для МОБІЛЬНИХ (Картки) --- */
+@media (max-width: 768px) {
+  .experience-block {
+    background: none !important;
+  }
+  .experience-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  /* Вимикаємо лінію таймлайну */
+  .timeline {
+    border-left: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Вимикаємо крапки */
+  .timeline-item::before {
+    display: none;
+  }
+
+  /* Перетворюємо пункти на картки */
+  .timeline-item {
+    background-color: var(--background-white);
+    padding: 20px;
+    border-radius: var(--border-radius); /* Закруглені кути */
+    box-shadow: var(--box-shadow); /* М'яка тінь */
+    margin-bottom: 20px;
+    border-left: 5px solid var(--black); /* Кольоровий акцент зліва картки */
+  }
+
+  .timeline-date {
+    font-size: 10px;
+    line-height: 14px;
+    padding: 5px 10px;
+    color: var(--white);
+    margin-bottom: 5px;
+    display: inline-block;
+    background: var(--green);
+    border-radius: var(--border-radius);
+    letter-spacing: 0.5px;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+    margin-top: 10px;
+    border-bottom: 1px solid var(--black);
+  }
+}
 
 
 

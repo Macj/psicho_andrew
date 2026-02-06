@@ -12,7 +12,7 @@ $( document ).on 'turbolinks:load', ()->
         dataType: "html",
         data: $("#new_client").serialize(),
         success: -> 
-          window.location.href = "/thank-you.html";
+          window.location.href = "/thank-you";
         ,
         error: ->
           $('#error_block').show()
@@ -39,7 +39,7 @@ $( document ).on 'turbolinks:load', ()->
         dataType: "html",
         data: $("#mob_client_form").serialize(),
         success: -> 
-          window.location.href = "/thank-you.html";
+          window.location.href = "/thank-you";
         ,
         error: ->
           $('#error_block').show()

@@ -25,6 +25,8 @@
   <meta property="article:tag" content="<%= t 'about.head.article:tag6' %>">
   <meta property="article:tag" content="<%= t 'about.head.article:tag7' %>">
   <meta property="article:tag" content="<%= t 'about.head.article:tag8' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag9' %>">
+  <meta property="article:tag" content="<%= t 'about.head.article:tag10' %>">
   <meta name="twitter:url" content="<%= t 'about.head.url' %>">
   <meta name="twitter:title" content="<%= t 'about.head.title' %>">
   <meta name="twitter:desctiption" content="<%= t 'about.head.description' %>">
@@ -50,10 +52,10 @@
         </div>
         <div class="about-me__column_2">
           <div class="about-me__item">
-            <h2 class="about-me__name"><%= t 'about.name' %></h2>
-            <p class="about-me__text"><%= t 'about.hello' %></p>
-            <h3 class="about-me__subtitle"><%= t 'about.my-target.sub-title' %></h3>
-            <p class="about-me__text"><%= t 'about.my-target.text' %></p>
+            <h2 class="about-me__name"><%= raw t(:'about.name') %></h2>
+            <p class="about-me__text"><%= raw t(:'about.hello') %></p>
+            <h3 class="about-me__subtitle"><%= raw t(:'about.my-target.sub-title') %></h3>
+            <p class="about-me__text" style="margin-bottom: 0"><%= raw t(:'about.my-target.text') %></p>
           </div>
         </div>
       </div>
@@ -82,9 +84,9 @@
       <a href="<%= asset_url('certificates/STA.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
         <img src="<%= asset_url('certificates/STA.webp')%>" src="<%= asset_url('certificates/1653x1164.png')%>"title="<%= t 'about.my-education.gallery.STA.title' %>" alt="<%= t 'about.my-education.gallery.STA.alt' %>">
       </a>
-      <a href="<%= asset_url('certificates/Insight.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+      <!-- <a href="<%= asset_url('certificates/Insight.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
         <img src="<%= asset_url('certificates/Insight.webp')%>" src="<%= asset_url('certificates/1280x995.png')%>" title="<%= t 'about.my-education.gallery.Insight.title' %>" alt="<%= t 'about.my-education.gallery.Insight.alt' %>">
-      </a>
+      </a> -->
       <a href="<%= asset_url('certificates/Puselik.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
         <img src="<%= asset_url('certificates/Puselik.webp')%>" src="<%= asset_url('certificates/909x1290.png')%>" title="<%= t 'about.my-education.gallery.Puselik.title' %>" alt="<%= t 'about.my-education.gallery.Puselik.alt' %>">
       </a>
@@ -97,12 +99,128 @@
       <a href="<%= asset_url('certificates/ILDC.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
         <img src="<%= asset_url('certificates/ILDC.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.ILDC.title' %>" alt="<%= t 'about.my-education.gallery.ILDC.alt' %>">
       </a>
+      <a href="<%= asset_url('certificates/Burnout_prevention.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/Burnout_prevention.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.Burnout_prevention.title' %>" alt="<%= t 'about.my-education.gallery.Burnout_prevention.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/MOZ.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/MOZ.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.MOZ.title' %>" alt="<%= t 'about.my-education.gallery.MOZ.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/PPtherapy.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/PPtherapy.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.PPtherapy.title' %>" alt="<%= t 'about.my-education.gallery.PPtherapy.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/Psychiatry_propaedeutics_course.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/Psychiatry_propaedeutics_course.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.Psychiatry_propaedeutics_course.title' %>" alt="<%= t 'about.my-education.gallery.Psychiatry_propaedeutics_course.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/Sexologist.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/Sexologist.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.Sexologist.title' %>" alt="<%= t 'about.my-education.gallery.Sexologist.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/Special_Sex-Psy.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/Special_Sex-Psy.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.Special_Sex-Psy.title' %>" alt="<%= t 'about.my-education.gallery.Special_Sex-Psy.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/Summer_school.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/Summer_school.webp')%>" src="<%= asset_url('certificates/2000x1414.png')%>" title="<%= t 'about.my-education.gallery.Summer_school.title' %>" alt="<%= t 'about.my-education.gallery.Summer_school.alt' %>">
+      </a>
+      <a href="<%= asset_url('certificates/LGBT-consultant.webp')%>" data-lightbox="test" style="background: url(<%= asset_url('loading.gif') %>) center / 100px no-repeat;">
+        <img src="<%= asset_url('certificates/LGBT-consultant.webp')%>" src="<%= asset_url('certificates/1066x1506.png')%>" title="<%= t 'about.my-education.gallery.LGBT-consultant.title' %>" alt="<%= t 'about.my-education.gallery.LGBT-consultant.alt' %>">
+      </a>
       </div>
     </div>
   </div>
 
 
 
+
+
+      <div class="experience">
+        <div class="services__body container">
+          <div class="experience__row2" style="display: flex; flex-wrap: wrap; margin: 0 -10px;">
+            <div class="services__column_bigtext2 mob">
+              <div class="services__item_bigtext2 faq-block__item">
+                <h3 class="services__text_bigtext2 faq-block__title title" ><%= raw t(:'about.my-experience.title') %></h3>
+              </div>
+            </div>
+            <div class="services__column_bigtext2 pc" style="padding: 10px;">
+              <div class="services__item_bigtext2 faq-block__item">
+                <h3 class="services__text_bigtext2 faq-block__title title" ><%= raw t(:'about.my-experience.title') %></h3>
+                <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'about.my-experience.sub-title') %></h3>
+              </div>
+            </div>
+            <div class="services__column_stendup_text1" style="padding: 8px;">
+              <div class="experience-block" style="background: var(--background-white); border-radius: var(--border-radius); flex: 1">
+                <div class="timeline">
+                  
+                  <div class="timeline-item">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.1.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.1.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.1.text') %></span>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.2.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.2.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.2.text') %></span>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.3.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.3.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.3.text') %></span>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.4.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.4.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.4.text') %></span>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.5.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.5.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.5.text') %></span>
+                    </div>
+                  </div>
+
+
+                  <div class="timeline-item">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.6.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.6.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.6.text') %></span>
+                    </div>
+                  </div>
+
+
+
+                  <div class="timeline-item" style="margin-bottom: 0;">
+                    <div class="timeline-date"><%= raw t(:'about.my-experience.works.7.date') %></div>
+                    <div class="timeline-content">
+                      <h3><%= raw t(:'about.my-experience.works.7.title') %></h3>
+                      <span class="company"><%= raw t(:'about.my-experience.works.7.text') %></span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+<!--
   <div class="experience">
     <div class="experience__body container">
       <div class="experience__header header_box ">
@@ -140,7 +258,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <div class="results pc">

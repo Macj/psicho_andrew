@@ -1,15 +1,37 @@
 <% content_for :head do %>
   <meta name="robots" content="index, follow">
-  <title>Услуги психолога | Стоимость | Ткаченко Андрей</title>
-  <meta name="description" content="Провожу индивидуальные и групповые консультации (2 часа раз в неделю), а также интенсивную психотерапию (5 дней подряд по 4 часа).">
-  <meta property="og:locale" content="ru_RU">
+  <link rel="canonical" href="<%= t 'services.head.url' %>">
+  <title><%= t 'services.head.title' %></title>
+  <meta name="description" content="<%= t 'services.head.description' %>">
+  <meta name="keywords" content="<%= t 'services.head.keywords' %>">
+  <meta name="author" content="<%= t 'head.author' %>">
+  <meta property="og:locale" content="<%= t 'head.og:locale' %>">
+  <meta property="og:url" content="<%= t 'services.head.url' %>">
+  <meta property="og:site_name" content="<%= t 'head.og:site_name' %>">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Услуги психолога | Стоимость | Ткаченко Андрей">
-  <meta property="og:description" content="Провожу индивидуальные и групповые консультации (2 часа раз в неделю), а также интенсивную психотерапию (5 дней подряд по 4 часа).">
-  <meta property="og:url" content="http://www.tkachenkoandrey.com/services">
-  <meta property="og:site_name" content="Психолог Ткаченко Андрей">
+  <meta property="og:title" content="<%= t 'services.head.title' %>">
+  <meta property="og:description" content="<%= t 'services.head.description' %>">
+  <meta property="og:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta property="og:image:secure_url" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1133">
+  <meta property="og:image:height" content="780">
   <meta property="article:publisher" content="https://www.facebook.com/tkachenko.psychology/">
-  <meta property="og:image" content="http://tkachenkoandrey.com/assets/Tkachenko-Andrey-0ccd9afe47bf51522e172c3619a0dd1b97986605188615048acbc034288baecf.jpg">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag1' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag2' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag3' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag4' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag5' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag6' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag7' %>">
+  <meta property="article:tag" content="<%= t 'services.head.article:tag8' %>">
+  <meta name="twitter:url" content="<%= t 'services.head.url' %>">
+  <meta name="twitter:title" content="<%= t 'services.head.title' %>">
+  <meta name="twitter:desctiption" content="<%= t 'services.head.description' %>">
+  <meta name="twitter:image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="relap-image" content='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
+  <link rel="image_src" href='<%= asset_url('Tkachenko-Andrey.jpg')%>'>
 <% end %>
 
 <div class="services-page">
@@ -90,7 +112,7 @@
       <div class="services__row">
         <div class="services__column_bigtext1">
           <div class="services__item_bigtext1">
-            <h2 class="services__text_bigtext1"><%= raw t 'services.bigtext1' %></h2>
+            <h2 class="services__text_bigtext1 title"><%= raw t 'services.bigtext1' %></h2>
           </div>
         </div>
         <div class="services__column_accordion">
@@ -141,7 +163,7 @@
         <div class="services__column_bigtext2 mob">
           <div class="services__item_bigtext2 faq-block__item">
             <h3 class="services__text_bigtext2 faq-block__title title" ><%= raw t(:'services.bigtext2.title') %></h3>
-            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext2.text') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.2rem; margin-bottom: 0px; font-size: 1.1rem;"><%= raw t(:'services.bigtext2.text') %></h3>
           </div>
         </div>
         <div class="services__column_stendup_text1">
@@ -373,21 +395,21 @@
           <th style="width: 5%">Цена</th>
           <th style="width: 34%">Описание услуги</th>
           <tr>
-            <td><a href="services.html#Predv" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Предварительная консультация</a></td>
+            <td><a href="services#Predv" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Предварительная консультация</a></td>
             <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">15 минут</td>
             <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
               <span style="font-size: 1.5vw; font-weight: 600">Бесплатно</span><br>
             </td>
-            <td>В течение 24 часов, после вашей <a href="services.html#Predv" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>записи на консультацию</b></a>, я вам пишу в мессенджер (если вы хотите – мы созваниемся), анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия.
+            <td>В течение 24 часов, после вашей <a href="services#Predv" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>записи на консультацию</b></a>, я вам пишу в мессенджер (если вы хотите – мы созваниемся), анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия.
             </td>
           </tr>
           <tr>
-            <td><a href="consultations.html" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Индивидуальная консультация</a></td>
+            <td><a href="consultations" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Индивидуальная консультация</a></td>
             <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">2 часа</td>
             <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
               <span style="font-size: 1.5vw; font-weight: 600">30 $</span>
             </td>
-            <td><b>Метод – <a href="Positive-psychotherapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">позитивная психотерапия</a>.</b><br>
+            <td><b>Метод – <a href="Positive-psychotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">позитивная психотерапия</a>.</b><br>
               ▷ Диагностика<br>
               ▷ Постановка целей<br>
               ▷ Принятие решений<br>
@@ -396,14 +418,14 @@
             </td>
           </tr>
           <tr>
-            <td><a href="consultations.html" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Курс психотерапии</a></td>
+            <td><a href="consultations" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Курс психотерапии</a></td>
             <td  style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">10 сеансов по 2 часа</td>
             <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b">
               <span style="font-size: 1.5vw; font-weight: 600">250 $</span><br>
               Разовый сеанс = 30 $
             </td>
             <td>
-              <b>Метод – <a href="Cognitive-Behavioral-Therapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">КПТ</a>, <a href="Acceptance-and-Commitment-Therapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">ACT</a>, <a href="Mindfulness.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">Майндфулнесс</a>.</b> (1–2 сеанса в неделю)<br>
+              <b>Метод – <a href="Cognitive-Behavioral-Therapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">КПТ</a>, <a href="Acceptance-and-Commitment-Therapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">ACT</a>, <a href="Mindfulness" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">Майндфулнесс</a>.</b> (1–2 сеанса в неделю)<br>
               ▷ Невроз<br>
               ▷ Тревога<br>
               ▷ Депрессия<br>
@@ -416,12 +438,12 @@
           </tr>
           <tfoot>
             <tr>
-              <td><a href="consultations.html#Hypnotherapy" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Курс гипнотерапии</a></td>
+              <td><a href="consultations#Hypnotherapy" style="color: inherit; font-weight: 600; font-size: 1.1vw; text-decoration: none;">Курс гипнотерапии</a></td>
               <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b; padding: 0.9vw 1.8vw;">5 сеансов по 3 часа</td>
               <td style="border-left: 1px solid #4b4b4b; border-right: 1px solid #4b4b4b"><span style="font-size: 1.5vw; font-weight: 600">200 $</span><br>
               Разовый сеанс = 50 $</td>
               <td>
-                <b>Метод – <a href="Hypnotherapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">гипнотерапия</a>.</b> (1–5 сеансов в неделю)<br>
+                <b>Метод – <a href="Hypnotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">гипнотерапия</a>.</b> (1–5 сеансов в неделю)<br>
                 ▷ Невроз<br>
                 ▷ Тревога<br>
                 ▷ Депрессия<br>
@@ -439,7 +461,7 @@
 <!--
     <div style="display: flex; justify-content: space-between; flex-wrap: wrap; text-align: center; margin: 0vw 2vw">
         <div style="width: 29%;" id="service_box">
-          <a href="consultations.html#group" style="color: inherit; text-decoration:none;">
+          <a href="consultations#group" style="color: inherit; text-decoration:none;">
             <img src="<%= asset_url('group-consultation.svg')%>" alt="групповые консультации психолога" style="height: 12vw; transition: 0.3s;">  
             <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Групповая консультация</h3>
           </a>
@@ -452,7 +474,7 @@
         </div>
 
         <div style="width: 29%;" id="service_box">
-          <a href="consultations.html" style="color: inherit; text-decoration:none;">
+          <a href="consultations" style="color: inherit; text-decoration:none;">
             <img src="<%= asset_url('consultation.svg')%>" alt="индивидуальная консультация психолога" style="height: 12vw; transition: 0.3s;">  
             <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Индивидуальная консультация</h3>
           </a>
@@ -465,7 +487,7 @@
         </div>
 
         <div style="width: 29%;" id="service_box">
-          <a href="consultations.html#Coaching" style="color: inherit; text-decoration:none;">
+          <a href="consultations#Coaching" style="color: inherit; text-decoration:none;">
             <img src="<%= asset_url('problem/coaching.svg')%>" alt="интенсивный коучинг" style="height: 12vw; transition: 0.3s;">  
             <h3 class="service_name" style="margin: 0vw; padding: 1.2vw 0vw 1.2vw 0vw">Интенсивный коучинг</h3>
           </a>
@@ -497,7 +519,7 @@
           <p style="font-weight: 800; font-size: 2vw">30 $</p>
         </div>
         <p style="text-align: justify;">
-          Консультация по Skype, Telegram, Viber, Hangouts для тех, кто ценит свое время. Вы находитесь у себя дома, в безопасной обстановке, в удобном кресле, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя. Подробнее о процессе консультации <a href="consultations.html"><b>тут</b></a>.
+          Консультация по Skype, Telegram, Viber, Hangouts для тех, кто ценит свое время. Вы находитесь у себя дома, в безопасной обстановке, в удобном кресле, говорите о наболевшем с тем, кто вас понимает, избавляетесь от страхов и сомнений, наполняясь спокойствием и верой в себя. Подробнее о процессе консультации <a href="consultations"><b>тут</b></a>.
         </p>
         <button id="button_client_form">
           <a href="#client_form">ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ</a>
@@ -558,7 +580,7 @@
     <h2 style="font-size: 2.5vw; text-align: center; margin: 6vw 0px 2vw 0vw; padding-top: 3vw" id="Predv">Запись на консультацию</h2> 
     <p style="text-align: center; letter-spacing: 0.01em; margin: 2vw 0vw 5vw 0vw;">
       Заполните форму или свяжитесь со мной любым удобным для вас способом.<br>Контакты вы найдете 
-      <a href="contacts.html" style="border-bottom: 1px solid currentColor">здесь</a>
+      <a href="contacts" style="border-bottom: 1px solid currentColor">здесь</a>
     </p>
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8vw">
       <img src="<%= asset_url('form.svg')%>" style="width: 40vw">
@@ -595,13 +617,13 @@
 
     <div class="container" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
       <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-        <a href="consultations.html#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+        <a href="consultations#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
           <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
             Предварительная консультация
           </span>
         </a>
         <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
-          В течение 24 часов, после вашей <a href="services.html#predv" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>записи на консультацию</b></a>, я вам пишу в мессенджер (если вы хотите – мы созваниемся), анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия.
+          В течение 24 часов, после вашей <a href="services#predv" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b"><b>записи на консультацию</b></a>, я вам пишу в мессенджер (если вы хотите – мы созваниемся), анализирую вашу ситуацию, отвечаю на все вопросы и мы вместе согласовываем дальнейшие действия.
         </p>
         <div style="display:flex; justify-content: center;">
           <div style="width: 100%; background-color: #454554; border-radius: 1vw 0vw 0vw 1vw; padding: 2.5vw ; font-size: 3vw; font-weight: 600; color: #FFFFFF; text-align:center;">15 минут
@@ -611,13 +633,13 @@
         </div>
       </div>
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-      <a href="consultations.html#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+      <a href="consultations#group" style="color: #4b4b4b; text-decoration: none; text-align: center;">
         <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
           Индивидуальная консультация
         </span>
       </a>
       <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
-        <b>Метод – <a href="Positive-psychotherapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">позитивная психотерапия</a>.</b><br>
+        <b>Метод – <a href="Positive-psychotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">позитивная психотерапия</a>.</b><br>
         ▷ Диагностика<br>
         ▷ Постановка целей<br>
         ▷ Принятие решений<br>
@@ -633,13 +655,13 @@
     </div>
 
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-      <a href="consultations.html" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+      <a href="consultations" style="color: #4b4b4b; text-decoration: none; text-align: center;">
         <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
           Курс психотерапии
         </span>
       </a>
       <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
-        <b>Метод – <a href="Cognitive-Behavioral-Therapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">КПТ</a>, <a href="Acceptance-and-Commitment-Therapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">ACT</a>, <a href="Mindfulness.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">Майндфулнесс</a>.</b> (1–2 сеанса в неделю)<br>
+        <b>Метод – <a href="Cognitive-Behavioral-Therapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">КПТ</a>, <a href="Acceptance-and-Commitment-Therapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">ACT</a>, <a href="Mindfulness" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">Майндфулнесс</a>.</b> (1–2 сеанса в неделю)<br>
         ▷ Невроз<br>
         ▷ Тревога<br>
         ▷ Депрессия<br>
@@ -659,13 +681,13 @@
     </div>
 
     <div class="price_con_box" style="filter: drop-shadow(0px 1vw 2vw rgba(123, 123, 123, 0.10)); width: 100%; height: auto; text-align: center;">
-      <a href="consultations.html#hypnotherapy" style="color: #4b4b4b; text-decoration: none; text-align: center;">
+      <a href="consultations#hypnotherapy" style="color: #4b4b4b; text-decoration: none; text-align: center;">
         <span class="problem_name" style="font-size: 3.5vw; color: #4b4b4b; border-bottom: 1px solid currentColor; padding-bottom: 0.6vw;">
           Курс гипнотерапии
         </span>
       </a>
       <p class="problem_text" style="font-size: 3vw; line-height: 3.8vw;">
-        <b>Метод – <a href="Hypnotherapy.html" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">гипнотерапия</a>.</b> (1–5 сеансов в неделю)<br>
+        <b>Метод – <a href="Hypnotherapy" style="border-bottom: 1px solid #4b4b4b; text-decoration: none; color: #4b4b4b">гипнотерапия</a>.</b> (1–5 сеансов в неделю)<br>
         ▷ Невроз<br>
         ▷ Тревога<br>
         ▷ Депрессия<br>

@@ -25,6 +25,8 @@
   <meta property="article:tag" content="<%= t 'ind.head.article:tag6' %>">
   <meta property="article:tag" content="<%= t 'ind.head.article:tag7' %>">
   <meta property="article:tag" content="<%= t 'ind.head.article:tag8' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag9' %>">
+  <meta property="article:tag" content="<%= t 'ind.head.article:tag10' %>">
   <meta name="twitter:url" content="<%= t 'ind.head.url' %>">
   <meta name="twitter:title" content="<%= t 'ind.head.title' %>">
   <meta name="twitter:desctiption" content="<%= t 'ind.head.description' %>">
@@ -65,6 +67,56 @@
         <h2><%= t 'ind.setting.h2' %></h2>
         <%= raw t 'ind.setting.text' %>
       </section>
+
+      <div class="services services__row">
+        <div class="services__column_bigtext1">
+          <div class="services__item_bigtext1">
+            <h2 class="services__text_bigtext1 title" style="box-shadow: none; font-size: 1.7rem"><%= raw t 'services.bigtext1' %></h2>
+          </div>
+        </div>
+        <div class="services__column_accordion">
+          <div class="services__item_accordion">
+            <h2 class="services__accordion_title" style="text-align: left;"><%= raw t 'services.accordion.title' %></h2>
+            <div class="accordion">
+              <div class="accordion__item">
+                <input id="accordion1" type="checkbox">
+                <label for="accordion1"><%= t 'services.accordion.label1' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text1' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion2" type="checkbox">
+                <label for="accordion2"><%= t 'services.accordion.label2' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text2' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion3" type="checkbox">
+                <label for="accordion3"><%= t 'services.accordion.label3' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text3' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion4" type="checkbox">
+                <label for="accordion4"><%= t 'services.accordion.label4' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text4' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion5" type="checkbox">
+                <label for="accordion5"><%= t 'services.accordion.label5' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text5' %></ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section>
         <h2><%= t 'ind.setting-course.h2' %></h2>
@@ -154,13 +206,57 @@
         <%= raw t 'ind.last.text' %>
       </section>
 
+      <div class="services__row" style="margin-bottom: 0;">
+        <div class="services__column_bigtext2 mob">
+          <div class="services__item_bigtext2 faq-block__item">
+            <h3 class="services__text_bigtext2 faq-block__title title" style="font-size: 19px !important; line-height: 23px !important;"><%= raw t(:'services.bigtext2.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.2rem; margin-bottom: 0px; font-size: 1.1rem;"><%= raw t(:'services.bigtext2.text') %></h3>
+          </div>
+        </div>
+        <div class="services__column_stendup_text1">
+          <article style="margin: 0">
+            <section class="indivc" style="margin: 0">
+              <h2><%= raw t 'services.stendup.text1.title' %></h2> 
+              <%= raw t 'services.stendup.text1.text' %>
+            </section>
+          </article>
+        </div>
+        <div class="services__column_bigtext2 pc">
+          <div class="services__item_bigtext2 faq-block__item">
+            <h3 class="services__text_bigtext2 faq-block__title title" style="font-size: 1.7rem; line-height: 2.5rem;"><%= raw t(:'services.bigtext2.title') %></h3>
+            <h3 class="faq-block__title text" style="font-weight: 500; line-height: 1.6rem; margin-bottom: 0px;"><%= raw t(:'services.bigtext2.text') %></h3>
+          </div>
+        </div>
+        <div class="services__column_stendup_text2">
+          <div>
+            <article style="margin: 0">
+              <section class="indivc" style="margin: 0">
+                <h2><%= raw t 'services.stendup.text2.title' %></h2> 
+                <%= raw t 'services.stendup.text2.text' %>
+              </section>
+            </article>
+          </div>
+        </div>
+        <div class="services__column_stendup_text3">
+          <div>
+            <article style="margin: 0">
+              <section class="indivc" style="margin: 0">
+                <h2><%= raw t 'services.stendup.text3.title' %></h2> 
+                <%= raw t 'services.stendup.text3.text' %>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
     </article>
+
+
 
     <div class="faq-block" id="client_form" style="position: relative; background: var(--background-body); z-index: 10; margin-top: -3px">
       <div class="faq-block__body container">
         <div class="faq-block__item">
           <h3 class="faq-block__title title" style="font-size: 17px"><%= t 'faq-block.text' %></h3>
-          <a class="btn btn_faq" href="/faq.html" style="margin-top: 25px"><%= t 'faq-block.button' %></a>
+          <a class="btn btn_faq" href="/faq" style="margin-top: 25px"><%= t 'faq-block.button' %></a>
         </div>
       </div>
     </div>

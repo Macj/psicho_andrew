@@ -27,7 +27,6 @@
   <meta property="article:tag" content="<%= t 'main.head.article:tag8' %>">
   <meta property="article:tag" content="<%= t 'main.head.article:tag9' %>">
   <meta property="article:tag" content="<%= t 'main.head.article:tag10' %>">
-  <meta property="article:tag" content="<%= t 'main.head.article:tag11' %>">
   <meta name="twitter:url" content="<%= t 'main.head.url' %>">
   <meta name="twitter:title" content="<%= t 'main.head.title' %>">
   <meta name="twitter:desctiption" content="<%= t 'main.head.description' %>">
@@ -57,7 +56,7 @@
 
 <div class="home-page">
   <div class="main" style="background-image: url(<%= asset_url('consultation-psychologist-online-Tkachenko-Andrey.webp') %>);">
-    <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.webp')%>" alt="Онлайн консультации психолога Ткаченко Андрей" class="mob" style="width: 100%;">
+    <img src="<%= asset_url('online-consultation-psychologist-Tkachenko-Andrey.webp')%>" alt="Онлайн консультації психолога, сексолога, коуча Ткаченко Андрій" class="mob" style="width: 100%;">
     <div class="main__body container">
       <div class="main__item">
         <h2 class="main__name"><%= t 'main.myname' %></h2>
@@ -68,7 +67,7 @@
             <a id="button_client_form" class="btn btn_sign-up" href="#client_form"><%= t 'button.sign-up' %></a>
           </div>
           <div class="main__column pc">
-            <a class="btn btn_about" href="/<%= I18n.locale%>/about.html"><%= t 'button.about' %></a>
+            <a class="btn btn_about" href="/<%= I18n.locale%>/about"><%= t 'button.about' %></a>
           </div>
         </div>
       </div>
@@ -79,48 +78,37 @@
   <div class="problem">
     <div class="problem__body container">
       <div class="problem__header header_box" style="position: relative;">
-        <h2 class="problem__title title"><%= t 'main.problem.title' %></h2>
+        <h2 class="problem__title title"><%= t 'main.work-with.title' %></h2>
       </div>
-      <div class="problem__row">
-        <div class="problem__column">
-          <div class="problem__item">
-            <h3 class="problem__name"><%= t 'main.problem.Невроз.title' %></h3>
-              <p class="problem__text"><%= t 'main.problem.Невроз.text' %></p>
+      <div class="services__row" style="margin-top: 0; margin-bottom: 30px;">
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.service1.title' %></h3>
+            <ul class="services__text pc_justify">
+              <%= raw t(:'services.service1.text') %>
+            </ul>
           </div>
         </div>
-        <div class="problem__column">
-          <div class="problem__item">
-            <h3 class="problem__name"><%= t 'main.problem.Тревога.title' %></h3>
-            <p class="problem__text"><%= t 'main.problem.Тревога.text' %></p>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.service2.title' %></h3>
+            <ul class="services__text pc_justify">
+              <%= raw t(:'services.service2.text') %>
+            </ul>
           </div>
         </div>
-        <div class="problem__column">
-          <div class="problem__item">
-            <h3 class="problem__name"><%= t 'main.problem.Депрессия.title' %></h3>
-            <p class="problem__text"><%= t 'main.problem.Депрессия.text' %></p>
-          </div>
-        </div>
-        <div class="problem__column">
-          <div class="problem__item">
-            <h3 class="problem__name"><%= t 'main.problem.Пcихотравмы.title' %></h3>
-            <p class="problem__text"><%= t 'main.problem.Пcихотравмы.text' %></p>
-          </div>
-        </div>
-        <div class="problem__column">
-          <div class="problem__item">
-            <h3 class="problem__name"><%= t 'main.problem.Низкая самооценка.title' %></h3>
-            <p class="problem__text"><%= t 'main.problem.Низкая самооценка.text' %></p>
-          </div>
-        </div>
-        <div class="problem__column">
-          <div class="problem__item">
-            <h3 class="problem__name"><%= t 'main.problem.Взаимоотношения.title' %></h3>
-            <p class="problem__text"><%= t 'main.problem.Взаимоотношения.text' %></p>
+        <div class="services__column">
+          <div class="services__item">
+            <h3 class="services__name"><%= t 'services.service3.title' %></h3>
+            <ul class="services__text pc_justify">
+              <%= raw t(:'services.service3.text') %>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 
 
   <div class="introduce">
@@ -143,7 +131,7 @@
             <h3  class="introduce__subtitle pc"><%= t 'main.about.my-education.sub-title' %></h3>
             <p class="introduce__text pc"><%= t 'main.about.my-education.text' %></p>
             <div class="introduce__button">
-              <a class="btn btn_sign-up" href="/<%= I18n.locale%>/about.html" style="display: inline-block;"><%= t 'button.about' %></a>
+              <a class="btn btn_sign-up" href="/<%= I18n.locale%>/about" style="display: inline-block;"><%= t 'button.about' %></a>
             </div>
           </div>
         </div>
@@ -191,8 +179,59 @@
     </div>
   </div>
 
-      
-
+  <div class="usp services">
+    <div class="usp__body container">
+      <div class="services__row">
+        <div class="services__column_accordion">
+          <div class="services__item_accordion">
+            <h2 class="services__accordion_title"><%= raw t 'services.accordion.title' %></h2>
+            <div class="accordion">
+              <div class="accordion__item">
+                <input id="accordion1" type="checkbox">
+                <label for="accordion1"><%= t 'services.accordion.label1' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text1' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion2" type="checkbox">
+                <label for="accordion2"><%= t 'services.accordion.label2' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text2' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion3" type="checkbox">
+                <label for="accordion3"><%= t 'services.accordion.label3' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text3' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion4" type="checkbox">
+                <label for="accordion4"><%= t 'services.accordion.label4' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text4' %></ul>
+                </section>
+              </div>
+              <div class="accordion__item">
+                <input id="accordion5" type="checkbox">
+                <label for="accordion5"><%= t 'services.accordion.label5' %></label>
+                <section class="padding0 pc_justify">
+                  <ul><%= raw t 'services.accordion.text5' %></ul>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services__column_bigtext1">
+          <div class="services__item_bigtext1">
+            <h2 class="services__text_bigtext1"><%= raw t 'services.bigtext1' %></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="sign-up" id="client_form">
     <div class="sign-up__body container">

@@ -53,17 +53,18 @@
 
   <%- if defined?(@meta_block) && @meta_block.nil? %>
     <title><%= @article.title %></title>
+    <link rel="canonical" href="<%= request.original_url.split('.html').first %>" />
     <meta name="description"  content="#{@article.description}">
     <meta name="keywords" content="#{@article.tags}">
   <% end %>
 
   <meta property="fb:app_id" content="403499743729149">
+  <link rel="icon" href="<%= asset_url('favicon.ico')%>">
   <link rel="icon" type="image/svg+xml" sizes="any" href="<%= asset_url('favicon.svg')%>">
   <link rel="shortcut icon" type="image/svg+xml" sizes="any" href="<%= asset_url('favicon.svg')%>">
-  <link rel="icon" href="<%= asset_url('favicon.ico')%>">
 
-  <link rel="manifest" href="http://tkachenkoandrey.com/manifest.json">
-  <link rel="search" type="application/opensearchdescription+xml" title="tkachenkoandrey.com" href="http://tkachenkoandrey.com/opensearch.xml">
+  <link rel="manifest" href="https://tkachenkoandrey.com/manifest.json">
+  <link rel="search" type="application/opensearchdescription+xml" title="tkachenkoandrey.com" href="https://tkachenkoandrey.com/opensearch.xml">
   <meta name="msapplication-TileColor" content="#292724">
   <meta name="msapplication-TileImage" content="<%= asset_url('favicon.svg')%>">
   <meta name="theme-color" content="#b59f7d">
